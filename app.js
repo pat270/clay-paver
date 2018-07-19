@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-var port = 9000;
+var PORT = process.env.port || 9000;
 var server = require('http').createServer(app);
 
 app.use(express.static('public'));
@@ -23,7 +23,8 @@ function sitePageCtrl(req, res, next) {
 
 	if (pageExists) {
 		res.render('pages/index', {
-			page: page
+			page: page,
+			showVariableSidebar: true
 		});
 	}
 	else {
@@ -35,11 +36,18 @@ app.get('/favicon.ico', function(req, res) {
 	res.sendStatus(204);
 });
 
+app.get('/import', function(req, res, next) {
+	res.render('pages/index', { 
+		page: 'import'
+	});
+});
+
 app.get('/:page', sitePageCtrl);
 
 app.get('/', function(req, res, next) {
 	res.render('pages/index', { 
-		page: 'home'
+		page: 'home',
+		showVariableSidebar: true
 	});
 });
 
@@ -47,6 +55,6 @@ app.get('*', function(req, res){
   res.status(404).send('Sorry page does not exist.');
 });
 
-server.listen(port, function () {
-	console.log('Clay Paver on http://localhost:' + port);
+server.listen(PORT, function () {
+	console.log('Clay Paver on http://localhost:' + PORT);
 });
