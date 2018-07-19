@@ -11,6 +11,7 @@
 	display: block;
 	padding: $nav-link-padding-vertical $nav-link-padding-horizontal;
 	position: relative;
+	word-wrap: break-word;
 }
 
 .nav > li > a:focus {
@@ -91,6 +92,15 @@
 
 .nav-nested-margins > li .nav > li {
 	margin-left: $nav-nested-margins-margin-horizontal;
+}
+
+.nav-nested,
+.nav-nested-margins {
+	> .active > a,
+	.nav > .active > a {
+		background-color: $nav-nested-link-active-bg;
+		color: $nav-nested-link-active-color;
+	}
 }
 
 // Nav Pills

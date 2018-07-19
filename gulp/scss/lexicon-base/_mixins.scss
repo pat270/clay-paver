@@ -1,0 +1,533 @@
+@mixin color-alert-text($color, $bold-color) {
+	color: $color;
+
+	.alert-link,
+	.close,
+	.lead {
+		color: $bold-color;
+	}
+}
+// Calculates and sets aspect ratio
+// @param $width - width
+// @param $height - height
+
+@mixin aspect-ratio($width: 1, $height: 1) {
+	padding-bottom: percentage($height / $width);
+}
+@mixin color-btn($border) {
+	border-color: $border;
+}
+
+@mixin color-btn-hover($bg, $border) {
+	&:focus,
+	&:hover {
+		background-color: $bg;
+		border-color: $border;
+	}
+}
+
+@mixin color-btn-active($bg, $border) {
+	&:active,
+	&.active,
+	&:active:focus,
+	&:active:hover,
+	&.active:focus,
+	&.active:hover,
+	.open > &.dropdown-toggle,
+	.open > &.dropdown-toggle:focus,
+	.open > &.dropdown-toggle:hover {
+		background-color: $bg;
+		border-color: $border;
+	}
+}
+@mixin color-dropdown-toggle-link($color: $link-color, $focus-color: $link-hover-color, $hover-color: $link-hover-color) {
+	.dropdown-toggle {
+		color: $color;
+
+		&:focus {
+			color: $focus-color;
+		}
+
+		&:hover {
+			color: $hover-color;
+		}
+	}
+}
+
+@mixin color-dropdown-menu-links($color: $dropdown-link-color, $focus-color: $dropdown-link-active-color, $hover-color: $dropdown-link-hover-color) {
+	.dropdown-menu {
+		a {
+			color: $color;
+
+			&:focus {
+				color: $focus-color;
+			}
+
+			&:hover {
+				color: $hover-color;
+			}
+		}
+	}
+}
+@mixin color-figcaption ($bgColor: $figcaption-bg, $alpha: $figcaption-bg-alpha, $color: $figcaption-color) {
+	background-color: $bgColor;
+	background-color: rgba($bgColor, $alpha);
+	color: $color;
+}
+
+@mixin style-figcaption($bgColor: $figcaption-bg, $alpha: $figcaption-bg-alpha, $color: $figcaption-color) {
+	@warn "Lexicon's `style-figcaption($bgColor: $figcaption-bg, $alpha: $figcaption-bg-alpha, $color: $figcaption-color)` mixin is deprecated as of v1.0.10 and will be removed in v2.0.0.";
+
+	@include color-figcaption($bgColor, $alpha, $color);
+
+	font-weight: 300;
+	padding: 10px 15px;
+	position: absolute;
+	width: 100%;
+}
+// Helper for setting the color of an input placeholder
+// @param $element - CSS Selector
+// @param $color - Placeholder Color
+
+@mixin color-placeholder($element, $color: $input-color-placeholder) {
+	@warn "Lexicon's `color-placeholder($element, $color: $input-color-placeholder)` mixin is deprecated as of v1.0.9 and will be removed in v2.0.0. Please use `placeholder($color: $input-color-placeholder)` instead.";
+
+	#{$element}::-webkit-input-placeholder {
+		color: $color;
+	}
+
+	#{$element}:-moz-placeholder {
+		color: $color;
+	}
+
+	#{$element}::-moz-placeholder {
+		color: $color;
+	}
+
+	#{$element}:-ms-input-placeholder {
+		color: $color;
+	}
+}
+
+// Sets select element icon
+// @param $color - Icon Color
+
+@mixin select-box-icon($color) {
+	@warn "Lexicon's `select-box-icon($color)` mixin is deprecated as of v1.0.10 and will be removed in v2.0.0. Please use `background-image: lx-icon($name, $color)` instead.";
+
+	background-image: lx-icon(caret-double-l, $color);
+}
+// Deprecated
+// `color-tabular-list-group-item($color, $active-bg: $list-group-active-bg)` as
+// of v1.0.9 and will be removed in v2.0.0.
+
+@mixin color-tabular-list-group-item($color, $active-bg: $list-group-active-bg) {
+	background-color: transparent;
+	border-left: 5px solid $color;
+
+	&,
+	&:focus,
+	&:hover {
+		color: $color;
+	}
+
+	&.active {
+		background-color: $active-bg;
+	}
+
+	.status {
+		color: $color;
+	}
+}
+@function to-list($value, $num: 5) {
+	$newList: ($value);
+
+	@for $i from 1 to $num {
+		$newList: append($newList, $value, 'comma');
+	}
+
+	@return $newList;
+}
+
+@mixin trailing-shadow($xOffset, $yOffset, $color: $loading-icon-color, $size: (-0.4em, -0.42em, -0.44em, -0.46em, -0.477em)) {
+	@if type-of($xOffset) != 'list' {
+		$xOffset: to-list($xOffset);
+	}
+
+	@if type-of($yOffset) != 'list' {
+		$yOffset: to-list($yOffset);
+	}
+
+	@if type-of($color) != 'list' {
+		$color: to-list($color);
+	}
+
+	@if type-of($size) != 'list' {
+		$size: to-list($size);
+	}
+
+	$len: length($color);
+
+	@for $i from $len * -1 through -2 {
+		$color: set-nth($color, $i, adjust-hue(nth($color, $i), (abs($i) - 1) * 5));
+	}
+
+	$box-shadow: nth($xOffset, 1) nth($yOffset, 1) 0 nth($size, 1) nth($color, 1),
+	nth($xOffset, 2) nth($yOffset, 2) 0 nth($size, 2) nth($color, 2),
+	nth($xOffset, 3) nth($yOffset, 3) 0 nth($size, 3) nth($color, 3),
+	nth($xOffset, 4) nth($yOffset, 4) 0 nth($size, 4) nth($color, 4),
+	nth($xOffset, 5) nth($yOffset, 5) 0 nth($size, 5) nth($color, 5);
+
+	box-shadow: $box-shadow;
+}
+@mixin monospace($size) {
+	height: $size;
+	line-height: $size;
+	width: $size;
+}
+@mixin color-nameplate-label($bg, $color: $text-color) {
+	background-color: $bg;
+	color: $color;
+}
+
+@mixin nameplate-label-autofit($media-feature) {
+	@media ($media-feature) {
+		&,
+		.nameplate-label {
+			margin-right: 0;
+		}
+
+		.nameplate-field {
+			width: 1%;
+		}
+
+		.nameplate-label-text {
+			left: 5px;
+			max-width: none;
+			position: absolute;
+			right: 5px;
+			text-align: left;
+			top: auto;
+
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+		}
+
+		.nameplate-label-more .nameplate-label-text {
+			text-align: center;
+		}
+	}
+}
+// Indents each nested navigation by $indent (15px default)
+// @param $indent - amount to indent in pixels
+// @param $nest-level - number of levels to iterate
+// @param $nav-class - class name of nav element
+// @param $i - start value
+
+@mixin make-nav-nested($indent: 15px, $nest-level: 15, $nav-class: ".nav", $i: 1) {
+	@for $i from (1) through $nest-level {
+		#{$nav-class} > li {
+			> a {
+				padding-left: $indent * ($i + 1);
+			}
+
+			> .nav-equal-height-heading {
+				padding-left: $indent * $i;
+			}
+		}
+
+		$nav-class: "#{$nav-class} .nav";
+	}
+}
+// Make a direct descendant of .flex-container to break to a new line, should be
+// applied to direct descendant of .flex-container
+
+@mixin break-flex-item() {
+	-ms-flex-preferred-size: auto;
+	flex-basis: auto;
+	width: 100%;
+}
+
+// Make .flex-container stack all its direct descendants, should be applied to
+// .flex-container
+
+@mixin stack-flex-container() {
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	.flex-item-full {
+ 		-ms-flex-preferred-size: auto;
+ 		flex-basis: auto;
+	}
+}
+@mixin timeline-item-reverse() {
+	padding-left: 0;
+	padding-right: $timeline-inner-spacing;
+
+	&:before {
+		left: auto;
+		right: -$timeline-border-width;
+	}
+
+	.panel {
+		.timeline-increment-icon {
+			margin-left: auto;
+			margin-right: -$panel-border-right-width;
+		}
+	}
+
+	.timeline-increment-icon {
+		left: auto;
+		right: -($timeline-inner-spacing + $timeline-border-modifier);
+		-ms-transform: translate(50%, -50%);
+		transform: translate(50%, -50%);
+	}
+}
+
+@mixin timeline-spacing($outer-spacing, $inner-spacing, $item-vertical-padding: 10px) {
+	&.timeline {
+		padding-left: $outer-spacing;
+	}
+
+	&.timeline-center {
+		@media (min-width: $grid-float-breakpoint) {
+			padding-left: 0;
+
+			.timeline-item {
+				.timeline-increment-label {
+					margin-left: -($inner-spacing * 2);
+				}
+			}
+
+			.timeline-item.timeline-item-reverse {
+				padding-right: $inner-spacing;
+
+				.timeline-increment-icon {
+					right: -($inner-spacing + $timeline-border-modifier);
+				}
+
+				.timeline-increment-label {
+					margin-left: auto;
+					margin-right: -($inner-spacing * 2);
+				}
+			}
+		}
+	}
+
+	&.timeline-even .timeline-item:nth-of-type(even),
+	&.timeline-odd .timeline-item:nth-of-type(odd) {
+		@media (min-width: $grid-float-breakpoint) {
+			padding-right: $inner-spacing;
+
+			.timeline-increment-icon {
+				right: -($inner-spacing + $timeline-border-modifier);
+			}
+
+			.timeline-increment-label {
+				margin-left: auto;
+				margin-right: -($inner-spacing * 2);
+			}
+		}
+	}
+
+	&.timeline-right {
+		padding-right: $outer-spacing;
+
+		.timeline-item {
+			padding-right: $inner-spacing;
+
+			.timeline-increment-icon {
+				right: -($inner-spacing + $timeline-border-modifier);
+			}
+		}
+	}
+
+	&.timeline-right-xs-only {
+		@media (max-width: $screen-xs-max) {
+			padding-left: 0;
+			padding-right: $outer-spacing;
+
+			.timeline-item {
+				padding-left: 0;
+				padding-right: $inner-spacing;
+
+				.timeline-increment-icon {
+					left: auto;
+					right: -($inner-spacing + $timeline-border-modifier);
+				}
+			}
+		}
+	}
+
+	.timeline-item {
+		padding-bottom: $item-vertical-padding;
+		padding-left: $inner-spacing;
+		padding-top: $item-vertical-padding;
+
+		.timeline-increment-icon {
+			left: -($inner-spacing - $timeline-border-modifier);
+		}
+	}
+}
+// Calculates text-indent of data-label-on and data-label-off
+// @param $toggle-switch-width - Width of switch bar
+// @param $toggle-switch-padding - Space between button and bar
+
+@function set-data-label-text-position($toggle-switch-width, $toggle-switch-padding) {
+	@if $toggle-switch-padding < 0 {
+		@return $toggle-switch-width + abs($toggle-switch-padding);
+	}
+
+	@return $toggle-switch-width;
+}
+
+// Color toggle-switch-bar
+// @param $off-bg - Switch bar off background-color
+// @param $off-border - Switch bar off border-color
+// @param $on-bg - Switch bar on background-color
+// @param $on-border - Switch bar on border-color
+
+@mixin color-toggle-switch-bar($off-bg, $off-border: $off-bg, $on-bg: $off-bg, $on-border: $off-border) {
+	@warn "Lexicon's `color-toggle-switch-bar($off-bg, $off-border: $off-bg, $on-bg: $off-bg, $on-border: $off-border)` mixin is deprecated as of v1.0.11 and will be removed in v2.0.0.";
+
+	&:empty ~ .toggle-switch-bar {
+		&:before {
+			background-color: $off-bg;
+			border: $toggle-switch-bar-border-width solid $off-border;
+		}
+	}
+
+	&:checked ~ .toggle-switch-bar {
+		&:before {
+			background-color: $on-bg;
+			border: $toggle-switch-bar-border-width solid $on-border;
+		}
+	}
+}
+
+// Color toggle-switch-button
+// @param $button-off-bg - Switch button off background-color
+// @param $button-off-border - Switch button off border-color
+// @param $button-on-bg - Switch button on background-color
+// @param $button-on-border - Switch button on border-color
+
+@mixin color-toggle-switch-button($button-off-bg, $button-off-border: $button-off-bg, $button-on-bg: $button-off-bg, $button-on-border: $button-off-border) {
+	@warn "Lexicon's `color-toggle-switch-button($button-off-bg, $button-off-border: $button-off-bg, $button-on-bg: $button-off-bg, $button-on-border: $button-off-border)` mixin is deprecated as of v1.0.11 and will be removed in v2.0.0.";
+
+	&:empty ~ .toggle-switch-bar {
+		&:after {
+			background-color: $button-off-bg;
+			border: $toggle-switch-button-border-width solid $button-off-border;
+		}
+	}
+
+	&:checked ~ .toggle-switch-bar {
+		&:after {
+			background-color: $button-on-bg;
+			border: $toggle-switch-button-border-width solid $button-on-border;
+		}
+	}
+}
+
+// Color icon in toggle-switch-bar
+// @param $off-color - Switch bar off icon font color
+// @param $on-color - Switch bar on icon font color
+
+@mixin color-toggle-switch-bar-icon($off-color, $on-color: $off-color) {
+	@warn "Lexicon's `color-toggle-switch-bar-icon($off-color, $on-color: $off-color)` mixin is deprecated as of v1.0.11 and will be removed in v2.0.0.";
+
+	&:empty ~ .toggle-switch-bar .toggle-switch-icon {
+		color: $off-color;
+	}
+
+	&:checked ~ .toggle-switch-bar .toggle-switch-icon {
+		color: $on-color;
+	}
+}
+
+// Color icon in toggle-switch-button
+// @param $off-color - Switch button off icon font color
+// @param $on-color - Switch button on icon font color
+
+@mixin color-toggle-switch-button-icon($off-color, $on-color: $off-color) {
+	@warn "Lexicon's `color-toggle-switch-button-icon($off-color, $on-color: $off-color)` mixin is deprecated as of v1.0.11 and will be removed in v2.0.0.";
+
+	&:empty ~ .toggle-switch-bar .toggle-switch-icon.button-icon {
+		color: $off-color;
+	}
+
+	&:checked ~ .toggle-switch-bar .toggle-switch-icon.button-icon {
+		color: $on-color;
+	}
+}
+// Color Blockquote
+// @param $color - Colors border and text inside
+
+@mixin color-blockquote ($color) {
+	border-color: $color;
+
+	footer, small, .small {
+		color: $color;
+	}
+}
+
+// Color Link
+// @param $color - Colors link
+// @param $hover-color - Colors link focus and hover state
+
+@mixin color-link($color, $hover-color) {
+	color: $color;
+
+	&:focus,
+	&:hover {
+		color: $hover-color;
+	}
+}
+
+// Highlight inline text
+// @param $bg-color - Color of the highlight
+// @param $color - Colors the text
+
+@mixin highlight-text($bg-color: $state-warning-bg, $color: $text-color) {
+	background-color: $bg-color;
+	box-decoration-break: clone;
+	box-shadow: -0.25em 0 0 $bg-color;
+	color: $color;
+	display: inline;
+	line-height: normal;
+	padding: 2px 0.25em 3px 0;
+	position: relative;
+	white-space: pre-wrap;
+
+	&:before {
+		background-color: $bg-color;
+		bottom: 0;
+		content: '';
+		display: block;
+		position: absolute;
+		right: 100%;
+		top: 0;
+		width: 0.25em;
+		z-index: -1;
+	}
+}
+// Sets background color and text color
+// @param $bg-color - User icon background color
+// @param $color - User icon color
+
+@mixin color-user-icon($bg-color: #999, $color: #FFF) {
+	background-color: $bg-color;
+	color: $color;
+}
+
+// Size user icon
+// @param $size - User icon size
+
+// Deprecated as of v1.0.6 (will be removed in v2.0.0)
+// This duplicates the `monospace()` mixin.
+
+@mixin size-user-icon($size: 32px) {
+	@warn "Lexicon's `size-user-icon($size)` mixin is deprecated as of v1.0.6 and will be removed in v2.0.0. Please use `monospace($size)` instead.";
+
+	@include monospace($size);
+}

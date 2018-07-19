@@ -1,0 +1,377 @@
+html {
+	height: 100%;
+}
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-ms-overflow-style: scrollbar;
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+	margin: 0;
+}
+
+#content {
+	padding: 15px 0 15px 300px;
+}
+
+#content > .container-fluid {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#clayPaverNavigation {
+	bottom: 0;
+	overflow: auto;
+	padding-left: 15px;
+	padding-top: 30px;
+	position: fixed;
+	top: 0;
+	width: 200px;
+}
+
+@media (max-width: 991px) {
+	#content {
+		left: 0;
+	}
+
+	#clayPaverNavigation {
+		display: none;
+	}
+}
+
+.bootstrap-var {
+	display: none;
+}
+
+.clay-variable-editor {
+	bottom: 0;
+	overflow: auto;
+	padding: 15px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 300px;
+}
+
+.clay-variable-editor .control-label {
+	display: block;
+}
+
+.clay-variable-editor-download {
+	margin-left: 5px;
+}
+
+.clay-paver-dropdown-menu {
+	background-color: #FFF;
+	border-radius: 2px;
+	border: 1px solid #AAA;
+	display: none;
+	list-style: none;
+	margin-top: 2px;
+	max-height: 250px;
+	min-width: 175px;
+	overflow: auto;
+	padding: 0;
+	position: absolute;
+	z-index: 2000;
+}
+
+.open > .clay-paver-dropdown-menu {
+	display: block;
+}
+
+.clay-paver-dropdown-link {
+	color: #000;
+	display: block;
+	padding: 5px 8px;
+}
+
+.clay-paver-dropdown-link:hover {
+	color: #000;
+}
+
+.clay-paver-page-link {
+	color: #000;
+	display: block;
+	padding: 5px 8px;
+}
+
+.clay-paver-page-link:hover {
+	color: #000;
+}
+
+/* Link */
+
+.cp-link {
+	color: #2962ff;
+}
+
+.cp-link:hover,
+.cp-link:focus {
+	color: #0039cb;
+}
+
+/* Button */
+
+.cp-btn {
+	background-image: none;
+	border-radius: 2px;
+	border: 1px solid transparent;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1;
+	margin-bottom: 0;
+	padding: 6px;
+	text-align: center;
+	touch-action: manipulation;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.cp-btn:focus {
+	box-shadow: 0 0 0 0.2rem rgba(11, 95, 255, 0.25);
+	outline: 0;
+}
+
+.cp-btn-primary {
+	background-color: #2962ff;
+	border-color: #0039cb;
+	color: #fff;
+}
+
+.cp-btn-secondary {
+	background-color: #fafafa;
+	border-color: #c7c7c7;
+	color: #000;
+}
+
+.cp-btn-secondary:hover {
+	background-color: #f5f5f5;
+	color: #000;
+}
+
+.cp-btn-secondary:focus {
+	box-shadow: 0 0 0 0.2rem rgba(205, 206, 217, 0.5);
+	color: #000;
+}
+
+.open .cp-btn-secondary,
+.cp-btn-secondary:active {
+	background-color: #eee;
+	color: #000;
+}
+
+/* Forms */
+
+.cp-control-label {
+	color: #000;
+	cursor: pointer;
+	font-weight: normal;
+}
+
+.cp-unset-link {
+	float: right;
+}
+
+.cp-form-control {
+	border: 1px solid #c7c7c7;
+	border-radius: 2px;
+	font-size: 16px;
+	padding-left: 8px;
+	padding-right: 8px;
+	width: 100%;
+}
+
+.cp-form-control:focus {
+	border-color: #90caf9;
+	box-shadow: 0 0 0 0.2rem rgba(11, 95, 255, 0.25);
+	outline: 0;
+}
+
+.cp-form-group {
+	margin-bottom: 16px;
+}
+
+.cp-variables-form-header {
+	background-color: #4c4c4c;
+	color: #FFF;
+	margin: 0 -15px 16px -15px;
+	padding: 10px 15px;
+}
+
+.cp-variables-form-header a {
+	color: #FFF;
+}
+
+.cp-variables-form-header a:hover {
+	color: #EEE;
+}
+
+/* sidebar */
+
+.cp-variable-sidebar {
+	background-color: #FFF;
+	bottom: 0;
+	box-shadow: 1px 0 3px -2px rgba(0, 0, 0, 0.75);
+	color: #000;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	width: 300px;
+	z-index: 1;
+}
+
+.cp-variable-sidebar-header {
+	box-shadow: 0 1px 6px -3px rgba(0, 0, 0, 0.75);
+	height: 60px;
+	padding: 15px;
+	position: relative;
+	z-index: 1;
+}
+
+#downloadVariables {
+	float: right;
+}
+
+.cp-variable-sidebar-body {
+	bottom: 62px;
+	left: 0;
+	overflow: auto;
+	padding: 0 15px 15px;
+	position: absolute;
+	right: 0;
+	top: 60px;
+}
+
+.cp-variable-sidebar-footer {
+	bottom: 0;
+	box-shadow: 0 -1px 6px -3px rgba(0, 0, 0, 0.75);
+	height: 60px;
+	left: 0;
+	padding: 15px;
+	position: absolute;
+	right: 0;
+}
+
+.cp-variable-sidebar-footer .cp-btn {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+/* Progress Bar */
+
+.cp-loading {
+	background: #FFF;
+	bottom: 0;
+	color: #000;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10000;
+}
+
+.cp-loading + #clayPaverSite {
+	display: none;
+}
+
+.cp-loading-spinner {
+	display: inline-block;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.lds-heart-container {
+	display: inline-block;
+	margin-right: -15px;
+	transform: scale(0.5);
+	vertical-align: middle;
+}
+
+.lds-heart {
+	display: inline-block;
+	height: 64px;
+	position: relative;
+	transform-origin: 32px 32px;
+	transform: rotate(45deg);
+	width: 64px;
+}
+
+.lds-heart .lds-heart-icon {
+	animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+	background: tomato;
+	height: 26px;
+	left: 19px;
+	position: absolute;
+	top: 23px;
+	width: 26px;
+}
+
+.lds-heart .lds-heart-icon:after,
+.lds-heart .lds-heart-icon:before {
+	background: tomato;
+	content: " ";
+	display: block;
+	height: 26px;
+	position: absolute;
+	width: 26px;
+}
+
+.lds-heart .lds-heart-icon:before {
+	border-radius: 50% 0 0 50%;
+	left: -17px;
+}
+
+.lds-heart .lds-heart-icon:after {
+	border-radius: 50% 50% 0 0;
+	top: -17px;
+}
+
+@keyframes lds-heart {
+	0% {
+		transform: scale(0.95);
+	}
+	5% {
+		transform: scale(1.1);
+	}
+	39% {
+		transform: scale(0.85);
+	}
+	45% {
+		transform: scale(1);
+	}
+	60% {
+		transform: scale(0.95);
+	}
+	100% {
+		transform: scale(0.9);
+	}
+}
+
+/* Status Bar */
+
+.cp-status-bar {
+	background-color: rgba(0, 0, 0, 0.75);
+	bottom: 0;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 500;
+	left: 300px;
+	opacity: 0;
+	padding: 6px 20px;
+	position: fixed;
+	right: auto;
+	transition: opacity 0.5s ease;
+	z-index: 9999;
+}

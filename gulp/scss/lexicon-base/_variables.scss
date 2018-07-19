@@ -1,0 +1,995 @@
+$enable-ie9-compatibility: false !default;
+
+$brand-default: #777 !default;
+
+$state-default-bg: $brand-default !default;
+$state-default-border: darken(adjust-hue($state-default-bg, -10), 5%) !default;
+$state-default-text: $gray-dark !default;
+$alert-notification-max-width: 280px !default;
+$breadcrumb-separator-font-family: null !default;
+$breadcrumb-separator-font-weight: null !default;
+$breadcrumb-separator-svg-icon: lx-icon(angle-right, $breadcrumb-color) !default;
+$breadcrumb-separator-svg-icon-height: 0.75em !default;
+$breadcrumb-separator-svg-icon-width: $breadcrumb-separator-svg-icon-height !default;
+
+$breadcrumb-vertical-separator: normal !default;
+
+$breadcrumb-active-font-weight: null !default;
+
+$breadcrumb-font-size: null !default;
+$breadcrumb-font-weight: null !default;
+$breadcrumb-text-transform: null !default;
+
+$breadcrumb-border-radius: null !default;
+$breadcrumb-link-color: null !default;
+$breadcrumb-link-hover-color: null !default;
+
+$breadcrumb-link-hover-text-decoration: null !default;
+$breadcrumb-link-text-decoration: null !default;
+$btn-action-dropdown-spacer: 5px !default;
+$btn-action-size: 34px !default;
+$btn-fixed-spacer-x: 20px !default;
+$btn-fixed-spacer-y: $btn-fixed-spacer-x !default;
+
+$btn-border-width: 1px !default;
+
+$zindex-btn-action: 950 !default;
+$card-border-width: 1px !default;
+$card-divider-height: 1px !default;
+$card-gutter-width: 15px !default;
+$card-margin-bottom: $line-height-computed !default;
+
+$checkbox-left-card-padding: 40px !default;
+$checkbox-right-card-padding: $checkbox-left-card-padding !default;
+
+$checkbox-position: 15px !default;
+
+// Skin
+
+$card-bg: $dropdown-bg !default;
+$card-fallback-border: $dropdown-fallback-border !default;
+$card-border: $dropdown-border !default;
+$card-border-style: solid !default;
+$card-border-radius: $border-radius-base !default;
+$card-box-shadow: null !default;
+
+$card-circle-border-radius: 20px !default;
+$card-rounded-border-radius: 4px !default;
+$card-square-border-radius: 0 !default;
+
+$card-divider-bg: $card-border !default;
+$dropdown-border-style: null !default;
+$dropdown-border-width: 1px !default;
+$dropdown-padding-bottom: null !default;
+$dropdown-padding-left: null !default;
+$dropdown-padding-right: null !default;
+$dropdown-padding-top: null !default;
+
+$dropdown-checkbox-label-spacer: 40px !default;
+$dropdown-radio-label-spacer: $dropdown-checkbox-label-spacer !default;
+
+$dropdown-link-padding: 3px 20px !default;
+
+$dropdown-wide-width: 500px !default;
+
+$dropdown-font-size: null !default;
+$dropdown-header-font-size: $font-size-small !default;
+
+$dropdown-menu-desktop-max-height: 320px !default;
+$dropdown-menu-max-height: 295px !default;
+$dropdown-menu-min-height: null !default;
+
+$dropdown-menu-max-width: null !default;
+$dropdown-menu-min-width: null !default;
+
+// Skin
+
+$dropdown-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175) !default;
+$input-border-bottom-width: 1px !default;
+$input-border-left-width: 1px !default;
+$input-border-right-width: 1px !default;
+$input-border-top-width: 1px !default;
+$input-border-width: $input-border-top-width $input-border-right-width $input-border-bottom-width $input-border-left-width !default;
+
+$input-bg-focus: null !default;
+$input-box-shadow: null !default;
+$input-box-shadow-focus: null !default;
+$input-color-focus: null !default;
+$input-color-placeholder-focus: null !default;
+$input-font-size: null !default;
+$input-padding-horizontal: null !default;
+$input-padding-vertical: null !default;
+
+$input-group-constrain-line-height: $input-height-base - $input-border-top-width - $input-border-bottom-width !default;
+
+$input-group-constrain-lg-line-height: $input-height-large - $input-border-top-width - $input-border-bottom-width !default;
+$input-group-constrain-sm-line-height: $input-height-small - $input-border-top-width - $input-border-bottom-width !default;
+
+$input-border-disabled: null !default;
+$input-color-disabled: null !default;
+$input-color-placeholder-disabled: null !default;
+$input-opacity-disabled: null !default;
+
+$input-label-color: null !default;
+$input-label-focus-color: null !default;
+$input-label-font-size: null !default;
+$input-label-font-weight: null !default;
+$input-label-margin-bottom: null !default;
+
+$input-label-reference-mark-spacer: 0 !default;
+$input-label-reference-mark-vertical-alignment: top !default;
+
+$input-help-block-font-size: null !default;
+
+$input-readonly-bg: null !default;
+$input-readonly-border: null !default;
+$input-readonly-color: null !default;
+$input-readonly-cursor: null !default;
+
+$input-textarea-height: null !default;
+
+$input-group-addon-border-radius: null !default;
+$input-group-addon-border-radius-large: null !default;
+$input-group-addon-border-radius-small: null !default;
+$input-group-addon-color: null !default;
+
+$input-danger-bg: null !default;
+$input-danger-bg-focus: null !default;
+$input-danger-border: null !default;
+$input-danger-border-focus: null !default;
+$input-danger-box-shadow: null !default;
+$input-danger-box-shadow-focus: null !default;
+$input-danger-color: null !default;
+$input-danger-color-focus: null !default;
+
+$input-danger-checkbox-label-color: null !default;
+$input-danger-label-color: null !default;
+
+$input-success-bg: null !default;
+$input-success-bg-focus: null !default;
+$input-success-border: null !default;
+$input-success-border-focus: null !default;
+$input-success-box-shadow: null !default;
+$input-success-box-shadow-focus: null !default;
+$input-success-color: null !default;
+$input-success-color-focus: null !default;
+
+$input-success-checkbox-label-color: null !default;
+$input-success-label-color: null !default;
+
+$input-warning-bg: null !default;
+$input-warning-bg-focus: null !default;
+$input-warning-border: null !default;
+$input-warning-border-focus: null !default;
+$input-warning-box-shadow: null !default;
+$input-warning-box-shadow-focus: null !default;
+$input-warning-color: null !default;
+$input-warning-color-focus: null !default;
+
+$input-warning-checkbox-label-color: null !default;
+$input-warning-label-color: null !default;
+
+$zindex-input-group-hover: 3 !default;
+
+$zindex-input-group-focus: $zindex-input-group-hover + 1 !default; // 4
+$figure-margin-bottom: $line-height-computed !default;
+
+$figure-circle-border-radius: 50% !default;
+$figure-rounded-border-radius: 4px !default;
+$figure-square-border-radius: 0 !default;
+
+$figcaption-font-weight: 300 !default;
+$figcaption-padding-bottom: 10px !default;
+$figcaption-padding-left: 15px !default;
+$figcaption-padding-right: 15px !default;
+$figcaption-padding-top: 10px !default;
+
+$figcaption-padding: $figcaption-padding-top $figcaption-padding-right $figcaption-padding-bottom $figcaption-padding-left !default;
+
+// Skin
+
+$figcaption-bg: #000 !default;
+$figcaption-bg-alpha: 0.7 !default;
+$figcaption-color: #FFF !default;
+
+$figcaption-danger-bg: $brand-danger !default;
+$figcaption-danger-bg-alpha: $figcaption-bg-alpha !default;
+$figcaption-danger-color: $figcaption-color !default;
+
+$figcaption-info-bg: $brand-info !default;
+$figcaption-info-bg-alpha: $figcaption-bg-alpha !default;
+$figcaption-info-color: $figcaption-color !default;
+
+$figcaption-primary-bg: $brand-primary !default;
+$figcaption-primary-bg-alpha: $figcaption-bg-alpha !default;
+$figcaption-primary-color: $figcaption-color !default;
+
+$figcaption-success-bg: $brand-success !default;
+$figcaption-success-bg-alpha: $figcaption-bg-alpha !default;
+$figcaption-success-color: $figcaption-color !default;
+
+$figcaption-warning-bg: $brand-warning !default;
+$figcaption-warning-bg-alpha: $figcaption-bg-alpha !default;
+$figcaption-warning-color: $figcaption-color !default;
+$collapse-icon-padding-left: null !default;
+$collapse-icon-padding-right: 45px !default;
+
+$collapse-icon-position-bottom: null !default;
+$collapse-icon-position-left: null !default;
+$collapse-icon-position-right: 15px !default;
+$collapse-icon-position-top: 10px !default;
+
+$help-icon-default-bg: $input-group-addon-bg !default;
+$help-icon-default-color: lx-color-by-lightness($text-color, $help-icon-default-bg) !default;
+$help-icon-default-hover-color: lx-color-by-lightness($text-color, $help-icon-default-bg, "secondary") !default;
+
+$icon-monospaced-size: 32px !default;
+
+$lexicon-icon-size: 16px !default;
+
+$lexicon-icon-lg-size: 128px !default;
+$lexicon-icon-md-size: 32px !default;
+$lexicon-icon-sm-size: 7px !default;
+$label-font-size: 12px !default;
+$label-font-weight: bold !default;
+$label-lexicon-icon-height: 9px !default;
+$label-lexicon-icon-width: $label-lexicon-icon-height !default;
+$label-padding-bottom: 3px !default;
+$label-padding-left: 7px !default;
+$label-padding-right: 7px !default;
+$label-padding-top: 3px !default;
+
+$label-link-text-decoration: underline !default;
+
+$label-link-hover-text-decoration: none !default;
+
+$label-lg-font-size: 16px !default;
+$label-lg-lexicon-icon-height: 13px !default;
+$label-lg-lexicon-icon-width: $label-lg-lexicon-icon-height !default;
+$label-lg-padding-bottom: 6px !default;
+$label-lg-padding-left: 12px !default;
+$label-lg-padding-right: 12px !default;
+$label-lg-padding-top: 6px !default;
+
+$label-sm-font-size: 9px !default;
+$label-sm-lexicon-icon-height: 5px !default;
+$label-sm-lexicon-icon-width: $label-sm-lexicon-icon-height !default;
+$label-sm-padding-bottom: 2px !default;
+$label-sm-padding-left: 7px !default;
+$label-sm-padding-right: 7px !default;
+$label-sm-padding-top: 2px !default;
+
+$label-border-style: null !default;
+$label-border-width: null !default;
+
+$label-danger-border: null !default;
+$label-danger-color: null !default;
+$label-danger-hover-bg: null !default;
+$label-danger-hover-border: null !default;
+$label-danger-hover-color: null !default;
+
+$label-default-border: null !default;
+$label-default-color: null !default;
+$label-default-hover-bg: null !default;
+$label-default-hover-border: null !default;
+$label-default-hover-color: null !default;
+
+$label-info-border: null !default;
+$label-info-color: null !default;
+$label-info-hover-bg: null !default;
+$label-info-hover-border: null !default;
+$label-info-hover-color: null !default;
+
+$label-primary-border: null !default;
+$label-primary-color: null !default;
+$label-primary-hover-bg: null !default;
+$label-primary-hover-border: null !default;
+$label-primary-hover-color: null !default;
+
+$label-success-border: null !default;
+$label-success-color: null !default;
+$label-success-hover-bg: null !default;
+$label-success-hover-border: null !default;
+$label-success-hover-color: null !default;
+
+$label-warning-border: null !default;
+$label-warning-color: null !default;
+$label-warning-hover-bg: null !default;
+$label-warning-hover-border: null !default;
+$label-warning-hover-color: null !default;
+$badge-font-size: $label-font-size !default;
+$badge-lexicon-icon-height: $label-lexicon-icon-height !default;
+$badge-lexicon-icon-width: $label-lexicon-icon-width !default;
+$badge-padding-bottom: $label-padding-bottom !default;
+$badge-padding-left: $label-padding-left !default;
+$badge-padding-right: $label-padding-right !default;
+$badge-padding-top: $label-padding-top !default;
+
+$badge-link-text-decoration: underline !default;
+
+$badge-link-hover-text-decoration: none !default;
+
+$badge-lg-font-size: $label-lg-font-size !default;
+$badge-lg-lexicon-icon-height: $label-lg-lexicon-icon-height !default;
+$badge-lg-lexicon-icon-width: $label-lg-lexicon-icon-width !default;
+$badge-lg-padding-bottom: $label-lg-padding-bottom !default;
+$badge-lg-padding-left: $label-lg-padding-left !default;
+$badge-lg-padding-right: $label-lg-padding-right !default;
+$badge-lg-padding-top: $label-lg-padding-top !default;
+
+$badge-sm-font-size: $label-sm-font-size !default;
+$badge-sm-lexicon-icon-height: $label-sm-lexicon-icon-height !default;
+$badge-sm-lexicon-icon-width: $label-sm-lexicon-icon-width !default;
+$badge-sm-padding-bottom: $label-sm-padding-bottom !default;
+$badge-sm-padding-left: $label-sm-padding-left !default;
+$badge-sm-padding-right: $label-sm-padding-right !default;
+$badge-sm-padding-top: $label-sm-padding-top !default;
+
+$badge-border-style: null !default;
+$badge-border-width: null !default;
+
+$badge-danger-bg: $brand-danger !default;
+$badge-danger-border: null !default;
+$badge-danger-color: null !default;
+$badge-danger-hover-bg: null !default;
+$badge-danger-hover-border: null !default;
+$badge-danger-hover-color: null !default;
+
+$badge-default-bg: null !default;
+$badge-default-border: null !default;
+// Deprecated `$badge-default-link-color` as of v1.0.16 and will be removed in v2.0.0
+$badge-default-link-color: null !default;
+
+$badge-default-color: $badge-default-link-color !default;
+$badge-default-hover-bg: null !default;
+$badge-default-hover-border: null !default;
+$badge-default-hover-color: null !default;
+
+$badge-info-bg: $brand-info !default;
+$badge-info-border: null !default;
+$badge-info-color: null !default;
+$badge-info-hover-bg: null !default;
+$badge-info-hover-border: null !default;
+$badge-info-hover-color: null !default;
+
+$badge-primary-bg: $brand-primary !default;
+$badge-primary-border: null !default;
+$badge-primary-color: null !default;
+$badge-primary-hover-bg: null !default;
+$badge-primary-hover-border: null !default;
+$badge-primary-hover-color: null !default;
+
+$badge-success-bg: $brand-success !default;
+$badge-success-border: null !default;
+$badge-success-color: null !default;
+$badge-success-hover-bg: null !default;
+$badge-success-hover-border: null !default;
+$badge-success-hover-color: null !default;
+
+$badge-warning-bg: $brand-warning !default;
+$badge-warning-border: null !default;
+$badge-warning-color: null !default;
+$badge-warning-hover-bg: null !default;
+$badge-warning-hover-border: null !default;
+$badge-warning-hover-color: null !default;
+// Structure
+
+$management-bar-border-bottom-width: 1px !default;
+$management-bar-border-left-width: 1px !default;
+$management-bar-border-right-width: 1px !default;
+$management-bar-border-top-width: 1px !default;
+$management-bar-border-width: $management-bar-border-top-width $management-bar-border-right-width $management-bar-border-bottom-width $management-bar-border-left-width !default;
+
+$management-bar-dropdown-menu-margin-top: 0 !default;
+
+$management-bar-height: $navbar-height !default;
+
+$management-bar-margin-bottom: $navbar-margin-bottom !default;
+
+$management-bar-padding-horizontal: $navbar-padding-horizontal !default;
+$management-bar-padding-vertical: ($management-bar-height - $line-height-computed - $management-bar-border-bottom-width - $management-bar-border-top-width) / 2 !default;
+
+$management-bar-btn-padding-horizontal: $management-bar-padding-horizontal !default;
+$management-bar-btn-padding-vertical: ($management-bar-height - $management-bar-border-bottom-width - $management-bar-border-top-width - $icon-monospaced-size - 2) / 2 !default;
+
+$management-bar-toggle-height: 40px + $management-bar-border-bottom-width + $management-bar-border-top-width !default;
+
+// Skin
+
+$management-bar-collapse-bg: $dropdown-bg !default;
+$management-bar-collapse-border: transparent !default;
+
+$management-bar-default-bg: $navbar-default-bg !default;
+$management-bar-default-border: $navbar-default-border !default;
+$management-bar-default-box-shadow: null !default;
+$management-bar-default-color: $navbar-default-color !default;
+
+$management-bar-default-collapse-bg: $management-bar-default-bg !default;
+$management-bar-default-collapse-border: $management-bar-default-border !default;
+
+$management-bar-default-link-color: $navbar-default-link-color !default;
+
+$management-bar-default-link-hover-bg: $navbar-default-link-hover-bg !default;
+$management-bar-default-link-hover-color: $navbar-default-link-hover-color !default;
+
+$management-bar-default-link-active-bg: $navbar-default-link-active-bg !default;
+$management-bar-default-link-active-color: $navbar-default-link-active-color !default;
+
+$management-bar-default-link-disabled-bg: $navbar-default-link-disabled-bg !default;
+$management-bar-default-link-disabled-color: $navbar-default-link-disabled-color !default;
+
+$management-bar-default-btn-default-bg: $management-bar-default-bg !default;
+$management-bar-default-btn-default-border: $management-bar-default-border !default;
+$management-bar-default-btn-default-color: $management-bar-default-link-color !default;
+
+$management-bar-default-btn-default-hover-bg: darken($management-bar-default-btn-default-bg, 10%) !default;
+$management-bar-default-btn-default-hover-border: darken($management-bar-default-btn-default-border, 12%) !default;
+$management-bar-default-btn-default-hover-color: $management-bar-default-btn-default-color !default;
+
+$management-bar-default-btn-default-active-bg: $management-bar-default-btn-default-hover-bg !default;
+$management-bar-default-btn-default-active-border: $management-bar-default-btn-default-hover-border !default;
+$management-bar-default-btn-default-active-color: $management-bar-default-btn-default-hover-color !default;
+$modal-footer-height: 64px !default;
+
+$modal-desktop-footer-height: $modal-footer-height !default;
+
+$modal-header-height: 56px !default;
+
+$modal-desktop-header-height: $modal-header-height !default;
+
+// Skin
+
+$modal-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !default;
+
+$modal-body-bg: transparent !default;
+$modal-body-color: $text-color !default;
+
+$modal-header-bg: transparent !default;
+$modal-header-color: $text-color !default;
+
+$modal-header-close-color: $text-color !default;
+$modal-header-close-icon-opacity: 0.2 !default;
+$modal-header-close-lexicon-icon-opacity: 0.3 !default;
+$modal-header-close-opacity-modifier: 2.66667 !default;
+
+$modal-footer-bg: $modal-header-bg !default;
+$modal-footer-color: $modal-header-color !default;
+
+$modal-inverse-body-bg: $modal-body-bg !default;
+$modal-inverse-body-color: $navbar-inverse-color !default;
+
+$modal-inverse-content-bg: $navbar-inverse-bg !default;
+$modal-inverse-content-border-color: $navbar-inverse-border !default;
+
+$modal-inverse-header-bg: $modal-header-bg !default;
+$modal-inverse-header-border-color: $navbar-inverse-border !default;
+$modal-inverse-header-color: $navbar-inverse-color !default;
+
+$modal-inverse-header-close-color: $navbar-inverse-color !default;
+
+$modal-inverse-footer-bg: $modal-inverse-header-bg !default;
+$modal-inverse-footer-border-color: $modal-inverse-header-border-color !default;
+$modal-inverse-footer-color: $modal-inverse-header-color !default;
+
+$modal-inverse-link-color: $navbar-inverse-link-color !default;
+$modal-inverse-link-hover-color: $navbar-inverse-link-hover-color !default;
+$list-group-border-width: 1px !default;
+$list-group-header-font-weight: 500 !default;
+
+$tabular-list-group-border-width: $list-group-border-width !default;
+$tabular-list-group-item-height: 100px !default;
+$tabular-list-group-vertical-alignment: middle !default;
+
+// Skins
+
+// Deprecated `$list-group-card-active-bg` as of v1.0.11 and will be removed in v2.0.0
+$list-group-card-active-bg: $component-active-bg !default;
+// Deprecated `$list-group-card-active-color` as of v1.0.11 and will be removed in v2.0.0
+$list-group-card-active-color: $component-active-color !default;
+// Deprecated `$list-group-card-checkbox-hidden-icon` as of v1.0.11 and will be removed in v2.0.0
+$list-group-card-checkbox-hidden-icon: '\f00c' !default;
+
+$list-group-box-shadow: null !default;
+
+$list-group-header-bg: $list-group-hover-bg !default;
+$list-group-header-color: $list-group-link-heading-color !default;
+$list-group-header-hover-color: $list-group-header-color !default;
+
+$list-group-item-dropdown-toggle-color: null !default;
+$list-group-item-dropdown-toggle-focus-color: null !default;
+$list-group-item-dropdown-toggle-hover-color: $list-group-item-dropdown-toggle-focus-color !default;
+
+$list-group-item-active-dropdown-toggle-color: $list-group-active-color !default;
+$list-group-item-active-dropdown-toggle-focus-color: null !default;
+$list-group-item-active-dropdown-toggle-hover-color: $list-group-item-active-dropdown-toggle-focus-color !default;
+$loading-icon-color: lighten($btn-primary-bg, 15%) !default;
+$loading-icon-linear-color: lighten($btn-primary-bg, 10%) !default;
+$loading-icon-size: 64px !default;
+$nameplate-label-border-radius: 100px !default;
+$nameplate-label-height: $input-height-base !default;
+
+$nameplate-label-text-font-weight: 500 !default;
+$nameplate-label-text-line-height: 32px !default;
+$nameplate-label-text-max-width: 200px !default;
+
+$nameplate-label-circle-border-radius: 100px !default;
+$nameplate-label-rounded-border-radius: 3px !default;
+$nameplate-label-square-border-radius: 0 !default;
+
+// Skin
+
+$nameplate-subheading-color: $gray-light !default;
+
+$nameplate-label-link-dark-color: #23527C !default;
+$nameplate-label-link-dark-hover-color: darken($nameplate-label-link-dark-color, 15%) !default;
+
+$nameplate-label-default-bg: $navbar-default-bg !default;
+$nameplate-label-default-color: $navbar-default-color !default;
+
+$nameplate-label-inverse-bg: $navbar-inverse-bg !default;
+$nameplate-label-inverse-color: $navbar-inverse-color !default;
+
+$nameplate-label-primary-bg: $label-primary-bg !default;
+$nameplate-label-primary-color: $label-color !default;
+
+$nameplate-label-success-bg: $label-success-bg !default;
+$nameplate-label-success-color: $label-color !default;
+
+$nameplate-label-info-bg: $label-info-bg !default;
+$nameplate-label-info-color: $label-color !default;
+
+$nameplate-label-warning-bg: $label-warning-bg !default;
+$nameplate-label-warning-color: $label-color !default;
+
+$nameplate-label-danger-bg: $label-danger-bg !default;
+$nameplate-label-danger-color: $label-color !default;
+$nav-equal-height-height: 40px !default;
+
+$nav-heading-color: $text-color !default;
+
+$nav-link-padding-horizontal: 15px !default;
+$nav-link-padding-vertical: 10px !default;
+
+$nav-link-padding: $nav-link-padding-vertical $nav-link-padding-horizontal !default;
+
+$nav-nested-link-active-bg: null !default;
+$nav-nested-link-active-color: $link-hover-color !default;
+$nav-nested-margins-margin-horizontal: $navbar-padding-horizontal !default;
+$nav-nested-padding-horizontal: $navbar-padding-horizontal !default;
+$navbar-border-bottom-width: 1px !default;
+$navbar-border-left-width: 1px !default;
+$navbar-border-right-width: 1px !default;
+$navbar-border-top-width: 1px !default;
+$navbar-border-width: $navbar-border-top-width $navbar-border-right-width $navbar-border-bottom-width $navbar-border-left-width !default;
+
+$navbar-form-padding-horizontal: $navbar-padding-horizontal !default;
+$navbar-form-padding-vertical: (($navbar-height - $input-height-base - $navbar-border-bottom-width - $navbar-border-top-width) / 2) !default;
+
+$navbar-toggle-icon-bar-color: $link-color !default;
+
+$navbar-toggle-height: 32px !default;
+
+$zindex-basic-search-close: $zindex-input-group-focus + 1 !default; // 5
+
+// Skin
+
+$navbar-default-collapsible-search-btn-default-bg: null !default;
+$navbar-default-collapsible-search-btn-default-border: null !default;
+$navbar-default-collapsible-search-btn-default-color: null !default;
+
+$navbar-default-collapsible-search-input-bg: null !default;
+$navbar-default-collapsible-search-input-border: null !default;
+$navbar-default-collapsible-search-input-color: null !default;
+$navbar-default-collapsible-search-input-placeholder-color: null !default;
+
+$navbar-inverse-collapsible-search-btn-default-bg: null !default;
+$navbar-inverse-collapsible-search-btn-default-border: null !default;
+$navbar-inverse-collapsible-search-btn-default-color: null !default;
+
+$navbar-inverse-collapsible-search-input-bg: null !default;
+$navbar-inverse-collapsible-search-input-border: null !default;
+$navbar-inverse-collapsible-search-input-color: null !default;
+$navbar-inverse-collapsible-search-input-placeholder-color: null !default;
+$pagination-border-width: 1px !default;
+
+$pagination-item-padding-bottom: $padding-base-vertical !default;
+$pagination-item-padding-left: $padding-base-horizontal !default;
+$pagination-item-padding-right: $padding-base-horizontal !default;
+$pagination-item-padding-top: $padding-base-vertical !default;
+
+$pagination-item-padding: $pagination-item-padding-top $pagination-item-padding-right $pagination-item-padding-bottom $pagination-item-padding-left !default;
+
+$pagination-line-height: $line-height-base !default;
+
+$pagination-sm-font-size: $font-size-small !default;
+$pagination-sm-line-height: $line-height-small !default;
+
+$pagination-sm-item-padding-bottom: $padding-small-vertical !default;
+$pagination-sm-item-padding-left: $padding-small-horizontal !default;
+$pagination-sm-item-padding-right: $padding-small-horizontal !default;
+$pagination-sm-item-padding-top: $padding-small-vertical !default;
+
+$pagination-sm-item-padding: $pagination-sm-item-padding-top $pagination-sm-item-padding-right $pagination-sm-item-padding-bottom $pagination-sm-item-padding-left !default;
+
+$pagination-lg-font-size: $font-size-large !default;
+$pagination-lg-line-height: $line-height-large !default;
+
+$pagination-lg-item-padding-bottom: $padding-large-vertical !default;
+$pagination-lg-item-padding-left: $padding-large-horizontal !default;
+$pagination-lg-item-padding-right: $padding-large-horizontal !default;
+$pagination-lg-item-padding-top: $padding-large-vertical !default;
+
+$pagination-lg-item-padding: $pagination-lg-item-padding-top $pagination-lg-item-padding-right $pagination-lg-item-padding-bottom $pagination-lg-item-padding-left !default;
+
+// Skin
+
+$pagination-border-radius: $border-radius-base !default;
+$pagination-lg-border-radius: $border-radius-large !default;
+$pagination-sm-border-radius: $border-radius-small !default;
+
+$pagination-items-per-page-bg: null !default;
+$pagination-items-per-page-border: transparent !default;
+$pagination-items-per-page-color: null !default;
+
+$pagination-results-color: null !default;
+$panel-border-bottom-width: 1px !default;
+$panel-border-left-width: 1px !default;
+$panel-border-right-width: 1px !default;
+$panel-border-top-width: 1px !default;
+$panel-border-width: $panel-border-top-width $panel-border-right-width $panel-border-bottom-width $panel-border-left-width !default;
+
+$panel-footer-border-top-width: 1px !default;
+
+$panel-heading-border-bottom-width: 1px !default;
+
+$panel-title-font-size: 1em !default;
+$panel-title-font-weight: 500 !default;
+
+$panel-group-panel-spacer: null !default;
+
+$panel-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) !default;
+
+$panel-blank-border: transparent !default;
+$panel-blank-heading-bg: transparent !default;
+$panel-blank-text: $text-color !default;
+
+$panel-danger-footer-bg: $panel-danger-heading-bg !default;
+$panel-danger-footer-border: $panel-danger-border !default;
+$panel-danger-footer-text: $panel-danger-text !default;
+
+$panel-default-footer-bg: $panel-default-heading-bg !default;
+$panel-default-footer-border: $panel-default-border !default;
+$panel-default-footer-text: $panel-default-text !default;
+
+$panel-info-footer-bg: $panel-info-heading-bg !default;
+$panel-info-footer-border: $panel-info-border !default;
+$panel-info-footer-text: $panel-info-text !default;
+
+$panel-primary-footer-bg: $panel-primary-heading-bg !default;
+$panel-primary-footer-border: $panel-primary-border !default;
+$panel-primary-footer-text: $panel-primary-text !default;
+
+$panel-success-footer-bg: $panel-success-heading-bg !default;
+$panel-success-footer-border: $panel-success-border !default;
+$panel-success-footer-text: $panel-success-text !default;
+
+$panel-warning-footer-bg: $panel-warning-heading-bg !default;
+$panel-warning-footer-border: $panel-warning-border !default;
+$panel-warning-footer-text: $panel-warning-text !default;
+$multi-step-progress-bar-active-icon: "\f111" !default;
+$multi-step-progress-bar-complete-icon: "\f00c" !default;
+$multi-step-progress-bar-icon: "\f10c" !default;
+
+$multi-step-progress-bar-color: #BBB !default;
+
+$multi-step-progress-bar-active-color: $brand-primary !default;
+
+$multi-step-progress-bar-complete-color: $gray !default;
+$multi-step-progress-bar-complete-icon-color: $brand-primary !default;
+
+$multi-step-progress-bar-divider-height: 1px !default;
+
+$multi-step-progress-bar-fixed-width: 100px !default;
+
+$progress-box-shadow: null !default;
+
+$progress-bar-box-shadow: null !default;
+$progress-bar-font-size: null !default;
+$progress-bar-height: null !default;
+
+$progress-bar-xs-border-radius: 2px !default;
+$progress-bar-xs-font-size: 8px !default;
+$progress-bar-xs-height: 8px !default;
+
+$progress-bar-lg-border-radius: $border-radius-base !default;
+$progress-bar-lg-font-size: 14px !default;
+$progress-bar-lg-height: 32px !default;
+
+$progress-bar-xl-border-radius: $border-radius-large !default;
+$progress-bar-xl-font-size: 18px !default;
+$progress-bar-xl-height: 52px !default;
+$toolbar-group-height: 34px !default;
+
+// Deprecated `$toolbar-group-padding-horizontal` as of v1.0.11 and will be removed in v2.0.0
+$toolbar-group-padding-horizontal: floor(($grid-gutter-width / 2)) !default;
+
+$header-toolbar-height: $navbar-height !default;
+$header-toolbar-margin-bottom: $line-height-computed !default;
+
+// Deprecated `$header-toolbar-padding-horizontal` as of v1.0.11 and will be removed in v2.0.0
+$header-toolbar-padding-horizontal: floor(($grid-gutter-width / 2)) !default;
+
+$header-toolbar-default-border-width: 1px !default;
+
+// Skin
+
+$header-toolbar-border-radius: $navbar-border-radius !default;
+
+$header-toolbar-default-bg: $navbar-default-bg !default;
+$header-toolbar-default-border: $navbar-default-border !default;
+$header-toolbar-default-color: $navbar-default-color !default;
+
+$header-toolbar-default-link-color: $navbar-default-link-color !default;
+$header-toolbar-default-link-hover-bg: $navbar-default-link-hover-bg !default;
+$header-toolbar-default-link-hover-color: $navbar-default-link-hover-color !default;
+$sidenav-transition: all 0.5s ease !default;
+$sidenav-width: 320px !default;
+$zindex-sidenav: $zindex-navbar-fixed + 5 !default;
+$sidebar-padding-bottom: 24px !default;
+$sidebar-padding-left: 24px !default;
+$sidebar-padding-right: 24px !default;
+$sidebar-padding-top: 24px !default;
+
+$sidebar-padding: $sidebar-padding-top $sidebar-padding-right $sidebar-padding-bottom $sidebar-padding-left !default;
+
+$sidebar-navbar-gutter-left: lx-sidebar-navbar-gutter($sidebar-padding-left) !default;
+$sidebar-navbar-gutter-right: lx-sidebar-navbar-gutter($sidebar-padding-right) !default;
+
+// Skin
+
+$sidebar-default-bg: $navbar-default-bg !default;
+$sidebar-default-border: $navbar-default-border !default;
+$sidebar-default-color: $navbar-default-color !default;
+$sidebar-default-panel-bg: $navbar-default-link-active-bg !default;
+
+$sidebar-default-header-actions-link-color: $navbar-default-link-color !default;
+$sidebar-default-header-actions-link-hover-color: $navbar-default-link-hover-color !default;
+$sidebar-default-header-title-color: $navbar-default-link-color !default;
+$sidebar-default-header-title-hover-color: $navbar-default-link-hover-color !default;
+
+$sidebar-inverse-bg: $navbar-inverse-bg !default;
+$sidebar-inverse-border: $navbar-inverse-border !default;
+$sidebar-inverse-color: $navbar-inverse-color !default;
+$sidebar-inverse-panel-bg: $navbar-inverse-link-active-bg !default;
+
+$sidebar-inverse-header-actions-link-color: $navbar-inverse-link-color !default;
+$sidebar-inverse-header-actions-link-hover-color: $navbar-inverse-link-hover-color !default;
+$sidebar-inverse-header-title-color: $navbar-inverse-link-color !default;
+$sidebar-inverse-header-title-hover-color: $navbar-inverse-link-hover-color !default;
+$sticker-border-radius: null !default;
+
+$sticker-circle-border-radius: 100px !default;
+$sticker-rounded-border-radius: 4px !default;
+$sticker-square-border-radius: 0 !default;
+
+$sticker-color: $label-color !default;
+$sticker-font-size: $label-font-size !default;
+$sticker-gutter-width: $grid-gutter-width / 2 !default;
+$sticker-monospaced-size: $icon-monospaced-size !default; // 32px
+
+$sticker-lg-font-size: $label-lg-font-size !default;
+$sticker-lg-monospaced-size: ceil($sticker-monospaced-size * 1.375) !default; // 44px
+
+$sticker-sm-font-size: $label-sm-font-size !default;
+$sticker-sm-monospaced-size: ceil($sticker-monospaced-size * 0.6875) !default; // 22px
+
+// Skin
+
+$sticker-danger-bg: $label-danger-bg !default;
+$sticker-danger-color: null !default;
+$sticker-default-bg: $label-default-bg !default;
+$sticker-default-color: null !default;
+$sticker-info-bg: $label-info-bg !default;
+$sticker-info-color: null !default;
+$sticker-primary-bg: $label-primary-bg !default;
+$sticker-primary-color: null !default;
+$sticker-success-bg: $label-success-bg !default;
+$sticker-success-color: null !default;
+$sticker-warning-bg: $label-warning-bg !default;
+$sticker-warning-color: null !default;
+$table-cell-gutters: floor($grid-gutter-width / 2) !default; // 15px
+
+$table-header-font-size: null !default;
+$table-header-font-weight: null !default;
+$table-header-min-height: 36px !default;
+
+$table-list-content-height: 50px !default;
+
+$table-list-row-active-border-bottom-width: 1px !default;
+$table-list-row-active-border-color: $table-border-color !default;
+$table-list-row-border-bottom-width: 1px !default;
+$table-list-row-border-color: $table-border-color !default;
+
+$table-list-row-height: 55px !default;
+
+$table-list-body-row-bg: null !default;
+$table-list-color: null !default;
+$table-list-font-size: null !default;
+$table-list-link-color: null !default;
+$table-list-link-color-hover: null !default;
+
+$table-list-header-bg: null !default;
+$table-list-header-border-bottom-width: 0 !default;
+$table-list-header-font-size: null !default;
+$table-list-header-font-weight: null !default;
+$table-list-header-min-height: null !default;
+$table-list-header-vertical-alignment: null !default;
+$timeline-border: $panel-inner-border !default;
+$timeline-border-width: 2px !default;
+
+$timeline-border-modifier: ceil($timeline-border-width / 2);
+
+$timeline-icon-active-bg: $component-active-bg !default;
+$timeline-icon-active-border: $timeline-icon-active-bg !default;
+
+$timeline-icon-bg: $body-bg !default;
+$timeline-icon-border: $timeline-border !default;
+$timeline-icon-border-radius: 50% !default;
+$timeline-icon-border-width: 2px !default;
+$timeline-icon-size: 10px !default;
+
+$timeline-increment-label-color: $text-color !default;
+
+// Sizes
+
+$timeline-inner-spacing: 35px !default;
+$timeline-outer-spacing: 20px !default;
+
+$timeline-item-padding-bottom: 5px !default;
+$timeline-item-padding-top: 5px !default;
+// Toggle Card Settings
+$toggle-card-height: 78px !default;
+$toggle-card-width: 69px !default;
+
+$toggle-card-padding-horizontal: 4px !default;
+$toggle-card-padding-vertical: 4px !default;
+
+$toggle-card-border-radius: 4px !default;
+
+$toggle-card-box-shadow: none !default;
+
+$toggle-card-icon-border-radius: 30px !default;
+$toggle-card-icon-font-size: 16px !default;
+$toggle-card-icon-height: 32px !default;
+$toggle-card-icon-width: 32px !default;
+
+// Toggle Card Off Styles
+$toggle-card-bg: $input-bg !default;
+$toggle-card-border: $input-border !default;
+$toggle-card-border-width: 1px !default;
+$toggle-card-icon-bg: transparent !default;
+$toggle-card-icon-border: #869CAD !default;
+$toggle-card-icon-border-width: 0 !default;
+$toggle-card-text-color: $text-color !default;
+
+// Toggle Card On Styles
+$toggle-card-on-bg: $body-bg !default;
+$toggle-card-on-border: $brand-primary !default;
+$toggle-card-on-border-width: 1px !default;
+$toggle-card-on-icon-bg: transparent !default;
+$toggle-card-on-icon-border: $toggle-card-on-border !default;
+$toggle-card-on-icon-border-width: 0 !default;
+$toggle-card-on-text-color: $brand-primary !default;
+$toggle-switch-transition: all 100ms ease-in !default;
+
+// must all be same units--start
+$toggle-switch-bar-padding: 0 !default; // space between button and bar, can be negative value
+$toggle-switch-button-width: 25px !default;
+
+$toggle-switch-bar-height: ($toggle-switch-bar-padding * 2) + $toggle-switch-button-width !default;
+$toggle-switch-bar-width: 50px !default; // width of switch bar
+// must all be same units--end
+
+$toggle-switch-bar-border-radius: 3px !default;
+$toggle-switch-bar-border-width: 1px !default;
+$toggle-switch-bar-focus-box-shadow: 0 0 3px 2px #66AFE6 !default;
+$toggle-switch-bar-font-size: 12px !default;
+
+$toggle-switch-button-border-width: 1px !default;
+$toggle-switch-button-font-size: $toggle-switch-bar-font-size !default;
+
+// Toggle Switch Off
+$toggle-switch-bar-bg: $input-group-addon-bg !default;
+$toggle-switch-bar-border-color: $input-group-addon-border-color !default;
+$toggle-switch-bar-icon-color: $input-color !default;
+
+$toggle-switch-button-bg: $input-bg !default;
+$toggle-switch-button-border-color: $input-group-addon-border-color !default;
+$toggle-switch-button-border-radius: 3px 0 0 3px !default;
+$toggle-switch-button-icon-color: $input-color !default;
+
+// Toggle Switch On
+$toggle-switch-bar-on-bg: $brand-primary !default;
+$toggle-switch-bar-on-border-color: $toggle-switch-bar-on-bg !default;
+$toggle-switch-bar-on-icon-color: #FFF !default;
+
+$toggle-switch-button-on-bg: #FFF !default;
+$toggle-switch-button-on-border-color: $toggle-switch-bar-on-bg !default;
+$toggle-switch-button-on-border-radius: 0 3px 3px 0 !default;
+$toggle-switch-button-on-icon-color: $toggle-switch-bar-on-bg !default;
+// Deprecated `$tooltip-inner-max-width` as of v1.0.11 and will be removed in v2.0.0
+// use `$tooltip-max-width` instead
+$tooltip-inner-max-width: $tooltip-max-width !default;
+$reference-mark-font-size: 0.76em !default;
+
+$blockquote-xs-border-width: 1px !default;
+$blockquote-xs-font-size: $blockquote-font-size * 0.7 !default;
+
+$blockquote-sm-border-width: 3px !default;
+$blockquote-sm-font-size: $blockquote-font-size * 0.8 !default;
+
+$blockquote-lg-border-width: 8px !default;
+$blockquote-lg-font-size: $blockquote-font-size * 1.5 !default;
+
+// Skin
+
+$blockquote-danger-color: $brand-danger !default;
+$blockquote-default-color: $brand-default !default;
+$blockquote-info-color: $brand-info !default;
+$blockquote-primary-color: $brand-primary !default;
+$blockquote-success-color: $brand-success !default;
+$blockquote-warning-color: $brand-warning !default;
+$user-icon-xs-font-size: 8px !default;
+$user-icon-xs-size: 16px !default;
+
+$user-icon-xs-desktop-font-size: 8px !default;
+$user-icon-xs-desktop-size: 22px !default;
+
+$user-icon-sm-font-size: 9px !default;
+$user-icon-sm-size: 22px !default;
+
+$user-icon-sm-desktop-font-size: $font-size-small !default; // 12px
+$user-icon-sm-desktop-size: 30px !default;
+
+$user-icon-font-size: $font-size-base !default; // 14px
+$user-icon-size: 34px !default;
+
+$user-icon-lg-font-size: 13px !default;
+$user-icon-lg-size: 34px !default;
+
+$user-icon-lg-desktop-font-size: $font-size-large !default; // 18px
+$user-icon-lg-desktop-size: 45px !default;
+
+$user-icon-xl-font-size: 22px !default;
+$user-icon-xl-size: 48px !default;
+
+$user-icon-xl-desktop-font-size: 30px !default;
+$user-icon-xl-desktop-size: 64px !default;
+
+$user-icon-xl-desktop-font-size: 30px !default;
+$user-icon-xl-desktop-size: 64px !default;
+
+$user-icon-xxl-font-size: 37px !default;
+$user-icon-xxl-size: 96px !default;
+
+$user-icon-xxl-desktop-font-size: 50px !default;
+$user-icon-xxl-desktop-size: 128px !default;
+
+$user-icon-border-radius: 500px !default;
+$user-icon-circle-border-radius: 500px !default;
+$user-icon-rounded-border-radius: $border-radius-base !default;
+$user-icon-square-border-radius: 0 !default;
+
+// Skin
+
+$user-icon-default-bg: $gray-light !default;
+
+$user-icon-primary-bg: $brand-primary !default;
+
+$user-icon-info-bg: $brand-info !default;
+
+$user-icon-success-bg: $brand-success !default;
+
+$user-icon-warning-bg: $brand-warning !default;
+
+$user-icon-danger-bg: $brand-danger !default;
