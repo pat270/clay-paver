@@ -1,3 +1,6 @@
+function ClayPaver() {
+}
+
 $(function() {
 	var cpSpinnerTPL = '<div class="cp-loading"><div class="cp-loading-spinner"><div class="lds-heart-container"><div class="lds-heart"><div class="lds-heart-icon"></div></div></div><span class="cp-loading-msg">Loading...</span></div></div>';
 
@@ -5,8 +8,28 @@ $(function() {
 
 	// Local Forage
 
-	var currentTheme = localforage.createInstance({
-	  name: "default-theme"
+	var dbName = 'cpDB';
+	var tableName = 'defaultTheme';
+
+	cpDB = localforage.createInstance({
+		name: dbName,
+		storeName: tableName
+	});
+
+	cpDBThemes = localforage.createInstance({
+		name: dbName,
+		storeName: 'themes'
+	});
+
+	cpDBThemes.getItem('currentTheme').then(function(value) {
+		if (!value) {
+			cpDBThemes.setItem(tableName, tableName);
+			cpDBThemes.setItem('currentTheme', tableName).then(function() {
+				cpDBThemes.getItem('currentTheme').then(function(value) {
+					console.log(value);
+				});
+			});
+		}
 	});
 
 	// ClayPaver
@@ -51,49 +74,63 @@ $(function() {
 		'blockquote':					'bk',
 	};
 
-	function ClayPaver() {
-	}
-
 	ClayPaver.compileSass = function() {
 		var sbVariableGroup = '';
 
-		currentTheme.iterate(function(value, key, iterationNumber) {
-			for (var item in value) {
-				if (value[item] !== '') {
-					sbVariableGroup = sbVariableGroup + '$' + item + ': ' + value[item] + ';';
+		cpDBThemes.getItem('currentTheme').then(function(value) {
+			cpDB.config({
+				name: 'cpDB',
+				storeName: value
+			});
+
+			cpDB = localforage.createInstance({
+				name: 'cpDb',
+				storeName: value
+			});
+
+			cpDB.iterate(function(value, key, iterationNumber) {
+				for (var item in value) {
+					if (value[item] !== '') {
+						sbVariableGroup = sbVariableGroup + '$' + item + ': ' + value[item] + ';';
+					}
 				}
-			}
-		}).then(function() {
-			var atlasFontAwesome = $('#atlasFontAwesome');
+			}).then(function() {
+				var atlasFontAwesome = $('#atlasFontAwesome');
 
-			sass.writeFile('_custom-variables.scss', sbVariableGroup);
-
-			if (atlasFontAwesome.length) {
-				setTimeout(function() {
-					ClayPaver.showStatusBar('Compiling Sass...');
-				}, 750);
-			}
-
-			sass.compile('@import "custom-variables"; @import "atlas-all";', function(result) {
-				$('.cp-loading .cp-loading-msg').text('');
+				sass.writeFile('_custom-variables.scss', sbVariableGroup);
 
 				if (atlasFontAwesome.length) {
-					$('#atlasFontAwesome').html(result.text);
-				}
-				else {
-					$('head').prepend('<style id="atlasFontAwesome">' + result.text + '</style>');
-				}
-
-				if (result.status) {
-					console.log(result.formatted);
+					setTimeout(function() {
+						ClayPaver.showStatusBar('Compiling ' + value + ' Sass...');
+					}, 750);
 				}
 
-				$('.cp-loading').remove();
+				sass.compile('@import "custom-variables"; @import "atlas-all";', function(result) {
+					$('.cp-loading .cp-loading-msg').text('');
 
-				ClayPaver.removeStatusBar();
+					if (atlasFontAwesome.length) {
+						$('#atlasFontAwesome').html(result.text);
+					}
+					else {
+						$('head').prepend('<style id="atlasFontAwesome">' + result.text + '</style>');
+					}
 
-				Turbolinks.clearCache();
+					if (result.status) {
+						setTimeout(function() {
+							ClayPaver.showStatusBar('There was an error, check the browser console.');
+						}, 750);
+
+						console.log(result.formatted);
+					}
+
+					$('.cp-loading').remove();
+
+					ClayPaver.removeStatusBar();
+
+					Turbolinks.clearCache();
+				});
 			});
+
 		});
 	};
 
@@ -104,13 +141,26 @@ $(function() {
 	ClayPaver.populateForm = function() {
 		var formId = $('.cp-variables-form').attr('id');
 
-		currentTheme.getItem(compileOrder[formId]).then(function(value) {
-			for (var item in value) {
-				$('#' + item).val(value[item]);
-			}
-		}).catch(function(err) {
-			console.log(err);
-		});
+		if ($('.cp-variables-form').length) {
+			$('.cp-variables-form .cp-form-control').val('');
+
+			cpDBThemes.getItem('currentTheme').then(function(value) {
+				cpDB.config().storeName = value;
+
+				cpDB = localforage.createInstance({
+					name: 'cpDb',
+					storeName: value
+				});
+
+				cpDB.getItem(compileOrder[formId]).then(function(value) {
+					for (var item in value) {
+						$('#' + item).val(value[item]);
+					}
+				}).catch(function(err) {
+					console.log(err);
+				});
+			});
+		}
 	};
 
 	ClayPaver.setVariableGroup = function(groupId, formValues) {
@@ -126,13 +176,39 @@ $(function() {
 
 			// last item in loop
 			if (i === (formValues.length - 1)) {
-				currentTheme.setItem(
+				cpDB.setItem(
 					groupId, variableGroup
 				).then(function() {
 					ClayPaver.compileSass();
 				});
 			}
 		}
+	};
+
+	ClayPaver.listThemes = function() {
+		cpDBThemes.iterate(function(value, key, iterationNumber) {
+			console.log(key + ': ' + value);
+		});
+	};
+
+	ClayPaver.updateSwitchThemesDD = function() {
+		$('#cpSwitchThemes + .clay-paver-dropdown-menu li:not(:first-child)').remove();
+
+		cpDBThemes.iterate(function(value, key, iterationNumber) {
+			var liTPL = '';
+
+			if (key !== 'currentTheme') {
+				liTPL = '<li><a class="clay-paver-page-link" data-theme="' + value + '" data-toggle="switch-theme" href="">' + value + '</a></li>';
+			}
+
+			$('#cpSwitchThemes').closest('.dropdown').find('.clay-paver-dropdown-menu').append(liTPL);
+		});
+	};
+
+	ClayPaver.updateThemeName = function () {
+		cpDBThemes.getItem('currentTheme').then(function(value) {
+			$('#cpThemeName').text(value);
+		});
 	};
 
 	ClayPaver.removeStatusBar = function() {
@@ -186,29 +262,55 @@ $(function() {
 	doc.on('click', '#cpDataClearAll', function(event) {
 		event.preventDefault();
 
-		if (confirm('Do you want to clear ALL site data?')) {
-			currentTheme.clear().then(function() {
-				ClayPaver.showStatusBar('Dropped All site data.');
-				ClayPaver.populateForm();
+		if (confirm('Do you want to DELETE ALL site data?')) {
+			// Local Forage hack bc docs suck...
+			cpDB.clear().then(function() {
+				location.reload();
 			});
 
-			ClayPaver.compileSass();
+			cpDB.dropInstance({ name: dbName });
 		}
 	});
 
 	doc.on('click', '#cpDataClearCurrent', function(event) {
 		event.preventDefault();
 
-		if (confirm('Do you want to clear your current theme\'s site data?')) {
-			currentTheme.dropInstance({
-				name: 'default-theme'
-			}).then(function() {
-				ClayPaver.showStatusBar('Dropped Current Theme.');
-				ClayPaver.populateForm();
-			});
+		cpDBThemes.getItem('currentTheme').then(function(value) {
+			if (confirm('Do you want to DELETE: ' + value + ' ?')) {
+				cpDB.clear().then(function() {
+					ClayPaver.showStatusBar('Deleting ' + value + '...');
 
-			ClayPaver.compileSass();
-		}
+					cpDBThemes.setItem('currentTheme', 'defaultTheme').then(function(value) {
+						ClayPaver.populateForm();
+						ClayPaver.compileSass();
+						ClayPaver.updateThemeName();
+					});
+				});
+
+				if (value !== 'defaultTheme') {
+					cpDBThemes.removeItem(value);
+				}
+			}
+		});
+	});
+
+	doc.on('submit', '#addNewTheme', function(event) {
+		event.preventDefault();
+
+		var formValues = $(this).serializeArray();
+
+		$(this).find('.cp-form-control').val('');
+
+		cpDBThemes.setItem(formValues[0].value, formValues[0].value).then(function(value) {
+			ClayPaver.showStatusBar('Switching theme to: ' + value + '...');
+			ClayPaver.updateSwitchThemesDD();
+
+			cpDBThemes.setItem('currentTheme', value).then(function() {
+				ClayPaver.populateForm();
+				ClayPaver.compileSass();
+				ClayPaver.updateThemeName();
+			});
+		});
 	});
 
 	doc.on('click', '#downloadVariables', function(event) {
@@ -217,7 +319,7 @@ $(function() {
 		var instance = $(this);
 		var sbVariableGroup = '';
 
-		currentTheme.iterate(function(value, key, iterationNumber) {
+		cpDB.iterate(function(value, key, iterationNumber) {
 			for (var item in value) {
 				if (value[item] !== '') {
 					sbVariableGroup = sbVariableGroup + '$' + item + ': ' + value[item] + ';\n';
@@ -265,7 +367,27 @@ $(function() {
 		}
 	});
 
+	doc.on('click', '[data-toggle="switch-theme"]', function(event) {
+		event.preventDefault();
+
+		var themeName = $(this).data('theme');
+
+		cpDBThemes.setItem('currentTheme', themeName).then(function(value) {
+			ClayPaver.showStatusBar('Loading: ' + value);
+			ClayPaver.populateForm();
+			ClayPaver.compileSass();
+			ClayPaver.updateThemeName();
+		});
+	});
+
+	doc.on('click', '#cpSwitchThemes', function(event) {
+		ClayPaver.updateSwitchThemesDD();
+	});
+
+	// Populate Form
+
 	doc.on('turbolinks:load', function() {
 		ClayPaver.populateForm();
+		ClayPaver.updateThemeName();
 	});
 });

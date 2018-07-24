@@ -15,76 +15,96 @@
 </head>
 <body>
 	<div id="clayPaverSite">
+		<div class="cp-app-navigation">
+			<a class="cp-app-navigation-link" href="/">Clay Paver</a>
+			<span class="cp-label cp-label-default cp-app-label" id="cpThemeName"></span>
+			<div class="dropdown">
+				<button aria-expanded="false" class="cp-btn cp-btn-secondary" data-toggle="dropdown" type="button">Navigation</button>
+				<ul class="clay-paver-dropdown-menu">
+					<li><a class="clay-paver-page-link" href="/">Home</a></li>
+					<li><a class="clay-paver-page-link" href="/alert">Alert</a></li>
+					<li><a class="clay-paver-page-link" href="/label">Label</a></li>
+					<li><a class="clay-paver-page-link" href="/badge">Badge</a></li>
+					<li><a class="clay-paver-page-link" href="/sticker">Sticker</a></li>
+					<li><a class="clay-paver-page-link" href="/button">Button</a></li>
+					<li><a class="clay-paver-page-link" href="/breadcrumb">Breadcrumb</a></li>
+					<li><a class="clay-paver-page-link" href="/card">Card</a></li>
+					<li><a class="clay-paver-page-link" href="/dropdown">Dropdown</a></li>
+					<li><a class="clay-paver-page-link" href="/figure">Figure</a></li>
+					<li><a class="clay-paver-page-link" href="/input">Input</a></li>
+					<li><a class="clay-paver-page-link" href="/input-sizes">Input Sizes</a></li>
+					<li><a class="clay-paver-page-link" href="/input-disabled">Input Disabled</a></li>
+					<li><a class="clay-paver-page-link" href="/input-readonly">Input Readonly</a></li>
+					<li><a class="clay-paver-page-link" href="/input-validation">Input Validation</a></li>
+					<li><a class="clay-paver-page-link" href="/list-group">List Group</a></li>
+					<li><a class="clay-paver-page-link" href="/modal">Modal</a></li>
+					<li><a class="clay-paver-page-link" href="/nameplate">Nameplate</a></li>
+					<li><a class="clay-paver-page-link" href="/nav">Nav</a></li>
+					<li><a class="clay-paver-page-link" href="/nav-pills">Nav Pills</a></li>
+					<li><a class="clay-paver-page-link" href="/nav-tabs">Nav Tabs</a></li>
+					<li><a class="clay-paver-page-link" href="/navbar">Navbar</a></li>
+					<li><a class="clay-paver-page-link" href="/management-bar">Management Bar</a></li>
+					<li><a class="clay-paver-page-link" href="/pager">Pager</a></li>
+					<li><a class="clay-paver-page-link" href="/pagination">Pagination</a></li>
+					<li><a class="clay-paver-page-link" href="/panel">Panel</a></li>
+					<li><a class="clay-paver-page-link" href="/popover">Popover</a></li>
+					<li><a class="clay-paver-page-link" href="/progress-bar">Progress Bar</a></li>
+					<li><a class="clay-paver-page-link" href="/multi-step-progress-bar">Multi Step Progress Bar</a></li>
+					<li><a class="clay-paver-page-link" href="/sidebar">Sidebar</a></li>
+					<li><a class="clay-paver-page-link" href="/table">Table</a></li>
+					<li><a class="clay-paver-page-link" href="/tooltip">Tooltip</a></li>
+					<li><a class="clay-paver-page-link" href="/timeline">Timeline</a></li>
+					<li><a class="clay-paver-page-link" href="/toggle-card">Toggle Card</a></li>
+					<li><a class="clay-paver-page-link" href="/toggle-switch">Toggle Switch</a></li>
+					<li><a class="clay-paver-page-link" href="/user-icon">User Icon</a></li>
+					<li><a class="clay-paver-page-link" href="/blockquote">Blockquote</a></li>
+				</ul>
+			</div>
+
+			<div class="dropdown">
+				<button aria-expanded="false" class="cp-btn cp-btn-secondary" data-toggle="dropdown" id="cpSwitchThemes" type="button">Switch Themes</button>
+				<ul class="clay-paver-dropdown-menu">
+					<li>
+						<form action="/" id="addNewTheme">
+							<label class="cp-control-label">
+								Add New Theme
+								<input class="cp-form-control" name="theme-name" type="text">
+								<button class="cp-btn cp-btn-primary" type="submit">Add</button>
+							</label>
+						</form>
+					</li>
+				</ul>
+			</div>
+
+			<div class="dropdown">
+				<button aria-expanded="false" class="cp-btn cp-btn-secondary" data-toggle="dropdown" type="button">Options</button>
+				<ul class="clay-paver-dropdown-menu">
+					<li>
+						<a class="clay-paver-dropdown-link" href="" id="cpDataClearCurrent" role="button">Delete Current Theme</a>
+					</li>
+					<li>
+						<a class="clay-paver-dropdown-link" href="" id="cpDataClearAll" role="button">Delete Everything</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
 		<div id="content">
 			<div class="container-fluid">
-				<form class="cp-variables-form" id="<%= page %>">
-					<div class="cp-variable-sidebar">
-						<div class="cp-variable-sidebar-header">
-							<div class="dropdown">
-								<button aria-expanded="false" class="cp-btn cp-btn-secondary" data-toggle="dropdown" type="button">Navigation</button>
-								<ul class="clay-paver-dropdown-menu">
-									<li><a class="clay-paver-page-link" href="/">Home</a></li>
-									<li><a class="clay-paver-page-link" href="/alert">Alert</a></li>
-									<li><a class="clay-paver-page-link" href="/label">Label</a></li>
-									<li><a class="clay-paver-page-link" href="/badge">Badge</a></li>
-									<li><a class="clay-paver-page-link" href="/button">Button</a></li>
-									<li><a class="clay-paver-page-link" href="/breadcrumb">Breadcrumb</a></li>
-									<li><a class="clay-paver-page-link" href="/card">Card</a></li>
-									<li><a class="clay-paver-page-link" href="/dropdown">Dropdown</a></li>
-									<li><a class="clay-paver-page-link" href="/figure">Figure</a></li>
-									<li><a class="clay-paver-page-link" href="/input">Input</a></li>
-									<li><a class="clay-paver-page-link" href="/input-sizes">Input Sizes</a></li>
-									<li><a class="clay-paver-page-link" href="/input-disabled">Input Disabled</a></li>
-									<li><a class="clay-paver-page-link" href="/input-readonly">Input Readonly</a></li>
-									<li><a class="clay-paver-page-link" href="/input-validation">Input Validation</a></li>
-									<li><a class="clay-paver-page-link" href="/list-group">List Group</a></li>
-									<li><a class="clay-paver-page-link" href="/modal">Modal</a></li>
-									<li><a class="clay-paver-page-link" href="/nameplate">Nameplate</a></li>
-									<li><a class="clay-paver-page-link" href="/nav">Nav</a></li>
-									<li><a class="clay-paver-page-link" href="/nav-pills">Nav Pills</a></li>
-									<li><a class="clay-paver-page-link" href="/nav-tabs">Nav Tabs</a></li>
-									<li><a class="clay-paver-page-link" href="/navbar">Navbar</a></li>
-									<li><a class="clay-paver-page-link" href="/management-bar">Management Bar</a></li>
-									<li><a class="clay-paver-page-link" href="/pager">Pager</a></li>
-									<li><a class="clay-paver-page-link" href="/pagination">Pagination</a></li>
-									<li><a class="clay-paver-page-link" href="/panel">Panel</a></li>
-									<li><a class="clay-paver-page-link" href="/popover">Popover</a></li>
-									<li><a class="clay-paver-page-link" href="/progress-bar">Progress Bar</a></li>
-									<li><a class="clay-paver-page-link" href="/multi-step-progress-bar">Multi Step Progress Bar</a></li>
-									<li><a class="clay-paver-page-link" href="/sidebar">Sidebar</a></li>
-									<li><a class="clay-paver-page-link" href="/table">Table</a></li>
-									<li><a class="clay-paver-page-link" href="/tooltip">Tooltip</a></li>
-									<li><a class="clay-paver-page-link" href="/timeline">Timeline</a></li>
-									<li><a class="clay-paver-page-link" href="/toggle-card">Toggle Card</a></li>
-									<li><a class="clay-paver-page-link" href="/toggle-switch">Toggle Switch</a></li>
-									<li><a class="clay-paver-page-link" href="/user-icon">User Icon</a></li>
-									<li><a class="clay-paver-page-link" href="/blockquote">Blockquote</a></li>
-								</ul>
+				<% if (typeof showVariableSidebar !== 'undefined') { %>
+					<form class="cp-variables-form" id="<%= page %>">
+						<div class="cp-variable-sidebar">
+							<div class="cp-variable-sidebar-body">
+								<%- include(page + '-variables') %>
 							</div>
-
-							<div class="dropdown">
-								<button aria-expanded="false" class="cp-btn cp-btn-secondary" data-toggle="dropdown" type="button">Options</button>
-								<ul class="clay-paver-dropdown-menu">
-									<li>
-										<a class="clay-paver-dropdown-link" href="" id="cpDataClearCurrent" role="button">Clear Current Theme</a>
-									</li>
-									<li>
-										<a class="clay-paver-dropdown-link" href="" id="cpDataClearAll" role="button">Clear Everything</a>
-									</li>
-								</ul>
+							<div class="cp-variable-sidebar-footer">
+								<button class="cp-btn cp-btn-primary" id="saveButton" type="submit">Save</button>
+								<button class="cp-btn cp-btn-secondary" id="resetButton" type="button">Reset</button>
+								<a class="cp-btn cp-btn-secondary" href="" id="downloadVariables">Download</a>
 							</div>
-
-							<a class="cp-btn cp-btn-secondary" href="" id="downloadVariables">Download</a>
 						</div>
-						<div class="cp-variable-sidebar-body">
-							<%- include(page + '-variables') %>
-						</div>
-						<div class="cp-variable-sidebar-footer">
-							<button class="cp-btn cp-btn-primary" id="saveButton" type="submit">Save</button>
-							<button class="cp-btn cp-btn-secondary" id="resetButton" type="button">Reset</button>
-						</div>
-					</div>
-				</form>
+					</form>
+				<% } %>
 
 				<%- include(page) %>
 			</div>

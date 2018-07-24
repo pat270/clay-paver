@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-var PORT = process.env.port || 9000;
+var PORT = process.env.PORT || 9000;
 var server = require('http').createServer(app);
 
 app.use(express.static('public'));

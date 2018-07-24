@@ -10,6 +10,10 @@ body {
 	margin: 0;
 }
 
+a:hover {
+	cursor: pointer;
+}
+
 #content {
 	padding: 15px 0 15px 300px;
 }
@@ -17,6 +21,10 @@ body {
 #content > .container-fluid {
 	padding-left: 30px;
 	padding-right: 30px;
+}
+
+#clayPaverSite {
+	padding-top: 50px;
 }
 
 #clayPaverNavigation {
@@ -37,10 +45,6 @@ body {
 	#clayPaverNavigation {
 		display: none;
 	}
-}
-
-.bootstrap-var {
-	display: none;
 }
 
 .clay-variable-editor {
@@ -78,6 +82,16 @@ body {
 
 .open > .clay-paver-dropdown-menu {
 	display: block;
+}
+
+#addNewTheme {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+#addNewTheme .cp-form-control {
+	max-width: calc(100% - 40px);
+	vertical-align: middle;
 }
 
 .clay-paver-dropdown-link {
@@ -134,6 +148,11 @@ body {
 	white-space: nowrap;
 }
 
+a.cp-btn:hover,
+a.cp-btn:focus {
+	text-decoration: none;
+}
+
 .cp-btn:focus {
 	box-shadow: 0 0 0 0.2rem rgba(11, 95, 255, 0.25);
 	outline: 0;
@@ -164,6 +183,24 @@ body {
 .open .cp-btn-secondary,
 .cp-btn-secondary:active {
 	background-color: #eee;
+	color: #000;
+}
+
+/* Labels */
+
+.cp-label {
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 13px;
+	line-height: 1;
+	margin-right: 15px;
+	margin-top: 3px;
+	padding: 1px 10px 2px;
+	vertical-align: middle;
+}
+
+.cp-label-default {
+	background-color: #EEE;
 	color: #000;
 }
 
@@ -200,6 +237,7 @@ body {
 
 .cp-variables-form-header {
 	background-color: #4c4c4c;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 	color: #FFF;
 	margin: 0 -15px 16px -15px;
 	padding: 10px 15px;
@@ -213,7 +251,38 @@ body {
 	color: #EEE;
 }
 
-/* sidebar */
+/* App Navigation */
+
+.cp-app-navigation {
+	background: #212121;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+	height: 50px;
+	left: 0;
+	padding: 12px 15px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 10000;
+}
+
+.cp-app-navigation-link {
+	color: #FFF;
+	font-size: 20px;
+	font-weight: 500;
+	margin-right: 4px;
+	vertical-align: middle;
+}
+
+.cp-app-label {
+	margin-right: 15px;
+}
+
+.cp-app-navigation-link:hover {
+	color: #BDBDBD;
+	text-decoration: none;
+}
+
+/* Sidebar */
 
 .cp-variable-sidebar {
 	background-color: #FFF;
@@ -223,7 +292,7 @@ body {
 	left: 0;
 	overflow: auto;
 	position: fixed;
-	top: 0;
+	top: 50px;
 	width: 300px;
 	z-index: 1;
 }
@@ -241,18 +310,19 @@ body {
 }
 
 .cp-variable-sidebar-body {
-	bottom: 62px;
+	bottom: 60px;
 	left: 0;
 	overflow: auto;
+	-webkit-overflow-scrolling: touch;
 	padding: 0 15px 15px;
 	position: absolute;
 	right: 0;
-	top: 60px;
+	top: 0;
 }
 
 .cp-variable-sidebar-footer {
+	border-top: 1px solid #e0e0e0;
 	bottom: 0;
-	box-shadow: 0 -1px 6px -3px rgba(0, 0, 0, 0.75);
 	height: 60px;
 	left: 0;
 	padding: 15px;
@@ -265,7 +335,7 @@ body {
 	padding-right: 16px;
 }
 
-/* Progress Bar */
+/* Loading */
 
 .cp-loading {
 	background: #FFF;
@@ -367,11 +437,11 @@ body {
 	color: #FFF;
 	font-size: 14px;
 	font-weight: 500;
-	left: 300px;
+	left: auto;
 	opacity: 0;
 	padding: 6px 20px;
 	position: fixed;
-	right: auto;
+	right: 0;
 	transition: opacity 0.5s ease;
 	z-index: 9999;
 }
