@@ -1,14 +1,16 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 
-var PORT = process.env.PORT || 9000;
-var server = require('http').createServer(app);
+const PORT = process.env.PORT || 9000;
+const server = require('http').createServer(app);
+
+const compileOrder = require('./compile-order.js');
 
 app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 
-function sitePageCtrl(req, res, next) {
+var sitePageCtrl = (req, res, next) => {
 	var page = req.params.page;
 	var pageExists = false;
 	var sitePages = ['alert', 'badge', 'blockquote', 'breadcrumb', 'button', 'card', 'dropdown', 'figure', 'input-disabled', 'input-readonly', 'input-sizes', 'input-validation', 'input', 'label', 'list-group', 'management-bar', 'modal', 'multi-step-progress-bar', 'nameplate', 'nav-pills', 'nav-tabs', 'nav', 'navbar', 'pager', 'pagination', 'panel', 'popover', 'progress-bar', 'sidebar', 'sticker', 'table', 'timeline', 'toggle-card', 'toggle-switch', 'tooltip', 'typography', 'user-icon', ];
@@ -32,29 +34,37 @@ function sitePageCtrl(req, res, next) {
 	}
 }
 
-app.get('/favicon.ico', function(req, res) {
+app.get('/favicon.ico', (req, res) => {
 	res.sendStatus(204);
 });
 
-app.get('/import', function(req, res, next) {
+app.get('/import', (req, res, next) => {
 	res.render('pages/index', { 
 		page: 'import'
 	});
 });
 
+// app.get('/compile-order', (req, res, next) => {
+// 	res.json(compileOrder.cpCompileOrder);
+// });
+
+// app.get('/master-list', (req, res, next) => {
+// 	res.json(compileOrder.cpMasterList);
+// });
+
 app.get('/:page', sitePageCtrl);
 
-app.get('/', function(req, res, next) {
+app.get('/', (req, res, next) => {
 	res.render('pages/index', { 
 		page: 'home',
 		showVariableSidebar: true
 	});
 });
 
-app.get('*', function(req, res){
+app.get('*', (req, res) => {
   res.status(404).send('Sorry page does not exist.');
 });
 
-server.listen(PORT, function () {
+server.listen(PORT, () => {
 	console.log('Clay Paver on http://localhost:' + PORT);
 });

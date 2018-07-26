@@ -18,6 +18,10 @@ a:hover {
 	padding: 15px 0 15px 300px;
 }
 
+#content.full-width {
+	padding-left: 0;
+}
+
 #content > .container-fluid {
 	padding-left: 30px;
 	padding-right: 30px;
@@ -65,6 +69,10 @@ a:hover {
 	margin-left: 5px;
 }
 
+.cp-dropdown {
+	display: inline-block;
+}
+
 .clay-paver-dropdown-menu {
 	background-color: #FFF;
 	border-radius: 2px;
@@ -94,23 +102,55 @@ a:hover {
 	vertical-align: middle;
 }
 
-.clay-paver-dropdown-link {
+#importSassVariables textarea {
+	min-height: 450px;
+	resize: vertical;
+}
+
+/* Heading */
+
+.cp-header {
+	color: #333;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.2;
+	margin-bottom: 8.5px;
+	margin-top: 17px;
+}
+
+.cp-component-header {
+	margin-bottom: 12px;
+	margin-top: -41px;
+	padding-top: 65px;
+	position: relative;
+	z-index: -1;
+}
+
+/* Dropdowns */
+
+.cp-dropdown-link {
 	color: #000;
 	display: block;
+	font-size: 14px;
 	padding: 5px 8px;
+	text-decoration: none;
 }
 
-.clay-paver-dropdown-link:hover {
+.cp-dropdown-link:focus,
+.cp-dropdown-link:hover {
 	color: #000;
 }
 
-.clay-paver-page-link {
+.cp-page-link {
 	color: #000;
 	display: block;
+	font-size: 14px;
 	padding: 5px 8px;
+	text-decoration: none;
 }
 
-.clay-paver-page-link:hover {
+.cp-page-link:focus,
+.cp-page-link:hover {
 	color: #000;
 }
 
@@ -148,14 +188,15 @@ a:hover {
 	white-space: nowrap;
 }
 
-a.cp-btn:hover,
-a.cp-btn:focus {
-	text-decoration: none;
-}
-
 .cp-btn:focus {
 	box-shadow: 0 0 0 0.2rem rgba(11, 95, 255, 0.25);
 	outline: 0;
+}
+
+a.cp-btn,
+a.cp-btn:hover,
+a.cp-btn:focus {
+	text-decoration: none;
 }
 
 .cp-btn-primary {
@@ -194,7 +235,6 @@ a.cp-btn:focus {
 	font-size: 13px;
 	line-height: 1;
 	margin-right: 15px;
-	margin-top: 3px;
 	padding: 1px 10px 2px;
 	vertical-align: middle;
 }
@@ -219,6 +259,7 @@ a.cp-btn:focus {
 .cp-form-control {
 	border: 1px solid #c7c7c7;
 	border-radius: 2px;
+	box-sizing: border-box;
 	font-size: 16px;
 	padding-left: 8px;
 	padding-right: 8px;
@@ -239,12 +280,14 @@ a.cp-btn:focus {
 	background-color: #4c4c4c;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 	color: #FFF;
+	font-size: 14px;
 	margin: 0 -15px 16px -15px;
 	padding: 10px 15px;
 }
 
 .cp-variables-form-header a {
 	color: #FFF;
+	text-decoration: none;
 }
 
 .cp-variables-form-header a:hover {
@@ -256,6 +299,8 @@ a.cp-btn:focus {
 .cp-app-navigation {
 	background: #212121;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+	box-sizing: border-box;
+	font-family: sans-serif;
 	height: 50px;
 	left: 0;
 	padding: 12px 15px;
@@ -270,16 +315,18 @@ a.cp-btn:focus {
 	font-size: 20px;
 	font-weight: 500;
 	margin-right: 4px;
+	text-decoration: none;
 	vertical-align: middle;
+}
+
+.cp-app-navigation-link:focus,
+.cp-app-navigation-link:hover {
+	color: #BDBDBD;
+	text-decoration: none;
 }
 
 .cp-app-label {
 	margin-right: 15px;
-}
-
-.cp-app-navigation-link:hover {
-	color: #BDBDBD;
-	text-decoration: none;
 }
 
 /* Sidebar */
@@ -289,6 +336,7 @@ a.cp-btn:focus {
 	bottom: 0;
 	box-shadow: 1px 0 3px -2px rgba(0, 0, 0, 0.75);
 	color: #000;
+	font-family: sans-serif;
 	left: 0;
 	overflow: auto;
 	position: fixed;
@@ -305,10 +353,6 @@ a.cp-btn:focus {
 	z-index: 1;
 }
 
-#downloadVariables {
-	float: right;
-}
-
 .cp-variable-sidebar-body {
 	bottom: 60px;
 	left: 0;
@@ -323,6 +367,7 @@ a.cp-btn:focus {
 .cp-variable-sidebar-footer {
 	border-top: 1px solid #e0e0e0;
 	bottom: 0;
+	box-sizing: border-box;
 	height: 60px;
 	left: 0;
 	padding: 15px;
@@ -435,9 +480,11 @@ a.cp-btn:focus {
 	background-color: rgba(0, 0, 0, 0.75);
 	bottom: 0;
 	color: #FFF;
+	font-family: sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 	left: auto;
+	min-width: 400px;
 	opacity: 0;
 	padding: 6px 20px;
 	position: fixed;
