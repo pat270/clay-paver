@@ -300,6 +300,8 @@ doc.on('click', '.cp-unset-link', function(event) {
 	else {
 		formControl.val('!default');
 	}
+
+	formControl.focus();
 });
 
 doc.on('submit', '.cp-variables-form', function(event) {
@@ -698,13 +700,6 @@ var cpMasterList = {
 	'btn-danger-active-border': { groupId: 'button' },
 	'btn-danger-active-color': { groupId: 'button' },
 	'btn-link-disabled-color': { groupId: 'button' },
-	'btn-action-border-radius': { groupId: 'button' },
-	'btn-desktop-action-size': { groupId: 'button' },
-	'btn-action-size': { groupId: 'button' },
-	'btn-action-dropdown-spacer': { groupId: 'button' },
-	'zindex-btn-action': { groupId: 'button' },
-	'btn-fixed-spacer-x': { groupId: 'button' },
-	'btn-fixed-spacer-y': { groupId: 'button' },
 	'btn-desktop-xs-font-size': { groupId: 'button' },
 	'btn-xs-font-size': { groupId: 'button' },
 	'btn-xs-border-radius': { groupId: 'button' },
@@ -726,6 +721,13 @@ var cpMasterList = {
 	'btn-desktop-lg-padding-horizontal': { groupId: 'button' },
 	'btn-lg-padding-horizontal': { groupId: 'button' },
 	'btn-lg-border-radius': { groupId: 'button' },
+	'btn-action-border-radius': { groupId: 'button' },
+	'btn-desktop-action-size': { groupId: 'button' },
+	'btn-action-size': { groupId: 'button' },
+	'btn-action-dropdown-spacer': { groupId: 'button' },
+	'zindex-btn-action': { groupId: 'button' },
+	'btn-fixed-spacer-x': { groupId: 'button' },
+	'btn-fixed-spacer-y': { groupId: 'button' },
 	'card-bg': { groupId: 'card' },
 	'card-border-radius': { groupId: 'card' },
 	'card-border': { groupId: 'card' },
@@ -1443,6 +1445,7 @@ var cpMasterList = {
 	'popover-box-shadow-spread': { groupId: 'popover' },
 	'popover-box-shadow-blur': { groupId: 'popover' },
 	'popover-box-shadow-bg': { groupId: 'popover' },
+	'popover-box-shadow': { groupId: 'popover' },
 	'progress-bg': { groupId: 'progress-bar' },
 	'progress-border-radius': { groupId: 'progress-bar' },
 	'progress-box-shadow': { groupId: 'progress-bar' },

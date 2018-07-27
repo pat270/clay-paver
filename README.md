@@ -3,10 +3,22 @@ A GUI customizer for the Clay CSS Library.
 
 ### Ordering Inputs
 
+width
+height
+font-size
+font-weight
+padding-top
+padding-right
+padding-bottom
+padding-left
+line-height
 border-width
 border
+border-radius
 color
 bg
+box-shadow
+opacity
 
 hover-border
 hover-color

@@ -380,6 +380,24 @@ a.cp-btn:focus {
 	padding-right: 16px;
 }
 
+/* Example Containers */
+
+.cp-example-container,
+.cp-user-icon-container {
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.cp-example-container .tooltip {
+	position: relative;
+}
+
+.cp-user-icon-container > div {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* Loading */
 
 .cp-loading {

@@ -34,11 +34,45 @@
 <a class="btn btn-danger" href="#1">Anchor</a>
 <a class="btn btn-link" href="#1">Anchor</a>
 
-<h3>Sizes</h3>
-<button class="btn btn-default btn-xs" type="button">Extra Small</button>
-<button class="btn btn-default btn-sm" type="button">Small</button>
-<button class="btn btn-default" type="button">Default</button>
-<button class="btn btn-default btn-lg" type="button">Large</button>
+<h3>Btn Xs</h3>
+<div>
+	<button class="btn btn-default btn-xs" type="button">Extra Small</button>
+	<button class="btn btn-default btn-xs scale-lexicon-icon" type="button">
+		<svg class="lexicon-icon lexicon-icon-search" viewBox="0 0 512 512">
+			<path class="lexicon-icon-outline" d="M503.254 467.861l-133.645-133.645c27.671-35.13 44.344-79.327 44.344-127.415 0-113.784-92.578-206.362-206.362-206.362s-206.362 92.578-206.362 206.362 92.578 206.362 206.362 206.362c47.268 0 90.735-16.146 125.572-42.969l133.851 133.851c5.002 5.002 11.554 7.488 18.106 7.488s13.104-2.486 18.106-7.488c10.004-10.003 10.004-26.209 0.029-36.183zM52.446 206.801c0-85.558 69.616-155.173 155.173-155.173s155.174 69.616 155.174 155.173-69.616 155.173-155.173 155.173-155.173-69.616-155.173-155.173z"></path>
+		</svg>
+	</button>
+</div>
+
+<h3>Btn Sm</h3>
+<div>
+	<button class="btn btn-default btn-sm" type="button">Small</button>
+	<button class="btn btn-default btn-sm scale-lexicon-icon" type="button">
+		<svg class="lexicon-icon lexicon-icon-times" viewBox="0 0 512 512">
+			<path class="lexicon-icon-outline" d="M295.781 256l205.205-205.205c10.998-10.998 10.998-28.814 0-39.781-10.998-10.998-28.815-10.998-39.781 0l-205.205 205.205-205.205-205.238c-10.966-10.998-28.814-10.998-39.781 0-10.998 10.998-10.998 28.814 0 39.781l205.205 205.238-205.205 205.205c-10.998 10.998-10.998 28.815 0 39.781 5.467 5.531 12.671 8.265 19.874 8.265s14.407-2.734 19.907-8.233l205.205-205.238 205.205 205.205c5.5 5.5 12.703 8.233 19.906 8.233s14.407-2.734 19.906-8.233c10.998-10.998 10.998-28.815 0-39.781l-205.238-205.205z"></path>
+		</svg>
+	</button>
+</div>
+
+<h3>Btn</h3>
+<div>
+	<button class="btn btn-default" type="button">Default</button>
+	<button class="btn btn-default scale-lexicon-icon" type="button">
+		<svg class="lexicon-icon lexicon-icon-angle-down" viewBox="0 0 512 512">
+			<path class="lexicon-icon-outline" d="M256 384c6.936-0.22 13.81-2.973 19.111-8.272l227.221-227.221c11.058-11.026 11.058-28.941 0-39.999-11.026-11.058-28.94-11.058-39.999 0l-206.333 206.333c0 0-206.333-206.333-206.333-206.333-11.059-11.058-28.973-11.058-39.999 0-11.059 11.058-11.059 28.972 0 39.999l227.221 227.221c5.3 5.3 12.174 8.053 19.111 8.272z"></path>
+		</svg>
+	</button>
+</div>
+
+<h3>Btn Lg</h3>
+<div>
+	<button class="btn btn-default btn-lg" type="button">Large</button>
+	<button class="btn btn-default btn-lg scale-lexicon-icon" type="button">
+		<svg class="lexicon-icon lexicon-icon-share" viewBox="0 0 448 448">
+			<path class="lexicon-icon-outline" d="M352,256c-25.8381,0-49.3213,10.2641-66.5961,26.9246l-94.1361-47.0682C191.7487,231.9703,192,228.014,192,224c0-4.0142-0.2514-7.9706-0.7322-11.8568l94.1359-47.0681C302.6784,181.7358,326.1617,192,352,192c52.9346,0,96-43.0654,96-96S404.9346,0,352,0s-96,43.0654-96,96c0,4.0143,0.2514,7.9707,0.7322,11.857l-94.136,47.0678C145.3215,138.2642,121.8382,128,96,128c-52.9346,0-96,43.0654-96,96s43.0654,96,96,96c25.838,0,49.3212-10.264,66.5959-26.9245l94.1362,47.068C256.2513,344.0297,256,347.9859,256,352c0,52.9346,43.0654,96,96,96s96-43.0654,96-96S404.9346,256,352,256z M352,64c17.6445,0,32,14.355,32,32s-14.3555,32-32,32s-32-14.355-32-32S334.3555,64,352,64z M96,256c-17.645,0-32-14.3555-32-32c0-17.645,14.355-32,32-32s32,14.355,32,32C128,241.6445,113.645,256,96,256z M352,384c-17.6445,0-32-14.3555-32-32s14.3555-32,32-32s32,14.3555,32,32S369.6445,384,352,384z"></path>
+		</svg>
+	</button>
+</div>
 
 <h3>Block Level Buttons</h3>
 <button class="btn btn-block btn-primary btn-xs" type="button">Extra Small Block Level Button</button>
@@ -49,7 +83,12 @@
 <h3>Button Dropdowns</h3>
 
 <div class="btn-group dropdown">
-	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">Default <span class="caret"></span>
+	<button class="btn btn-default dropdown-toggle scale-lexicon-icon" data-toggle="dropdown" type="button">
+		Default
+		<svg class="lexicon-icon lexicon-icon-caret-bottom" viewBox="0 0 512 512">
+			<path class="lexicon-icon-outline" d="M103.5,204.3l136.1,136.1c9,9,23.7,9,32.7,0l136.1-136.1c14.6-14.6,4.3-39.5-16.4-39.5H119.9C99.2,164.8,88.9,189.7,103.5,204.3L103.5,204.3z"></path>
+		</svg>
+	</span>
 	</button>
 	<ul class="dropdown-menu" role="menu">
 		<li><a href="#">Action</a></li>
@@ -59,7 +98,11 @@
 </div>
 
 <div class="btn-group dropdown">
-	<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">Primary <span class="caret"></span>
+	<button class="btn btn-primary dropdown-toggle scale-lexicon-icon" data-toggle="dropdown" type="button">
+		Primary
+		<svg class="lexicon-icon lexicon-icon-caret-bottom" viewBox="0 0 512 512">
+			<path class="lexicon-icon-outline" d="M103.5,204.3l136.1,136.1c9,9,23.7,9,32.7,0l136.1-136.1c14.6-14.6,4.3-39.5-16.4-39.5H119.9C99.2,164.8,88.9,189.7,103.5,204.3L103.5,204.3z"></path>
+		</svg>
 	</button>
 	<ul class="dropdown-menu" role="menu">
 		<li><a href="#">Action</a></li>
@@ -69,7 +112,11 @@
 </div>
 
 <div class="btn-group dropdown">
-	<button class="btn btn-info dropdown-toggle" data-toggle="dropdown" type="button">Info <span class="caret"></span>
+	<button class="btn btn-info dropdown-toggle scale-lexicon-icon" data-toggle="dropdown" type="button">
+		Info
+		<svg class="lexicon-icon lexicon-icon-caret-bottom" viewBox="0 0 512 512">
+			<path class="lexicon-icon-outline" d="M103.5,204.3l136.1,136.1c9,9,23.7,9,32.7,0l136.1-136.1c14.6-14.6,4.3-39.5-16.4-39.5H119.9C99.2,164.8,88.9,189.7,103.5,204.3L103.5,204.3z"></path>
+		</svg>
 	</button>
 	<ul class="dropdown-menu" role="menu">
 		<li><a href="#">Action</a></li>
@@ -79,7 +126,11 @@
 </div>
 
 <div class="btn-group dropdown">
-	<button class="btn btn-success dropdown-toggle" data-toggle="dropdown" type="button">Success <span class="caret"></span>
+	<button class="btn btn-success dropdown-toggle scale-lexicon-icon" data-toggle="dropdown" type="button">
+		Success
+		<svg class="lexicon-icon lexicon-icon-caret-bottom" viewBox="0 0 512 512">
+			<path class="lexicon-icon-outline" d="M103.5,204.3l136.1,136.1c9,9,23.7,9,32.7,0l136.1-136.1c14.6-14.6,4.3-39.5-16.4-39.5H119.9C99.2,164.8,88.9,189.7,103.5,204.3L103.5,204.3z"></path>
+		</svg>
 	</button>
 	<ul class="dropdown-menu" role="menu">
 		<li><a href="#">Action</a></li>
@@ -89,7 +140,11 @@
 </div>
 
 <div class="btn-group dropdown">
-	<button class="btn btn-warning dropdown-toggle" data-toggle="dropdown" type="button">Warning <span class="caret"></span>
+	<button class="btn btn-warning dropdown-toggle scale-lexicon-icon" data-toggle="dropdown" type="button">
+		Warning
+		<svg class="lexicon-icon lexicon-icon-caret-bottom" viewBox="0 0 512 512">
+			<path class="lexicon-icon-outline" d="M103.5,204.3l136.1,136.1c9,9,23.7,9,32.7,0l136.1-136.1c14.6-14.6,4.3-39.5-16.4-39.5H119.9C99.2,164.8,88.9,189.7,103.5,204.3L103.5,204.3z"></path>
+		</svg>
 	</button>
 	<ul class="dropdown-menu" role="menu">
 		<li><a href="#">Action</a></li>
@@ -99,7 +154,11 @@
 </div>
 
 <div class="btn-group dropdown">
-	<button class="btn btn-danger dropdown-toggle" data-toggle="dropdown" type="button">Danger <span class="caret"></span>
+	<button class="btn btn-danger dropdown-toggle scale-lexicon-icon" data-toggle="dropdown" type="button">
+		Danger
+		<svg class="lexicon-icon lexicon-icon-caret-bottom" viewBox="0 0 512 512">
+			<path class="lexicon-icon-outline" d="M103.5,204.3l136.1,136.1c9,9,23.7,9,32.7,0l136.1-136.1c14.6-14.6,4.3-39.5-16.4-39.5H119.9C99.2,164.8,88.9,189.7,103.5,204.3L103.5,204.3z"></path>
+		</svg>
 	</button>
 	<ul class="dropdown-menu" role="menu">
 		<li><a href="#">Action</a></li>
@@ -112,8 +171,10 @@
 
 <div class="btn-group dropdown">
 	<button class="btn btn-default" type="button">Default</button>
-	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
-		<span class="caret"></span>
+	<button class="btn btn-default dropdown-toggle scale-lexicon-icon" data-toggle="dropdown" type="button">
+		<svg class="lexicon-icon lexicon-icon-caret-bottom" viewBox="0 0 512 512">
+			<path class="lexicon-icon-outline" d="M103.5,204.3l136.1,136.1c9,9,23.7,9,32.7,0l136.1-136.1c14.6-14.6,4.3-39.5-16.4-39.5H119.9C99.2,164.8,88.9,189.7,103.5,204.3L103.5,204.3z"></path>
+		</svg>
 		<span class="sr-only">Toggle Dropdown</span>
 	</button>
 	<ul class="dropdown-menu" role="menu">
@@ -125,8 +186,10 @@
 
 <div class="btn-group dropdown">
 	<button class="btn btn-primary" type="button">Primary</button>
-	<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">
-		<span class="caret"></span>
+	<button class="btn btn-primary dropdown-toggle scale-lexicon-icon" data-toggle="dropdown" type="button">
+		<svg class="lexicon-icon lexicon-icon-caret-bottom" viewBox="0 0 512 512">
+			<path class="lexicon-icon-outline" d="M103.5,204.3l136.1,136.1c9,9,23.7,9,32.7,0l136.1-136.1c14.6-14.6,4.3-39.5-16.4-39.5H119.9C99.2,164.8,88.9,189.7,103.5,204.3L103.5,204.3z"></path>
+		</svg>
 		<span class="sr-only">Toggle Dropdown</span>
 	</button>
 	<ul class="dropdown-menu" role="menu">
@@ -138,8 +201,10 @@
 
 <div class="btn-group dropdown">
 	<button class="btn btn-info" type="button">Info</button>
-	<button class="btn btn-info dropdown-toggle" data-toggle="dropdown" type="button">
-		<span class="caret"></span>
+	<button class="btn btn-info dropdown-toggle scale-lexicon-icon" data-toggle="dropdown" type="button">
+		<svg class="lexicon-icon lexicon-icon-caret-bottom" viewBox="0 0 512 512">
+			<path class="lexicon-icon-outline" d="M103.5,204.3l136.1,136.1c9,9,23.7,9,32.7,0l136.1-136.1c14.6-14.6,4.3-39.5-16.4-39.5H119.9C99.2,164.8,88.9,189.7,103.5,204.3L103.5,204.3z"></path>
+		</svg>
 		<span class="sr-only">Toggle Dropdown</span>
 	</button>
 	<ul class="dropdown-menu" role="menu">
@@ -151,8 +216,10 @@
 
 <div class="btn-group dropdown">
 	<button class="btn btn-success" type="button">Success</button>
-	<button class="btn btn-success dropdown-toggle" data-toggle="dropdown" type="button">
-		<span class="caret"></span>
+	<button class="btn btn-success dropdown-toggle scale-lexicon-icon" data-toggle="dropdown" type="button">
+		<svg class="lexicon-icon lexicon-icon-caret-bottom" viewBox="0 0 512 512">
+			<path class="lexicon-icon-outline" d="M103.5,204.3l136.1,136.1c9,9,23.7,9,32.7,0l136.1-136.1c14.6-14.6,4.3-39.5-16.4-39.5H119.9C99.2,164.8,88.9,189.7,103.5,204.3L103.5,204.3z"></path>
+		</svg>
 		<span class="sr-only">Toggle Dropdown</span>
 	</button>
 	<ul class="dropdown-menu" role="menu">
@@ -164,8 +231,10 @@
 
 <div class="btn-group dropdown">
 	<button class="btn btn-warning" type="button">Warning</button>
-	<button class="btn btn-warning dropdown-toggle" data-toggle="dropdown" type="button">
-		<span class="caret"></span>
+	<button class="btn btn-warning dropdown-toggle scale-lexicon-icon" data-toggle="dropdown" type="button">
+		<svg class="lexicon-icon lexicon-icon-caret-bottom" viewBox="0 0 512 512">
+			<path class="lexicon-icon-outline" d="M103.5,204.3l136.1,136.1c9,9,23.7,9,32.7,0l136.1-136.1c14.6-14.6,4.3-39.5-16.4-39.5H119.9C99.2,164.8,88.9,189.7,103.5,204.3L103.5,204.3z"></path>
+		</svg>
 		<span class="sr-only">Toggle Dropdown</span>
 	</button>
 	<ul class="dropdown-menu" role="menu">
@@ -177,8 +246,10 @@
 
 <div class="btn-group dropdown">
 	<button class="btn btn-danger" type="button">Danger</button>
-	<button class="btn btn-danger dropdown-toggle" data-toggle="dropdown" type="button">
-		<span class="caret"></span>
+	<button class="btn btn-danger dropdown-toggle scale-lexicon-icon" data-toggle="dropdown" type="button">
+		<svg class="lexicon-icon lexicon-icon-caret-bottom" viewBox="0 0 512 512">
+			<path class="lexicon-icon-outline" d="M103.5,204.3l136.1,136.1c9,9,23.7,9,32.7,0l136.1-136.1c14.6-14.6,4.3-39.5-16.4-39.5H119.9C99.2,164.8,88.9,189.7,103.5,204.3L103.5,204.3z"></path>
+		</svg>
 		<span class="sr-only">Toggle Dropdown</span>
 	</button>
 	<ul class="dropdown-menu" role="menu">
@@ -202,9 +273,11 @@
 	<button class="btn btn-default" type="button">Button</button>
 	<button class="btn btn-default" type="button">Button</button>
 	<div class="btn-group">
-		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+		<button class="btn btn-default dropdown-toggle scale-lexicon-icon" data-toggle="dropdown" type="button">
 			Dropdown
-			<span class="caret"></span>
+			<svg class="lexicon-icon lexicon-icon-caret-bottom" viewBox="0 0 512 512">
+				<path class="lexicon-icon-outline" d="M103.5,204.3l136.1,136.1c9,9,23.7,9,32.7,0l136.1-136.1c14.6-14.6,4.3-39.5-16.4-39.5H119.9C99.2,164.8,88.9,189.7,103.5,204.3L103.5,204.3z"></path>
+			</svg>
 		</button>
 		<ul class="dropdown-menu">
 			<li><a href="#">Dropdown link</a></li>
@@ -212,9 +285,11 @@
 		</ul>
 	</div>
 	<div class="btn-group">
-		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+		<button class="btn btn-default dropdown-toggle scale-lexicon-icon" data-toggle="dropdown" type="button">
 			Dropdown
-			<span class="caret"></span>
+			<svg class="lexicon-icon lexicon-icon-caret-bottom" viewBox="0 0 512 512">
+				<path class="lexicon-icon-outline" d="M103.5,204.3l136.1,136.1c9,9,23.7,9,32.7,0l136.1-136.1c14.6-14.6,4.3-39.5-16.4-39.5H119.9C99.2,164.8,88.9,189.7,103.5,204.3L103.5,204.3z"></path>
+			</svg>
 		</button>
 		<ul class="dropdown-menu">
 			<li><a href="#">Dropdown link</a></li>
@@ -222,9 +297,11 @@
 		</ul>
 	</div>
 	<div class="btn-group">
-		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+		<button class="btn btn-default dropdown-toggle scale-lexicon-icon" data-toggle="dropdown" type="button">
 			Dropdown
-			<span class="caret"></span>
+			<svg class="lexicon-icon lexicon-icon-caret-bottom" viewBox="0 0 512 512">
+				<path class="lexicon-icon-outline" d="M103.5,204.3l136.1,136.1c9,9,23.7,9,32.7,0l136.1-136.1c14.6-14.6,4.3-39.5-16.4-39.5H119.9C99.2,164.8,88.9,189.7,103.5,204.3L103.5,204.3z"></path>
+			</svg>
 		</button>
 		<ul class="dropdown-menu">
 			<li><a href="#">Dropdown link</a></li>
