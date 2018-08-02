@@ -4,8 +4,6 @@ const app = express();
 const PORT = process.env.PORT || 9000;
 const server = require('http').createServer(app);
 
-const compileOrder = require('./compile-order.js');
-
 app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
@@ -43,14 +41,6 @@ app.get('/import', (req, res, next) => {
 		page: 'import'
 	});
 });
-
-// app.get('/compile-order', (req, res, next) => {
-// 	res.json(compileOrder.cpCompileOrder);
-// });
-
-// app.get('/master-list', (req, res, next) => {
-// 	res.json(compileOrder.cpMasterList);
-// });
 
 app.get('/:page', sitePageCtrl);
 

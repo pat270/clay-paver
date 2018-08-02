@@ -6,9 +6,7 @@
   "csfConfig": {
     "js": {
       "lint": {
-        "globals": {
-          "jQuery": true
-        },
+        "globals": {},
         "rules": {}
       }
     }
@@ -27,19 +25,10 @@
     {}
   ],
   "license": "MIT",
-  "devDependencies": {
-    "del": "^3.0.0",
-    "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.1",
-    "merge-stream": "^1.0.1",
-    "require-dir": "^0.3.2",
-    "run-sequence": "^2.1.0"
-  },
+  "devDependencies": {},
   "private": true,
   "dependencies": {
-    "body-parser": "^1.16.1",
     "ejs": "^2.5.6",
-    "express": "^4.14.1",
-    "node-sass": "^4.2.0"
+    "express": "^4.16.3"
   }
 }

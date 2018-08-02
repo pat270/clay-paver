@@ -1,7 +1,3 @@
-var cpSpinnerTPL = '<div class="cp-loading"><div class="cp-loading-spinner"><div class="lds-heart-container"><div class="lds-heart"><div class="lds-heart-icon"></div></div></div><span class="cp-loading-msg">Loading...</span></div></div>';
-
-var cpStatusBarTPL = '<div class="cp-status-bar"><span class="cp-status-bar-msg"></span></div>';
-
 // Local Forage
 
 var dbName = 'cpDB';
@@ -26,160 +22,165 @@ cpDBThemes.getItem('currentTheme').then(function(value) {
 
 // ClayPaver
 
-function ClayPaver() {
-}
+var cpSpinnerTPL = '<div class="cp-loading"><div class="cp-loading-spinner"><div class="lds-heart-container"><div class="lds-heart"><div class="lds-heart-icon"></div></div></div><span class="cp-loading-msg">Loading...</span></div></div>';
 
-ClayPaver.compileSass = function() {
-	var sbVariableGroup = '';
+var cpStatusBarTPL = '<div class="cp-status-bar"><span class="cp-status-bar-msg"></span></div>';
 
-	cpDBThemes.getItem('currentTheme').then(function(value) {
-		cpDB.config({
-			name: dbName,
-			storeName: value
-		});
-
-		cpDB = localforage.createInstance({
-			name: dbName,
-			storeName: value
-		});
-
-		cpDB.iterate(function(value, key, iterationNumber) {
-			for (var item in value) {
-				if (value[item] !== '') {
-					sbVariableGroup = sbVariableGroup + '$' + item + ': ' + value[item] + ';';
-				}
-			}
-		}).then(function() {
-			var atlasFontAwesome = $('#atlasFontAwesome');
-
-			sass.writeFile('_custom-variables.scss', sbVariableGroup);
-
-			if (atlasFontAwesome.length) {
-				setTimeout(function() {
-					ClayPaver.showStatusBar('Compiling ' + value + ' Sass...');
-				}, 750);
-			}
-
-			sass.compile('@import "custom-variables"; @import "atlas-all";', function(result) {
-				$('.cp-loading .cp-loading-msg').text('');
-
-				if (atlasFontAwesome.length) {
-					$('#atlasFontAwesome').html(result.text);
-				}
-				else {
-					$('head').prepend('<style id="atlasFontAwesome">' + result.text + '</style>');
-				}
-
-				if (result.status) {
-					setTimeout(function() {
-						ClayPaver.showStatusBar('There was an error, please check the browser console.');
-					}, 750);
-
-					console.log(result.formatted);
-				}
-
-				$('.cp-loading').remove();
-
-				ClayPaver.removeStatusBar();
-
-				Turbolinks.clearCache();
-			});
-		});
-
-	});
-};
-
-ClayPaver.getVarName = function(item) {
-	return item.substring(5, item.length - 1);
-};
-
-ClayPaver.populateForm = function() {
-	var formId = $('.cp-variables-form').attr('id');
-
-	if ($('.cp-variables-form').length) {
-		$('.cp-variables-form .cp-form-control').val('');
+var ClayPaver = {
+	compileSass: function () {
+		var sbVariableGroup = '';
 
 		cpDBThemes.getItem('currentTheme').then(function(value) {
-			cpDB.config().storeName = value;
+			cpDB.config({
+				name: dbName,
+				storeName: value
+			});
 
 			cpDB = localforage.createInstance({
 				name: dbName,
 				storeName: value
 			});
 
-			cpDB.getItem(compileOrder[formId]).then(function(value) {
+			cpDB.iterate(function(value, key, iterationNumber) {
 				for (var item in value) {
-					$('#' + item).val(value[item]);
+					if (value[item] !== '') {
+						sbVariableGroup = sbVariableGroup + '$' + item + ': ' + value[item] + ';';
+					}
 				}
-			}).catch(function(err) {
-				console.log(err);
+			}).then(function() {
+				var atlasFontAwesome = $('#atlasFontAwesome');
+
+				sass.writeFile('_custom-variables.scss', sbVariableGroup);
+
+				if (atlasFontAwesome.length) {
+					setTimeout(function() {
+						ClayPaver.showStatusBar('Compiling ' + value + ' Sass...');
+					}, 750);
+				}
+
+				sass.compile('@import "custom-variables"; @import "atlas-all";', function(result) {
+					ClayPaver.showLoadingMsg('');
+
+					if (atlasFontAwesome.length) {
+						$('#atlasFontAwesome').html(result.text);
+					}
+					else {
+						$('head').prepend('<style id="atlasFontAwesome">' + result.text + '</style>');
+					}
+
+					if (result.status) {
+						setTimeout(function() {
+							ClayPaver.showStatusBar('There was an error, please check the browser console.');
+						}, 750);
+
+						console.log(result.formatted);
+					}
+
+					ClayPaver.removeLoadingMsg();
+
+					ClayPaver.removeStatusBar();
+
+					Turbolinks.clearCache();
+				});
 			});
+
 		});
-	}
-};
+	},
 
-ClayPaver.setVariableGroup = function(groupId, formValues) {
-	var varName;
-	var varVal;
-	var variableGroup = {};
+	getVarName: function(item) {
+		return item.substring(5, item.length - 1);
+	},
 
-	for (var i = 0; i < formValues.length; i++) {
-		varName = ClayPaver.getVarName(formValues[i].name);
-		varVal = formValues[i].value;
+	populateForm: function() {
+		var formId = $('.cp-variables-form').attr('id');
 
-		variableGroup[varName] = varVal;
+		if ($('.cp-variables-form').length) {
+			$('.cp-variables-form .cp-form-control').val('');
 
-		// last item in loop
-		if (i === (formValues.length - 1)) {
-			cpDB.setItem(
-				groupId, variableGroup
-			).then(function() {
-				ClayPaver.compileSass();
+			cpDBThemes.getItem('currentTheme').then(function(value) {
+				cpDB.config().storeName = value;
+
+				cpDB = localforage.createInstance({
+					name: dbName,
+					storeName: value
+				});
+
+				cpDB.getItem(compileOrder[formId]).then(function(value) {
+					for (var item in value) {
+						$('#' + item).val(value[item]);
+					}
+				}).catch(function(err) {
+					console.log(err);
+				});
 			});
 		}
-	}
-};
+	},
 
-ClayPaver.listThemes = function() {
-	cpDBThemes.iterate(function(value, key, iterationNumber) {
-		console.log(key + ': ' + value);
-	});
-};
+	setVariableGroup: function(groupId, formValues) {
+		var varName;
+		var varVal;
+		var variableGroup = {};
 
-ClayPaver.updateSwitchThemesDD = function() {
-	$('#cpSwitchThemes + .clay-paver-dropdown-menu .cp-theme-item').remove();
+		for (var i = 0; i < formValues.length; i++) {
+			varName = ClayPaver.getVarName(formValues[i].name);
+			varVal = formValues[i].value;
 
-	cpDBThemes.iterate(function(value, key, iterationNumber) {
-		var liTPL = '';
+			variableGroup[varName] = varVal;
 
-		if (key !== 'currentTheme') {
-			liTPL = '<li class="cp-theme-item"><a class="cp-page-link" data-theme="' + value + '" data-toggle="switch-theme" href="">' + value + '</a></li>';
+			// last item in loop
+			if (i === (formValues.length - 1)) {
+				cpDB.setItem(
+					groupId, variableGroup
+				).then(function() {
+					ClayPaver.compileSass();
+				});
+			}
+		}
+	},
+
+	updateSwitchThemesDD: function() {
+		$('#cpSwitchThemes + .clay-paver-dropdown-menu .cp-theme-item').remove();
+
+		cpDBThemes.iterate(function(value, key, iterationNumber) {
+			var liTPL = '';
+
+			if (key !== 'currentTheme') {
+				liTPL = '<li class="cp-theme-item"><a class="cp-page-link" data-theme="' + value + '" data-toggle="switch-theme" href="">' + value + '</a></li>';
+			}
+
+			$('#cpSwitchThemes').closest('.dropdown').find('.clay-paver-dropdown-menu').append(liTPL);
+		});
+	},
+
+	updateThemeName: function() {
+		cpDBThemes.getItem('currentTheme').then(function(value) {
+			$('.current-theme-name').text(value);
+		});
+	},
+
+	removeStatusBar: function() {
+		$('.cp-status-bar').remove();
+	},
+
+	showStatusBar: function(msg) {
+		if (!$('.cp-status-bar').length) {
+			$('body').append(cpStatusBarTPL);
 		}
 
-		$('#cpSwitchThemes').closest('.dropdown').find('.clay-paver-dropdown-menu').append(liTPL);
-	});
-};
+		$('.cp-status-bar-msg').text(msg);
 
-ClayPaver.updateThemeName = function () {
-	cpDBThemes.getItem('currentTheme').then(function(value) {
-		$('.current-theme-name').text(value);
-	});
-};
+		setTimeout(function() {
+			$('.cp-status-bar').css({ opacity: 1 });
+		}, 0);
+	},
 
-ClayPaver.removeStatusBar = function() {
-	$('.cp-status-bar').remove();
-};
+	removeLoadingMsg: function() {
+		$('.cp-loading').remove();
+	},
 
-ClayPaver.showStatusBar = function(msg) {
-	if (!$('.cp-status-bar').length) {
-		$('body').append(cpStatusBarTPL);
-	}
-
-	$('.cp-status-bar-msg').text(msg);
-
-	setTimeout(function() {
-		$('.cp-status-bar').css({ opacity: 1 });
-	}, 0);
+	showLoadingMsg: function(msg) {
+		$('.cp-loading .cp-loading-msg').text(msg);
+	},
 };
 
 // Sass js
@@ -200,10 +201,10 @@ if (!sass) {
 	];
 
 	sass.preloadFiles(preloadBase, preloadDir, preloadFiles, function callback() {
-		$('.cp-loading .cp-loading-msg').text('Compiling Sass...');
+		ClayPaver.showLoadingMsg('Compiling Sass...');
 
 		setTimeout(function() {
-			$('.cp-loading .cp-loading-msg').text("I'm almost done...");
+			ClayPaver.showLoadingMsg("I'm almost done...");
 		}, 5000);
 
 		ClayPaver.compileSass();
@@ -391,19 +392,14 @@ doc.on('submit', '#importSassVariables', function(event) {
 	}
 });
 
+ClayPaver.updateThemeName();
+ClayPaver.updateSwitchThemesDD();
+
 // Populate Form
 
 doc.on('turbolinks:load', function() {
-	if ($('.import-view').length) {
-		ClayPaver.updateThemeName();
-	}
-	else {
-		ClayPaver.populateForm();
-	}
+	ClayPaver.populateForm();
 });
-
-ClayPaver.updateThemeName();
-ClayPaver.updateSwitchThemesDD();
 
 var compileOrder = {
 	'home':							'aa',
