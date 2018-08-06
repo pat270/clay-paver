@@ -1,8 +1,12 @@
 ## About
-A GUI customizer for the Clay CSS Library.
+A web based customizer for the Lexicon CSS Library.
+
+### Install Locally
+Clone the repo
+`npm install`
+`npm run start`
 
 ### Ordering Inputs
-
 width
 height
 font-size
@@ -42,7 +46,6 @@ danger
 inverse
 
 ### Button
-
 line-height
 font-size-desktop
 font-size
