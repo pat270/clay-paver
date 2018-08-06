@@ -20,7 +20,228 @@ cpDBThemes.getItem('currentTheme').then(function(value) {
 	}
 });
 
-// ClayPaver
+// HTML 5 Support
+
+var isInputColorSupported = (function() {
+	var input = $('<input>');
+	var supported = true;
+
+	input.attr('type', 'color');
+
+	if (input.val() === '') {
+		supported = false;
+
+		$('body').addClass('input-color-shim');
+	}
+
+	return supported;
+})();
+
+// Clay Paver Color Picker
+
+var ClayPaverColorPicker = {
+	_getHtmlColorHex: function(colorName) {
+		var htmlColorNames = {
+			'aliceblue':				'#f0f8ff',
+			'antiquewhite':				'#faebd7',
+			'aqua':						'#00ffff',
+			'aquamarine':				'#7fffd4',
+			'azure':					'#f0ffff',
+			'beige':					'#f5f5dc',
+			'bisque':					'#ffe4c4',
+			'black':					'#000000',
+			'blanchedalmond':			'#ffebcd',
+			'blue':						'#0000ff',
+			'blueviolet':				'#8a2be2',
+			'brown':					'#a52a2a',
+			'burlywood':				'#deb887',
+			'cadetblue':				'#5f9ea0',
+			'chartreuse':				'#7fff00',
+			'chocolate':				'#d2691e',
+			'coral':					'#ff7f50',
+			'cornflowerblue':			'#6495ed',
+			'cornsilk':					'#fff8dc',
+			'crimson':					'#dc143c',
+			'cyan':						'#00ffff',
+			'darkblue':					'#00008b',
+			'darkcyan':					'#008b8b',
+			'darkgoldenrod':			'#b8860b',
+			'darkgray':					'#a9a9a9',
+			'darkgrey':					'#a9a9a9',
+			'darkgreen':				'#006400',
+			'darkkhaki':				'#bdb76b',
+			'darkmagenta':				'#8b008b',
+			'darkolivegreen':			'#556b2f',
+			'darkorange':				'#ff8c00',
+			'darkorchid':				'#9932cc',
+			'darkred':					'#8b0000',
+			'darksalmon':				'#e9967a',
+			'darkseagreen':				'#8fbc8f',
+			'darkslateblue':			'#483d8b',
+			'darkslategray':			'#2f4f4f',
+			'darkslategrey':			'#2f4f4f',
+			'darkturquoise':			'#00ced1',
+			'darkviolet':				'#9400d3',
+			'deeppink':					'#ff1493',
+			'deepskyblue':				'#00bfff',
+			'dimgray':					'#696969',
+			'dimgrey':					'#696969',
+			'dodgerblue':				'#1e90ff',
+			'firebrick':				'#b22222',
+			'floralwhite':				'#fffaf0',
+			'forestgreen':				'#228b22',
+			'fuchsia':					'#ff00ff',
+			'gainsboro':				'#dcdcdc',
+			'ghostwhite':				'#f8f8ff',
+			'gold':						'#ffd700',
+			'goldenrod':				'#daa520',
+			'gray':						'#808080',
+			'grey':						'#808080',
+			'green':					'#008000',
+			'greenyellow':				'#adff2f',
+			'honeydew':					'#f0fff0',
+			'hotpink':					'#ff69b4',
+			'indianred':				'#cd5c5c',
+			'indigo':					'#4b0082',
+			'ivory':					'#fffff0',
+			'khaki':					'#f0e68c',
+			'lavender':					'#e6e6fa',
+			'lavenderblush':			'#fff0f5',
+			'lawngreen':				'#7cfc00',
+			'lemonchiffon':				'#fffacd',
+			'lightblue':				'#add8e6',
+			'lightcoral':				'#f08080',
+			'lightcyan':				'#e0ffff',
+			'lightgoldenrodyellow':		'#fafad2',
+			'lightgrey':				'#d3d3d3',
+			'lightgreen':				'#90ee90',
+			'lightpink':				'#ffb6c1',
+			'lightsalmon':				'#ffa07a',
+			'lightseagreen':			'#20b2aa',
+			'lightskyblue':				'#87cefa',
+			'lightslategray':			'#778899',
+			'lightslategrey':			'#778899',
+			'lightsteelblue':			'#b0c4de',
+			'lightyellow':				'#ffffe0',
+			'lime':						'#00ff00',
+			'limegreen':				'#32cd32',
+			'linen':					'#faf0e6',
+			'magenta':					'#ff00ff',
+			'maroon':					'#800000',
+			'mediumaquamarine':			'#66cdaa',
+			'mediumblue':				'#0000cd',
+			'mediumorchid':				'#ba55d3',
+			'mediumpurple':				'#9370d8',
+			'mediumseagreen':			'#3cb371',
+			'mediumslateblue':			'#7b68ee',
+			'mediumspringgreen':		'#00fa9a',
+			'mediumturquoise':			'#48d1cc',
+			'mediumvioletred':			'#c71585',
+			'midnightblue':				'#191970',
+			'mintcream':				'#f5fffa',
+			'mistyrose':				'#ffe4e1',
+			'moccasin':					'#ffe4b5',
+			'navajowhite':				'#ffdead',
+			'navy':						'#000080',
+			'oldlace':					'#fdf5e6',
+			'olive':					'#808000',
+			'olivedrab':				'#6b8e23',
+			'orange':					'#ffa500',
+			'orangered':				'#ff4500',
+			'orchid':					'#da70d6',
+			'palegoldenrod':			'#eee8aa',
+			'palegreen':				'#98fb98',
+			'paleturquoise':			'#afeeee',
+			'palevioletred':			'#d87093',
+			'papayawhip':				'#ffefd5',
+			'peachpuff':				'#ffdab9',
+			'peru':						'#cd853f',
+			'pink':						'#ffc0cb',
+			'plum':						'#dda0dd',
+			'powderblue':				'#b0e0e6',
+			'purple':					'#800080',
+			'rebeccapurple':			'#663399',
+			'red':						'#ff0000',
+			'rosybrown':				'#bc8f8f',
+			'royalblue':				'#4169e1',
+			'saddlebrown':				'#8b4513',
+			'salmon':					'#fa8072',
+			'sandybrown':				'#f4a460',
+			'seagreen':					'#2e8b57',
+			'seashell':					'#fff5ee',
+			'sienna':					'#a0522d',
+			'silver':					'#c0c0c0',
+			'skyblue':					'#87ceeb',
+			'slateblue':				'#6a5acd',
+			'slategray':				'#708090',
+			'slategrey':				'#708090',
+			'snow':						'#fffafa',
+			'springgreen':				'#00ff7f',
+			'steelblue':				'#4682b4',
+			'tan':						'#d2b48c',
+			'teal':						'#008080',
+			'thistle':					'#d8bfd8',
+			'tomato':					'#ff6347',
+			'turquoise':				'#40e0d0',
+			'violet':					'#ee82ee',
+			'wheat':					'#f5deb3',
+			'white':					'#ffffff',
+			'whitesmoke':				'#f5f5f5',
+			'yellow':					'#ffff00',
+			'yellowgreen':				'#9acd32',
+		};
+
+		return htmlColorNames[colorName];
+	},
+
+	_getColor: function(color) {
+		var el = $('<div>');
+
+		el.css({ backgroundColor: color });
+
+		return el.css('background-color');
+	},
+
+	getHex: function(color) {
+		var RGB_REGEX = /^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/;
+		var RGBA_REGEX = /^rgba\((\d+),\s*(\d+),\s*(\d+),\s*(\d+)\.(\d+)\)/;
+
+		var hex = '#ffffff';
+		var rgbaColor = this._getColor(color);
+
+		if (rgbaColor !== '' && !rgbaColor.match(RGBA_REGEX)) {
+			var rgbColorArr = rgbaColor.match(RGB_REGEX);
+
+			if (rgbColorArr) {
+				var hexValue1 = parseInt(rgbColorArr[1]).toString(16).slice(-2);
+				var hexValue2 = parseInt(rgbColorArr[2]).toString(16).slice(-2);
+				var hexValue3 = parseInt(rgbColorArr[3]).toString(16).slice(-2);
+
+				if (hexValue1.length === 1) {
+					hexValue1 = '0' + hexValue1;
+				}
+
+				if (hexValue2.length === 1) {
+					hexValue2 = '0' + hexValue2;
+				}
+
+				if (hexValue3.length === 1) {
+					hexValue3 = '0' + hexValue3;
+				}
+
+				hex = '#' + hexValue1 + hexValue2 + hexValue3;
+			}
+			else {
+				hex = this._getHtmlColorHex(rgbaColor);
+			}
+		}
+
+		return hex;
+	},
+};
+
+
+// Clay Paver
 
 var cpSpinnerTPL = '<div class="cp-loading"><div class="cp-loading-spinner"><div class="lds-heart-container"><div class="lds-heart"><div class="lds-heart-icon"></div></div></div><span class="cp-loading-msg">Loading...</span></div></div>';
 
@@ -95,7 +316,7 @@ var ClayPaver = {
 		var formId = $('.cp-variables-form').attr('id');
 
 		if ($('.cp-variables-form').length) {
-			$('.cp-variables-form .cp-form-control').val('');
+			$('.cp-variables-form .cp-form-control[type="text"]').val('');
 
 			cpDBThemes.getItem('currentTheme').then(function(value) {
 				cpDB.config().storeName = value;
@@ -107,7 +328,19 @@ var ClayPaver = {
 
 				cpDB.getItem(compileOrder[formId]).then(function(value) {
 					for (var item in value) {
-						$('#' + item).val(value[item]);
+						var input = $('#' + item);
+						var colorInput = input.find('+ .cp-form-control-color');
+
+						input.val(value[item]);
+
+						if (colorInput.length) {
+							if (value[item] === '') {
+								colorInput.val('#ffffff');
+							}
+							else {
+								colorInput.val(ClayPaverColorPicker.getHex(value[item]));
+							}
+						}
 					}
 				}).catch(function(err) {
 					console.log(err);
@@ -293,17 +526,57 @@ doc.on('click', '#downloadVariables', function(event) {
 doc.on('click', '.cp-unset-link', function(event) {
 	event.preventDefault();
 
-	var formControl = $(this).closest('.cp-form-group').find('.cp-form-control');
+	var textInput = $(this).closest('.cp-form-group').find('.cp-form-control[type="text"]');
 
-	if (formControl.val()) {
-		formControl.val('');
+	var variableName = ClayPaver.getVarName(textInput.attr('name'));
+
+	if (textInput.val() === '!default') {
+		cpDBThemes.getItem('currentTheme').then(function(value) {
+			cpDB.config().storeName = value;
+
+			cpDB = localforage.createInstance({
+				name: dbName,
+				storeName: value
+			});
+
+			cpDB.getItem(compileOrder[cpMasterList[variableName].groupId]).then(function(value) {
+				if (value[variableName] === '!default') {
+					textInput.val('');
+				}
+				else {
+					textInput.val(value[variableName]);
+				}
+			});
+		});
 	}
 	else {
-		formControl.val('!default');
+		textInput.val('!default');
 	}
 
-	formControl.focus();
+	textInput.focus();
 });
+
+// Color Picker
+
+doc.on('change', '.cp-form-control-color', function(event) {
+	var colorInput = $(this);
+
+	colorInput.closest('.cp-form-group').find('.cp-form-control[type="text"]').val(colorInput.val());
+});
+
+doc.on('change', '.cp-form-group-color .cp-form-control[type="text"]', function(event) {
+	var SASS_VAR_REGEX = /^$/;
+	var SASS_UNSET_REGEX = /^!/;
+
+	var colorInput = $(this).find('+ .cp-form-control-color');
+	var colorValue = $(this).val();
+
+	if (!colorValue.match(SASS_VAR_REGEX) || !colorValue.match(SASS_UNSET_REGEX)) {
+		colorInput.val(ClayPaverColorPicker.getHex(colorValue));
+	}
+});
+
+// Variables Form
 
 doc.on('submit', '.cp-variables-form', function(event) {
 	event.preventDefault();

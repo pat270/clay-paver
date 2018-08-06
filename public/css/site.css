@@ -246,14 +246,16 @@ a.cp-btn:focus {
 
 /* Forms */
 
+.cp-unset-link {
+	float: right;
+}
+
 .cp-control-label {
 	color: #000;
 	cursor: pointer;
+	font-size: 14px;
 	font-weight: normal;
-}
-
-.cp-unset-link {
-	float: right;
+	margin: 0 0 2px 0;
 }
 
 .cp-form-control {
@@ -272,8 +274,45 @@ a.cp-btn:focus {
 	outline: 0;
 }
 
+.cp-form-control-color {
+	-webkit-appearance: none;
+	border-width: 0;
+	bottom: 4px;
+	cursor: pointer;
+	height: 18px;
+	padding: 0;
+	position: absolute;
+	right: 5px;
+	width: 18px;
+	z-index: 1;
+}
+
+.cp-form-control-color::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+.cp-form-control-color::-webkit-color-swatch {
+	border-color: #a7a7a7;
+	border-radius: 2px;
+}
+
+.cp-form-control-color::-moz-color-swatch {
+	border-color: #a7a7a7;
+	border-radius: 2px;
+	margin-top: -1px;
+}
+
+.input-color-shim .cp-form-control-color {
+	display: none;
+}
+
 .cp-form-group {
 	margin-bottom: 16px;
+	position: relative;
+}
+
+.cp-form-group-color .cp-form-control[type="text"] {
+	padding-right: 27px;
 }
 
 .cp-variables-form-header {
