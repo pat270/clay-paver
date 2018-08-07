@@ -107,6 +107,10 @@ a:hover {
 	resize: vertical;
 }
 
+.cp-img-fluid {
+	max-width: 100%;
+}
+
 /* Heading */
 
 .cp-header {
@@ -366,6 +370,12 @@ a.cp-btn:focus {
 
 .cp-app-label {
 	margin-right: 15px;
+}
+
+.cp-github-logo {
+	display: block;
+	float: right;
+	width: 28px;
 }
 
 /* Sidebar */
