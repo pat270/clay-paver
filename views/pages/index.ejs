@@ -2,12 +2,12 @@
 <html>
 <head>
 	<meta charset="UTF-8" />
-	<title>Clay Paver</title>
+	<title>Clay 2 Paver</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/font-awesome.css" type="text/css" />
 	<link rel="stylesheet" href="css/site.css" type="text/css" />
-	<script src="js/jquery-2.2.3.min.js"></script>
-	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/turbolinks.min.js"></script>
 	<script src="js/sass.js"></script>
 	<script src="js/localforage.min.js"></script>
@@ -15,11 +15,11 @@
 <body>
 	<div id="clayPaverSite">
 		<div class="cp-app-navigation" data-turbolinks-permanent id="cpAppNavigation">
-			<a class="cp-app-navigation-link" href="/">Clay Paver</a>
+			<a class="cp-app-navigation-link" href="/">Clay <span>2</span> Paver</a>
 			<span class="cp-label cp-label-default cp-app-label current-theme-name"></span>
 			<div class="cp-dropdown dropdown">
 				<button aria-expanded="false" class="cp-btn cp-btn-secondary" data-toggle="dropdown" type="button">Navigation</button>
-				<ul class="clay-paver-dropdown-menu">
+				<ul class="clay-paver-dropdown-menu dropdown-menu">
 					<li><a class="cp-page-link" href="/">Home</a></li>
 					<li><a class="cp-page-link" href="/alert">Alert</a></li>
 					<li><a class="cp-page-link" href="/label">Label</a></li>
@@ -62,7 +62,7 @@
 
 			<div class="cp-dropdown dropdown">
 				<button aria-expanded="false" class="cp-btn cp-btn-secondary" data-toggle="dropdown" id="cpSwitchThemes" type="button">Switch Themes</button>
-				<ul class="clay-paver-dropdown-menu">
+				<ul class="clay-paver-dropdown-menu dropdown-menu">
 					<li>
 						<form action="/" id="addNewTheme">
 							<label class="cp-control-label">
@@ -77,7 +77,7 @@
 
 			<div class="cp-dropdown dropdown">
 				<button aria-expanded="false" class="cp-btn cp-btn-secondary" data-toggle="dropdown" type="button">Options</button>
-				<ul class="clay-paver-dropdown-menu">
+				<ul class="clay-paver-dropdown-menu dropdown-menu">
 					<li>
 						<a class="cp-dropdown-link" href="/import">Import</a>
 					</li>

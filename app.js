@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT || 9200;
 const server = require('http').createServer(app);
 
 app.use(express.static('public'));
