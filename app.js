@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 var sitePageCtrl = (req, res, next) => {
 	var page = req.params.page;
 	var pageExists = false;
-	var sitePages = ['alert', 'badge', 'blockquote', 'breadcrumb', 'button', 'card', 'dropdown', 'figure', 'input-disabled', 'input-readonly', 'input-sizes', 'input-validation', 'input', 'label', 'list-group', 'management-bar', 'modal', 'multi-step-progress-bar', 'nameplate', 'nav-pills', 'nav-tabs', 'nav', 'navbar', 'pager', 'pagination', 'panel', 'popover', 'progress-bar', 'sidebar', 'sticker', 'table', 'timeline', 'toggle-card', 'toggle-switch', 'tooltip', 'typography', 'user-icon', ];
+	var sitePages = ['alert', 'badge', 'blockquote', 'breadcrumb', 'button', 'card', 'dropdown', 'input-custom', 'input-group', 'input-validation', 'input', 'label', 'links', 'list-group', 'loading-animations', 'management-bar', 'menubar', 'modal', 'multi-step-nav', 'nav-pills', 'nav-tabs', 'nav-underline', 'nav', 'navbar', 'pagination', 'panel', 'popover', 'progress-bar', 'sheet', 'sidebar', 'sticker', 'table', 'tbar', 'timeline', 'toggle-switch', 'tooltip', 'typography', ];
 
 	for (var i = 0; i < sitePages.length; i++) {
 		if (sitePages[i] === page) {

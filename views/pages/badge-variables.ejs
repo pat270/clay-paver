@@ -1,89 +1,170 @@
 <h4 class="cp-variables-form-header">Badge</h4>
-<%- include('../partials/cpColorInput', { id: 'badge-bg' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-border-width' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-border-style' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-color' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-desktop-font-size' }) %>
 <%- include('../partials/cpTextInput', { id: 'badge-font-size' }) %>
 <%- include('../partials/cpTextInput', { id: 'badge-font-weight' }) %>
+<%- include('../partials/cpTextInput', { id: 'badge-padding-y' }) %>
+<%- include('../partials/cpTextInput', { id: 'badge-padding-x' }) %>
 <%- include('../partials/cpTextInput', { id: 'badge-line-height' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-padding-top' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-padding-right' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-padding-bottom' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-padding-left' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-lexicon-icon-width' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-lexicon-icon-height' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-active-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-active-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'badge-spacer-y' }) %>
+<%- include('../partials/cpTextInput', { id: 'badge-spacer-x' }) %>
+<%- include('../partials/cpTextInput', { id: 'badge-border-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'badge-border-style' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-border-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'badge-border-radius' }) %>
+
+<h4 class="cp-variables-form-header">Badge Link</h4>
+<%- include('../partials/cpColorInput', { id: 'badge-link-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'badge-link-hover-color' }) %>
 <%- include('../partials/cpTextInput', { id: 'badge-link-text-decoration' }) %>
 <%- include('../partials/cpTextInput', { id: 'badge-link-hover-text-decoration' }) %>
 
-<h4 class="cp-variables-form-header">Badge Default</h4>
-<%- include('../partials/cpColorInput', { id: 'badge-default-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-default-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-default-color' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-default-hover-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-default-hover-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-default-hover-color' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-default-link-color' }) %>
+<h4 class="cp-variables-form-header">Badge Lexicon Icon</h4>
+<%- include('../partials/cpTextInput', { id: 'badge-lexicon-icon-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'badge-lexicon-icon-height' }) %>
+<%- include('../partials/cpTextInput', { id: 'badge-lexicon-icon-margin-top' }) %>
+
+<h4 class="cp-variables-form-header">Badge Item</h4>
+<%- include('../partials/cpTextInput', { id: 'badge-item-expand-min-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'badge-item-spacer-x' }) %>
+
+<h4 class="cp-variables-form-header">Badge Pill</h4>
+<%- include('../partials/cpTextInput', { id: 'badge-pill-border-radius' }) %>
+<%- include('../partials/cpTextInput', { id: 'badge-pill-padding-x' }) %>
+
+<h4 class="cp-variables-form-header">Badge Close</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="badge-close" name="clay[badge-close]" type="hidden">
+	</div>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-align-items' }) %>
+	<%- include('../partials/cpColorInput', { id: 'badge-close-bg' }) %>
+	<%- include('../partials/cpColorInput', { id: 'badge-close-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-border-radius' }) %>
+	<%- include('../partials/cpColorInput', { id: 'badge-close-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-display' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-font-family' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-font-size' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-font-weight' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-justify-content' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-line-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-margin-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-padding-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-padding-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-padding-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-padding-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-text-align' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-text-transform' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-transition' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-vertical-align' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-width' }) %>
+	<%- include('../partials/cpColorInput', { id: 'badge-close-hover-bg' }) %>
+	<%- include('../partials/cpColorInput', { id: 'badge-close-hover-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-hover-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-hover-text-decoration' }) %>
+	<%- include('../partials/cpColorInput', { id: 'badge-close-focus-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-focus-box-shadow' }) %>
+	<%- include('../partials/cpColorInput', { id: 'badge-close-focus-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-focus-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-focus-outline' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-text-decoration' }) %>
+	<%- include('../partials/cpColorInput', { id: 'badge-close-active-bg' }) %>
+	<%- include('../partials/cpColorInput', { id: 'badge-close-active-border-color' }) %>
+	<%- include('../partials/cpColorInput', { id: 'badge-close-active-color' }) %>
+	<%- include('../partials/cpColorInput', { id: 'badge-close-disabled-bg' }) %>
+	<%- include('../partials/cpColorInput', { id: 'badge-close-disabled-border-color' }) %>
+	<%- include('../partials/cpColorInput', { id: 'badge-close-disabled-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-disabled-cursor' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-disabled-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-disabled-pointer-events' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-btn-focus-box-shadow' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-btn-focus-outline' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-lexicon-icon-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-lexicon-icon-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-lexicon-icon-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'badge-close-lexicon-icon-margin-top' }) %>
+</div>
 
 <h4 class="cp-variables-form-header">Badge Primary</h4>
 <%- include('../partials/cpColorInput', { id: 'badge-primary-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-primary-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-primary-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'badge-primary-hover-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-primary-hover-border' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-primary-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-primary-hover-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-primary-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'badge-primary-hover-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-primary-link-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-primary-link-hover-color' }) %>
+
+<h4 class="cp-variables-form-header">Badge Secondary</h4>
+<%- include('../partials/cpColorInput', { id: 'badge-secondary-bg' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-secondary-hover-bg' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-secondary-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-secondary-hover-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-secondary-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-secondary-hover-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-secondary-link-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-secondary-link-hover-color' }) %>
 
 <h4 class="cp-variables-form-header">Badge Success</h4>
 <%- include('../partials/cpColorInput', { id: 'badge-success-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-success-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-success-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'badge-success-hover-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-success-hover-border' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-success-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-success-hover-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-success-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'badge-success-hover-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-success-link-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-success-link-hover-color' }) %>
 
 <h4 class="cp-variables-form-header">Badge Info</h4>
 <%- include('../partials/cpColorInput', { id: 'badge-info-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-info-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-info-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'badge-info-hover-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-info-hover-border' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-info-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-info-hover-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-info-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'badge-info-hover-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-info-link-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-info-link-hover-color' }) %>
 
 <h4 class="cp-variables-form-header">Badge Warning</h4>
 <%- include('../partials/cpColorInput', { id: 'badge-warning-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-warning-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-warning-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'badge-warning-hover-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-warning-hover-border' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-warning-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-warning-hover-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-warning-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'badge-warning-hover-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-warning-link-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-warning-link-hover-color' }) %>
 
 <h4 class="cp-variables-form-header">Badge Danger</h4>
 <%- include('../partials/cpColorInput', { id: 'badge-danger-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-danger-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-danger-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'badge-danger-hover-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'badge-danger-hover-border' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-danger-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-danger-hover-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-danger-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'badge-danger-hover-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-danger-link-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-danger-link-hover-color' }) %>
 
-<h4 class="cp-variables-form-header">Badge Sm</h4>
-<%- include('../partials/cpTextInput', { id: 'badge-sm-desktop-font-size' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-sm-font-size' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-sm-padding-top' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-sm-padding-right' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-sm-padding-bottom' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-sm-padding-left' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-sm-lexicon-icon-width' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-sm-lexicon-icon-height' }) %>
+<h4 class="cp-variables-form-header">Badge Light</h4>
+<%- include('../partials/cpColorInput', { id: 'badge-light-bg' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-light-hover-bg' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-light-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-light-hover-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-light-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-light-hover-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-light-link-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-light-link-hover-color' }) %>
 
-<h4 class="cp-variables-form-header">Badge Lg</h4>
-<%- include('../partials/cpTextInput', { id: 'badge-lg-desktop-font-size' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-lg-font-size' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-lg-padding-top' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-lg-padding-right' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-lg-padding-bottom' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-lg-padding-left' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-lg-lexicon-icon-width' }) %>
-<%- include('../partials/cpTextInput', { id: 'badge-lg-lexicon-icon-height' }) %>
+<h4 class="cp-variables-form-header">Badge Dark</h4>
+<%- include('../partials/cpColorInput', { id: 'badge-dark-bg' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-dark-hover-bg' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-dark-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-dark-hover-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-dark-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-dark-hover-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-dark-link-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'badge-dark-link-hover-color' }) %>

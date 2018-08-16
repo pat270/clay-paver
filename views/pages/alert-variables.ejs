@@ -1,48 +1,198 @@
 <h4 class="cp-variables-form-header">Alert</h4>
-<%- include('../partials/cpTextInput', { id: 'alert-font-size', unset: true }) %>
-<%- include('../partials/cpTextInput', { id: 'alert-padding', unset: true }) %>
-<%- include('../partials/cpTextInput', { id: 'alert-border-width', unset: true }) %>
-<%- include('../partials/cpTextInput', { id: 'alert-border-radius', unset: true }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-font-size' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-padding-y' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-padding-x' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-margin-bottom' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-border-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-border-style' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-border-radius' }) %>
 
-<h4 class="cp-variables-form-header">Alert Link</h4>
-<%- include('../partials/cpTextInput', { id: 'alert-link-font-weight' }) %>
+<h4 class="cp-variables-form-header">Alert Indicator</h4>
+<%- include('../partials/cpTextInput', { id: 'alert-indicator-font-size' }) %>
 
 <h4 class="cp-variables-form-header">Alert Lead</h4>
 <%- include('../partials/cpTextInput', { id: 'alert-lead-font-size' }) %>
 <%- include('../partials/cpTextInput', { id: 'alert-lead-font-weight' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-lead-spacer-x' }) %>
+
+<h4 class="cp-variables-form-header">Alert Link</h4>
+<%- include('../partials/cpTextInput', { id: 'alert-link-font-weight' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-link-decoration' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-link-hover-decoration' }) %>
+
+<h4 class="cp-variables-form-header">Alert Dismissible</h4>
+<%- include('../partials/cpTextInput', { id: 'alert-dismissible-padding-top' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-dismissible-padding-right' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-dismissible-padding-bottom' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-dismissible-padding-left' }) %>
 
 <h4 class="cp-variables-form-header">Alert Close</h4>
-<%- include('../partials/cpColorInput', { id: 'alert-close-color', placeholder: 'only styles close for base alert' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-close-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-close-height' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-close-font-size' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-close-padding-top' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-close-padding-right' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-close-padding-bottom' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-close-padding-left' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-close-line-height' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-close-margin-left' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-close-opacity' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-close-position-top' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-close-position-right' }) %>
+
+<h4 class="cp-variables-form-header">Alert Fluid</h4>
+<%- include('../partials/cpTextInput', { id: 'alert-fluid-border-top-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-fluid-border-right-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-fluid-border-bottom-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-fluid-border-left-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-fluid-margin-bottom' }) %>
 
 <h4 class="cp-variables-form-header">Alert Notification</h4>
-<%- include('../partials/cpTextInput', { id: 'alert-notification-max-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-max-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-box-shadow' }) %>
 
-<h4 class="cp-variables-form-header">Alert Default</h4>
-<%- include('../partials/cpColorInput', { id: 'alert-default-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'alert-default-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'alert-default-text-bold' }) %>
-<%- include('../partials/cpColorInput', { id: 'alert-default-text' }) %>
+<h4 class="cp-variables-form-header">Alert Notifications Fixed</h4>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-fixed-top' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-fixed-top-mobile' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-fixed-right' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-fixed-right-mobile' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-fixed-bottom' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-fixed-bottom-mobile' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-fixed-left' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-fixed-left-mobile' }) %>
+
+<h4 class="cp-variables-form-header">Alert Notifications Absolute</h4>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-absolute-top' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-absolute-top-mobile' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-absolute-right' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-absolute-right-mobile' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-absolute-bottom' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-absolute-bottom-mobile' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-absolute-left' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-notifications-absolute-left-mobile' }) %>
+
+<h4 class="cp-variables-form-header">Alert Primary</h4>
+<%- include('../partials/cpTextInput', { id: 'alert-primary-border-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-primary-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-primary-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-primary-lead-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-primary-link-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-primary-link-hover-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-primary-close-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-primary-close-hover-color' }) %>
+
+<h4 class="cp-variables-form-header">Alert Secondary</h4>
+<%- include('../partials/cpTextInput', { id: 'alert-secondary-border-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-secondary-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-secondary-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-secondary-lead-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-secondary-link-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-secondary-link-hover-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-secondary-close-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-secondary-close-hover-color' }) %>
 
 <h4 class="cp-variables-form-header">Alert Success</h4>
-<%- include('../partials/cpColorInput', { id: 'alert-success-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'alert-success-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'alert-success-text-bold' }) %>
-<%- include('../partials/cpColorInput', { id: 'alert-success-text' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-success-border-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-success-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-success-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-success-lead-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-success-link-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-success-link-hover-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-success-close-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-success-close-hover-color' }) %>
 
 <h4 class="cp-variables-form-header">Alert Info</h4>
-<%- include('../partials/cpColorInput', { id: 'alert-info-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'alert-info-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'alert-info-text-bold' }) %>
-<%- include('../partials/cpColorInput', { id: 'alert-info-text' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-info-border-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-info-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-info-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-info-lead-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-info-link-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-info-link-hover-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-info-close-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-info-close-hover-color' }) %>
 
 <h4 class="cp-variables-form-header">Alert Warning</h4>
-<%- include('../partials/cpColorInput', { id: 'alert-warning-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'alert-warning-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'alert-warning-text-bold' }) %>
-<%- include('../partials/cpColorInput', { id: 'alert-warning-text' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-warning-border-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-warning-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-warning-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-warning-lead-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-warning-link-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-warning-link-hover-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-warning-close-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-warning-close-hover-color' }) %>
 
 <h4 class="cp-variables-form-header">Alert Danger</h4>
-<%- include('../partials/cpColorInput', { id: 'alert-danger-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'alert-danger-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'alert-danger-text-bold' }) %>
-<%- include('../partials/cpColorInput', { id: 'alert-danger-text' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-danger-border-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-danger-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-danger-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-danger-lead-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-danger-link-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-danger-link-hover-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-danger-close-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-danger-close-hover-color' }) %>
+
+<h4 class="cp-variables-form-header">Alert Light</h4>
+<%- include('../partials/cpTextInput', { id: 'alert-light-border-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-light-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-light-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-light-lead-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-light-link-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-light-link-hover-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-light-close-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-light-close-hover-color' }) %>
+
+<h4 class="cp-variables-form-header">Alert Dark</h4>
+<%- include('../partials/cpTextInput', { id: 'alert-dark-border-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-dark-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-dark-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-dark-lead-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-dark-link-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-dark-link-hover-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-dark-close-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'alert-dark-close-hover-color' }) %>
+
+<h4 class="cp-variables-form-header">Alert Component Title</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="alert-title" name="clay[alert-title]" type="hidden">
+	</div>
+	<%- include('../partials/cpTextInput', { id: 'alert-title-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-title-font-size' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-title-font-family' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-title-font-weight' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-title-padding-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-title-padding-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-title-padding-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-title-padding-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-title-line-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-title-margin-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-title-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-title-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-title-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-title-letter-spacing' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-title-text-transform' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-title-clay-link' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Alert Component Subtitle</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="alert-subtitle" name="clay[alert-subtitle]" type="hidden">
+	</div>
+	<%- include('../partials/cpTextInput', { id: 'alert-subtitle-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-subtitle-font-size' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-subtitle-font-family' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-subtitle-font-weight' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-subtitle-padding-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-subtitle-padding-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-subtitle-padding-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-subtitle-padding-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-subtitle-line-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-subtitle-margin-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-subtitle-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-subtitle-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-subtitle-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-subtitle-letter-spacing' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-subtitle-text-transform' }) %>
+	<%- include('../partials/cpTextInput', { id: 'alert-subtitle-clay-link' }) %>
+</div>

@@ -1,103 +1,340 @@
-<style>.dropdown-menu { display: block; position: static; }</style>
-
-<div class="row">
-	<div class="col-md-12">
-		<h3>Default</h3>
-		<ul class="dropdown-menu">
-			<li class="dropdown-header">Order by:</li>
-			<li class="active"><a href="#">Author</a></li>
-			<li class="disabled"><a href="#">Title Entry</a></li>
-			<li class="divider"></li>
-			<li><a href="#">Date</a></li>
-			<li><a href="#">Description</a></li>
-			<li><a href="#">Status</a></li>
-		</ul>
-	</div>
+<h3>Dropdown Menu</h3>
+<div class="cp-example-dropdown-menu-container">
+	<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu">
+		<li class="dropdown-subheader">Order by</li>
+		<li><a class="active dropdown-item" href="#1">Author</a></li>
+		<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Title Entry</a></li>
+		<li class="dropdown-divider"></li>
+		<li><a class="dropdown-item" href="#1">Date</a></li>
+		<li><a class="dropdown-item" href="#1">Description</a></li>
+		<li><a class="dropdown-item" href="#1">Status</a></li>
+	</ul>
 </div>
 
-<div class="row">
-	<div class="col-md-12">
-		<h3>Scrolling Content</h3>
-		<ul class="dropdown-menu">
-			<li class="dropdown-header">Dropdown Header</li>
-			<li>
-				<ul class="inline-scroller">
-					<li><a href="#">Actions</a></li>
-					<li><a href="#">Edit</a></li>
-					<li><a href="#">View</a></li>
-					<li><a href="#">Permissions</a></li>
-					<li><a href="#">Actions</a></li>
-					<li><a href="#">Edit</a></li>
-					<li><a href="#">View</a></li>
-					<li><a href="#">Permissions</a></li>
-					<li><a href="#">Actions</a></li>
-					<li><a href="#">Edit</a></li>
-					<li><a href="#">View</a></li>
-					<li><a href="#">Permissions</a></li>
-					<li><a href="#">Actions</a></li>
-					<li><a href="#">Edit</a></li>
-					<li><a href="#">View</a></li>
-					<li><a href="#">Permissions</a></li>
-				</ul>
-			</li>
-			<li class="disabled"><a href="#">Disabled</a></li>
-			<li class="divider"></li>
-			<li><a href="#">Scope</a></li>
-		</ul>
-	</div>
+<h3>Dropdown Menu with Form Elements</h3>
+<div class="cp-example-dropdown-menu-container">
+	<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu">
+		<li class="dropdown-section">
+			<div class="input-group input-group-sm">
+				<div class="input-group-item">
+					<input class="form-control input-group-inset input-group-inset-after" placeholder="Search for..." type="text">
+					<span class="input-group-inset-item input-group-inset-item-after">
+						<button class="btn btn-unstyled" type="button">
+							<svg aria-hidden="true" class="lexicon-icon lexicon-icon-search">
+								<use xlink:href="../../images/icons/icons.svg#search" />
+							</svg>
+						</button>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li class="dropdown-subheader">Filter by</li>
+		<li>
+			<div class="active dropdown-item">
+				<div class="custom-control custom-checkbox">
+					<label>
+						<input checked class="custom-control-input" type="checkbox">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Selected Option</span>
+						</span>
+					</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="dropdown-item">
+				<div class="custom-control custom-checkbox">
+					<label>
+						<input class="custom-control-input" type="checkbox">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Normal Option</span>
+						</span>
+					</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="disabled dropdown-item">
+				<div class="custom-control custom-checkbox">
+					<label>
+						<input disabled class="custom-control-input" type="checkbox">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Disabled Option</span>
+						</span>
+					</label>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="cp-example-dropdown-menu-container">
+	<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu">
+		<li class="dropdown-subheader">Order by</li>
+		<li>
+			<div class="active dropdown-item">
+				<div class="custom-control custom-radio">
+					<label>
+						<input checked class="custom-control-input" id="dropdownRadio1" name="dropdownRadio" type="radio">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Selected Option</span>
+						</span>
+					</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="dropdown-item">
+				<div class="custom-control custom-radio">
+					<label>
+						<input class="custom-control-input" id="dropdownRadio2" name="dropdownRadio" type="radio">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Normal Option</span>
+						</span>
+					</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="disabled dropdown-item">
+				<div class="custom-control custom-radio">
+					<label>
+						<input disabled class="custom-control-input" id="dropdownRadio3" name="dropdownRadio" type="radio">
+						<span class="custom-control-label">
+							<span class="custom-control-label-text">Disabled Option</span>
+						</span>
+					</label>
+				</div>
+			</div>
+		</li>
+		<li class="dropdown-section">
+			<button class="btn btn-block btn-primary" type="submit">Done</button>
+		</li>
+	</ul>
+</div>
+<div class="cp-example-dropdown-menu-container">
+	<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu">
+		<li class="dropdown-section form-group">
+			<label for="basicInputTypeText1">
+				Text 1
+			</label>
+			<input class="form-control form-control-sm" id="basicInputTypeText1" placeholder="Placeholder" type="text">
+		</li>
+		<li class="dropdown-subheader">Form Section</li>
+		<li class="dropdown-section">
+			<div class="form-group">
+				<label for="basicInputTypeText2">
+					Text 2
+				</label>
+				<input class="form-control form-control-sm" id="basicInputTypeText2" placeholder="Placeholder" type="text">
+			</div>
+		</li>
+		<li class="dropdown-section">
+			<div class="form-group">
+				<label for="basicInputTypeText3">
+					Text 3
+				</label>
+				<input class="form-control form-control-sm" id="basicInputTypeText3" placeholder="Placeholder" type="text">
+			</div>
+			<div class="form-group">
+				<label for="basicInputTypeTextarea">Textarea</label>
+				<textarea class="form-control form-control-sm" id="basicInputTypeTextarea" placeholder="Placeholder"></textarea>
+			</div>
+		</li>
+		<li class="dropdown-subheader">Order by</li>
+		<li><a class="active dropdown-item" href="#1">Author</a></li>
+		<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Title Entry</a></li>
+	</ul>
 </div>
 
-<div class="row">
-	<div class="col-md-12">
-		<h3>Dropdown wide / full</h3>
-		<div class="dropdown-wide dropdown-wide-container">
-			<ul class="dropdown-menu">
-				<li class="col-sm-4">
-					<ul class="link-list">
-						<li class="link-list-heading">By Resource</li>
-						<li><a href="#1">Support Home</a></li>
-						<li class="disabled"><a href="#1">Disabled Link</a></li>
-						<li><a href="#1">Chat or Call</a></li>
-					</ul>
+<h3>Dropdown Menu with Indicators</h3>
+<div class="cp-example-dropdown-menu-container">
+	<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu dropdown-menu-indicator-start">
+		<li class="dropdown-header">Dropdown Header</li>
+		<li class="dropdown-divider"></li>
+		<li class="dropdown-subheader">Dropdown Sub Header</li>
+		<li>
+			<a class="dropdown-item" href="#1">
+				<div class="dropdown-item-indicator">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-check">
+						<use xlink:href="../../images/icons/icons.svg#check" />
+					</svg>
+				</div>
+				Ticket Buyer Information
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="#1">
+				<div class="dropdown-item-indicator">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-check">
+						<use xlink:href="../../images/icons/icons.svg#check" />
+					</svg>
+				</div>
+				Attendee Information
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="#1">
+				<div class="dropdown-item-indicator">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-check">
+						<use xlink:href="../../images/icons/icons.svg#check" />
+					</svg>
+				</div>
+				Seat Assignment
+			</a>
+		</li>
+		<li><a class="active dropdown-item" href="#1">Dinner Preference</a></li>
+		<li><a class="dropdown-item" href="#1">Submit Payment</a></li>
+		<li class="dropdown-caption">Dropdown Caption</li>
+	</ul>
+</div>
+<div class="cp-example-dropdown-menu-container">
+	<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu dropdown-menu-indicator-end">
+		<li class="dropdown-header">Folder</li>
+		<li class="dropdown-divider"></li>
+		<li class="dropdown-subheader">Order By</li>
+		<li>
+			<a class="active dropdown-item" href="#1">
+				Step 01
+				<div class="dropdown-item-indicator">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-check">
+						<use xlink:href="../../images/icons/icons.svg#check" />
+					</svg>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a class="disabled dropdown-item" href="#1" tabindex="-1">
+				Step 02
+				<div class="dropdown-item-indicator">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-check">
+						<use xlink:href="../../images/icons/icons.svg#check" />
+					</svg>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item" href="#1">
+				Step 03
+				<div class="dropdown-item-indicator">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+						<use xlink:href="../../images/icons/icons.svg#times" />
+					</svg>
+				</div>
+			</a>
+		</li>
+		<li><a class="dropdown-item" href="#1">Step 04</a></li>
+		<li><a class="dropdown-item" href="#1">Step 05</a></li>
+		<li class="dropdown-caption">Showing 190,722 of 192,842 Things</li>
+	</ul>
+</div>
 
-					<ul class="link-list">
-						<li class="link-list-heading">By Product</li>
-						<li class="active"><a href="#1">Developing for the Platform</a></li>
-						<li><a href="#1">Mastering Fundamentals</a></li>
-						<li><a href="#1">Styling with Themes</a></li>
-						<li><a href="#1">Managing Content</a></li>
-					</ul>
-				</li>
-
-				<li class="col-sm-4">
-					<ul class="link-list">
-						<li class="link-list-heading">Popular Picks</li>
-						<li><a href="#1">Error Messages</a></li>
-						<li><a href="#1">Updates: Service Packs & Fixes</a></li>
-						<li><a href="#1">Install, Upgrade, & Activate</a></li>
-						<li><a href="#1">Regular Drivers</a></li>
-						<li><a href="#1">Hardware Drivers</a></li>
-					</ul>
-
-					<ul class="link-list">
-						<li class="link-list-heading">Security</li>
-						<li><a href="#1">Security Home</a></li>
-						<li><a href="#1">Security Essentials</a></li>
-						<li><a href="#1">Protecting Your Data</a></li>
-						<li><a href="#1">Securing Your Browser</a></li>
-					</ul>
-				</li>
-
-				<li class="col-sm-4">
-					<ul class="link-list">
-						<li class="link-list-heading">By Audience</li>
-						<li><a href="#1">For Home Users</a></li>
-						<li><a href="#1">For Small Business</a></li>
-						<li><a href="#1">For IT Professionals</a></li>
-						<li><a href="#1">For Developers</a></li>
-					</ul>
-				</li>
+<h3>Dropdown Menu with Scrolling Content</h3>
+<div class="cp-example-dropdown-menu-container">
+	<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu">
+		<li class="dropdown-header">Dropdown Header</li>
+		<li>
+			<ul class="inline-scroller">
+				<li><a class="dropdown-item" href="#1">Actions</a></li>
+				<li><a class="dropdown-item" href="#1">Edit</a></li>
+				<li><a class="dropdown-item" href="#1">View</a></li>
+				<li><a class="dropdown-item" href="#1">Permissions</a></li>
+				<li><a class="dropdown-item" href="#1">Actions</a></li>
+				<li><a class="dropdown-item" href="#1">Edit</a></li>
+				<li><a class="dropdown-item" href="#1">View</a></li>
+				<li><a class="dropdown-item" href="#1">Permissions</a></li>
+				<li><a class="dropdown-item" href="#1">Actions</a></li>
+				<li><a class="dropdown-item" href="#1">Edit</a></li>
+				<li><a class="dropdown-item" href="#1">View</a></li>
+				<li><a class="dropdown-item" href="#1">Permissions</a></li>
+				<li><a class="dropdown-item" href="#1">Actions</a></li>
+				<li><a class="dropdown-item" href="#1">Edit</a></li>
+				<li><a class="dropdown-item" href="#1">View</a></li>
+				<li><a class="dropdown-item" href="#1">Permissions</a></li>
 			</ul>
+		</li>
+		<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled</a></li>
+		<li class="dropdown-divider"></li>
+		<li><a class="dropdown-item" href="#1">Scope</a></li>
+	</ul>
+</div>
+<div class="cp-example-dropdown-menu-container">
+	<ul aria-labelledby="theDropdownToggleId" class="dropdown-menu">
+		<li class="alert alert-fluid alert-info" role="alert">
+			You can customize this menu or see all you have by pressing "more".
+		</li>
+		<li class="dropdown-header">Folder</li>
+		<li class="dropdown-divider"></li>
+		<li class="dropdown-subheader">Favorites</li>
+		<li>
+			<ul class="inline-scroller">
+				<li><a class="dropdown-item" href="#1">D Structure</a></li>
+				<li><a class="dropdown-item" href="#1">F Structure</a></li>
+				<li><a class="disabled dropdown-item" href="#1" tabindex="-1">H Structure</a></li>
+				<li><a class="dropdown-item" href="#1">J Structure</a></li>
+				<li><a class="dropdown-item" href="#1">L Structure</a></li>
+				<li><a class="dropdown-item" href="#1">M Structure</a></li>
+				<li><a class="dropdown-item" href="#1">P Structure</a></li>
+				<li><a class="dropdown-item" href="#1">Q Structure</a></li>
+				<li><a class="dropdown-item" href="#1">R Structure</a></li>
+				<li><a class="dropdown-item" href="#1">S Structure</a></li>
+				<li><a class="dropdown-item" href="#1">T Structure</a></li>
+				<li><a class="dropdown-item" href="#1">U Structure</a></li>
+			</ul>
+		</li>
+		<li class="dropdown-caption">Showing 7 of 203 Structures</li>
+		<li class="dropdown-section">
+			<button class="btn btn-block btn-secondary">More</button>
+		</li>
+	</ul>
+</div>
+
+<h3>Dropdown Wide</h3>
+<div class="cp-example-dropdown-menu-container">
+	<div aria-labelledby="" class="dropdown-wide dropdown-wide-container">
+		<div class="dropdown-menu">
+			<div class="row">
+				<div class="col-sm-4">
+					<ul class="list-unstyled">
+						<li class="dropdown-subheader">By Resource</li>
+						<li><a class="dropdown-item" href="#1">Support Home</a></li>
+						<li><a class="disabled dropdown-item" href="#1" tabindex="-1">Disabled Link</a></li>
+						<li><a class="dropdown-item" href="#1">Chat or Call</a></li>
+					</ul>
+					<ul class="list-unstyled">
+						<li class="dropdown-subheader">By Product</li>
+						<li><a class="active dropdown-item" href="#1">Developing for the Platform</a></li>
+						<li><a class="dropdown-item" href="#1">Mastering Fundamentals</a></li>
+						<li><a class="dropdown-item" href="#1">Styling with Themes</a></li>
+						<li><a class="dropdown-item" href="#1">Managing Content</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<ul class="list-unstyled">
+						<li class="dropdown-subheader">Popular Picks</li>
+						<li><a class="dropdown-item" href="#1">Error Messages</a></li>
+						<li><a class="dropdown-item" href="#1">Updates: Service Packs & Fixes</a></li>
+						<li><a class="dropdown-item" href="#1">Install, Upgrade, & Activate</a></li>
+						<li><a class="dropdown-item" href="#1">Regular Drivers</a></li>
+						<li><a class="dropdown-item" href="#1">Hardware Drivers</a></li>
+					</ul>
+					<ul class="list-unstyled">
+						<li class="dropdown-subheader">Security</li>
+						<li><a class="dropdown-item" href="#1">Security Home</a></li>
+						<li><a class="dropdown-item" href="#1">Security Essentials</a></li>
+						<li><a class="dropdown-item" href="#1">Protecting Your Data</a></li>
+						<li><a class="dropdown-item" href="#1">Securing Your Browser</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<ul class="list-unstyled">
+						<li class="dropdown-subheader">By Audience</li>
+						<li><a class="dropdown-item" href="#1">For Home Users</a></li>
+						<li><a class="dropdown-item" href="#1">For Small Business</a></li>
+						<li><a class="dropdown-item" href="#1">For IT Professionals</a></li>
+						<li><a class="dropdown-item" href="#1">For Developers</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

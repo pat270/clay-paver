@@ -576,6 +576,33 @@ doc.on('change', '.cp-form-group-color .cp-form-control[type="text"]', function(
 	}
 });
 
+// Sass Map
+
+doc.on('change', '.cp-form-group-sass-map .cp-form-control', function(event) {
+	var sb = '';
+	var sassMapGroup = $(this).closest('.cp-form-group-sass-map');
+
+	var sassMapPrefix = sassMapGroup.find('.cp-form-control-sass-map').attr('id');
+	var inputs = sassMapGroup.find('.cp-form-control[type="text"]');
+
+	inputs.each(function(index) {
+		var id = $(this).attr('id').slice(sassMapPrefix.length + 1);
+		var val = $(this).val();
+
+		if (val !== '') {
+			sb += '\t' + id + ': ' + val + ',\n';
+		}
+	});
+
+	if (sb !== '') {
+		sb = '(\n' + sb;
+		sb += ')';
+	}
+
+	sassMapGroup.find('.cp-form-control-sass-map').val(sb);
+	console.log(sassMapGroup.find('.cp-form-control-sass-map').val());
+});
+
 // Variables Form
 
 doc.on('submit', '.cp-variables-form', function(event) {
@@ -583,7 +610,7 @@ doc.on('submit', '.cp-variables-form', function(event) {
 
 	var formId = $(this).attr('id');
 	var formValues = $(this).serializeArray();
-
+	console.log(formValues);
 	ClayPaver.setVariableGroup(compileOrder[formId], formValues);
 
 	ClayPaver.showStatusBar('Saved...');

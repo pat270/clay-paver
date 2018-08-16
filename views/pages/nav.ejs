@@ -1,190 +1,264 @@
-<h3>Nav</h3>
-<div class="row">
-	<div class="col-md-6">
-		<ul class="nav">
-			<li class="nav-heading"><span>Basic Information</span></li>
-			<li><a href="#1">Details</a></li>
-			<li><a href="#1">Catagorization</a></li>
-			<li><a href="#1">Documents and Media</a></li>
-			<li><a href="#1">Site Template</a></li>
-		</ul>
-	</div>
-</div>
+<h3>Base Nav</h3>
+<ul class="nav">
+	<li class="nav-item"><a class="active nav-link" href="#1">Details</a></li>
+	<li class="nav-item"><a class="nav-link" href="#1">Categorization</a></li>
+	<li class="nav-item"><a class="disabled nav-link" href="#1">Documents and Media</a></li>
+	<li class="nav-item"><a class="nav-link" href="#1">Site Template</a></li>
+</ul>
+
+<h3>Nav Stacked</h3>
+<ul class="nav nav-stacked">
+	<li class="nav-item"><a class="active nav-link" href="#1">Details</a></li>
+	<li class="nav-item"><a class="nav-link" href="#1">Categorization</a></li>
+	<li class="nav-item"><a class="disabled nav-link" href="#1">Documents and Media</a></li>
+	<li class="nav-item"><a class="nav-link" href="#1">Site Template</a></li>
+	<li class="nav-item"><a class="nav-link" href="#1">Configuration</a></li>
+	<li class="nav-item"><a class="nav-link" href="#1">Identification</a></li>
+</ul>
 
 <h3>Nav Nested (Padding)</h3>
-<div class="row">
-	<div class="col-md-6">
-		<ul class="nav nav-nested">
-			<li>
-				<a aria-expanded="true" class="collapse-icon" data-toggle="collapse" href="#naCollapse01">
-					Basic Information
-					<span class="collapse-icon-closed">
-						<span class="icon-caret-right"></span>
-					</span>
-					<span class="collapse-icon-open">
-						<span class="icon-caret-down"></span>
-					</span>
-				</a>
-				<div aria-expanded="true" class="collapse in" id="naCollapse01">
-					<ul class="nav">
-						<li class="active"><a href="#1">Details</a></li>
-						<li><a href="#1">Catagorization</a></li>
-						<li>
-							<a aria-expanded="false" class="collapsed collapse-icon" data-toggle="collapse" href="#naCollapse02">
-								Documents and Media
-								<span class="collapse-icon-closed">
-									<span class="icon-caret-right"></span>
-								</span>
-								<span class="collapse-icon-open">
-									<span class="icon-caret-down"></span>
-								</span>
-							</a>
-							<div aria-expanded="false" class="collapse" id="naCollapse02">
-								<ul class="nav">
-									<li><a href="#1">Details</a></li>
-									<li><a href="#1">Catagorization</a></li>
-									<li><a href="#1">Documents and Media</a></li>
-									<li><a href="#1">Site Template</a></li>
-								</ul>
-							</div>
-						</li>
-						<li><a href="#1">Site Template</a></li>
-					</ul>
-				</div>
-			</li>
-			<li>
-				<a aria-expanded="false" class="collapsed collapse-icon" data-toggle="collapse" href="#naCollapse03">
-					SEO
-					<span class="collapse-icon-closed">
-						<span class="icon-caret-right"></span>
-					</span>
-					<span class="collapse-icon-open">
-						<span class="icon-caret-down"></span>
-					</span>
-				</a>
-				<div aria-expanded="false" class="collapse" id="naCollapse03">
-					<ul class="nav">
-						<li><a href="#1">Sitemap</a></li>
-						<li><a href="#1">Robots</a></li>
-					</ul>
-				</div>
-			</li>
-			<li>
-				<a aria-expanded="false" class="collapsed collapse-icon" data-toggle="collapse" href="#naCollapse04">
-					Advanced
-					<span class="collapse-icon-closed">
-						<span class="icon-caret-right"></span>
-					</span>
-					<span class="collapse-icon-open">
-						<span class="icon-caret-down"></span>
-					</span>
-				</a>
-				<div aria-expanded="false" class="collapse" id="naCollapse04">
-					<ul class="nav">
-						<li><a href="#1">Default User Associations</a></li>
-						<li><a href="#1">Staging</a></li>
-						<li><a href="#1">Analytics</a></li>
-						<li><a href="#1">Maps</a></li>
-					</ul>
-				</div>
-			</li>
-		</ul>
-	</div>
-</div>
+<ul class="nav nav-nested">
+	<li class="nav-item">
+		<a aria-controls="navCollapse01" aria-expanded="true" class="collapse-icon nav-link" data-toggle="collapse" href="#navCollapse01" role="button">
+			Basic Information
+			<span class="collapse-icon-closed">
+				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-caret-right">
+					<use xlink:href="../../images/icons/icons.svg#caret-right" />
+				</svg>
+			</span>
+			<span class="collapse-icon-open">
+				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-caret-bottom">
+					<use xlink:href="../../images/icons/icons.svg#caret-bottom" />
+				</svg>
+			</span>
+		</a>
+		<div class="collapse show" id="navCollapse01">
+			<ul class="nav nav-stacked">
+				<li class="nav-item"><a class="active nav-link" href="#1">Details</a></li>
+				<li class="nav-item"><a class="nav-link" href="#1">Categorization</a></li>
+				<li class="nav-item">
+					<a aria-controls="navCollapse02" aria-expanded="false" class="collapsed collapse-icon nav-link" data-toggle="collapse" href="#navCollapse02" role="button">
+						Documents and Media
+						<span class="collapse-icon-closed">
+							<svg aria-hidden="true" class="lexicon-icon lexicon-icon-caret-right">
+								<use xlink:href="../../images/icons/icons.svg#caret-right" />
+							</svg>
+						</span>
+						<span class="collapse-icon-open">
+							<svg aria-hidden="true" class="lexicon-icon lexicon-icon-caret-bottom">
+								<use xlink:href="../../images/icons/icons.svg#caret-bottom" />
+							</svg>
+						</span>
+					</a>
+					<div class="collapse" id="navCollapse02">
+						<ul class="nav nav-stacked">
+							<li class="nav-item"><a class="nav-link" href="#1">Details</a></li>
+							<li class="nav-item"><a class="nav-link" href="#1">Categorization</a></li>
+							<li class="nav-item"><a class="nav-link" href="#1">Documents and Media</a></li>
+							<li class="nav-item"><a class="nav-link" href="#1">Site Template</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="#1">Site Template</a></li>
+			</ul>
+		</div>
+	</li>
+	<li class="nav-item">
+		<a aria-controls="navCollapse03" aria-expanded="false" class="collapsed collapse-icon nav-link" data-toggle="collapse" href="#navCollapse03" role="button">
+			SEO
+			<span class="collapse-icon-closed">
+				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-caret-right">
+					<use xlink:href="../../images/icons/icons.svg#caret-right" />
+				</svg>
+			</span>
+			<span class="collapse-icon-open">
+				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-caret-bottom">
+					<use xlink:href="../../images/icons/icons.svg#caret-bottom" />
+				</svg>
+			</span>
+		</a>
+		<div class="collapse" id="navCollapse03">
+			<ul class="nav nav-stacked">
+				<li class="nav-item"><a class="nav-link" href="#1">Sitemap</a></li>
+				<li class="nav-item"><a class="nav-link" href="#1">Robots</a></li>
+			</ul>
+		</div>
+	</li>
+	<li class="nav-item">
+		<a aria-controls="navCollapse04" aria-expanded="false" class="collapsed collapse-icon nav-link" data-toggle="collapse" href="#navCollapse04" role="button">
+			Advanced
+			<span class="collapse-icon-closed">
+				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-caret-right">
+					<use xlink:href="../../images/icons/icons.svg#caret-right" />
+				</svg>
+			</span>
+			<span class="collapse-icon-open">
+				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-caret-bottom">
+					<use xlink:href="../../images/icons/icons.svg#caret-bottom" />
+				</svg>
+			</span>
+		</a>
+		<div class="collapse" id="navCollapse04">
+			<ul class="nav nav-stacked">
+				<li class="nav-item"><a class="nav-link" href="#1">Default User Associations</a></li>
+				<li class="nav-item"><a class="nav-link" href="#1">Staging</a></li>
+				<li class="nav-item"><a class="nav-link" href="#1">Analytics</a></li>
+				<li class="nav-item"><a class="nav-link" href="#1">Maps</a></li>
+			</ul>
+		</div>
+	</li>
+</ul>
 
-<h3>Nav Nested (Margins)</h3>
-<div class="row">
-	<div class="col-md-6">
-		<ul class="nav nav-nested-margins">
-			<li>
-				<a aria-expanded="true" class="collapse-icon" data-toggle="collapse" href="#naCollapse001">
-					Basic Information
-					<span class="collapse-icon-closed">
-						<svg class="lexicon-icon" viewBox="0 0 512 512">
-							<path class="lexicon-icon-outline" d="M396.394 255.607c-0.22-6.936-2.973-13.81-8.272-19.111l-227.221-227.221c-11.026-11.059-28.94-11.059-39.999 0-11.058 11.026-11.058 28.941 0 39.999l206.333 206.333c0 0-206.333 206.333-206.333 206.333-11.058 11.058-11.058 28.973 0 39.999 11.059 11.059 28.972 11.059 39.999 0l227.221-227.221c5.3-5.3 8.053-12.175 8.272-19.111z"></path>
-						</svg>
-					</span>
-					<span class="collapse-icon-open">
-						<svg class="lexicon-icon" viewBox="0 0 512 512">
-							<path class="lexicon-icon-outline" d="M256 384c6.936-0.22 13.81-2.973 19.111-8.272l227.221-227.221c11.058-11.026 11.058-28.941 0-39.999-11.026-11.058-28.94-11.058-39.999 0l-206.333 206.333c0 0-206.333-206.333-206.333-206.333-11.059-11.058-28.973-11.058-39.999 0-11.059 11.058-11.059 28.972 0 39.999l227.221 227.221c5.3 5.3 12.174 8.053 19.111 8.272z"></path>
-						</svg>
-					</span>
-				</a>
-				<div aria-expanded="true" class="collapse in" id="naCollapse001">
-					<ul class="nav">
-						<li class="active"><a href="#1">Details</a></li>
-						<li><a href="#1">Catagorization</a></li>
-						<li>
-							<a aria-expanded="false" class="collapsed collapse-icon" data-toggle="collapse" href="#naCollapse002">
-								Documents and Media
-								<span class="collapse-icon-closed">
-									<svg class="lexicon-icon" viewBox="0 0 512 512">
-										<path class="lexicon-icon-outline" d="M396.394 255.607c-0.22-6.936-2.973-13.81-8.272-19.111l-227.221-227.221c-11.026-11.059-28.94-11.059-39.999 0-11.058 11.026-11.058 28.941 0 39.999l206.333 206.333c0 0-206.333 206.333-206.333 206.333-11.058 11.058-11.058 28.973 0 39.999 11.059 11.059 28.972 11.059 39.999 0l227.221-227.221c5.3-5.3 8.053-12.175 8.272-19.111z"></path>
-									</svg>
-								</span>
-								<span class="collapse-icon-open">
-									<svg class="lexicon-icon" viewBox="0 0 512 512">
-										<path class="lexicon-icon-outline" d="M256 384c6.936-0.22 13.81-2.973 19.111-8.272l227.221-227.221c11.058-11.026 11.058-28.941 0-39.999-11.026-11.058-28.94-11.058-39.999 0l-206.333 206.333c0 0-206.333-206.333-206.333-206.333-11.059-11.058-28.973-11.058-39.999 0-11.059 11.058-11.059 28.972 0 39.999l227.221 227.221c5.3 5.3 12.174 8.053 19.111 8.272z"></path>
-									</svg>
-								</span>
-							</a>
-							<div aria-expanded="false" class="collapse" id="naCollapse002">
-								<ul class="nav">
-									<li><a href="#1">Details</a></li>
-									<li><a href="#1">Catagorization</a></li>
-									<li><a href="#1">Documents and Media</a></li>
-									<li><a href="#1">Site Template</a></li>
-								</ul>
-							</div>
-						</li>
-						<li><a href="#1">Site Template</a></li>
-					</ul>
-				</div>
-			</li>
-			<li>
-				<a aria-expanded="false" class="collapsed collapse-icon" data-toggle="collapse" href="#naCollapse003">
-					SEO
-					<span class="collapse-icon-closed">
-						<svg class="lexicon-icon" viewBox="0 0 512 512">
-							<path class="lexicon-icon-outline" d="M396.394 255.607c-0.22-6.936-2.973-13.81-8.272-19.111l-227.221-227.221c-11.026-11.059-28.94-11.059-39.999 0-11.058 11.026-11.058 28.941 0 39.999l206.333 206.333c0 0-206.333 206.333-206.333 206.333-11.058 11.058-11.058 28.973 0 39.999 11.059 11.059 28.972 11.059 39.999 0l227.221-227.221c5.3-5.3 8.053-12.175 8.272-19.111z"></path>
-						</svg>
-					</span>
-					<span class="collapse-icon-open">
-						<svg class="lexicon-icon" viewBox="0 0 512 512">
-							<path class="lexicon-icon-outline" d="M256 384c6.936-0.22 13.81-2.973 19.111-8.272l227.221-227.221c11.058-11.026 11.058-28.941 0-39.999-11.026-11.058-28.94-11.058-39.999 0l-206.333 206.333c0 0-206.333-206.333-206.333-206.333-11.059-11.058-28.973-11.058-39.999 0-11.059 11.058-11.059 28.972 0 39.999l227.221 227.221c5.3 5.3 12.174 8.053 19.111 8.272z"></path>
-						</svg>
-					</span>
-				</a>
-				<div aria-expanded="false" class="collapse" id="naCollapse003">
-					<ul class="nav">
-						<li><a href="#1">Sitemap</a></li>
-						<li><a href="#1">Robots</a></li>
-					</ul>
-				</div>
-			</li>
-			<li>
-				<a aria-expanded="false" class="collapsed collapse-icon" data-toggle="collapse" href="#naCollapse004">
-					Advanced
-					<span class="collapse-icon-closed">
-						<svg class="lexicon-icon" viewBox="0 0 512 512">
-							<path class="lexicon-icon-outline" d="M396.394 255.607c-0.22-6.936-2.973-13.81-8.272-19.111l-227.221-227.221c-11.026-11.059-28.94-11.059-39.999 0-11.058 11.026-11.058 28.941 0 39.999l206.333 206.333c0 0-206.333 206.333-206.333 206.333-11.058 11.058-11.058 28.973 0 39.999 11.059 11.059 28.972 11.059 39.999 0l227.221-227.221c5.3-5.3 8.053-12.175 8.272-19.111z"></path>
-						</svg>
-					</span>
-					<span class="collapse-icon-open">
-						<svg class="lexicon-icon" viewBox="0 0 512 512">
-							<path class="lexicon-icon-outline" d="M256 384c6.936-0.22 13.81-2.973 19.111-8.272l227.221-227.221c11.058-11.026 11.058-28.941 0-39.999-11.026-11.058-28.94-11.058-39.999 0l-206.333 206.333c0 0-206.333-206.333-206.333-206.333-11.059-11.058-28.973-11.058-39.999 0-11.059 11.058-11.059 28.972 0 39.999l227.221 227.221c5.3 5.3 12.174 8.053 19.111 8.272z"></path>
-						</svg>
-					</span>
-				</a>
-				<div aria-expanded="false" class="collapse" id="naCollapse004">
-					<ul class="nav">
-						<li><a href="#1">Default User Associations</a></li>
-						<li><a href="#1">Staging</a></li>
-						<li><a href="#1">Analytics</a></li>
-						<li><a href="#1">Maps</a></li>
-					</ul>
-				</div>
-			</li>
+<h3>Nav Nested (Margin)</h3>
+<ul class="nav nav-nested-margins">
+	<li class="nav-item">
+		<a aria-controls="navCollapse001" aria-expanded="true" class="collapse-icon nav-link" data-toggle="collapse" href="#navCollapse001" role="button">
+			Basic Information
+			<span class="collapse-icon-closed">
+				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-caret-right">
+					<use xlink:href="../../images/icons/icons.svg#caret-right" />
+				</svg>
+			</span>
+			<span class="collapse-icon-open">
+				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-caret-bottom">
+					<use xlink:href="../../images/icons/icons.svg#caret-bottom" />
+				</svg>
+			</span>
+		</a>
+		<div class="collapse show" id="navCollapse001">
+			<ul class="nav nav-stacked">
+				<li class="nav-item"><a class="active nav-link" href="#1">Details</a></li>
+				<li class="nav-item"><a class="nav-link" href="#1">Categorization</a></li>
+				<li class="nav-item">
+					<a aria-controls="navCollapse002" aria-expanded="false" class="collapsed collapse-icon nav-link" data-toggle="collapse" href="#navCollapse002" role="button">
+						Documents and Media
+						<span class="collapse-icon-closed">
+							<svg aria-hidden="true" class="lexicon-icon lexicon-icon-caret-right">
+								<use xlink:href="../../images/icons/icons.svg#caret-right" />
+							</svg>
+						</span>
+						<span class="collapse-icon-open">
+							<svg aria-hidden="true" class="lexicon-icon lexicon-icon-caret-bottom">
+								<use xlink:href="../../images/icons/icons.svg#caret-bottom" />
+							</svg>
+						</span>
+					</a>
+					<div class="collapse" id="navCollapse002">
+						<ul class="nav nav-stacked">
+							<li class="nav-item"><a class="nav-link" href="#1">Details</a></li>
+							<li class="nav-item"><a class="nav-link" href="#1">Categorization</a></li>
+							<li class="nav-item"><a class="nav-link" href="#1">Documents and Media</a></li>
+							<li class="nav-item"><a class="nav-link" href="#1">Site Template</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="#1">Site Template</a></li>
+			</ul>
+		</div>
+	</li>
+	<li class="nav-item">
+		<a aria-controls="navCollapse003" aria-expanded="false" class="collapsed collapse-icon nav-link" data-toggle="collapse" href="#navCollapse003" role="button">
+			SEO
+			<span class="collapse-icon-closed">
+				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-caret-right">
+					<use xlink:href="../../images/icons/icons.svg#caret-right" />
+				</svg>
+			</span>
+			<span class="collapse-icon-open">
+				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-caret-bottom">
+					<use xlink:href="../../images/icons/icons.svg#caret-bottom" />
+				</svg>
+			</span>
+		</a>
+		<div class="collapse" id="navCollapse003">
+			<ul class="nav nav-stacked">
+				<li class="nav-item"><a class="nav-link" href="#1">Sitemap</a></li>
+				<li class="nav-item"><a class="nav-link" href="#1">Robots</a></li>
+			</ul>
+		</div>
+	</li>
+	<li class="nav-item">
+		<a aria-controls="navCollapse004" aria-expanded="false" class="collapsed collapse-icon nav-link" data-toggle="collapse" href="#navCollapse004" role="button">
+			Advanced
+			<span class="collapse-icon-closed">
+				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-caret-right">
+					<use xlink:href="../../images/icons/icons.svg#caret-right" />
+				</svg>
+			</span>
+			<span class="collapse-icon-open">
+				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-caret-bottom">
+					<use xlink:href="../../images/icons/icons.svg#caret-bottom" />
+				</svg>
+			</span>
+		</a>
+		<div class="collapse" id="navCollapse004">
+			<ul class="nav nav-stacked">
+				<li class="nav-item"><a class="nav-link" href="#1">Default User Associations</a></li>
+				<li class="nav-item"><a class="nav-link" href="#1">Staging</a></li>
+				<li class="nav-item"><a class="nav-link" href="#1">Analytics</a></li>
+				<li class="nav-item"><a class="nav-link" href="#1">Maps</a></li>
+			</ul>
+		</div>
+	</li>
+</ul>
+
+<h3>Nav Unstyled</h3>
+<ul class="nav nav-unstyled">
+	<li class="nav-item"><a class="active nav-link" href="#1">Details</a></li>
+	<li class="nav-item"><a class="nav-link" href="#1">Categorization</a></li>
+	<li class="nav-item"><a class="disabled nav-link" href="#1">Documents and Media</a></li>
+	<li class="nav-item"><a class="nav-link" href="#1">Site Template</a></li>
+</ul>
+<ul class="nav">
+	<li class="nav-item"><a class="active nav-link" href="#1">Basic Information</a></li>
+	<li class="nav-item">
+		<button class="btn btn-unstyled nav-link" type="button">Details</button>
+	</li>
+	<li class="nav-item">
+		<button class="btn btn-primary nav-btn" type="button">Details</button>
+	</li>
+	<li class="nav-item">
+		<button class="btn btn-link nav-btn" type="button">
+			Details
+		</button>
+	</li>
+	<li class="nav-item">
+		<button class="btn btn-primary nav-btn nav-btn-monospaced" type="button">De</button>
+	</li>
+	<li class="nav-item"><a class="disabled nav-link" href="#1">Categorization</a></li>
+	<li class="dropdown nav-item">
+		<button aria-expanded="false" aria-haspopup="true" class="btn btn-unstyled dropdown-toggle nav-link" data-toggle="dropdown" type="button">
+			More
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-caret-bottom">
+				<use xlink:href="../../images/icons/icons.svg#caret-bottom" />
+			</svg>
+		</button>
+		<ul aria-labelledby="" class="dropdown-menu">
+			<li><a class="dropdown-item" href="#1">App Section 4</a></li>
+			<li><a class="dropdown-item" href="#1">App Section 5</a></li>
+			<li><a class="dropdown-item" href="#1">App Section 6</a></li>
+			<li><a class="dropdown-item" href="#1">App Section 7</a></li>
 		</ul>
-	</div>
-</div>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link nav-link-monospaced" href="#1">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-cog">
+				<use xlink:href="../../images/icons/icons.svg#cog" />
+			</svg>
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="btn btn-primary nav-btn nav-btn-monospaced" href="#1">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-cog">
+				<use xlink:href="../../images/icons/icons.svg#cog" />
+			</svg>
+		</a>
+	</li>
+	<li class="nav-item">
+		<button class="btn btn-unstyled nav-btn nav-btn-monospaced" type="button">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-cog">
+				<use xlink:href="../../images/icons/icons.svg#cog" />
+			</svg>
+		</button>
+	</li>
+</ul>

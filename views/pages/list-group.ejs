@@ -1,391 +1,642 @@
-<h3>List Group</h3>
-<ul class="list-group">
-	<li class="list-group-heading">List Heading</li>
-	<li class="list-group-item">List Item 1</li>
-	<li class="list-group-item">List Item 2</li>
-	<li class="list-group-item">List Item 3</li>
-	<li class="list-group-item">List Item 4</li>
-</ul>
-
-<h3>Tabular List Group</h3>
-<ul class="tabular-list-group">
-	<li class="active list-group-item">
-		<div class="list-group-item-field">
-			<div class="checkbox">
+<h3>List Group with Show Quick Actions on Hover</h3>
+<ul class="list-group show-quick-actions-on-hover">
+	<li class="list-group-item list-group-item-flex">
+		<div class="autofit-col">
+			<div class="custom-control custom-checkbox">
 				<label>
-					<input checked type="checkbox">
+					<input class="custom-control-input" type="checkbox">
+					<span class="custom-control-label"></span>
 				</label>
 			</div>
 		</div>
-
-		<div class="list-group-item-field">
-			<div class="sticker sticker-default sticker-lg sticker-static">
-				<svg class="lexicon-icon lexicon-icon-folder" viewBox="0 0 512 512">
-					<path class="lexicon-icon-body" fill="none" d="M455.1,128H352c-9.5,0-31.9-45.7-38.6-59.5C298,36.4,280.4,0,245.1,0H55.9C25.1,0,0,26.9,0,59.8v395.3C0,486.5,25.5,512,56.9,512h398.2c31.4,0,56.9-25.5,56.9-56.9V184.9C512,153.6,486.5,128,455.1,128L455.1,128z"></path>
-					<path class="lexicon-icon-outline" d="M455.1,128H352c-9.5,0-31.9-45.7-38.6-59.5C298,36.4,280.4,0,245.1,0H55.9C25.1,0,0,26.9,0,59.8v395.3C0,486.5,25.5,512,56.9,512h398.2c31.4,0,56.9-25.5,56.9-56.9V184.9C512,153.6,486.5,128,455.1,128L455.1,128z M64,67c0,0,0.3-2.4,0.7-3h178.1c5.6,5.9,14.4,31.8,19.8,43.4c3.1,6.7,6.3,13.7,9.9,20.6H64L64,67L64,67z M448,448H64l0-256h384V448z"></path>
-				</svg>
+		<div class="autofit-col">
+			<div class="sticker sticker-secondary">
+				<span class="inline-item">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-folder">
+						<use xlink:href="../../images/icons/icons.svg#folder" />
+					</svg>
+				</span>
 			</div>
 		</div>
-
-		<div class="list-group-item-content">
-			<h6 class="truncate-text">Alberto Calvo, modified 2 hours ago.</h6>
-			<h4 class="truncate-text"><a href="#1">ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAreReallyTryingToCoverAllOurBasesHereJustInCaseSomeoneIsNutsAsPerUsual</a></h4>
-			<h6 class="truncate-text">Approved</h6>
+		<div class="autofit-col autofit-col-expand">
+			<section class="autofit-section">
+				<h4 class="list-group-title">
+					<a href="#1">Account Example One</a>
+				</h4>
+				<p class="list-group-text">Second Level Text (list-group-text)</p>
+				<p class="list-group-subtext">Third Level (list-group-subtext)</p>
+			</section>
 		</div>
-
-		<div class="list-group-item-field">
-			<div class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#1">
-					<svg class="icon-monospaced lexicon-icon" viewBox="0 0 512 512">
-						<path class="lexicon-icon-outline" d="M319 255.5c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
-						<path class="lexicon-icon-outline" d="M319 448c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
-						<path class="lexicon-icon-outline" d="M319 64c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
+		<div class="autofit-col">
+			<div class="quick-action-menu">
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-trash">
+						<use xlink:href="../../images/icons/icons.svg#trash" />
 					</svg>
 				</a>
-				<ul class="dropdown-menu dropdown-menu-left-side">
-					<li class="dropdown-header">Dropdown Header</li>
-					<li><a href="#">Action 1</a></li>
-					<li><a href="#">Action 2</a></li>
-					<li><a href="#">Action 3</a></li>
-					<li><a href="#">Action 4</a></li>
-					<li><a href="#">Action 5</a></li>
-					<li><a href="#">Action 6</a></li>
-					<li><a href="#">Action 7</a></li>
-					<li><a href="#">Action 8</a></li>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-download">
+						<use xlink:href="../../images/icons/icons.svg#download" />
+					</svg>
+				</a>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-expand">
+						<use xlink:href="../../images/icons/icons.svg#expand" />
+					</svg>
+				</a>
+			</div>
+			<div class="dropdown dropdown-action">
+				<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" id="dropdownAction1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+						<use xlink:href="../../images/icons/icons.svg#ellipsis-v" />
+					</svg>
+				</a>
+				<ul aria-labelledby="" class="dropdown-menu dropdown-menu-right">
+					<li><a class="dropdown-item" href="#1" role="button">Remove</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Download</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Checkout</a></li>
 				</ul>
 			</div>
 		</div>
 	</li>
-
-	<li class="list-group-item">
-		<div class="list-group-item-field">
-			<div class="checkbox">
+	<li class="active list-group-item list-group-item-flex">
+		<div class="autofit-col">
+			<div class="custom-control custom-checkbox">
 				<label>
-					<input type="checkbox">
+					<input checked class="custom-control-input" type="checkbox">
+					<span class="custom-control-label"></span>
 				</label>
 			</div>
 		</div>
-
-		<div class="list-group-item-field">
-			<div class="sticker sticker-default sticker-lg sticker-static">
-				<svg class="lexicon-icon lexicon-icon-folder" viewBox="0 0 512 512">
-					<path class="lexicon-icon-body" fill="none" d="M455.1,128H352c-9.5,0-31.9-45.7-38.6-59.5C298,36.4,280.4,0,245.1,0H55.9C25.1,0,0,26.9,0,59.8v395.3C0,486.5,25.5,512,56.9,512h398.2c31.4,0,56.9-25.5,56.9-56.9V184.9C512,153.6,486.5,128,455.1,128L455.1,128z"></path>
-					<path class="lexicon-icon-outline" d="M455.1,128H352c-9.5,0-31.9-45.7-38.6-59.5C298,36.4,280.4,0,245.1,0H55.9C25.1,0,0,26.9,0,59.8v395.3C0,486.5,25.5,512,56.9,512h398.2c31.4,0,56.9-25.5,56.9-56.9V184.9C512,153.6,486.5,128,455.1,128L455.1,128z M64,67c0,0,0.3-2.4,0.7-3h178.1c5.6,5.9,14.4,31.8,19.8,43.4c3.1,6.7,6.3,13.7,9.9,20.6H64L64,67L64,67z M448,448H64l0-256h384V448z"></path>
-				</svg>
+		<div class="autofit-col">
+			<div class="sticker sticker-secondary">
+				<span class="inline-item">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-folder">
+						<use xlink:href="../../images/icons/icons.svg#folder" />
+					</svg>
+				</span>
 			</div>
 		</div>
-
-		<div class="list-group-item-content">
-			<h5>Bookmarks</h5>
-			<h4><a href="#1">ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAreReallyTryingToCoverAllOurBasesHereJustInCaseSomeoneIsNutsAsPerUsual.</a></h4>
-			<h6>
-				<span>5 Folders</span>
-				<span>4 Entries</span>
-			</h6>
+		<div class="autofit-col autofit-col-expand">
+			<section class="autofit-section">
+				<h4 class="list-group-title">
+					<a href="#1">Account Example Two</a>
+				</h4>
+				<p class="list-group-subtext">List Group Subtext</p>
+			</section>
 		</div>
-
-		<div class="list-group-item-field">
-			<div class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#1">
-					<svg class="icon-monospaced lexicon-icon" viewBox="0 0 512 512">
-						<path class="lexicon-icon-outline" d="M319 255.5c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
-						<path class="lexicon-icon-outline" d="M319 448c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
-						<path class="lexicon-icon-outline" d="M319 64c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
+		<div class="autofit-col">
+			<div class="quick-action-menu">
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-trash">
+						<use xlink:href="../../images/icons/icons.svg#trash" />
 					</svg>
 				</a>
-				<ul class="dropdown-menu dropdown-menu-left-side">
-					<li class="dropdown-header">Dropdown Header</li>
-					<li><a href="#">Action 1</a></li>
-					<li><a href="#">Action 2</a></li>
-					<li><a href="#">Action 3</a></li>
-					<li><a href="#">Action 4</a></li>
-					<li><a href="#">Action 5</a></li>
-					<li><a href="#">Action 6</a></li>
-					<li><a href="#">Action 7</a></li>
-					<li><a href="#">Action 8</a></li>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-download">
+						<use xlink:href="../../images/icons/icons.svg#download" />
+					</svg>
+				</a>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-expand">
+						<use xlink:href="../../images/icons/icons.svg#expand" />
+					</svg>
+				</a>
+			</div>
+			<div class="dropdown dropdown-action">
+				<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" id="dropdownAction1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+						<use xlink:href="../../images/icons/icons.svg#ellipsis-v" />
+					</svg>
+				</a>
+				<ul aria-labelledby="" class="dropdown-menu dropdown-menu-right">
+					<li><a class="dropdown-item" href="#1" role="button">Remove</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Download</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Checkout</a></li>
 				</ul>
 			</div>
 		</div>
 	</li>
-</ul>
-
-<h3>Tabular List Group No Borders</h3>
-<ul class="no-borders tabular-list-group">
-	<li class="list-group-item">
-		<div class="list-group-item-field">
-			<div class="checkbox">
+	<li class="list-group-item list-group-item-flex">
+		<div class="autofit-col">
+			<div class="custom-control custom-checkbox">
 				<label>
-					<input type="checkbox">
+					<input class="custom-control-input" type="checkbox">
+					<span class="custom-control-label"></span>
 				</label>
 			</div>
 		</div>
-
-		<div class="list-group-item-field">
-			<div class="sticker sticker-default sticker-lg sticker-static">
-				<svg class="lexicon-icon lexicon-icon-folder" viewBox="0 0 512 512">
-					<path class="lexicon-icon-body" fill="none" d="M455.1,128H352c-9.5,0-31.9-45.7-38.6-59.5C298,36.4,280.4,0,245.1,0H55.9C25.1,0,0,26.9,0,59.8v395.3C0,486.5,25.5,512,56.9,512h398.2c31.4,0,56.9-25.5,56.9-56.9V184.9C512,153.6,486.5,128,455.1,128L455.1,128z"></path>
-					<path class="lexicon-icon-outline" d="M455.1,128H352c-9.5,0-31.9-45.7-38.6-59.5C298,36.4,280.4,0,245.1,0H55.9C25.1,0,0,26.9,0,59.8v395.3C0,486.5,25.5,512,56.9,512h398.2c31.4,0,56.9-25.5,56.9-56.9V184.9C512,153.6,486.5,128,455.1,128L455.1,128z M64,67c0,0,0.3-2.4,0.7-3h178.1c5.6,5.9,14.4,31.8,19.8,43.4c3.1,6.7,6.3,13.7,9.9,20.6H64L64,67L64,67z M448,448H64l0-256h384V448z"></path>
-				</svg>
+		<div class="autofit-col">
+			<div class="sticker sticker-secondary">
+				<span class="inline-item">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-folder">
+						<use xlink:href="../../images/icons/icons.svg#folder" />
+					</svg>
+				</span>
 			</div>
 		</div>
-
-		<div class="list-group-item-content">
-			<h5>Larry Bird the best power forward in Celtic's history.</h5>
-			<h6>Monica Bellucci</h6>
-			<h6>
-				<span>5 Folders</span>
-				<span>4 Entries</span>
-			</h6>
+		<div class="autofit-col autofit-col-expand">
+			<section class="autofit-section">
+				<h4 class="list-group-title">
+					<a href="#1">Account Example Three</a>
+				</h4>
+			</section>
 		</div>
-
-		<div class="list-group-item-field">
-			<div class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#1">
-					<svg class="icon-monospaced lexicon-icon" viewBox="0 0 512 512">
-						<path class="lexicon-icon-outline" d="M319 255.5c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
-						<path class="lexicon-icon-outline" d="M319 448c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
-						<path class="lexicon-icon-outline" d="M319 64c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
+		<div class="autofit-col">
+			<div class="quick-action-menu">
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-trash">
+						<use xlink:href="../../images/icons/icons.svg#trash" />
 					</svg>
 				</a>
-				<ul class="dropdown-menu dropdown-menu-left-side">
-					<li class="dropdown-header">Dropdown Header</li>
-					<li><a href="#">Action 1</a></li>
-					<li><a href="#">Action 2</a></li>
-					<li><a href="#">Action 3</a></li>
-					<li><a href="#">Action 4</a></li>
-					<li><a href="#">Action 5</a></li>
-					<li><a href="#">Action 6</a></li>
-					<li><a href="#">Action 7</a></li>
-					<li><a href="#">Action 8</a></li>
-				</ul>
-			</div>
-		</div>
-	</li>
-
-	<li class="list-group-item active">
-		<div class="active list-group-item-field">
-			<div class="checkbox">
-				<label>
-					<input checked type="checkbox">
-				</label>
-			</div>
-		</div>
-
-		<div class="list-group-item-field">
-			<div class="sticker sticker-default sticker-lg sticker-static">
-				<svg class="lexicon-icon lexicon-icon-folder" viewBox="0 0 512 512">
-					<path class="lexicon-icon-body" fill="none" d="M455.1,128H352c-9.5,0-31.9-45.7-38.6-59.5C298,36.4,280.4,0,245.1,0H55.9C25.1,0,0,26.9,0,59.8v395.3C0,486.5,25.5,512,56.9,512h398.2c31.4,0,56.9-25.5,56.9-56.9V184.9C512,153.6,486.5,128,455.1,128L455.1,128z"></path>
-					<path class="lexicon-icon-outline" d="M455.1,128H352c-9.5,0-31.9-45.7-38.6-59.5C298,36.4,280.4,0,245.1,0H55.9C25.1,0,0,26.9,0,59.8v395.3C0,486.5,25.5,512,56.9,512h398.2c31.4,0,56.9-25.5,56.9-56.9V184.9C512,153.6,486.5,128,455.1,128L455.1,128z M64,67c0,0,0.3-2.4,0.7-3h178.1c5.6,5.9,14.4,31.8,19.8,43.4c3.1,6.7,6.3,13.7,9.9,20.6H64L64,67L64,67z M448,448H64l0-256h384V448z"></path>
-				</svg>
-			</div>
-		</div>
-
-		<div class="list-group-item-content">
-			<h5>Karl Malone the best power forward in Jazz history.</h5>
-			<h6>Monica Bellucci</h6>
-			<h6>
-				<span>5 Folders</span>
-				<span>4 Entries</span>
-			</h6>
-		</div>
-
-		<div class="list-group-item-field">
-			<div class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#1">
-					<svg class="icon-monospaced lexicon-icon" viewBox="0 0 512 512">
-						<path class="lexicon-icon-outline" d="M319 255.5c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
-						<path class="lexicon-icon-outline" d="M319 448c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
-						<path class="lexicon-icon-outline" d="M319 64c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-download">
+						<use xlink:href="../../images/icons/icons.svg#download" />
 					</svg>
 				</a>
-				<ul class="dropdown-menu dropdown-menu-left-side">
-					<li class="dropdown-header">Dropdown Header</li>
-					<li><a href="#">Action 1</a></li>
-					<li><a href="#">Action 2</a></li>
-					<li><a href="#">Action 3</a></li>
-					<li><a href="#">Action 4</a></li>
-					<li><a href="#">Action 5</a></li>
-					<li><a href="#">Action 6</a></li>
-					<li><a href="#">Action 7</a></li>
-					<li><a href="#">Action 8</a></li>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-expand">
+						<use xlink:href="../../images/icons/icons.svg#expand" />
+					</svg>
+				</a>
+			</div>
+			<div class="dropdown dropdown-action">
+				<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" id="dropdownAction1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+						<use xlink:href="../../images/icons/icons.svg#ellipsis-v" />
+					</svg>
+				</a>
+				<ul aria-labelledby="" class="dropdown-menu dropdown-menu-right">
+					<li><a class="dropdown-item" href="#1" role="button">Remove</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Download</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Checkout</a></li>
 				</ul>
 			</div>
 		</div>
 	</li>
 </ul>
 
-<h3>Tabular List Group Full Borders</h3>
-<ul class="full-borders tabular-list-group">
-	<li class="active list-group-item">
-		<div class="list-group-item-field">
-			<div class="checkbox">
+<h3>List Group Notification with Show Quick Actions on Hover</h3>
+<ul class="list-group list-group-notification show-quick-actions-on-hover">
+	<li class="list-group-item list-group-item-flex list-group-item-primary">
+		<div class="autofit-col">
+			<div class="custom-control custom-checkbox">
 				<label>
-					<input checked type="checkbox">
+					<input class="custom-control-input" type="checkbox">
+					<span class="custom-control-label"></span>
 				</label>
 			</div>
 		</div>
-
-		<div class="list-group-item-field">
-			<div class="sticker sticker-default sticker-lg sticker-static">
-				<svg class="lexicon-icon lexicon-icon-folder" viewBox="0 0 512 512">
-					<path class="lexicon-icon-body" fill="none" d="M455.1,128H352c-9.5,0-31.9-45.7-38.6-59.5C298,36.4,280.4,0,245.1,0H55.9C25.1,0,0,26.9,0,59.8v395.3C0,486.5,25.5,512,56.9,512h398.2c31.4,0,56.9-25.5,56.9-56.9V184.9C512,153.6,486.5,128,455.1,128L455.1,128z"></path>
-					<path class="lexicon-icon-outline" d="M455.1,128H352c-9.5,0-31.9-45.7-38.6-59.5C298,36.4,280.4,0,245.1,0H55.9C25.1,0,0,26.9,0,59.8v395.3C0,486.5,25.5,512,56.9,512h398.2c31.4,0,56.9-25.5,56.9-56.9V184.9C512,153.6,486.5,128,455.1,128L455.1,128z M64,67c0,0,0.3-2.4,0.7-3h178.1c5.6,5.9,14.4,31.8,19.8,43.4c3.1,6.7,6.3,13.7,9.9,20.6H64L64,67L64,67z M448,448H64l0-256h384V448z"></path>
-				</svg>
+		<div class="autofit-col">
+			<div class="sticker sticker-secondary">
+				<span class="inline-item">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-folder">
+						<use xlink:href="../../images/icons/icons.svg#folder" />
+					</svg>
+				</span>
 			</div>
 		</div>
-
-		<div class="list-group-item-content">
-			<h5>Larry Bird the best power forward in Celtic's history.</h5>
-			<h6>Monica Bellucci</h6>
-			<h6>
-				<span>5 Folders</span>
-				<span>4 Entries</span>
-			</h6>
+		<div class="autofit-col autofit-col-expand">
+			<section class="autofit-section">
+				<h4 class="list-group-title">
+					<a href="#1">Account Example One</a>
+				</h4>
+				<p class="list-group-subtext">List Group Subtext</p>
+			</section>
 		</div>
-
-		<div class="list-group-item-field">
-			<div class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#1">
-					<svg class="icon-monospaced lexicon-icon" viewBox="0 0 512 512">
-						<path class="lexicon-icon-outline" d="M319 255.5c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
-						<path class="lexicon-icon-outline" d="M319 448c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
-						<path class="lexicon-icon-outline" d="M319 64c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
+		<div class="autofit-col">
+			<div class="quick-action-menu">
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-trash">
+						<use xlink:href="../../images/icons/icons.svg#trash" />
 					</svg>
 				</a>
-				<ul class="dropdown-menu dropdown-menu-left-side">
-					<li class="dropdown-header">Dropdown Header</li>
-					<li><a href="#">Action 1</a></li>
-					<li><a href="#">Action 2</a></li>
-					<li><a href="#">Action 3</a></li>
-					<li><a href="#">Action 4</a></li>
-					<li><a href="#">Action 5</a></li>
-					<li><a href="#">Action 6</a></li>
-					<li><a href="#">Action 7</a></li>
-					<li><a href="#">Action 8</a></li>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-download">
+						<use xlink:href="../../images/icons/icons.svg#download" />
+					</svg>
+				</a>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-expand">
+						<use xlink:href="../../images/icons/icons.svg#expand" />
+					</svg>
+				</a>
+			</div>
+			<div class="dropdown dropdown-action">
+				<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" id="dropdownAction1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+						<use xlink:href="../../images/icons/icons.svg#ellipsis-v" />
+					</svg>
+				</a>
+				<ul aria-labelledby="" class="dropdown-menu dropdown-menu-right">
+					<li><a class="dropdown-item" href="#1" role="button">Remove</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Download</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Checkout</a></li>
 				</ul>
 			</div>
 		</div>
 	</li>
-
-	<li class="list-group-item">
-		<div class="list-group-item-field">
-			<div class="checkbox">
+	<li class="list-group-item list-group-item-flex">
+		<div class="autofit-col">
+			<div class="custom-control custom-checkbox">
 				<label>
-					<input type="checkbox">
+					<input class="custom-control-input" type="checkbox">
+					<span class="custom-control-label"></span>
 				</label>
 			</div>
 		</div>
-
-		<div class="list-group-item-field">
-			<div class="sticker sticker-default sticker-lg sticker-static">
-				<svg class="lexicon-icon lexicon-icon-folder" viewBox="0 0 512 512">
-					<path class="lexicon-icon-body" fill="none" d="M455.1,128H352c-9.5,0-31.9-45.7-38.6-59.5C298,36.4,280.4,0,245.1,0H55.9C25.1,0,0,26.9,0,59.8v395.3C0,486.5,25.5,512,56.9,512h398.2c31.4,0,56.9-25.5,56.9-56.9V184.9C512,153.6,486.5,128,455.1,128L455.1,128z"></path>
-					<path class="lexicon-icon-outline" d="M455.1,128H352c-9.5,0-31.9-45.7-38.6-59.5C298,36.4,280.4,0,245.1,0H55.9C25.1,0,0,26.9,0,59.8v395.3C0,486.5,25.5,512,56.9,512h398.2c31.4,0,56.9-25.5,56.9-56.9V184.9C512,153.6,486.5,128,455.1,128L455.1,128z M64,67c0,0,0.3-2.4,0.7-3h178.1c5.6,5.9,14.4,31.8,19.8,43.4c3.1,6.7,6.3,13.7,9.9,20.6H64L64,67L64,67z M448,448H64l0-256h384V448z"></path>
-				</svg>
+		<div class="autofit-col">
+			<div class="sticker sticker-secondary">
+				<span class="inline-item">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-folder">
+						<use xlink:href="../../images/icons/icons.svg#folder" />
+					</svg>
+				</span>
 			</div>
 		</div>
-
-		<div class="list-group-item-content">
-			<h5>Karl Malone the best power forward in Jazz history.</h5>
-			<h6>Monica Bellucci</h6>
-			<h6>
-				<span>5 Folders</span>
-				<span>4 Entries</span>
-			</h6>
+		<div class="autofit-col autofit-col-expand">
+			<section class="autofit-section">
+				<h4 class="list-group-title">
+					<a href="#1">Account Example Two</a>
+				</h4>
+				<p class="list-group-subtext">List Group Subtext</p>
+			</section>
 		</div>
-
-		<div class="list-group-item-field">
-			<div class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#1">
-					<svg class="icon-monospaced lexicon-icon" viewBox="0 0 512 512">
-						<path class="lexicon-icon-outline" d="M319 255.5c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
-						<path class="lexicon-icon-outline" d="M319 448c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
-						<path class="lexicon-icon-outline" d="M319 64c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
+		<div class="autofit-col">
+			<div class="quick-action-menu">
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-trash">
+						<use xlink:href="../../images/icons/icons.svg#trash" />
 					</svg>
 				</a>
-				<ul class="dropdown-menu dropdown-menu-left-side">
-					<li class="dropdown-header">Dropdown Header</li>
-					<li><a href="#">Action 1</a></li>
-					<li><a href="#">Action 2</a></li>
-					<li><a href="#">Action 3</a></li>
-					<li><a href="#">Action 4</a></li>
-					<li><a href="#">Action 5</a></li>
-					<li><a href="#">Action 6</a></li>
-					<li><a href="#">Action 7</a></li>
-					<li><a href="#">Action 8</a></li>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-download">
+						<use xlink:href="../../images/icons/icons.svg#download" />
+					</svg>
+				</a>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-expand">
+						<use xlink:href="../../images/icons/icons.svg#expand" />
+					</svg>
+				</a>
+			</div>
+			<div class="dropdown dropdown-action">
+				<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" id="dropdownAction1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+						<use xlink:href="../../images/icons/icons.svg#ellipsis-v" />
+					</svg>
+				</a>
+				<ul aria-labelledby="" class="dropdown-menu dropdown-menu-right">
+					<li><a class="dropdown-item" href="#1" role="button">Remove</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Download</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Checkout</a></li>
 				</ul>
 			</div>
 		</div>
 	</li>
 </ul>
 
-<h3>Tabular List Group Unstyled</h3>
-<ul class="tabular-list-group-unstyled">
-	<li class="list-group-item">
-		<div class="list-group-item-content">
-			<div class="h5">Larry Bird the best power forward in Celtic's history.</div>
-			<div class="h6"><a href="#1">Monica Bellucci</a></div>
-			<div class="h6">
-				<span>5 Folders</span>
-				<span>4 Entries</span>
+<h3>List Group Bordered with Show Quick Actions on Hover</h3>
+<ul class="list-group list-group-bordered show-quick-actions-on-hover">
+	<li class="list-group-item list-group-item-flex">
+		<div class="autofit-col">
+			<div class="custom-control custom-checkbox">
+				<label>
+					<input class="custom-control-input" type="checkbox">
+					<span class="custom-control-label"></span>
+				</label>
 			</div>
 		</div>
-
-		<div class="list-group-item-field">
-			<div class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#1">
-					<svg class="icon-monospaced lexicon-icon" viewBox="0 0 512 512">
-						<path class="lexicon-icon-outline" d="M319 255.5c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
-						<path class="lexicon-icon-outline" d="M319 448c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
-						<path class="lexicon-icon-outline" d="M319 64c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
+		<div class="autofit-col">
+			<div class="sticker sticker-secondary">
+				<span class="inline-item">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-folder">
+						<use xlink:href="../../images/icons/icons.svg#folder" />
+					</svg>
+				</span>
+			</div>
+		</div>
+		<div class="autofit-col autofit-col-expand">
+			<section class="autofit-section">
+				<h4 class="list-group-title">
+					<span class="text-truncate-inline">
+						<a class="text-truncate" href="#1">Text Truncate Example</a>
+					</span>
+				</h4>
+				<p class="list-group-subtitle">.list-group-subtitle</p>
+				<p class="list-group-subtitle"><a href="#1">.list-group-subtitle a</a></p>
+				<p class="list-group-text">This is an example of .list-group-text and a <a href="#1">link</a>.</p>
+				<p class="list-group-text">
+					<a class="list-group-text-link" href="#1">a.list-group-text-link</a>
+				</p>
+				<p class="list-group-text">
+					<span class="text-truncate-inline">
+						<a class="list-group-text-link text-truncate" href="#1">Truncated a.list-group-text-link</a> and another <a href="#1">link</a>
+					</span>
+				</p>
+				<p class="list-group-subtext">This is .list-group-subtext and a <a href="#1">link</a>.</p>
+				<p class="list-group-subtext">
+					<a class="list-group-subtext-link" href="#1">Regular a.list-group-subtext-link</a>
+				</p>
+				<p class="list-group-subtext">
+					<span class="text-truncate-inline">
+						<a class="list-group-subtext-link text-truncate" href="#1">Truncated a.list-group-subtext-link</a> and another <a href="#1">link</a>
+					</span>
+				</p>
+				<div class="list-group-detail">
+					<span class="label label-warning">
+						<span class="label-item label-item-expand">Pending</span>
+					</span>
+				</div>
+			</section>
+		</div>
+		<div class="autofit-col">
+			<div class="quick-action-menu">
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-trash">
+						<use xlink:href="../../images/icons/icons.svg#trash" />
 					</svg>
 				</a>
-				<ul class="dropdown-menu dropdown-menu-left-side">
-					<li class="dropdown-header">Dropdown Header</li>
-					<li><a href="#">Action 1</a></li>
-					<li><a href="#">Action 2</a></li>
-					<li><a href="#">Action 3</a></li>
-					<li><a href="#">Action 4</a></li>
-					<li><a href="#">Action 5</a></li>
-					<li><a href="#">Action 6</a></li>
-					<li><a href="#">Action 7</a></li>
-					<li><a href="#">Action 8</a></li>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-download">
+						<use xlink:href="../../images/icons/icons.svg#download" />
+					</svg>
+				</a>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-expand">
+						<use xlink:href="../../images/icons/icons.svg#expand" />
+					</svg>
+				</a>
+			</div>
+			<div class="dropdown dropdown-action">
+				<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" id="dropdownAction1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+						<use xlink:href="../../images/icons/icons.svg#ellipsis-v" />
+					</svg>
+				</a>
+				<ul aria-labelledby="" class="dropdown-menu dropdown-menu-right">
+					<li><a class="dropdown-item" href="#1" role="button">Remove</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Download</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Checkout</a></li>
 				</ul>
 			</div>
 		</div>
 	</li>
-
-	<li class="list-group-item">
-		<div class="list-group-item-content">
-			<div class="h5">Karl Malone the best power forward in Jazz history.</div>
-			<div class="h6"><a href="#1">Monica Bellucci</a></div>
-			<div class="h6">
-				<span>5 Folders</span>
-				<span>4 Entries</span>
+	<li class="list-group-item list-group-item-flex">
+		<div class="autofit-col">
+			<div class="custom-control custom-checkbox">
+				<label>
+					<input class="custom-control-input" type="checkbox">
+					<span class="custom-control-label"></span>
+				</label>
 			</div>
 		</div>
-
-		<div class="list-group-item-field">
-			<div class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#1">
-					<svg class="icon-monospaced lexicon-icon" viewBox="0 0 512 512">
-						<path class="lexicon-icon-outline" d="M319 255.5c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
-						<path class="lexicon-icon-outline" d="M319 448c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
-						<path class="lexicon-icon-outline" d="M319 64c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"></path>
+		<div class="autofit-col">
+			<div class="sticker sticker-secondary">
+				<span class="inline-item">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-folder">
+						<use xlink:href="../../images/icons/icons.svg#folder" />
+					</svg>
+				</span>
+			</div>
+		</div>
+		<div class="autofit-col autofit-col-expand">
+			<section class="autofit-section">
+				<h4 class="list-group-title">
+					<a href="#1">Account Example Two</a>
+				</h4>
+				<p class="list-group-subtext">List Group Subtext</p>
+				<div class="list-group-detail">
+					<span class="label label-info">
+						<span class="label-item label-item-expand">Info</span>
+					</span>
+				</div>
+			</section>
+		</div>
+		<div class="autofit-col">
+			<div class="quick-action-menu">
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-trash">
+						<use xlink:href="../../images/icons/icons.svg#trash" />
 					</svg>
 				</a>
-				<ul class="dropdown-menu dropdown-menu-left-side">
-					<li class="dropdown-header">Dropdown Header</li>
-					<li><a href="#">Action 1</a></li>
-					<li><a href="#">Action 2</a></li>
-					<li><a href="#">Action 3</a></li>
-					<li><a href="#">Action 4</a></li>
-					<li><a href="#">Action 5</a></li>
-					<li><a href="#">Action 6</a></li>
-					<li><a href="#">Action 7</a></li>
-					<li><a href="#">Action 8</a></li>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-download">
+						<use xlink:href="../../images/icons/icons.svg#download" />
+					</svg>
+				</a>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-expand">
+						<use xlink:href="../../images/icons/icons.svg#expand" />
+					</svg>
+				</a>
+			</div>
+			<div class="dropdown dropdown-action">
+				<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" id="dropdownAction1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+						<use xlink:href="../../images/icons/icons.svg#ellipsis-v" />
+					</svg>
+				</a>
+				<ul aria-labelledby="" class="dropdown-menu dropdown-menu-right">
+					<li><a class="dropdown-item" href="#1" role="button">Remove</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Download</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Checkout</a></li>
 				</ul>
 			</div>
 		</div>
 	</li>
 </ul>
+
+<h3>List Group Header Example</h3>
+<ul class="list-group show-quick-actions-on-hover">
+	<li class="list-group-header">
+		<h3 class="list-group-header-title">List Group Header 1</h3>
+	</li>
+	<li class="list-group-item list-group-item-flex">
+		<div class="autofit-col autofit-col-expand">
+			<section class="autofit-section">
+				<h4 class="list-group-title">
+					<span class="text-truncate-inline">
+						<a class="text-truncate" href="#1">List Item 1</a>
+					</span>
+				</h4>
+			</section>
+		</div>
+	</li>
+	<li class="list-group-item list-group-item-flex">
+		<div class="autofit-col autofit-col-expand">
+			<section class="autofit-section">
+				<h4 class="list-group-title">
+					<span class="text-truncate-inline">
+						<a class="text-truncate" href="#1">List Item 2</a>
+					</span>
+				</h4>
+			</section>
+		</div>
+	</li>
+	<li class="list-group-item list-group-item-flex">
+		<div class="autofit-col autofit-col-expand">
+			<section class="autofit-section">
+				<h4 class="list-group-title">
+					<span class="text-truncate-inline">
+						<a class="text-truncate" href="#1">List Item 3</a>
+					</span>
+				</h4>
+			</section>
+		</div>
+	</li>
+	<li class="list-group-item list-group-item-flex">
+		<div class="autofit-col autofit-col-expand">
+			<section class="autofit-section">
+				<h4 class="list-group-title">
+					<span class="text-truncate-inline">
+						<a class="text-truncate" href="#1">List Item 4</a>
+					</span>
+				</h4>
+			</section>
+		</div>
+	</li>
+	<li class="list-group-header">
+		<h3 class="list-group-header-title">List Group Header 2</h3>
+	</li>
+	<li class="list-group-item list-group-item-flex">
+		<div class="autofit-col">
+			<div class="custom-control custom-checkbox">
+				<label>
+					<input class="custom-control-input" type="checkbox">
+					<span class="custom-control-label"></span>
+				</label>
+			</div>
+		</div>
+		<div class="autofit-col">
+			<div class="sticker sticker-secondary">
+				<span class="inline-item">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-folder">
+						<use xlink:href="../../images/icons/icons.svg#folder" />
+					</svg>
+				</span>
+			</div>
+		</div>
+		<div class="autofit-col autofit-col-expand">
+			<section class="autofit-section">
+				<h4 class="list-group-title">
+					<span class="text-truncate-inline">
+						<a class="text-truncate" href="#1">ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAreReallyTryingToCoverAllOurBasesHereJustInCaseSomeoneIsNutsAsPerUsual</a>
+					</span>
+				</h4>
+				<p class="list-group-subtext">
+					<span class="text-truncate-inline">
+						<span class="text-truncate">List Group Subtext</span>
+					</span>
+				</p>
+				<div class="list-group-detail">
+					<span class="label label-success">
+						<span class="label-item label-item-expand">Approved</span>
+					</span>
+				</div>
+			</section>
+		</div>
+		<div class="autofit-col">
+			<div class="quick-action-menu">
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-trash">
+						<use xlink:href="../../images/icons/icons.svg#trash" />
+					</svg>
+				</a>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-download">
+						<use xlink:href="../../images/icons/icons.svg#download" />
+					</svg>
+				</a>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-expand">
+						<use xlink:href="../../images/icons/icons.svg#expand" />
+					</svg>
+				</a>
+			</div>
+			<div class="dropdown dropdown-action">
+				<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" id="dropdownAction1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+						<use xlink:href="../../images/icons/icons.svg#ellipsis-v" />
+					</svg>
+				</a>
+				<ul aria-labelledby="" class="dropdown-menu dropdown-menu-right">
+					<li><a class="dropdown-item" href="#1" role="button">Remove</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Download</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Checkout</a></li>
+				</ul>
+			</div>
+		</div>
+	</li>
+	<li class="list-group-item list-group-item-flex">
+		<div class="autofit-col">
+			<div class="custom-control custom-checkbox">
+				<label>
+					<input class="custom-control-input" type="checkbox">
+					<span class="custom-control-label"></span>
+				</label>
+			</div>
+		</div>
+		<div class="autofit-col">
+			<div class="sticker sticker-secondary">
+				<span class="inline-item">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-folder">
+						<use xlink:href="../../images/icons/icons.svg#folder" />
+					</svg>
+				</span>
+			</div>
+		</div>
+		<div class="autofit-col autofit-col-expand">
+			<section class="autofit-section">
+				<h4 class="list-group-title">
+					<a href="#1">ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAreReallyTryingToCoverAllOurBasesHereJustInCaseSomeoneIsNutsAsPerUsual.</a>
+				</h4>
+				<p class="list-group-subtext">List Group Subtext</p>
+				<div class="list-group-detail">
+					<span class="label label-success">
+						<span class="label-item label-item-expand">Approved</span>
+					</span>
+				</div>
+			</section>
+		</div>
+		<div class="autofit-col">
+			<div class="quick-action-menu">
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-trash">
+						<use xlink:href="../../images/icons/icons.svg#trash" />
+					</svg>
+				</a>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-download">
+						<use xlink:href="../../images/icons/icons.svg#download" />
+					</svg>
+				</a>
+				<a class="component-action quick-action-item" href="#1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-expand">
+						<use xlink:href="../../images/icons/icons.svg#expand" />
+					</svg>
+				</a>
+			</div>
+			<div class="dropdown dropdown-action">
+				<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" id="dropdownAction1" role="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+						<use xlink:href="../../images/icons/icons.svg#ellipsis-v" />
+					</svg>
+				</a>
+				<ul aria-labelledby="" class="dropdown-menu dropdown-menu-right">
+					<li><a class="dropdown-item" href="#1" role="button">Remove</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Download</a></li>
+					<li><a class="dropdown-item" href="#1" role="button">Checkout</a></li>
+				</ul>
+			</div>
+		</div>
+	</li>
+</ul>
+
+<h3>List Group Item Action</h3>
+<div class="list-group">
+	<a class="list-group-item list-group-item-action" href="#1">List Item 1 (Anchor Tag)</a>
+	<a class="list-group-item list-group-item-action" href="#1">List Item 2 (Anchor Tag)</a>
+	<button class="list-group-item list-group-item-action" type="button">List Item 3 (Button Tag)</button>
+	<a class="list-group-item list-group-item-action" href="#1">List Item 4 (Anchor Tag)</a>
+</div>

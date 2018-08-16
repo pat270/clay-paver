@@ -1,105 +1,485 @@
 <h3>Alerts with Embedded Links</h3>
-<div class="alert alert-default">
-	<strong class="lead">Default</strong>You just read the <a href="#" class="alert-link">alert message</a> successfully.
+<div class="alert alert-primary" role="alert">
+	<span class="alert-indicator">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+			<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+		</svg>
+	</span>
+	<strong class="lead">Primary:</strong> This is a <a href="#1" class="alert-link">primary alert</a>. <button class="alert-link btn btn-unstyled">Button as link</button>.
 </div>
-<div class="alert alert-success">
-	<strong class="lead">Success</strong> You just read the <a href="#1" class="alert-link">alert message</a> successfully.
+<div class="alert alert-secondary" role="alert">
+	<span class="alert-indicator">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+			<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+		</svg>
+	</span>
+	<strong class="lead">Secondary:</strong> This is a <a href="#1" class="alert-link">secondary alert</a>.
 </div>
-<div class="alert alert-info">
-	<strong class="lead">Info</strong> This <a href="#1" class="alert-link">alert</a> needs your attention.
+
+<div class="alert alert-success" role="alert">
+	<span class="alert-indicator">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-check-circle-full">
+			<use xlink:href="../../images/icons/icons.svg#check-circle-full"></use>
+		</svg>
+	</span>
+	<strong class="lead">Success:</strong> You just read the <a href="#1" class="alert-link">alert message</a> successfully.
 </div>
-<div class="alert alert-warning">
-	<strong class="lead">Warning</strong> This alert is a <a href="#1" class="alert-link">warning message</a>.
+<div class="alert alert-info" role="alert">
+	<span class="alert-indicator">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+			<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+		</svg>
+	</span>
+	<strong class="lead">Info:</strong> This <a href="#1" class="alert-link">alert</a> needs your attention.
 </div>
-<div class="alert alert-danger">
-	<strong class="lead">Danger</strong> <a href="#1" class="alert-link">Something</a> is not right.
+<div class="alert alert-warning" role="alert">
+	<span class="alert-indicator">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-warning-full">
+			<use xlink:href="../../images/icons/icons.svg#warning-full"></use>
+		</svg>
+	</span>
+	<strong class="lead">Warning:</strong> This alert is a <a href="#1" class="alert-link">warning message</a>.
+</div>
+<div class="alert alert-danger" role="alert">
+	<span class="alert-indicator">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-exclamation-full">
+			<use xlink:href="../../images/icons/icons.svg#exclamation-full"></use>
+		</svg>
+	</span>
+	<strong class="lead">Danger:</strong> <a href="#1" class="alert-link">Something</a> is not right.
+</div>
+<div class="alert alert-light" role="alert">
+	<span class="alert-indicator">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+			<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+		</svg>
+	</span>
+	<strong class="lead">Light:</strong> This is a <a href="#1" class="alert-link">light alert</a>.
+</div>
+
+<div class="alert alert-dark" role="alert">
+	<span class="alert-indicator">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+			<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+		</svg>
+	</span>
+	<strong class="lead">Dark:</strong> This is a <a href="#1" class="alert-link">dark alert</a>.
 </div>
 
 <h3>Dismissible Alerts</h3>
-<div class="alert alert-dismissible alert-default" data-dismiss="alert">
-	<button aria-label="Close" class="close" type="button">
-		<svg aria-hidden="true" class="icon-monospaced lexicon-icon" viewBox="0 0 512 512">
-			<path class="lexicon-icon-outline" d="M295.781 256l205.205-205.205c10.998-10.998 10.998-28.814 0-39.781-10.998-10.998-28.815-10.998-39.781 0l-205.205 205.205-205.205-205.238c-10.966-10.998-28.814-10.998-39.781 0-10.998 10.998-10.998 28.814 0 39.781l205.205 205.238-205.205 205.205c-10.998 10.998-10.998 28.815 0 39.781 5.467 5.531 12.671 8.265 19.874 8.265s14.407-2.734 19.907-8.233l205.205-205.238 205.205 205.205c5.5 5.5 12.703 8.233 19.906 8.233s14.407-2.734 19.906-8.233c10.998-10.998 10.998-28.815 0-39.781l-205.238-205.205z"></path>
+<div class="alert alert-dismissible alert-primary" role="alert">
+	<span class="alert-indicator">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+			<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+		</svg>
+	</span>
+	<strong class="lead">Primary:</strong> This is a <a href="#1" class="alert-link">primary alert</a>.
+	<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+			<use xlink:href="../../images/icons/icons.svg#times" />
 		</svg>
 	</button>
-	<strong class="lead">Default</strong> You just read the alert message successfully.
+</div>
+<div class="alert alert-dismissible alert-secondary" role="alert">
+	<span class="alert-indicator">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+			<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+		</svg>
+	</span>
+	<strong class="lead">Secondary:</strong> This is a <a href="#1" class="alert-link">secondary alert</a>.
+	<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+			<use xlink:href="../../images/icons/icons.svg#times" />
+		</svg>
+	</button>
 </div>
 
-<div class="alert alert-dismissible alert-success" data-dismiss="alert" role="alert">
-	<button aria-label="Close" class="close" type="button">
-		<svg aria-hidden="true" class="icon-monospaced lexicon-icon" viewBox="0 0 512 512">
-			<path class="lexicon-icon-outline" d="M295.781 256l205.205-205.205c10.998-10.998 10.998-28.814 0-39.781-10.998-10.998-28.815-10.998-39.781 0l-205.205 205.205-205.205-205.238c-10.966-10.998-28.814-10.998-39.781 0-10.998 10.998-10.998 28.814 0 39.781l205.205 205.238-205.205 205.205c-10.998 10.998-10.998 28.815 0 39.781 5.467 5.531 12.671 8.265 19.874 8.265s14.407-2.734 19.907-8.233l205.205-205.238 205.205 205.205c5.5 5.5 12.703 8.233 19.906 8.233s14.407-2.734 19.906-8.233c10.998-10.998 10.998-28.815 0-39.781l-205.238-205.205z"></path>
+<div class="alert alert-dismissible alert-success" role="alert">
+	<span class="alert-indicator">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-check-circle-full">
+			<use xlink:href="../../images/icons/icons.svg#check-circle-full"></use>
+		</svg>
+	</span>
+	<strong class="lead">Success:</strong> You just read the alert message successfully.
+	<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+			<use xlink:href="../../images/icons/icons.svg#times" />
 		</svg>
 	</button>
-	<strong class="lead">Success</strong> You just read the alert message successfully.
+</div>
+<div class="alert alert-dismissible alert-info" role="alert">
+	<span class="alert-indicator">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+			<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+		</svg>
+	</span>
+	<strong class="lead">Info:</strong> This alert needs your attention.
+	<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+			<use xlink:href="../../images/icons/icons.svg#times" />
+		</svg>
+	</button>
+</div>
+<div class="alert alert-dismissible alert-warning" role="alert">
+	<span class="alert-indicator">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-warning-full">
+			<use xlink:href="../../images/icons/icons.svg#warning-full"></use>
+		</svg>
+	</span>
+	<strong class="lead">Warning:</strong> This alert is a warning message.
+	<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+			<use xlink:href="../../images/icons/icons.svg#times" />
+		</svg>
+	</button>
+</div>
+<div class="alert alert-dismissible alert-danger" role="alert">
+	<span class="alert-indicator">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-exclamation-full">
+			<use xlink:href="../../images/icons/icons.svg#exclamation-full"></use>
+		</svg>
+	</span>
+	<strong class="lead">Danger:</strong> Something is not right.
+	<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+			<use xlink:href="../../images/icons/icons.svg#times" />
+		</svg>
+	</button>
 </div>
 
-<div class="alert alert-dismissible alert-info" data-dismiss="alert" role="alert">
-	<button aria-label="Close" class="close" type="button">
-		<svg aria-hidden="true" class="icon-monospaced lexicon-icon" viewBox="0 0 512 512">
-			<path class="lexicon-icon-outline" d="M295.781 256l205.205-205.205c10.998-10.998 10.998-28.814 0-39.781-10.998-10.998-28.815-10.998-39.781 0l-205.205 205.205-205.205-205.238c-10.966-10.998-28.814-10.998-39.781 0-10.998 10.998-10.998 28.814 0 39.781l205.205 205.238-205.205 205.205c-10.998 10.998-10.998 28.815 0 39.781 5.467 5.531 12.671 8.265 19.874 8.265s14.407-2.734 19.907-8.233l205.205-205.238 205.205 205.205c5.5 5.5 12.703 8.233 19.906 8.233s14.407-2.734 19.906-8.233c10.998-10.998 10.998-28.815 0-39.781l-205.238-205.205z"></path>
+<div class="alert alert-dismissible alert-light" role="alert">
+	<span class="alert-indicator">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+			<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+		</svg>
+	</span>
+	<strong class="lead">Light:</strong> This is a <a href="#1" class="alert-link">light alert</a>.
+	<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+			<use xlink:href="../../images/icons/icons.svg#times" />
 		</svg>
 	</button>
-	<strong class="lead">Info</strong> This alert needs your attention.
+</div>
+<div class="alert alert-dismissible alert-dark" role="alert">
+	<span class="alert-indicator">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+			<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+		</svg>
+	</span>
+	<strong class="lead">Dark:</strong> This is a <a href="#1" class="alert-link">dark alert</a>.
+	<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+			<use xlink:href="../../images/icons/icons.svg#times" />
+		</svg>
+	</button>
 </div>
 
-<div class="alert alert-dismissible alert-warning" data-dismiss="alert" role="alert">
-	<button aria-label="Close" class="close" type="button">
-		<svg aria-hidden="true" class="icon-monospaced lexicon-icon" viewBox="0 0 512 512">
-			<path class="lexicon-icon-outline" d="M295.781 256l205.205-205.205c10.998-10.998 10.998-28.814 0-39.781-10.998-10.998-28.815-10.998-39.781 0l-205.205 205.205-205.205-205.238c-10.966-10.998-28.814-10.998-39.781 0-10.998 10.998-10.998 28.814 0 39.781l205.205 205.238-205.205 205.205c-10.998 10.998-10.998 28.815 0 39.781 5.467 5.531 12.671 8.265 19.874 8.265s14.407-2.734 19.907-8.233l205.205-205.238 205.205 205.205c5.5 5.5 12.703 8.233 19.906 8.233s14.407-2.734 19.906-8.233c10.998-10.998 10.998-28.815 0-39.781l-205.238-205.205z"></path>
-		</svg>
-	</button>
-	<strong class="lead">Warning</strong> This alert is a warning message.
+<h3>Alert Fluid</h3>
+<div class="alert alert-fluid alert-primary" role="alert">
+	<div class="container-fluid container-fluid-max-xl">
+		<span class="alert-indicator">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+				<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+			</svg>
+		</span>
+		<strong class="lead">Primary</strong> This is a <a href="#1" class="alert-link">primary alert</a>.
+	</div>
+</div>
+<div class="alert alert-fluid alert-secondary" role="alert">
+	<div class="container-fluid container-fluid-max-xl">
+		<span class="alert-indicator">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+				<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+			</svg>
+		</span>
+		<strong class="lead">Secondary</strong> This is a <a href="#1" class="alert-link">secondary alert</a>.
+	</div>
 </div>
 
-<div class="alert alert-dismissible alert-danger" data-dismiss="alert" role="alert">
-	<button aria-label="Close" class="close" type="button">
-		<svg aria-hidden="true" class="icon-monospaced lexicon-icon" viewBox="0 0 512 512">
-			<path class="lexicon-icon-outline" d="M295.781 256l205.205-205.205c10.998-10.998 10.998-28.814 0-39.781-10.998-10.998-28.815-10.998-39.781 0l-205.205 205.205-205.205-205.238c-10.966-10.998-28.814-10.998-39.781 0-10.998 10.998-10.998 28.814 0 39.781l205.205 205.238-205.205 205.205c-10.998 10.998-10.998 28.815 0 39.781 5.467 5.531 12.671 8.265 19.874 8.265s14.407-2.734 19.907-8.233l205.205-205.238 205.205 205.205c5.5 5.5 12.703 8.233 19.906 8.233s14.407-2.734 19.906-8.233c10.998-10.998 10.998-28.815 0-39.781l-205.238-205.205z"></path>
-		</svg>
-	</button>
-	<strong class="lead">Danger</strong> Something is not right.
+<div class="alert alert-dismissible alert-fluid alert-success" role="alert">
+	<div class="container-fluid container-fluid-max-xl">
+		<span class="alert-indicator">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-check-circle-full">
+				<use xlink:href="../../images/icons/icons.svg#check-circle-full"></use>
+			</svg>
+		</span>
+		<strong class="lead">Success</strong> You just read the <a href="#1" class="alert-link">alert message</a> successfully.
+		<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+				<use xlink:href="../../images/icons/icons.svg#times" />
+			</svg>
+		</button>
+	</div>
+</div>
+<div class="alert alert-dismissible alert-fluid alert-info" role="alert">
+	<div class="container-fluid container-fluid-max-xl">
+		<span class="alert-indicator">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+				<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+			</svg>
+		</span>
+		<strong class="lead">Info</strong> This <a href="#1" class="alert-link">alert</a> needs your attention.
+		<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+				<use xlink:href="../../images/icons/icons.svg#times" />
+			</svg>
+		</button>
+	</div>
+</div>
+<div class="alert alert-dismissible alert-fluid alert-warning" role="alert">
+	<div class="container-fluid container-fluid-max-xl">
+		<span class="alert-indicator">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-warning-full">
+				<use xlink:href="../../images/icons/icons.svg#warning-full"></use>
+			</svg>
+		</span>
+		<strong class="lead">Warning</strong> This alert is a <a href="#1" class="alert-link">warning message</a>.
+		<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+				<use xlink:href="../../images/icons/icons.svg#times" />
+			</svg>
+		</button>
+	</div>
+</div>
+<div class="alert alert-danger alert-dismissible alert-fluid" role="alert">
+	<div class="container-fluid container-fluid-max-xl">
+		<span class="alert-indicator">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-exclamation-full">
+				<use xlink:href="../../images/icons/icons.svg#exclamation-full"></use>
+			</svg>
+		</span>
+		<strong class="lead">Danger</strong> <a href="#1" class="alert-link">Something</a> is not right.
+		<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+				<use xlink:href="../../images/icons/icons.svg#times" />
+			</svg>
+		</button>
+	</div>
+</div>
+
+<div class="alert alert-fluid alert-light" role="alert">
+	<div class="container-fluid container-fluid-max-xl">
+		<span class="alert-indicator">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+				<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+			</svg>
+		</span>
+		<strong class="lead">Light</strong> This is a <a href="#1" class="alert-link">light alert</a>.
+	</div>
+</div>
+<div class="alert alert-dark alert-fluid" role="alert">
+	<div class="container-fluid container-fluid-max-xl">
+		<span class="alert-indicator">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+				<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+			</svg>
+		</span>
+		<strong class="lead">Dark</strong> This is a <a href="#1" class="alert-link">dark alert</a>.
+	</div>
 </div>
 
 <h3>Alert Notification</h3>
-<div class="alert alert-dismissible alert-notification alert-danger" data-dismiss="alert" role="alert">
-	<button aria-label="Close" class="close" type="button">
-		<svg aria-hidden="true" class="icon-monospaced lexicon-icon" viewBox="0 0 512 512">
-			<path class="lexicon-icon-outline" d="M295.781 256l205.205-205.205c10.998-10.998 10.998-28.814 0-39.781-10.998-10.998-28.815-10.998-39.781 0l-205.205 205.205-205.205-205.238c-10.966-10.998-28.814-10.998-39.781 0-10.998 10.998-10.998 28.814 0 39.781l205.205 205.238-205.205 205.205c-10.998 10.998-10.998 28.815 0 39.781 5.467 5.531 12.671 8.265 19.874 8.265s14.407-2.734 19.907-8.233l205.205-205.238 205.205 205.205c5.5 5.5 12.703 8.233 19.906 8.233s14.407-2.734 19.906-8.233c10.998-10.998 10.998-28.815 0-39.781l-205.238-205.205z"></path>
-		</svg>
-	</button>
-	<strong class="lead">Danger:</strong>
-	<p>Due to inactivity, your session has expired. Please save any data you may have entered before refreshing the page. <a class="alert-link" href="#1">Log in</a></p>
+<div class="alert-notifications alert-notifications-fixe">
+	<div class="alert alert-dismissible alert-primary alert-notification" role="alert">
+		<span class="alert-indicator">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+				<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+			</svg>
+		</span>
+		<strong class="lead">Meeting Rescheduled:</strong>
+		<div>Please complete the attendance form to confirm your attendance: <a class="alert-link" href="#1">More Info</a>.</div>
+		<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+				<use xlink:href="../../images/icons/icons.svg#times" />
+			</svg>
+		</button>
+	</div>
+	<div class="alert alert-dismissible alert-secondary alert-notification" role="alert">
+		<span class="alert-indicator">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+				<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+			</svg>
+		</span>
+		<strong class="lead">Meeting Rescheduled:</strong>
+		<div>Please complete the attendance form to confirm your attendance: <a class="alert-link" href="#1">More Info</a>.</div>
+		<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+				<use xlink:href="../../images/icons/icons.svg#times" />
+			</svg>
+		</button>
+	</div>
+	<div class="alert alert-dismissible alert-success alert-notification" role="alert">
+		<span class="alert-indicator">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+				<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+			</svg>
+		</span>
+		<strong class="lead">Meeting Rescheduled:</strong>
+		<div>Please complete the attendance form to confirm your attendance: <a class="alert-link" href="#1">More Info</a>.</div>
+		<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+				<use xlink:href="../../images/icons/icons.svg#times" />
+			</svg>
+		</button>
+	</div>
+	<div class="alert alert-dismissible alert-info alert-notification" role="alert">
+		<span class="alert-indicator">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+				<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+			</svg>
+		</span>
+		<strong class="lead">Meeting Rescheduled:</strong>
+		<div>Please complete the attendance form to confirm your attendance: <a class="alert-link" href="#1">More Info</a>.</div>
+		<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+				<use xlink:href="../../images/icons/icons.svg#times" />
+			</svg>
+		</button>
+	</div>
+	<div class="alert alert-dismissible alert-warning alert-notification" role="alert">
+		<span class="alert-indicator">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+				<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+			</svg>
+		</span>
+		<strong class="lead">Meeting Rescheduled:</strong>
+		<div>Please complete the attendance form to confirm your attendance: <a class="alert-link" href="#1">More Info</a>.</div>
+		<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+				<use xlink:href="../../images/icons/icons.svg#times" />
+			</svg>
+		</button>
+	</div>
+	<div class="alert alert-dismissible alert-danger alert-notification" role="alert">
+		<span class="alert-indicator">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+				<use xlink:href="../../images/icons/icons.svg#info-circle"></use>
+			</svg>
+		</span>
+		<strong class="lead">Meeting Rescheduled:</strong>
+		<div>Please complete the attendance form to confirm your attendance: <a class="alert-link" href="#1">More Info</a>.</div>
+		<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+				<use xlink:href="../../images/icons/icons.svg#times" />
+			</svg>
+		</button>
+	</div>
 </div>
 
-<div class="alert alert-dismissible alert-notification alert-warning" data-dismiss="alert" role="alert">
-	<button aria-label="Close" class="close" type="button">
-		<svg aria-hidden="true" class="icon-monospaced lexicon-icon" viewBox="0 0 512 512">
-			<path class="lexicon-icon-outline" d="M295.781 256l205.205-205.205c10.998-10.998 10.998-28.814 0-39.781-10.998-10.998-28.815-10.998-39.781 0l-205.205 205.205-205.205-205.238c-10.966-10.998-28.814-10.998-39.781 0-10.998 10.998-10.998 28.814 0 39.781l205.205 205.238-205.205 205.205c-10.998 10.998-10.998 28.815 0 39.781 5.467 5.531 12.671 8.265 19.874 8.265s14.407-2.734 19.907-8.233l205.205-205.238 205.205 205.205c5.5 5.5 12.703 8.233 19.906 8.233s14.407-2.734 19.906-8.233c10.998-10.998 10.998-28.815 0-39.781l-205.238-205.205z"></path>
-		</svg>
-	</button>
-	<strong class="lead">Warning:</strong>
-	<p>Due to inactivity, your session will expire in 00:00:56. To extend your session another 2 minutes click: <a class="alert-link" href="#1">Extend</a>.</p>
-</div>
-
-<div class="alert alert-dismissible alert-notification alert-info" data-dismiss="alert" role="alert">
-	<button aria-label="Close" class="close" type="button">
-		<svg aria-hidden="true" class="icon-monospaced lexicon-icon" viewBox="0 0 512 512">
-			<path class="lexicon-icon-outline" d="M295.781 256l205.205-205.205c10.998-10.998 10.998-28.814 0-39.781-10.998-10.998-28.815-10.998-39.781 0l-205.205 205.205-205.205-205.238c-10.966-10.998-28.814-10.998-39.781 0-10.998 10.998-10.998 28.814 0 39.781l205.205 205.238-205.205 205.205c-10.998 10.998-10.998 28.815 0 39.781 5.467 5.531 12.671 8.265 19.874 8.265s14.407-2.734 19.907-8.233l205.205-205.238 205.205 205.205c5.5 5.5 12.703 8.233 19.906 8.233s14.407-2.734 19.906-8.233c10.998-10.998 10.998-28.815 0-39.781l-205.238-205.205z"></path>
-		</svg>
-	</button>
-	<strong class="lead">Meeting Rescheduled:</strong>
-	<p>The UX Team has rescheduled to the following date: 2014 - 12 - 17.</p>
-	<p>Please complete the attendance form to confirm your attendance: <a class="alert-link" href="#1">More Info</a>.</p>
-</div>
-
-<div class="alert alert-dismissible alert-notification alert-success" data-dismiss="alert" role="alert">
-	<button aria-label="Close" class="close" type="button">
-		<svg aria-hidden="true" class="icon-monospaced lexicon-icon" viewBox="0 0 512 512">
-			<path class="lexicon-icon-outline" d="M295.781 256l205.205-205.205c10.998-10.998 10.998-28.814 0-39.781-10.998-10.998-28.815-10.998-39.781 0l-205.205 205.205-205.205-205.238c-10.966-10.998-28.814-10.998-39.781 0-10.998 10.998-10.998 28.814 0 39.781l205.205 205.238-205.205 205.205c-10.998 10.998-10.998 28.815 0 39.781 5.467 5.531 12.671 8.265 19.874 8.265s14.407-2.734 19.907-8.233l205.205-205.238 205.205 205.205c5.5 5.5 12.703 8.233 19.906 8.233s14.407-2.734 19.906-8.233c10.998-10.998 10.998-28.815 0-39.781l-205.238-205.205z"></path>
-		</svg>
-	</button>
-	<strong class="lead">Meeting Rescheduled:</strong>
-	<p>The UX Team has rescheduled to the following date: 2014 - 12 - 17.</p>
-	<p>Please complete the attendance form to confirm your attendance: <a class="alert-link" href="#1">More Info</a>.</p>
-</div>
+<h3>Alert List</h3>
+<ul class="alert-list">
+	<li class="alert alert-danger alert-dismissible alert-fluid" role="alert">
+		<div class="container-fluid">
+			<div class="autofit-float autofit-padded autofit-row autofit-row-center">
+				<div class="autofit-col">
+					<div class="autofit-section">
+						<span class="alert-indicator">
+							<svg aria-hidden="true" class="lexicon-icon lexicon-icon-exclamation-full">
+								<use xlink:href="../../images/icons/icons.svg#exclamation-full" />
+							</svg>
+						</span><strong class="lead">1 Files</strong> couldn't upload.
+					</div>
+				</div>
+				<div class="autofit-col autofit-col-expand">
+					<div class="autofit-section">
+						<button class="btn btn-secondary btn-sm" type="button">
+							<span class="inline-item inline-item-before"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-reload">
+								<use xlink:href="../../images/icons/icons.svg#reload" />
+							</svg></span>Retry all
+						</button>
+					</div>
+				</div>
+			</div>
+			<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+					<use xlink:href="../../images/icons/icons.svg#times" />
+				</svg>
+			</button>
+		</div>
+	</li>
+	<li class="alert alert-danger alert-dismissible alert-fluid" role="alert">
+		<div class="container-fluid">
+			<div class="autofit-float autofit-padded autofit-row autofit-row-center">
+				<div class="autofit-col">
+					<span class="sticker sticker-secondary">RTF</span>
+				</div>
+				<div class="autofit-col autofit-col-expand">
+					<div class="autofit-section">
+						<h4 class="component-title">
+							file-upload.RTF
+						</h4>
+						<span class="alert-indicator">
+							<svg aria-hidden="true" class="lexicon-icon lexicon-icon-exclamation-full">
+								<use xlink:href="../../images/icons/icons.svg#exclamation-full" />
+							</svg>
+						</span><strong class="lead">Error:</strong> couldn't upload.
+					</div>
+				</div>
+				<div class="autofit-col">
+					<button class="btn btn-secondary btn-sm" type="button">
+						<span class="inline-item inline-item-before"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-reload">
+							<use xlink:href="../../images/icons/icons.svg#reload" />
+						</svg></span>Retry
+					</button>
+				</div>
+			</div>
+			<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+					<use xlink:href="../../images/icons/icons.svg#times" />
+				</svg>
+			</button>
+		</div>
+	</li>
+	<li class="alert alert-light alert-dismissible alert-fluid">
+		<div class="container-fluid">
+			<div class="autofit-float autofit-padded autofit-row autofit-row-center">
+				<div class="autofit-col">
+					<span class="sticker sticker-secondary">JPG</span>
+				</div>
+				<div class="autofit-col autofit-col-expand">
+					<div class="autofit-section">
+						<h4 class="component-title">file-name.JPG</h4>
+						<div class="component-subtitle">Uploaded - 142.1KB</div>
+					</div>
+				</div>
+			</div>
+			<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+					<use xlink:href="../../images/icons/icons.svg#times" />
+				</svg>
+			</button>
+		</div>
+	</li>
+	<li class="alert alert-light alert-dismissible alert-fluid">
+		<div class="container-fluid">
+			<div class="autofit-float autofit-padded autofit-row autofit-row-center">
+				<div class="autofit-col">
+					<span class="sticker sticker-secondary">RTF</span>
+				</div>
+				<div class="autofit-col autofit-col-expand">
+					<div class="autofit-section">
+						<h4 class="component-title">ABC-file.RTF</h4>
+						<div class="progress-group progress-group-stacked">
+							<div class="progress">
+								<div aria-valuenow="34" aria-valuemin="0" aria-valuemax="100" class="progress-bar" role="progressbar" style="width: 34%;"></div>
+							</div>
+							<div class="autofit-row">
+								<div class="autofit-col autofit-col-expand">
+									<div class="component-subtitle">Size: 156.6 MB</div>
+								</div>
+								<div class="autofit-col">
+									<div class="component-subtitle">34%</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+					<use xlink:href="../../images/icons/icons.svg#times" />
+				</svg>
+			</button>
+		</div>
+	</li>
+</ul>

@@ -1,84 +1,191 @@
 <h4 class="cp-variables-form-header">Label</h4>
-<%- include('../partials/cpTextInput', { id: 'label-desktop-font-size' }) %>
+<%- include('../partials/cpTextInput', { id: 'label-height' }) %>
 <%- include('../partials/cpTextInput', { id: 'label-font-size' }) %>
 <%- include('../partials/cpTextInput', { id: 'label-font-weight' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-padding-top' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-padding-right' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-padding-bottom' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-padding-left' }) %>
+<%- include('../partials/cpTextInput', { id: 'label-line-height' }) %>
+<%- include('../partials/cpTextInput', { id: 'label-padding-y' }) %>
+<%- include('../partials/cpTextInput', { id: 'label-padding-x' }) %>
+<%- include('../partials/cpTextInput', { id: 'label-spacer-y' }) %>
+<%- include('../partials/cpTextInput', { id: 'label-spacer-x' }) %>
 <%- include('../partials/cpTextInput', { id: 'label-border-width' }) %>
 <%- include('../partials/cpTextInput', { id: 'label-border-style' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-color' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-link-hover-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'label-border-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'label-border-radius' }) %>
+<%- include('../partials/cpTextInput', { id: 'label-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'label-text-transform' }) %>
+
+<h4 class="cp-variables-form-header">Label Link</h4>
+<%- include('../partials/cpTextInput', { id: 'label-link-hover-color' }) %>
 <%- include('../partials/cpTextInput', { id: 'label-link-text-decoration' }) %>
 <%- include('../partials/cpTextInput', { id: 'label-link-hover-text-decoration' }) %>
+
+<h4 class="cp-variables-form-header">Label Anchor</h4>
+<%- include('../partials/cpTextInput', { id: 'label-anchor-text-decoration' }) %>
+<%- include('../partials/cpTextInput', { id: 'label-anchor-hover-text-decoration' }) %>
+
+<h4 class="cp-variables-form-header">Label Lexicon Icon</h4>
 <%- include('../partials/cpTextInput', { id: 'label-lexicon-icon-width' }) %>
 <%- include('../partials/cpTextInput', { id: 'label-lexicon-icon-height' }) %>
+<%- include('../partials/cpTextInput', { id: 'label-lexicon-icon-margin-top' }) %>
 
-<h4 class="cp-variables-form-header">Label Default</h4>
-<%- include('../partials/cpColorInput', { id: 'label-default-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-default-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-default-color' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-default-hover-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-default-hover-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-default-hover-color' }) %>
+<h4 class="cp-variables-form-header">Label Item</h4>
+<%- include('../partials/cpTextInput', { id: 'label-item-spacer-x' }) %>
+
+<h4 class="cp-variables-form-header">Label Dismissible</h4>
+<%- include('../partials/cpTextInput', { id: 'label-dismissible-text-transform' }) %>
+
+<h4 class="cp-variables-form-header">Label Close</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="label-close" name="clay[label-close]" type="hidden">
+	</div>
+	<%- include('../partials/cpTextInput', { id: 'label-close-align-items' }) %>
+	<%- include('../partials/cpColorInput', { id: 'label-close-bg' }) %>
+	<%- include('../partials/cpColorInput', { id: 'label-close-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-border-radius' }) %>
+	<%- include('../partials/cpColorInput', { id: 'label-close-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-display' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-font-family' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-font-size' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-font-weight' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-justify-content' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-line-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-margin-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-padding-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-padding-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-padding-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-padding-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-text-align' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-text-transform' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-transition' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-vertical-align' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-width' }) %>
+	<%- include('../partials/cpColorInput', { id: 'label-close-hover-bg' }) %>
+	<%- include('../partials/cpColorInput', { id: 'label-close-hover-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-hover-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-hover-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-focus-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-focus-box-shadow' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-focus-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-focus-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-focus-outline' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-active-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-active-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-active-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-disabled-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-disabled-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-disabled-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-disabled-cursor' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-disabled-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-disabled-pointer-events' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-btn-focus-box-shadow' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-btn-focus-outline' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-lexicon-icon-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-lexicon-icon-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-lexicon-icon-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-close-lexicon-icon-margin-top' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Label Lg</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="label-lg" name="clay[label-lg]" type="hidden">
+	</div>
+	<%- include('../partials/cpTextInput', { id: 'label-lg-border-width' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-lg-font-size' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-lg-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-lg-line-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-lg-padding-y' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-lg-padding-x' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-lg-text-transform' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-lg-lexicon-icon-width' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-lg-lexicon-icon-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'label-lg-lexicon-icon-margin-top' }) %>
+</div>
 
 <h4 class="cp-variables-form-header">Label Primary</h4>
 <%- include('../partials/cpColorInput', { id: 'label-primary-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-primary-border' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-primary-border-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'label-primary-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'label-primary-hover-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-primary-hover-border' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-primary-hover-border-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'label-primary-hover-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-primary-link-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-primary-link-hover-color' }) %>
 
-<h4 class="cp-variables-form-header">Label Success</h4>
-<%- include('../partials/cpColorInput', { id: 'label-success-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-success-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-success-color' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-success-hover-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-success-hover-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-success-hover-color' }) %>
+<h4 class="cp-variables-form-header">Label Secondary</h4>
+<%- include('../partials/cpColorInput', { id: 'label-secondary-bg' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-secondary-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-secondary-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-secondary-hover-bg' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-secondary-hover-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-secondary-hover-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-secondary-link-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-secondary-link-hover-color' }) %>
 
 <h4 class="cp-variables-form-header">Label Info</h4>
 <%- include('../partials/cpColorInput', { id: 'label-info-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-info-border' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-info-border-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'label-info-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'label-info-hover-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-info-hover-border' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-info-hover-border-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'label-info-hover-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-info-link-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-info-link-hover-color' }) %>
+
+<h4 class="cp-variables-form-header">Label Success</h4>
+<%- include('../partials/cpColorInput', { id: 'label-success-bg' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-success-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-success-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-success-hover-bg' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-success-hover-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-success-hover-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-success-link-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-success-link-hover-color' }) %>
 
 <h4 class="cp-variables-form-header">Label Warning</h4>
 <%- include('../partials/cpColorInput', { id: 'label-warning-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-warning-border' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-warning-border-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'label-warning-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'label-warning-hover-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-warning-hover-border' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-warning-hover-border-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'label-warning-hover-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-warning-link-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-warning-link-hover-color' }) %>
 
-<h4 class="cp-variables-form-header">Label Danger</h3>
+<h4 class="cp-variables-form-header">Label Danger</h4>
 <%- include('../partials/cpColorInput', { id: 'label-danger-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-danger-border' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-danger-border-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'label-danger-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'label-danger-hover-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'label-danger-hover-border' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-danger-hover-border-color' }) %>
 <%- include('../partials/cpColorInput', { id: 'label-danger-hover-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-danger-link-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-danger-link-hover-color' }) %>
 
-<h4 class="cp-variables-form-header">Label Sm</h4>
-<%- include('../partials/cpTextInput', { id: 'label-sm-desktop-font-size' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-sm-font-size' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-sm-padding-top' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-sm-padding-right' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-sm-padding-bottom' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-sm-padding-left' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-sm-lexicon-icon-height' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-sm-lexicon-icon-width' }) %>
+<h4 class="cp-variables-form-header">Label Light</h4>
+<%- include('../partials/cpColorInput', { id: 'label-light-bg' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-light-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-light-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-light-hover-bg' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-light-hover-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-light-hover-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-light-link-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-light-link-hover-color' }) %>
 
-<h4 class="cp-variables-form-header">Label Lg</h4>
-<%- include('../partials/cpTextInput', { id: 'label-lg-desktop-font-size' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-lg-font-size' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-lg-padding-top' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-lg-padding-right' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-lg-padding-bottom' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-lg-padding-left' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-lg-lexicon-icon-height' }) %>
-<%- include('../partials/cpTextInput', { id: 'label-lg-lexicon-icon-width' }) %>
+<h4 class="cp-variables-form-header">Label Dark</h4>
+<%- include('../partials/cpColorInput', { id: 'label-dark-bg' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-dark-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-dark-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-dark-hover-bg' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-dark-hover-border-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-dark-hover-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-dark-link-color' }) %>
+<%- include('../partials/cpColorInput', { id: 'label-dark-link-hover-color' }) %>

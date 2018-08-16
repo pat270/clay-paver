@@ -1,57 +1,473 @@
 <h4 class="cp-variables-form-header">List Group</h4>
-<%- include('../partials/cpColorInput', { id: 'list-group-bg' }) %>
-<%- include('../partials/cpTextInput', { id: 'list-group-border-radius' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-font-size' }) %>
 <%- include('../partials/cpTextInput', { id: 'list-group-border-width' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-border' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-border-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-border-radius' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-bg' }) %>
 <%- include('../partials/cpTextInput', { id: 'list-group-box-shadow' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-margin-top' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-margin-bottom' }) %>
 
 <h4 class="cp-variables-form-header">List Group Hover</h4>
-<%- include('../partials/cpColorInput', { id: 'list-group-hover-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-hover-bg' }) %>
 
 <h4 class="cp-variables-form-header">List Group Active</h4>
-<%- include('../partials/cpColorInput', { id: 'list-group-active-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-active-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-active-color' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-active-text-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-active-border-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-active-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-active-bg' }) %>
 
 <h4 class="cp-variables-form-header">List Group Disabled</h4>
-<%- include('../partials/cpColorInput', { id: 'list-group-disabled-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-disabled-color' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-disabled-text-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-disabled-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-disabled-bg' }) %>
+
+<h4 class="cp-variables-form-header">List Group Item</h4>
+<%- include('../partials/cpTextInput', { id: 'list-group-item-padding-y' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-item-padding-x' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-item-flex-align-items' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-item-flex-offset-top' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-item-flex-checkbox-offset-top' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-item-flex-list-group-title-offset-top' }) %>
 
 <h4 class="cp-variables-form-header">List Group Link</h4>
-<%- include('../partials/cpColorInput', { id: 'list-group-link-color' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-link-heading-color' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-link-hover-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-link-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-link-hover-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-link-active-color' }) %>
 
-<h4 class="cp-variables-form-header">Tabular List Group</h4>
-<%- include('../partials/cpTextInput', { id: 'tabular-list-group-border-width' }) %>
-<%- include('../partials/cpTextInput', { id: 'tabular-list-group-active-border-bottom-width' }) %>
-<%- include('../partials/cpTextInput', { id: 'tabular-list-group-item-height' }) %>
-<%- include('../partials/cpTextInput', { id: 'tabular-list-group-vertical-alignment' }) %>
+<h4 class="cp-variables-form-header">List Group Detail</h4>
+<%- include('../partials/cpTextInput', { id: 'list-group-detail-margin-top' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-detail-margin-bottom' }) %>
+
+<h4 class="cp-variables-form-header">List Group Notification Item</h4>
+<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-top-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-right-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-bottom-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-left-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-top-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-right-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-bottom-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-left-color' }) %>
+
+<h4 class="cp-variables-form-header">List Group Notification Item Active</h4>
+<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-active-border-top-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-active-border-right-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-active-border-bottom-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-active-border-left-color' }) %>
+
+<h4 class="cp-variables-form-header">List Group Notification Item</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-notification-item" name="clay[list-group-notification-item]" type="hidden">
+	</div>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-top-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-right-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-bottom-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-left-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-top-width' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-right-width' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-bottom-width' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-left-width' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-top-left-radius' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-top-right-radius' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-bottom-right-radius' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-border-bottom-left-radius' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-active-border-top-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-active-border-right-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-active-border-bottom-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-active-border-left-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-active-bg' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Notification Item Primary</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-notification-item-primary" name="clay[list-group-notification-item-primary]" type="hidden">
+	</div>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-border-top-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-border-right-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-border-bottom-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-border-left-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-border-top-width' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-border-right-width' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-border-bottom-width' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-border-left-width' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-border-top-left-radius' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-border-top-right-radius' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-border-bottom-right-radius' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-border-bottom-left-radius' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-active-border-top-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-active-border-right-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-active-border-bottom-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-active-border-left-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-notification-item-primary-active-bg' }) %>
+</div>
 
 <h4 class="cp-variables-form-header">List Group Header</h4>
-<%- include('../partials/cpColorInput', { id: 'list-group-header-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-header-color' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-header-hover-color' }) %>
-<%- include('../partials/cpTextInput', { id: 'list-group-header-font-weight' }) %>
-<%- include('../partials/cpTextInput', { id: 'list-group-header-icon-font-size' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-header-close-border-color' }) %>
-<%- include('../partials/cpTextInput', { id: 'list-group-header-close-border-width' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-header-open-border-color' }) %>
-<%- include('../partials/cpTextInput', { id: 'list-group-header-open-border-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-header-padding-y' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-header-padding-x' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-header-bg' }) %>
 
-<h4 class="cp-variables-form-header">List Group Item Dropdown Toggle</h4>
-<%- include('../partials/cpColorInput', { id: 'list-group-item-dropdown-toggle-color' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-item-dropdown-toggle-focus-color' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-item-dropdown-toggle-hover-color' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-item-active-dropdown-toggle-color' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-item-active-dropdown-toggle-focus-color' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-item-active-dropdown-toggle-hover-color' }) %>
+<h4 class="cp-variables-form-header">List Group Header Title</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-header-title" name="clay[list-group-header-title]" type="hidden">
+	</div>
+	<%- include('../partials/cpTextInput', { id: 'list-group-header-title-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-header-title-font-size' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-header-title-font-family' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-header-title-font-weight' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-header-title-padding-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-header-title-padding-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-header-title-padding-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-header-title-padding-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-header-title-line-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-header-title-margin-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-header-title-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-header-title-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-header-title-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-header-title-letter-spacing' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-header-title-text-transform' }) %>
+</div>
 
-<h4 class="cp-variables-form-header">List Group Card</h4>
-<%- include('../partials/cpColorInput', { id: 'list-group-card-active-bg' }) %>
-<%- include('../partials/cpTextInput', { id: 'list-group-card-active-border-width' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-card-active-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'list-group-card-active-color' }) %>
-<%- include('../partials/cpTextInput', { id: 'list-group-card-checkbox-hidden-icon' }) %>
+<h4 class="cp-variables-form-header">List Group Title</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-title" name="clay[list-group-title]" type="hidden">
+	</div>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-font-size' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-font-family' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-font-weight' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-padding-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-padding-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-padding-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-padding-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-line-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-margin-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-letter-spacing' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-text-transform' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Title Active</h4>
+<%- include('../partials/cpTextInput', { id: 'list-group-title-active-color' }) %>
+
+<h4 class="cp-variables-form-header">List Group Title Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-title-link" name="clay[list-group-title-link]" type="hidden">
+	</div>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-align-items' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-title-link-bg' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-title-link-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-border-radius' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-title-link-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-display' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-font-family' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-font-size' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-font-weight' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-justify-content' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-line-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-margin-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-padding-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-padding-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-padding-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-padding-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-text-align' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-text-transform' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-transition' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-vertical-align' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-width' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-title-link-hover-bg' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-title-link-hover-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-hover-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-hover-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-focus-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-focus-box-shadow' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-focus-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-focus-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-focus-outline' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-active-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-active-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-active-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-disabled-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-disabled-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-disabled-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-disabled-cursor' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-disabled-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-disabled-pointer-events' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-btn-focus-box-shadow' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-btn-focus-outline' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-lexicon-icon-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-lexicon-icon-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-lexicon-icon-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-title-link-lexicon-icon-margin-top' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Subtitle</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-subtitle" name="clay[list-group-subtitle]" type="hidden">
+	</div>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-font-size' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-font-family' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-font-weight' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-padding-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-padding-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-padding-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-padding-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-line-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-margin-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-letter-spacing' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-text-transform' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Subtitle Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-subtitle-link" name="clay[list-group-subtitle-link]" type="hidden">
+	</div>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-align-items' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-subtitle-link-bg' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-subtitle-link-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-border-radius' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-subtitle-link-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-display' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-font-family' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-font-size' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-font-weight' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-justify-content' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-line-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-margin-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-padding-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-padding-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-padding-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-padding-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-text-align' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-text-transform' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-transition' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-vertical-align' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-width' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-subtitle-link-hover-bg' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-subtitle-link-hover-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-hover-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-hover-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-focus-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-focus-box-shadow' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-focus-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-focus-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-focus-outline' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-active-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-active-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-active-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-disabled-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-disabled-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-disabled-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-disabled-cursor' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-disabled-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-disabled-pointer-events' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-btn-focus-box-shadow' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-btn-focus-outline' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-lexicon-icon-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-lexicon-icon-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-lexicon-icon-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtitle-link-lexicon-icon-margin-top' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Text</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-text" name="clay[list-group-text]" type="hidden">
+	</div>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-font-size' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-font-family' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-font-weight' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-padding-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-padding-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-padding-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-padding-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-line-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-margin-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-letter-spacing' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-text-transform' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Text Active</h4>
+<%- include('../partials/cpTextInput', { id: 'list-group-text-active-color' }) %>
+
+<h4 class="cp-variables-form-header">List Group Text Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-text-link" name="clay[list-group-text-link]" type="hidden">
+	</div>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-align-items' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-text-link-bg' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-text-link-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-border-radius' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-text-link-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-display' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-font-family' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-font-size' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-font-weight' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-justify-content' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-line-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-margin-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-padding-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-padding-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-padding-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-padding-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-text-align' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-text-transform' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-transition' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-vertical-align' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-width' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-text-link-hover-bg' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-text-link-hover-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-hover-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-hover-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-focus-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-focus-box-shadow' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-focus-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-focus-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-focus-outline' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-active-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-active-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-active-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-disabled-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-disabled-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-disabled-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-disabled-cursor' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-disabled-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-disabled-pointer-events' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-btn-focus-box-shadow' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-btn-focus-outline' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-lexicon-icon-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-lexicon-icon-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-lexicon-icon-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-text-link-lexicon-icon-margin-top' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Subtext</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-subtext" name="clay[list-group-subtext]" type="hidden">
+	</div>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-font-size' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-font-family' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-font-weight' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-padding-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-padding-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-padding-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-padding-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-line-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-margin-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-letter-spacing' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-text-transform' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Subtext Active</h4>
+<%- include('../partials/cpTextInput', { id: 'list-group-subtext-active-color' }) %>
+
+<h4 class="cp-variables-form-header">List Group Subtext Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-subtext-link" name="clay[list-group-subtext-link]" type="hidden">
+	</div>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-align-items' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-subtext-link-bg' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-subtext-link-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-border-radius' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-subtext-link-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-display' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-font-family' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-font-size' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-font-weight' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-justify-content' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-line-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-margin-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-padding-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-padding-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-padding-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-padding-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-text-align' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-text-transform' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-transition' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-vertical-align' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-width' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-subtext-link-hover-bg' }) %>
+	<%- include('../partials/cpColorInput', { id: 'list-group-subtext-link-hover-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-hover-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-hover-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-focus-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-focus-box-shadow' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-focus-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-focus-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-focus-outline' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-active-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-active-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-active-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-disabled-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-disabled-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-disabled-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-disabled-cursor' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-disabled-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-disabled-pointer-events' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-btn-focus-box-shadow' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-btn-focus-outline' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-lexicon-icon-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-lexicon-icon-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-lexicon-icon-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'list-group-subtext-link-lexicon-icon-margin-top' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Item Action</h4>
+<%- include('../partials/cpTextInput', { id: 'list-group-action-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-action-hover-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-action-active-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'list-group-action-active-bg' }) %>

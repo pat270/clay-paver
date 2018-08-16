@@ -1,62 +1,142 @@
-<h4 class="cp-variables-form-header">Label</h4>
-<%- include('../partials/cpColorInput', { id: 'input-label-color' }) %>
-<%- include('../partials/cpColorInput', { id: 'input-label-focus-color' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-label-desktop-font-size' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-label-font-size' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-label-font-weight' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-label-margin-bottom' }) %>
-
-<h4 class="cp-variables-form-header">Label Reference Marker</h4>
-<%- include('../partials/cpTextInput', { id: 'input-label-reference-mark-spacer' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-label-reference-mark-vertical-alignment' }) %>
-
 <h4 class="cp-variables-form-header">Input</h4>
-<%- include('../partials/cpTextInput', { id: 'input-height-base' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-mobile-height-base' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-height' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-height-mobile' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-font-size' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-font-size-mobile' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-padding-y' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-padding-x' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-line-height' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-border-top-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-border-right-width' }) %>
 <%- include('../partials/cpTextInput', { id: 'input-border-bottom-width' }) %>
 <%- include('../partials/cpTextInput', { id: 'input-border-left-width' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-border-right-width' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-border-top-width' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-desktop-font-size' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-font-size' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-padding-vertical' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-padding-horizontal' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-border-color' }) %>
 <%- include('../partials/cpTextInput', { id: 'input-border-radius' }) %>
-<%- include('../partials/cpColorInput', { id: 'input-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'input-border' }) %>
-<%- include('../partials/cpColorInput', { id: 'input-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-bg' }) %>
 <%- include('../partials/cpTextInput', { id: 'input-box-shadow' }) %>
-
-<h4 class="cp-variables-form-header">Input Placeholder</h4>
-<%- include('../partials/cpColorInput', { id: 'input-color-placeholder' }) %>
-<%- include('../partials/cpColorInput', { id: 'input-color-placeholder-focus' }) %>
-<%- include('../partials/cpColorInput', { id: 'input-color-placeholder-disabled' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-transition' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-placeholder-color' }) %>
 
 <h4 class="cp-variables-form-header">Input Focus</h4>
-<%- include('../partials/cpColorInput', { id: 'input-bg-focus' }) %>
-<%- include('../partials/cpColorInput', { id: 'input-border-focus' }) %>
-<%- include('../partials/cpColorInput', { id: 'input-color-focus' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-box-shadow-focus' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-focus-border-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-focus-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-focus-box-shadow' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-focus-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-focus-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-placeholder-focus-color' }) %>
+
+<h4 class="cp-variables-form-header">Input Disabled</h4>
+<%- include('../partials/cpTextInput', { id: 'input-disabled-border-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-disabled-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-disabled-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-disabled-cursor' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-disabled-opacity' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-placeholder-disabled-color' }) %>
+
+<h4 class="cp-variables-form-header">Input Label</h4>
+<%- include('../partials/cpTextInput', { id: 'input-label-font-size' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-label-font-size-mobile' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-label-font-weight' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-label-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-label-margin-bottom' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-label-for-cursor' }) %>
+
+<h4 class="cp-variables-form-header">Input Label Reference Mark</h4>
+<%- include('../partials/cpTextInput', { id: 'input-label-reference-mark-font-size' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-label-reference-mark-spacer' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-label-reference-mark-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-label-reference-mark-vertical-align' }) %>
+
+<h4 class="cp-variables-form-header">Input Label Focus</h4>
+<%- include('../partials/cpTextInput', { id: 'input-label-focus-color' }) %>
+
+<h4 class="cp-variables-form-header">Input Label Disabled</h4>
+<%- include('../partials/cpTextInput', { id: 'input-label-disabled-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-label-disabled-cursor' }) %>
 
 <h4 class="cp-variables-form-header">Select</h4>
-<%- include('../partials/cpColorInput', { id: 'input-select-bg' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-select-bg-position' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-select-bg-size' }) %>
-<%- include('../partials/cpColorInput', { id: 'input-select-icon-color' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-select-icon' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-select-padding-bottom' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-select-padding-top' }) %>
 <%- include('../partials/cpTextInput', { id: 'input-select-padding-left' }) %>
 <%- include('../partials/cpTextInput', { id: 'input-select-padding-right' }) %>
-<%- include('../partials/cpTextInput', { id: 'input-select-padding-top' }) %>
-<%- include('../partials/cpColorInput', { id: 'input-select-focus-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'input-select-icon-focus-color' }) %>
-<%- include('../partials/cpColorInput', { id: 'input-select-icon-focus' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-select-padding-bottom' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-select-icon-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-select-icon' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-select-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-select-bg-position' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-select-bg-size' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-select-cursor' }) %>
+
+<h4 class="cp-variables-form-header">Select Focus</h4>
+<%- include('../partials/cpTextInput', { id: 'input-select-icon-focus-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-select-icon-focus' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-select-focus-bg' }) %>
+
+<h4 class="cp-variables-form-header">Select Disabled</h4>
+<%- include('../partials/cpTextInput', { id: 'input-select-icon-disabled-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-select-icon-disabled' }) %>
 
 <h4 class="cp-variables-form-header">Textarea</h4>
 <%- include('../partials/cpTextInput', { id: 'input-textarea-height' }) %>
 
+<h4 class="cp-variables-form-header">Checkbox and Radio</h4>
+<%- include('../partials/cpTextInput', { id: 'form-check-input-gutter' }) %>
+<%- include('../partials/cpTextInput', { id: 'form-check-input-margin-y' }) %>
+<%- include('../partials/cpTextInput', { id: 'form-check-input-margin-x' }) %>
+<%- include('../partials/cpTextInput', { id: 'form-check-input-cursor' }) %>
+
+<h4 class="cp-variables-form-header">Checkbox and Radio Disabled</h4>
+<%- include('../partials/cpTextInput', { id: 'form-check-input-disabled-cursor' }) %>
+<%- include('../partials/cpTextInput', { id: 'form-check-label-text-disabled-cursor' }) %>
+
+<h4 class="cp-variables-form-header">Checkbox and Radio Label</h4>
+<%- include('../partials/cpTextInput', { id: 'form-check-label-text-padding-left' }) %>
+<%- include('../partials/cpTextInput', { id: 'form-check-label-text-margin-left' }) %>
+<%- include('../partials/cpTextInput', { id: 'form-check-label-cursor' }) %>
+
+<h4 class="cp-variables-form-header">Inline Checkbox and Radio</h4>
+<%- include('../partials/cpTextInput', { id: 'form-check-inline-margin-x' }) %>
+<%- include('../partials/cpTextInput', { id: 'form-check-inline-input-margin-x' }) %>
+
+<h4 class="cp-variables-form-header">Input File</h4>
+<%- include('../partials/cpTextInput', { id: 'input-file-cursor' }) %>
+
+<h4 class="cp-variables-form-header">Readonly</h4>
+<%- include('../partials/cpTextInput', { id: 'input-readonly-border-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-readonly-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-readonly-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-readonly-cursor' }) %>
+
+<h4 class="cp-variables-form-header">Readonly Focus</h4>
+<%- include('../partials/cpTextInput', { id: 'input-readonly-focus-border-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-readonly-focus-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-readonly-focus-color' }) %>
+
+<h4 class="cp-variables-form-header">Input Sm</h4>
+<%- include('../partials/cpTextInput', { id: 'input-height-sm' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-height-sm-mobile' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-font-size-sm' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-font-size-sm-mobile' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-padding-y-sm' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-padding-x-sm' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-line-height-sm' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-border-radius-sm' }) %>
+
+<h4 class="cp-variables-form-header">Input Lg</h4>
+<%- include('../partials/cpTextInput', { id: 'input-height-lg' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-height-lg-mobile' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-font-size-lg' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-font-size-lg-mobile' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-padding-y-lg' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-padding-x-lg' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-line-height-lg' }) %>
+<%- include('../partials/cpTextInput', { id: 'input-border-radius-lg' }) %>
+
 <h4 class="cp-variables-form-header">Form Group</h4>
 <%- include('../partials/cpTextInput', { id: 'form-group-margin-bottom' }) %>
+<%- include('../partials/cpTextInput', { id: 'form-group-margin-bottom-mobile' }) %>
 
-<h4 class="cp-variables-form-header">Input Help Block</h4>
-<%- include('../partials/cpTextInput', { id: 'input-help-block-font-size' }) %>
+<h4 class="cp-variables-form-header">Form Group Autofit</h4>
+<%- include('../partials/cpTextInput', { id: 'form-group-autofit-margin-bottom' }) %>
+<%- include('../partials/cpTextInput', { id: 'form-group-item-label-max-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'form-group-item-label-spacer' }) %>

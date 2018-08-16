@@ -1,38 +1,106 @@
 <h4 class="cp-variables-form-header">Progress</h4>
-<%- include('../partials/cpColorInput', { id: 'progress-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'progress-min-width' }) %>
+<%- include('../partials/cpTextInput', { id: 'progress-height' }) %>
+<%- include('../partials/cpTextInput', { id: 'progress-font-size' }) %>
 <%- include('../partials/cpTextInput', { id: 'progress-border-radius' }) %>
+<%- include('../partials/cpTextInput', { id: 'progress-bg' }) %>
 <%- include('../partials/cpTextInput', { id: 'progress-box-shadow' }) %>
 
 <h4 class="cp-variables-form-header">Progress Bar</h4>
-<%- include('../partials/cpTextInput', { id: 'progress-bar-height' }) %>
-<%- include('../partials/cpColorInput', { id: 'progress-bar-bg' }) %>
-<%- include('../partials/cpColorInput', { id: 'progress-bar-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'progress-bar-color' }) %>
+<%- include('../partials/cpTextInput', { id: 'progress-bar-bg' }) %>
 <%- include('../partials/cpTextInput', { id: 'progress-bar-box-shadow' }) %>
-<%- include('../partials/cpTextInput', { id: 'progress-bar-font-size' }) %>
+<%- include('../partials/cpTextInput', { id: 'progress-bar-animation-timing' }) %>
+<%- include('../partials/cpTextInput', { id: 'progress-bar-transition' }) %>
 
-<h4 class="cp-variables-form-header">Progress Bar Success</h4>
-<%- include('../partials/cpColorInput', { id: 'progress-bar-success-bg' }) %>
+<h4 class="cp-variables-form-header">Progress Group Stacked</h4>
+<%- include('../partials/cpTextInput', { id: 'progress-group-stacked-progress-margin-top' }) %>
+<%- include('../partials/cpTextInput', { id: 'progress-group-stacked-progress-margin-bottom' }) %>
 
-<h4 class="cp-variables-form-header">Progress Bar Info</h4>
-<%- include('../partials/cpColorInput', { id: 'progress-bar-info-bg' }) %>
+<h4 class="cp-variables-form-header">Progress Group Addon</h4>
+<%- include('../partials/cpTextInput', { id: 'progress-group-addon-font-size' }) %>
+<%- include('../partials/cpTextInput', { id: 'progress-group-addon-font-weight' }) %>
+<%- include('../partials/cpTextInput', { id: 'progress-group-addon-spacer-x' }) %>
 
-<h4 class="cp-variables-form-header">Progress Bar Warning</h4>
-<%- include('../partials/cpColorInput', { id: 'progress-bar-warning-bg' }) %>
+<h4 class="cp-variables-form-header">Progress Group Feedback</h4>
+<%- include('../partials/cpTextInput', { id: 'progress-group-feedback-color' }) %>
 
-<h4 class="cp-variables-form-header">Progress Bar Danger</h4>
-<%- include('../partials/cpColorInput', { id: 'progress-bar-danger-bg' }) %>
+<h4 class="cp-variables-form-header">Progress Group Subtitle</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="progress-group-subtitle" name="clay[progress-group-subtitle]" type="hidden">
+	</div>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-align-items' }) %>
+	<%- include('../partials/cpColorInput', { id: 'progress-group-subtitle-bg' }) %>
+	<%- include('../partials/cpColorInput', { id: 'progress-group-subtitle-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-border-radius' }) %>
+	<%- include('../partials/cpColorInput', { id: 'progress-group-subtitle-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-display' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-font-family' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-font-size' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-font-weight' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-justify-content' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-line-height' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-margin-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-padding-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-padding-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-padding-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-padding-top' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-text-align' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-text-transform' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-transition' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-vertical-align' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-width' }) %>
+	<%- include('../partials/cpColorInput', { id: 'progress-group-subtitle-hover-bg' }) %>
+	<%- include('../partials/cpColorInput', { id: 'progress-group-subtitle-hover-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-hover-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-hover-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-focus-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-focus-box-shadow' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-focus-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-focus-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-focus-outline' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-text-decoration' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-active-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-active-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-active-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-disabled-bg' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-disabled-border-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-disabled-color' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-disabled-cursor' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-disabled-opacity' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-disabled-pointer-events' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-btn-focus-box-shadow' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-btn-focus-outline' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-lexicon-icon-margin-bottom' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-lexicon-icon-margin-left' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-lexicon-icon-margin-right' }) %>
+	<%- include('../partials/cpTextInput', { id: 'progress-group-subtitle-lexicon-icon-margin-top' }) %>
+</div>
 
-<h4 class="cp-variables-form-header">Progress Bar Xs</h4>
-<%- include('../partials/cpTextInput', { id: 'progress-bar-xs-height' }) %>
-<%- include('../partials/cpTextInput', { id: 'progress-bar-xs-border-radius' }) %>
-<%- include('../partials/cpTextInput', { id: 'progress-bar-xs-font-size' }) %>
+<h4 class="cp-variables-form-header">Progress Lg</h4>
+<%- include('../partials/cpTextInput', { id: 'progress-height-lg' }) %>
+<%- include('../partials/cpTextInput', { id: 'progress-font-size-lg' }) %>
+<%- include('../partials/cpTextInput', { id: 'progress-border-radius-lg' }) %>
 
-<h4 class="cp-variables-form-header">Progress Bar Lg</h4>
-<%- include('../partials/cpTextInput', { id: 'progress-bar-lg-height' }) %>
-<%- include('../partials/cpTextInput', { id: 'progress-bar-lg-border-radius' }) %>
-<%- include('../partials/cpTextInput', { id: 'progress-bar-lg-font-size' }) %>
+<h4 class="cp-variables-form-header">Progress Success</h4>
+<%- include('../partials/cpTextInput', { id: 'progress-bar-success-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'progress-group-feedback-success-color' }) %>
 
-<h4 class="cp-variables-form-header">Progress Bar Xl</h4>
-<%- include('../partials/cpTextInput', { id: 'progress-bar-xl-height' }) %>
-<%- include('../partials/cpTextInput', { id: 'progress-bar-xl-border-radius' }) %>
-<%- include('../partials/cpTextInput', { id: 'progress-bar-xl-font-size' }) %>
+<h4 class="cp-variables-form-header">Progress Info</h4>
+<%- include('../partials/cpTextInput', { id: 'progress-bar-info-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'progress-group-feedback-info-color' }) %>
+
+<h4 class="cp-variables-form-header">Progress Warning</h4>
+<%- include('../partials/cpTextInput', { id: 'progress-bar-warning-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'progress-group-feedback-warning-color' }) %>
+
+<h4 class="cp-variables-form-header">Progress Danger</h4>
+<%- include('../partials/cpTextInput', { id: 'progress-bar-danger-bg' }) %>
+<%- include('../partials/cpTextInput', { id: 'progress-group-feedback-danger-color' }) %>

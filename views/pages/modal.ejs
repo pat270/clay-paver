@@ -1,214 +1,497 @@
-<h3>Modal Sm</h3>
-<div class="modal-dialog modal-sm">
-	<div class="modal-content">
-		<div class="modal-header">
-			<button aria-labelledby="Close" class="btn btn-default close" data-dismiss="modal" role="button" type="button">
-				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times" viewBox="0 0 512 512">
-					<path class="lexicon-icon-outline" d="M295.781 256l205.205-205.205c10.998-10.998 10.998-28.814 0-39.781-10.998-10.998-28.815-10.998-39.781 0l-205.205 205.205-205.205-205.238c-10.966-10.998-28.814-10.998-39.781 0-10.998 10.998-10.998 28.814 0 39.781l205.205 205.238-205.205 205.205c-10.998 10.998-10.998 28.815 0 39.781 5.467 5.531 12.671 8.265 19.874 8.265s14.407-2.734 19.907-8.233l205.205-205.238 205.205 205.205c5.5 5.5 12.703 8.233 19.906 8.233s14.407-2.734 19.906-8.233c10.998-10.998 10.998-28.815 0-39.781l-205.238-205.205z"></path>
-				</svg>
-			</button>
-
-			<button class="btn btn-default modal-primary-action-button visible-xs" type="button">
-				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-check" viewBox="0 0 512 512">
-					<path class="lexicon-icon-outline" d="M502.091 60.993c-9.909-9.91-25.962-9.91-35.843 0l-336.988 336.988-83.508-83.451c-9.881-9.909-25.962-9.909-35.843 0-9.909 9.909-9.909 25.962 0 35.843l98.257 98.257c2.608 2.608 5.679 4.433 8.924 5.679 4.028 2.464 8.403 4.115 12.952 4.115 6.49 0 12.981-2.464 17.936-7.418l354.112-354.141c9.909-9.909 9.909-25.962 0-35.871l0-0.001z"></path>
-				</svg>
-			</button>
-
-			<h4 class="modal-title" id="lexSmallModalLabel">Modal Title</h4>
-		</div>
-
-		<div class="modal-body">
-			<h4>Modal Body</h4>
-		</div>
-
-		<div class="modal-footer">
-			<button class="btn btn-primary" type="button">Primary</button>
-			<button class="btn btn-link close-modal" data-dismiss="modal" type="button">Close</button>
-		</div>
-	</div>
-</div>
-
 <h3>Modal</h3>
-<div class="modal-dialog modal-inverse">
-	<div class="modal-content">
-		<div class="modal-header">
-			<button aria-labelledby="Close" class="btn btn-default close" data-dismiss="modal" role="button" type="button">
-				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times" viewBox="0 0 512 512">
-					<path class="lexicon-icon-outline" d="M295.781 256l205.205-205.205c10.998-10.998 10.998-28.814 0-39.781-10.998-10.998-28.815-10.998-39.781 0l-205.205 205.205-205.205-205.238c-10.966-10.998-28.814-10.998-39.781 0-10.998 10.998-10.998 28.814 0 39.781l205.205 205.238-205.205 205.205c-10.998 10.998-10.998 28.815 0 39.781 5.467 5.531 12.671 8.265 19.874 8.265s14.407-2.734 19.907-8.233l205.205-205.238 205.205 205.205c5.5 5.5 12.703 8.233 19.906 8.233s14.407-2.734 19.906-8.233c10.998-10.998 10.998-28.815 0-39.781l-205.238-205.205z"></path>
-				</svg>
-			</button>
-
-			<button class="btn btn-default modal-primary-action-button visible-xs" type="button">
-				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-check" viewBox="0 0 512 512">
-					<path class="lexicon-icon-outline" d="M502.091 60.993c-9.909-9.91-25.962-9.91-35.843 0l-336.988 336.988-83.508-83.451c-9.881-9.909-25.962-9.909-35.843 0-9.909 9.909-9.909 25.962 0 35.843l98.257 98.257c2.608 2.608 5.679 4.433 8.924 5.679 4.028 2.464 8.403 4.115 12.952 4.115 6.49 0 12.981-2.464 17.936-7.418l354.112-354.141c9.909-9.909 9.909-25.962 0-35.871l0-0.001z"></path>
-				</svg>
-			</button>
-			<h4 class="modal-title" id="lexSmallModalLabel">Modal Title</h4>
-		</div>
-
-		<div class="modal-body">
-			<h4>Modal Body</h4>
-		</div>
-
-		<div class="modal-footer">
-			<button class="btn btn-primary" type="button">Primary</button>
-			<button class="btn btn-link close-modal" data-dismiss="modal" type="button">Close</button>
+<button class="btn btn-info" data-target="#clayDefaultModal" data-toggle="modal" type="button">Default Modal</button>
+<div aria-labelledby="clayDefaultModalLabel" class="fade modal" id="clayDefaultModal" role="dialog" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title" id="clayDefaultModalLabel">Modal Title</div>
+				<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+						<use xlink:href="../../images/icons/icons.svg#times" />
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h4>Modal Body</h4>
+			</div>
+			<div class="modal-footer">
+				<div class="modal-item-last">
+					<div class="btn-group">
+						<div class="btn-group-item">
+							<button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+						</div>
+						<div class="btn-group-item">
+							<button class="btn btn-primary" type="button">Primary</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!-- <h3>Modal Lg</h3>
-<div class="modal-dialog modal-lg">
-	<div class="modal-content">
-		<div class="modal-header">
-			<button aria-labelledby="Close" class="btn btn-default close" data-dismiss="modal" role="button" type="button">
-				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times" viewBox="0 0 512 512">
-					<path class="lexicon-icon-outline" d="M295.781 256l205.205-205.205c10.998-10.998 10.998-28.814 0-39.781-10.998-10.998-28.815-10.998-39.781 0l-205.205 205.205-205.205-205.238c-10.966-10.998-28.814-10.998-39.781 0-10.998 10.998-10.998 28.814 0 39.781l205.205 205.238-205.205 205.205c-10.998 10.998-10.998 28.815 0 39.781 5.467 5.531 12.671 8.265 19.874 8.265s14.407-2.734 19.907-8.233l205.205-205.238 205.205 205.205c5.5 5.5 12.703 8.233 19.906 8.233s14.407-2.734 19.906-8.233c10.998-10.998 10.998-28.815 0-39.781l-205.238-205.205z"></path>
-				</svg>
-			</button>
-
-			<button class="btn btn-default modal-primary-action-button visible-xs" type="button">
-				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-check" viewBox="0 0 512 512">
-					<path class="lexicon-icon-outline" d="M502.091 60.993c-9.909-9.91-25.962-9.91-35.843 0l-336.988 336.988-83.508-83.451c-9.881-9.909-25.962-9.909-35.843 0-9.909 9.909-9.909 25.962 0 35.843l98.257 98.257c2.608 2.608 5.679 4.433 8.924 5.679 4.028 2.464 8.403 4.115 12.952 4.115 6.49 0 12.981-2.464 17.936-7.418l354.112-354.141c9.909-9.909 9.909-25.962 0-35.871l0-0.001z"></path>
-				</svg>
-			</button>
-
-			<h4 class="modal-title" id="lexLargeModalLabel">Modal Title</h4>
-		</div>
-
-		<div class="modal-body">
-			<h4><a href="#1">Modal Body</a></h4>
-		</div>
-
-		<div class="modal-footer">
-			<button class="btn btn-primary" type="button">Primary</button>
-			<button class="btn btn-default" type="button">Alt</button>
-			<button class="btn btn-link close-modal" data-dismiss="modal" type="button">Close</button>
-		</div>
-	</div>
-</div> -->
-
-<!-- <h3>Modal Full Screen</h3>
-<div class="modal-dialog modal-full-screen">
-	<div class="modal-content">
-		<div class="modal-header">
-			<button aria-labelledby="Close" class="btn btn-default close" data-dismiss="modal" role="button" type="button">
-				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times" viewBox="0 0 512 512">
-					<path class="lexicon-icon-outline" d="M295.781 256l205.205-205.205c10.998-10.998 10.998-28.814 0-39.781-10.998-10.998-28.815-10.998-39.781 0l-205.205 205.205-205.205-205.238c-10.966-10.998-28.814-10.998-39.781 0-10.998 10.998-10.998 28.814 0 39.781l205.205 205.238-205.205 205.205c-10.998 10.998-10.998 28.815 0 39.781 5.467 5.531 12.671 8.265 19.874 8.265s14.407-2.734 19.907-8.233l205.205-205.238 205.205 205.205c5.5 5.5 12.703 8.233 19.906 8.233s14.407-2.734 19.906-8.233c10.998-10.998 10.998-28.815 0-39.781l-205.238-205.205z"></path>
-				</svg>
-			</button>
-
-			<button class="btn btn-default modal-primary-action-button visible-xs" type="button">
-				<svg aria-hidden="true" class="lexicon-icon lexicon-icon-check" viewBox="0 0 512 512">
-					<path class="lexicon-icon-outline" d="M502.091 60.993c-9.909-9.91-25.962-9.91-35.843 0l-336.988 336.988-83.508-83.451c-9.881-9.909-25.962-9.909-35.843 0-9.909 9.909-9.909 25.962 0 35.843l98.257 98.257c2.608 2.608 5.679 4.433 8.924 5.679 4.028 2.464 8.403 4.115 12.952 4.115 6.49 0 12.981-2.464 17.936-7.418l354.112-354.141c9.909-9.909 9.909-25.962 0-35.871l0-0.001z"></path>
-				</svg>
-			</button>
-
-			<h4 class="modal-title">Add Picture to Documents and Media Library in Liferay Seven</h4>
-		</div>
-
-		<div class="modal-body modal-body-no-footer">
-			<h4>Modal Body</h4>
-			<div>
-				<p>
-					<a href="#1">Crema coffee a turkish</a> decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
-				</p>
-
-				<p>
-					Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
-				</p>
-
-				<p>
-					Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
-				</p>
-
-				<p>
-					Crema coffee a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
-				</p>
-
-				<p>
-					Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
-				</p>
-
-				<p>
-					Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
-				</p>
+<h3>Modal Sm</h3>
+<button class="btn btn-info" data-target="#claySmallModal" data-toggle="modal" type="button">Small Modal</button>
+<div aria-labelledby="claySmallModalLabel" class="fade modal" id="claySmallModal" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title" id="claySmallModalLabel">Modal Title</div>
+				<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+						<use xlink:href="../../images/icons/icons.svg#times" />
+					</svg>
+				</button>
 			</div>
-			<div>
-				<p>
-					Crema coffee a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
-				</p>
-
-				<p>
-					Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
-				</p>
-
-				<p>
-					Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
-				</p>
-
-				<p>
-					Crema coffee a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
-				</p>
-
-				<p>
-					Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
-				</p>
-
-				<p>
-					Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
-				</p>
+			<div class="modal-body">
+				<h4>Modal Body</h4>
 			</div>
-			<div>
-				<p>
-					Crema coffee a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
-				</p>
-
-				<p>
-					Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
-				</p>
-
-				<p>
-					Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
-				</p>
-
-				<p>
-					Crema coffee a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
-				</p>
-
-				<p>
-					Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
-				</p>
-
-				<p>
-					Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
-				</p>
-			</div>
-			<div>
-				<p>
-					Crema coffee a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
-				</p>
-
-				<p>
-					Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
-				</p>
-
-				<p>
-					Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
-				</p>
-
-				<p>
-					Crema coffee a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
-				</p>
-
-				<p>
-					Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
-				</p>
-
-				<p>
-					Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
-				</p>
+			<div class="modal-footer">
+				<div class="modal-item-last">
+					<div class="btn-group">
+						<div class="btn-group-item">
+							<button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+						</div>
+						<div class="btn-group-item">
+							<button class="btn btn-primary" type="button">Primary</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div> -->
+</div>
+
+<h3>Modal Lg</h3>
+<button class="btn btn-info" data-target="#clayLargeModal" data-toggle="modal" type="button">Large Modal</button>
+<div aria-labelledby="clayLargeModalLabel" class="fade modal" id="clayLargeModal" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title" id="clayLargeModalLabel">Modal Title</div>
+				<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+						<use xlink:href="../../images/icons/icons.svg#times" />
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h4><a href="#1">Modal Body</a></h4>
+			</div>
+			<div class="modal-footer">
+				<div class="modal-item-last">
+					<div class="btn-group">
+						<div class="btn-group-item">
+							<button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+						</div>
+						<div class="btn-group-item">
+							<button class="btn btn-primary" type="button">Primary</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h3>Modal with Inline Scroller</h3>
+<button class="btn btn-info" data-target="#claySmallModalInlineScroller" data-toggle="modal" type="button">Small Modal Inline Scroller</button>
+<div aria-labelledby="claySmallModalInlineScrollerLabel" class="fade modal" id="claySmallModalInlineScroller" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title" id="claySmallModalInlineScrollerLabel">Modal Title</div>
+				<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+						<use xlink:href="../../images/icons/icons.svg#times" />
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body inline-scroller">
+				<h4>Modal Body</h4>
+				<div>
+					<p>
+						<a href="#1">Crema coffee</a> a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
+					</p>
+					<p>
+						Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
+					</p>
+					<p>
+						Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
+					</p>
+					<p>
+						Crema coffee a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
+					</p>
+					<p>
+						Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
+					</p>
+					<p>
+						Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
+					</p>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="modal-item-last">
+					<div class="btn-group">
+						<div class="btn-group-item">
+							<button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+						</div>
+						<div class="btn-group-item">
+							<button class="btn btn-primary" type="button">Primary</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h3>Full Screen Modal</h3>
+<button class="btn btn-info" data-target="#clayFullScreenModal" data-toggle="modal" type="button">Full Screen Modal</button>
+<div aria-labelledby="clayLargeModalLabel" class="fade modal" id="clayFullScreenModal" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-full-screen">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title" id="clayLargeModalLabel">Add Picture to Documents and Media Library in Liferay Seven</div>
+				<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+						<use xlink:href="../../images/icons/icons.svg#times" />
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h4>Modal Body</h4>
+				<div>
+					<p>
+						<a href="#1">Crema coffee</a> a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
+					</p>
+					<p>
+						Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
+					</p>
+					<p>
+						Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
+					</p>
+					<p>
+						Crema coffee a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
+					</p>
+					<p>
+						Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
+					</p>
+					<p>
+						Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
+					</p>
+				</div>
+				<div>
+					<p>
+						Crema coffee a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
+					</p>
+					<p>
+						Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
+					</p>
+					<p>
+						Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
+					</p>
+					<p>
+						Crema coffee a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
+					</p>
+					<p>
+						Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
+					</p>
+					<p>
+						Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
+					</p>
+				</div>
+				<div>
+					<p>
+						Crema coffee a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
+					</p>
+					<p>
+						Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
+					</p>
+					<p>
+						Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
+					</p>
+					<p>
+						Crema coffee a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
+					</p>
+					<p>
+						Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
+					</p>
+					<p>
+						Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
+					</p>
+				</div>
+				<div>
+					<p>
+						Crema coffee a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
+					</p>
+					<p>
+						Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
+					</p>
+					<p>
+						Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
+					</p>
+					<p>
+						Crema coffee a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
+					</p>
+					<p>
+						Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
+					</p>
+					<p>
+						Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
+					</p>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="modal-item-last">
+					<div class="btn-group">
+						<div class="btn-group-item">
+							<button class="btn btn-secondary" data-dismiss="modal" type="button">Cancel</button>
+						</div>
+						<div class="btn-group-item">
+							<button class="btn btn-primary" type="button">Add</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h3>Modal Full Screen Sm Down</h3>
+<button class="btn btn-info" data-target="#clayModalFullScreenSmDown" data-toggle="modal" type="button">Modal Full Screen Sm Down</button>
+<div aria-labelledby="clayModalFullScreenSmDownLabel" class="fade modal" id="clayModalFullScreenSmDown" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-full-screen-sm-down">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title" id="clayModalFullScreenSmDownLabel">Modal Title</div>
+				<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+						<use xlink:href="../../images/icons/icons.svg#times" />
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h4>Modal Body</h4>
+				<div>
+					<p>
+						Crema coffee a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
+					</p>
+					<p>
+						Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
+					</p>
+					<p>
+						Skinny extraction, viennese arabica aromatic robust kopi-luwak. Carajillo chicory dark espresso qui iced sugar. To go, at café au lait chicory, qui, fair trade irish, beans seasonal extraction cappuccino kopi-luwak.
+					</p>
+					<p>
+						Crema coffee a turkish decaffeinated espresso dripper cortado lungo con panna. Coffee, roast cup blue mountain beans single origin eu shop grounds caffeine a robusta. Sweet macchiato spoon, mug foam ut est ristretto.
+					</p>
+					<p>
+						Irish coffee, at as cultivar robusta fair trade. Variety, caramelization, sweet, steamed, breve sit, whipped spoon at in caffeine. So latte, half and half, instant café au lait whipped extra at percolator.
+					</p>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="modal-item-last">
+					<div class="btn-group">
+						<div class="btn-group-item">
+							<button class="btn btn-secondary" data-dismiss="modal" type="button">Cancel</button>
+						</div>
+						<div class="btn-group-item">
+							<button class="btn btn-primary" type="button">Add</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h3>Modal Iframe</h3>
+<button class="btn btn-info" data-target="#clayFullScreenModalIframe" data-toggle="modal" type="button">Full Screen Modal Iframe</button>
+<div aria-labelledby="clayFullScreenModalIframeLabel" class="fade modal" id="clayFullScreenModalIframe" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-full-screen modal-full-screen-sm-down">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title" id="clayFullScreenModalIframeLabel">Add Picture to Documents and Media Library in Liferay Seven</div>
+				<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+						<use xlink:href="../../images/icons/icons.svg#times" />
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body modal-body-iframe">
+				<iframe src="http://pat270.github.io/lexicon/content/test-form-hierarchy/"></iframe>
+			</div>
+			<div class="modal-footer">
+				<div class="modal-item-last">
+					<div class="btn-group">
+						<div class="btn-group-item">
+							<a class="btn btn-secondary" data-dismiss="modal" href="#1" role="button">Cancel</a>
+						</div>
+						<div class="btn-group-item">
+							<button class="btn btn-primary" type="button">Add</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h3>Modal Variants</h3>
+<button class="btn btn-success" data-target="#clayModalSuccess" data-toggle="modal" type="button">Modal Success</button>
+<div aria-labelledby="clayModalSuccessLabel" class="fade modal" id="clayModalSuccess" role="dialog" tabindex="-1">
+	<div class="modal-success modal-dialog modal-full-screen-sm-down">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title" id="clayModalSuccessLabel">
+					<span class="modal-title-indicator">
+						<svg aria-hidden="true" class="lexicon-icon lexicon-icon-check-circle-full">
+							<use xlink:href="../../images/icons/icons.svg#check-circle-full" />
+						</svg>
+					</span>
+					Modal Title
+				</div>
+				<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+						<use xlink:href="../../images/icons/icons.svg#times" />
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h4>Modal Body</h4>
+			</div>
+			<div class="modal-footer">
+				<div class="modal-item-first">
+					<button class="btn btn-primary" type="button">Primary</button>
+				</div>
+				<div class="modal-item-last">
+					<div class="btn-group">
+						<div class="btn-group-item">
+							<button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+						</div>
+						<div class="btn-group-item">
+							<button class="btn btn-primary" type="button">Primary</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<button class="btn btn-info" data-target="#clayModalInfo" data-toggle="modal" type="button">Modal Info</button>
+<div aria-labelledby="clayModalInfoLabel" class="fade modal" id="clayModalInfo" role="dialog" tabindex="-1">
+	<div class="modal-info modal-dialog modal-full-screen-sm-down">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title" id="clayModalInfoLabel">
+					<span class="modal-title-indicator">
+						<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+							<use xlink:href="../../images/icons/icons.svg#info-circle" />
+						</svg>
+					</span>
+					Modal Title
+				</div>
+				<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+						<use xlink:href="../../images/icons/icons.svg#times" />
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h4>Modal Body</h4>
+			</div>
+			<div class="modal-footer">
+				<div class="modal-item-last">
+					<div class="btn-group">
+						<div class="btn-group-item">
+							<button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+						</div>
+						<div class="btn-group-item">
+							<button class="btn btn-primary" type="button">Primary</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<button class="btn btn-warning" data-target="#clayModalWarning" data-toggle="modal" type="button">Modal Warning</button>
+<div aria-labelledby="clayModalWarningLabel" class="fade modal" id="clayModalWarning" role="dialog" tabindex="-1">
+	<div class="modal-warning modal-dialog modal-full-screen-sm-down">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title" id="clayModalWarningLabel">
+					<span class="modal-title-indicator">
+						<svg aria-hidden="true" class="lexicon-icon lexicon-icon-warning-full">
+							<use xlink:href="../../images/icons/icons.svg#warning-full" />
+						</svg>
+					</span>
+					Modal Title
+				</div>
+				<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+						<use xlink:href="../../images/icons/icons.svg#times" />
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h4>Modal Body</h4>
+			</div>
+			<div class="modal-footer">
+				<div class="modal-item-last">
+					<div class="btn-group">
+						<div class="btn-group-item">
+							<button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+						</div>
+						<div class="btn-group-item">
+							<button class="btn btn-primary" type="button">Primary</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<button class="btn btn-danger" data-target="#clayModalDanger" data-toggle="modal" type="button">Modal Danger</button>
+<div aria-labelledby="clayModalDangerLabel" class="fade modal" id="clayModalDanger" role="dialog" tabindex="-1">
+	<div class="modal-danger modal-dialog modal-full-screen-sm-down">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title" id="clayModalDangerLabel">
+					<span class="modal-title-indicator">
+						<svg aria-hidden="true" class="lexicon-icon lexicon-icon-exclamation-full">
+							<use xlink:href="../../images/icons/icons.svg#exclamation-full" />
+						</svg>
+					</span>
+					Modal Title
+				</div>
+				<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+						<use xlink:href="../../images/icons/icons.svg#times" />
+					</svg>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h4>Modal Body</h4>
+			</div>
+			<div class="modal-footer">
+				<div class="modal-item-first">
+					<button class="btn btn-primary" type="button">Primary</button>
+				</div>
+				<div class="modal-item">Some other content</div>
+				<div class="modal-item-last">
+					<div class="btn-group">
+						<div class="btn-group-item">
+							<button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+						</div>
+						<div class="btn-group-item">
+							<button class="btn btn-primary" type="button">Primary</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
