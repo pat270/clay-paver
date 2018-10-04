@@ -1,0 +1,125 @@
+<div class="autofit-row cp-page-navigation cp-page-navigation-top">
+	<div class="autofit-col autofit-col-expand">
+		<a href="/globals">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowLeft">
+				<use xlink:href="../../images/icons/icons.svg#order-arrow-up" />
+			</svg>
+			Globals
+		</a>
+	</div>
+	<div class="autofit-col">
+		<a href="/typography">
+			Typography
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowRight">
+				<use xlink:href="../../images/icons/icons.svg#order-arrow-up" />
+			</svg>
+		</a>
+	</div>
+</div>
+
+<h3>Grid Columns</h3>
+<div class="row" id="cpGridColumns"></div>
+
+<h3>Container</h3>
+<div class="row">
+	<div class="container cp-example-col cp-example-grid-container">
+		<div class="cp-example-col-content"></div>
+	</div>
+</div>
+
+<h3>Container Fluid</h3>
+<div class="row">
+	<div class="container-fluid cp-example-col">
+		<div class="cp-example-col-content">100%</div>
+	</div>
+</div>
+
+<h3>Container Fluid Max Sm</h3>
+<div class="row">
+	<div class="container-fluid container-fluid-max-sm cp-example-col cp-example-container-fluid-max-sm">
+		<div class="cp-example-col-content"></div>
+	</div>
+</div>
+
+<h3>Container Fluid Max Md</h3>
+<div class="row">
+	<div class="container-fluid container-fluid-max-md cp-example-col cp-example-container-fluid-max-md">
+		<div class="cp-example-col-content"></div>
+	</div>
+</div>
+
+<h3>Container Fluid Max Lg</h3>
+<div class="row">
+	<div class="container-fluid container-fluid-max-lg cp-example-col cp-example-container-fluid-max-lg">
+		<div class="cp-example-col-content"></div>
+	</div>
+</div>
+
+<h3>Container Fluid Max Xl</h3>
+<div class="row">
+	<div class="container-fluid container-fluid-max-xl cp-example-col cp-example-container-fluid-max-xl">
+		<div class="cp-example-col-content"></div>
+	</div>
+</div>
+
+<h3>Container Form Lg</h3>
+<div class="row">
+	<div class="container-fluid container-fluid-max-xl container-form-lg cp-example-col">
+		<div class="cp-example-col-content"></div>
+	</div>
+</div>
+
+<h3>Container View</h3>
+<div class="row">
+	<div class="container-fluid container-fluid-max-xl container-view cp-example-col">
+		<div class="cp-example-col-content"></div>
+	</div>
+</div>
+
+<div class="autofit-row cp-page-navigation cp-page-navigation-bottom">
+	<div class="autofit-col autofit-col-expand">
+		<a href="/globals">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowLeft">
+				<use xlink:href="../../images/icons/icons.svg#order-arrow-up" />
+			</svg>
+			Globals
+		</a>
+	</div>
+	<div class="autofit-col">
+		<a href="/typography">
+			Typography
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowRight">
+				<use xlink:href="../../images/icons/icons.svg#order-arrow-up" />
+			</svg>
+		</a>
+	</div>
+</div>
+
+<script>
+	(function(root) {
+		var cpGridBuildColumns = function() {
+			var container = $('#cpGridColumns');
+			var gridColumns = $('#cpGridColumns').css('content');
+
+			if (gridColumns) {
+				gridColumns = gridColumns.replace(/"/g, "");
+			}
+
+			if (gridColumns !== 'normal') {
+				$('#cpGridColumns').find('.cp-example-col').remove();
+
+				for (var i = 1; i <= gridColumns; i++) {
+					container.append('<div class="col-1 cp-example-col"><div class="cp-example-col-content">' + i + '</div></div>');
+				}
+			}
+		};
+
+		cpGridBuildColumns();
+
+		root.cpGridBuildColumns = cpGridBuildColumns;
+	}(this));
+
+	$(document).on('cp-compile-done', function(event) {
+		cpGridBuildColumns();
+	});
+</script>

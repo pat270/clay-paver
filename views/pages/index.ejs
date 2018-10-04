@@ -5,11 +5,11 @@
 	<title>Clay 2 Paver</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/site.css" type="text/css" />
+	<script src="js/svg4everybody.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/turbolinks.min.js"></script>
-	<script src="js/mithril.js"></script>
 	<script src="js/sass.js"></script>
 	<script src="js/localforage.min.js"></script>
 </head>
@@ -23,6 +23,11 @@
 				<ul class="clay-paver-dropdown-menu dropdown-menu">
 					<li><a class="cp-page-link" href="/">Home</a></li>
 					<li><a class="cp-page-link" href="/globals">Globals</a></li>
+					<li><a class="cp-page-link" href="/grid">Grid</a></li>
+					<li><a class="cp-page-link" href="/typography">Typography</a></li>
+					<li><a class="cp-page-link" href="/icons">Icons</a></li>
+					<li><a class="cp-page-link" href="/links">Links</a></li>
+					<li><a class="cp-page-link" href="/utilities">Utilities</a></li>
 					<li><a class="cp-page-link" href="/alert">Alert</a></li>
 					<li><a class="cp-page-link" href="/label">Label</a></li>
 					<li><a class="cp-page-link" href="/badge">Badge</a></li>
@@ -35,7 +40,6 @@
 					<li><a class="cp-page-link" href="/input-custom">Input Custom</a></li>
 					<li><a class="cp-page-link" href="/input-group">Input Group</a></li>
 					<li><a class="cp-page-link" href="/input-validation">Input Validation</a></li>
-					<li><a class="cp-page-link" href="/links">Links</a></li>
 					<li><a class="cp-page-link" href="/list-group">List Group</a></li>
 					<li><a class="cp-page-link" href="/loading-animations">Loading Animations</a></li>
 					<li><a class="cp-page-link" href="/menubar">Menubar</a></li>
@@ -45,7 +49,9 @@
 					<li><a class="cp-page-link" href="/nav-tabs">Nav Tabs</a></li>
 					<li><a class="cp-page-link" href="/nav-underline">Nav Underline</a></li>
 					<li><a class="cp-page-link" href="/navbar">Navbar</a></li>
-					<li><a class="cp-page-link" href="/management-bar">Management Bar</a></li>
+					<li><a class="cp-page-link" href="/navbar-application-bar">Navbar (Application Bar)</a></li>
+					<li><a class="cp-page-link" href="/navbar-management-bar">Navbar (Management Bar)</a></li>
+					<li><a class="cp-page-link" href="/navbar-navigation-bar">Navbar (Navigation Bar)</a></li>
 					<li><a class="cp-page-link" href="/pagination">Pagination</a></li>
 					<li><a class="cp-page-link" href="/panel">Panel</a></li>
 					<li><a class="cp-page-link" href="/popover">Popover</a></li>
@@ -131,5 +137,13 @@
 	<div data-turbolinks-permanent id="siteJs">
 		<script src="js/main.js"></script>
 	</div>
+
+	<script>
+		svg4everybody(
+			{
+				polyfill: true,
+			}
+		);
+	</script>
 </body>
 </html>

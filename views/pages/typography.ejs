@@ -1,0 +1,140 @@
+<div class="autofit-row cp-page-navigation cp-page-navigation-top">
+	<div class="autofit-col autofit-col-expand">
+		<a href="/grid">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowLeft">
+				<use xlink:href="../../images/icons/icons.svg#order-arrow-up" />
+			</svg>
+			Grid
+		</a>
+	</div>
+	<div class="autofit-col">
+		<a href="/icons">
+			Icons
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowRight">
+				<use xlink:href="../../images/icons/icons.svg#order-arrow-up" />
+			</svg>
+		</a>
+	</div>
+</div>
+
+<h3>Headings Font Family</h3>
+<span class="cp-headings-font-family cp-populate-content"></span>
+
+<h3>Headings Font Weight</h3>
+<span class="cp-headings-font-weight cp-populate-content"></span>
+
+<h3>Headings Line Height</h3>
+<span class="cp-headings-line-height cp-populate-content"></span>
+
+<h3>Headings Margin Bottom</h3>
+<span class="cp-headings-margin-bottom cp-populate-content"></span>
+
+<h3>Headings Color</h3>
+<span class="cp-headings-color cp-populate-content"></span>
+
+<h3>H1 - H6</h3>
+<h1>h1 Article Heading <small>small text</small></h1>
+<h2>h2 Article Heading <small>small text</small></h2>
+<h3>h3 Article Heading <small>small text</small></h3>
+<h4>h4 Article Heading <small>small text</small></h4>
+<h5>h5 Article Heading <small>small text</small></h5>
+<h6>h6 Article Heading <small>small text</small></h6>
+
+<h3>Body Text</h3>
+<p>As cinnamon extra acerbic to go cinnamon froth variety. Viennese cinnamon carajillo froth, cup brewed seasonal, cup siphon to go espresso single shot. Whipped aroma redeye in, <a href="#1">brewed flavour grinder carajillo black</a>. Ristretto, qui mug, skinny wings caramelization aroma a spoon et beans french press. At cup redeye, turkish wings sit extra trifecta mocha that black half and half.</p>
+
+<p>Viennese coffee to go french press single origin brewed kopi-luwak. Aroma blue mountain, irish mocha caramelization foam ristretto. Plunger pot cup est, milk arabica french press, ut, beans aromatic aroma white shop. Beans, et that half and half galão coffee fair trade filter extraction. Roast bar siphon bar est macchiato aromatic grinder.</p>
+
+<h3>Text Variants</h3>
+<div class="text-primary">Text Primary</div>
+<div class="text-secondary">Text Secondary</div>
+<div class="text-success">Text Success</div>
+<div class="text-info">Text Info</div>
+<div class="text-warning">Text Warning</div>
+<div class="text-danger">Text Danger</div>
+<div class="text-muted">Text Muted</div>
+
+<h3>Lead</h3>
+<p class="lead">As cinnamon extra acerbic to go cinnamon froth variety. Viennese cinnamon carajillo froth, cup brewed seasonal, cup siphon to go espresso single shot.</p>
+<p>Viennese coffee to go french press single origin brewed kopi-luwak. Aroma blue mountain, irish mocha caramelization foam ristretto. Plunger pot cup est, milk arabica french press, ut, beans aromatic aroma white shop. Beans, et that half and half galão coffee fair trade filter extraction. Roast bar siphon bar est macchiato aromatic grinder.</p>
+
+<h3>Mark</h3>
+This is some text inside a <mark>mark tag.</mark>
+
+<h3>Del</h3>
+<del>This is deleted text.</del>
+
+<h3>S</h3>
+<s>This text is no longer accurate.</s>
+
+<h3>Ins</h3>
+<ins>This is a range of text that has been added to a document.</ins>
+
+<h3>U</h3>
+<u>This text is underlined.</u>
+
+<h3>Small</h3>
+<small>This is text inside a small tag.</small>
+
+<h3>Strong</h3>
+<strong>This is for bold text.</strong>
+
+<h3>Em</h3>
+<em>This is emphasized text.</em>
+
+<h3>Code</h3>
+This is some <code>code</code>.
+
+<h3>Pre</h3>
+<pre><code>.my-component-bg {
+    background-color: red;
+}</code></pre>
+
+<h3>Kbd</h3>
+To zoom the browser press <kbd><kbd>cmd</kbd> + <kbd>+</kbd></kbd> to reset zoom press <kbd><kbd>cmd</kbd> + <kbd>0</kbd></kbd>.
+
+<h3>Hr</h3>
+<hr></hr>
+
+<h3>Display</h3>
+<h4 class="display-1">Display 1</h4>
+<h4 class="display-2">Display 2</h4>
+<h4 class="display-3">Display 3</h4>
+<h4 class="display-4">Display 4</h4>
+
+<div class="autofit-row cp-page-navigation cp-page-navigation-bottom">
+	<div class="autofit-col autofit-col-expand">
+		<a href="/grid">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowLeft">
+				<use xlink:href="../../images/icons/icons.svg#order-arrow-up" />
+			</svg>
+			Grid
+		</a>
+	</div>
+	<div class="autofit-col">
+		<a href="/icons">
+			Icons
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowRight">
+				<use xlink:href="../../images/icons/icons.svg#order-arrow-up" />
+			</svg>
+		</a>
+	</div>
+</div>
+
+<script>
+	function cpTypographyPopulateItems() {
+		$('.cp-populate-content').each(function(index) {
+			var fontFamily = $(this).css('content').replace(/"/g, "");
+
+			$(this).text(fontFamily);
+		});
+	}
+
+	$(document).on('cp-compile-done', function(event) {
+		cpTypographyPopulateItems();
+	});
+
+	$(document).on('turbolinks:load', function(event) {
+		cpTypographyPopulateItems();
+	});
+</script>

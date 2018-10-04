@@ -1,86 +1,73 @@
-<h1>Clay Paver</h1>
-<p>Welcome to Clay Paver, a web based tool to customize LexiconCSS through Sass variables.</p>
-
-<div class="row">
-	<div class="col-sm-6">
-		<h3 class="cp-component-header" id="cpGrayColorPalette">Gray Color Palette</h3>
-		<div class="cp-gray-base cp-swatch"></div>
-		<div class="cp-gray-darker cp-swatch"></div>
-		<div class="cp-gray-dark cp-swatch"></div>
-		<div class="cp-gray cp-swatch"></div>
-		<div class="cp-gray-light cp-swatch"></div>
-		<div class="cp-gray-lighter cp-swatch"></div>
-	</div>
-	<div class="col-sm-6">
-		<h3 class="cp-component-header" id="cpBrandColorPalette">Brand Color Palette</h3>
-		<div class="cp-brand-default cp-swatch"></div>
-		<div class="cp-brand-primary cp-swatch"></div>
-		<div class="cp-brand-success cp-swatch"></div>
-		<div class="cp-brand-info cp-swatch"></div>
-		<div class="cp-brand-warning cp-swatch"></div>
-		<div class="cp-brand-danger cp-swatch"></div>
+<div class="autofit-row cp-page-navigation cp-page-navigation-top">
+	<div class="autofit-col autofit-col-expand"></div>
+	<div class="autofit-col">
+		<a href="/globals">
+			Globals
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowRight">
+				<use xlink:href="../../images/icons/icons.svg#order-arrow-up" />
+			</svg>
+		</a>
 	</div>
 </div>
 
-<div class="row">
-	<div class="col-sm-12">
-		<h3 class="cp-component-header" id="cpSomeBodyText">Some Body Text</h3>
+<h1>Clay 2 Paver</h1>
+<p>
+	Welcome to Clay 2 Paver, a web based tool to customize Clay CSS through Sass variables. Sass loads variables top to bottom, so make sure the variable is defined before trying to use it. You will not be able to use a <code>Button</code> variable in <code>Links</code> because of this. The variables that are most commonly reused are located under the Globals section. Variables are loaded in this order:
+</p>
+<ol>
+	<li>Home</li>
+	<li>Globals</li>
+	<li>Grid</li>
+	<li>Typography</li>
+	<li>Icons</li>
+	<li>Links</li>
+	<li>Utilities</li>
+	<li>Alert</li>
+	<li>Label</li>
+	<li>Badge</li>
+	<li>Sticker</li>
+	<li>Button</li>
+	<li>Breadcrumb</li>
+	<li>Card</li>
+	<li>Dropdown</li>
+	<li>Input</li>
+	<li>Input Custom</li>
+	<li>Input Group</li>
+	<li>Input Validation</li>
+	<li>List Group</li>
+	<li>Loading Animations</li>
+	<li>Menubar</li>
+	<li>Modal</li>
+	<li>Nav</li>
+	<li>Nav Pills</li>
+	<li>Nav Tabs</li>
+	<li>Nav Underline</li>
+	<li>Navbar</li>
+	<li>Navbar (Application Bar)</li>
+	<li>Navbar (Management Bar)</li>
+	<li>Navbar (Navigation Bar)</li>
+	<li>Pagination</li>
+	<li>Panel</li>
+	<li>Popover</li>
+	<li>Progress Bar</li>
+	<li>Multi Step Nav</li>
+	<li>Sheet</li>
+	<li>Sidebar</li>
+	<li>Table</li>
+	<li>Tbar (Toolbar)</li>
+	<li>Tooltip</li>
+	<li>Timeline</li>
+	<li>Toggle Switch</li>
+</ol>
 
-		As cinnamon extra acerbic to go cinnamon froth variety. Viennese cinnamon carajillo froth, cup brewed seasonal, cup siphon to go espresso single shot. Whipped aroma redeye in, <a href="#1">brewed flavour grinder carajillo black</a>. Ristretto, qui mug, skinny wings caramelization aroma a spoon et beans french press. At cup redeye, turkish wings sit extra trifecta mocha that black half and half.
-
-		Viennese coffee to go french press single origin brewed kopi-luwak. Aroma blue mountain, irish mocha caramelization foam ristretto. Plunger pot cup est, milk arabica french press, ut, beans aromatic aroma white shop. Beans, et that half and half galão coffee fair trade filter extraction. Roast bar siphon bar est macchiato aromatic grinder.
-	</div>
-</div>
-
-<div class="row" id="cpTypography">
-	<div class="col-sm-12">
-		<h3>Sans-serif</h3>
-		<h1>Sit acerbic sugar caffeine, steamed aromatic decaffeinated instant filter.</h1>
-		<p><span style="font-style:italic;">Flavour and cup</span> as mocha espresso steamed percolator plunger pot id sweet. Caramelization ut single origin, dripper so est cultivar in bar robust mazagran froth. Steamed robusta doppio blue mountain bar dark turkish cinnamon plunger pot. Chicory cream coffee sit, froth beans cappuccino cup aftertaste.</p>
-
-		<h3>Serif</h3>
-		<h1 class="serif">Sit acerbic sugar caffeine, steamed aromatic decaffeinated instant filter.</h1>
-		<p class="serif"><span class="serif" style="font-style:italic;">Flavour and cup</span> as mocha espresso steamed percolator plunger pot id sweet. Caramelization ut single origin, dripper so est cultivar in bar robust mazagran froth. Steamed robusta doppio blue mountain bar dark turkish cinnamon plunger pot. Chicory cream coffee sit, froth beans cappuccino cup aftertaste.</p>
-
-		<h3>Monospace</h3>
-		<h1 class="monospace">Sit acerbic sugar caffeine, steamed aromatic decaffeinated instant filter.</h1>
-		<p class="monospace"><span class="monospace" style="font-style:italic;">Flavour and cup</span> as mocha espresso steamed percolator plunger pot id sweet. Caramelization ut single origin, dripper so est cultivar in bar robust mazagran froth. Steamed robusta doppio blue mountain bar dark turkish cinnamon plunger pot. Chicory cream coffee sit, froth beans cappuccino cup aftertaste.</p>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-sm-12">
-		<h3 class="cp-component-header" id="cpHeadings">Headings</h3>
-		<h1 id="cpH1">h1 Article Heading <small>Sub text</small></h1>
-		<h2 id="cpH2">h2 Article Heading <small>Sub text</small></h2>
-		<h3 id="cpH3">h3 Article Heading <small>Sub text</small></h3>
-		<h4 id="cpH4">h4 Article Heading <small>Sub text</small></h4>
-		<h5 id="cpH5">h5 Article Heading <small>Sub text</small></h5>
-		<h6 id="cpH6">h6 Article Heading <small>Sub text</small></h6>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-sm-12">
-		<h3 class="cp-component-header" id="cpTextVariants">Text Variants</h3>
-		<div class="text-default">Text Default</div>
-		<div class="text-primary">Text Primary</div>
-		<div class="text-success">Text Success</div>
-		<div class="text-info">Text Info</div>
-		<div class="text-warning">Text Warning</div>
-		<div class="text-danger">Text Danger</div>
-		<div class="text-muted">Text Muted</div>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-sm-12">
-		<h3 class="cp-component-header" id="cpCaret">Caret</h3>
-
-		<span class="caret"></span>
-
-		<h3>Caret Lg</h3>
-
-		<button class="btn btn-default btn-lg" type="button"><span class="caret"></span></button>
+<div class="autofit-row cp-page-navigation cp-page-navigation-bottom">
+	<div class="autofit-col autofit-col-expand"></div>
+	<div class="autofit-col">
+		<a href="/globals">
+			Globals
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowRight">
+				<use xlink:href="../../images/icons/icons.svg#order-arrow-up" />
+			</svg>
+		</a>
 	</div>
 </div>

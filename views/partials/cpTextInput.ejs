@@ -11,10 +11,27 @@
 	if (unset === true) {
 		unsetLink = '<a class="cp-link cp-unset-link" href="/">Unset</a>';
 	}
+
+	var tooltip;
 %>
 
 <div class="cp-form-group">
+	<% if (tooltip) { %>
+		<span class="cp-control-label-indicator" tabindex="0">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
+				<use xlink:href="../../images/icons/icons.svg#info-circle" />
+			</svg>
+		</span>
+		<div class="cp-tooltip cp-tooltip-bottom-left" role="tooltip">
+			<div class="cp-arrow"></div>
+			<div class="cp-tooltip-inner">
+				<div class="cp-tooltip-text"><%= tooltip %></div>
+			</div>
+		</div>
+	<% } %>
 	<label class="cp-control-label" for="<%= id %>"><%= id %></label>
+
 	<%- unsetLink %>
+
 	<input class="cp-form-control" id="<%= id %>" name="clay[<%= id %>]" placeholder="<%= placeholder %>" type="text">
 </div>
