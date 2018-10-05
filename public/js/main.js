@@ -669,9 +669,7 @@ doc.on('click', '[data-toggle="switch-theme"]', function(event) {
 	});
 });
 
-doc.on('submit', '#importSassVariables', function(event) {
-	event.preventDefault();
-
+function importSassVariables(content) {
 	var BACK_REFERENCE = '$1';
 	var STRIP_COMMENTS_REGEX = /\/\*[\s\S]*?\*\/|([^\\:]|^)\/\/.*$/gm;
 	var STRIP_WHITE_SPACE_REGEX = / /g;
@@ -679,7 +677,7 @@ doc.on('submit', '#importSassVariables', function(event) {
 	// var SASS_VALUE_REGEX = /:(.*?)(?=;)/g;
 	var SASS_VALUE_REGEX = /:(\s*?.*?)*?(?=;)/g
 
-	var importVars = $(this).find('textarea').val().replace(STRIP_COMMENTS_REGEX, BACK_REFERENCE);
+	var importVars = content.replace(STRIP_COMMENTS_REGEX, BACK_REFERENCE);
 
 	var importVarNamesArr = importVars.match(SASS_VAR_REGEX);
 
@@ -711,7 +709,7 @@ doc.on('submit', '#importSassVariables', function(event) {
 					}
 				}
 			}
-			
+
 			if (Object.keys(groupData).length !== 0) {
 				cpDB.setItem(compileOrder[groupName], groupData);
 			}
@@ -722,6 +720,25 @@ doc.on('submit', '#importSassVariables', function(event) {
 	else {
 		ClayPaver.showStatusBar('Input is invalid.');
 	}
+}
+
+doc.on('submit', '#importSassVariables', function(event) {
+	event.preventDefault();
+
+	importSassVariables($(this).find('textarea').val());
+});
+
+doc.on('submit', '#importSassVariablesFromURL', function(event) {
+	event.preventDefault();
+
+	fetch($(this).find('input').val())
+		.then(function(response) {
+			return response.text();
+		})
+		.then(importSassVariables)
+		.catch(function(err) {
+			ClayPaver.showStatusBar('Could not import from url: ' + url);
+		});
 });
 
 ClayPaver.updateThemeName();
