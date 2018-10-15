@@ -12,6 +12,7 @@
     }
   },
   "scripts": {
+    "dev": "nodemon app.js",
     "start": "node app.js"
   },
   "repository": {
@@ -25,7 +26,9 @@
     {}
   ],
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
   "private": true,
   "dependencies": {
     "ejs": "^2.5.6",
