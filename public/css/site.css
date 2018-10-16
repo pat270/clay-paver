@@ -69,10 +69,16 @@ a:hover {
 	margin-left: 5px;
 }
 
+.cp-page-header {
+	font-size: 32px;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+
 /* CP Page Navigation */
 
 .cp-page-navigation {
-	max-width: 300px;
+	max-width: 425px;
 	width: 100%;
 }
 
@@ -84,11 +90,20 @@ a:hover {
 	margin-bottom: 40px;
 }
 
+.cp-prev-page-link,
+.cp-next-page-link {
+	text-transform: capitalize;
+}
+
 #cpOrderArrowRight {
+	margin-left: 4px;
+	margin-top: -2px;
 	transform: rotate(90deg);
 }
 
 #cpOrderArrowLeft {
+	margin-right: 4px;
+	margin-top: -2px;
 	transform: rotate(-90deg);
 }
 
@@ -132,6 +147,14 @@ a:hover {
 	resize: vertical;
 }
 
+.cp-import-divider {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.2;
+	margin-bottom: 24px;
+	margin-top: 24px;
+}
+
 .cp-img-fluid {
 	max-width: 100%;
 }
@@ -148,6 +171,8 @@ a:hover {
 }
 
 .cp-component-header {
+	font-size: 19px;
+	line-height: 1.2;
 	margin-bottom: 12px;
 	margin-top: -41px;
 	padding-top: 65px;

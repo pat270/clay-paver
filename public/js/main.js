@@ -741,13 +741,13 @@ doc.on('submit', '#importSassVariablesFromURL', function(event) {
 		});
 });
 
-ClayPaver.updateThemeName();
 ClayPaver.updateSwitchThemesDD();
 
 // Populate Form
 
 doc.on('turbolinks:load', function() {
 	ClayPaver.populateForm();
+	ClayPaver.updateThemeName();
 });
 
 // Site Stuff

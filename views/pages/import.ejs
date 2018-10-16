@@ -1,17 +1,17 @@
-<h1 class="cp-header">Import Variables to: <span class="current-theme-name"></span></h1>
-
 <form id="importSassVariablesFromURL">
 	<div class="cp-form-group">
-		<input class="cp-form-control" placeholder="Paste in a URL to a text file containing variables to override."></input>
+		<label class="cp-header" for="importURLInput">Import Variables from URL: <span class="current-theme-name"></span></label>
+		<input class="cp-form-control" id="importURLInput" placeholder="Paste in a URL to a text file containing variables to override."></input>
 	</div>
 	<button class="cp-btn cp-btn-primary" type="submit">Import from URL</button>
 </form>
 
-</br>
+<div class="cp-import-divider">Or</div>
 
 <form id="importSassVariables">
 	<div class="cp-form-group">
-		<textarea class="cp-form-control" placeholder="Paste in variables to override."></textarea>
+		<label class="cp-header" for="importVariablesInput">Copy / Paste Variables: <span class="current-theme-name"></span></label>
+		<textarea class="cp-form-control" id="importVariablesInput" placeholder="Paste in variables to override."></textarea>
 	</div>
 	<button class="cp-btn cp-btn-primary" type="submit">Import</button>
 </form>

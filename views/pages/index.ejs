@@ -129,7 +129,47 @@
 					</form>
 				<% } %>
 
+				<% if (typeof prevPage !== 'undefined' || typeof nextPage !== 'undefined') { %>
+					<div class="autofit-row cp-page-navigation cp-page-navigation-top">
+						<div class="autofit-col autofit-col-expand">
+							<div class="autofit-section">
+								<% if (typeof prevPage !== 'undefined') { %>
+									<a class="cp-prev-page-link" href="<%- prevPageURL %>"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowLeft"><use xlink:href="../../images/icons/icons.svg#order-arrow-up" /></svg><%- prevPage %></a>
+								<% } %>
+							</div>
+						</div>
+						<div class="autofit-col">
+							<div class="autofit-section">
+								<% if (typeof nextPage !== 'undefined') { %>
+									<a class="cp-next-page-link" href="<%- nextPageURL %>"><%- nextPage %><svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowRight"><use xlink:href="../../images/icons/icons.svg#order-arrow-up" /></svg></a>
+								<% } %>
+							</div>
+						</div>
+					</div>
+				<% } %>
+
+				<h1 class="cp-page-header"><%- page.replace(/-/g, ' ') %></h1>
+
 				<%- include(page) %>
+
+				<% if (typeof prevPage !== 'undefined' || typeof nextPage !== 'undefined') { %>
+					<div class="autofit-row cp-page-navigation cp-page-navigation-bottom">
+						<div class="autofit-col autofit-col-expand">
+							<div class="autofit-section">
+								<% if (typeof prevPage !== 'undefined') { %>
+									<a class="cp-prev-page-link" href="<%- prevPageURL %>"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowLeft"><use xlink:href="../../images/icons/icons.svg#order-arrow-up" /></svg><%- prevPage %></a>
+								<% } %>
+							</div>
+						</div>
+						<div class="autofit-col">
+							<div class="autofit-section">
+								<% if (typeof nextPage !== 'undefined') { %>
+									<a class="cp-next-page-link" href="<%- nextPageURL %>"><%- nextPage %><svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowRight"><use xlink:href="../../images/icons/icons.svg#order-arrow-up" /></svg></a>
+								<% } %>
+							</div>
+						</div>
+					</div>
+				<% } %>
 			</div>
 		</div>
 	</div>
