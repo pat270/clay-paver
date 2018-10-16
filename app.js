@@ -1,23 +1,29 @@
+const clayLatestVersion = '2.3.3';
+const clayAvailableVersions = [];
+
 const express = require('express');
 const app = express();
 
 const PORT = process.env.PORT || 9201;
 const server = require('http').createServer(app);
 
+app.use('/favicon.ico', express.static('public/images/favicon.ico'));
 app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 
-var sitePages = [ 'globals', 'grid', 'typography', 'icons', 'links', 'utilities', 'alert', 'label', 'badge', 'sticker', 'button', 'breadcrumb', 'card', 'dropdown', 'input', 'input-custom', 'input-group', 'input-validation', 'list-group', 'loading-animations', 'menubar', 'modal', 'nav', 'nav-pills', 'nav-tabs', 'nav-underline', 'navbar', 'navbar-application-bar', 'navbar-management-bar', 'navbar-navigation-bar', 'pagination', 'panel', 'popover', 'progress-bar', 'multi-step-nav', 'sheet', 'sidebar', 'table', 'tbar', 'tooltip', 'timeline', 'toggle-switch', ];
+const sitePages = [ 'globals', 'grid', 'typography', 'icons', 'links', 'utilities', 'alert', 'label', 'badge', 'sticker', 'button', 'breadcrumb', 'card', 'dropdown', 'input', 'input-custom', 'input-group', 'input-validation', 'list-group', 'loading-animations', 'menubar', 'modal', 'nav', 'nav-pills', 'nav-tabs', 'nav-underline', 'navbar', 'navbar-application-bar', 'navbar-management-bar', 'navbar-navigation-bar', 'pagination', 'panel', 'popover', 'progress-bar', 'multi-step-nav', 'sheet', 'sidebar', 'table', 'tbar', 'tooltip', 'timeline', 'toggle-switch', ];
 
-var sitePageCtrl = (req, res, next) => {
-	var page = req.params.page;
-	var pageExists = false;
+const sitePageCtrl = (req, res, next) => {
+	const page = req.params.page;
+	const version = req.params.version;
 
-	var prevPage = sitePages[sitePages.indexOf(page) - 1];
-	var nextPage = sitePages[sitePages.indexOf(page) + 1];
+	let pageExists = false;
 
-	for (var i = 0; i < sitePages.length; i++) {
+	const prevPage = sitePages[sitePages.indexOf(page) - 1];
+	const nextPage = sitePages[sitePages.indexOf(page) + 1];
+
+	for (let i = 0; i < sitePages.length; i++) {
 		if (sitePages[i] === page) {
 			pageExists = true;
 
@@ -25,45 +31,70 @@ var sitePageCtrl = (req, res, next) => {
 		}
 	}
 
-	if (pageExists) {
-		res.render('pages/index', {
-			page: page,
-			prevPage: prevPage ? prevPage.replace(/-/g, ' ') : 'home',
-			prevPageURL: prevPage ? '/' + prevPage : '/',
-			nextPage: nextPage ? nextPage.replace(/-/g, ' ') : undefined,
-			nextPageURL: '/' + nextPage,
-			showVariableSidebar: true,
-		});
+	if (!pageExists) {
+		render404Ctrl(req, res, next);
+
+		return;
 	}
-	else {
-		res.status(404).send('Sorry page does not exist.');
-	}
+
+	res.render('pages/' + version + '/index', {
+		currentVersion: version,
+		page: page,
+		prevPage: prevPage ? prevPage.replace(/-/g, ' ') : 'home',
+		prevPageURL: prevPage ? '/' + version + '/' + prevPage : '/' + version + '/',
+		nextPage: nextPage ? nextPage.replace(/-/g, ' ') : undefined,
+		nextPageURL: '/' + version + '/' + nextPage,
+		showVariableSidebar: true,
+		sitePages: sitePages,
+	});
 }
 
-app.get('/favicon.ico', (req, res) => {
-	res.sendStatus(204);
-});
+const render404Ctrl = (req, res, next) => {
+	res.status(404).render('pages/404', {
+		clayLatestVersion: clayLatestVersion,
+		clayAvailableVersions: clayAvailableVersions,
+	});
+}
 
-app.get('/import', (req, res, next) => {
-	res.render('pages/index', { 
+app.get('/:version/import', (req, res, next) => {
+	const version = req.params.version;
+
+	res.render('pages/' + version + '/index', {
+		currentVersion: version,
 		page: 'import',
+		sitePages: sitePages,
 	});
 });
 
-app.get('/:page', sitePageCtrl);
+app.get('/:version/:page', sitePageCtrl);
 
-app.get('/', (req, res, next) => {
-	res.render('pages/index', { 
+app.get('/:version', (req, res, next) => {
+	const version = req.params.version;
+
+	if (clayAvailableVersions.indexOf(version) === -1 && version !== clayLatestVersion) {
+		render404Ctrl(req, res, next);
+
+		return;
+	}
+
+	res.render('pages/' + version + '/index', { 
+		currentVersion: version,
 		page: 'home',
 		nextPage: sitePages[0].replace(/-/g, ' '),
-		nextPageURL: '/' + sitePages[0],
+		nextPageURL: '/' + version + '/' + sitePages[0],
 		showVariableSidebar: true,
+		sitePages: sitePages,
 	});
 });
 
-app.get('*', (req, res) => {
-  res.status(404).send('Sorry page does not exist.');
+app.get('/', (req, res, next) => {
+	res.render('pages/index', {
+		clayLatestVersion: clayLatestVersion,
+		clayAvailableVersions: clayAvailableVersions,
+	});
 });
+
+app.get('*', render404Ctrl);
 
 server.listen(PORT, () => {
 	console.log('Clay Paver on http://localhost:' + PORT);

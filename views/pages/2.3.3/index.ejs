@@ -1,0 +1,158 @@
+<% 
+	var rootPath = '..';
+	var svgIconsPath = '../../images/' + currentVersion + '/icons/icons.svg';
+%>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Clay Paver</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="<% rootPath%>/css/site.css" type="text/css" />
+	<script src="<% rootPath%>/js/svg4everybody.js"></script>
+	<script src="<% rootPath%>/js/jquery-3.2.1.min.js"></script>
+	<script src="<% rootPath%>/js/popper.min.js"></script>
+	<script src="<% rootPath%>/js/bootstrap.min.js"></script>
+	<script src="<% rootPath%>/js/turbolinks.min.js"></script>
+	<script src="<% rootPath%>/js/sass.js"></script>
+	<script src="<% rootPath%>/js/localforage.min.js"></script>
+</head>
+<body>
+	<div id="clayPaverSite">
+		<div class="cp-app-navigation" data-turbolinks-permanent id="cpAppNavigation">
+			<a class="cp-app-navigation-link" data-turbolinks="false" href="/">Clay Paver</a>
+			(<span data-clayCurrentVersion="<%- currentVersion %>" id="cpCurrentVersion"><%- currentVersion %></span>)
+			<span class="cp-label cp-label-default cp-app-label current-theme-name"></span>
+			<div class="cp-dropdown dropdown">
+				<button aria-expanded="false" class="cp-btn cp-btn-secondary" data-toggle="dropdown" type="button">Navigation</button>
+				<ul class="clay-paver-dropdown-menu dropdown-menu">
+					<li><a class="cp-page-link" href="/<%- currentVersion %>/">Home</a></li>
+
+					<% for (var i = 0; i < sitePages.length; i ++) { %>
+						<li><a class="cp-page-link" href="/<%- currentVersion %>/<%- sitePages[i] %>"><%- sitePages[i].replace(/-/g, ' ') %></a></li>
+					<% } %>
+				</ul>
+			</div>
+
+			<div class="cp-dropdown dropdown">
+				<button aria-expanded="false" class="cp-btn cp-btn-secondary" data-toggle="dropdown" id="cpSwitchThemes" type="button">Switch Themes</button>
+				<ul class="clay-paver-dropdown-menu dropdown-menu">
+					<li>
+						<form action="/" id="addNewTheme">
+							<label class="cp-control-label">
+								Add New Theme
+								<input class="cp-form-control" name="theme-name" type="text">
+								<button class="cp-btn cp-btn-primary" type="submit">Add</button>
+							</label>
+						</form>
+					</li>
+				</ul>
+			</div>
+
+			<div class="cp-dropdown dropdown">
+				<button aria-expanded="false" class="cp-btn cp-btn-secondary" data-toggle="dropdown" type="button">Options</button>
+				<ul class="clay-paver-dropdown-menu dropdown-menu">
+					<li>
+						<a class="cp-dropdown-link" href="/<%- currentVersion %>/import">Import</a>
+					</li>
+					<li>
+						<a class="cp-dropdown-link" href="#export" id="downloadVariables">Export</a>
+					</li>
+					<li>
+						<a class="cp-dropdown-link" href="#delete-current-theme" id="cpDataClearCurrent" role="button">Delete Current Theme</a>
+					</li>
+					<li>
+						<a class="cp-dropdown-link" href="#delete-everything" id="cpDataClearAll" role="button">Delete Everything</a>
+					</li>
+				</ul>
+			</div>
+
+			<a class="cp-github-logo" href="https://github.com/pat270/clay-paver" rel="noopener noreferrer" target="_blank">
+				<img class="cp-img-fluid" src="<% rootPath%>/images/GitHub-Mark-Light-64px.png">
+			</a>
+		</div>
+
+		<%
+			var contentCSSClass = '';
+
+			if (typeof showVariableSidebar === 'undefined') {
+				contentCSSClass = 'full-width ' + page + '-view';
+			}
+		%>
+
+		<div class="<%= contentCSSClass %>" id="content">
+			<div class="container-fluid">
+				<% if (typeof showVariableSidebar !== 'undefined') { %>
+					<form class="cp-variables-form" id="<%= page %>">
+						<div class="cp-variable-sidebar">
+							<div class="cp-variable-sidebar-body">
+								<%- include(page + '-variables', { partialsPath: '../../partials/', svgIconsPath: svgIconsPath }) %>
+							</div>
+							<div class="cp-variable-sidebar-footer">
+								<button class="cp-btn cp-btn-primary" id="saveButton" type="submit">Save</button>
+								<button class="cp-btn cp-btn-secondary" id="resetButton" type="button">Reset</button>
+							</div>
+						</div>
+					</form>
+				<% } %>
+
+				<% if (typeof prevPage !== 'undefined' || typeof nextPage !== 'undefined') { %>
+					<div class="autofit-row cp-page-navigation cp-page-navigation-top">
+						<div class="autofit-col autofit-col-expand">
+							<div class="autofit-section">
+								<% if (typeof prevPage !== 'undefined') { %>
+									<a class="cp-prev-page-link" href="<%- prevPageURL %>"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowLeft"><use xlink:href="<%- svgIconsPath %>#order-arrow-up" /></svg><%- prevPage %></a>
+								<% } %>
+							</div>
+						</div>
+						<div class="autofit-col">
+							<div class="autofit-section">
+								<% if (typeof nextPage !== 'undefined') { %>
+									<a class="cp-next-page-link" href="<%- nextPageURL %>"><%- nextPage %><svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowRight"><use xlink:href="<%- svgIconsPath %>#order-arrow-up" /></svg></a>
+								<% } %>
+							</div>
+						</div>
+					</div>
+				<% } %>
+
+				<h1 class="cp-page-header"><%- page.replace(/-/g, ' ') %></h1>
+
+				<%- include(page, { svgIconsPath: svgIconsPath }) %>
+
+				<% if (typeof prevPage !== 'undefined' || typeof nextPage !== 'undefined') { %>
+					<div class="autofit-row cp-page-navigation cp-page-navigation-bottom">
+						<div class="autofit-col autofit-col-expand">
+							<div class="autofit-section">
+								<% if (typeof prevPage !== 'undefined') { %>
+									<a class="cp-prev-page-link" href="<%- prevPageURL %>"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowLeft"><use xlink:href="<%- svgIconsPath %>#order-arrow-up" /></svg><%- prevPage %></a>
+								<% } %>
+							</div>
+						</div>
+						<div class="autofit-col">
+							<div class="autofit-section">
+								<% if (typeof nextPage !== 'undefined') { %>
+									<a class="cp-next-page-link" href="<%- nextPageURL %>"><%- nextPage %><svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowRight"><use xlink:href="<%- svgIconsPath %>#order-arrow-up" /></svg></a>
+								<% } %>
+							</div>
+						</div>
+					</div>
+				<% } %>
+			</div>
+		</div>
+	</div>
+
+	<div data-turbolinks-permanent id="siteJs">
+		<script src="<% rootPath%>/js/<%- currentVersion %>/import-order.js"></script>
+		<script src="<% rootPath%>/js/main.js"></script>
+	</div>
+
+	<script>
+		svg4everybody(
+			{
+				polyfill: true,
+			}
+		);
+	</script>
+</body>
+</html>

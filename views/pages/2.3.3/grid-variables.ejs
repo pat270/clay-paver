@@ -1,0 +1,59 @@
+<h4 class="cp-variables-form-header">Grid</h4>
+<%- include(partialsPath + 'cpTextInput', { id: 'grid-columns' }) %>
+<%- include(partialsPath + 'cpTextInput', { id: 'grid-gutter-width', tooltip: 'This value must be entered as px and twice the column gutter you want (e.g., for 15px gutters enter 30px).' }) %>
+
+<h4 class="cp-variables-form-header">Grid Breakpoints</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="grid-breakpoints" name="clay[grid-breakpoints]" type="hidden">
+	</div>
+	<%- include(partialsPath + 'cpTextInput', { id: 'grid-breakpoints-xs', tooltip: 'If modified: This value must be 0, values must be in ascending order, and a value must be entered for each grid-breakpoint.' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'grid-breakpoints-sm' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'grid-breakpoints-md' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'grid-breakpoints-lg' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'grid-breakpoints-xl' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Container Max Widths</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="container-max-widths" name="clay[container-max-widths]" type="hidden">
+	</div>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-max-widths-sm', tooltip: 'If modified: Values must be in ascending order and a value must be entered for each container-max-width.' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-max-widths-md' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-max-widths-lg' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-max-widths-xl' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Container Form Lg</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="container-form-lg" name="clay[container-form-lg]" type="hidden">
+	</div>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-form-lg-enabled' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-form-lg-padding-top' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-form-lg-padding-right' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-form-lg-padding-bottom' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-form-lg-padding-left' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-form-lg-padding-top-mobile' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-form-lg-padding-right-mobile' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-form-lg-padding-bottom-mobile' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-form-lg-padding-left-mobile' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Container View</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="container-view" name="clay[container-view]" type="hidden">
+	</div>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-view-enabled' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-view-breakpoint-up' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-view-padding-top' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-view-padding-right' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-view-padding-bottom' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-view-padding-left' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-view-padding-top-mobile' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-view-padding-right-mobile' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-view-padding-bottom-mobile' }) %>
+	<%- include(partialsPath + 'cpTextInput', { id: 'container-view-padding-left-mobile' }) %>
+</div>

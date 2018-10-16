@@ -4,186 +4,45 @@
 	<meta charset="UTF-8" />
 	<title>Clay 2 Paver</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/site.css" type="text/css" />
-	<script src="js/svg4everybody.js"></script>
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/turbolinks.min.js"></script>
-	<script src="js/sass.js"></script>
-	<script src="js/localforage.min.js"></script>
+	<link rel="stylesheet" href="/css/home.css" type="text/css" />
+	<script src="/js/svg4everybody.js"></script>
+	<script src="/js/jquery-3.2.1.min.js"></script>
+	<script src="/js/popper.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div id="clayPaverSite">
-		<div class="cp-app-navigation" data-turbolinks-permanent id="cpAppNavigation">
-			<a class="cp-app-navigation-link" href="/">Clay <span>2</span> Paver</a>
-			<span class="cp-label cp-label-default cp-app-label current-theme-name"></span>
-			<div class="cp-dropdown dropdown">
-				<button aria-expanded="false" class="cp-btn cp-btn-secondary" data-toggle="dropdown" type="button">Navigation</button>
-				<ul class="clay-paver-dropdown-menu dropdown-menu">
-					<li><a class="cp-page-link" href="/">Home</a></li>
-					<li><a class="cp-page-link" href="/globals">Globals</a></li>
-					<li><a class="cp-page-link" href="/grid">Grid</a></li>
-					<li><a class="cp-page-link" href="/typography">Typography</a></li>
-					<li><a class="cp-page-link" href="/icons">Icons</a></li>
-					<li><a class="cp-page-link" href="/links">Links</a></li>
-					<li><a class="cp-page-link" href="/utilities">Utilities</a></li>
-					<li><a class="cp-page-link" href="/alert">Alert</a></li>
-					<li><a class="cp-page-link" href="/label">Label</a></li>
-					<li><a class="cp-page-link" href="/badge">Badge</a></li>
-					<li><a class="cp-page-link" href="/sticker">Sticker</a></li>
-					<li><a class="cp-page-link" href="/button">Button</a></li>
-					<li><a class="cp-page-link" href="/breadcrumb">Breadcrumb</a></li>
-					<li><a class="cp-page-link" href="/card">Card</a></li>
-					<li><a class="cp-page-link" href="/dropdown">Dropdown</a></li>
-					<li><a class="cp-page-link" href="/input">Input</a></li>
-					<li><a class="cp-page-link" href="/input-custom">Input Custom</a></li>
-					<li><a class="cp-page-link" href="/input-group">Input Group</a></li>
-					<li><a class="cp-page-link" href="/input-validation">Input Validation</a></li>
-					<li><a class="cp-page-link" href="/list-group">List Group</a></li>
-					<li><a class="cp-page-link" href="/loading-animations">Loading Animations</a></li>
-					<li><a class="cp-page-link" href="/menubar">Menubar</a></li>
-					<li><a class="cp-page-link" href="/modal">Modal</a></li>
-					<li><a class="cp-page-link" href="/nav">Nav</a></li>
-					<li><a class="cp-page-link" href="/nav-pills">Nav Pills</a></li>
-					<li><a class="cp-page-link" href="/nav-tabs">Nav Tabs</a></li>
-					<li><a class="cp-page-link" href="/nav-underline">Nav Underline</a></li>
-					<li><a class="cp-page-link" href="/navbar">Navbar</a></li>
-					<li><a class="cp-page-link" href="/navbar-application-bar">Navbar (Application Bar)</a></li>
-					<li><a class="cp-page-link" href="/navbar-management-bar">Navbar (Management Bar)</a></li>
-					<li><a class="cp-page-link" href="/navbar-navigation-bar">Navbar (Navigation Bar)</a></li>
-					<li><a class="cp-page-link" href="/pagination">Pagination</a></li>
-					<li><a class="cp-page-link" href="/panel">Panel</a></li>
-					<li><a class="cp-page-link" href="/popover">Popover</a></li>
-					<li><a class="cp-page-link" href="/progress-bar">Progress Bar</a></li>
-					<li><a class="cp-page-link" href="/multi-step-nav">Multi Step Nav</a></li>
-					<li><a class="cp-page-link" href="/sheet">Sheet</a></li>
-					<li><a class="cp-page-link" href="/sidebar">Sidebar</a></li>
-					<li><a class="cp-page-link" href="/table">Table</a></li>
-					<li><a class="cp-page-link" href="/tbar">Tbar (Toolbar)</a></li>
-					<li><a class="cp-page-link" href="/tooltip">Tooltip</a></li>
-					<li><a class="cp-page-link" href="/timeline">Timeline</a></li>
-					<li><a class="cp-page-link" href="/toggle-switch">Toggle Switch</a></li>
-				</ul>
+	<section id="main">
+		<a class="cp-github-logo" href="https://github.com/pat270/clay-paver" rel="noopener noreferrer" target="_blank">
+			<img class="cp-img-fluid" src="/images/GitHub-Mark-Light-64px.png">
+		</a>
+		<h1 class="site-title">Clay Paver</h1>
+		<div class="site-navigation">
+			<div class="current-version">
+				<a class="cp-btn cp-btn-primary" href="/<%- clayLatestVersion %>/">
+					Latest (<%- clayLatestVersion %>)
+				</a>
 			</div>
-
-			<div class="cp-dropdown dropdown">
-				<button aria-expanded="false" class="cp-btn cp-btn-secondary" data-toggle="dropdown" id="cpSwitchThemes" type="button">Switch Themes</button>
-				<ul class="clay-paver-dropdown-menu dropdown-menu">
-					<li>
-						<form action="/" id="addNewTheme">
-							<label class="cp-control-label">
-								Add New Theme
-								<input class="cp-form-control" name="theme-name" type="text">
-								<button class="cp-btn cp-btn-primary" type="submit">Add</button>
-							</label>
-						</form>
-					</li>
-				</ul>
-			</div>
-
-			<div class="cp-dropdown dropdown">
-				<button aria-expanded="false" class="cp-btn cp-btn-secondary" data-toggle="dropdown" type="button">Options</button>
-				<ul class="clay-paver-dropdown-menu dropdown-menu">
-					<li>
-						<a class="cp-dropdown-link" href="/import">Import</a>
-					</li>
-					<li>
-						<a class="cp-dropdown-link" href="" id="downloadVariables">Export</a>
-					</li>
-					<li>
-						<a class="cp-dropdown-link" href="" id="cpDataClearCurrent" role="button">Delete Current Theme</a>
-					</li>
-					<li>
-						<a class="cp-dropdown-link" href="" id="cpDataClearAll" role="button">Delete Everything</a>
-					</li>
-				</ul>
-			</div>
-
-			<a class="cp-github-logo" href="https://github.com/pat270/clay-paver" rel="noopener noreferrer" target="_blank">
-				<img class="cp-img-fluid" src="images/GitHub-Mark-Light-64px.png">
-			</a>
-		</div>
-
-		<%
-			var contentCSSClass = '';
-
-			if (typeof showVariableSidebar === 'undefined') {
-				contentCSSClass = 'full-width ' + page + '-view';
-			}
-		%>
-
-		<div class="<%= contentCSSClass %>" id="content">
-			<div class="container-fluid">
-				<% if (typeof showVariableSidebar !== 'undefined') { %>
-					<form class="cp-variables-form" id="<%= page %>">
-						<div class="cp-variable-sidebar">
-							<div class="cp-variable-sidebar-body">
-								<%- include(page + '-variables') %>
-							</div>
-							<div class="cp-variable-sidebar-footer">
-								<button class="cp-btn cp-btn-primary" id="saveButton" type="submit">Save</button>
-								<button class="cp-btn cp-btn-secondary" id="resetButton" type="button">Reset</button>
-							</div>
-						</div>
-					</form>
-				<% } %>
-
-				<% if (typeof prevPage !== 'undefined' || typeof nextPage !== 'undefined') { %>
-					<div class="autofit-row cp-page-navigation cp-page-navigation-top">
-						<div class="autofit-col autofit-col-expand">
-							<div class="autofit-section">
-								<% if (typeof prevPage !== 'undefined') { %>
-									<a class="cp-prev-page-link" href="<%- prevPageURL %>"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowLeft"><use xlink:href="../../images/icons/icons.svg#order-arrow-up" /></svg><%- prevPage %></a>
-								<% } %>
-							</div>
-						</div>
-						<div class="autofit-col">
-							<div class="autofit-section">
-								<% if (typeof nextPage !== 'undefined') { %>
-									<a class="cp-next-page-link" href="<%- nextPageURL %>"><%- nextPage %><svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowRight"><use xlink:href="../../images/icons/icons.svg#order-arrow-up" /></svg></a>
-								<% } %>
-							</div>
-						</div>
+			<% if (clayAvailableVersions.length !== 0) { %>
+				<div class="version-divider">or</div>
+				<div class="dropdown">
+					<a class="cp-btn cp-btn-primary" data-toggle="dropdown" href="">
+						Select Version
+						<svg aria-hidden="true" class="lexicon-icon lexicon-icon-angle-down" focusable="false">
+							<use xlink:href="/images/icons/icons.svg#angle-down" />
+						</svg>
+					</a>
+					<div class="dropdown-menu">
+						<% for(var i = 0; i < clayAvailableVersions.length; i++) { %>
+							<a class="dropdown-item" href="/<%- clayAvailableVersions[i] %>/"><%- clayAvailableVersions[i] %></a>
+						<% } %>
 					</div>
-				<% } %>
-
-				<h1 class="cp-page-header"><%- page.replace(/-/g, ' ') %></h1>
-
-				<%- include(page) %>
-
-				<% if (typeof prevPage !== 'undefined' || typeof nextPage !== 'undefined') { %>
-					<div class="autofit-row cp-page-navigation cp-page-navigation-bottom">
-						<div class="autofit-col autofit-col-expand">
-							<div class="autofit-section">
-								<% if (typeof prevPage !== 'undefined') { %>
-									<a class="cp-prev-page-link" href="<%- prevPageURL %>"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowLeft"><use xlink:href="../../images/icons/icons.svg#order-arrow-up" /></svg><%- prevPage %></a>
-								<% } %>
-							</div>
-						</div>
-						<div class="autofit-col">
-							<div class="autofit-section">
-								<% if (typeof nextPage !== 'undefined') { %>
-									<a class="cp-next-page-link" href="<%- nextPageURL %>"><%- nextPage %><svg aria-hidden="true" class="lexicon-icon lexicon-icon-order-arrow-up" id="cpOrderArrowRight"><use xlink:href="../../images/icons/icons.svg#order-arrow-up" /></svg></a>
-								<% } %>
-							</div>
-						</div>
-					</div>
-				<% } %>
-			</div>
+				</div>
+			<% } %>
 		</div>
-	</div>
-
-	<div data-turbolinks-permanent id="siteJs">
-		<script src="js/main.js"></script>
-	</div>
+	</section>
 
 	<script>
-		svg4everybody(
-			{
-				polyfill: true,
-			}
-		);
+		svg4everybody({ polyfill: true });
 	</script>
 </body>
 </html>

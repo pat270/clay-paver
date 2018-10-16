@@ -201,11 +201,16 @@ a:hover {
 	font-size: 14px;
 	padding: 5px 8px;
 	text-decoration: none;
+	text-transform: capitalize;
 }
 
 .cp-page-link:focus,
 .cp-page-link:hover {
 	color: #000;
+}
+
+.cp-theme-item .cp-page-link {
+	text-transform: none;
 }
 
 /* Link */
@@ -480,6 +485,7 @@ a.cp-btn:focus {
 	background: #b3472d;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 	box-sizing: border-box;
+	color: #FFF;
 	font-family: sans-serif;
 	height: 50px;
 	left: 0;
