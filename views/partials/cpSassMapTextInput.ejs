@@ -1,20 +1,15 @@
 <%
-	var placeholder;
-
-	if (!placeholder) {
+	if (typeof placeholder === 'undefined') {
 		placeholder = '';
-	}
-
-	var unset;
-	var unsetLink = '';
-
-	if (unset === true) {
-		unsetLink = '<a class="cp-link cp-unset-link" href="/">Unset</a>';
 	}
 %>
 
 <div class="cp-form-group">
-	<label class="cp-control-label" for="<%= id %>"><%= id %></label>
-	<%- unsetLink %>
-	<input class="cp-form-control" id="<%= id %>" placeholder="<%= placeholder %>" type="text">
+	<label class="cp-control-label" for="<%- id %>"><%- id %></label>
+
+	<% if (typeof unset !== 'undefined') { %>
+		<a class="cp-link cp-unset-link" href="/">Unset</a>
+	<% } %>
+
+	<input class="cp-form-control" id="<%- id %>" placeholder="<%- placeholder %>" type="text">
 </div>
