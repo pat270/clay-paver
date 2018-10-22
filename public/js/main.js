@@ -479,6 +479,10 @@ if (!sass) {
 			ClayPaver.showLoadingMsg("I'm almost done...");
 		}, 5000);
 
+		ClayPaver.updateThemeName();
+
+		ClayPaver.updateSwitchThemesDD();
+
 		ClayPaver.compileSass();
 	});
 }
@@ -491,7 +495,6 @@ doc.on('click', '#cpDataClearAll', function(event) {
 	event.preventDefault();
 
 	if (confirm('Do you want to DELETE ALL site data?')) {
-		// Local Forage hack bc docs suck...
 		cpDB.clear().then(function() {
 			location.reload();
 		});
@@ -512,6 +515,7 @@ doc.on('click', '#cpDataClearCurrent', function(event) {
 					ClayPaver.populateForm();
 					ClayPaver.compileSass();
 					ClayPaver.updateThemeName();
+					ClayPaver.updateSwitchThemesDD();
 				});
 			});
 
@@ -747,8 +751,6 @@ doc.on('submit', '#importSassVariablesFromURL', function(event) {
 			ClayPaver.showStatusBar('Could not import from url: ' + url);
 		});
 });
-
-ClayPaver.updateSwitchThemesDD();
 
 // Populate Form
 
