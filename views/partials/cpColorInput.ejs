@@ -5,6 +5,10 @@
 %>
 
 <div class="cp-form-group cp-form-group-color">
+	<% if (typeof tooltip !== 'undefined') { %>
+		<%- include('cpLabelTooltip', { tooltip: tooltip }) %>
+	<% } %>
+
 	<label class="cp-control-label" for="<%- id %>"><%- id %></label>
 
 	<% if (typeof unset !== 'undefined') { %>

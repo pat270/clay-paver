@@ -6,17 +6,7 @@
 
 <div class="cp-form-group">
 	<% if (typeof tooltip !== 'undefined') { %>
-		<span class="cp-control-label-indicator" tabindex="0">
-			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
-				<use xlink:href="<%- svgIconsPath %>#info-circle" />
-			</svg>
-		</span>
-		<div class="cp-tooltip cp-tooltip-bottom-left" role="tooltip">
-			<div class="cp-arrow"></div>
-			<div class="cp-tooltip-inner">
-				<div class="cp-tooltip-text"><%- tooltip %></div>
-			</div>
-		</div>
+		<%- include('cpLabelTooltip', { tooltip: tooltip }) %>
 	<% } %>
 
 	<label class="cp-control-label" for="<%- id %>"><%- id %></label>
