@@ -1,5 +1,6 @@
 <% 
 	var rootPath = '..';
+	var partialsPath = '../../partials/';
 	var svgIconsPath = '../../images/' + currentVersion + '/icons/icons.svg';
 %>
 
@@ -87,7 +88,7 @@
 					<form class="cp-variables-form" id="<%= page %>">
 						<div class="cp-variable-sidebar">
 							<div class="cp-variable-sidebar-body">
-								<%- include(page + '-variables', { partialsPath: '../../partials/', svgIconsPath: svgIconsPath }) %>
+								<%- include(page + '-variables', { partialsPath: partialsPath, svgIconsPath: svgIconsPath }) %>
 							</div>
 							<div class="cp-variable-sidebar-footer">
 								<button class="cp-btn cp-btn-primary" id="saveButton" type="submit">Save</button>

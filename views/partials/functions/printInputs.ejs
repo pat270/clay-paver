@@ -1,0 +1,17 @@
+<%
+	for (let i = 0; i < arr.length; i++) {
+		if (arr[i].title) {
+%>
+
+			<h5 class="cp-variables-form-subheader"><%= arr[i].title.replace(/-/g, ' ') %></h5>
+
+<%
+			continue;
+		}
+%>
+
+		<%- include('../cpTextInput', { id: arr[i].id, color: arr[i].color, tooltip: arr[i].tooltip, svgIconsPath: svgIconsPath }) %>
+
+<%
+	}
+%>

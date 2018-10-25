@@ -1,83 +1,124 @@
 <h4 class="cp-variables-form-header">Modal Backdrop</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-backdrop-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-backdrop-opacity' }) %>
+<%-
+	printInputs([
+		{ id: 'modal-backdrop-bg', color: true, },
+		{ id: 'modal-backdrop-opacity', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Modal Transition</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-transition' }) %>
+<%-
+	printInputs([
+		{ id: 'modal-transition', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Modal Dialog</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-dialog-margin-y-sm-up' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-dialog-margin' }) %>
+<%-
+	printInputs([
+		{ id: 'modal-dialog-margin-y-sm-up', },
+		{ id: 'modal-dialog-margin', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Modal Content</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-content-border-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-content-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-content-border-radius' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-content-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-content-box-shadow-sm-up' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-content-box-shadow-xs' }) %>
+<%-
+	printInputs([
+		{ id: 'modal-content-border-width', },
+		{ id: 'modal-content-border-color', color: true, },
+		{ id: 'modal-content-border-radius', },
+		{ id: 'modal-content-bg', color: true, },
+		{ id: 'modal-content-box-shadow-sm-up', },
+		{ id: 'modal-content-box-shadow-xs', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Modal Inner</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-inner-padding' }) %>
+<%-
+	printInputs([
+		{ id: 'modal-inner-padding', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Modal Header</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-header-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-header-height-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-header-padding' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-header-border-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-header-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-header-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-header-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'modal-header-height', },
+		{ id: 'modal-header-height-mobile', },
+		{ id: 'modal-header-padding', },
+		{ id: 'modal-header-border-width', },
+		{ id: 'modal-header-border-color', color: true, },
+		{ id: 'modal-header-color', color: true, },
+		{ id: 'modal-header-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Modal Title</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-title-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-title-font-size-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-title-font-weight' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-title-line-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-title-text-align' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-title-indicator-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-title-indicator-spacer-x' }) %>
+<%-
+	printInputs([
+		{ id: 'modal-title-font-size', },
+		{ id: 'modal-title-font-size-mobile', },
+		{ id: 'modal-title-font-weight', },
+		{ id: 'modal-title-line-height', },
+		{ id: 'modal-title-text-align', },
+		{ id: 'modal-title-indicator-font-size', },
+		{ id: 'modal-title-indicator-spacer-x', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Modal Close</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-close-spacer-x' }) %>
+<%-
+	printInputs([
+		{ id: 'modal-close-spacer-x', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Modal Body</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-body-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-body-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'modal-body-color', color: true, },
+		{ id: 'modal-body-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Modal Footer</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-footer-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-footer-height-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-footer-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-footer-padding-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-footer-border-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-footer-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-footer-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-footer-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-footer-box-shadow' }) %>
+<%-
+	printInputs([
+		{ id: 'modal-footer-height', },
+		{ id: 'modal-footer-height-mobile', },
+		{ id: 'modal-footer-padding-y', },
+		{ id: 'modal-footer-padding-x', },
+		{ id: 'modal-footer-border-width', },
+		{ id: 'modal-footer-border-color', color: true, },
+		{ id: 'modal-footer-color', color: true, },
+		{ id: 'modal-footer-bg', color: true, },
+		{ id: 'modal-footer-box-shadow', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Modal Item</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-item-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-item-padding-x' }) %>
+<%-
+	printInputs([
+		{ id: 'modal-item-padding-y', },
+		{ id: 'modal-item-padding-x', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Modal Size Widths</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-sm' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-md' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'modal-lg' }) %>
+<%-
+	printInputs([
+		{ id: 'modal-sm', },
+		{ id: 'modal-md', },
+		{ id: 'modal-lg', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Modal Success</h4>
 <div class="cp-form-group-sass-map">
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="modal-success" name="clay[modal-success]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-success-header-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-success-header-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-success-header-border-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-success-header-close' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-success-body-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-success-body-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-success-footer-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-success-footer-border-color' }) %>
+	<%- include(partialsPath + 'cpClayModalVariantMixin', { namespace: 'modal-success' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">Modal Info</h4>
@@ -85,14 +126,7 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="modal-info" name="clay[modal-info]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-info-header-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-info-header-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-info-header-border-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-info-header-close' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-info-body-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-info-body-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-info-footer-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-info-footer-border-color' }) %>
+	<%- include(partialsPath + 'cpClayModalVariantMixin', { namespace: 'modal-info' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">Modal Warning</h4>
@@ -100,14 +134,7 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="modal-warning" name="clay[modal-warning]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-warning-header-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-warning-header-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-warning-header-border-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-warning-header-close' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-warning-body-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-warning-body-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-warning-footer-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-warning-footer-border-color' }) %>
+	<%- include(partialsPath + 'cpClayModalVariantMixin', { namespace: 'modal-warning' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">Modal Danger</h4>
@@ -115,12 +142,5 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="modal-danger" name="clay[modal-danger]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-danger-header-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-danger-header-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-danger-header-border-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-danger-header-close' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-danger-body-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-danger-body-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-danger-footer-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'modal-danger-footer-border-color' }) %>
+	<%- include(partialsPath + 'cpClayModalVariantMixin', { namespace: 'modal-danger' }) %>
 </div>

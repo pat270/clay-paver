@@ -1,37 +1,73 @@
 <h4 class="cp-variables-form-header">Nav</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-font-size' }) %>
+<%-
+	printInputs([
+		{ id: 'nav-font-size', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Nav Form</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-form-padding-top' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-form-padding-right' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-form-padding-bottom' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-form-padding-left' }) %>
+<%-
+	printInputs([
+		{ id: 'nav-form-padding-top', },
+		{ id: 'nav-form-padding-right', },
+		{ id: 'nav-form-padding-bottom', },
+		{ id: 'nav-form-padding-left', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Nav Link / Btn Monospaced</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-item-monospaced-size' }) %>
+<%-
+	printInputs([
+		{ id: 'nav-item-monospaced-size', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Nav Link</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-link-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-link-padding-x' }) %>
+<%-
+	printInputs([
+		{ id: 'nav-link-padding-y', },
+		{ id: 'nav-link-padding-x', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Nav Link Disabled</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-link-disabled-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-link-disabled-cursor' }) %>
+<%-
+	printInputs([
+		{ id: 'nav-link-disabled-color', color: true, },
+		{ id: 'nav-link-disabled-cursor', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Nav Btn</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-btn-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-btn-padding-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-btn-margin-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-btn-margin-x' }) %>
+<%-
+	printInputs([
+		{ id: 'nav-btn-padding-y', },
+		{ id: 'nav-btn-padding-x', },
+		{ id: 'nav-btn-margin-y', },
+		{ id: 'nav-btn-margin-x', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Nav Stacked</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-stacked-nav-form-padding-top' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-stacked-nav-form-padding-right' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-stacked-nav-form-padding-bottom' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-stacked-nav-form-padding-left' }) %>
+<%-
+	printInputs([
+		{ id: 'nav-stacked-nav-form-padding-top', },
+		{ id: 'nav-stacked-nav-form-padding-right', },
+		{ id: 'nav-stacked-nav-form-padding-bottom', },
+		{ id: 'nav-stacked-nav-form-padding-left', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Nav Nested (Padding)</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-nested-spacer-x' }) %>
+<%-
+	printInputs([
+		{ id: 'nav-nested-spacer-x', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Nav Nested (Margin)</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-nested-margins-spacer-x' }) %>
+<%-
+	printInputs([
+		{ id: 'nav-nested-margins-spacer-x', },
+	]);
+%>

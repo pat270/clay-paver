@@ -1,49 +1,17 @@
 <h4 class="cp-variables-form-header">Tbar Item</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'tbar-item-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'tbar-item-padding-x' }) %>
+<%-
+	printInputs([
+		{ name: 'tbar-item-padding-y', },
+		{ name: 'tbar-item-padding-x', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Component Tbar</h4>
 <div class="cp-form-group-sass-map">
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="component-tbar" name="clay[component-tbar]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-border-width' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-border-style' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-border-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-bg-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-item-padding-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-item-padding-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-strong-font-weight' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-btn-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-btn-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-btn-font-weight' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-btn-padding-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-btn-padding-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-btn-line-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-btn-margin-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-btn-margin-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-btn-monospaced-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-btn-monospaced-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-btn-monospaced-border-width' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-btn-monospaced-border-radius' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-btn-monospaced-padding' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-link-padding-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-link-padding-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-link-margin-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-link-margin-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-link-monospaced-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-link-monospaced-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-link-monospaced-border-width' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-link-monospaced-border-radius' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-link-monospaced-padding' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-section-text-align' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-component-action' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-component-link' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-component-title' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'component-tbar-component-text' }) %>
+	<%- include(partialsPath + 'cpClayTbarVariantMixin', { namespace: 'component-tbar' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">Subnav Tbar</h4>
@@ -51,41 +19,7 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar" name="clay[subnav-tbar]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-border-width' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-border-style' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-border-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-bg-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-item-padding-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-item-padding-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-strong-font-weight' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-btn-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-btn-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-btn-font-weight' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-btn-padding-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-btn-padding-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-btn-line-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-btn-margin-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-btn-margin-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-btn-monospaced-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-btn-monospaced-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-btn-monospaced-border-width' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-btn-monospaced-border-radius' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-btn-monospaced-padding' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-link-padding-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-link-padding-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-link-margin-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-link-margin-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-link-monospaced-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-link-monospaced-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-link-monospaced-border-width' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-link-monospaced-border-radius' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-link-monospaced-padding' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-section-text-align' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-action' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-text' }) %>
+	<%- include(partialsPath + 'cpClayTbarVariantMixin', { namespace: 'subnav-tbar' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">Subnav Tbar Component Title</h4>
@@ -93,21 +27,7 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-component-title" name="clay[subnav-tbar-component-title]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-title-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-title-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-title-font-family' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-title-font-weight' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-title-padding-top' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-title-padding-right' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-title-padding-bottom' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-title-padding-left' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-title-line-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-title-margin-top' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-title-margin-right' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-title-margin-bottom' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-title-margin-left' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-title-letter-spacing' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-title-text-transform' }) %>
+	<%- include(partialsPath + 'cpClayTextTypographyMixin', { namespace: 'subnav-tbar-component-title' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">Subnav Tbar Component Link</h4>
@@ -115,58 +35,7 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-component-link" name="clay[subnav-tbar-component-link]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-align-items' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'subnav-tbar-component-link-bg' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'subnav-tbar-component-link-border-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-border-radius' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'subnav-tbar-component-link-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-display' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-font-family' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-font-weight' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-justify-content' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-line-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-margin-bottom' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-margin-left' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-margin-right' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-margin-top' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-opacity' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-padding-bottom' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-padding-left' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-padding-right' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-padding-top' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-text-align' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-text-decoration' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-text-transform' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-transition' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-vertical-align' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-width' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'subnav-tbar-component-link-hover-bg' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'subnav-tbar-component-link-hover-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-hover-opacity' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-hover-text-decoration' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-focus-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-focus-box-shadow' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-focus-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-focus-opacity' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-focus-outline' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-text-decoration' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-active-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-active-border-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-active-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-disabled-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-disabled-border-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-disabled-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-disabled-cursor' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-disabled-opacity' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-disabled-pointer-events' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-btn-focus-box-shadow' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-btn-focus-outline' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-lexicon-icon-margin-bottom' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-lexicon-icon-margin-left' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-lexicon-icon-margin-right' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-component-link-lexicon-icon-margin-top' }) %>
+	<%- include(partialsPath + 'cpClayLinkMixin', { namespace: 'subnav-tbar-component-link' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">Subnav Tbar Light</h4>
@@ -174,43 +43,7 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-light" name="clay[subnav-tbar-light]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-border-width' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-border-style' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-border-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-bg-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-item-padding-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-item-padding-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-strong-font-weight' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-btn-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-btn-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-btn-font-weight' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-btn-padding-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-btn-padding-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-btn-line-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-btn-margin-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-btn-margin-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-btn-monospaced-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-btn-monospaced-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-btn-monospaced-border-width' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-btn-monospaced-border-radius' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-btn-monospaced-padding' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-link-padding-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-link-padding-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-link-margin-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-link-margin-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-link-monospaced-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-link-monospaced-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-link-monospaced-border-width' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-link-monospaced-border-radius' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-link-monospaced-padding' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-section-text-align' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-component-action' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-component-link' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-component-title' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-light-component-text' }) %>
+	<%- include(partialsPath + 'cpClayTbarVariantMixin', { namespace: 'subnav-tbar-light' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">Subnav Tbar Primary</h4>
@@ -218,41 +51,5 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-primary" name="clay[subnav-tbar-primary]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-border-width' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-border-style' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-border-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-bg-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-item-padding-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-item-padding-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-strong-font-weight' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-btn-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-btn-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-btn-font-weight' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-btn-padding-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-btn-padding-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-btn-line-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-btn-margin-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-btn-margin-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-btn-monospaced-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-btn-monospaced-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-btn-monospaced-border-width' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-btn-monospaced-border-radius' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-btn-monospaced-padding' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-link-padding-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-link-padding-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-link-margin-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-link-margin-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-link-monospaced-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-link-monospaced-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-link-monospaced-border-width' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-link-monospaced-border-radius' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-link-monospaced-padding' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-section-text-align' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-component-action' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-component-link' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-component-title' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'subnav-tbar-primary-component-text' }) %>
+	<%- include(partialsPath + 'cpClayTbarVariantMixin', { namespace: 'subnav-tbar-primary' }) %>
 </div>

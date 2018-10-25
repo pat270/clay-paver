@@ -1,96 +1,69 @@
 <h4 class="cp-variables-form-header">Label</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-font-weight' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-line-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-padding-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-spacer-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-spacer-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-border-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-border-style' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-border-radius' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-text-transform' }) %>
+<%-
+	printInputs([
+		{ id: 'label-height', },
+		{ id: 'label-font-size', },
+		{ id: 'label-font-weight', },
+		{ id: 'label-line-height', },
+		{ id: 'label-padding-y', },
+		{ id: 'label-padding-x', },
+		{ id: 'label-spacer-y', },
+		{ id: 'label-spacer-x', },
+		{ id: 'label-border-width', },
+		{ id: 'label-border-style', },
+		{ id: 'label-border-color', color: true, },
+		{ id: 'label-border-radius', },
+		{ id: 'label-color', color: true, },
+		{ id: 'label-text-transform', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Label Link</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-link-hover-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-link-text-decoration' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-link-hover-text-decoration' }) %>
+<%-
+	printInputs([
+		{ id: 'label-link-hover-color', color: true, },
+		{ id: 'label-link-text-decoration', },
+		{ id: 'label-link-hover-text-decoration', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Label Anchor</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-anchor-text-decoration' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-anchor-hover-text-decoration' }) %>
+<%-
+	printInputs([
+		{ id: 'label-anchor-text-decoration', },
+		{ id: 'label-anchor-hover-text-decoration', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Label Lexicon Icon</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-lexicon-icon-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-lexicon-icon-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-lexicon-icon-margin-top' }) %>
+<%-
+	printInputs([
+		{ id: 'label-lexicon-icon-width', },
+		{ id: 'label-lexicon-icon-height', },
+		{ id: 'label-lexicon-icon-margin-top', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Label Item</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-item-spacer-x' }) %>
+<%-
+	printInputs([
+		{ id: 'label-item-spacer-x', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Label Dismissible</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'label-dismissible-text-transform' }) %>
+<%-
+	printInputs([
+		{ id: 'label-dismissible-text-transform', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Label Close</h4>
 <div class="cp-form-group-sass-map">
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="label-close" name="clay[label-close]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-align-items' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'label-close-bg' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'label-close-border-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-border-radius' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'label-close-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-display' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-font-family' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-font-weight' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-justify-content' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-line-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-margin-bottom' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-margin-left' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-margin-right' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-margin-top' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-opacity' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-padding-bottom' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-padding-left' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-padding-right' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-padding-top' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-text-align' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-text-decoration' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-text-transform' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-transition' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-vertical-align' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-width' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'label-close-hover-bg' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'label-close-hover-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-hover-opacity' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-hover-text-decoration' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-focus-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-focus-box-shadow' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-focus-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-focus-opacity' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-focus-outline' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-text-decoration' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-active-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-active-border-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-active-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-disabled-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-disabled-border-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-disabled-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-disabled-cursor' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-disabled-opacity' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-disabled-pointer-events' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-btn-focus-box-shadow' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-btn-focus-outline' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-lexicon-icon-margin-bottom' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-lexicon-icon-margin-left' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-lexicon-icon-margin-right' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-close-lexicon-icon-margin-top' }) %>
+	<%- include(partialsPath + 'cpClayLinkMixin', { namespace: 'label-close' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">Label Lg</h4>
@@ -98,94 +71,117 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="label-lg" name="clay[label-lg]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-lg-border-width' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-lg-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-lg-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-lg-line-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-lg-padding-y' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-lg-padding-x' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-lg-text-transform' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-lg-lexicon-icon-width' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-lg-lexicon-icon-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'label-lg-lexicon-icon-margin-top' }) %>
+	<%- include(partialsPath + 'cpClayLabelSizeMixin', { namespace: 'label-lg' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">Label Primary</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-primary-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-primary-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-primary-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-primary-hover-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-primary-hover-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-primary-hover-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-primary-link-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-primary-link-hover-color' }) %>
+<%-
+	printInputs([
+		{ id: 'label-primary-bg', color: true, },
+		{ id: 'label-primary-border-color', color: true, },
+		{ id: 'label-primary-color', color: true, },
+		{ id: 'label-primary-hover-bg', color: true, },
+		{ id: 'label-primary-hover-border-color', color: true, },
+		{ id: 'label-primary-hover-color', color: true, },
+		{ id: 'label-primary-link-color', color: true, },
+		{ id: 'label-primary-link-hover-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Label Secondary</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-secondary-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-secondary-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-secondary-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-secondary-hover-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-secondary-hover-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-secondary-hover-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-secondary-link-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-secondary-link-hover-color' }) %>
+<%-
+	printInputs([
+		{ id: 'label-secondary-bg', color: true, },
+		{ id: 'label-secondary-border-color', color: true, },
+		{ id: 'label-secondary-color', color: true, },
+		{ id: 'label-secondary-hover-bg', color: true, },
+		{ id: 'label-secondary-hover-border-color', color: true, },
+		{ id: 'label-secondary-hover-color', color: true, },
+		{ id: 'label-secondary-link-color', color: true, },
+		{ id: 'label-secondary-link-hover-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Label Success</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-success-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-success-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-success-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-success-hover-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-success-hover-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-success-hover-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-success-link-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-success-link-hover-color' }) %>
+<%-
+	printInputs([
+		{ id: 'label-success-bg', color: true, },
+		{ id: 'label-success-border-color', color: true, },
+		{ id: 'label-success-color', color: true, },
+		{ id: 'label-success-hover-bg', color: true, },
+		{ id: 'label-success-hover-border-color', color: true, },
+		{ id: 'label-success-hover-color', color: true, },
+		{ id: 'label-success-link-color', color: true, },
+		{ id: 'label-success-link-hover-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Label Info</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-info-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-info-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-info-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-info-hover-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-info-hover-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-info-hover-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-info-link-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-info-link-hover-color' }) %>
+<%-
+	printInputs([
+		{ id: 'label-info-bg', color: true, },
+		{ id: 'label-info-border-color', color: true, },
+		{ id: 'label-info-color', color: true, },
+		{ id: 'label-info-hover-bg', color: true, },
+		{ id: 'label-info-hover-border-color', color: true, },
+		{ id: 'label-info-hover-color', color: true, },
+		{ id: 'label-info-link-color', color: true, },
+		{ id: 'label-info-link-hover-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Label Warning</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-warning-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-warning-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-warning-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-warning-hover-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-warning-hover-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-warning-hover-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-warning-link-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-warning-link-hover-color' }) %>
+<%-
+	printInputs([
+		{ id: 'label-warning-bg', color: true, },
+		{ id: 'label-warning-border-color', color: true, },
+		{ id: 'label-warning-color', color: true, },
+		{ id: 'label-warning-hover-bg', color: true, },
+		{ id: 'label-warning-hover-border-color', color: true, },
+		{ id: 'label-warning-hover-color', color: true, },
+		{ id: 'label-warning-link-color', color: true, },
+		{ id: 'label-warning-link-hover-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Label Danger</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-danger-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-danger-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-danger-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-danger-hover-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-danger-hover-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-danger-hover-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-danger-link-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-danger-link-hover-color' }) %>
+<%-
+	printInputs([
+		{ id: 'label-danger-bg', color: true, },
+		{ id: 'label-danger-border-color', color: true, },
+		{ id: 'label-danger-color', color: true, },
+		{ id: 'label-danger-hover-bg', color: true, },
+		{ id: 'label-danger-hover-border-color', color: true, },
+		{ id: 'label-danger-hover-color', color: true, },
+		{ id: 'label-danger-link-color', color: true, },
+		{ id: 'label-danger-link-hover-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Label Light</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-light-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-light-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-light-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-light-hover-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-light-hover-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-light-hover-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-light-link-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-light-link-hover-color' }) %>
+<%-
+	printInputs([
+		{ id: 'label-light-bg', color: true, },
+		{ id: 'label-light-border-color', color: true, },
+		{ id: 'label-light-color', color: true, },
+		{ id: 'label-light-hover-bg', color: true, },
+		{ id: 'label-light-hover-border-color', color: true, },
+		{ id: 'label-light-hover-color', color: true, },
+		{ id: 'label-light-link-color', color: true, },
+		{ id: 'label-light-link-hover-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Label Dark</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-dark-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-dark-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-dark-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-dark-hover-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-dark-hover-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-dark-hover-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-dark-link-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'label-dark-link-hover-color' }) %>
+<%-
+	printInputs([
+		{ id: 'label-dark-bg', color: true, },
+		{ id: 'label-dark-border-color', color: true, },
+		{ id: 'label-dark-color', color: true, },
+		{ id: 'label-dark-hover-bg', color: true, },
+		{ id: 'label-dark-hover-border-color', color: true, },
+		{ id: 'label-dark-hover-color', color: true, },
+		{ id: 'label-dark-link-color', color: true, },
+		{ id: 'label-dark-link-hover-color', color: true, },
+	]);
+%>

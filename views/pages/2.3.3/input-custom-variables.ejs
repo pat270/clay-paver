@@ -1,79 +1,151 @@
 <h4 class="cp-variables-form-header">Custom Control Description</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-description-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-description-padding-left' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-description-cursor' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-control-description-font-size', },
+		{ id: 'custom-control-description-padding-left', },
+		{ id: 'custom-control-description-cursor', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Custom Control Description Disabled</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-description-disabled-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-description-disabled-cursor' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-control-description-disabled-color', color: true, },
+		{ id: 'custom-control-description-disabled-cursor', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Custom Control</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-spacer-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-gutter' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-control-spacer-x', },
+		{ id: 'custom-control-gutter', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Custom Control Indicator</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-border-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-border-style' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-bg-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-box-shadow' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-control-indicator-size', },
+		{ id: 'custom-control-indicator-border-width', },
+		{ id: 'custom-control-indicator-border-style', },
+		{ id: 'custom-control-indicator-border-color', color: true, },
+		{ id: 'custom-control-indicator-bg', color: true, },
+		{ id: 'custom-control-indicator-bg-size', },
+		{ id: 'custom-control-indicator-box-shadow', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Custom Control Indicator Focus</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-focus-box-shadow' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-control-indicator-focus-box-shadow', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Custom Control Indicator Active</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-active-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-active-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-active-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-active-box-shadow' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-control-indicator-active-border-color', color: true, },
+		{ id: 'custom-control-indicator-active-bg', color: true, },
+		{ id: 'custom-control-indicator-active-color', color: true, },
+		{ id: 'custom-control-indicator-active-box-shadow', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Custom Control Indicator Indeterminate</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-indeterminate-border-color' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-control-indicator-indeterminate-border-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Custom Control Indicator Disabled</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-disabled-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-disabled-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-disabled-cursor' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-control-indicator-disabled-border-color', color: true, },
+		{ id: 'custom-control-indicator-disabled-bg', color: true, },
+		{ id: 'custom-control-indicator-disabled-cursor', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Custom Control Indicator Checked</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-checked-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-checked-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-checked-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-checked-box-shadow' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-control-indicator-checked-border-color', color: true, },
+		{ id: 'custom-control-indicator-checked-color', color: true, },
+		{ id: 'custom-control-indicator-checked-bg', color: true, },
+		{ id: 'custom-control-indicator-checked-box-shadow', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Custom Control Indicator Checked Active</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-active-checked-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-active-checked-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-control-indicator-active-checked-border-color', color: true, },
+		{ id: 'custom-control-indicator-active-checked-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Custom Control Indicator Checked Disabled</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-disabled-checked-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-control-indicator-disabled-checked-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-control-indicator-disabled-checked-border-color', color: true, },
+		{ id: 'custom-control-indicator-disabled-checked-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Custom Checkbox Indicator</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-checkbox-indicator-border-radius' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-checkbox-indicator-border-radius', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Custom Checkbox Indicator Indeterminate</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-checkbox-indicator-icon-indeterminate' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-checkbox-indicator-icon-indeterminate-bg-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-checkbox-indicator-indeterminate-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-checkbox-indicator-indeterminate-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-checkbox-indicator-indeterminate-box-shadow' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-checkbox-indicator-icon-indeterminate', },
+		{ id: 'custom-checkbox-indicator-icon-indeterminate-bg-size', },
+		{ id: 'custom-checkbox-indicator-indeterminate-color', color: true, },
+		{ id: 'custom-checkbox-indicator-indeterminate-bg', color: true, },
+		{ id: 'custom-checkbox-indicator-indeterminate-box-shadow', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Custom Checkbox Indicator Checked</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-checkbox-indicator-icon-checked' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-checkbox-indicator-icon-checked-bg-size' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-checkbox-indicator-icon-checked', },
+		{ id: 'custom-checkbox-indicator-icon-checked-bg-size', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Custom Radio Indicator</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-radio-indicator-border-radius' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-radio-indicator-border-radius', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Custom Radio Indicator Disabled</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-radio-indicator-disabled-border-color' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-radio-indicator-disabled-border-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Custom Radio Indicator Checked</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-radio-indicator-icon-checked' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-radio-indicator-icon-checked-bg-size' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-radio-indicator-icon-checked', },
+		{ id: 'custom-radio-indicator-icon-checked-bg-size', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Custom Radio Indicator Checked Disabled</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'custom-radio-indicator-disabled-checked-border-color' }) %>
+<%-
+	printInputs([
+		{ id: 'custom-radio-indicator-disabled-checked-border-color', color: true, },
+	]);
+%>

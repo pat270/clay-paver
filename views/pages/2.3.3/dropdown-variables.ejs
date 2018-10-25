@@ -1,84 +1,128 @@
 <h4 class="cp-variables-form-header">Dropdown</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-min-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-min-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-max-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-max-width-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-max-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-max-height-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-font-size-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-spacer' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-border-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-border-style' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-border-radius' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-box-shadow' }) %>
+<%-
+	printInputs([
+		{ id: 'dropdown-min-width', },
+		{ id: 'dropdown-min-height', },
+		{ id: 'dropdown-max-width', },
+		{ id: 'dropdown-max-width-mobile', },
+		{ id: 'dropdown-max-height', },
+		{ id: 'dropdown-max-height-mobile', },
+		{ id: 'dropdown-font-size', },
+		{ id: 'dropdown-font-size-mobile', },
+		{ id: 'dropdown-padding-y', },
+		{ id: 'dropdown-spacer', },
+		{ id: 'dropdown-bg', color: true, },
+		{ id: 'dropdown-border-width', },
+		{ id: 'dropdown-border-style', },
+		{ id: 'dropdown-border-color', color: true, },
+		{ id: 'dropdown-border-radius', },
+		{ id: 'dropdown-box-shadow', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Dropdown Item</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-item-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-item-padding-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-item-disabled-cursor' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-item-indicator-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-item-indicator-spacer-x' }) %>
+<%-
+	printInputs([
+		{ id: 'dropdown-item-padding-y', },
+		{ id: 'dropdown-item-padding-x', },
+		{ id: 'dropdown-item-disabled-cursor', },
+		{ id: 'dropdown-item-indicator-size', },
+		{ id: 'dropdown-item-indicator-spacer-x', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Dropdown Link</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-link-font-weight' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-link-active-font-weight' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-link-hover-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-link-active-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-link-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-link-hover-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-link-active-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-link-disabled-color' }) %>
+<%-
+	printInputs([
+		{ id: 'dropdown-link-font-weight', },
+		{ id: 'dropdown-link-active-font-weight', },
+		{ id: 'dropdown-link-hover-bg', color: true, },
+		{ id: 'dropdown-link-active-bg', color: true, },
+		{ id: 'dropdown-link-color', color: true, },
+		{ id: 'dropdown-link-hover-color', color: true, },
+		{ id: 'dropdown-link-active-color', color: true, },
+		{ id: 'dropdown-link-disabled-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Dropdown Header</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-header-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-header-font-size-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-header-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-header-padding-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-header-margin-top' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-header-margin-bottom' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-header-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-header-text-transform' }) %>
+<%-
+	printInputs([
+		{ id: 'dropdown-header-font-size', },
+		{ id: 'dropdown-header-font-size-mobile', },
+		{ id: 'dropdown-header-padding-y', },
+		{ id: 'dropdown-header-padding-x', },
+		{ id: 'dropdown-header-margin-top', },
+		{ id: 'dropdown-header-margin-bottom', },
+		{ id: 'dropdown-header-color', color: true, },
+		{ id: 'dropdown-header-text-transform', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Dropdown Subheader</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-subheader-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-subheader-font-weight' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-subheader-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-subheader-padding-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-subheader-margin-top' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-subheader-margin-bottom' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-subheader-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-subheader-text-transform' }) %>
+<%-
+	printInputs([
+		{ id: 'dropdown-subheader-font-size', },
+		{ id: 'dropdown-subheader-font-weight', },
+		{ id: 'dropdown-subheader-padding-y', },
+		{ id: 'dropdown-subheader-padding-x', },
+		{ id: 'dropdown-subheader-margin-top', },
+		{ id: 'dropdown-subheader-margin-bottom', },
+		{ id: 'dropdown-subheader-color', color: true, },
+		{ id: 'dropdown-subheader-text-transform', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Dropdown Action Toggle</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-action-toggle-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-action-toggle-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-action-toggle-border-radius' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-action-toggle-disabled-cursor' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-action-toggle-disabled-opacity' }) %>
+<%-
+	printInputs([
+		{ id: 'dropdown-action-toggle-size', },
+		{ id: 'dropdown-action-toggle-font-size', },
+		{ id: 'dropdown-action-toggle-border-radius', },
+		{ id: 'dropdown-action-toggle-disabled-cursor', },
+		{ id: 'dropdown-action-toggle-disabled-opacity', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Dropdown Caption</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-caption-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-caption-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-caption-font-weight' }) %>
+<%-
+	printInputs([
+		{ id: 'dropdown-caption-color', color: true, },
+		{ id: 'dropdown-caption-font-size', },
+		{ id: 'dropdown-caption-font-weight', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Dropdown Divider</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-divider-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'dropdown-divider-bg', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Dropdown Inline Scroller</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-inline-scroller-max-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-inline-scroller-max-height-mobile' }) %>
+<%-
+	printInputs([
+		{ id: 'dropdown-inline-scroller-max-height', },
+		{ id: 'dropdown-inline-scroller-max-height-mobile', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Dropdown Wide / Full</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-wide-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-full-wide-header-spacer-y' }) %>
+<%-
+	printInputs([
+		{ id: 'dropdown-wide-width', },
+		{ id: 'dropdown-full-wide-header-spacer-y', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Dropdown Alert</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-alert-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-alert-line-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-alert-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-alert-padding-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dropdown-alert-margin' }) %>
+<%-
+	printInputs([
+		{ id: 'dropdown-alert-font-size', },
+		{ id: 'dropdown-alert-line-height', },
+		{ id: 'dropdown-alert-padding-y', },
+		{ id: 'dropdown-alert-padding-x', },
+		{ id: 'dropdown-alert-margin', },
+	]);
+%>

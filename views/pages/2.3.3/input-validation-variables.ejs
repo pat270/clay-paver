@@ -1,62 +1,94 @@
 <h4 class="cp-variables-form-header">Input Success</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-success-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-success-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-success-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-success-box-shadow' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-success-select-icon-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-success-select-icon' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-success-checkbox-label-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-success-label-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'form-feedback-valid-color' }) %>
+<%-
+	printInputs([
+		{ id: 'input-success-border-color', color: true, },
+		{ id: 'input-success-color', color: true, },
+		{ id: 'input-success-bg', color: true, },
+		{ id: 'input-success-box-shadow', },
+		{ id: 'input-success-select-icon-color', color: true, },
+		{ id: 'input-success-select-icon', },
+		{ id: 'input-success-checkbox-label-color', color: true, },
+		{ id: 'input-success-label-color', color: true, },
+		{ id: 'form-feedback-valid-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Input Success Focus</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-success-focus-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-success-focus-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-success-focus-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-success-focus-box-shadow' }) %>
+<%-
+	printInputs([
+		{ id: 'input-success-focus-border-color', color: true, },
+		{ id: 'input-success-focus-color', color: true, },
+		{ id: 'input-success-focus-bg', color: true, },
+		{ id: 'input-success-focus-box-shadow', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Input Warning</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-warning-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-warning-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-warning-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-warning-box-shadow' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-warning-select-icon-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-warning-select-icon' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-warning-checkbox-label-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-warning-label-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'form-feedback-warning-color' }) %>
+<%-
+	printInputs([
+		{ id: 'input-warning-border-color', color: true, },
+		{ id: 'input-warning-color', color: true, },
+		{ id: 'input-warning-bg', color: true, },
+		{ id: 'input-warning-box-shadow', },
+		{ id: 'input-warning-select-icon-color', color: true, },
+		{ id: 'input-warning-select-icon', },
+		{ id: 'input-warning-checkbox-label-color', color: true, },
+		{ id: 'input-warning-label-color', color: true, },
+		{ id: 'form-feedback-warning-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Input Warning Focus</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-warning-focus-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-warning-focus-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-warning-focus-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-warning-focus-box-shadow' }) %>
+<%-
+	printInputs([
+		{ id: 'input-warning-focus-border-color', color: true, },
+		{ id: 'input-warning-focus-color', color: true, },
+		{ id: 'input-warning-focus-bg', color: true, },
+		{ id: 'input-warning-focus-box-shadow', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Input Danger</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-danger-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-danger-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-danger-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-danger-box-shadow' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-danger-select-icon-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-danger-select-icon' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-danger-checkbox-label-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-danger-label-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'form-feedback-invalid-color' }) %>
+<%-
+	printInputs([
+		{ id: 'input-danger-border-color', color: true, },
+		{ id: 'input-danger-color', color: true, },
+		{ id: 'input-danger-bg', color: true, },
+		{ id: 'input-danger-box-shadow', },
+		{ id: 'input-danger-select-icon-color', color: true, },
+		{ id: 'input-danger-select-icon', },
+		{ id: 'input-danger-checkbox-label-color', color: true, },
+		{ id: 'input-danger-label-color', color: true, },
+		{ id: 'form-feedback-invalid-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Input Danger Focus</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-danger-focus-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-danger-focus-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-danger-focus-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'input-danger-focus-box-shadow' }) %>
+<%-
+	printInputs([
+		{ id: 'input-danger-focus-border-color', color: true, },
+		{ id: 'input-danger-focus-color', color: true, },
+		{ id: 'input-danger-focus-bg', color: true, },
+		{ id: 'input-danger-focus-box-shadow', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Form Feedback</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'form-feedback-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'form-feedback-font-weight' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'form-feedback-margin-top' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'form-feedback-indicator-margin-x' }) %>
+<%-
+	printInputs([
+		{ id: 'form-feedback-font-size', },
+		{ id: 'form-feedback-font-weight', },
+		{ id: 'form-feedback-margin-top', },
+		{ id: 'form-feedback-indicator-margin-x', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Form Text</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'form-text-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'form-text-font-weight' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'form-text-margin-top' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'form-text-color' }) %>
+<%-
+	printInputs([
+		{ id: 'form-text-font-size', },
+		{ id: 'form-text-font-weight', },
+		{ id: 'form-text-margin-top', },
+		{ id: 'form-text-color', color: true, },
+	]);
+%>

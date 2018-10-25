@@ -1,75 +1,126 @@
 <h4 class="cp-variables-form-header">Pagination</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-padding-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-line-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-margin-bottom' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-border-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'pagination-font-size', },
+		{ id: 'pagination-padding-y', },
+		{ id: 'pagination-padding-x', },
+		{ id: 'pagination-line-height', },
+		{ id: 'pagination-margin-bottom', },
+		{ id: 'pagination-border-width', },
+		{ id: 'pagination-border-color', color: true },
+		{ id: 'pagination-color', color: true },
+		{ id: 'pagination-bg', color: true },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Pagination Item</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-item-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-item-margin-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-item-margin-x' }) %>
+<%-
+	printInputs([
+		{ id: 'pagination-item-height', },
+		{ id: 'pagination-item-margin-y', },
+		{ id: 'pagination-item-margin-x', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Pagination Dropdown Menu</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-dropdown-menu-spacer-y' }) %>
+<%-
+	printInputs([
+		{ id: 'pagination-dropdown-menu-spacer-y', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Pagination Link</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-link-border-radius' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-link-cursor' }) %>
+<%-
+	printInputs([
+		{ id: 'pagination-link-border-radius', },
+		{ id: 'pagination-link-cursor', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Pagination Hover</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-hover-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-hover-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-hover-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'pagination-hover-border-color', color: true, },
+		{ id: 'pagination-hover-color', color: true, },
+		{ id: 'pagination-hover-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Pagination Focus</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-focus-box-shadow' }) %>
+<%-
+	printInputs([
+		{ id: 'pagination-focus-box-shadow', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Pagination Active</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-active-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-active-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-active-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'pagination-active-border-color', color: true, },
+		{ id: 'pagination-active-color', color: true, },
+		{ id: 'pagination-active-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Pagination Disabled</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-disabled-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-disabled-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-disabled-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-disabled-cursor' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-disabled-opacity' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-disabled-pointer-events' }) %>
+<%-
+	printInputs([
+		{ id: 'pagination-disabled-border-color', color: true, },
+		{ id: 'pagination-disabled-color', color: true, },
+		{ id: 'pagination-disabled-bg', color: true, },
+		{ id: 'pagination-disabled-cursor', },
+		{ id: 'pagination-disabled-opacity', },
+		{ id: 'pagination-disabled-pointer-events', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Pagination Results</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-results-color' }) %>
+<%-
+	printInputs([
+		{ id: 'pagination-results-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Pagination Items Per Page</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-items-per-page-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-items-per-page-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-items-per-page-border-radius' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-items-per-page-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-items-per-page-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'pagination-items-per-page-font-size', },
+		{ id: 'pagination-items-per-page-border-color', color: true, },
+		{ id: 'pagination-items-per-page-border-radius', },
+		{ id: 'pagination-items-per-page-color', color: true, },
+		{ id: 'pagination-items-per-page-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Pagination Items Per Page Hover</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-items-per-page-hover-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-items-per-page-hover-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-items-per-page-hover-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'pagination-items-per-page-hover-border-color', color: true, },
+		{ id: 'pagination-items-per-page-hover-color', color: true, },
+		{ id: 'pagination-items-per-page-hover-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Pagination Sm</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-font-size-sm' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-padding-y-sm' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-padding-x-sm' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-line-height-sm' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-item-height-sm' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-link-border-radius-sm' }) %>
-
+<%-
+	printInputs([
+		{ id: 'pagination-font-size-sm', },
+		{ id: 'pagination-padding-y-sm', },
+		{ id: 'pagination-padding-x-sm', },
+		{ id: 'pagination-line-height-sm', },
+		{ id: 'pagination-item-height-sm', },
+		{ id: 'pagination-link-border-radius-sm', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Pagination Lg</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-font-size-lg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-padding-y-lg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-padding-x-lg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-line-height-lg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-item-height-lg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pagination-link-border-radius-lg' }) %>
+<%-
+	printInputs([
+		{ id: 'pagination-font-size-lg', },
+		{ id: 'pagination-padding-y-lg', },
+		{ id: 'pagination-padding-x-lg', },
+		{ id: 'pagination-line-height-lg', },
+		{ id: 'pagination-item-height-lg', },
+		{ id: 'pagination-link-border-radius-lg', },
+	]);
+%>

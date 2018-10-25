@@ -4,6 +4,8 @@ const clayAvailableVersions = [];
 const express = require('express');
 const app = express();
 
+const ejs = require('ejs');
+
 const PORT = process.env.PORT || 9201;
 const server = require('http').createServer(app);
 
@@ -22,6 +24,21 @@ const sitePageCtrl = (req, res, next) => {
 
 	const prevPage = sitePages[sitePages.indexOf(page) - 1];
 	const nextPage = sitePages[sitePages.indexOf(page) + 1];
+
+	res.locals = {
+		printInputs: (arr) => {
+			var svgIconsPath = '../../../images/' + version + '/icons/icons.svg';
+
+			return ejs.renderFile(__dirname + '/views/partials/functions/printInputs.ejs', { arr: arr, svgIconsPath: svgIconsPath }, (err, str) => {
+				if (!err) {
+					return str;
+				}
+				else {
+					console.log(err.toString());
+				}
+			});
+		}
+	};
 
 	for (let i = 0; i < sitePages.length; i++) {
 		if (sitePages[i] === page) {
@@ -70,6 +87,21 @@ app.get('/:version/:page', sitePageCtrl);
 
 app.get('/:version', (req, res, next) => {
 	const version = req.params.version;
+
+	res.locals = {
+		printInputs: (arr) => {
+			var svgIconsPath = '../../../images/' + version + '/icons/icons.svg';
+
+			return ejs.renderFile(__dirname + '/views/partials/functions/printInputs.ejs', { arr: arr, svgIconsPath: svgIconsPath }, (err, str) => {
+				if (!err) {
+					return str;
+				}
+				else {
+					console.log(err.toString());
+				}
+			});
+		}
+	};
 
 	if (clayAvailableVersions.indexOf(version) === -1 && version !== clayLatestVersion) {
 		render404Ctrl(req, res, next);

@@ -1,28 +1,52 @@
 <h4 class="cp-variables-form-header">Nav Tabs</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-tabs-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-tabs-border-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-tabs-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-tabs-border-radius' }) %>
+<%-
+	printInputs([
+		{ id: 'nav-tabs-font-size', },
+		{ id: 'nav-tabs-border-width', },
+		{ id: 'nav-tabs-border-color', color: true, },
+		{ id: 'nav-tabs-border-radius', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Nav Tabs Link</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-tabs-link-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-tabs-link-padding-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-tabs-link-color' }) %>
+<%-
+	printInputs([
+		{ id: 'nav-tabs-link-padding-y', },
+		{ id: 'nav-tabs-link-padding-x', },
+		{ id: 'nav-tabs-link-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Nav Tabs Link Hover</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-tabs-link-hover-border-color' }) %>
+<%-
+	printInputs([
+		{ id: 'nav-tabs-link-hover-border-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Nav Tabs Link Active</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-tabs-link-active-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-tabs-link-active-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-tabs-link-active-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'nav-tabs-link-active-border-color', color: true, },
+		{ id: 'nav-tabs-link-active-color', color: true, },
+		{ id: 'nav-tabs-link-active-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Nav Tabs Link Show</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-tabs-link-show-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-tabs-link-show-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-tabs-link-show-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'nav-tabs-link-show-border-color', color: true, },
+		{ id: 'nav-tabs-link-show-color', color: true, },
+		{ id: 'nav-tabs-link-show-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Tab Pane</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-tabs-tab-pane-padding' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-tabs-tab-pane-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nav-tabs-tab-pane-border-radius' }) %>
+<%-
+	printInputs([
+		{ id: 'nav-tabs-tab-pane-padding', },
+		{ id: 'nav-tabs-tab-pane-bg', color: true, },
+		{ id: 'nav-tabs-tab-pane-border-radius', },
+	]);
+%>

@@ -1,42 +1,62 @@
 <h4 class="cp-variables-form-header">Toggle Switch</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-transition' }) %>
+<%-
+	printInputs([
+		{ id: 'toggle-switch-transition', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Toggle Switch Bar</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-bar-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-bar-width-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-bar-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-bar-height-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-bar-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-bar-font-size-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-bar-padding' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-bar-padding-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-bar-border-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-bar-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-bar-border-radius' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-bar-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-bar-icon-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-bar-focus-box-shadow' }) %>
+<%-
+	printInputs([
+		{ id: 'toggle-switch-bar-width', },
+		{ id: 'toggle-switch-bar-width-mobile', },
+		{ id: 'toggle-switch-bar-height', },
+		{ id: 'toggle-switch-bar-height-mobile', },
+		{ id: 'toggle-switch-bar-font-size', },
+		{ id: 'toggle-switch-bar-font-size-mobile', },
+		{ id: 'toggle-switch-bar-padding', },
+		{ id: 'toggle-switch-bar-padding-mobile', },
+		{ id: 'toggle-switch-bar-border-width', },
+		{ id: 'toggle-switch-bar-border-color', color: true, },
+		{ id: 'toggle-switch-bar-border-radius', },
+		{ id: 'toggle-switch-bar-bg', color: true, },
+		{ id: 'toggle-switch-bar-icon-color', color: true, },
+		{ id: 'toggle-switch-bar-focus-box-shadow', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Toggle Switch Button</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-button-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-button-width-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-button-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-button-font-size-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-button-border-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-button-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-button-border-radius' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-button-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-button-icon-color' }) %>
+<%-
+	printInputs([
+		{ id: 'toggle-switch-button-width', },
+		{ id: 'toggle-switch-button-width-mobile', },
+		{ id: 'toggle-switch-button-font-size', },
+		{ id: 'toggle-switch-button-font-size-mobile', },
+		{ id: 'toggle-switch-button-border-width', },
+		{ id: 'toggle-switch-button-border-color', color: true, },
+		{ id: 'toggle-switch-button-border-radius', },
+		{ id: 'toggle-switch-button-bg', color: true, },
+		{ id: 'toggle-switch-button-icon-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Toggle Switch On</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-bar-on-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-bar-on-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-bar-on-icon-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-button-on-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-button-on-border-radius' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-button-on-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-button-on-icon-color' }) %>
+<%-
+	printInputs([
+		{ id: 'toggle-switch-bar-on-border-color', color: true, },
+		{ id: 'toggle-switch-bar-on-bg', color: true, },
+		{ id: 'toggle-switch-bar-on-icon-color', color: true, },
+		{ id: 'toggle-switch-button-on-border-color', color: true, },
+		{ id: 'toggle-switch-button-on-border-radius', },
+		{ id: 'toggle-switch-button-on-bg', color: true, },
+		{ id: 'toggle-switch-button-on-icon-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Toggle Switch Disabled</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-disabled-cursor' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'toggle-switch-disabled-opacity' }) %>
+<%-
+	printInputs([
+		{ id: 'toggle-switch-disabled-cursor', },
+		{ id: 'toggle-switch-disabled-opacity', },
+	]);
+%>

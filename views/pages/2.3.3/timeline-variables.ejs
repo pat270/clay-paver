@@ -1,32 +1,60 @@
 <h4 class="cp-variables-form-header">Timeline</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-inner-spacing' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-outer-spacing' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-border-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-border-modifier' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-border-color' }) %>
+<%-
+	printInputs([
+		{ id: 'timeline-inner-spacing', },
+		{ id: 'timeline-outer-spacing', },
+		{ id: 'timeline-border-width', },
+		{ id: 'timeline-border-modifier', },
+		{ id: 'timeline-border-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Timeline Item</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-item-padding-top' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-item-padding-bottom' }) %>
+<%-
+	printInputs([
+		{ id: 'timeline-item-padding-top', },
+		{ id: 'timeline-item-padding-bottom', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Timeline Item Label</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-item-label-color' }) %>
+<%-
+	printInputs([
+		{ id: 'timeline-item-label-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Timeline Increment</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-increment-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'timeline-increment-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Timeline Icon</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-icon-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-icon-border-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-icon-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-icon-border-radius' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-icon-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'timeline-icon-size', },
+		{ id: 'timeline-icon-border-width', },
+		{ id: 'timeline-icon-border-color', color: true, },
+		{ id: 'timeline-icon-border-radius', },
+		{ id: 'timeline-icon-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Timeline Icon Active</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-icon-active-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-icon-active-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'timeline-icon-active-border-color', color: true, },
+		{ id: 'timeline-icon-active-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Timeline Spacing Xl</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-inner-spacing-xl' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-outer-spacing-xl' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'timeline-item-padding-y-xl' }) %>
+<%-
+	printInputs([
+		{ id: 'timeline-inner-spacing-xl', },
+		{ id: 'timeline-outer-spacing-xl', },
+		{ id: 'timeline-item-padding-y-xl', },
+	]);
+%>
