@@ -389,16 +389,13 @@ var ClayPaver = {
 			varVal = formValues[i].value;
 
 			variableGroup[varName] = varVal;
-
-			// last item in loop
-			if (i === (formValues.length - 1)) {
-				cpDB.setItem(
-					groupId, variableGroup
-				).then(function() {
-					ClayPaver.compileSass();
-				});
-			}
 		}
+
+		cpDB.setItem(
+			groupId, variableGroup
+		).then(function() {
+			ClayPaver.compileSass();
+		});
 	},
 
 	updateSwitchThemesDD: function() {
