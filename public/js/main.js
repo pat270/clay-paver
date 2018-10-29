@@ -541,7 +541,6 @@ doc.on('submit', '#addNewTheme', function(event) {
 doc.on('click', '#downloadVariables', function(event) {
 	event.preventDefault();
 
-	var instance = $(this);
 	var sbVariableGroup = '';
 
 	cpDB.iterate(function(value, key, iterationNumber) {
