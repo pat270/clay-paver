@@ -630,8 +630,7 @@ doc.on('change', '.cp-form-group-sass-map .cp-form-control', function(event) {
 	});
 
 	if (sb !== '') {
-		sb = '(\n' + sb;
-		sb += ')';
+		sb = '(\n' + sb + ')';
 	}
 
 	sassMapGroup.find('.cp-form-control-sass-map').val(sb);
