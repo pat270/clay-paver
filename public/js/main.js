@@ -255,12 +255,25 @@ var ClayPaverColorPicker = {
 	},
 };
 
+// Converter for px to rem
+function pxToRem(px) {
+	return (px / parseFloat(getComputedStyle(document.documentElement).fontSize)) + 'rem';
+}
+
+// Converter for rem to px
+function remToPx(rem) {
+	return (rem * parseFloat(getComputedStyle(document.documentElement).fontSize)) + 'px';
+}
 
 // Clay Paver
 
 var cpSpinnerTPL = '<div class="cp-loading"><div class="cp-loading-spinner"><div class="lds-heart-container"><div class="lds-heart"><div class="lds-heart-icon"></div></div></div><span class="cp-loading-msg">Loading...</span></div></div>';
 
 var cpStatusBarTPL = '<div class="cp-status-bar"><span class="cp-status-bar-msg"></span></div>';
+
+var PX_REM_REGEX = /^(\d+\.?(?:\d+)?)(px|rem)$/;
+
+var PX_REGEX = /^(\d+\.?(?:\d+)?)(px)$/;
 
 var SASS_VAR_REGEX = /\$(.*?)(?=:)/g;
 
@@ -699,9 +712,23 @@ doc.on('click', '#resetButton', function(event) {
 	event.preventDefault();
 
 	if (confirm('Clear ALL the variables on this page?')) {
-		$('.cp-variable-sidebar-body .cp-form-control').val('');
+		$('.cp-variable-sidebar-body .cp-form-control:not(".cp-form-control-color")').val('');
+		$('.cp-variable-sidebar-body .cp-form-control-color').val('#ffffff');
 		$(this).closest('.cp-variables-form').submit();
 	}
+});
+
+doc.on('click', '.cp-btn-convert', function(event) {
+	var input = $(this).closest('.cp-form-group-convert').find('.cp-form-control');
+	var value = input.val();
+
+	var match = value.match(PX_REM_REGEX);
+
+	var numericalValue = match[1];
+
+	var newValue = match[2] === 'px' ? pxToRem(numericalValue) : remToPx(numericalValue);
+
+	input.val(newValue);
 });
 
 var ClayPaverVariableSearch = {

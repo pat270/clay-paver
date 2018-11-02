@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 html {
 	height: 100%;
 }
@@ -230,6 +236,7 @@ a:hover {
 	display: inline-block;
 	font-size: 12px;
 	font-weight: 400;
+	height: 29px;
 	line-height: 1;
 	margin-bottom: 0;
 	padding: 6px;
@@ -414,11 +421,11 @@ a.cp-btn:focus {
 .cp-form-control {
 	border: 1px solid #c7c7c7;
 	border-radius: 2px;
-	box-sizing: border-box;
 	height: 29px;
 	font-size: 16px;
 	padding-left: 8px;
 	padding-right: 8px;
+	vertical-align: middle;
 	width: 100%;
 }
 
@@ -475,6 +482,10 @@ a.cp-btn:focus {
 	padding-right: 27px;
 }
 
+.cp-form-group-convert .cp-form-control {
+	width: calc(100% - 56px);
+}
+
 .cp-variables-form-header {
 	background-color: #393a4a;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
@@ -509,12 +520,11 @@ a.cp-btn:focus {
 .cp-app-navigation {
 	background: #b3472d;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-	box-sizing: border-box;
 	color: #FFF;
 	font-family: sans-serif;
 	height: 50px;
 	left: 0;
-	padding: 12px 15px;
+	padding: 10px 15px;
 	position: fixed;
 	right: 0;
 	top: 0;
@@ -584,7 +594,6 @@ a.cp-btn:focus {
 .cp-variable-sidebar-footer {
 	border-top: 1px solid #e0e0e0;
 	bottom: 0;
-	box-sizing: border-box;
 	height: 60px;
 	left: 0;
 	padding: 15px;
