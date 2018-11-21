@@ -1,0 +1,219 @@
+<h4 class="cp-variables-form-header">List Group</h4>
+<%-
+	printInputs([
+		{ id: 'list-group-font-size', },
+		{ id: 'list-group-border-width', },
+		{ id: 'list-group-border-color', color: true, },
+		{ id: 'list-group-border-radius', },
+		{ id: 'list-group-color', color: true, },
+		{ id: 'list-group-bg', color: true, },
+		{ id: 'list-group-box-shadow', },
+		{ id: 'list-group-margin-top', },
+		{ id: 'list-group-margin-bottom', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">List Group Hover</h4>
+<%-
+	printInputs([
+		{ id: 'list-group-hover-bg', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">List Group Active</h4>
+<%-
+	printInputs([
+		{ id: 'list-group-active-border-color', color: true, },
+		{ id: 'list-group-active-color', color: true, },
+		{ id: 'list-group-active-bg', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">List Group Disabled</h4>
+<%-
+	printInputs([
+		{ id: 'list-group-disabled-color', color: true, },
+		{ id: 'list-group-disabled-bg', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">List Group Item</h4>
+<%-
+	printInputs([
+		{ id: 'list-group-item-padding-y', },
+		{ id: 'list-group-item-padding-x', },
+		{ id: 'list-group-item-flex-align-items', },
+		{ id: 'list-group-item-flex-offset-top', },
+		{ id: 'list-group-item-flex-checkbox-offset-top', },
+		{ id: 'list-group-item-flex-list-group-title-offset-top', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">List Group Link</h4>
+<%-
+	printInputs([
+		{ id: 'list-group-link-color', color: true, },
+		{ id: 'list-group-link-hover-color', color: true, },
+		{ id: 'list-group-link-active-color', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">List Group Detail</h4>
+<%-
+	printInputs([
+		{ id: 'list-group-detail-margin-top', },
+		{ id: 'list-group-detail-margin-bottom', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">List Group Notification Item</h4>
+<%-
+	printInputs([
+		{ id: 'list-group-notification-item-border-top-width', },
+		{ id: 'list-group-notification-item-border-right-width', },
+		{ id: 'list-group-notification-item-border-bottom-width', },
+		{ id: 'list-group-notification-item-border-left-width', },
+		{ id: 'list-group-notification-item-border-top-color', color: true, },
+		{ id: 'list-group-notification-item-border-right-color', color: true, },
+		{ id: 'list-group-notification-item-border-bottom-color', color: true, },
+		{ id: 'list-group-notification-item-border-left-color', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">List Group Notification Item Active</h4>
+<%-
+	printInputs([
+		{ id: 'list-group-notification-item-active-border-top-color', color: true, },
+		{ id: 'list-group-notification-item-active-border-right-color', color: true, },
+		{ id: 'list-group-notification-item-active-border-bottom-color', color: true, },
+		{ id: 'list-group-notification-item-active-border-left-color', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">List Group Notification Item</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-notification-item" name="clay[list-group-notification-item]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayListGroupItemNotificationVariantMixin', { namespace: 'list-group-notification-item' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Notification Item Primary</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-notification-item-primary" name="clay[list-group-notification-item-primary]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayListGroupItemNotificationVariantMixin', { namespace: 'list-group-notification-item-primary' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Header</h4>
+<%-
+	printInputs([
+		{ id: 'list-group-header-padding-y', },
+		{ id: 'list-group-header-padding-x', },
+		{ id: 'list-group-header-bg', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">List Group Header Title</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-header-title" name="clay[list-group-header-title]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-header-title' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Title</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-title" name="clay[list-group-title]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-title' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Title Active</h4>
+<%-
+	printInputs([
+		{ id: 'list-group-title-active-color', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">List Group Title Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-title-link" name="clay[list-group-title-link]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'list-group-title-link' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Subtitle</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-subtitle" name="clay[list-group-subtitle]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-subtitle' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Subtitle Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-subtitle-link" name="clay[list-group-subtitle-link]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'list-group-subtitle-link' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Text</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-text" name="clay[list-group-text]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-text' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Text Active</h4>
+<%-
+	printInputs([
+		{ id: 'list-group-text-active-color', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">List Group Text Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-text-link" name="clay[list-group-text-link]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'list-group-text-link' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Subtext</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-subtext" name="clay[list-group-subtext]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-subtext' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Subtext Active</h4>
+<%-
+	printInputs([
+		{ id: 'list-group-subtext-active-color', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">List Group Subtext Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="list-group-subtext-link" name="clay[list-group-subtext-link]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'list-group-subtext-link' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">List Group Item Action</h4>
+<%-
+	printInputs([
+		{ id: 'list-group-action-color', color: true, },
+		{ id: 'list-group-action-hover-color', color: true, },
+		{ id: 'list-group-action-active-color', color: true, },
+		{ id: 'list-group-action-active-bg', color: true, },
+	]);
+%>

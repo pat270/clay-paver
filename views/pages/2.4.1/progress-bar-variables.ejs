@@ -1,0 +1,95 @@
+<h4 class="cp-variables-form-header">Progress</h4>
+<%-
+	printInputs([
+		{ id: 'progress-min-width', },
+		{ id: 'progress-height', },
+		{ id: 'progress-font-size', },
+		{ id: 'progress-border-radius', },
+		{ id: 'progress-bg', color: true, },
+		{ id: 'progress-box-shadow', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Progress Bar</h4>
+<%-
+	printInputs([
+		{ id: 'progress-bar-color', color: true, },
+		{ id: 'progress-bar-bg', color: true, },
+		{ id: 'progress-bar-box-shadow', },
+		{ id: 'progress-bar-animation-timing', },
+		{ id: 'progress-bar-transition', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Progress Group Stacked</h4>
+<%-
+	printInputs([
+		{ id: 'progress-group-stacked-progress-margin-top', },
+		{ id: 'progress-group-stacked-progress-margin-bottom', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Progress Group Addon</h4>
+<%-
+	printInputs([
+		{ id: 'progress-group-addon-font-size', },
+		{ id: 'progress-group-addon-font-weight', },
+		{ id: 'progress-group-addon-spacer-x', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Progress Group Feedback</h4>
+<%-
+	printInputs([
+		{ id: 'progress-group-feedback-color', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Progress Group Subtitle</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="progress-group-subtitle" name="clay[progress-group-subtitle]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'progress-group-subtitle' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Progress Lg</h4>
+<%-
+	printInputs([
+		{ id: 'progress-height-lg', },
+		{ id: 'progress-font-size-lg', },
+		{ id: 'progress-border-radius-lg', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Progress Success</h4>
+<%-
+	printInputs([
+		{ id: 'progress-bar-success-bg', color: true, },
+		{ id: 'progress-group-feedback-success-color', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Progress Info</h4>
+<%-
+	printInputs([
+		{ id: 'progress-bar-info-bg', color: true, },
+		{ id: 'progress-group-feedback-info-color', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Progress Warning</h4>
+<%-
+	printInputs([
+		{ id: 'progress-bar-warning-bg', color: true, },
+		{ id: 'progress-group-feedback-warning-color', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Progress Danger</h4>
+<%-
+	printInputs([
+		{ id: 'progress-bar-danger-bg', color: true, },
+		{ id: 'progress-group-feedback-danger-color', color: true, },
+	]);
+%>

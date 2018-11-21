@@ -1,0 +1,108 @@
+<h4 class="cp-variables-form-header">Panel</h4>
+<%-
+	printInputs([
+		{ id: 'panel-margin-bottom', },
+		{ id: 'panel-border-top-width', },
+		{ id: 'panel-border-right-width', },
+		{ id: 'panel-border-bottom-width', },
+		{ id: 'panel-border-left-width', },
+		{ id: 'panel-border-style', },
+		{ id: 'panel-border-color', color: true, },
+		{ id: 'panel-border-radius', },
+		{ id: 'panel-bg', color: true, },
+		{ id: 'panel-box-shadow', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Panel Header</h4>
+<%-
+	printInputs([
+		{ id: 'panel-header-font-size', },
+		{ id: 'panel-header-padding-y', },
+		{ id: 'panel-header-padding-x', },
+		{ id: 'panel-header-line-height', },
+		{ id: 'panel-header-border-bottom-width', },
+		{ id: 'panel-header-offset-border-radius', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Panel Header Link</h4>
+<%-
+	printInputs([
+		{ id: 'panel-header-link-text-decoration', },
+		{ id: 'panel-header-link-hover-text-decoration', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Panel Header Collapse Icon</h4>
+<%-
+	printInputs([
+		{ id: 'panel-header-collapse-icon-font-size', },
+		{ id: 'panel-header-collapse-icon-padding-left', },
+		{ id: 'panel-header-collapse-icon-padding-right', },
+		{ id: 'panel-header-collapse-icon-top', },
+		{ id: 'panel-header-collapse-icon-right', },
+		{ id: 'panel-header-collapse-icon-bottom', },
+		{ id: 'panel-header-collapse-icon-left', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Panel Title</h4>
+<%-
+	printInputs([
+		{ id: 'panel-title-font-size', },
+		{ id: 'panel-title-font-weight', },
+		{ id: 'panel-title-text-transform', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Panel Body</h4>
+<%-
+	printInputs([
+		{ id: 'panel-body-padding-y', },
+		{ id: 'panel-body-padding-x', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Panel Footer</h4>
+<%-
+	printInputs([
+		{ id: 'panel-footer-padding-y', },
+		{ id: 'panel-footer-padding-x', },
+		{ id: 'panel-footer-border-top-width', },
+		{ id: 'panel-footer-offset-border-radius', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Panel Group</h4>
+<%-
+	printInputs([
+		{ id: 'panel-group-panel-margin-bottom', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Panel Group Flush Panel Body</h4>
+<%-
+	printInputs([
+		{ id: 'panel-group-flush-body-padding', },
+		{ id: 'panel-group-flush-body-margin-bottom', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Panel Group Flush Panel Header Collapse Icon</h4>
+<%-
+	printInputs([
+		{ id: 'panel-group-flush-collapse-icon-padding-right', },
+		{ id: 'panel-group-flush-collapse-icon-padding-left', },
+		{ id: 'panel-group-flush-collapse-icon-right', },
+		{ id: 'panel-group-flush-collapse-icon-left', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Panel Secondary</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="panel-secondary" name="clay[panel-secondary]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayPanelVariantMixin', { namespace: 'panel-secondary' }) %>
+</div>

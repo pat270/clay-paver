@@ -1,0 +1,187 @@
+<h4 class="cp-variables-form-header">Label</h4>
+<%-
+	printInputs([
+		{ id: 'label-height', },
+		{ id: 'label-font-size', },
+		{ id: 'label-font-weight', },
+		{ id: 'label-line-height', },
+		{ id: 'label-padding-y', },
+		{ id: 'label-padding-x', },
+		{ id: 'label-spacer-y', },
+		{ id: 'label-spacer-x', },
+		{ id: 'label-border-width', },
+		{ id: 'label-border-style', },
+		{ id: 'label-border-color', color: true, },
+		{ id: 'label-border-radius', },
+		{ id: 'label-color', color: true, },
+		{ id: 'label-text-transform', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Label Link</h4>
+<%-
+	printInputs([
+		{ id: 'label-link-hover-color', color: true, },
+		{ id: 'label-link-text-decoration', },
+		{ id: 'label-link-hover-text-decoration', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Label Anchor</h4>
+<%-
+	printInputs([
+		{ id: 'label-anchor-text-decoration', },
+		{ id: 'label-anchor-hover-text-decoration', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Label Lexicon Icon</h4>
+<%-
+	printInputs([
+		{ id: 'label-lexicon-icon-width', },
+		{ id: 'label-lexicon-icon-height', },
+		{ id: 'label-lexicon-icon-margin-top', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Label Item</h4>
+<%-
+	printInputs([
+		{ id: 'label-item-spacer-x', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Label Dismissible</h4>
+<%-
+	printInputs([
+		{ id: 'label-dismissible-text-transform', },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Label Close</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="label-close" name="clay[label-close]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'label-close' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Label Lg</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="label-lg" name="clay[label-lg]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLabelSizeMixin', { namespace: 'label-lg' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Label Primary</h4>
+<%-
+	printInputs([
+		{ id: 'label-primary-bg', color: true, },
+		{ id: 'label-primary-border-color', color: true, },
+		{ id: 'label-primary-color', color: true, },
+		{ id: 'label-primary-hover-bg', color: true, },
+		{ id: 'label-primary-hover-border-color', color: true, },
+		{ id: 'label-primary-hover-color', color: true, },
+		{ id: 'label-primary-link-color', color: true, },
+		{ id: 'label-primary-link-hover-color', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Label Secondary</h4>
+<%-
+	printInputs([
+		{ id: 'label-secondary-bg', color: true, },
+		{ id: 'label-secondary-border-color', color: true, },
+		{ id: 'label-secondary-color', color: true, },
+		{ id: 'label-secondary-hover-bg', color: true, },
+		{ id: 'label-secondary-hover-border-color', color: true, },
+		{ id: 'label-secondary-hover-color', color: true, },
+		{ id: 'label-secondary-link-color', color: true, },
+		{ id: 'label-secondary-link-hover-color', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Label Success</h4>
+<%-
+	printInputs([
+		{ id: 'label-success-bg', color: true, },
+		{ id: 'label-success-border-color', color: true, },
+		{ id: 'label-success-color', color: true, },
+		{ id: 'label-success-hover-bg', color: true, },
+		{ id: 'label-success-hover-border-color', color: true, },
+		{ id: 'label-success-hover-color', color: true, },
+		{ id: 'label-success-link-color', color: true, },
+		{ id: 'label-success-link-hover-color', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Label Info</h4>
+<%-
+	printInputs([
+		{ id: 'label-info-bg', color: true, },
+		{ id: 'label-info-border-color', color: true, },
+		{ id: 'label-info-color', color: true, },
+		{ id: 'label-info-hover-bg', color: true, },
+		{ id: 'label-info-hover-border-color', color: true, },
+		{ id: 'label-info-hover-color', color: true, },
+		{ id: 'label-info-link-color', color: true, },
+		{ id: 'label-info-link-hover-color', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Label Warning</h4>
+<%-
+	printInputs([
+		{ id: 'label-warning-bg', color: true, },
+		{ id: 'label-warning-border-color', color: true, },
+		{ id: 'label-warning-color', color: true, },
+		{ id: 'label-warning-hover-bg', color: true, },
+		{ id: 'label-warning-hover-border-color', color: true, },
+		{ id: 'label-warning-hover-color', color: true, },
+		{ id: 'label-warning-link-color', color: true, },
+		{ id: 'label-warning-link-hover-color', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Label Danger</h4>
+<%-
+	printInputs([
+		{ id: 'label-danger-bg', color: true, },
+		{ id: 'label-danger-border-color', color: true, },
+		{ id: 'label-danger-color', color: true, },
+		{ id: 'label-danger-hover-bg', color: true, },
+		{ id: 'label-danger-hover-border-color', color: true, },
+		{ id: 'label-danger-hover-color', color: true, },
+		{ id: 'label-danger-link-color', color: true, },
+		{ id: 'label-danger-link-hover-color', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Label Light</h4>
+<%-
+	printInputs([
+		{ id: 'label-light-bg', color: true, },
+		{ id: 'label-light-border-color', color: true, },
+		{ id: 'label-light-color', color: true, },
+		{ id: 'label-light-hover-bg', color: true, },
+		{ id: 'label-light-hover-border-color', color: true, },
+		{ id: 'label-light-hover-color', color: true, },
+		{ id: 'label-light-link-color', color: true, },
+		{ id: 'label-light-link-hover-color', color: true, },
+	]);
+%>
+
+<h4 class="cp-variables-form-header">Label Dark</h4>
+<%-
+	printInputs([
+		{ id: 'label-dark-bg', color: true, },
+		{ id: 'label-dark-border-color', color: true, },
+		{ id: 'label-dark-color', color: true, },
+		{ id: 'label-dark-hover-bg', color: true, },
+		{ id: 'label-dark-hover-border-color', color: true, },
+		{ id: 'label-dark-hover-color', color: true, },
+		{ id: 'label-dark-link-color', color: true, },
+		{ id: 'label-dark-link-hover-color', color: true, },
+	]);
+%>
