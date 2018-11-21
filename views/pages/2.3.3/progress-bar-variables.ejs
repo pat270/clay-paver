@@ -50,17 +50,17 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="progress-group-subtitle" name="clay[progress-group-subtitle]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpClayLinkMixin', { namespace: 'progress-group-subtitle' }) %>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'progress-group-subtitle' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">Progress Lg</h4>
 <%-
 	printInputs([
+		{ id: 'progress-height-lg', },
+		{ id: 'progress-font-size-lg', },
+		{ id: 'progress-border-radius-lg', },
 	]);
 %>
-<%- include(partialsPath + 'cpTextInput', { id: 'progress-height-lg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'progress-font-size-lg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'progress-border-radius-lg' }) %>
 
 <h4 class="cp-variables-form-header">Progress Success</h4>
 <%-

@@ -95,7 +95,7 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="list-group-notification-item" name="clay[list-group-notification-item]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpClayListGroupItemNotificationVariantMixin', { namespace: 'list-group-notification-item' }) %>
+	<%- include(mixinsPath + 'cpClayListGroupItemNotificationVariantMixin', { namespace: 'list-group-notification-item' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">List Group Notification Item Primary</h4>
@@ -103,7 +103,7 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="list-group-notification-item-primary" name="clay[list-group-notification-item-primary]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpClayListGroupItemNotificationVariantMixin', { namespace: 'list-group-notification-item-primary' }) %>
+	<%- include(mixinsPath + 'cpClayListGroupItemNotificationVariantMixin', { namespace: 'list-group-notification-item-primary' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">List Group Header</h4>
@@ -120,7 +120,7 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="list-group-header-title" name="clay[list-group-header-title]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-header-title' }) %>
+	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-header-title' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">List Group Title</h4>
@@ -128,7 +128,7 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="list-group-title" name="clay[list-group-title]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-title' }) %>
+	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-title' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">List Group Title Active</h4>
@@ -143,7 +143,7 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="list-group-title-link" name="clay[list-group-title-link]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpClayLinkMixin', { namespace: 'list-group-title-link' }) %>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'list-group-title-link' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">List Group Subtitle</h4>
@@ -151,7 +151,7 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="list-group-subtitle" name="clay[list-group-subtitle]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-subtitle' }) %>
+	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-subtitle' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">List Group Subtitle Link</h4>
@@ -159,7 +159,7 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="list-group-subtitle-link" name="clay[list-group-subtitle-link]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpClayLinkMixin', { namespace: 'list-group-subtitle-link' }) %>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'list-group-subtitle-link' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">List Group Text</h4>
@@ -167,18 +167,22 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="list-group-text" name="clay[list-group-text]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-text' }) %>
+	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-text' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">List Group Text Active</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'list-group-text-active-color' }) %>
+<%-
+	printInputs([
+		{ id: 'list-group-text-active-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">List Group Text Link</h4>
 <div class="cp-form-group-sass-map">
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="list-group-text-link" name="clay[list-group-text-link]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpClayLinkMixin', { namespace: 'list-group-text-link' }) %>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'list-group-text-link' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">List Group Subtext</h4>
@@ -186,18 +190,22 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="list-group-subtext" name="clay[list-group-subtext]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-subtext' }) %>
+	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-subtext' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">List Group Subtext Active</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'list-group-subtext-active-color' }) %>
+<%-
+	printInputs([
+		{ id: 'list-group-subtext-active-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">List Group Subtext Link</h4>
 <div class="cp-form-group-sass-map">
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="list-group-subtext-link" name="clay[list-group-subtext-link]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpClayLinkMixin', { namespace: 'list-group-subtext-link' }) %>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'list-group-subtext-link' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">List Group Item Action</h4>
