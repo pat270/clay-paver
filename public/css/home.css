@@ -44,12 +44,24 @@ a { text-decoration: none; }
 }
 
 .site-navigation {
+	max-width: 811px;
 	text-align: center;
 }
 
 .version-divider {
 	margin-bottom: 1rem;
 	margin-top: 1rem;
+}
+
+.older-versions {
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.older-versions .cp-btn {
+	margin-bottom: 4px;
+	margin-right: 4px;
 }
 
 .cp-img-fluid {

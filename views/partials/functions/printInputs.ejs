@@ -1,5 +1,14 @@
 <%
 	for (let i = 0; i < arr.length; i++) {
+		if (arr[i].header) {
+%>
+
+			<h4 class="cp-variables-form-header"><%= arr[i].header.replace(/-/g, ' ') %></h4>
+
+<%
+			continue;
+		}
+
 		if (arr[i].title) {
 %>
 

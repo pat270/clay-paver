@@ -280,24 +280,24 @@ var ClayPaver = {
 					}
 				}
 			}).then(function() {
-				var atlasFontAwesome = $('#atlasFontAwesome');
+				var atlasAll = $('#atlasAll');
 
 				sass.writeFile('_custom-variables.scss', sbVariableGroup);
 
-				if (atlasFontAwesome.length) {
+				if (atlasAll.length) {
 					setTimeout(function() {
 						ClayPaver.showStatusBar('Compiling ' + value + ' Sass...');
 					}, 750);
 				}
 
-				sass.compile('@import "clay-bootstrap-functions";@import "custom-variables";@import "atlas-all";', function(result) {
+				sass.compile('@import "clay-bootstrap-functions";@import "custom-variables";@import "atlas-all";@import "_cp-site-stuff";', function(result) {
 					ClayPaver.showLoadingMsg('');
 
-					if (atlasFontAwesome.length) {
-						$('#atlasFontAwesome').html(result.text);
+					if (atlasAll.length) {
+						$('#atlasAll').html(result.text);
 					}
 					else {
-						$('head').prepend('<style id="atlasFontAwesome">' + result.text + '</style>');
+						$('head').prepend('<style id="atlasAll">' + result.text + '</style>');
 					}
 
 					if (result.status) {
@@ -467,6 +467,7 @@ if (!sass) {
 	var preloadFiles = [
 		'clay-bootstrap-functions.scss',
 		'atlas-all.scss',
+		'_cp-site-stuff.scss',
 	];
 
 	sass.preloadFiles(preloadBase, preloadDir, preloadFiles, function callback() {

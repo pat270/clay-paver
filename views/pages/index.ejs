@@ -24,18 +24,13 @@
 			</div>
 			<% if (clayAvailableVersions.length !== 0) { %>
 				<div class="version-divider">or</div>
-				<div class="dropdown">
-					<a class="cp-btn cp-btn-primary" data-toggle="dropdown" href="">
-						Select Version
-						<svg aria-hidden="true" class="lexicon-icon lexicon-icon-angle-down" focusable="false">
-							<use xlink:href="/images/icons/icons.svg#angle-down" />
-						</svg>
-					</a>
-					<div class="dropdown-menu">
-						<% for(var i = 0; i < clayAvailableVersions.length; i++) { %>
-							<a class="dropdown-item" href="/<%- clayAvailableVersions[i] %>/"><%- clayAvailableVersions[i] %></a>
-						<% } %>
-					</div>
+
+				<div class="older-versions">
+					<% for(var i = 0; i < clayAvailableVersions.length; i++) { %>
+						<a class="cp-btn cp-btn-primary" href="/<%- clayAvailableVersions[i] %>/"><%- clayAvailableVersions[i] %></a>
+					<% } %>
+				</div>
+
 				</div>
 			<% } %>
 		</div>
