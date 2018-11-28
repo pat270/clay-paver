@@ -73,6 +73,13 @@ const render404Ctrl = (req, res, next) => {
 	});
 }
 
+app.get('/changelog', (req, res, next) => {
+	res.render('pages/changelog', {
+		clayLatestVersion: clayLatestVersion,
+		clayAvailableVersions: clayAvailableVersions,
+	});
+});
+
 app.get('/:version/import', (req, res, next) => {
 	const version = req.params.version;
 

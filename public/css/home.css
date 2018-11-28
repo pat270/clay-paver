@@ -25,6 +25,42 @@ body {
 	justify-content: center;
 }
 
+.cp-changelog {
+	background-color: #df5833;
+	overflow: auto;
+}
+
+.cp-changelog #main {
+	align-items: flex-start;
+	background: none;
+	height: auto;
+	justify-content: flex-start;
+}
+
+.cp-changelog-container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+	width: 100%;
+}
+
+.cp-changelog-container .site-title {
+	margin-top: 2rem;
+	text-align: left;
+}
+
+.cp-changelog-list li {
+	margin-bottom: 8px;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.cp-changelog-list .cp-changelog-list-title {
+	font-size: 2rem;
+	letter-spacing: 1px;
+	list-style: none;
+	text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+
 a { text-decoration: none; }
 
 .cp-github-logo {
