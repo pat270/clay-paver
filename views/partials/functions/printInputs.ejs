@@ -124,6 +124,393 @@
 		"headings-color": {
 			tooltip: "Sets the `color` on heading elements (e.g., `h#` elements and `.h#` classes).",
 		},
+		"h1-font-size-mobile": {
+			tooltip: "Sets the `font-size` on the `h1` element at max width `$scaling-breakpoint-down` (sm or 767px). The setting `$enable-scaling-components` must be set to `true`.",
+		},
+		"h2-font-size-mobile": {
+			tooltip: "Sets the `font-size` on the `h2` element at max width `$scaling-breakpoint-down` (sm or 767px). The setting `$enable-scaling-components` must be set to `true`.",
+		},
+		"h3-font-size-mobile": {
+			tooltip: "Sets the `font-size` on the `h3` element at max width `$scaling-breakpoint-down` (sm or 767px). The setting `$enable-scaling-components` must be set to `true`.",
+		},
+		"h4-font-size-mobile": {
+			tooltip: "Sets the `font-size` on the `h4` element at max width `$scaling-breakpoint-down` (sm or 767px). The setting `$enable-scaling-components` must be set to `true`.",
+		},
+		"h5-font-size-mobile": {
+			tooltip: "Sets the `font-size` on the `h5` element at max width `$scaling-breakpoint-down` (sm or 767px). The setting `$enable-scaling-components` must be set to `true`.",
+		},
+		"h6-font-size-mobile": {
+			tooltip: "Sets the `font-size` on the `h6` element at max width `$scaling-breakpoint-down` (sm or 767px). The setting `$enable-scaling-components` must be set to `true`.",
+		},
+		"small-font-size": {
+			tooltip: "Sets the `font-size` on `&lt;small&gt;`. The value should be a `percent` or `em`. This is `80%` by default.",
+		},
+		"lexicon-icon-size": {
+			tooltip: "Globally sets the width and height for `.lexicon-icon`. This is `1em` by default. For changing the size of icons in specific components, it is better to modify the `font-size` on the parent element.",
+		},
+		"autofit-col-expand-min-width": {
+			tooltip: "Sets the minimum width on `.autofit-col-expand`. It is generally not a good idea to change this value for a specific use case.",
+		},
+		"autofit-padded-col-padding-y": {
+			tooltip: "Sets `padding-top` and `padding-bottom` on `.autofit-padded > .autofit-col`.",
+		},
+		"autofit-padded-col-padding-x": {
+			tooltip: "Sets `padding-left` and `padding-right` on `.autofit-padded > .autofit-col`.",
+		},
+		"inline-item-spacer-x": {
+			tooltip: "Sets the space between each `.inline-item`. This is generally used in `button`, `a`, `.sticker`, and `headings`.",
+		},
+		"inline-item-lexicon-icon-margin-top": {
+			tooltip: "Sets `margin-top` on `.lexicon-icon` that is nested inside an `.inline-item`.",
+		},
+		"bg-checkered-fg": {
+			tooltip: "Sets the foreground color on `.bg-checkered`. Use `background-color` on `.bg-checkered` to set a different color for the alternate squares.",
+		},
+		"breadcrumb-divider": {
+			tooltip: "The character to use as the breadcrumb divider, must be wrapped in double quotes. Set `breadcrumb-divider-svg-icon to `false` before applying this.",
+		},
+		"breadcrumb-divider-svg-icon": {
+			tooltip: "Sets the SVG icon to use as the breadcrumb divider. The value should be entered as `clay-icon(LEXICON_ICON_NAME, COLOR)` or using `clay-svg-url(THE_SVG)`. Set this to `false` and use `breadcrumb-divider` to use a character as the divider.",
+		},
+		"input-select-icon": {
+			tooltip: "Sets the `background-image` on `select.form-control`.",
+		},
+		"input-select-bg": {
+			tooltip: "Sets the `background-color` on `select.form-control`.",
+		},
+		"input-select-bg-position": {
+			tooltip: "Sets the `background-position` on `select.form-control`.",
+		},
+		"input-select-bg-size": {
+			tooltip: "Sets the `background-size` on `select.form-control`.",
+		},
+		"input-select-icon-focus": {
+			tooltip: "Sets the `background-image` on `select.form-control:focus`.",
+		},
+		"input-select-focus-bg": {
+			tooltip: "Sets the `background-color` on `select.form-control:focus`.",
+		},
+		"input-select-icon-disabled": {
+			tooltip: "Sets the `background-image` on `select.form-control:disabled`.",
+		},
+		"custom-control-description-font-size": {
+			tooltip: "Sets the `font-size` for Custom Checkbox / Radio labels.",
+		},
+		"custom-control-description-padding-left": {
+			tooltip: "Sets the space between the Custom Checkbox / Radio and label.",
+		},
+		"custom-control-spacer-x": {
+			tooltip: "Sets the space between each `.custom-control-inline`.",
+		},
+		"custom-control-indicator-size": {
+			tooltip: "Sets the `width` and `height` of the Custom Checkbox / Radio.",
+		},
+		"custom-control-indicator-bg": {
+			tooltip: "Sets the `background-color` on the unchecked state of a Custom Checkbox / Radio.",
+		},
+		"custom-control-indicator-box-shadow": {
+			tooltip: "Sets the `box-shadow` on the unchecked state of a Custom Checkbox / Radio.",
+		},
+		"custom-control-indicator-active-border-color": {
+			tooltip: "Sets the `border-color` on the unchecked active state (mousedown) of a Custom Checkbox / Radio.",
+		},
+		"custom-control-indicator-active-bg": {
+			tooltip: "Sets the `background-color` on the unchecked active state (mousedown) of a Custom Checkbox / Radio.",
+		},
+		"custom-control-indicator-active-color": {
+			tooltip: "Sets the `color` on the unchecked active state (mousedown) of a Custom Checkbox / Radio.",
+		},
+		"custom-control-indicator-active-box-shadow": {
+			tooltip: "Sets the `box-shadow` on the unchecked active state (mousedown) of a Custom Checkbox / Radio.",
+		},
+		"custom-control-indicator-disabled-border-color": {
+			tooltip: "Sets the `border-color` on the unchecked disabled state of a Custom Checkbox / Radio.",
+		},
+		"custom-control-indicator-disabled-bg": {
+			tooltip: "Sets the `background-color` on the unchecked disabled state of a Custom Checkbox / Radio.",
+		},
+		"custom-control-indicator-checked-color": {
+			tooltip: "Sets the `color` on the checked state of a Custom Checkbox / Radio.",
+		},
+		"custom-control-indicator-checked-border-color": {
+			tooltip: "Sets the `border-color` on the checked state of a Custom Checkbox / Radio.",
+		},
+		"custom-control-indicator-active-checked-border-color": {
+			tooltip: "Sets the `border-color` on the checked active state (checked mousedown) of a Custom Checkbox / Radio.",
+		},
+		"custom-control-indicator-active-checked-bg": {
+			tooltip: "Sets the `background-color` on the checked active state (checked mousedown) of a Custom Checkbox / Radio.",
+		},
+		"custom-control-indicator-disabled-checked-border-color": {
+			tooltip: "Sets the `border-color` on the checked disabled state of a Custom Checkbox / Radio.",
+		},
+		"custom-control-indicator-disabled-checked-bg": {
+			tooltip: "Sets the `background-color` on the checked disabled state of a Custom Checkbox / Radio.",
+		},
+		"custom-checkbox-indicator-border-radius": {
+			tooltip: "Sets the `border-radius` on a Custom Checkbox.",
+		},
+		"custom-checkbox-indicator-icon-indeterminate": {
+			tooltip: "Sets the `background-image` on the indeterminate state of a Custom Checkbox.",
+		},
+		"custom-checkbox-indicator-icon-indeterminate-bg-size": {
+			tooltip: "Sets the `background-size` on the indeterminate state of a Custom Checkbox.",
+		},
+		"custom-checkbox-indicator-indeterminate-color": {
+			tooltip: "Sets the `color` on the indeterminate state of a Custom Checkbox.",
+		},
+		"custom-checkbox-indicator-indeterminate-bg": {
+			tooltip: "Sets the `background-color` on the indeterminate state of a Custom Checkbox.",
+		},
+		"custom-checkbox-indicator-icon-checked": {
+			tooltip: "Sets the `background-image` on the checked state of a Custom Checkbox.",
+		},
+		"custom-checkbox-indicator-icon-checked-bg-size": {
+			tooltip: "Sets the `background-size` on the checked state of a Custom Checkbox.",
+		},
+		"custom-radio-indicator-border-radius": {
+			tooltip: "Sets the `border-radius` of a Custom Radio.",
+		},
+		"custom-radio-indicator-disabled-border-color": {
+			tooltip: "Sets the `border-color` on the unchecked disabled state of a Custom Radio.",
+		},
+		"custom-radio-indicator-icon-checked": {
+			tooltip: "Sets the `background-image` on the checked state of a Custom Radio.",
+		},
+		"custom-radio-indicator-icon-checked-bg-size": {
+			tooltip: "Sets the `background-size` on the checked state of a Custom Radio.",
+		},
+		"custom-radio-indicator-disabled-checked-border-color": {
+			tooltip: "Sets the `border-color` on the checked disabled state of a Custom Radio.",
+		},
+		"input-group-addon-min-width": {
+			tooltip: "Sets the `min-width` on `.input-group-text`.",
+		},
+		"input-group-addon-font-weight": {
+			tooltip: "Sets the `font-weight` on `.input-group-text`.",
+		},
+		"input-group-addon-padding-y": {
+			tooltip: "Sets `padding-top` and `padding-bottom` on `.input-group-text`.",
+		},
+		"input-group-addon-padding-x": {
+			tooltip: "Sets `padding-left` and `padding-right` on `.input-group-text`.",
+		},
+		"input-group-addon-border-color": {
+			tooltip: "Sets the `border-color` on `.input-group-text`.",
+		},
+		"input-group-addon-color": {
+			tooltip: "Sets the `color` on `.input-group-text`.",
+		},
+		"input-group-addon-bg": {
+			tooltip: "Sets the `background-color` on `.input-group-text`.",
+		},
+		"input-group-secondary-addon-border-width": {
+			tooltip: "Sets the `border-width` on `.input-group-text-secondary`.",
+		},
+		"input-group-secondary-addon-border-color": {
+			tooltip: "Sets the `border-color` on `.input-group-text-secondary`.",
+		},
+		"input-group-secondary-addon-color": {
+			tooltip: "Sets the `color` on `.input-group-text-secondary`.",
+		},
+		"input-group-secondary-addon-bg": {
+			tooltip: "Sets the `background-color` on `.input-group-text-secondary`.",
+		},
+		"input-group-addon-min-width-sm": {
+			tooltip: "Sets the `min-width` on `.input-group-sm .input-group-item .input-group-text`.",
+		},
+		"input-group-addon-padding-y-sm": {
+			tooltip: "Sets `padding-top` and `padding-bottom` on `.input-group-sm .input-group-item .input-group-text`.",
+		},
+		"input-group-addon-padding-x-sm": {
+			tooltip: "Sets `padding-left` and `padding-right` on `.input-group-sm .input-group-item .input-group-text`.",
+		},
+		"input-group-addon-min-width-lg": {
+			tooltip: "Sets the `min-width` on `.input-group-lg .input-group-item .input-group-text`.",
+		},
+		"input-group-addon-padding-y-lg": {
+			tooltip: "Sets `Sets `padding-top` and `padding-bottom` on `.input-group-lg .input-group-item .input-group-text`.",
+		},
+		"input-group-addon-padding-x-lg": {
+			tooltip: "Sets `padding-left` and `padding-right` on `.input-group-lg .input-group-item .input-group-text`.",
+		},
+		"input-success-select-icon": {
+			tooltip: "Sets the `background-image` on select inputs with the `.has-success` modifier.",
+		},
+		"input-success-checkbox-label-color": {
+			tooltip: "Sets the `color` on checkbox and radio input labels with the `.has-success` modifier.",
+		},
+		"input-success-label-color": {
+			tooltip: "Sets the `color` on `.has-success label`.",
+		},
+		"form-feedback-valid-color": {
+			tooltip: "Sets the `color` on `.has-success .form-feedback-item`.",
+		},
+		"input-warning-select-icon": {
+			tooltip: "Sets the `background-image` on select inputs with the `.has-warning` modifier.",
+		},
+		"input-warning-checkbox-label-color": {
+			tooltip: "Sets the `color` on checkbox and radio input labels with the `.has-warning` modifier.",
+		},
+		"input-warning-label-color": {
+			tooltip: "Sets the `color` on `.has-warning label`.",
+		},
+		"form-feedback-warning-color": {
+			tooltip: "Sets the `color` on `.has-warning .form-feedback-item`.",
+		},
+		"input-danger-select-icon": {
+			tooltip: "Sets the `background-image` on select inputs with the `.has-danger` modifier.",
+		},
+		"input-danger-checkbox-label-color": {
+			tooltip: "Sets the `color` on checkbox and radio input labels with the `.has-danger` modifier.",
+		},
+		"input-danger-label-color": {
+			tooltip: "Sets the `color` on `.has-danger label`.",
+		},
+		"form-feedback-invalid-color": {
+			tooltip: "Sets the `color` on `.has-danger .form-feedback-item`.",
+		},
+		"loading-icon-font-size": {
+			tooltip: "Sets the `width` and `height` on `.loading-animation`.",
+		},
+		"loading-icon-font-size-sm": {
+			tooltip: "Sets the `width` and `height` on `.loading-animation.loading-animation-sm`.",
+		},
+		"loading-animation-enabled": {
+			tooltip: "Set this to `false` to prevent `.loading-animation` styles from being output.",
+		},
+		"loading-animation-border-radius": {
+			tooltip: "Sets the `border-radius` on the `.loading-animation` dots.",
+		},
+		"loading-animation-color": {
+			tooltip: "Sets the `color` on the `.loading-animation` dots.",
+		},
+		"loading-animation-light-enabled": {
+			tooltip: "Set this to `false` to prevent `.loading-animation-light` styles from being output.",
+		},
+		"loading-animation-light-border-radius": {
+			tooltip: "Sets the `border-radius` on the `.loading-animation-light` dots.",
+		},
+		"loading-animation-light-color": {
+			tooltip: "Sets the `color` on the `.loading-animation-light` dots.",
+		},
+		"modal-backdrop-bg": {
+			tooltip: "Sets the `background-color` on `.modal-backdrop`.",
+		},
+		"modal-backdrop-opacity": {
+			tooltip: "Sets the `opacity` on `modal-backdrop.show`.",
+		},
+		"modal-transition": {
+			tooltip: "Sets the `transition` on `.modal.fade .modal-dialog`.",
+		},
+		"modal-dialog-margin-y-sm-up": {
+			tooltip: "Sets the `margin` on `.modal-dialog` at screen size sm and up (min-width: 576px).",
+		},
+		"modal-dialog-margin": {
+			tooltip: "Sets the `margin` on `.modal-dialog`.",
+		},
+		"modal-content-border-width": {
+			tooltip: "Sets the `border-width` on the modal, specifically on `.modal-content`.",
+		},
+		"modal-content-border-color": {
+			tooltip: "Sets the `border-color` on the modal, specifically on `.modal-content`.",
+		},
+		"modal-content-border-radius": {
+			tooltip: "Sets the `border-radius` on the modal, specifically on `.modal-content`.",
+		},
+		"modal-content-bg": {
+			tooltip: "Sets the `background-color` on the modal, specifically on `.modal-content`.",
+		},
+		"modal-content-box-shadow-sm-up": {
+			tooltip: "Sets the `box-shadow` on `.modal-content` at screen sizes sm and up (min-width: 576px).",
+		},
+		"modal-content-box-shadow-xs": {
+			tooltip: "Sets the `box-shadow` on `.modal-content` at screen sizes xs and below (max-width: 575px).",
+		},
+		"modal-inner-padding": {
+			tooltip: "Sets the `padding` on `.modal-body` and `.modal-footer`. Modal Footer's padding can be customized separately under the Modal Footer section.",
+		},
+		"modal-header-height": {
+			tooltip: "Sets a fixed `height` on `.modal-header`. Set this to `auto` if you want it to grow based on content.",
+		},
+		"modal-header-height-mobile": {
+			tooltip: "Sets a fixed `height` on `.modal-header` at screen sizes `$scaling-breakpoint-down` or `sm` (max-width: 767px).",
+		},
+		"modal-sm": {
+			tooltip: "Sets the `max-width` on `.modal-sm`, a modifier on `.modal-dialog`.",
+		},
+		"modal-md": {
+			tooltip: "Sets the `max-width` on `.modal-dialog`.",
+		},
+		"modal-lg": {
+			tooltip: "Sets the `max-width` on `.modal-lg`, a modifier on `.modal-dialog`.",
+		},
+		"modal-success-header-color": {
+			tooltip: "Sets the `color` on `.modal-success .modal-header`. `.modal-success` is a modifier class on `.modal-dialog`.",
+		},
+		"modal-success-header-bg": {
+			tooltip: "Sets the `background-color` on `.modal-success .modal-header`. `.modal-success` is a modifier class on `.modal-dialog`.",
+		},
+		"modal-success-header-border-color": {
+			tooltip: "Sets the `border-color` on `.modal-success .modal-header`. `.modal-success is a modifier class on `.modal-dialog`.",
+		},
+		"modal-success-header-close": {
+			tooltip: "Sets CSS properties for `.modal-success .close`. The value must be a Sass map (e.g., `(color: #FFF, hover-color: #FFF,)`) and uses the `clay-link` mixin.",
+		},
+		"modal-info-header-color": {
+			tooltip: "Sets the `color` on `.modal-info .modal-header`. `.modal-info` is a modifier class on `.modal-dialog`.",
+		},
+		"modal-info-header-bg": {
+			tooltip: "Sets the `background-color` on `.modal-info .modal-header`. `.modal-info` is a modifier class on `.modal-dialog`.",
+		},
+		"modal-info-header-border-color": {
+			tooltip: "Sets the `border-color` on `.modal-info .modal-header`. `.modal-info is a modifier class on `.modal-dialog`.",
+		},
+		"modal-info-header-close": {
+			tooltip: "Sets CSS properties for `.modal-info .close`. The value must be a Sass map (e.g., `(color: #FFF, hover-color: #FFF,)`) and uses the `clay-link` mixin.",
+		},
+		"modal-warning-header-color": {
+			tooltip: "Sets the `color` on `.modal-warning .modal-header`. `.modal-warning` is a modifier class on `.modal-dialog`.",
+		},
+		"modal-warning-header-bg": {
+			tooltip: "Sets the `background-color` on `.modal-warning .modal-header`. `.modal-warning` is a modifier class on `.modal-dialog`.",
+		},
+		"modal-warning-header-border-color": {
+			tooltip: "Sets the `border-color` on `.modal-warning .modal-header`. `.modal-warning is a modifier class on `.modal-dialog`.",
+		},
+		"modal-warning-header-close": {
+			tooltip: "Sets CSS properties for `.modal-warning .close`. The value must be a Sass map (e.g., `(color: #FFF, hover-color: #FFF,)`) and uses the `clay-link` mixin.",
+		},
+		"modal-danger-header-color": {
+			tooltip: "Sets the `color` on `.modal-danger .modal-header`. `.modal-danger` is a modifier class on `.modal-dialog`.",
+		},
+		"modal-danger-header-bg": {
+			tooltip: "Sets the `background-color` on `.modal-danger .modal-header`. `.modal-danger` is a modifier class on `.modal-dialog`.",
+		},
+		"modal-danger-header-border-color": {
+			tooltip: "Sets the `border-color` on `.modal-danger .modal-header`. `.modal-danger is a modifier class on `.modal-dialog`.",
+		},
+		"modal-danger-header-close": {
+			tooltip: "Sets CSS properties for `.modal-danger .close`. The value must be a Sass map (e.g., `(color: #FFF, hover-color: #FFF,)`) and uses the `clay-link` mixin.",
+		},
+		"": {
+			tooltip: "",
+		},
+		"": {
+			tooltip: "",
+		},
+		"": {
+			tooltip: "",
+		},
+		"": {
+			tooltip: "",
+		},
+		"": {
+			tooltip: "",
+		},
+		"": {
+			tooltip: "",
+		},
 		"": {
 			tooltip: "",
 		},

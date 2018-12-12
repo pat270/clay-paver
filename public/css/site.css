@@ -356,13 +356,6 @@ a.cp-btn:focus {
 	text-align: left;
 }
 
-.cp-tooltip-text {
-	-moz-user-select: all;
-	-ms-user-select: all;
-	-webkit-user-select: all;
-	user-select: all;
-}
-
 .cp-tooltip .cp-arrow {
 	display: block;
 	height: 6px;
