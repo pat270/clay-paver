@@ -1,80 +1,140 @@
 <h4 class="cp-variables-form-header">Headings</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'headings-font-family' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'headings-font-weight' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'headings-line-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'headings-margin-bottom' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'headings-color' }) %>
+<%-
+	printInputs([
+		{ id: 'headings-font-family', },
+		{ id: 'headings-font-weight', },
+		{ id: 'headings-line-height', },
+		{ id: 'headings-margin-bottom', },
+		{ id: 'headings-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">H1 - H6</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'h1-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'h1-font-size-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'h2-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'h2-font-size-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'h3-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'h3-font-size-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'h4-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'h4-font-size-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'h5-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'h5-font-size-mobile' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'h6-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'h6-font-size-mobile' }) %>
+<%-
+	printInputs([
+		{ id: 'h1-font-size', },
+		{ id: 'h1-font-size-mobile', },
+		{ id: 'h2-font-size', },
+		{ id: 'h2-font-size-mobile', },
+		{ id: 'h3-font-size', },
+		{ id: 'h3-font-size-mobile', },
+		{ id: 'h4-font-size', },
+		{ id: 'h4-font-size-mobile', },
+		{ id: 'h5-font-size', },
+		{ id: 'h5-font-size-mobile', },
+		{ id: 'h6-font-size', },
+		{ id: 'h6-font-size-mobile', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Paragraph</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'paragraph-margin-bottom' }) %>
+<%-
+	printInputs([
+		{ id: 'paragraph-margin-bottom', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Text Muted</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'text-muted' }) %>
+<%-
+	printInputs([
+		{ id: 'text-muted', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Lead</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'lead-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'lead-font-weight' }) %>
+<%-
+	printInputs([
+		{ id: 'lead-font-size', },
+		{ id: 'lead-font-weight', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Mark</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'mark-padding' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'mark-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'mark-padding', },
+		{ id: 'mark-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Small</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'small-font-size' }) %>
+<%-
+	printInputs([
+		{ id: 'small-font-size', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Code</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'code-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'code-color' }) %>
+<%-
+	printInputs([
+		{ id: 'code-font-size', },
+		{ id: 'code-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Pre</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'pre-scrollable-max-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pre-color' }) %>
+<%-
+	printInputs([
+		{ id: 'pre-scrollable-max-height', },
+		{ id: 'pre-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Kbd</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'kbd-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'kbd-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'kbd-padding-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'kbd-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'kbd-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'kbd-box-shadow' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'nested-kbd-font-weight' }) %>
+<%-
+	printInputs([
+		{ id: 'kbd-font-size', },
+		{ id: 'kbd-padding-y', },
+		{ id: 'kbd-padding-x', },
+		{ id: 'kbd-color', color: true, },
+		{ id: 'kbd-bg', color: true, },
+		{ id: 'kbd-box-shadow', },
+		{ id: 'nested-kbd-font-weight', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Dt</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'dt-font-weight' }) %>
+<%-
+	printInputs([
+		{ id: 'dt-font-weight', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Blockquote</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'blockquote-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'blockquote-small-color' }) %>
+<%-
+	printInputs([
+		{ id: 'blockquote-font-size', },
+		{ id: 'blockquote-small-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">List Inline</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'list-inline-padding' }) %>
+<%-
+	printInputs([
+		{ id: 'list-inline-padding', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Hr</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'hr-border-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'hr-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'hr-margin-y' }) %>
+<%-
+	printInputs([
+		{ id: 'hr-border-width', },
+		{ id: 'hr-border-color', color: true, },
+		{ id: 'hr-margin-y', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Display</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'display-line-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'display1-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'display1-weight' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'display2-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'display2-weight' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'display3-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'display3-weight' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'display4-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'display4-weight' }) %>
+<%-
+	printInputs([
+		{ id: 'display-line-height', },
+		{ id: 'display1-size', },
+		{ id: 'display1-weight', },
+		{ id: 'display2-size', },
+		{ id: 'display2-weight', },
+		{ id: 'display3-size', },
+		{ id: 'display3-weight', },
+		{ id: 'display4-size', },
+		{ id: 'display4-weight', },
+	]);
+%>

@@ -1,5 +1,3 @@
-var clayCurrentVersion = $('#cpCurrentVersion').data('clayCurrentVersion') || '2.3.3';
-
 var compileOrder = {
 	'home':													'aa',
 	'globals':												'ab',

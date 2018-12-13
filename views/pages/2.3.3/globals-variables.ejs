@@ -1,118 +1,150 @@
 <h4 class="cp-variables-form-header">Grays</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'white' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'gray-100' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'gray-200' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'gray-300' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'gray-400' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'gray-500' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'gray-600' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'gray-700' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'gray-800' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'gray-900' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'black' }) %>
+<%-
+	printInputs([
+		{ id: 'white', color: true, },
+		{ id: 'gray-100', color: true, },
+		{ id: 'gray-200', color: true, },
+		{ id: 'gray-300', color: true, },
+		{ id: 'gray-400', color: true, },
+		{ id: 'gray-500', color: true, },
+		{ id: 'gray-600', color: true, },
+		{ id: 'gray-700', color: true, },
+		{ id: 'gray-800', color: true, },
+		{ id: 'gray-900', color: true, },
+		{ id: 'black', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Colors</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'blue' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'indigo' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'purple' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'pink' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'red' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'orange' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'yellow' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'green' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'teal' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'cyan' }) %>
+<%-
+	printInputs([
+		{ id: 'blue', color: true, },
+		{ id: 'indigo', color: true, },
+		{ id: 'purple', color: true, },
+		{ id: 'pink', color: true, },
+		{ id: 'red', color: true, },
+		{ id: 'orange', color: true, },
+		{ id: 'yellow', color: true, },
+		{ id: 'green', color: true, },
+		{ id: 'teal', color: true, },
+		{ id: 'cyan', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Theme Colors</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'primary' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'secondary' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'success' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'info' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'warning' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'danger' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'light' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'dark' }) %>
+<%-
+	printInputs([
+		{ id: 'primary', color: true, },
+		{ id: 'secondary', color: true, },
+		{ id: 'success', color: true, },
+		{ id: 'info', color: true, },
+		{ id: 'warning', color: true, },
+		{ id: 'danger', color: true, },
+		{ id: 'light', color: true, },
+		{ id: 'dark', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Color YIQ</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'yiq-contrasted-threshold' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'yiq-text-dark' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'yiq-text-light' }) %>
+<%-
+	printInputs([
+		{ id: 'yiq-contrasted-threshold', },
+		{ id: 'yiq-text-dark', color: true, },
+		{ id: 'yiq-text-light', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Google Font Import</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'font-import-url' }) %>
+<%-
+	printInputs([
+		{ id: 'font-import-url', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Font Family</h4>
-<%- include(partialsPath + 'cpTextInput', {
-	id: 'font-family-sans-serif',
-	tooltip: 'Sans Serif font stack to be reused in your components.'
-}) %>
-<%- include(partialsPath + 'cpTextInput', {
-	id: 'font-family-serif',
-	tooltip: 'Serif font stack to be reused in your components.'
-}) %>
-<%- include(partialsPath + 'cpTextInput', {
-	id: 'font-family-monospace',
-	tooltip: 'Monospace font stack to be reused in your components.'
-}) %>
-<%- include(partialsPath + 'cpTextInput', {
-	id: 'font-family-base',
-	tooltip: 'Sets font-family on the body tag.'
-}) %>
+<%-
+	printInputs([
+		{ id: 'font-family-sans-serif', tooltip: 'Sans Serif font stack to be reused in your components.', },
+		{ id: 'font-family-serif', tooltip: 'Serif font stack to be reused in your components.', },
+		{ id: 'font-family-monospace', tooltip: 'Monospace font stack to be reused in your components.', },
+		{ id: 'font-family-base', tooltip: 'Sets font-family on the body tag.', },
+	]);
+%>
+
 
 <h4 class="cp-variables-form-header">Font Size</h4>
-<%- include(partialsPath + 'cpTextInput', {
-	id: 'font-size-sm',
-	tooltip: 'A global font-size for *-sm components, don\'t reuse to set font-size smaller on a normal or *-lg component.'
-}) %>
-<%- include(partialsPath + 'cpTextInput', {
-	id: 'font-size-base',
-	tooltip: 'A global font-size for normal components, don\'t reuse to set font-size on *-sm or *-lg component.'
-}) %>
-<%- include(partialsPath + 'cpTextInput', {
-	id: 'font-size-base-mobile'
-}) %>
+<%-
+	printInputs([
+		{ id: 'font-size-sm', tooltip: 'A global font-size for *-sm components, don\'t reuse to set font-size smaller on a normal or *-lg component.', },
+		{ id: 'font-size-base', tooltip: 'A global font-size for normal components, don\'t reuse to set font-size on *-sm or *-lg component.', },
+		{ id: 'font-size-base-mobile', },
+		{ id: 'font-size-lg', tooltip: 'A global font-size for *-lg components, don\'t reuse to set font-size larger on a normal or *-sm component.', },
+		{ id: 'font-size-lg-mobile', },
+	]);
+%>
 
-<%- include(partialsPath + 'cpTextInput', {
-	id: 'font-size-lg',
-	tooltip: 'A global font-size for *-lg components, don\'t reuse to set font-size larger on a normal or *-sm component.'
-}) %>
-<%- include(partialsPath + 'cpTextInput', {
-	id: 'font-size-lg-mobile'
-}) %>
 
 <h4 class="cp-variables-form-header">Font Weight</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'font-weight-light' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'font-weight-normal' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'font-weight-semi-bold' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'font-weight-bold' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'font-weight-bolder' }) %>
+<%-
+	printInputs([
+		{ id: 'font-weight-light', },
+		{ id: 'font-weight-normal', },
+		{ id: 'font-weight-semi-bold', },
+		{ id: 'font-weight-bold', },
+		{ id: 'font-weight-bolder', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Line Height</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'line-height-sm' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'line-height-base' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'line-height-lg' }) %>
+<%-
+	printInputs([
+		{ id: 'line-height-sm', },
+		{ id: 'line-height-base', },
+		{ id: 'line-height-lg', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Border Radius</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'border-radius' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'border-radius-sm' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'border-radius-lg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'rounded-border-radius' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'rounded-circle-border-radius' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'rounded-0-border-radius' }) %>
+<%-
+	printInputs([
+		{ id: 'border-radius', },
+		{ id: 'border-radius-sm', },
+		{ id: 'border-radius-lg', },
+		{ id: 'rounded-border-radius', },
+		{ id: 'rounded-circle-border-radius', },
+		{ id: 'rounded-0-border-radius', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Cursors</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'link-cursor' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'disabled-cursor' }) %>
+<%-
+	printInputs([
+		{ id: 'link-cursor', },
+		{ id: 'disabled-cursor', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Transition</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'transition-base' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'transition-fade' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'transition-collapse' }) %>
+<%-
+	printInputs([
+		{ id: 'transition-base', },
+		{ id: 'transition-fade', },
+		{ id: 'transition-collapse', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Body</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'body-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'body-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'body-color', color: true, },
+		{ id: 'body-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Component Active</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'component-active-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'component-active-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'component-active-color', color: true, },
+		{ id: 'component-active-bg', color: true, },
+	]);
+%>

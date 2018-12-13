@@ -3,10 +3,8 @@ html {
 }
 
 body {
-	-moz-osx-font-smoothing: grayscale;
 	-ms-overflow-style: scrollbar;
-	-webkit-font-smoothing: antialiased;
-	height: 100%;
+	min-height: 100%;
 	margin: 0;
 }
 
@@ -358,13 +356,6 @@ a.cp-btn:focus {
 	text-align: left;
 }
 
-.cp-tooltip-text {
-	-moz-user-select: all;
-	-ms-user-select: all;
-	-webkit-user-select: all;
-	user-select: all;
-}
-
 .cp-tooltip .cp-arrow {
 	display: block;
 	height: 6px;
@@ -477,6 +468,7 @@ a.cp-btn:focus {
 	font-size: 14px;
 	margin: 0 -15px 16px -15px;
 	padding: 10px 15px;
+	text-transform: capitalize;
 }
 
 /* App Navigation */

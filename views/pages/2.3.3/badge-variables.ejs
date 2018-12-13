@@ -1,170 +1,83 @@
 <h4 class="cp-variables-form-header">Badge</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-font-weight' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-padding-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-line-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-spacer-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-spacer-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-border-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-border-style' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-border-radius' }) %>
+<%-
+	printInputs([
+		{id: 'badge-font-size', },
+		{id: 'badge-font-weight', },
+		{id: 'badge-padding-y', },
+		{id: 'badge-padding-x', },
+		{id: 'badge-line-height', },
+		{id: 'badge-spacer-y', },
+		{id: 'badge-spacer-x', },
+		{id: 'badge-border-width', },
+		{id: 'badge-border-style', },
+		{id: 'badge-border-color', color: true, },
+		{id: 'badge-border-radius', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Badge Link</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-link-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-link-hover-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-link-text-decoration' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-link-hover-text-decoration' }) %>
+<%-
+	printInputs([
+		{ id: 'badge-link-color', color: true, },
+		{ id: 'badge-link-hover-color', color: true, },
+		{ id: 'badge-link-text-decoration', },
+		{ id: 'badge-link-hover-text-decoration', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Badge Lexicon Icon</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-lexicon-icon-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-lexicon-icon-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-lexicon-icon-margin-top' }) %>
+<%-
+	printInputs([
+		{ id: 'badge-lexicon-icon-width', },
+		{ id: 'badge-lexicon-icon-height', },
+		{ id: 'badge-lexicon-icon-margin-top', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Badge Item</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-item-expand-min-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-item-spacer-x' }) %>
+<%-
+	printInputs([
+		{ id: 'badge-item-expand-min-width', },
+		{ id: 'badge-item-spacer-x', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Badge Pill</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-pill-border-radius' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'badge-pill-padding-x' }) %>
+<%-
+	printInputs([
+		{ id: 'badge-pill-border-radius', },
+		{ id: 'badge-pill-padding-x', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Badge Close</h4>
 <div class="cp-form-group-sass-map">
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="badge-close" name="clay[badge-close]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-align-items' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'badge-close-bg' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'badge-close-border-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-border-radius' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'badge-close-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-display' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-font-family' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-font-weight' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-justify-content' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-line-height' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-margin-bottom' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-margin-left' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-margin-right' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-margin-top' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-opacity' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-padding-bottom' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-padding-left' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-padding-right' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-padding-top' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-text-align' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-text-decoration' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-text-transform' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-transition' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-vertical-align' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-width' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'badge-close-hover-bg' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'badge-close-hover-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-hover-opacity' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-hover-text-decoration' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'badge-close-focus-bg' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-focus-box-shadow' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'badge-close-focus-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-focus-opacity' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-focus-outline' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-text-decoration' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'badge-close-active-bg' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'badge-close-active-border-color' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'badge-close-active-color' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'badge-close-disabled-bg' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'badge-close-disabled-border-color' }) %>
-	<%- include(partialsPath + 'cpColorInput', { id: 'badge-close-disabled-color' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-disabled-cursor' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-disabled-opacity' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-disabled-pointer-events' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-btn-focus-box-shadow' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-btn-focus-outline' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-lexicon-icon-margin-bottom' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-lexicon-icon-margin-left' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-lexicon-icon-margin-right' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'badge-close-lexicon-icon-margin-top' }) %>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'badge-close' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">Badge Primary</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-primary-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-primary-hover-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-primary-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-primary-hover-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-primary-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-primary-hover-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-primary-link-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-primary-link-hover-color' }) %>
+<%- include(mixinsPath + 'cpClayBadgeVariantMixin', { namespace: 'badge-primary' }) %>
 
 <h4 class="cp-variables-form-header">Badge Secondary</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-secondary-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-secondary-hover-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-secondary-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-secondary-hover-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-secondary-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-secondary-hover-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-secondary-link-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-secondary-link-hover-color' }) %>
+<%- include(mixinsPath + 'cpClayBadgeVariantMixin', { namespace: 'badge-secondary' }) %>
 
 <h4 class="cp-variables-form-header">Badge Success</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-success-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-success-hover-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-success-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-success-hover-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-success-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-success-hover-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-success-link-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-success-link-hover-color' }) %>
+<%- include(mixinsPath + 'cpClayBadgeVariantMixin', { namespace: 'badge-success' }) %>
 
 <h4 class="cp-variables-form-header">Badge Info</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-info-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-info-hover-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-info-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-info-hover-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-info-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-info-hover-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-info-link-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-info-link-hover-color' }) %>
+<%- include(mixinsPath + 'cpClayBadgeVariantMixin', { namespace: 'badge-info' }) %>
 
 <h4 class="cp-variables-form-header">Badge Warning</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-warning-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-warning-hover-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-warning-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-warning-hover-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-warning-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-warning-hover-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-warning-link-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-warning-link-hover-color' }) %>
+<%- include(mixinsPath + 'cpClayBadgeVariantMixin', { namespace: 'badge-warning' }) %>
 
 <h4 class="cp-variables-form-header">Badge Danger</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-danger-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-danger-hover-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-danger-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-danger-hover-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-danger-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-danger-hover-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-danger-link-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-danger-link-hover-color' }) %>
+<%- include(mixinsPath + 'cpClayBadgeVariantMixin', { namespace: 'badge-danger' }) %>
 
 <h4 class="cp-variables-form-header">Badge Light</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-light-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-light-hover-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-light-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-light-hover-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-light-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-light-hover-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-light-link-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-light-link-hover-color' }) %>
+<%- include(mixinsPath + 'cpClayBadgeVariantMixin', { namespace: 'badge-light' }) %>
 
 <h4 class="cp-variables-form-header">Badge Dark</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-dark-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-dark-hover-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-dark-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-dark-hover-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-dark-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-dark-hover-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-dark-link-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'badge-dark-link-hover-color' }) %>
+<%- include(mixinsPath + 'cpClayBadgeVariantMixin', { namespace: 'badge-dark' }) %>

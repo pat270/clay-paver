@@ -1,22 +1,17 @@
 <%
-	var placeholder;
+	var formGroupClass = 'cp-form-group';
 
-	if (!placeholder) {
+	if (typeof color !== 'undefined') {
+		formGroupClass = 'cp-form-group cp-form-group-color';
+	}
+
+	if (typeof placeholder === 'undefined') {
 		placeholder = '';
 	}
-
-	var unset;
-	var unsetLink = '';
-
-	if (unset === true) {
-		unsetLink = '<a class="cp-link cp-unset-link" href="/">Unset</a>';
-	}
-
-	var tooltip;
 %>
 
-<div class="cp-form-group">
-	<% if (tooltip) { %>
+<div class="<%= formGroupClass %>">
+	<% if (typeof tooltip !== 'undefined') { %>
 		<span class="cp-control-label-indicator" tabindex="0">
 			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-info-circle">
 				<use xlink:href="<%- svgIconsPath %>#info-circle" />
@@ -25,13 +20,20 @@
 		<div class="cp-tooltip cp-tooltip-bottom-left" role="tooltip">
 			<div class="cp-arrow"></div>
 			<div class="cp-tooltip-inner">
-				<div class="cp-tooltip-text"><%= tooltip %></div>
+				<div class="cp-tooltip-text"><%- tooltip %></div>
 			</div>
 		</div>
 	<% } %>
+
 	<label class="cp-control-label" for="<%= id %>"><%= id %></label>
 
-	<%- unsetLink %>
+	<% if (typeof unset !== 'undefined') { %>
+		<a class="cp-link cp-unset-link" href="/">Unset</a>
+	<% } %>
 
 	<input class="cp-form-control" id="<%= id %>" name="clay[<%= id %>]" placeholder="<%= placeholder %>" type="text">
+
+	<% if (typeof color !== 'undefined') { %>
+		<input class="cp-form-control cp-form-control-color" type="color" value="#ffffff">
+	<% } %>
 </div>

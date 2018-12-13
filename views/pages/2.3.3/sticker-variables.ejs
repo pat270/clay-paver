@@ -1,30 +1,39 @@
 <h4 class="cp-variables-form-header">Sticker</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'sticker-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'sticker-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'sticker-font-weight' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'sticker-border-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'sticker-border-style' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'sticker-border-radius' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'sticker-inline-item-font-size' }) %>
+<%-
+	printInputs([
+		{ id: 'sticker-size', },
+		{ id: 'sticker-font-size', },
+		{ id: 'sticker-font-weight', },
+		{ id: 'sticker-border-width', },
+		{ id: 'sticker-border-style', },
+		{ id: 'sticker-border-color', color: true, },
+		{ id: 'sticker-border-radius', },
+		{ id: 'sticker-color', color: true, },
+		{ id: 'sticker-inline-item-font-size', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Sticker Positions</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'sticker-inside-offset' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'sticker-outside-offset' }) %>
+<%-
+	printInputs([
+		{ id: 'sticker-inside-offset', },
+		{ id: 'sticker-outside-offset', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Sticker Types</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'sticker-circle-border-radius' }) %>
+<%-
+	printInputs([
+		{ id: 'sticker-circle-border-radius', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Sticker Sm</h4>
 <div class="cp-form-group-sass-map">
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="sticker-sm" name="clay[sticker-sm]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'sticker-sm-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'sticker-sm-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'sticker-sm-inline-item-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'sticker-sm-outside-offset' }) %>
+	<%- include(mixinsPath + 'cpClayStickerSizeMixin', { namespace: 'sticker-sm' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">Sticker Lg</h4>
@@ -32,10 +41,7 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="sticker-lg" name="clay[sticker-lg]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'sticker-lg-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'sticker-lg-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'sticker-lg-inline-item-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'sticker-lg-outside-offset' }) %>
+	<%- include(mixinsPath + 'cpClayStickerSizeMixin', { namespace: 'sticker-lg' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">Sticker Xl</h4>
@@ -43,48 +49,77 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="sticker-xl" name="clay[sticker-xl]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'sticker-xl-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'sticker-xl-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'sticker-xl-inline-item-font-size' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'sticker-xl-outside-offset' }) %>
+	<%- include(mixinsPath + 'cpClayStickerSizeMixin', { namespace: 'sticker-xl' }) %>
 </div>
 
 <h4 class="cp-variables-form-header">Sticker Primary</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-primary-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-primary-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-primary-color' }) %>
+<%-
+	printInputs([
+		{ id: 'sticker-primary-bg', color: true, },
+		{ id: 'sticker-primary-border-color', color: true, },
+		{ id: 'sticker-primary-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Sticker Secondary</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-secondary-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-secondary-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-secondary-color' }) %>
+<%-
+	printInputs([
+		{ id: 'sticker-secondary-bg', color: true, },
+		{ id: 'sticker-secondary-border-color', color: true, },
+		{ id: 'sticker-secondary-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Sticker Info</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-info-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-info-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-info-color' }) %>
+<%-
+	printInputs([
+		{ id: 'sticker-info-bg', color: true, },
+		{ id: 'sticker-info-border-color', color: true, },
+		{ id: 'sticker-info-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Sticker Success</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-success-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-success-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-success-color' }) %>
+<%-
+	printInputs([
+		{ id: 'sticker-success-bg', color: true, },
+		{ id: 'sticker-success-border-color', color: true, },
+		{ id: 'sticker-success-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Sticker Warning</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-warning-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-warning-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-warning-color' }) %>
+<%-
+	printInputs([
+		{ id: 'sticker-warning-bg', color: true, },
+		{ id: 'sticker-warning-border-color', color: true, },
+		{ id: 'sticker-warning-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Sticker Danger</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-danger-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-danger-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-danger-color' }) %>
+<%-
+	printInputs([
+		{ id: 'sticker-danger-bg', color: true, },
+		{ id: 'sticker-danger-border-color', color: true, },
+		{ id: 'sticker-danger-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Sticker Light</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-light-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-light-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-light-color' }) %>
+<%-
+	printInputs([
+		{ id: 'sticker-light-bg', color: true, },
+		{ id: 'sticker-light-border-color', color: true, },
+		{ id: 'sticker-light-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Sticker Dark</h4>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-dark-bg' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-dark-border-color' }) %>
-<%- include(partialsPath + 'cpColorInput', { id: 'sticker-dark-color' }) %>
+<%-
+	printInputs([
+		{ id: 'sticker-dark-bg', color: true, },
+		{ id: 'sticker-dark-border-color', color: true, },
+		{ id: 'sticker-dark-color', color: true, },
+	]);
+%>

@@ -1,0 +1,209 @@
+<h4 class="cp-variables-form-header">Card</h4>
+<%- printInputs([
+	{ id: 'card-spacer-y', },
+	{ id: 'card-spacer-x', },
+	{ id: 'card-margin-bottom', },
+	{ id: 'card-border-width', },
+	{ id: 'card-border-style', },
+	{ id: 'card-border-color', color: true, },
+	{ id: 'card-border-radius', },
+	{ id: 'card-bg', color: true, },
+	{ id: 'card-box-shadow', },
+]) %>
+
+<h4 class="cp-variables-form-header">Card Inner</h4>
+<%- printInputs([
+	{ id: 'card-inner-border-radius', },
+]) %>
+<%- printInputs([
+	{ id: 'card-rounded-inner-border-radius', },
+]) %>
+<%- printInputs([
+	{ id: 'card-rounded-0-inner-border-radius', },
+]) %>
+<%- printInputs([
+	{ id: 'card-rounded-circle-inner-border-radius', },
+]) %>
+
+<h4 class="cp-variables-form-header">Card Body</h4>
+<%- printInputs([
+	{ id: 'card-body-padding-top', },
+	{ id: 'card-body-padding-right', },
+	{ id: 'card-body-padding-bottom', },
+	{ id: 'card-body-padding-left', },
+]) %>
+
+<h4 class="cp-variables-form-header">Card Divider</h4>
+<%- printInputs([
+	{ id: 'card-divider-height', },
+	{ id: 'card-divider-spacer-y', },
+	{ id: 'card-divider-spacer-x', },
+	{ id: 'card-divider-bg', color: true, },
+]) %>
+
+<h4 class="cp-variables-form-header">Card Title</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="card-title" name="clay[card-title]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'card-title' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Card Title Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="card-title-link" name="clay[card-title-link]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'card-title-link' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Card Subtitle</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="card-subtitle" name="clay[card-subtitle]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'card-subtitle' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Card Subtitle Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="card-subtitle-link" name="clay[card-subtitle-link]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'card-subtitle-link' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Card Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="card-link" name="clay[card-link]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'card-link' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Form Check Card</h4>
+<%- printInputs([
+	{ id: 'checkbox-position', },
+	{ id: 'form-check-card-checked-box-shadow', },
+]) %>
+
+<h4 class="cp-variables-form-header">Form Check Card Horizontal</h4>
+<%- printInputs([
+	{ id: 'checkbox-left-card-padding', },
+	{ id: 'checkbox-right-card-padding', },
+]) %>
+
+<h4 class="cp-variables-form-header">Card Type Asset (Base)</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="card-type-asset" name="clay[card-type-asset]" type="hidden">
+	</div>
+	<%-
+		printInputs([
+			{ id: 'card-type-asset-enabled', },
+			{ id: 'card-type-asset-aspect-ratio-border-width', },
+			{ id: 'card-type-asset-aspect-ratio-border-style', },
+			{ id: 'card-type-asset-aspect-ratio-border-color', },
+			{ id: 'card-type-asset-aspect-ratio-horizontal', },
+			{ id: 'card-type-asset-aspect-ratio-vertical', },
+			{ id: 'card-type-asset-card-body-padding-top', },
+			{ id: 'card-type-asset-card-body-padding-right', },
+			{ id: 'card-type-asset-card-body-padding-bottom', },
+			{ id: 'card-type-asset-card-body-padding-left', },
+			{ id: 'card-type-asset-card-row-align-items', },
+			{ id: 'card-type-asset-checkbox-cursor', },
+			{ id: 'card-type-asset-asset-icon-width', },
+			{ id: 'card-type-asset-asset-icon-color', },
+			{ id: 'card-type-asset-asset-icon-sticker-font-size', },
+			{ id: 'card-type-asset-asset-icon-sticker-border-radius', },
+			{ id: 'card-type-asset-dropdown-action-offset-top', },
+			{ id: 'card-type-asset-dropdown-action-offset-right', },
+			{ id: 'card-type-asset-dropdown-action-offset-bottom', },
+			{ id: 'card-type-asset-dropdown-action-offset-left', },
+		]);
+	%>
+</div>
+
+<h4 class="cp-variables-form-header">Image Card (Card Type Asset Variant)</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="image-card" name="clay[image-card]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayCardTypeAssetVariantMixin', { namespace: 'image-card' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">File Card (Card Type Asset Variant)</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="file-card" name="clay[file-card]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayCardTypeAssetVariantMixin', { namespace: 'file-card' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">User Card (Card Type Asset Variant)</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="user-card" name="clay[user-card]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayCardTypeAssetVariantMixin', { namespace: 'user-card' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Card Type Directory</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="card-type-directory" name="clay[card-type-directory]" type="hidden">
+	</div>
+	<%-
+		printInputs([
+			{ id: 'card-type-directory-card-body-padding-top', },
+			{ id: 'card-type-directory-card-body-padding-right', },
+			{ id: 'card-type-directory-card-body-padding-bottom', },
+			{ id: 'card-type-directory-card-body-padding-left', },
+			{ id: 'card-type-directory-sticker-size', },
+			{ id: 'card-type-directory-sticker-font-size', },
+			{ id: 'card-type-directory-sticker-line-height', },
+			{ id: 'card-type-directory-dropdown-action-offset-top', },
+			{ id: 'card-type-directory-dropdown-action-offset-right', },
+			{ id: 'card-type-directory-dropdown-action-offset-bottom', },
+			{ id: 'card-type-directory-dropdown-action-offset-left', },
+		]);
+	%>
+</div>
+
+<h4 class="cp-variables-form-header">Card Section Header</h4>
+<%- printInputs([
+	{ id: 'card-section-header-font-size', },
+	{ id: 'card-section-header-font-weight', },
+	{ id: 'card-section-header-padding', },
+	{ id: 'card-section-header-line-height', },
+	{ id: 'card-section-header-margin-bottom', },
+	{ id: 'card-section-header-color', color: true, },
+	{ id: 'card-section-header-text-transform', },
+]) %>
+
+<h4 class="cp-variables-form-header">Card Header / Footer</h4>
+<%- printInputs([
+	{ id: 'card-cap-bg', color: true, },
+]) %>
+
+<h4 class="cp-variables-form-header">Card Img Overlay</h4>
+<%- printInputs([
+	{ id: 'card-img-overlay-padding', },
+]) %>
+
+<h4 class="cp-variables-form-header">Card Group</h4>
+<%- printInputs([
+	{ id: 'card-group-margin', },
+]) %>
+
+<h4 class="cp-variables-form-header">Card Deck</h4>
+<%- printInputs([
+	{ id: 'card-deck-margin', },
+]) %>
+
+<h4 class="cp-variables-form-header">Card Columns</h4>
+<%- printInputs([
+	{ id: 'card-columns-count', },
+	{ id: 'card-columns-gap', },
+	{ id: 'card-columns-margin', },
+]) %>

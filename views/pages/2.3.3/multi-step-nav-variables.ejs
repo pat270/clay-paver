@@ -1,75 +1,123 @@
 <h4 class="cp-variables-form-header">Multi Step Nav</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-nav-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-nav-padding-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-nav-margin-bottom' }) %>
+<%-
+	printInputs([
+		{ id: 'multi-step-nav-padding-y', },
+		{ id: 'multi-step-nav-padding-x', },
+		{ id: 'multi-step-nav-margin-bottom', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Multi Step Icon</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-font-weight' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-border-radius' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'multi-step-icon-size', },
+		{ id: 'multi-step-icon-font-size', },
+		{ id: 'multi-step-icon-font-weight', },
+		{ id: 'multi-step-icon-border-radius', },
+		{ id: 'multi-step-icon-color', color: true, },
+		{ id: 'multi-step-icon-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Multi Step Icon Hover</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-hover-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-hover-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-hover-text-decoration' }) %>
+<%-
+	printInputs([
+		{ id: 'multi-step-icon-hover-color', color: true, },
+		{ id: 'multi-step-icon-hover-bg', color: true, },
+		{ id: 'multi-step-icon-hover-text-decoration', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Multi Step Divider</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-divider-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-divider-spacer-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-divider-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-divider-top' }) %>
+<%-
+	printInputs([
+		{ id: 'multi-step-divider-height', },
+		{ id: 'multi-step-divider-spacer-x', },
+		{ id: 'multi-step-divider-bg', },
+		{ id: 'multi-step-divider-top', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Multi Step Indicator</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-indicator-width' }) %>
+<%-
+	printInputs([
+		{ id: 'multi-step-indicator-width', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Multi Step Indicator Label</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-indicator-label-max-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-indicator-label-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-indicator-label-font-weight' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-indicator-label-color' }) %>
+<%-
+	printInputs([
+		{ id: 'multi-step-indicator-label-max-width', },
+		{ id: 'multi-step-indicator-label-font-size', },
+		{ id: 'multi-step-indicator-label-font-weight', },
+		{ id: 'multi-step-indicator-label-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Multi Step Title</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-title-max-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-title-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-title-font-weight' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-title-margin-bottom' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-title-color' }) %>
+<%-
+	printInputs([
+		{ id: 'multi-step-title-max-width', },
+		{ id: 'multi-step-title-font-size', },
+		{ id: 'multi-step-title-font-weight', },
+		{ id: 'multi-step-title-margin-bottom', },
+		{ id: 'multi-step-title-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Multi Step Item</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-item-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-item-margin-bottom' }) %>
+<%-
+	printInputs([
+		{ id: 'multi-step-item-width', },
+		{ id: 'multi-step-item-margin-bottom', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Multi Step Item Fixed Width</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-item-fixed-width' }) %>
+<%-
+	printInputs([
+		{ id: 'multi-step-item-fixed-width', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Multi Step Item Complete</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-complete-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-complete-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-complete-bg-image' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-complete-bg-position' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-complete-bg-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-divider-complete-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-dropdown-indicator-complete-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-dropdown-indicator-complete-icon' }) %>
+<%-
+	printInputs([
+		{ id: 'multi-step-icon-complete-color', color: true, },
+		{ id: 'multi-step-icon-complete-bg', color: true, },
+		{ id: 'multi-step-icon-complete-bg-image', },
+		{ id: 'multi-step-icon-complete-bg-position', },
+		{ id: 'multi-step-icon-complete-bg-size', },
+		{ id: 'multi-step-divider-complete-bg', color: true, },
+		{ id: 'multi-step-dropdown-indicator-complete-width', },
+		{ id: 'multi-step-dropdown-indicator-complete-icon', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Multi Step Item Active</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-active-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-active-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-active-bg-image' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-active-bg-position' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-active-bg-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-divider-active-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'multi-step-icon-active-color', color: true, },
+		{ id: 'multi-step-icon-active-bg', color: true, },
+		{ id: 'multi-step-icon-active-bg-image', },
+		{ id: 'multi-step-icon-active-bg-position', },
+		{ id: 'multi-step-icon-active-bg-size', },
+		{ id: 'multi-step-divider-active-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Multi Step Item Disabled</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-disabled-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-disabled-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-disabled-bg-image' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-disabled-bg-position' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-disabled-bg-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-icon-disabled-cursor' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-divider-disabled-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-title-disabled-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'multi-step-indicator-label-disabled-color' }) %>
+<%-
+	printInputs([
+		{ id: 'multi-step-icon-disabled-color', color: true, },
+		{ id: 'multi-step-icon-disabled-bg', color: true, },
+		{ id: 'multi-step-icon-disabled-bg-image', },
+		{ id: 'multi-step-icon-disabled-bg-position', },
+		{ id: 'multi-step-icon-disabled-bg-size', },
+		{ id: 'multi-step-icon-disabled-cursor', },
+		{ id: 'multi-step-divider-disabled-bg', color: true, },
+		{ id: 'multi-step-title-disabled-color', color: true, },
+		{ id: 'multi-step-indicator-label-disabled-color', color: true, },
+	]);
+%>

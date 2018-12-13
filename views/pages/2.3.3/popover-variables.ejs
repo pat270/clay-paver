@@ -1,56 +1,96 @@
 <h4 class="cp-variables-form-header">Popover</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-max-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-bg' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-border-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-border-radius' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-box-shadow' }) %>
+<%-
+	printInputs([
+		{ id: 'popover-max-width', },
+		{ id: 'popover-font-size', },
+		{ id: 'popover-bg', color: true, },
+		{ id: 'popover-border-width', },
+		{ id: 'popover-border-color', color: true, },
+		{ id: 'popover-border-radius', },
+		{ id: 'popover-box-shadow', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Popover Header</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-header-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-header-font-weight' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-header-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-header-padding-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-header-margin-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-header-margin-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-header-border-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-header-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-header-bg' }) %>
+<%-
+	printInputs([
+		{ id: 'popover-header-font-size', },
+		{ id: 'popover-header-font-weight', },
+		{ id: 'popover-header-padding-y', },
+		{ id: 'popover-header-padding-x', },
+		{ id: 'popover-header-margin-y', },
+		{ id: 'popover-header-margin-x', },
+		{ id: 'popover-header-border-color', color: true, },
+		{ id: 'popover-header-color', color: true, },
+		{ id: 'popover-header-bg', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Popover Body</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-body-padding-y' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-body-padding-x' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-body-color' }) %>
+<%-
+	printInputs([
+		{ id: 'popover-body-padding-y', },
+		{ id: 'popover-body-padding-x', },
+		{ id: 'popover-body-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Popover Inline Scroller</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-inline-scroller-max-height' }) %>
+<%-
+	printInputs([
+		{ id: 'popover-inline-scroller-max-height', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Popover Arrow Outer</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-arrow-outer-color' }) %>
+<%-
+	printInputs([
+		{ id: 'popover-arrow-outer-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Popover Arrow</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-arrow-width' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-arrow-height' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-arrow-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-arrow-offset' }) %>
+<%-
+	printInputs([
+		{ id: 'popover-arrow-width', },
+		{ id: 'popover-arrow-height', },
+		{ id: 'popover-arrow-color', color: true, },
+		{ id: 'popover-arrow-offset', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Popover Bottom Arrow</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-bottom-arrow-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-bottom-left-arrow-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-bottom-right-arrow-color' }) %>
+<%-
+	printInputs([
+		{ id: 'popover-bottom-arrow-color', color: true, },
+		{ id: 'popover-bottom-left-arrow-color', color: true, },
+		{ id: 'popover-bottom-right-arrow-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Popover Left Arrow</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-left-arrow-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-left-bottom-arrow-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-left-top-arrow-color' }) %>
+<%-
+	printInputs([
+		{ id: 'popover-left-arrow-color', color: true, },
+		{ id: 'popover-left-bottom-arrow-color', color: true, },
+		{ id: 'popover-left-top-arrow-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Popover Right Arrow</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-right-arrow-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-right-bottom-arrow-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-right-top-arrow-color' }) %>
+<%-
+	printInputs([
+		{ id: 'popover-right-arrow-color', color: true, },
+		{ id: 'popover-right-bottom-arrow-color', color: true, },
+		{ id: 'popover-right-top-arrow-color', color: true, },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Popover Top Arrow</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-top-arrow-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-top-left-arrow-color' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'popover-top-right-arrow-color' }) %>
+<%-
+	printInputs([
+		{ id: 'popover-top-arrow-color', color: true, },
+		{ id: 'popover-top-left-arrow-color', color: true, },
+		{ id: 'popover-top-right-arrow-color', color: true, },
+	]);
+%>

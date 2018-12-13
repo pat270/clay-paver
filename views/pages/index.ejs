@@ -5,10 +5,6 @@
 	<title>Clay 2 Paver</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/css/home.css" type="text/css" />
-	<script src="/js/svg4everybody.js"></script>
-	<script src="/js/jquery-3.2.1.min.js"></script>
-	<script src="/js/popper.min.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<section id="main">
@@ -24,25 +20,15 @@
 			</div>
 			<% if (clayAvailableVersions.length !== 0) { %>
 				<div class="version-divider">or</div>
-				<div class="dropdown">
-					<a class="cp-btn cp-btn-primary" data-toggle="dropdown" href="">
-						Select Version
-						<svg aria-hidden="true" class="lexicon-icon lexicon-icon-angle-down" focusable="false">
-							<use xlink:href="/images/icons/icons.svg#angle-down" />
-						</svg>
-					</a>
-					<div class="dropdown-menu">
-						<% for(var i = 0; i < clayAvailableVersions.length; i++) { %>
-							<a class="dropdown-item" href="/<%- clayAvailableVersions[i] %>/"><%- clayAvailableVersions[i] %></a>
-						<% } %>
-					</div>
+
+				<div class="older-versions">
+					<% for(var i = 0; i < clayAvailableVersions.length; i++) { %>
+						<a class="cp-btn cp-btn-primary" href="/<%- clayAvailableVersions[i] %>/"><%- clayAvailableVersions[i] %></a>
+					<% } %>
+					<a class="cp-btn cp-btn-primary" href="/changelog/" rel="noopener noreferrer" target="_blank">Changelog</a>
 				</div>
 			<% } %>
 		</div>
 	</section>
-
-	<script>
-		svg4everybody({ polyfill: true });
-	</script>
 </body>
 </html>

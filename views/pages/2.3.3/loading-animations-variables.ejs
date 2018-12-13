@@ -1,15 +1,23 @@
 <h4 class="cp-variables-form-header">Loading Animation Icon</h4>
-<%- include(partialsPath + 'cpTextInput', { id: 'loading-icon-font-size' }) %>
-<%- include(partialsPath + 'cpTextInput', { id: 'loading-icon-font-size-sm' }) %>
+<%-
+	printInputs([
+		{ id: 'loading-icon-font-size', },
+		{ id: 'loading-icon-font-size-sm', },
+	]);
+%>
 
 <h4 class="cp-variables-form-header">Loading Animation</h4>
 <div class="cp-form-group-sass-map">
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="loading-animation" name="clay[loading-animation]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'loading-animation-enabled' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'loading-animation-border-radius' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'loading-animation-color' }) %>
+	<%-
+		printInputs([
+			{ id: 'loading-animation-enabled', },
+			{ id: 'loading-animation-border-radius', },
+			{ id: 'loading-animation-color', color: true, },
+		]);
+	%>
 </div>
 
 <h4 class="cp-variables-form-header">Loading Animation Light</h4>
@@ -17,7 +25,11 @@
 	<div class="cp-form-group">
 		<input class="cp-form-control cp-form-control-sass-map" id="loading-animation-light" name="clay[loading-animation-light]" type="hidden">
 	</div>
-	<%- include(partialsPath + 'cpTextInput', { id: 'loading-animation-light-enabled' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'loading-animation-light-border-radius' }) %>
-	<%- include(partialsPath + 'cpTextInput', { id: 'loading-animation-light-color' }) %>
+	<%-
+		printInputs([
+			{ id: 'loading-animation-light-enabled', },
+			{ id: 'loading-animation-light-border-radius', },
+			{ id: 'loading-animation-light-color', color: true, },
+		]);
+	%>
 </div>
