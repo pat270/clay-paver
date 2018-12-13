@@ -1,10 +1,8 @@
 <h4 class="cp-variables-form-header">Grid</h4>
-<%-
-	printInputs([
-		{ id: 'grid-columns', },
-		{ id: 'grid-gutter-width', tooltip: 'This value must be entered as px and twice the column gutter you want (e.g., for 15px gutters enter 30px).', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'grid-gutter-width', },
+	{ id: 'grid-columns', },
+]) %>
 
 <h4 class="cp-variables-form-header">Grid Breakpoints</h4>
 <div class="cp-form-group-sass-map">

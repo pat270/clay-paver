@@ -1,12 +1,10 @@
 <h4 class="cp-variables-form-header">Link</h4>
-<%-
-	printInputs([
-		{ id: 'link-color', color: true },
-		{ id: 'link-hover-color', color: true },
-		{ id: 'link-decoration' },
-		{ id: 'link-hover-decoration' },
-	]);
-%>
+<%- printInputs([
+	{ id: 'link-color', color: true, },
+	{ id: 'link-hover-color', color: true, },
+	{ id: 'link-decoration', },
+	{ id: 'link-hover-decoration', },
+]) %>
 
 <h4 class="cp-variables-form-header">Link Primary</h4>
 <div class="cp-form-group-sass-map">
@@ -36,11 +34,9 @@
 </div>
 
 <h4 class="cp-variables-form-header">Single Link</h4>
-<%-
-	printInputs([
-		{ id: 'single-link-font-weight', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'single-link-font-weight', },
+]) %>
 
 <h4 class="cp-variables-form-header">Component Title</h4>
 <div class="cp-form-group-sass-map">
@@ -88,25 +84,21 @@
 </div>
 
 <h4 class="cp-variables-form-header">Link Monospaced</h4>
-<%- 
-	printInputs([
-		{ id: 'link-monospaced-size', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'link-monospaced-size', },
+]) %>
 
 <h4 class="cp-variables-form-header">Link Outline</h4>
-<%-
-	printInputs([
-		{ id: 'link-outline-font-size', },
-		{ id: 'link-outline-font-weight', },
-		{ id: 'link-outline-padding-y', },
-		{ id: 'link-outline-padding-x', },
-		{ id: 'link-outline-line-height', },
-		{ id: 'link-outline-border-width', },
-		{ id: 'link-outline-border-radius', },
-		{ id: 'link-outline-transition', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'link-outline-font-size', },
+	{ id: 'link-outline-font-weight', },
+	{ id: 'link-outline-padding-y', },
+	{ id: 'link-outline-padding-x', },
+	{ id: 'link-outline-line-height', },
+	{ id: 'link-outline-border-width', },
+	{ id: 'link-outline-border-radius', },
+	{ id: 'link-outline-transition', },
+]) %>
 
 <h4 class="cp-variables-form-header">Link Outline Primary</h4>
 <div class="cp-form-group-sass-map">

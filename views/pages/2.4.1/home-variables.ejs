@@ -1,21 +1,19 @@
 <h4 class="cp-variables-form-header">Settings</h4>
-<%-
-	printInputs([
-		{ id: 'enable-scaling-components', },
-		{ id: 'scaling-breakpoint-down', },
-		{ id: 'enable-shadows', },
-		{ id: 'enable-transitions', },
-		{ id: 'enable-caret', },
-		{ id: 'enable-gradients', },
-		{ id: 'enable-grid-classes', },
-		{ id: 'enable-print-styles', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'enable-scaling-components', },
+	{ id: 'enable-scaling-navbar', },
+	{ id: 'scaling-breakpoint-down', },
+	{ id: 'enable-rounded', },
+	{ id: 'enable-shadows', },
+	{ id: 'enable-transitions', },
+	{ id: 'enable-caret', },
+	{ id: 'enable-gradients', },
+	{ id: 'enable-grid-classes', },
+	{ id: 'enable-print-styles', },
+]) %>
 
 <h4 class="cp-variables-form-header">Printing</h4>
-<%-
-	printInputs([
-		{ id: 'print-page-size', },
-		{ id: 'print-body-min-width', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'print-body-min-width', },
+	{ id: 'print-page-size', },
+]) %>

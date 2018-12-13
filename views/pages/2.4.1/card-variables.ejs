@@ -1,45 +1,45 @@
 <h4 class="cp-variables-form-header">Card</h4>
-<%-
-	printInputs([
-		{ id: 'card-margin-bottom', },
-		{ id: 'card-border-width', },
-		{ id: 'card-border-style', },
-		{ id: 'card-border-color', color: true, },
-		{ id: 'card-border-radius', },
-		{ id: 'card-bg', color: true, },
-		{ id: 'card-box-shadow', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'card-spacer-y', },
+	{ id: 'card-spacer-x', },
+	{ id: 'card-margin-bottom', },
+	{ id: 'card-border-width', },
+	{ id: 'card-border-style', },
+	{ id: 'card-border-color', color: true, },
+	{ id: 'card-border-radius', },
+	{ id: 'card-bg', color: true, },
+	{ id: 'card-box-shadow', },
+]) %>
 
 <h4 class="cp-variables-form-header">Card Inner</h4>
-<%-
-	printInputs([
-		{ id: 'card-inner-border-radius', },
-		{ id: 'card-rounded-inner-border-radius', },
-		{ id: 'card-rounded-0-inner-border-radius', },
-		{ id: 'card-rounded-circle-inner-border-radius', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'card-inner-border-radius', },
+]) %>
+<%- printInputs([
+	{ id: 'card-rounded-inner-border-radius', },
+]) %>
+<%- printInputs([
+	{ id: 'card-rounded-0-inner-border-radius', },
+]) %>
+<%- printInputs([
+	{ id: 'card-rounded-circle-inner-border-radius', },
+]) %>
 
 <h4 class="cp-variables-form-header">Card Body</h4>
-<%-
-	printInputs([
-		{ id: 'card-body-padding-top', },
-		{ id: 'card-body-padding-right', },
-		{ id: 'card-body-padding-bottom', },
-		{ id: 'card-body-padding-left', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'card-body-padding-top', },
+	{ id: 'card-body-padding-right', },
+	{ id: 'card-body-padding-bottom', },
+	{ id: 'card-body-padding-left', },
+]) %>
 
 <h4 class="cp-variables-form-header">Card Divider</h4>
-<%-
-	printInputs([
-		{ id: 'card-divider-height', },
-		{ id: 'card-divider-spacer-y', },
-		{ id: 'card-divider-spacer-x', },
-		{ id: 'card-divider-bg', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'card-divider-height', },
+	{ id: 'card-divider-spacer-y', },
+	{ id: 'card-divider-spacer-x', },
+	{ id: 'card-divider-bg', color: true, },
+]) %>
 
 <h4 class="cp-variables-form-header">Card Title</h4>
 <div class="cp-form-group-sass-map">
@@ -82,20 +82,16 @@
 </div>
 
 <h4 class="cp-variables-form-header">Form Check Card</h4>
-<%-
-	printInputs([
-		{ id: 'checkbox-position', },
-		{ id: 'form-check-card-checked-box-shadow', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'checkbox-position', },
+	{ id: 'form-check-card-checked-box-shadow', },
+]) %>
 
 <h4 class="cp-variables-form-header">Form Check Card Horizontal</h4>
-<%-
-	printInputs([
-		{ id: 'checkbox-left-card-padding', },
-		{ id: 'checkbox-right-card-padding', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'checkbox-left-card-padding', },
+	{ id: 'checkbox-right-card-padding', },
+]) %>
 
 <h4 class="cp-variables-form-header">Card Type Asset (Base)</h4>
 <div class="cp-form-group-sass-map">
@@ -175,59 +171,39 @@
 </div>
 
 <h4 class="cp-variables-form-header">Card Section Header</h4>
-<%-
-	printInputs([
-		{ id: 'card-section-header-font-size', },
-		{ id: 'card-section-header-font-weight', },
-		{ id: 'card-section-header-padding', },
-		{ id: 'card-section-header-line-height', },
-		{ id: 'card-section-header-margin-bottom', },
-		{ id: 'card-section-header-color', color: true, },
-		{ id: 'card-section-header-text-transform', },
-	]);
-%>
-
-<h4 class="cp-variables-form-header">Card Spacer</h4>
-<%-
-	printInputs([
-		{ id: 'card-spacer-y', },
-		{ id: 'card-spacer-x', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'card-section-header-font-size', },
+	{ id: 'card-section-header-font-weight', },
+	{ id: 'card-section-header-padding', },
+	{ id: 'card-section-header-line-height', },
+	{ id: 'card-section-header-margin-bottom', },
+	{ id: 'card-section-header-color', color: true, },
+	{ id: 'card-section-header-text-transform', },
+]) %>
 
 <h4 class="cp-variables-form-header">Card Header / Footer</h4>
-<%-
-	printInputs([
-		{ id: 'card-cap-bg', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'card-cap-bg', color: true, },
+]) %>
 
 <h4 class="cp-variables-form-header">Card Img Overlay</h4>
-<%-
-	printInputs([
-		{ id: 'card-img-overlay-padding', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'card-img-overlay-padding', },
+]) %>
 
 <h4 class="cp-variables-form-header">Card Group</h4>
-<%-
-	printInputs([
-		{ id: 'card-group-margin', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'card-group-margin', },
+]) %>
 
 <h4 class="cp-variables-form-header">Card Deck</h4>
-<%-
-	printInputs([
-		{ id: 'card-deck-margin', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'card-deck-margin', },
+]) %>
 
 <h4 class="cp-variables-form-header">Card Columns</h4>
-<%-
-	printInputs([
-		{ id: 'card-columns-count', },
-		{ id: 'card-columns-gap', },
-		{ id: 'card-columns-margin', },
-	]);
-%>
+<%- printInputs([
+	{ id: 'card-columns-count', },
+	{ id: 'card-columns-gap', },
+	{ id: 'card-columns-margin', },
+]) %>
