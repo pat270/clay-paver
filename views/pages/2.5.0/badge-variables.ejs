@@ -1,0 +1,73 @@
+<h4 class="cp-variables-form-header">Badge</h4>
+<%- printInputs([
+	{ id: 'badge-font-size', },
+	{ id: 'badge-font-weight', },
+	{ id: 'badge-padding-y', },
+	{ id: 'badge-padding-x', },
+	{ id: 'badge-line-height', },
+	{ id: 'badge-spacer-y', },
+	{ id: 'badge-spacer-x', },
+	{ id: 'badge-border-width', },
+	{ id: 'badge-border-style', },
+	{ id: 'badge-border-color', color: true, },
+	{ id: 'badge-border-radius', },
+]) %>
+
+<h4 class="cp-variables-form-header">Badge Link</h4>
+<%- printInputs([
+	{ id: 'badge-link-color', color: true, },
+	{ id: 'badge-link-text-decoration', },
+	{ id: 'badge-link-hover-color', color: true, },
+	{ id: 'badge-link-hover-text-decoration', },
+]) %>
+
+<h4 class="cp-variables-form-header">Badge Lexicon Icon</h4>
+<%- printInputs([
+	{ id: 'badge-lexicon-icon-width', },
+	{ id: 'badge-lexicon-icon-height', },
+	{ id: 'badge-lexicon-icon-margin-top', },
+]) %>
+
+<h4 class="cp-variables-form-header">Badge Item</h4>
+<%- printInputs([
+	{ id: 'badge-item-expand-min-width', },
+	{ id: 'badge-item-spacer-x', },
+]) %>
+
+<h4 class="cp-variables-form-header">Badge Pill</h4>
+<%- printInputs([
+	{ id: 'badge-pill-padding-x', },
+	{ id: 'badge-pill-border-radius', },
+]) %>
+
+<h4 class="cp-variables-form-header">Badge Close</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="badge-close" name="clay[badge-close]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'badge-close' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Badge Primary</h4>
+<%- include(mixinsPath + 'cpClayBadgeVariantMixin', { namespace: 'badge-primary' }) %>
+
+<h4 class="cp-variables-form-header">Badge Secondary</h4>
+<%- include(mixinsPath + 'cpClayBadgeVariantMixin', { namespace: 'badge-secondary' }) %>
+
+<h4 class="cp-variables-form-header">Badge Success</h4>
+<%- include(mixinsPath + 'cpClayBadgeVariantMixin', { namespace: 'badge-success' }) %>
+
+<h4 class="cp-variables-form-header">Badge Info</h4>
+<%- include(mixinsPath + 'cpClayBadgeVariantMixin', { namespace: 'badge-info' }) %>
+
+<h4 class="cp-variables-form-header">Badge Warning</h4>
+<%- include(mixinsPath + 'cpClayBadgeVariantMixin', { namespace: 'badge-warning' }) %>
+
+<h4 class="cp-variables-form-header">Badge Danger</h4>
+<%- include(mixinsPath + 'cpClayBadgeVariantMixin', { namespace: 'badge-danger' }) %>
+
+<h4 class="cp-variables-form-header">Badge Light</h4>
+<%- include(mixinsPath + 'cpClayBadgeVariantMixin', { namespace: 'badge-light' }) %>
+
+<h4 class="cp-variables-form-header">Badge Dark</h4>
+<%- include(mixinsPath + 'cpClayBadgeVariantMixin', { namespace: 'badge-dark' }) %>

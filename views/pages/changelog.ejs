@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8" />
-	<title>Clay 2 Paver</title>
+	<title>Clay CSS Changelog</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/css/home.css" type="text/css" />
 </head>
@@ -13,6 +13,54 @@
 		</a>
 		<div class="cp-changelog-container">
 			<h1 class="site-title">Clay CSS Changelog</h1>
+			<ul class="cp-changelog-list">
+				<li class="cp-changelog-list-title">2.5.0</li>
+				<li>Fixes #1377 - ClayCSS Toggle Switch Bar should use `$toggle-switch-bar-font-size` to set the font size</li>
+				<li>Fixes #1377 - ClayCSS Toggle Switch added option to configure `$toggle-switch-text-font-size`</li>
+				<li>Fixes #1371 - ClayCSS Pagination with buttons focus, hover, active, disabled states should match with anchor element</li>
+				<li>Fixes #1371 - ClayCSS Pagination Items Per Page hover and focus styles should match pagination and added options to configure `$pagination-items-per-page-focus-box-shadow`, `$pagination-items-per-page-focus-outline`</li>
+				<li>Fixes #1371 - ClayCSS Pagination with buttons transitions should match with anchor element and added `$pagination-link-transition`, `$pagination-items-per-page-transition`</li>
+				<li>Fixes #1371 - ClayCSS Pagination first and last item `border-radius` should be customizable separately from items in between and added `$pagination-link-first-border-radius`, `$pagination-link-last-border-radius`</li>
+				<li>Fixes #1371 - ClayCSS Pagination added `$pagination-margin-top-mobile` and removed hardcoded rem value</li>
+				<li>Fixes #1369 - ClayCSS Nav `.nav-unstyled` change spacing between links and buttons from `0.25rem` to `4px`</li>
+				<li>Fixes #1369 - ClayCSS Navbar replace hardcoded rem values with `$nav-*` variable equivalent in `.navbar-text` and `.navbar-underline`</li>
+				<li>Fixes #1367 - ClayCSS Multi Step Nav removes unused CSS selector</li>
+				<li>Fixes #1365 - Forms `.form-group-item` use `$form-group-margin-bottom` and `$form-group-margin-bottom-mobile` to set bottom spacing</li>
+				<li>Fixes #1363 - ClayCSS Collapse Icon use em values instead of rem on top property so it scales with font size changes</li>
+				<li>Fixes #1363 - ClayCSS Collapse Icon make `.collapse-icon-middle` more specific so it applies when nested inside components like Panel and Sheet</li>
+				<li>Fixes #1347 - Clay CSS Custom Checkbox and Radio revert changes made in Bootstrap `4.1.1` fc0fcc4 the IE bug isn't present in Clay CSS and Bootstrap's version doesn't align properly without text</li>
+				<li>Fixes #1347 - Clay CSS Breadcrumbs removed `$breadcrumb-border-radius` this was added in Bootstrap `4.1.0` fb8e9f3</li>
+				<li>Fixes #1347 - Clay CSS Removed styles for `.custom-file-input:focus + .custom-file-control` fixed in Bootstrap `4.1.0` 08a3ed7</li>
+				<li>Fixes #1347 - Clay CSS Modals removed `$modal-content-border-radius` added by Bootstrap `4.1.0` 49d0a4e</li>
+				<li>Fixes #1347 - Clay CSS Tables use `$table-striped-order` in `.table-striped` was added in Bootstrap `4.1.0` 25e2e28</li>
+				<li>Fixes #1347 - Clay CSS update Bootstrap CSS to `4.1.1`, Bootstrap.js to `4.1.1`, and Popper.js to `1.14.3`</li>
+				<li>Fixes #1347 - Clay CSS `atlas.scss`, `base.scss`, and `bootstrap.scss` should use `bootstrap/bootstrap.scss` instead of importing partials individually</li>
+				<li>Fixes #1354 - Clay CSS Input Group added Sass map `$input-group-inset-form-file-btn`</li>
+				<li>Fixes #1354 - Clay CSS Input Group added variables `$input-group-item-margin-left`, `$input-group-inset-item-padding-left`, `$input-group-inset-item-padding-right` and Sass maps `$input-group-lg-item-btn`, `$input-group-lg-item-btn-monospaced`, `$input-group-lg-inset-item-btn`, `$input-group-lg-inset-item-form-file-btn`, `$input-group-sm-item-btn`, `$input-group-sm-item-btn-monospaced`, `$input-group-sm-inset-item-btn`, `$input-group-sm-inset-item-form-file-btn` for more customization options</li>
+				<li>Fixes #1354 - ClayCSS added `clay-button-size` mixin for creating new base button classes with options to configure `breakpoint-down`, `border-color`, `border-radius`, `border-style`, `border-width`, `display`, `font-size`, `font-weight`, `height`, `line-height`, `padding-bottom`, `padding-left`, `padding-right`, `padding-top`, `transition`, `user-select`, `vertical-align`, `white-space`, `width`, `inline-item-font-size`, `section-font-size`, `section-font-weight`, `section-line-height`, `font-size-mobile`, `height-mobile`, `padding-bottom-mobile`, `padding-left-mobile`, `padding-right-mobile`, `padding-top-mobile`, `width-mobile`</li>
+				<li>Fixes #1345 - ClayCSS add semi-colon and `!default` flag to variables that don't have them</li>
+				<li>Fixes #1343 - ClayCSS Atlas `.label-lg` and `.form-control .label` icon size should be 12px and sticker size should be 14px</li>
+				<li>Fixes #1283 - Close button in label that isn't focusable should have hover state color</li>
+				<li>Fixes #1283 - Labels `button.label` should have cursor pointer and have same styles as `a.label`</li>
+				<li>Fixes #1283 - Added new mixin `clay-form-control-focus`</li>
+				<li>Fixes #1283 - Forms `.form-control.focus` should show input in focus state</li>
+				<li>Fixes #1283 - Labels add hover and focus states for labels that are interactive</li>
+				<li>Fixes #1283 - Mixin `clay-label-size` should be able to resize `.label-item .lexicon-icon` and added options to configure `$label-link-color`, `$item-spacer-x`, `$item-spacer-y`, `$sticker-size`, and `$sticker-border-radius`</li>
+				<li>Fixes #1283 - Labels added options to configure `$label-sticker-border-radius`, `$label-sticker-size`, `$label-item-spacer-y`</li>
+				<li>Fixes #1283 - Labels added Sass maps `$label-primary`, `$label-secondary`, `$label-success`, `$label-info`, `$label-warning`, `$label-danger`, `$label-light`, `$label-dark` and use mixin `clay-label-variant` to style labels</li>
+				<li>Fixes #1283 - Labels deprecated `$label-primary-*`, `$label-secondary-*`, `$label-success-*`, `$label-info-*`, `$label-warning-*`, `$label-danger-*`, `$label-light-*`, `$label-dark-*` variables</li>
+				<li>Fixes #1283 - Labels added Sass maps `$label-primary-close`, `$label-secondary-close`, `$label-success-close`, `$label-info-close`, `$label-warning-close`, `$label-danger-close`, `$label-light-close`, `$label-dark-close`</li>
+				<li>Fixes #1336 - ClayCSS added SVG Kazakhstan Flag</li>
+				<li>Fixes #1242 - (BREAKING CHANGE) Removes title from the svg element and focusable attribute. Use role=presentation instead and rely on usage to provide proper semantics when using/wrapping the icon</li>
+				<li>Revert "Update: Added `pointer-events: none` to `.navbar-text-truncate`, `.breadcrumb-text-truncate`, and `.lexicon-icon` to prevent focus highlight in IE11 when clicking links that contain those elements"</li>
+				<li>Fixes #1321 - (ClayCSS) Added new Lexicon Icon `document-pdf`</li>
+				<li>Fixes #1319 - Custom Radio Checked and Checkbox Indeterminate icons aren't centered</li>
+				<li>Fixes: #1270 - (ClayCSS) Deprecated `$clay-unset` and don't use variable resets because it isn't in the Sass spec</li>
+				<li>Fixes: #1270 - (ClayCSS) Add missing semi colon in Sheet variable</li>
+				<li>Fixes: #1270 - (ClayCSS) Mixin `clay-custom-grid-columns` base Sass map is being overwritten in Ruby/Dart Sass</li>
+				<li>Fixes: #1270 - (ClayCSS) Dart Sass no longer supports extending compound selectors e.g. `.primary.focus` added placeholders `%btn-*-focus` and `%btn-outline-*-focus`</li>
+			</ul>
+
 			<ul class="cp-changelog-list">
 				<li class="cp-changelog-list-title">2.4.1</li>
 				<li>Fixes #1298 (ClayCSS) Added new SVG Icons document-code, document-compressed, document-default, document-image, document-multimedia, document-presentation, document-table, document-text, and document-vector</li>
