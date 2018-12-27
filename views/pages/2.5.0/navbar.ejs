@@ -2,7 +2,7 @@
 	Navbar is a base component used to create other horizontal navigation like bars (e.g., Navigation Bar, Management Bar, and Application Bar). We recommend leaving this component as is and creating your own variant using the <code>clay-navbar-size($map)</code> and <code>clay-navbar-variant($map)</code> mixins.
 </div>
 
-<h3>Navbar Expand Md Base</h3>
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Navbar Expand Md Base' }) %>
 <nav class="navbar navbar-expand-md">
 	<div class="container-fluid container-fluid-max-xl">
 		<a class="navbar-brand" href="#1">
@@ -76,7 +76,7 @@
 	</div>
 </nav>
 
-<h3>Navbar Expand Md Base with Alternate Toggler</h3>
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Navbar Expand Md Base with Alternate Toggler' }) %>
 <nav class="navbar navbar-expand-md navbar-underline">
 	<div class="container-fluid container-fluid-max-xl">
 		<a aria-controls="navbar-collapse-d-001" aria-expanded="false" aria-label="Toggle Navigation" class="collapsed navbar-toggler navbar-toggler-link" data-toggle="collapse" href="#navbar-collapse-d-001" role="button">

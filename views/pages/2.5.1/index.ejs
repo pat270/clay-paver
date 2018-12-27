@@ -1,5 +1,6 @@
 <% 
 	var rootPath = '..';
+	var partialsPath = '../../partials/';
 	var mixinsPath = 'mixins/';
 	var svgIconsPath = '../../images/' + currentVersion + '/icons/icons.svg';
 %>
@@ -121,7 +122,7 @@
 
 				<h1 class="cp-page-header"><%- page.replace(/-/g, ' ') %></h1>
 
-				<%- include(page, { svgIconsPath: svgIconsPath }) %>
+				<%- include(page, { partialsPath: partialsPath, svgIconsPath: svgIconsPath }) %>
 
 				<% if (typeof prevPage !== 'undefined' || typeof nextPage !== 'undefined') { %>
 					<div class="autofit-row cp-page-navigation cp-page-navigation-bottom">
