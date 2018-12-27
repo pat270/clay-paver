@@ -739,6 +739,10 @@ a.cp-btn:focus {
 	width: 100%;
 }
 
+.cp-load-order-list {
+	text-transform: capitalize;
+}
+
 /* Grid */
 
 .cp-example-col {
