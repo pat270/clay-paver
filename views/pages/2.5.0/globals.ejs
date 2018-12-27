@@ -1,0 +1,114 @@
+<h3>How to Use Theme Colors</h3>
+<p>We recommend not using Bootstrap's color system. It's very rigid and doesn't apply well to a variety of themes. Only use this pattern if it fits your theme otherwise, we recommend using your own color system and applying it to each component.</p>
+
+<div class="row">
+	<div class="cp-example-swatch-container">
+		<h3>Grays</h3>
+		<div class="cp-white cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-100 cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-200 cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-300 cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-400 cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-500 cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-600 cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-700 cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-800 cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-900 cp-swatch cp-populate-content"></div>
+		<div class="cp-black cp-swatch cp-populate-content"></div>
+	</div>
+	<div class="cp-example-swatch-container">
+		<h3>Colors</h3>
+		<div class="cp-blue cp-swatch cp-populate-content"></div>
+		<div class="cp-indigo cp-swatch cp-populate-content"></div>
+		<div class="cp-purple cp-swatch cp-populate-content"></div>
+		<div class="cp-pink cp-swatch cp-populate-content"></div>
+		<div class="cp-red cp-swatch cp-populate-content"></div>
+		<div class="cp-orange cp-swatch cp-populate-content"></div>
+		<div class="cp-yellow cp-swatch cp-populate-content"></div>
+		<div class="cp-green cp-swatch cp-populate-content"></div>
+		<div class="cp-teal cp-swatch cp-populate-content"></div>
+		<div class="cp-cyan cp-swatch cp-populate-content"></div>
+	</div>
+	<div class="cp-example-swatch-container">
+		<h3>Theme Colors</h3>
+		<div class="cp-primary cp-swatch cp-populate-content"></div>
+		<div class="cp-secondary cp-swatch cp-populate-content"></div>
+		<div class="cp-success cp-swatch cp-populate-content"></div>
+		<div class="cp-info cp-swatch cp-populate-content"></div>
+		<div class="cp-warning cp-swatch cp-populate-content"></div>
+		<div class="cp-danger cp-swatch cp-populate-content"></div>
+		<div class="cp-light cp-swatch cp-populate-content"></div>
+		<div class="cp-dark cp-swatch cp-populate-content"></div>
+	</div>
+</div>
+
+<h3>Font Family Sans Serif</h3>
+<span class="cp-font-family cp-font-family-sans-serif cp-populate-content"></span>
+
+<h3>Font Family Serif</h3>
+<span class="cp-font-family cp-font-family-serif cp-populate-content"></span>
+
+<h3>Font Family Monospace</h3>
+<span class="cp-font-family cp-font-family-monospace cp-populate-content"></span>
+
+<h3>Font Family Base</h3>
+<span class="cp-font-family cp-font-family-base cp-populate-content"></span>
+
+<h3>Font Size Sm</h3>
+<span class="cp-font-size-sm cp-populate-content"></span>
+
+<h3>Font Size Base</h3>
+<span class="cp-font-size-base cp-populate-content"></span>
+
+<h3>Font Size Base Mobile</h3>
+<span class="cp-font-size-base-mobile cp-populate-content"></span>
+
+<h3>Font Size Lg</h3>
+<span class="cp-font-size-lg cp-populate-content"></span>
+
+<h3>Font Size Lg Mobile</h3>
+<span class="cp-font-size-lg-mobile cp-populate-content"></span>
+
+<h3>Font Weight Light</h3>
+<span class="cp-font-weight-light cp-populate-content"></span>
+
+<h3>Font Weight Normal</h3>
+<span class="cp-font-weight-normal cp-populate-content"></span>
+
+<h3>Font Weight Semi Bold</h3>
+<span class="cp-font-weight-semi-bold cp-populate-content"></span>
+
+<h3>Font Weight Bold</h3>
+<span class="cp-font-weight-bold cp-populate-content"></span>
+
+<h3>Font Weight Bolder</h3>
+<span class="cp-font-weight-bolder cp-populate-content"></span>
+
+<h3>Line Height Sm</h3>
+<span class="cp-line-height-sm cp-populate-content"></span>
+
+<h3>Line Height Base</h3>
+<span class="cp-line-height-base cp-populate-content"></span>
+
+<h3>Line Height Lg</h3>
+<span class="cp-line-height-lg cp-populate-content"></span>
+
+<script>
+	(function(root) {
+		var cpGlobalsPopulateItems = function() {
+			$('.cp-populate-content').each(function(index) {
+				var content = $(this).css('content').replace(/"/g, "");
+
+				$(this).text(content);
+			});
+		};
+
+		cpGlobalsPopulateItems();
+
+		root.cpGlobalsPopulateItems = cpGlobalsPopulateItems;
+	}(this));
+
+	$(document).on('cp-compile-done', function(event) {
+		cpGlobalsPopulateItems();
+	});
+</script>

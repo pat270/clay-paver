@@ -1,0 +1,302 @@
+<h4 class="cp-variables-form-header">Table Responsive</h4>
+<%- printInputs([
+	{ id: 'table-responsive-margin-bottom', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table</h4>
+<%- printInputs([
+	{ id: 'table-font-size', },
+	{ id: 'table-margin-bottom', },
+	{ id: 'table-border-width', },
+	{ id: 'table-border-color', color: true, },
+	{ id: 'table-caption-color', color: true, },
+	{ id: 'table-bg', color: true, },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Quick Action Menu</h4>
+<%- printInputs([
+	{ id: 'table-quick-action-menu-bg', color: true, },
+	{ id: 'table-quick-action-menu-align-items', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Gutters</h4>
+<%- printInputs([
+	{ id: 'table-cell-gutters', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Bordered</h4>
+<%- printInputs([
+	{ id: 'table-bordered-border-width', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Striped</h4>
+<%- printInputs([
+	{ id: 'table-striped-order', },
+]) %>
+<%- printInputs([
+	{ id: 'table-accent-bg', color: true, },
+]) %>
+<%- printInputs([
+	{ id: 'table-quick-action-menu-accent-bg', color: true, },
+	{ id: 'table-quick-action-menu-accent-active-bg', color: true, },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Hover</h4>
+<%- printInputs([
+	{ id: 'table-hover-bg', color: true, },
+]) %>
+<%- printInputs([
+	{ id: 'table-quick-action-menu-hover-bg', color: true, },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Active (Table Row)</h4>
+<%- printInputs([
+	{ id: 'table-active-bg', color: true, },
+]) %>
+<%- printInputs([
+	{ id: 'table-quick-action-menu-active-bg', color: true, },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Disabled (Table Row)</h4>
+<%- printInputs([
+	{ id: 'table-disabled-color', color: true, },
+	{ id: 'table-disabled-bg', color: true, },
+	{ id: 'table-disabled-cursor', },
+	{ id: 'table-disabled-pointer-events', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Head (thead th)</h4>
+<%- printInputs([
+	{ id: 'table-head-height', },
+	{ id: 'table-head-font-size', },
+	{ id: 'table-head-font-weight', },
+	{ id: 'table-head-border-top-width', },
+	{ id: 'table-head-border-bottom-width', },
+	{ id: 'table-head-color', color: true, },
+	{ id: 'table-head-bg', color: true, },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Head Link (thead th a)</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="table-head-link" name="clay[table-head-link]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'table-head-link' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Table Head Title</h4>
+<%- printInputs([
+	{ id: 'table-head-title-text-truncate-max-width', },
+	{ id: 'table-head-title-inline-item-spacer-x', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Data (td)</h4>
+<%- printInputs([
+	{ id: 'table-data-border-top-width', },
+	{ id: 'table-data-border-right-width', },
+	{ id: 'table-data-border-bottom-width', },
+	{ id: 'table-data-border-left-width', },
+	{ id: 'table-data-border-style', },
+	{ id: 'table-data-border-color', color: true, },
+	{ id: 'table-data-vertical-align', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Cell Padding</h4>
+<%- printInputs([
+	{ id: 'table-cell-padding', },
+	{ id: 'table-cell-padding-sm', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Cell Expand</h4>
+<%- printInputs([
+	{ id: 'table-cell-expand-min-width', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Cell Expand Small</h4>
+<%- printInputs([
+	{ id: 'table-cell-expand-small-width', },
+	{ id: 'table-cell-expand-small-max-width', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Cell Expand Smaller</h4>
+<%- printInputs([
+	{ id: 'table-cell-expand-smaller-width', },
+	{ id: 'table-cell-expand-smaller-max-width', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Cell Expand Smallest</h4>
+<%- printInputs([
+	{ id: 'table-cell-expand-smallest-width', },
+	{ id: 'table-cell-expand-smallest-max-width', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Divider</h4>
+<%- printInputs([
+	{ id: 'table-divider-font-size', },
+	{ id: 'table-divider-font-weight', },
+	{ id: 'table-divider-padding', },
+	{ id: 'table-divider-color', color: true, },
+	{ id: 'table-divider-bg', color: true, },
+	{ id: 'table-divider-text-transform', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Valign Top</h4>
+<%- printInputs([
+	{ id: 'table-valign-top-body-cell-padding-top', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Valign Bottom</h4>
+<%- printInputs([
+	{ id: 'table-valign-bottom-body-cell-padding-bottom', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Title</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="table-title" name="clay[table-title]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'table-title' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Table Title Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="table-title-link" name="clay[table-title-link]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'table-title-link' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Table Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="table-link" name="clay[table-link]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'table-link' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Table Action Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="table-action-link" name="clay[table-action-link]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'table-action-link' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Table Dark</h4>
+<%- printInputs([
+	{ id: 'table-dark-border-color', color: true, },
+	{ id: 'table-dark-color', color: true, },
+	{ id: 'table-dark-bg', color: true, },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Dark Table Striped</h4>
+<%- printInputs([
+	{ id: 'table-dark-accent-bg', color: true, },
+]) %>
+
+<h4 class="cp-variables-form-header">Table Dark Table Hover</h4>
+<%- printInputs([
+	{ id: 'table-dark-hover-bg', color: true, },
+]) %>
+
+<h4 class="cp-variables-form-header">Table List</h4>
+<%- printInputs([
+	{ id: 'table-list-font-size', },
+	{ id: 'table-list-margin-top', },
+	{ id: 'table-list-margin-bottom', },
+	{ id: 'table-list-border-y-width', },
+	{ id: 'table-list-border-x-width', },
+	{ id: 'table-list-border-width', },
+	{ id: 'table-list-border-color', color: true, },
+	{ id: 'table-list-border-radius', },
+	{ id: 'table-list-color', color: true, },
+	{ id: 'table-list-bg', color: true, },
+]) %>
+
+<h4 class="cp-variables-form-header">Table List Quick Action Menu</h4>
+<%- printInputs([
+	{ id: 'table-list-quick-action-menu-bg', color: true, },
+	{ id: 'table-list-quick-action-menu-align-items', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table List Table Striped</h4>
+<%- printInputs([
+	{ id: 'table-list-accent-bg', color: true, },
+	{ id: 'table-list-quick-action-menu-accent-bg', color: true, },
+	{ id: 'table-list-quick-action-menu-accent-active-bg', color: true, },
+]) %>
+
+<h4 class="cp-variables-form-header">Table List Table Hover</h4>
+<%- printInputs([
+	{ id: 'table-list-hover-bg', color: true, },
+	{ id: 'table-list-quick-action-menu-hover-bg', color: true, },
+]) %>
+
+<h4 class="cp-variables-form-header">Table List Table Active (Table Row)</h4>
+<%- printInputs([
+	{ id: 'table-list-active-bg', color: true, },
+	{ id: 'table-list-quick-action-menu-active-bg', color: true, },
+]) %>
+
+<h4 class="cp-variables-form-header">Table List Table Disabled (Table Row)</h4>
+<%- printInputs([
+	{ id: 'table-list-disabled-color', color: true, },
+	{ id: 'table-list-disabled-bg', color: true, },
+	{ id: 'table-list-disabled-cursor', },
+	{ id: 'table-list-disabled-pointer-events', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table List Head (thead th)</h4>
+<%- printInputs([
+	{ id: 'table-list-head-height', },
+	{ id: 'table-list-head-font-size', },
+	{ id: 'table-list-head-font-weight', },
+	{ id: 'table-list-head-bg', color: true, },
+	{ id: 'table-list-head-vertical-alignment', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table List Head Link (thead th a)</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="table-list-head-link" name="clay[table-list-head-link]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'table-list-head-link' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Table List Divider</h4>
+<%- printInputs([
+	{ id: 'table-list-divider-padding-y', },
+	{ id: 'table-list-divider-padding-x', },
+]) %>
+
+<h4 class="cp-variables-form-header">Table List Title</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="table-list-title" name="clay[table-list-title]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'table-list-title' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Table List Title Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="table-list-title-link" name="clay[table-list-title-link]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'table-list-title-link' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Table List Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="table-list-link" name="clay[table-list-link]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'table-list-link' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Table List Action Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="table-list-action-link" name="clay[table-list-action-link]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'table-list-action-link' }) %>
+</div>

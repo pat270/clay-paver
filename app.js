@@ -1,5 +1,5 @@
-const clayLatestVersion = '2.4.1';
-const clayAvailableVersions = ['2.3.3'];
+const clayLatestVersion = '2.5.1';
+const clayAvailableVersions = [ '2.5.0', '2.4.1', '2.3.3' ];
 
 const express = require('express');
 const app = express();
@@ -14,16 +14,17 @@ app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 
-const sitePages = [ 'globals', 'grid', 'typography', 'icons', 'links', 'utilities', 'alert', 'label', 'badge', 'sticker', 'button', 'breadcrumb', 'card', 'dropdown', 'input', 'input-custom', 'input-group', 'input-validation', 'list-group', 'loading-animations', 'menubar', 'modal', 'nav', 'nav-pills', 'nav-tabs', 'nav-underline', 'navbar', 'navbar-application-bar', 'navbar-management-bar', 'navbar-navigation-bar', 'pagination', 'panel', 'popover', 'progress-bar', 'multi-step-nav', 'sheet', 'sidebar', 'table', 'tbar', 'tooltip', 'timeline', 'toggle-switch', ];
-
 const sitePageCtrl = (req, res, next) => {
-	const page = req.params.page;
-	const version = req.params.version;
+	let page = req.params.page;
+	let version = req.params.version;
+
+	let appGlobals = require('./views/pages/' + version + '/app-globals/globals');
+	let sitePages = appGlobals.pages;
 
 	let pageExists = false;
 
-	const prevPage = sitePages[sitePages.indexOf(page) - 1];
-	const nextPage = sitePages[sitePages.indexOf(page) + 1];
+	let prevPage = sitePages[sitePages.indexOf(page) - 1];
+	let nextPage = sitePages[sitePages.indexOf(page) + 1];
 
 	res.locals = {
 		printInputs: (arr) => {
@@ -81,7 +82,10 @@ app.get('/changelog', (req, res, next) => {
 });
 
 app.get('/:version/import', (req, res, next) => {
-	const version = req.params.version;
+	let version = req.params.version;
+
+	let appGlobals = require('./views/pages/' + version + '/app-globals/globals');
+	let sitePages = appGlobals.pages;
 
 	res.render('pages/' + version + '/index', {
 		currentVersion: version,
@@ -93,7 +97,10 @@ app.get('/:version/import', (req, res, next) => {
 app.get('/:version/:page', sitePageCtrl);
 
 app.get('/:version', (req, res, next) => {
-	const version = req.params.version;
+	let version = req.params.version;
+
+	let appGlobals = require('./views/pages/' + version + '/app-globals/globals');
+	let sitePages = appGlobals.pages;
 
 	res.locals = {
 		printInputs: (arr) => {

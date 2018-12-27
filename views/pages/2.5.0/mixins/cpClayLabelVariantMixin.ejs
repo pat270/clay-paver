@@ -1,0 +1,20 @@
+<%# Deprecated variables -border-color, -color, -bg, -hover-border-color, -hover-color, -hover-bg not listed for backward compatibility %>
+<%# Added label-{variant}-close Sass maps in 2.5.0 so not listed as well %>
+
+<%-
+	printInputs([
+		{ id: namespace + '-text-decoration', },
+		{ id: namespace + '-hover-text-decoration', },
+		{ id: namespace + '-focus-bg', },
+		{ id: namespace + '-focus-border-color', },
+		{ id: namespace + '-focus-box-shadow', },
+		{ id: namespace + '-focus-color', },
+		{ id: namespace + '-focus-outline', },
+		{ id: namespace + '-focus-text-decoration', },
+		{ id: namespace + '-disabled-bg', },
+		{ id: namespace + '-disabled-border-color', },
+		{ id: namespace + '-disabled-color', },
+		{ id: namespace + '-link-text-decoration', },
+		{ id: namespace + '-link-hover-text-decoration', },
+	]);
+%>

@@ -1,0 +1,3 @@
+module.exports = {
+	pages: [ 'globals', 'grid', 'typography', 'icons', 'links', 'utilities', 'alert', 'label', 'badge', 'sticker', 'button', 'breadcrumb', 'card', 'dropdown', 'input', 'input-custom', 'input-group', 'input-validation', 'list-group', 'loading-animations', 'menubar', 'modal', 'nav', 'nav-pills', 'nav-tabs', 'nav-underline', 'navbar', 'navbar-application-bar', 'navbar-management-bar', 'navbar-navigation-bar', 'pagination', 'panel', 'popover', 'progress-bar', 'multi-step-nav', 'sheet', 'sidebar', 'table', 'tbar', 'tooltip', 'timeline', 'toggle-switch', ],
+};

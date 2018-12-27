@@ -1,0 +1,101 @@
+<h4 class="cp-variables-form-header">Tbar Item</h4>
+<%- printInputs([
+	{ id: 'tbar-item-padding-y', },
+	{ id: 'tbar-item-padding-x', },
+]) %>
+
+<h4 class="cp-variables-form-header">Component Tbar</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="component-tbar" name="clay[component-tbar]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayTbarVariantMixin', { namespace: 'component-tbar' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Subnav Tbar</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar" name="clay[subnav-tbar]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayTbarVariantMixin', { namespace: 'subnav-tbar' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Subnav Tbar Component Title</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-component-title" name="clay[subnav-tbar-component-title]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'subnav-tbar-component-title' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Subnav Tbar Component Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-component-link" name="clay[subnav-tbar-component-link]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'subnav-tbar-component-link' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Subnav Tbar Light</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-light" name="clay[subnav-tbar-light]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayTbarVariantMixin', { namespace: 'subnav-tbar-light' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Subnav Tbar Primary Component Link</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-primary-component-link" name="clay[subnav-tbar-primary-component-link]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'subnav-tbar-primary-component-link' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Subnav Tbar Primary Component Label Close</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-primary-component-label-close" name="clay[subnav-tbar-primary-component-label-close]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'subnav-tbar-primary-component-label-close' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Subnav Tbar Primary Component Label</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-primary-component-label" name="clay[subnav-tbar-primary-component-label]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLabelVariantMixin', { namespace: 'subnav-tbar-primary-component-label' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Subnav Tbar Primary Tbar Label Size</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-primary-tbar-label-size" name="clay[subnav-tbar-primary-tbar-label-size]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLabelSizeMixin', { namespace: 'subnav-tbar-primary-tbar-label-size' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Subnav Tbar Primary</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-primary" name="clay[subnav-tbar-primary]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayTbarVariantMixin', { namespace: 'subnav-tbar-primary' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Subnav Tbar Primary Disabled Component Label</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-primary-disabled-component-label" name="clay[subnav-tbar-primary-disabled-component-label]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayLabelVariantMixin', { namespace: 'subnav-tbar-primary-disabled-component-label' }) %>
+</div>
+
+<h4 class="cp-variables-form-header">Subnav Tbar Primary Disabled</h4>
+<div class="cp-form-group-sass-map">
+	<div class="cp-form-group">
+		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-primary-disabled" name="clay[subnav-tbar-primary-disabled]" type="hidden">
+	</div>
+	<%- include(mixinsPath + 'cpClayTbarVariantMixin', { namespace: 'subnav-tbar-primary-disabled' }) %>
+</div>
