@@ -1,5 +1,5 @@
-const clayLatestVersion = '2.5.0';
-const clayAvailableVersions = ['2.4.1', '2.3.3'];
+const clayLatestVersion = '2.5.1';
+const clayAvailableVersions = [ '2.5.0', '2.4.1', '2.3.3' ];
 
 const express = require('express');
 const app = express();
