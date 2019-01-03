@@ -1,4 +1,4 @@
-<h3>Autofit</h3>
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Autofit' }) %>
 <div class="autofit-row">
 	<div class="autofit-col autofit-col-expand" style="background-color: aliceblue;">
 		<div class="autofit-section">
@@ -93,7 +93,7 @@
 	</div>
 </div>
 
-<h3>Autofit Padded</h3>
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Autofit Padded' }) %>
 <div class="autofit-row autofit-padded">
 	<div class="autofit-col autofit-col-expand" style="background-color: aliceblue;">
 		<div class="autofit-section">
@@ -192,12 +192,12 @@
 	For <strong>Inline Item</strong> to function and space properly, white space between text and icons must be removed from the markup inside the component. It's generally easier to remove all white space inside the link, button, or component. In the examples below, whitespaces in button and link are slightly off and the link underline on hover is a bit wide.
 </div>
 
-<h3>Inline Item with Anchor Tag (No White Space)</h3>
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Inline Item with Anchor Tag (No White Space)' }) %>
 <a href="#1">
 	<span class="inline-item inline-item-before"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-share"><use xlink:href="<%- svgIconsPath %>#share" /></svg></span>link<span class="inline-item inline-item-middle"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-question-circle"><use xlink:href="<%- svgIconsPath %>#question-circle" /></svg></span><span class="inline-item inline-item-middle"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-question-circle"><use xlink:href="<%- svgIconsPath %>#question-circle" /></svg></span><span class="inline-item inline-item-middle"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-question-circle"><use xlink:href="<%- svgIconsPath %>#question-circle" /></svg></span>why, but ok.<span class="inline-item inline-item-after"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-add-cell"><use xlink:href="<%- svgIconsPath %>#add-cell" /></svg></span>
 </a>
 
-<h3>Inline Item with Anchor Tag (Has White Space)</h3>
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Inline Item with Anchor Tag (Has White Space)' }) %>
 <a href="#1">
 	<span class="inline-item inline-item-before">
 		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-share"><use xlink:href="<%- svgIconsPath %>#share" /></svg>
@@ -218,10 +218,10 @@
 	</span>
 </a>
 
-<h3>Inline Item with Button Tag (No White Space)</h3>
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Inline Item with Button Tag (No White Space)' }) %>
 <button class="btn btn-secondary" type="button"><span class="inline-item inline-item-before"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-plus"><use xlink:href="<%- svgIconsPath %>#plus" /></svg></span>Secondary<span class="inline-item inline-item-after"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-camera"><use xlink:href="<%- svgIconsPath %>#camera" /></svg></span></button>
 
-<h3>Inline Item with Button Tag (Has White Space)</h3>
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Inline Item with Button Tag (Has White Space)' }) %>
 <button class="btn btn-secondary" type="button">
 	<span class="inline-item inline-item-before">
 		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-plus">
@@ -234,5 +234,5 @@
 	</span>
 </button>
 
-<h3>Bg Checkered</h3>
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Bg Checkered' }) %>
 <div class="bg-checkered cp-example-bg-checkered"></div>

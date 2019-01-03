@@ -1,5 +1,5 @@
 const clayLatestVersion = '2.5.1';
-const clayAvailableVersions = [ '2.5.0', '2.4.1', '2.3.3' ];
+const clayAvailableVersions = [ '2.5.0', '2.4.1', '2.3.3', '2.1.12' ];
 
 const express = require('express');
 const app = express();
@@ -14,14 +14,53 @@ app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 
+function doesPageExist(page, sitePages) {
+	for (let i = 0; i < sitePages.length; i++) {
+		if (sitePages[i] === page) {
+			return true;
+		}
+	}
+
+	return false;
+}
+
+function doesVersionExist(version) {
+	if (version === clayLatestVersion) {
+		return true;
+	}
+
+	for (let i = 0; i < clayAvailableVersions.length; i++) {
+		if (version === clayAvailableVersions[i]) {
+			return true;
+		}
+	}
+
+	return false;
+}
+
+const render404Ctrl = (req, res, next) => {
+	console.log('-=-=-=- URL -=-=-=-');
+	console.log(req.originalUrl + ' does not exist.');
+
+	res.status(404).render('pages/404', {
+		clayLatestVersion: clayLatestVersion,
+		clayAvailableVersions: clayAvailableVersions,
+	});
+}
+
 const sitePageCtrl = (req, res, next) => {
-	let page = req.params.page;
 	let version = req.params.version;
+
+	if (!doesVersionExist(version)) {
+		render404Ctrl(req, res, next);
+
+		return;
+	}
+
+	let page = req.params.page;
 
 	let appGlobals = require('./views/pages/' + version + '/app-globals/globals');
 	let sitePages = appGlobals.pages;
-
-	let pageExists = false;
 
 	let prevPage = sitePages[sitePages.indexOf(page) - 1];
 	let nextPage = sitePages[sitePages.indexOf(page) + 1];
@@ -41,18 +80,8 @@ const sitePageCtrl = (req, res, next) => {
 		}
 	};
 
-	for (let i = 0; i < sitePages.length; i++) {
-		if (sitePages[i] === page) {
-			pageExists = true;
-
-			break;
-		}
-	}
-
-	if (!pageExists) {
+	if (!doesPageExist(page, sitePages)) {
 		render404Ctrl(req, res, next);
-
-		return;
 	}
 
 	res.render('pages/' + version + '/index', {
@@ -67,13 +96,6 @@ const sitePageCtrl = (req, res, next) => {
 	});
 }
 
-const render404Ctrl = (req, res, next) => {
-	res.status(404).render('pages/404', {
-		clayLatestVersion: clayLatestVersion,
-		clayAvailableVersions: clayAvailableVersions,
-	});
-}
-
 app.get('/changelog', (req, res, next) => {
 	res.render('pages/changelog', {
 		clayLatestVersion: clayLatestVersion,
@@ -83,6 +105,12 @@ app.get('/changelog', (req, res, next) => {
 
 app.get('/:version/import', (req, res, next) => {
 	let version = req.params.version;
+
+	if (!doesVersionExist(version)) {
+		render404Ctrl(req, res, next);
+
+		return;
+	}
 
 	let appGlobals = require('./views/pages/' + version + '/app-globals/globals');
 	let sitePages = appGlobals.pages;
@@ -98,6 +126,12 @@ app.get('/:version/:page', sitePageCtrl);
 
 app.get('/:version', (req, res, next) => {
 	let version = req.params.version;
+
+	if (!doesVersionExist(version)) {
+		render404Ctrl(req, res, next);
+
+		return;
+	}
 
 	let appGlobals = require('./views/pages/' + version + '/app-globals/globals');
 	let sitePages = appGlobals.pages;
@@ -116,12 +150,6 @@ app.get('/:version', (req, res, next) => {
 			});
 		}
 	};
-
-	if (clayAvailableVersions.indexOf(version) === -1 && version !== clayLatestVersion) {
-		render404Ctrl(req, res, next);
-
-		return;
-	}
 
 	res.render('pages/' + version + '/index', { 
 		currentVersion: version,

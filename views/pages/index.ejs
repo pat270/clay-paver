@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta charset="UTF-8" />
-	<title>Clay 2 Paver</title>
+	<title>Clay Paver for Clay CSS</title>
+	<meta name="description" content="A live browser based customizer for Liferay's Clay CSS Framework.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/css/home.css" type="text/css" />
 </head>
@@ -22,9 +23,26 @@
 				<div class="version-divider">or</div>
 
 				<div class="older-versions">
-					<% for(var i = 0; i < clayAvailableVersions.length; i++) { %>
-						<a class="cp-btn cp-btn-primary" href="/<%- clayAvailableVersions[i] %>/"><%- clayAvailableVersions[i] %></a>
-					<% } %>
+					<%
+						var versionLinkLabel = '';
+
+						for(var i = 0; i < clayAvailableVersions.length; i++) {
+							versionLinkLabel = clayAvailableVersions[i];
+
+							if (clayAvailableVersions[i] === '2.3.3') {
+								versionLinkLabel = clayAvailableVersions[i] + ' (7.1.1 GA2)';
+							}
+
+							if (clayAvailableVersions[i] === '2.1.12') {
+								versionLinkLabel = clayAvailableVersions[i] + ' (7.1.0 GA1)';
+							}
+					%>
+
+						<a class="cp-btn cp-btn-primary" href="/<%- clayAvailableVersions[i] %>/"><%- versionLinkLabel %></a>
+
+					<%
+						}
+					%>
 					<a class="cp-btn cp-btn-primary" href="/changelog/" rel="noopener noreferrer" target="_blank">Changelog</a>
 				</div>
 			<% } %>

@@ -172,10 +172,8 @@ a:hover {
 	font-size: 19px;
 	line-height: 1.2;
 	margin-bottom: 12px;
-	margin-top: -41px;
+	margin-top: -45px;
 	padding-top: 65px;
-	position: relative;
-	z-index: -1;
 }
 
 /* Dropdowns */
@@ -739,6 +737,10 @@ a.cp-btn:focus {
 	height: 150px;
 	max-width: 150px;
 	width: 100%;
+}
+
+.cp-load-order-list {
+	text-transform: capitalize;
 }
 
 /* Grid */

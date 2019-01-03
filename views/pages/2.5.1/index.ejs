@@ -1,5 +1,6 @@
 <% 
 	var rootPath = '..';
+	var partialsPath = '../../partials/';
 	var mixinsPath = 'mixins/';
 	var svgIconsPath = '../../images/' + currentVersion + '/icons/icons.svg';
 %>
@@ -8,7 +9,8 @@
 <html>
 <head>
 	<meta charset="UTF-8" />
-	<title>Clay Paver</title>
+	<title>Clay Paver for Clay CSS <%- currentVersion %></title>
+	<meta name="description" content="A live browser based customizer for Liferay's Clay CSS <%- currentVersion %> Framework.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="<% rootPath%>/css/site.css" type="text/css" />
 	<script src="<% rootPath%>/js/svg4everybody.js"></script>
@@ -121,7 +123,7 @@
 
 				<h1 class="cp-page-header"><%- page.replace(/-/g, ' ') %></h1>
 
-				<%- include(page, { svgIconsPath: svgIconsPath }) %>
+				<%- include(page, { partialsPath: partialsPath, svgIconsPath: svgIconsPath }) %>
 
 				<% if (typeof prevPage !== 'undefined' || typeof nextPage !== 'undefined') { %>
 					<div class="autofit-row cp-page-navigation cp-page-navigation-bottom">

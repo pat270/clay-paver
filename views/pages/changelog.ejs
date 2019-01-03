@@ -83,6 +83,60 @@
 				<li>Fixes #1164 - Type added options to configure `$moz-osx-font-smoothing`, `$webkit-font-smoothing`, `$body-moz-osx-font-smoothing`, `$body-webkit-font-smoothing` and use browser default font smoothing in Base theme</li>
 				<li>Fixes #1198 - Mixin `clay-menubar-vertical-variant` added options to configure `link-bg`, `link-hover-bg`, `link-active-bg`, `link-disabled-bg`, `link-border-radius`, `link-border-radius-mobile`.</li>
 			</ul>
+
+			<ul class="cp-changelog-list">
+				<li class="cp-changelog-list-title">2.3.3</li>
+				<li>Fixes #1105, #1147 - ClayCSS: Subnav Tbar Primary should support labels, break to new line, have disabled state, and `.component-link` color should have more contrast</li>
+				<li>ClayCSS: (#1105) Mixin `clay-label-size` added options to configure `margin-bottom`, `margin-left`, `margin-right`, `margin-top`</li>
+				<li>ClayCSS: (#1105) Mixin `clay-tbar-variant` added options to configure `$padding-x`, `$padding-y`, `$item-justify-content`, `$btn-monospaced-margin-x`, `$btn-monospaced-margin-y`, `$link-monospaced-margin-x`, `$link-monospaced-margin-y`, `$label-size`</li>
+				<li>ClayCSS (#1105) Tbar added option to break to new lines with `.tbar-nav-shrink`, `.tbar-nav-wrap`, `.subnav-tbar-inline-xs-down`, `.subnav-tbar-inline-sm-down`, `.subnav-tbar-inline-md-down`, `.subnav-tbar-inline-lg-down`, `.subnav-tbar-inline-xl-down`</li>
+				<li>ClayCSS: (#1105) Label disabled `.close` hover state should look the same</li>
+				<li>ClayCSS: (#1105) Mixin `clay-link` add option to configure `disabled-text-decoration`</li>
+				<li>ClayCSS: (#1105) New mixin `clay-label-variant` for creating custom label colors</li>
+				<li>ClayCSS: (#1147) Subnav Tbar Primary changed `.component-link` color to have more contrast and added `.subnav-tbar-primary.subnav-tbar-disabled` colors</li>
+				<li>ClayCSS: (#1105) Tbar renamed `.subnav-tbar-inline-*-down` to `.tbar-inline-*-down`</li>
+				<li>Fixes #1105 - ClayCSS: Mixin `clay-text-typography` and option to pass in display, max-width, and word-wrap properties</li>
+			</ul>
+
+			<ul class="cp-changelog-list">
+				<li class="cp-changelog-list-title">2.3.2</li>
+				<li>ClayCSS: (Fixes #1125) Atlas Forms changing individual border-widths for an input doesn't apply</li>
+				<li>ClayCSS: (#1125) Forms added option to configure `$input-border-style` and declare `border-style`, `border-color` separately so we can size borders individually</li>
+				<li>ClayCSS: (Fixes #1123) Use `map-merge` pattern for any Sass map variable with default values</li>
+			</ul>
+
+			<ul class="cp-changelog-list">
+				<li class="cp-changelog-list-title">2.3.0</li>
+				<li>ClayCSS: (Fixes #1090) Modal Variant Mixin `$footer-border-color` declared twice</li>
+				<li>Update: (Fixes #1088) List Group variables `$list-group-text-link` and `$list-group-subtext-link` should follow same pattern as `$list-group-title-link`</li>
+				<li>ClayCSS: (Fixes #1085) Use :hover :focus pseudo classes instead of Bootstraps mixin</li>
+				<li>New: (Fixes #1083) Custom Form added `$custom-control-indicator-checked-active-bg`, `$custom-control-indicator-checked-active-border-color`, `$custom-control-indicator-checked-disabled-bg`, `$custom-control-indicator-checked-disabled-border-color`, `$custom-radio-indicator-checked-disabled-border-color`</li>
+				<li>Update: (#1083) Custom Form deprecate old variable names `$custom-control-indicator-active-checked-bg`, `$custom-control-indicator-active-checked-border-color`, `$custom-control-indicator-disabled-checked-bg`, `$custom-control-indicator-disabled-checked-border-color`, `$custom-radio-indicator-disabled-checked-border-color` and map them to the new ones</li>
+				<li>New (#Fixes 1065) Table added helpers `.table-cell-minw-50`, `.table-cell-minw-75`, `.table-cell-minw-100`, `.table-cell-minw-150`, `.table-cell-minw-200`, `.table-cell-minw-250`, `.table-cell-minw-300`, `.table-cell-minw-350`, `.table-cell-minw-400`, `.table-cell-ws-normal`, and `.table-cell-ws-nowrap` for customizing table columns</li>
+				<li>New: (#1065) Table added option to configure `$table-valign-top-body-cell-padding-top`, `$table-valign-bottom-body-cell-padding-bottom` and align `.quick-action-menu` to the top or bottom</li>
+				<li>Update: (Fixes #1053) Atlas Card box-shadow should match Lexicon card box shadow better</li>
+			</ul>
+
+			<ul class="cp-changelog-list">
+				<li class="cp-changelog-list-title">2.2.0</li>
+				<li>New: (#1046) Sheet added mixin `sheet-footer-btn-block` for creating block level buttons at specific breakpoints, added `.sheet-footer-btn-block-sm-down`, and option to configure Sass map `$sheet-footer-btn-block-sm-down`</li>
+				<li>New: (Fixes #1046) `.sheet` should have 1rem padding in mobile, added options to configure `$sheet-footer-margin-bottom-mobile`, `$sheet-footer-margin-left-mobile`, `$sheet-footer-margin-right-mobile`, `$sheet-footer-margin-top-mobile`</li>
+				<li>Update: (Fixes #1044) Atlas set Checkbox labels to be normal and semi bold on active</li>
+				<li>New: (#1044) Dropdown Menu added option to configure `$dropdown-link-font-weight`</li>
+				<li>Update: (Fixes #1028) Atlas Dropdown Menu box shadow value so it works better in IE11</li>
+				<li>New: (Fixes #1029) Table Autofit added `.table-cell-expand-small`, `.table-cell-expand-smaller`, and `.table-cell-expand-smallest` to help size columns better</li>
+				<li>New: (#1020) Table addd options to configure `$table-cell-expand-small-max-width`, `$table-cell-expand-small-width`, `$table-cell-expand-smaller-max-width`, `$table-cell-expand-smaller-width`, `$table-cell-expand-smallest-max-width`, `$table-cell-expand-smallest-width`</li>
+			</ul>
+
+			<ul class="cp-changelog-list">
+				<li class="cp-changelog-list-title">2.1.12</li>
+				<li>New: (Fixes #1017) Mixin `clay-menubar-vertical-variant` added option to configure `toggler-font-size-mobile` and set it to 14px for `.menubar-vertical-expand-md` and `.menubar-vertical-expand-lg`</li>
+				<li>New: (#1017)  Mixin `clay-menubar-expand` added option to configure `collapse-z-index-mobile` and set it to 499 (one less than navbar-collapse-absolute)</li>
+				<li>New: (Fixes #1014) Nav added `.nav-form` for properly spacing search bar like inputs with `.nav`</li>
+				<li>New: (#1014) Nav added options to configure `$nav-form-padding-bottom`, `$nav-form-padding-left`, `$nav-form-padding-right`, `$nav-form-padding-top`, `$nav-stacked-nav-form-padding-bottom`, `$nav-stacked-nav-form-padding-left`, `$nav-stacked-nav-form-padding-right`, `$nav-stacked-nav-form-padding-top`</li>
+				<li>Update: (Fixes #1009) Button remove `backface-visibility` workaround from #546</li>
+				<li>Update: (Fixes #1007) Sheet `.sheet-footer` should use `display: flex`</li>
+			</ul>
 		</div>
 	</section>
 </body>

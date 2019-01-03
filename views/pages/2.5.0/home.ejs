@@ -1,49 +1,12 @@
-<h1>Clay 2 Paver</h1>
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Clay 2 Paver' }) %>
 <p>
 	Welcome to Clay 2 Paver, a web based tool to customize Clay CSS through Sass variables. Sass loads variables top to bottom, so make sure the variable is defined before trying to use it. You will not be able to use a <code>Button</code> variable in <code>Links</code> because of this. The variables that are most commonly reused are located under the Globals section. Variables are loaded in this order:
 </p>
-<ol>
+
+<ol class="cp-load-order-list">
 	<li>Home</li>
-	<li>Globals</li>
-	<li>Grid</li>
-	<li>Typography</li>
-	<li>Icons</li>
-	<li>Links</li>
-	<li>Utilities</li>
-	<li>Alert</li>
-	<li>Label</li>
-	<li>Badge</li>
-	<li>Sticker</li>
-	<li>Button</li>
-	<li>Breadcrumb</li>
-	<li>Card</li>
-	<li>Dropdown</li>
-	<li>Input</li>
-	<li>Input Custom</li>
-	<li>Input Group</li>
-	<li>Input Validation</li>
-	<li>List Group</li>
-	<li>Loading Animations</li>
-	<li>Menubar</li>
-	<li>Modal</li>
-	<li>Nav</li>
-	<li>Nav Pills</li>
-	<li>Nav Tabs</li>
-	<li>Nav Underline</li>
-	<li>Navbar</li>
-	<li>Navbar (Application Bar)</li>
-	<li>Navbar (Management Bar)</li>
-	<li>Navbar (Navigation Bar)</li>
-	<li>Pagination</li>
-	<li>Panel</li>
-	<li>Popover</li>
-	<li>Progress Bar</li>
-	<li>Multi Step Nav</li>
-	<li>Sheet</li>
-	<li>Sidebar</li>
-	<li>Table</li>
-	<li>Tbar (Toolbar)</li>
-	<li>Tooltip</li>
-	<li>Timeline</li>
-	<li>Toggle Switch</li>
+
+	<% for (var i = 0; i < sitePages.length; i++) { %>
+		<li><%- sitePages[i].replace(/-/g, ' '); %></li>
+	<% } %>
 </ol>

@@ -1,0 +1,10 @@
+<% 
+if (typeof text !== 'undefined') {
+	var id = text.replace(/\s+/g, '-').toLowerCase();
+%>
+	<h2 class="cp-component-header" data-turbolinks="false" id="<%- id %>">
+		<%= text %>
+	</h2>
+<%
+}
+%>
