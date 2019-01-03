@@ -1,0 +1,996 @@
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Card' }) %>
+<div class="row">
+	<div class="cp-example-card-container">
+		<div class="card">
+			<div class="aspect-ratio card-item-first">
+				<img alt="thumbnail" class="aspect-ratio-item-fluid" src="../../images/thumbnail_hot_air_balloon.jpg">
+			</div>
+			<div class="card-body">
+				<h3 class="card-title">.card-title</h3>
+				<h3 class="card-title"><a href="#1">.card-title a (Card Title Link)</a></h3>
+				<h3 class="card-title"><button class="btn btn-unstyled" type="button">.card-title .btn.btn-unstyled</button></h3>
+				<a class="card-title" href="#1">a.card-title</a>
+				<p class="card-subtitle">.card-subtitle</p>
+				<p class="card-subtitle"><a href="#1">.card-subtitle a (Card Subtitle Link)</a></p>
+				<p class="card-subtitle"><button class="btn btn-unstyled" type="button">.card-subtitle .btn.btn-unstyled</button></p>
+				<a class="card-subtitle" href="#1">a.card-subtitle</a>
+				<div class="card-divider"></div>
+				<a class="card-link" href="#1">card-link</a>
+				<button class="btn btn-unstyled card-link" type="button">button.btn-unstyled.card-link</button>
+				<p class="card-text">Wings eu, pumpkin spice robusta, kopi-luwak mocha caffeine froth grounds.</p>
+			</div>
+		</div>
+	</div>
+	<div class="cp-example-card-container">
+		<div class="card">
+			<div class="card-body">
+				<h3 class="card-title">Joe Bloggs</h3>
+				<p class="card-subtitle">Administrator</p>
+				<div class="card-divider"></div>
+				<p class="card-text">Wings eu, pumpkin spice robusta, kopi-luwak mocha caffeine froth grounds.</p>
+			</div>
+			<div class="aspect-ratio card-item-last">
+				<img alt="thumbnail" class="aspect-ratio-item-fluid" src="../../images/thumbnail_hot_air_balloon.jpg">
+			</div>
+		</div>
+	</div>
+	<div class="cp-example-card-container">
+		<div class="card">
+			<div class="card-body">
+				<h3 class="card-title">Joe Bloggs</h3>
+				<p class="card-subtitle">Administrator</p>
+				<p class="card-text">Wings eu, pumpkin spice robusta, kopi-luwak mocha caffeine froth grounds.</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-body">
+				<h3 class="card-title">Joe Bloggs</h3>
+				<p class="card-subtitle">Administrator</p>
+				<p class="card-text">Wings eu, pumpkin spice robusta, kopi-luwak mocha caffeine froth grounds.</p>
+				<div class="btn-group">
+					<div class="btn-group-item">
+						<button class="btn btn-primary" type="button">Add</button>
+					</div>
+					<div class="btn-group-item">
+						<button class="btn btn-secondary" type="button">Remove</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Card Horizontal' }) %>
+<div class="row">
+	<div class="cp-example-card-horizontal-container">
+		<div class="card card-horizontal">
+			<div class="card-row">
+				<div class="autofit-col">
+					<img class="card-item-first" src="../../images/thumbnail_dock.jpg" style="width: 150px;" />
+				</div>
+				<div class="autofit-col autofit-col-expand autofit-col-gutters">
+					<section class="autofit-section">
+						<h3 class="card-title">Space Program</h3>
+						<div class="card-divider"></div>
+						<p class="card-text">Because you live life on the edge of space.</p>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cp-example-card-horizontal-container">
+		<div class="card card-horizontal">
+			<div class="card-row">
+				<div class="autofit-col autofit-col-expand autofit-col-gutters">
+					<section class="autofit-section">
+						<h3 class="card-title">Space Program</h3>
+						<div class="card-divider"></div>
+						<p class="card-text">Because you live life on the edge of space.</p>
+					</section>
+				</div>
+				<div class="autofit-col">
+					<img class="card-item-last" src="../../images/thumbnail_dock.jpg" style="width: 150px;" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cp-example-card-horizontal-container">
+		<div class="card card-horizontal">
+			<div class="card-body">
+				<div class="card-row">
+					<div class="autofit-col">
+						<span class="sticker">
+							<span class="inline-item">
+								<svg aria-hidden="true" class="lexicon-icon lexicon-icon-folder">
+									<use xlink:href="<%- svgIconsPath %>#folder" />
+								</svg>
+							</span>
+						</span>
+					</div>
+					<div class="autofit-col autofit-col-expand autofit-col-gutters">
+						<section class="autofit-section">
+							<h3 class="card-title" title="ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAreReallyTryingToCoverAllOurBasesHereJustInCaseSomeoneIsNutsAsPerUsual">
+								<span class="text-truncate-inline">
+									<span class="text-truncate">ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAreReallyTryingToCoverAllOurBasesHereJustInCaseSomeoneIsNutsAsPerUsual</span>
+								</span>
+							</h3>
+						</section>
+					</div>
+					<div class="autofit-col">
+						<div class="dropdown dropdown-action">
+							<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" role="button">
+								<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+									<use xlink:href="<%- svgIconsPath %>#ellipsis-v" />
+								</svg>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a class="dropdown-item" href="#1">Download</a></li>
+								<li><a class="dropdown-item" href="#1">Edit</a></li>
+								<li><a class="dropdown-item" href="#1">Move</a></li>
+								<li><a class="dropdown-item" href="#1">Checkout</a></li>
+								<li><a class="dropdown-item" href="#1">Permissions</a></li>
+								<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Form Check Card' }) %>
+<div class="row">
+	<div class="cp-example-card-container">
+		<div class="card-type-asset form-check form-check-card form-check-top-left image-card">
+			<div class="custom-control custom-checkbox">
+				<label>
+					<input class="custom-control-input" type="checkbox">
+					<span class="custom-control-label"></span>
+					<div class="card">
+						<div class="aspect-ratio card-item-first">
+							<img alt="thumbnail" class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../images/thumbnail_coffee.jpg">
+							<span class="sticker sticker-bottom-left sticker-warning">PNG</span>
+						</div>
+						<div class="card-body">
+							<div class="card-row">
+								<div class="autofit-col autofit-col-expand">
+									<section class="autofit-section">
+										<h3 class="card-title">
+											<span class="text-truncate-inline">
+												<span class="text-truncate">Aldcott Gage George Polwarth-Kitchener</span>
+											</span>
+										</h3>
+										<p class="card-subtitle" title="thumbnail_dock.jpg">
+											<span class="text-truncate-inline">
+												<a class="text-truncate" href="#1">thumbnail_dock.jpg</a>
+											</span>
+										</p>
+										<div class="card-detail">
+											<span class="label label-success">
+												<span class="label-item label-item-expand">Approved</span>
+											</span>
+										</div>
+									</section>
+								</div>
+								<div class="autofit-col">
+									<div class="dropdown dropdown-action">
+										<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" role="button">
+											<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+												<use xlink:href="<%- svgIconsPath %>#ellipsis-v" />
+											</svg>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li><a class="dropdown-item" href="#1">Download</a></li>
+											<li><a class="dropdown-item" href="#1">Edit</a></li>
+											<li><a class="dropdown-item" href="#1">Move</a></li>
+											<li><a class="dropdown-item" href="#1">Checkout</a></li>
+											<li><a class="dropdown-item" href="#1">Permissions</a></li>
+											<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</label>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Form Check Card Horizontal' }) %>
+<div class="row">
+	<div class="cp-example-card-horizontal-container">
+		<div class="card-type-directory form-check form-check-card form-check-middle-left">
+			<div class="custom-control custom-checkbox">
+				<label>
+					<input class="custom-control-input" type="checkbox">
+					<span class="custom-control-label"></span>
+					<div class="card card-horizontal">
+						<div class="card-body">
+							<div class="card-row">
+								<div class="autofit-col">
+									<span class="sticker">
+										<span class="inline-item">
+											<svg aria-hidden="true" class="lexicon-icon lexicon-icon-folder">
+												<use xlink:href="<%- svgIconsPath %>#folder" />
+											</svg>
+										</span>
+									</span>
+								</div>
+								<div class="autofit-col autofit-col-expand autofit-col-gutters">
+									<section class="autofit-section">
+										<h3 class="card-title" title="ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAreReallyTryingToCoverAllOurBasesHereJustInCaseSomeoneIsNutsAsPerUsual">
+											<span class="text-truncate-inline">
+												<span class="text-truncate">ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleWordButWeAreReallyTryingToCoverAllOurBasesHereJustInCaseSomeoneIsNutsAsPerUsual</span>
+											</span>
+										</h3>
+									</section>
+								</div>
+								<div class="autofit-col">
+									<div class="dropdown dropdown-action">
+										<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" role="button">
+											<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+												<use xlink:href="<%- svgIconsPath %>#ellipsis-v" />
+											</svg>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li><a class="dropdown-item" href="#1">Download</a></li>
+											<li><a class="dropdown-item" href="#1">Edit</a></li>
+											<li><a class="dropdown-item" href="#1">Move</a></li>
+											<li><a class="dropdown-item" href="#1">Checkout</a></li>
+											<li><a class="dropdown-item" href="#1">Permissions</a></li>
+											<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</label>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Form Check Card with Radio' }) %>
+<div class="row">
+	<div class="cp-example-card-container">
+		<div class="card-type-asset form-check form-check-card form-check-top-left image-card">
+			<div class="custom-control custom-radio">
+				<label>
+					<input class="custom-control-input" name="cardCustomRadiozz" type="radio" value="cardCustomRadioOption1">
+					<span class="custom-control-label"></span>
+					<div class="card">
+						<div class="aspect-ratio card-item-first">
+							<img alt="thumbnail" class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../images/thumbnail_coffee.jpg">
+							<span class="sticker sticker-bottom-left sticker-warning">PNG</span>
+						</div>
+						<div class="card-body">
+							<div class="card-row">
+								<div class="autofit-col autofit-col-expand">
+									<section class="autofit-section">
+										<h3 class="card-title">
+											<span class="text-truncate-inline">
+												<span class="text-truncate">Aldcott Gage George Polwarth-Kitchener</span>
+											</span>
+										</h3>
+										<p class="card-subtitle" title="thumbnail_dock.jpg">
+											<span class="text-truncate-inline">
+												<a class="text-truncate" href="#1">thumbnail_dock.jpg</a>
+											</span>
+										</p>
+										<div class="card-detail">
+											<span class="label label-success">
+												<span class="label-item label-item-expand">Approved</span>
+											</span>
+										</div>
+									</section>
+								</div>
+								<div class="autofit-col">
+									<div class="dropdown dropdown-action">
+										<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" role="button">
+											<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+												<use xlink:href="<%- svgIconsPath %>#ellipsis-v" />
+											</svg>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li><a class="dropdown-item" href="#1">Download</a></li>
+											<li><a class="dropdown-item" href="#1">Edit</a></li>
+											<li><a class="dropdown-item" href="#1">Move</a></li>
+											<li><a class="dropdown-item" href="#1">Checkout</a></li>
+											<li><a class="dropdown-item" href="#1">Permissions</a></li>
+											<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="cp-example-card-container">
+		<div class="card-type-asset form-check form-check-card form-check-top-left image-card">
+			<div class="custom-control custom-radio">
+				<label>
+					<input class="custom-control-input" name="cardCustomRadiozz" type="radio" value="cardCustomRadioOption2">
+					<span class="custom-control-label"></span>
+					<div class="card">
+						<div class="aspect-ratio card-item-first">
+							<img alt="thumbnail" class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../images/thumbnail_coffee.jpg">
+							<span class="sticker sticker-bottom-left sticker-warning">PNG</span>
+						</div>
+						<div class="card-body">
+							<div class="card-row">
+								<div class="autofit-col autofit-col-expand">
+									<section class="autofit-section">
+										<h3 class="card-title">
+											<span class="text-truncate-inline">
+												<span class="text-truncate">Aldcott Gage George Polwarth-Kitchener</span>
+											</span>
+										</h3>
+										<p class="card-subtitle" title="thumbnail_dock.jpg">
+											<span class="text-truncate-inline">
+												<a class="text-truncate" href="#1">thumbnail_dock.jpg</a>
+											</span>
+										</p>
+										<div class="card-detail">
+											<span class="label label-success">
+												<span class="label-item label-item-expand">Approved</span>
+											</span>
+										</div>
+									</section>
+								</div>
+								<div class="autofit-col">
+									<div class="dropdown dropdown-action">
+										<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" role="button">
+											<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+												<use xlink:href="<%- svgIconsPath %>#ellipsis-v" />
+											</svg>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li><a class="dropdown-item" href="#1">Download</a></li>
+											<li><a class="dropdown-item" href="#1">Edit</a></li>
+											<li><a class="dropdown-item" href="#1">Move</a></li>
+											<li><a class="dropdown-item" href="#1">Checkout</a></li>
+											<li><a class="dropdown-item" href="#1">Permissions</a></li>
+											<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="cp-example-card-container">
+		<div class="card-type-asset form-check form-check-card form-check-top-left image-card">
+			<div class="custom-control custom-radio">
+				<label>
+					<input class="custom-control-input" name="cardCustomRadiozz" type="radio" value="cardCustomRadioOption3">
+					<span class="custom-control-label"></span>
+					<div class="card">
+						<div class="aspect-ratio card-item-first">
+							<img alt="thumbnail" class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../images/thumbnail_coffee.jpg">
+							<span class="sticker sticker-bottom-left sticker-warning">PNG</span>
+						</div>
+						<div class="card-body">
+							<div class="card-row">
+								<div class="autofit-col autofit-col-expand">
+									<section class="autofit-section">
+										<h3 class="card-title">
+											<span class="text-truncate-inline">
+												<span class="text-truncate">Aldcott Gage George Polwarth-Kitchener</span>
+											</span>
+										</h3>
+										<p class="card-subtitle" title="thumbnail_dock.jpg">
+											<span class="text-truncate-inline">
+												<a class="text-truncate" href="#1">thumbnail_dock.jpg</a>
+											</span>
+										</p>
+										<div class="card-detail">
+											<span class="label label-success">
+												<span class="label-item label-item-expand">Approved</span>
+											</span>
+										</div>
+									</section>
+								</div>
+								<div class="autofit-col">
+									<div class="dropdown dropdown-action">
+										<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" role="button">
+											<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+												<use xlink:href="<%- svgIconsPath %>#ellipsis-v" />
+											</svg>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li><a class="dropdown-item" href="#1">Download</a></li>
+											<li><a class="dropdown-item" href="#1">Edit</a></li>
+											<li><a class="dropdown-item" href="#1">Move</a></li>
+											<li><a class="dropdown-item" href="#1">Checkout</a></li>
+											<li><a class="dropdown-item" href="#1">Permissions</a></li>
+											<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</label>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Form Check Card Horizontal with Radio' }) %>
+<div class="row">
+	<div class="cp-example-card-horizontal-container">
+		<div class="card-type-directory form-check form-check-card form-check-middle-left">
+			<div class="custom-control custom-radio">
+				<label>
+					<input class="custom-control-input" name="cardCustomRadios" type="radio" value="cardCustomRadioOption1">
+					<span class="custom-control-label"></span>
+					<div class="card card-horizontal">
+						<div class="card-body">
+							<div class="card-row">
+								<div class="autofit-col autofit-col-expand">
+									<section class="autofit-section">
+										<h3 class="card-title">ReallySuperInsanelyJustIncrediblyLongAndTotallyNotPossibleEmailButWeAreReallyTryingToCoverAllOurBasesHereJustInCaseSomeoneIsNutsAsPerUsual@example.com</h3>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</label>
+			</div>
+		</div>
+		<div class="card-type-directory form-check form-check-card form-check-middle-left">
+			<div class="custom-control custom-radio">
+				<label>
+					<input class="custom-control-input" name="cardCustomRadios" type="radio" value="cardCustomRadioOption2">
+					<span class="custom-control-label"></span>
+					<div class="card card-horizontal">
+						<div class="card-body">
+							<div class="card-row">
+								<div class="autofit-col autofit-col-expand">
+									<section class="autofit-section">
+										<h3 class="card-title">stanley.nelson@example.com</h3>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</label>
+			</div>
+		</div>
+		<div class="card-type-directory form-check form-check-card form-check-middle-left">
+			<div class="custom-control custom-radio">
+				<label>
+					<input class="custom-control-input" name="cardCustomRadios" type="radio" value="cardCustomRadioOption3">
+					<span class="custom-control-label"></span>
+					<div class="card card-horizontal">
+						<div class="card-body">
+							<div class="card-row">
+								<div class="autofit-col autofit-col-expand">
+									<section class="autofit-section">
+										<h3 class="card-title">the.sales.dept@example.com</h3>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</label>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Card Type Asset Variant (Image Card)' }) %>
+<div class="row">
+	<div class="cp-example-card-container">
+		<div class="card card-type-asset image-card">
+			<div class="aspect-ratio card-item-first">
+				<img alt="thumbnail"class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../images/thumbnail_coffee.jpg">
+				<span class="sticker sticker-bottom-left sticker-danger">JPG</span>
+			</div>
+			<div class="card-body">
+				<div class="card-row">
+					<div class="autofit-col autofit-col-expand">
+						<section class="autofit-section">
+							<h3 class="card-title" title="thumbnail_coffee.jpg">
+								<span class="text-truncate-inline">
+									<a class="text-truncate" href="#1">thumbnail_coffee.jpg</a>
+								</span>
+							</h3>
+							<p class="card-subtitle">
+								<span class="text-truncate-inline">
+									<span class="text-truncate">Author Action</span>
+								</span>
+							</p>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cp-example-card-container">
+		<div class="card-type-asset form-check form-check-card form-check-top-left image-card">
+			<div class="card">
+				<div class="aspect-ratio card-item-first">
+					<div class="custom-control custom-checkbox">
+						<label>
+							<input class="custom-control-input" type="checkbox">
+							<span class="custom-control-label"></span>
+							<img alt="thumbnail"class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../images/thumbnail_coffee.jpg">
+							<span class="sticker sticker-bottom-left sticker-danger">JPG</span>
+						</label>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="card-row">
+						<div class="autofit-col autofit-col-expand">
+							<section class="autofit-section">
+								<h3 class="card-title" title="thumbnail_coffee.jpg">
+									<span class="text-truncate-inline">
+										<a class="text-truncate" href="#1">thumbnail_coffee.jpg</a>
+									</span>
+								</h3>
+								<p class="card-subtitle" title="Author Action">
+									<span class="text-truncate-inline">
+										<span class="text-truncate">Author Action</span>
+									</span>
+								</p>
+								<div class="card-detail">
+									<span class="label label-success">
+										<span class="label-item label-item-expand">Approved</span>
+									</span>
+								</div>
+							</section>
+						</div>
+						<div class="autofit-col">
+							<div class="dropdown dropdown-action">
+								<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" role="button">
+									<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+										<use xlink:href="<%- svgIconsPath %>#ellipsis-v" />
+									</svg>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a class="dropdown-item" href="#1">Download</a></li>
+									<li><a class="dropdown-item" href="#1">Edit</a></li>
+									<li><a class="dropdown-item" href="#1">Move</a></li>
+									<li><a class="dropdown-item" href="#1">Checkout</a></li>
+									<li><a class="dropdown-item" href="#1">Permissions</a></li>
+									<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cp-example-card-container">
+		<div class="card card-type-asset image-card">
+			<div class="aspect-ratio card-item-first">
+				<span class="sticker sticker-bottom-left sticker-info">PNG</span>
+			</div>
+			<div class="card-body">
+				<div class="card-row">
+					<div class="autofit-col autofit-col-expand">
+						<section class="autofit-section">
+							<h3 class="card-title" title="empty-background.png">
+								<span class="text-truncate-inline">
+									<a class="text-truncate" href="#1">empty-background.png</a>
+								</span>
+							</h3>
+							<p class="card-subtitle" title="Author Action">
+								<span class="text-truncate-inline">
+									<span class="text-truncate">Author Action</span>
+								</span>
+							</p>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cp-example-card-container">
+		<div class="card-type-asset form-check form-check-card form-check-top-left image-card">
+			<div class="card">
+				<div class="aspect-ratio card-item-first">
+					<div class="custom-control custom-checkbox">
+						<label>
+							<input class="custom-control-input" type="checkbox">
+							<span class="custom-control-label"></span>
+							<span class="sticker sticker-bottom-left sticker-info">PNG</span>
+						</label>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="card-row">
+						<div class="autofit-col autofit-col-expand">
+							<section class="autofit-section">
+								<h3 class="card-title" title="empty-background.png">
+									<span class="text-truncate-inline">
+										<a class="text-truncate" href="#1">empty-background.png</a>
+									</span>
+								</h3>
+								<p class="card-subtitle" title="Author Action">
+									<span class="text-truncate-inline">
+										<span class="text-truncate">Author Action</span>
+									</span>
+								</p>
+								<div class="card-detail">
+									<span class="label label-success">
+										<span class="label-item label-item-expand">Approved</span>
+									</span>
+								</div>
+							</section>
+						</div>
+						<div class="autofit-col">
+							<div class="dropdown dropdown-action">
+								<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" role="button">
+									<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+										<use xlink:href="<%- svgIconsPath %>#ellipsis-v" />
+									</svg>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a class="dropdown-item" href="#1">Download</a></li>
+									<li><a class="dropdown-item" href="#1">Edit</a></li>
+									<li><a class="dropdown-item" href="#1">Move</a></li>
+									<li><a class="dropdown-item" href="#1">Checkout</a></li>
+									<li><a class="dropdown-item" href="#1">Permissions</a></li>
+									<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cp-example-card-container">
+		<div class="card card-type-asset image-card">
+			<div class="aspect-ratio card-item-first">
+				<div class="aspect-ratio-item-center-middle aspect-ratio-item-fluid card-type-asset-icon">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-camera">
+						<use xlink:href="<%- svgIconsPath %>#camera" />
+					</svg>
+				</div>
+				<span class="sticker sticker-bottom-left sticker-warning">SVG</span>
+			</div>
+			<div class="card-body">
+				<div class="card-row">
+					<div class="autofit-col autofit-col-expand">
+						<section class="autofit-section">
+							<h3 class="card-title" title="lexicon_icon_camera_av93ii2oofffmmmsjf2332.svg">
+								<span class="text-truncate-inline">
+									<a class="text-truncate" href="#1">lexicon_icon_camera_av93ii2oofffmmmsjf2332.svg</a>
+								</span>
+							</h3>
+							<p class="card-subtitle text-truncate" title="Author Action">
+								<span class="text-truncate-inline">
+									<span class="text-truncate">Author Action</span>
+								</span>
+							</p>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cp-example-card-container">
+		<div class="card-type-asset form-check form-check-card form-check-top-left image-card">
+			<div class="card">
+				<div class="aspect-ratio card-item-first">
+					<div class="custom-control custom-checkbox">
+						<label>
+							<input class="custom-control-input" type="checkbox">
+							<span class="custom-control-label"></span>
+							<div class="aspect-ratio-item-center-middle aspect-ratio-item-fluid card-type-asset-icon">
+								<svg aria-hidden="true" class="lexicon-icon lexicon-icon-camera">
+									<use xlink:href="<%- svgIconsPath %>#camera" />
+								</svg>
+							</div>
+							<span class="sticker sticker-bottom-left sticker-warning">SVG</span>
+						</label>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="card-row">
+						<div class="autofit-col autofit-col-expand">
+							<section class="autofit-section">
+								<h3 class="card-title" title="lexicon_icon_camera_av93ii2oofffmmmsjf2332.svg">
+									<span class="text-truncate-inline">
+										<a class="text-truncate" href="#1">lexicon_icon_camera_av93ii2oofffmmmsjf2332.svg</a>
+									</span>
+								</h3>
+								<p class="card-subtitle" title="Author Action">
+									<span class="text-truncate-inline">
+										<span class="text-truncate">Author Action</span>
+									</span>
+								</p>
+								<div class="card-detail">
+									<span class="label label-success">
+										<span class="label-item label-item-expand">Approved</span>
+									</span>
+								</div>
+							</section>
+						</div>
+						<div class="autofit-col">
+							<div class="dropdown dropdown-action">
+								<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" role="button">
+									<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+										<use xlink:href="<%- svgIconsPath %>#ellipsis-v" />
+									</svg>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a class="dropdown-item" href="#1">Download</a></li>
+									<li><a class="dropdown-item" href="#1">Edit</a></li>
+									<li><a class="dropdown-item" href="#1">Move</a></li>
+									<li><a class="dropdown-item" href="#1">Checkout</a></li>
+									<li><a class="dropdown-item" href="#1">Permissions</a></li>
+									<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Card Type Asset Variant (File Card)' }) %>
+<div class="row">
+	<div class="cp-example-card-container">
+		<div class="card card-type-asset file-card">
+			<div class="aspect-ratio card-item-first">
+				<div class="aspect-ratio-item-center-middle aspect-ratio-item-fluid card-type-asset-icon">
+					<svg aria-hidden="true" class="lexicon-icon lexicon-icon-documents-and-media">
+						<use xlink:href="<%- svgIconsPath %>#documents-and-media" />
+					</svg>
+				</div>
+				<span class="sticker sticker-bottom-left sticker-danger">DOC</span>
+			</div>
+			<div class="card-body">
+				<div class="card-row">
+					<div class="autofit-col autofit-col-expand">
+						<section class="autofit-section">
+							<h3 class="card-title" title="deliverable.doc">
+								<span class="text-truncate-inline">
+									<a class="text-truncate" href="#1">deliverable.doc</a>
+								</span>
+							</h3>
+							<p class="card-subtitle" title="Stevie Ray Vaughn">
+								<span class="text-truncate-inline">
+									<span class="text-truncate">Stevie Ray Vaughn</span>
+								</span>
+							</p>
+							<div class="card-detail">
+								<span class="label label-success">
+									<span class="label-item label-item-expand">Approved</span>
+								</span>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cp-example-card-container">
+		<div class="card-type-asset file-card form-check form-check-card form-check-top-left">
+			<div class="card">
+				<div class="aspect-ratio card-item-first">
+					<div class="custom-control custom-checkbox">
+						<label>
+							<input class="custom-control-input" type="checkbox">
+							<span class="custom-control-label"></span>
+							<div class="aspect-ratio-item-center-middle aspect-ratio-item-fluid card-type-asset-icon">
+								<svg aria-hidden="true" class="lexicon-icon lexicon-icon-documents-and-media">
+									<use xlink:href="<%- svgIconsPath %>#documents-and-media" />
+								</svg>
+							</div>
+							<span class="sticker sticker-bottom-left sticker-danger">DOC</span>
+						</label>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="card-row">
+						<div class="autofit-col autofit-col-expand">
+							<section class="autofit-section">
+								<h3 class="card-title" title="deliverable.doc">
+									<span class="text-truncate-inline">
+										<a class="text-truncate" href="#1">deliverable.doc</a>
+									</span>
+								</h3>
+								<p class="card-subtitle" title="Stevie Ray Vaughn">
+									<span class="text-truncate-inline">
+										<span class="text-truncate">Stevie Ray Vaughn</span>
+									</span>
+								</p>
+								<div class="card-detail">
+									<span class="label label-success">
+										<span class="label-item label-item-expand">Approved</span>
+									</span>
+								</div>
+							</section>
+						</div>
+						<div class="autofit-col">
+							<div class="dropdown dropdown-action">
+								<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" role="button">
+									<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+										<use xlink:href="<%- svgIconsPath %>#ellipsis-v" />
+									</svg>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a class="dropdown-item" href="#1">Download</a></li>
+									<li><a class="dropdown-item" href="#1">Edit</a></li>
+									<li><a class="dropdown-item" href="#1">Move</a></li>
+									<li><a class="dropdown-item" href="#1">Checkout</a></li>
+									<li><a class="dropdown-item" href="#1">Permissions</a></li>
+									<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Card Type Asset Variant (User Card)' }) %>
+<div class="row">
+	<div class="cp-example-card-container">
+		<div class="card card-type-asset user-card">
+			<div class="aspect-ratio card-item-first">
+				<div class="aspect-ratio-item-center-middle aspect-ratio-item-fluid card-type-asset-icon">
+					<span class="sticker sticker-circle sticker-secondary">
+						<span class="sticker-overlay">
+							<img alt="thumbnail" class="sticker-img" src="../../images/thumbnail_coffee.jpg">
+						</span>
+					</span>
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="card-row">
+					<div class="autofit-col autofit-col-expand">
+						<section class="autofit-section">
+							<h3 class="card-title" title="User Name">
+								<span class="text-truncate-inline">
+									<a class="text-truncate" href="#1">User Name</a>
+								</span>
+							</h3>
+							<p class="card-subtitle" title="Latest Action">
+								<span class="text-truncate-inline">
+									<span class="text-truncate">Latest Action</span>
+								</span>
+							</p>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cp-example-card-container">
+		<div class="card card-type-asset user-card">
+			<div class="aspect-ratio card-item-first">
+				<div class="aspect-ratio-item-center-middle aspect-ratio-item-fluid card-type-asset-icon">
+					<span class="sticker sticker-circle sticker-secondary">
+						<span class="sticker-overlay">
+							<img alt="thumbnail" class="sticker-img" src="../../images/long_user_image.png">
+						</span>
+					</span>
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="card-row">
+					<div class="autofit-col autofit-col-expand">
+						<section class="autofit-section">
+							<h3 class="card-title" title="User Name">
+								<span class="text-truncate-inline">
+									<a class="text-truncate" href="#1">User Name</a>
+								</span>
+							</h3>
+							<p class="card-subtitle" title="Latest Action">
+								<span class="text-truncate-inline">
+									<span class="text-truncate">Latest Action</span>
+								</span>
+							</p>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cp-example-card-container">
+		<div class="card card-type-asset user-card">
+			<div class="aspect-ratio card-item-first">
+				<div class="aspect-ratio-item-center-middle aspect-ratio-item-fluid card-type-asset-icon">
+					<span class="sticker sticker-circle sticker-secondary">
+						<span class="sticker-overlay">
+							<img alt="thumbnail" class="sticker-img" src="../../images/tv-at-beach.png">
+						</span>
+					</span>
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="card-row">
+					<div class="autofit-col autofit-col-expand">
+						<section class="autofit-section">
+							<h3 class="card-title" title="User Name">
+								<span class="text-truncate-inline">
+									<a class="text-truncate" href="#1">User Name</a>
+								</span>
+							</h3>
+							<p class="card-subtitle" title="Latest Action">
+								<span class="text-truncate-inline">
+									<span class="text-truncate">Latest Action</span>
+								</span>
+							</p>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cp-example-card-container">
+		<div class="card-type-asset form-check form-check-card form-check-top-left user-card">
+			<div class="card">
+				<div class="aspect-ratio card-item-first">
+					<div class="custom-control custom-checkbox">
+						<label>
+							<input class="custom-control-input" type="checkbox">
+							<span class="custom-control-label"></span>
+							<div class="aspect-ratio-item-center-middle aspect-ratio-item-fluid card-type-asset-icon">
+								<span class="sticker sticker-circle sticker-danger">
+									<span class="sticker-overlay">HS</span>
+								</span>
+							</div>
+						</label>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="card-row">
+						<div class="autofit-col autofit-col-expand">
+							<section class="autofit-section">
+								<h3 class="card-title" title="User Name">
+									<span class="text-truncate-inline">
+										<a class="text-truncate" href="#1">User Name</a>
+									</span>
+								</h3>
+								<p class="card-subtitle" title="Latest Action">
+									<span class="text-truncate-inline">
+										<span class="text-truncate">Latest Action</span>
+									</span>
+								</p>
+							</section>
+						</div>
+						<div class="autofit-col">
+							<div class="dropdown dropdown-action">
+								<a aria-expanded="false" aria-haspopup="true" class="component-action dropdown-toggle" data-toggle="dropdown" href="#1" role="button">
+									<svg aria-hidden="true" class="lexicon-icon lexicon-icon-ellipsis-v">
+										<use xlink:href="<%- svgIconsPath %>#ellipsis-v" />
+									</svg>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a class="dropdown-item" href="#1">Download</a></li>
+									<li><a class="dropdown-item" href="#1">Edit</a></li>
+									<li><a class="dropdown-item" href="#1">Move</a></li>
+									<li><a class="dropdown-item" href="#1">Checkout</a></li>
+									<li><a class="dropdown-item" href="#1">Permissions</a></li>
+									<li><a class="dropdown-item" href="#1">Move to Recycle Bin</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

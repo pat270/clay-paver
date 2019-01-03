@@ -1,0 +1,110 @@
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Links' }) %>
+<div><a href="#1">Regular Anchor Tag</a></div>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Link Primary' }) %>
+<div>
+	<a class="link-primary" href="#1">.link-primary</a>&nbsp;&nbsp;
+	<a class="link-primary single-link" href="#1">.link-primary.single-link</a>&nbsp;&nbsp;
+</div>
+<div>
+	<button class="btn btn-unstyled link-primary" type="button">button.link-primary</button>&nbsp;&nbsp;
+	<button class="btn btn-unstyled link-primary single-link" type="button">button.link-primary.single-link</button>&nbsp;&nbsp;
+</div>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Link Secondary' }) %>
+<div>
+	<a class="link-secondary" href="#1">.link-secondary</a>&nbsp;&nbsp;
+	<a class="link-secondary single-link" href="#1">.link-secondary.single-link</a>&nbsp;&nbsp;
+</div>
+<div>
+	<button class="btn btn-unstyled link-secondary" type="button">button.link-secondary</button>&nbsp;&nbsp;
+	<button class="btn btn-unstyled link-secondary single-link" type="button">button.link-secondary.single-link</button>&nbsp;&nbsp;
+</div>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Component Link' }) %>
+<div>
+	<a class="component-link" href="#1">.component-link</a>&nbsp;&nbsp;
+</div>
+<div>
+	<button class="btn btn-unstyled component-link" type="button">button.component-link</button>&nbsp;&nbsp;
+</div>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Component Title' }) %>
+<h4 class="component-title">.component-title</h4>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Component Title Link' }) %>
+<h4 class="component-title"><a href="#1">.component-title a</a></h4>
+<h4 class="component-title"><button class="btn btn-unstyled" type="button">.component-title button</button></h4>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Component Subtitle' }) %>
+<p class="component-subtitle">.component-subtitle</p>
+<p class="component-subtitle"><a href="#1">.component-subtitle a</a></p>
+<p class="component-subtitle"><button class="btn btn-unstyled" type="button">.component-subtitle button</button></p>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Component Action' }) %>
+<div>
+	<h6>Anchor</h6>
+	<a class="component-action" href="#1" role="button">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+			<use xlink:href="<%- svgIconsPath %>#times" />
+		</svg>
+	</a>
+	<a class="component-action disabled" href="#disabled" role="button" tabindex="-1">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+			<use xlink:href="<%- svgIconsPath %>#times" />
+		</svg>
+	</a>
+</div>
+<div>
+	<h6>Button</h6>
+	<button class="component-action" type="button">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+			<use xlink:href="<%- svgIconsPath %>#times" />
+		</svg>
+	</button>
+	<button class="component-action" disabled type="button">
+		<svg aria-hidden="true" class="lexicon-icon lexicon-icon-times">
+			<use xlink:href="<%- svgIconsPath %>#times" />
+		</svg>
+	</button>
+</div>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Link Outline' }) %>
+<a class="link-outline link-outline-primary" href="#1">Primary</a>
+<a class="link-outline link-outline-secondary" href="#1">Secondary</a>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Link Outline Borderless' }) %>
+<a class="link-outline link-outline-borderless link-outline-primary" href="#1">Primary</a>
+<a class="link-outline link-outline-borderless link-outline-secondary" href="#1">Secondary</a>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Link Monospaced' }) %>
+<div>
+	<a class="link-monospaced link-outline link-outline-primary" href="#1">
+		<span class="inline-item">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-add-cell">
+				<use xlink:href="<%- svgIconsPath %>#add-cell" />
+			</svg>
+		</span>
+	</a>
+	<a class="link-monospaced link-outline link-outline-borderless link-outline-primary" href="#1">
+		<span class="inline-item">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-add-cell">
+				<use xlink:href="<%- svgIconsPath %>#add-cell" />
+			</svg>
+		</span>
+	</a>
+	<a class="link-monospaced link-outline link-outline-secondary" href="#1">
+		<span class="inline-item">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-picture">
+				<use xlink:href="<%- svgIconsPath %>#picture" />
+			</svg>
+		</span>
+	</a>
+	<a class="link-monospaced link-outline link-outline-borderless link-outline-secondary" href="#1">
+		<span class="inline-item">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-picture">
+				<use xlink:href="<%- svgIconsPath %>#picture" />
+			</svg>
+		</span>
+	</a>
+</div>

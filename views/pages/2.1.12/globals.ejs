@@ -1,0 +1,114 @@
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'How to Use Theme Colors' }) %>
+<p>We recommend not using Bootstrap's color system. It's very rigid and doesn't apply well to a variety of themes. Only use this pattern if it fits your theme otherwise, we recommend using your own color system and applying it to each component.</p>
+
+<div class="row">
+	<div class="cp-example-swatch-container">
+		<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Grays' }) %>
+		<div class="cp-white cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-100 cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-200 cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-300 cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-400 cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-500 cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-600 cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-700 cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-800 cp-swatch cp-populate-content"></div>
+		<div class="cp-gray-900 cp-swatch cp-populate-content"></div>
+		<div class="cp-black cp-swatch cp-populate-content"></div>
+	</div>
+	<div class="cp-example-swatch-container">
+		<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Colors' }) %>
+		<div class="cp-blue cp-swatch cp-populate-content"></div>
+		<div class="cp-indigo cp-swatch cp-populate-content"></div>
+		<div class="cp-purple cp-swatch cp-populate-content"></div>
+		<div class="cp-pink cp-swatch cp-populate-content"></div>
+		<div class="cp-red cp-swatch cp-populate-content"></div>
+		<div class="cp-orange cp-swatch cp-populate-content"></div>
+		<div class="cp-yellow cp-swatch cp-populate-content"></div>
+		<div class="cp-green cp-swatch cp-populate-content"></div>
+		<div class="cp-teal cp-swatch cp-populate-content"></div>
+		<div class="cp-cyan cp-swatch cp-populate-content"></div>
+	</div>
+	<div class="cp-example-swatch-container">
+		<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Theme Colors' }) %>
+		<div class="cp-primary cp-swatch cp-populate-content"></div>
+		<div class="cp-secondary cp-swatch cp-populate-content"></div>
+		<div class="cp-success cp-swatch cp-populate-content"></div>
+		<div class="cp-info cp-swatch cp-populate-content"></div>
+		<div class="cp-warning cp-swatch cp-populate-content"></div>
+		<div class="cp-danger cp-swatch cp-populate-content"></div>
+		<div class="cp-light cp-swatch cp-populate-content"></div>
+		<div class="cp-dark cp-swatch cp-populate-content"></div>
+	</div>
+</div>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Font Family Sans Serif' }) %>
+<span class="cp-font-family cp-font-family-sans-serif cp-populate-content"></span>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Font Family Serif' }) %>
+<span class="cp-font-family cp-font-family-serif cp-populate-content"></span>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Font Family Monospace' }) %>
+<span class="cp-font-family cp-font-family-monospace cp-populate-content"></span>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Font Family Base' }) %>
+<span class="cp-font-family cp-font-family-base cp-populate-content"></span>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Font Size Sm' }) %>
+<span class="cp-font-size-sm cp-populate-content"></span>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Font Size Base' }) %>
+<span class="cp-font-size-base cp-populate-content"></span>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Font Size Base Mobile' }) %>
+<span class="cp-font-size-base-mobile cp-populate-content"></span>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Font Size Lg' }) %>
+<span class="cp-font-size-lg cp-populate-content"></span>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Font Size Lg Mobile' }) %>
+<span class="cp-font-size-lg-mobile cp-populate-content"></span>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Font Weight Light' }) %>
+<span class="cp-font-weight-light cp-populate-content"></span>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Font Weight Normal' }) %>
+<span class="cp-font-weight-normal cp-populate-content"></span>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Font Weight Semi Bold' }) %>
+<span class="cp-font-weight-semi-bold cp-populate-content"></span>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Font Weight Bold' }) %>
+<span class="cp-font-weight-bold cp-populate-content"></span>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Font Weight Bolder' }) %>
+<span class="cp-font-weight-bolder cp-populate-content"></span>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Line Height Sm' }) %>
+<span class="cp-line-height-sm cp-populate-content"></span>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Line Height Base' }) %>
+<span class="cp-line-height-base cp-populate-content"></span>
+
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Line Height Lg' }) %>
+<span class="cp-line-height-lg cp-populate-content"></span>
+
+<script>
+	(function(root) {
+		var cpGlobalsPopulateItems = function() {
+			$('.cp-populate-content').each(function(index) {
+				var content = $(this).css('content').replace(/"/g, "");
+
+				$(this).text(content);
+			});
+		};
+
+		cpGlobalsPopulateItems();
+
+		root.cpGlobalsPopulateItems = cpGlobalsPopulateItems;
+	}(this));
+
+	$(document).on('cp-compile-done', function(event) {
+		cpGlobalsPopulateItems();
+	});
+</script>

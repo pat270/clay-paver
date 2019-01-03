@@ -1,0 +1,12 @@
+<%- include(partialsPath + 'cpComponentHeader.ejs', { text: 'Clay 2 Paver' }) %>
+<p>
+	Welcome to Clay 2 Paver, a web based tool to customize Clay CSS through Sass variables. Sass loads variables top to bottom, so make sure the variable is defined before trying to use it. You will not be able to use a <code>Button</code> variable in <code>Links</code> because of this. The variables that are most commonly reused are located under the Globals section. Variables are loaded in this order:
+</p>
+
+<ol class="cp-load-order-list">
+	<li>Home</li>
+
+	<% for (var i = 0; i < sitePages.length; i++) { %>
+		<li><%- sitePages[i].replace(/-/g, ' '); %></li>
+	<% } %>
+</ol>
