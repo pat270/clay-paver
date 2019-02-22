@@ -89,6 +89,8 @@
 				<% if (typeof showVariableSidebar !== 'undefined') { %>
 					<form class="cp-variables-form" id="<%= page %>">
 						<div class="cp-variable-sidebar">
+							<%- include(partialsPath + 'siteVariableSidebarHeader.ejs') %>
+
 							<div class="cp-variable-sidebar-body">
 								<%- include(page + '-variables', { mixinsPath: mixinsPath, svgIconsPath: svgIconsPath }) %>
 							</div>

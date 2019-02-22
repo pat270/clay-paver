@@ -663,6 +663,16 @@ doc.on('click', '#resetButton', function(event) {
 	}
 });
 
+doc.on('keyup', '#cpVariableSearch .cp-form-control', function() {
+	var value = $(this).val().toLowerCase();
+
+	$('.cp-variables-form .cp-control-label').filter(function() {
+		$(this).closest('.cp-form-group').toggle($(this).text().toLowerCase().indexOf(value) > -1);
+	});
+});
+
+// Navigation Buttons
+
 doc.on('click', '[data-toggle="switch-theme"]', function(event) {
 	event.preventDefault();
 

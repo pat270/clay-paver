@@ -434,7 +434,13 @@ a.cp-btn:focus {
 
 .cp-form-group {
 	margin-bottom: 16px;
+	margin-top: 16px;
 	position: relative;
+}
+
+.cp-form-group-sass-map .cp-form-group:first-child {
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 .cp-form-group-color .cp-form-control[type="text"] {
@@ -443,10 +449,11 @@ a.cp-btn:focus {
 
 .cp-variables-form-header {
 	background-color: #393a4a;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 	color: #FFF;
 	font-size: 14px;
-	margin: 0 -15px 16px -15px;
+	margin: 0 -15px;
 	padding: 10px 15px;
 }
 
@@ -540,10 +547,10 @@ a.cp-btn:focus {
 	left: 0;
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
-	padding: 0 15px 15px;
+	padding: 0 15px;
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 60px;
 }
 
 .cp-variable-sidebar-footer {
