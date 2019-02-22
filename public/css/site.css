@@ -313,11 +313,32 @@ a.cp-btn:focus {
 	margin: 0 0 2px 0;
 }
 
+.cp-control-label-indicator {
+	display: inline-flex;
+	font-size: 16px;
+	margin-top: 4px;
+	position: absolute;
+}
+
+.cp-control-label-indicator:focus {
+	border-radius: 50px;
+	box-shadow: 0 0 0 3px rgba(11, 95, 255, 0.25);
+	outline: 0;
+}
+
 .cp-control-label-indicator:hover ~ .cp-tooltip,
 .cp-control-label-indicator:focus ~ .cp-tooltip,
 .cp-tooltip:hover {
 	opacity: 1;
 	z-index: 1070;
+}
+
+.cp-control-label-indicator .lexicon-icon {
+	margin-top: 0;
+}
+
+.cp-control-label-indicator ~ .cp-control-label {
+	padding-left: 20px;
 }
 
 .cp-tooltip {
@@ -337,6 +358,7 @@ a.cp-btn:focus {
 	text-decoration: none;
 	text-shadow: none;
 	text-transform: none;
+	top: 24px;
 	white-space: normal;
 	word-break: normal;
 	word-spacing: normal;
@@ -346,12 +368,17 @@ a.cp-btn:focus {
 
 .cp-tooltip-inner {
 	background-color: #333;
-	border-radius: 0;
+	border-radius: 3px;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
 	color: #fff;
+	margin-left: -5px;
 	max-width: 230px;
-	padding: 4px 12px;
+	padding: 10px 12px;
 	text-align: left;
+}
+
+.cp-tooltip-inner a {
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .cp-tooltip .cp-arrow {
@@ -370,12 +397,12 @@ a.cp-btn:focus {
 
 .cp-tooltip-bottom-left {
 	margin-top: -5px;
-	padding-top: 6px;
+	padding-top: 10px;
 }
 
 .cp-tooltip-bottom-left .cp-arrow {
-	left: 0;
-	top: 0;
+	left: 2px;
+	top: 4px;
 }
 
 .cp-tooltip-bottom-left .cp-arrow::before {
@@ -388,6 +415,7 @@ a.cp-btn:focus {
 	border: 1px solid #c7c7c7;
 	border-radius: 2px;
 	box-sizing: border-box;
+	height: 29px;
 	font-size: 16px;
 	padding-left: 8px;
 	padding-right: 8px;
@@ -403,7 +431,7 @@ a.cp-btn:focus {
 .cp-form-control-color {
 	-webkit-appearance: none;
 	border-width: 0;
-	bottom: 4px;
+	bottom: 5px;
 	cursor: pointer;
 	height: 18px;
 	padding: 0;
