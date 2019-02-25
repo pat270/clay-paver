@@ -1,0 +1,35 @@
+<div class="cp-variables-form-section">
+	<% if (typeof headerText !== 'undefined') { %>
+		<h4 class="cp-variables-form-header"><%= headerText %></h4>
+	<% } %>
+
+	<% if (typeof printRegularInputsArr !== 'undefined') { %>
+		<%- printInputs(printRegularInputsArr) %>
+	<% } %>
+
+	<div class="cp-form-group-sass-map">
+		<div class="cp-form-group">
+			<input class="cp-form-control cp-form-control-sass-map" id="<%= variableName %>" name="clay[<%= variableName %>]" type="hidden">
+		</div>
+
+		<% if (typeof printInputsArr !== 'undefined') { %>
+			<%- printInputs(printInputsArr) %>
+		<% } %>
+
+		<%
+			if (typeof mixin !== 'undefined') {
+				var props = {};
+
+				if (typeof mixinProps !== 'undefined') {
+					props = mixinProps;
+				}
+		%>
+
+				<%-include(mixinsPath + mixin, props) %>
+
+		<%
+			}
+		%>
+
+	</div>
+</div>

@@ -1,61 +1,111 @@
-<h4 class="cp-variables-form-header">Nav</h4>
-<%- printInputs([
-	{ id: 'nav-font-size', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Nav',
+		printInputsArr: [
+			{ id: 'nav-font-size', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Nav Divider</h4>
-<%- printInputs([
-	{ id: 'nav-divider-margin-y', },
-	{ id: 'nav-divider-color', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Nav Divider',
+		printInputsArr: [
+			{ id: 'nav-divider-margin-y', },
+			{ id: 'nav-divider-color', color: true, },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Nav Form</h4>
-<%- printInputs([
-	{ id: 'nav-form-padding-top', },
-	{ id: 'nav-form-padding-right', },
-	{ id: 'nav-form-padding-bottom', },
-	{ id: 'nav-form-padding-left', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Nav Form',
+		printInputsArr: [
+			{ id: 'nav-form-padding-top', },
+			{ id: 'nav-form-padding-right', },
+			{ id: 'nav-form-padding-bottom', },
+			{ id: 'nav-form-padding-left', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Nav Link / Btn Monospaced</h4>
-<%- printInputs([
-	{ id: 'nav-item-monospaced-size', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Nav Link / Btn Monospaced',
+		printInputsArr: [
+			{ id: 'nav-item-monospaced-size', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Nav Link</h4>
-<%- printInputs([
-	{ id: 'nav-link-padding-y', },
-	{ id: 'nav-link-padding-x', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Nav Link',
+		printInputsArr: [
+			{ id: 'nav-link-padding-y', },
+			{ id: 'nav-link-padding-x', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Nav Link Disabled</h4>
-<%- printInputs([
-	{ id: 'nav-link-disabled-color', color: true, },
-	{ id: 'nav-link-disabled-cursor', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Nav Link Disabled',
+		printInputsArr: [
+			{ id: 'nav-link-disabled-color', color: true, },
+			{ id: 'nav-link-disabled-cursor', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Nav Btn</h4>
-<%- printInputs([
-	{ id: 'nav-btn-padding-y', },
-	{ id: 'nav-btn-padding-x', },
-	{ id: 'nav-btn-margin-y', },
-	{ id: 'nav-btn-margin-x', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Nav Btn',
+		printInputsArr: [
+			{ id: 'nav-btn-padding-y', },
+			{ id: 'nav-btn-padding-x', },
+			{ id: 'nav-btn-margin-y', },
+			{ id: 'nav-btn-margin-x', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Nav Stacked</h4>
-<%- printInputs([
-	{ id: 'nav-stacked-nav-form-padding-top', },
-	{ id: 'nav-stacked-nav-form-padding-right', },
-	{ id: 'nav-stacked-nav-form-padding-bottom', },
-	{ id: 'nav-stacked-nav-form-padding-left', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Nav Stacked',
+		printInputsArr: [
+			{ id: 'nav-stacked-nav-form-padding-top', },
+			{ id: 'nav-stacked-nav-form-padding-right', },
+			{ id: 'nav-stacked-nav-form-padding-bottom', },
+			{ id: 'nav-stacked-nav-form-padding-left', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Nav Nested (Padding)</h4>
-<%- printInputs([
-	{ id: 'nav-nested-spacer-x', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Nav Nested (Padding)',
+		printInputsArr: [
+			{ id: 'nav-nested-spacer-x', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Nav Nested (Margin)</h4>
-<%- printInputs([
-	{ id: 'nav-nested-margins-spacer-x', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Nav Nested (Margin)',
+		printInputsArr: [
+			{ id: 'nav-nested-margins-spacer-x', },
+		],
+	}
+) %>

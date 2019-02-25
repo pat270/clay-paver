@@ -1,140 +1,194 @@
-<h4 class="cp-variables-form-header">Input Group Addon</h4>
-<%- printInputs([
-	{ id: 'input-group-addon-min-width', },
-	{ id: 'input-group-addon-font-weight', },
-	{ id: 'input-group-addon-padding-y', },
-	{ id: 'input-group-addon-padding-x', },
-	{ id: 'input-group-addon-border-color', color: true, },
-	{ id: 'input-group-addon-color', color: true, },
-	{ id: 'input-group-addon-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Group Addon',
+		printInputsArr: [
+			{ id: 'input-group-addon-min-width', },
+			{ id: 'input-group-addon-font-weight', },
+			{ id: 'input-group-addon-padding-y', },
+			{ id: 'input-group-addon-padding-x', },
+			{ id: 'input-group-addon-border-color', color: true, },
+			{ id: 'input-group-addon-color', color: true, },
+			{ id: 'input-group-addon-bg', color: true, },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Secondary Addon</h4>
-<%- printInputs([
-	{ id: 'input-group-secondary-addon-border-width', },
-	{ id: 'input-group-secondary-addon-border-color', color: true, },
-	{ id: 'input-group-secondary-addon-color', color: true, },
-	{ id: 'input-group-secondary-addon-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Group Secondary Addon',
+		printInputsArr: [
+			{ id: 'input-group-secondary-addon-border-width', },
+			{ id: 'input-group-secondary-addon-border-color', color: true, },
+			{ id: 'input-group-secondary-addon-color', color: true, },
+			{ id: 'input-group-secondary-addon-bg', color: true, },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Item</h4>
-<%- printInputs([
-	{ id: 'input-group-item-margin-left', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Group Item',
+		printInputsArr: [
+			{ id: 'input-group-item-margin-left', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Inset</h4>
-<%- printInputs([
-	{ id: 'input-group-inset-item-padding-right', },
-	{ id: 'input-group-inset-item-padding-left', },
-	{ id: 'input-group-inset-item-color', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Group Inset',
+		printInputsArr: [
+			{ id: 'input-group-inset-item-padding-right', },
+			{ id: 'input-group-inset-item-padding-left', },
+			{ id: 'input-group-inset-item-color', color: true, },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Inset Btn</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="input-group-inset-item-btn" name="clay[input-group-inset-item-btn]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayButtonSizeMixin', { namespace: 'input-group-inset-item-btn' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Input Group Inset Btn',
+		variableName: 'input-group-inset-item-btn',
+		mixin: 'cpClayButtonSizeMixin',
+		mixinProps: { namespace: 'input-group-inset-item-btn' },
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Inset Form File Btn</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="input-group-inset-form-file-btn" name="clay[input-group-inset-form-file-btn]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayButtonSizeMixin', { namespace: 'input-group-inset-form-file-btn' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Input Group Inset Form File Btn',
+		variableName: 'input-group-inset-form-file-btn',
+		mixin: 'cpClayButtonSizeMixin',
+		mixinProps: { namespace: 'input-group-inset-form-file-btn' },
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Sm</h4>
-<%- printInputs([
-	{ id: 'input-group-addon-min-width-sm', },
-	{ id: 'input-group-addon-padding-y-sm', },
-	{ id: 'input-group-addon-padding-x-sm', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Group Sm',
+		printInputsArr: [
+			{ id: 'input-group-addon-min-width-sm', },
+			{ id: 'input-group-addon-padding-y-sm', },
+			{ id: 'input-group-addon-padding-x-sm', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Sm Item Btn</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="input-group-sm-item-btn" name="clay[input-group-sm-item-btn]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayButtonSizeMixin', { namespace: 'input-group-sm-item-btn' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Input Group Sm Item Btn',
+		variableName: 'input-group-sm-item-btn',
+		mixin: 'cpClayButtonSizeMixin',
+		mixinProps: { namespace: 'input-group-sm-item-btn' },
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Sm Item Btn Monospaced</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="input-group-sm-item-btn-monospaced" name="clay[input-group-sm-item-btn-monospaced]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayButtonSizeMixin', { namespace: 'input-group-sm-item-btn-monospaced' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Input Group Sm Item Btn Monospaced',
+		variableName: 'input-group-sm-item-btn-monospaced',
+		mixin: 'cpClayButtonSizeMixin',
+		mixinProps: { namespace: 'input-group-sm-item-btn-monospaced' },
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Sm Inset Item Btn</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="input-group-sm-inset-item-btn" name="clay[input-group-sm-inset-item-btn]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayButtonSizeMixin', { namespace: 'input-group-sm-inset-item-btn' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Input Group Sm Inset Item Btn',
+		variableName: 'input-group-sm-inset-item-btn',
+		mixin: 'cpClayButtonSizeMixin',
+		mixinProps: { namespace: 'input-group-sm-inset-item-btn' },
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Sm Inset Item Form File Btn</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="input-group-sm-inset-item-form-file-btn" name="clay[input-group-sm-inset-item-form-file-btn]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayButtonSizeMixin', { namespace: 'input-group-sm-inset-item-form-file-btn' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Input Group Sm Inset Item Form File Btn',
+		variableName: 'input-group-sm-inset-item-form-file-btn',
+		mixin: 'cpClayButtonSizeMixin',
+		mixinProps: { namespace: 'input-group-sm-inset-item-form-file-btn' },
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Lg</h4>
-<%- printInputs([
-	{ id: 'input-group-addon-min-width-lg', },
-	{ id: 'input-group-addon-padding-y-lg', },
-	{ id: 'input-group-addon-padding-x-lg', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Group Lg',
+		printInputsArr: [
+			{ id: 'input-group-addon-min-width-lg', },
+			{ id: 'input-group-addon-padding-y-lg', },
+			{ id: 'input-group-addon-padding-x-lg', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Lg Item Btn</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="input-group-lg-item-btn" name="clay[input-group-lg-item-btn]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayButtonSizeMixin', { namespace: 'input-group-lg-item-btn' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Input Group Lg Item Btn',
+		variableName: 'input-group-lg-item-btn',
+		mixin: 'cpClayButtonSizeMixin',
+		mixinProps: { namespace: 'input-group-lg-item-btn' },
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Lg Item Btn Monospaced</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="input-group-lg-item-btn-monospaced" name="clay[input-group-lg-item-btn-monospaced]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayButtonSizeMixin', { namespace: 'input-group-lg-item-btn-monospaced' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Input Group Lg Item Btn Monospaced',
+		variableName: 'input-group-lg-item-btn-monospaced',
+		mixin: 'cpClayButtonSizeMixin',
+		mixinProps: { namespace: 'input-group-lg-item-btn-monospaced' },
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Lg Inset Item Btn</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="input-group-lg-inset-item-btn" name="clay[input-group-lg-inset-item-btn]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayButtonSizeMixin', { namespace: 'input-group-lg-inset-item-btn' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Input Group Lg Inset Item Btn',
+		variableName: 'input-group-lg-inset-item-btn',
+		mixin: 'cpClayButtonSizeMixin',
+		mixinProps: { namespace: 'input-group-lg-inset-item-btn' },
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Lg Inset Item Form File Btn</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="input-group-lg-inset-item-form-file-btn" name="clay[input-group-lg-inset-item-form-file-btn]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayButtonSizeMixin', { namespace: 'input-group-lg-inset-item-form-file-btn' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Input Group Lg Inset Item Form File Btn',
+		variableName: 'input-group-lg-inset-item-form-file-btn',
+		mixin: 'cpClayButtonSizeMixin',
+		mixinProps: { namespace: 'input-group-lg-inset-item-form-file-btn' },
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Stacked Sm Down</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="input-group-stacked-sm-down" name="clay[input-group-stacked-sm-down]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayInputGroupStackedMixin', { namespace: 'input-group-stacked-sm-down' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Input Group Stacked Sm Down',
+		variableName: 'input-group-stacked-sm-down',
+		mixin: 'cpClayInputGroupStackedMixin',
+		mixinProps: { namespace: 'input-group-stacked-sm-down' },
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Form Control Tag Group</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="form-control-label-size" name="clay[form-control-label-size]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayLabelSizeMixin', { namespace: 'form-control-label-size' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Form Control Tag Group',
+		variableName: 'form-control-label-size',
+		mixin: 'cpClayLabelSizeMixin',
+		mixinProps: { namespace: 'form-control-label-size' },
+	}
+) %>
