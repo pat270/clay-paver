@@ -8,9 +8,7 @@
 	<% } %>
 
 	<div class="cp-form-group-sass-map">
-		<div class="cp-form-group">
-			<input class="cp-form-control cp-form-control-sass-map" id="<%= variableName %>" name="clay[<%= variableName %>]" type="hidden">
-		</div>
+		<input class="cp-form-control cp-form-control-sass-map" id="<%= variableName %>" name="clay[<%= variableName %>]" type="hidden">
 
 		<% if (typeof printInputsArr !== 'undefined') { %>
 			<%- printInputs(printInputsArr) %>
