@@ -1,15 +1,23 @@
-<h4 class="cp-variables-form-header">Application Bar Size</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="application-bar-size" name="clay[application-bar-size]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayNavbarSizeMixin', { namespace: 'application-bar-size' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Application Bar Size',
+		printRegularInputsArr: undefined,
+		variableName: 'application-bar-size',
+		printInputsArr: undefined,
+		mixin: 'cpClayNavbarSizeMixin',
+		mixinProps: { namespace: 'application-bar-size' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Application Bar Dark</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="application-bar-dark" name="clay[application-bar-dark]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayNavbarVariantMixin', { namespace: 'application-bar-dark' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Application Bar Dark',
+		printRegularInputsArr: undefined,
+		variableName: 'application-bar-dark',
+		printInputsArr: undefined,
+		mixin: 'cpClayNavbarVariantMixin',
+		mixinProps: { namespace: 'application-bar-dark' },
+	},
+) %>

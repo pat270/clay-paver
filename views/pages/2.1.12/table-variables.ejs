@@ -1,270 +1,434 @@
-<h4 class="cp-variables-form-header">Table Responsive</h4>
-<%- printInputs([
-	{ id: 'table-responsive-margin-bottom', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table Responsive',
+		printInputsArr: [
+			{ id: 'table-responsive-margin-bottom', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table</h4>
-<%- printInputs([
-	{ id: 'table-font-size', },
-	{ id: 'table-margin-bottom', },
-	{ id: 'table-border-width', },
-	{ id: 'table-border-color', color: true, },
-	{ id: 'table-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table',
+		printInputsArr: [
+			{ id: 'table-font-size', },
+			{ id: 'table-margin-bottom', },
+			{ id: 'table-border-width', },
+			{ id: 'table-border-color', color: true, },
+			{ id: 'table-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Quick Action Menu</h4>
-<%- printInputs([
-	{ id: 'table-quick-action-menu-bg', color: true, },
-	{ id: 'table-quick-action-menu-align-items', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table Quick Action Menu',
+		printInputsArr: [
+			{ id: 'table-quick-action-menu-bg', color: true, },
+			{ id: 'table-quick-action-menu-align-items', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Gutters</h4>
-<%- printInputs([
-	{ id: 'table-cell-gutters', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table Gutters',
+		printInputsArr: [
+			{ id: 'table-cell-gutters', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Bordered</h4>
-<%- printInputs([
-	{ id: 'table-bordered-border-width', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table Bordered',
+		printInputsArr: [
+			{ id: 'table-bordered-border-width', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Striped</h4>
-<%- printInputs([
-	{ id: 'table-accent-bg', color: true, },
-]) %>
-<%- printInputs([
-	{ id: 'table-quick-action-menu-accent-bg', color: true, },
-	{ id: 'table-quick-action-menu-accent-active-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table Striped',
+		printInputsArr: [
+			{ id: 'table-accent-bg', color: true, },
+			{ id: 'table-quick-action-menu-accent-bg', color: true, },
+			{ id: 'table-quick-action-menu-accent-active-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Hover</h4>
-<%- printInputs([
-	{ id: 'table-hover-bg', color: true, },
-]) %>
-<%- printInputs([
-	{ id: 'table-quick-action-menu-hover-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table Hover',
+		printInputsArr: [
+			{ id: 'table-hover-bg', color: true, },
+			{ id: 'table-quick-action-menu-hover-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Active (Table Row)</h4>
-<%- printInputs([
-	{ id: 'table-active-bg', color: true, },
-]) %>
-<%- printInputs([
-	{ id: 'table-quick-action-menu-active-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table Active (Table Row)',
+		printInputsArr: [
+			{ id: 'table-active-bg', color: true, },
+			{ id: 'table-quick-action-menu-active-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Disabled (Table Row)</h4>
-<%- printInputs([
-	{ id: 'table-disabled-color', color: true, },
-	{ id: 'table-disabled-bg', color: true, },
-	{ id: 'table-disabled-cursor', },
-	{ id: 'table-disabled-pointer-events', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table Disabled (Table Row)',
+		printInputsArr: [
+			{ id: 'table-disabled-color', color: true, },
+			{ id: 'table-disabled-bg', color: true, },
+			{ id: 'table-disabled-cursor', },
+			{ id: 'table-disabled-pointer-events', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Head (thead th)</h4>
-<%- printInputs([
-	{ id: 'table-head-height', },
-	{ id: 'table-head-font-size', },
-	{ id: 'table-head-font-weight', },
-	{ id: 'table-head-border-top-width', },
-	{ id: 'table-head-border-bottom-width', },
-	{ id: 'table-head-color', color: true, },
-	{ id: 'table-head-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table Head (thead th)',
+		printInputsArr: [
+			{ id: 'table-head-height', },
+			{ id: 'table-head-font-size', },
+			{ id: 'table-head-font-weight', },
+			{ id: 'table-head-border-top-width', },
+			{ id: 'table-head-border-bottom-width', },
+			{ id: 'table-head-color', color: true, },
+			{ id: 'table-head-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Head Link (thead th a)</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="table-head-link" name="clay[table-head-link]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'table-head-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Table Head Link (thead th a)',
+		printRegularInputsArr: undefined,
+		variableName: 'table-head-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'table-head-link' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Head Title</h4>
-<%- printInputs([
-	{ id: 'table-head-title-text-truncate-max-width', },
-	{ id: 'table-head-title-inline-item-spacer-x', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table Head Title',
+		printInputsArr: [
+			{ id: 'table-head-title-text-truncate-max-width', },
+			{ id: 'table-head-title-inline-item-spacer-x', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Data (td)</h4>
-<%- printInputs([
-	{ id: 'table-data-border-top-width', },
-	{ id: 'table-data-border-right-width', },
-	{ id: 'table-data-border-bottom-width', },
-	{ id: 'table-data-border-left-width', },
-	{ id: 'table-data-border-style', },
-	{ id: 'table-data-border-color', color: true, },
-	{ id: 'table-data-vertical-align', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table Data (td)',
+		printInputsArr: [
+			{ id: 'table-data-border-top-width', },
+			{ id: 'table-data-border-right-width', },
+			{ id: 'table-data-border-bottom-width', },
+			{ id: 'table-data-border-left-width', },
+			{ id: 'table-data-border-style', },
+			{ id: 'table-data-border-color', color: true, },
+			{ id: 'table-data-vertical-align', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Cell Padding</h4>
-<%- printInputs([
-	{ id: 'table-cell-padding', },
-	{ id: 'table-cell-padding-sm', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table Cell Padding',
+		printInputsArr: [
+			{ id: 'table-cell-padding', },
+			{ id: 'table-cell-padding-sm', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Cell Expand</h4>
-<%- printInputs([
-	{ id: 'table-cell-expand-min-width', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table Cell Expand',
+		printInputsArr: [
+			{ id: 'table-cell-expand-min-width', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Divider</h4>
-<%- printInputs([
-	{ id: 'table-divider-font-size', },
-	{ id: 'table-divider-font-weight', },
-	{ id: 'table-divider-padding', },
-	{ id: 'table-divider-color', color: true, },
-	{ id: 'table-divider-bg', color: true, },
-	{ id: 'table-divider-text-transform', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table Divider',
+		printInputsArr: [
+			{ id: 'table-divider-font-size', },
+			{ id: 'table-divider-font-weight', },
+			{ id: 'table-divider-padding', },
+			{ id: 'table-divider-color', color: true, },
+			{ id: 'table-divider-bg', color: true, },
+			{ id: 'table-divider-text-transform', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Title</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="table-title" name="clay[table-title]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'table-title' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Table Title',
+		printRegularInputsArr: undefined,
+		variableName: 'table-title',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'table-title' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Title Link</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="table-title-link" name="clay[table-title-link]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'table-title-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Table Title Link',
+		printRegularInputsArr: undefined,
+		variableName: 'table-title-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'table-title-link' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Link</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="table-link" name="clay[table-link]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'table-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Table Link',
+		printRegularInputsArr: undefined,
+		variableName: 'table-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'table-link' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Action Link</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="table-action-link" name="clay[table-action-link]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'table-action-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Table Action Link',
+		printRegularInputsArr: undefined,
+		variableName: 'table-action-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'table-action-link' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Dark</h4>
-<%- printInputs([
-	{ id: 'table-dark-border-color', color: true, },
-	{ id: 'table-dark-color', color: true, },
-	{ id: 'table-dark-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table Dark',
+		printInputsArr: [
+			{ id: 'table-dark-border-color', color: true, },
+			{ id: 'table-dark-color', color: true, },
+			{ id: 'table-dark-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Dark Table Striped</h4>
-<%- printInputs([
-	{ id: 'table-dark-accent-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table Dark Table Striped',
+		printInputsArr: [
+			{ id: 'table-dark-accent-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table Dark Table Hover</h4>
-<%- printInputs([
-	{ id: 'table-dark-hover-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table Dark Table Hover',
+		printInputsArr: [
+			{ id: 'table-dark-hover-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table List</h4>
-<%- printInputs([
-	{ id: 'table-list-font-size', },
-	{ id: 'table-list-margin-top', },
-	{ id: 'table-list-margin-bottom', },
-	{ id: 'table-list-border-y-width', },
-	{ id: 'table-list-border-x-width', },
-	{ id: 'table-list-border-width', },
-	{ id: 'table-list-border-color', color: true, },
-	{ id: 'table-list-border-radius', },
-	{ id: 'table-list-color', color: true, },
-	{ id: 'table-list-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table List',
+		printInputsArr: [
+			{ id: 'table-list-font-size', },
+			{ id: 'table-list-margin-top', },
+			{ id: 'table-list-margin-bottom', },
+			{ id: 'table-list-border-y-width', },
+			{ id: 'table-list-border-x-width', },
+			{ id: 'table-list-border-width', },
+			{ id: 'table-list-border-color', color: true, },
+			{ id: 'table-list-border-radius', },
+			{ id: 'table-list-color', color: true, },
+			{ id: 'table-list-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table List Quick Action Menu</h4>
-<%- printInputs([
-	{ id: 'table-list-quick-action-menu-bg', color: true, },
-	{ id: 'table-list-quick-action-menu-align-items', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table List Quick Action Menu',
+		printInputsArr: [
+			{ id: 'table-list-quick-action-menu-bg', color: true, },
+			{ id: 'table-list-quick-action-menu-align-items', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table List Table Striped</h4>
-<%- printInputs([
-	{ id: 'table-list-accent-bg', color: true, },
-	{ id: 'table-list-quick-action-menu-accent-bg', color: true, },
-	{ id: 'table-list-quick-action-menu-accent-active-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table List Table Striped',
+		printInputsArr: [
+			{ id: 'table-list-accent-bg', color: true, },
+			{ id: 'table-list-quick-action-menu-accent-bg', color: true, },
+			{ id: 'table-list-quick-action-menu-accent-active-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table List Table Hover</h4>
-<%- printInputs([
-	{ id: 'table-list-hover-bg', color: true, },
-	{ id: 'table-list-quick-action-menu-hover-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table List Table Hover',
+		printInputsArr: [
+			{ id: 'table-list-hover-bg', color: true, },
+			{ id: 'table-list-quick-action-menu-hover-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table List Table Active (Table Row)</h4>
-<%- printInputs([
-	{ id: 'table-list-active-bg', color: true, },
-	{ id: 'table-list-quick-action-menu-active-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table List Table Active (Table Row)',
+		printInputsArr: [
+			{ id: 'table-list-active-bg', color: true, },
+			{ id: 'table-list-quick-action-menu-active-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table List Table Disabled (Table Row)</h4>
-<%- printInputs([
-	{ id: 'table-list-disabled-color', color: true, },
-	{ id: 'table-list-disabled-bg', color: true, },
-	{ id: 'table-list-disabled-cursor', },
-	{ id: 'table-list-disabled-pointer-events', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table List Table Disabled (Table Row)',
+		printInputsArr: [
+			{ id: 'table-list-disabled-color', color: true, },
+			{ id: 'table-list-disabled-bg', color: true, },
+			{ id: 'table-list-disabled-cursor', },
+			{ id: 'table-list-disabled-pointer-events', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table List Head (thead th)</h4>
-<%- printInputs([
-	{ id: 'table-list-head-height', },
-	{ id: 'table-list-head-font-size', },
-	{ id: 'table-list-head-font-weight', },
-	{ id: 'table-list-head-bg', color: true, },
-	{ id: 'table-list-head-vertical-alignment', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table List Head (thead th)',
+		printInputsArr: [
+			{ id: 'table-list-head-height', },
+			{ id: 'table-list-head-font-size', },
+			{ id: 'table-list-head-font-weight', },
+			{ id: 'table-list-head-bg', color: true, },
+			{ id: 'table-list-head-vertical-alignment', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table List Head Link (thead th a)</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="table-list-head-link" name="clay[table-list-head-link]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'table-list-head-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Table List Head Link (thead th a)',
+		printRegularInputsArr: undefined,
+		variableName: 'table-list-head-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'table-list-head-link' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table List Divider</h4>
-<%- printInputs([
-	{ id: 'table-list-divider-padding-y', },
-	{ id: 'table-list-divider-padding-x', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Table List Divider',
+		printInputsArr: [
+			{ id: 'table-list-divider-padding-y', },
+			{ id: 'table-list-divider-padding-x', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table List Title</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="table-list-title" name="clay[table-list-title]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'table-list-title' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Table List Title',
+		printRegularInputsArr: undefined,
+		variableName: 'table-list-title',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'table-list-title' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table List Title Link</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="table-list-title-link" name="clay[table-list-title-link]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'table-list-title-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Table List Title Link',
+		printRegularInputsArr: undefined,
+		variableName: 'table-list-title-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'table-list-title-link' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table List Link</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="table-list-link" name="clay[table-list-link]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'table-list-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Table List Link',
+		printRegularInputsArr: undefined,
+		variableName: 'table-list-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'table-list-link' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Table List Action Link</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="table-list-action-link" name="clay[table-list-action-link]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'table-list-action-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Table List Action Link',
+		printRegularInputsArr: undefined,
+		variableName: 'table-list-action-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'table-list-action-link' },
+	},
+) %>
