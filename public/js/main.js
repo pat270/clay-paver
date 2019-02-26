@@ -555,7 +555,7 @@ doc.on('click', '#downloadVariables', function(event) {
 			}
 		}
 	}).then(function() {
-		$('body').append('<a download="_custom-variables.scss" href="data:text/plain;charset=UTF-8,' + encodeURIComponent(sbVariableGroup) + '"id="downloadVariablesTemp"></a>');
+		$('body').append('<a download="_clay_variables.scss" href="data:text/plain;charset=UTF-8,' + encodeURIComponent(sbVariableGroup) + '"id="downloadVariablesTemp"></a>');
 
 		document.getElementById('downloadVariablesTemp').click();
 
@@ -663,12 +663,42 @@ doc.on('click', '#resetButton', function(event) {
 	}
 });
 
-doc.on('keyup', '#cpVariableSearch .cp-form-control', function() {
-	var value = $(this).val().toLowerCase();
+var ClayPaverVariableSearch = {
+	search: function(input) {
+		var value = input.val().toLowerCase(); 
 
-	$('.cp-variables-form .cp-control-label').filter(function() {
-		$(this).closest('.cp-form-group').toggle($(this).text().toLowerCase().indexOf(value) > -1);
+		$('.cp-variables-form .cp-control-label').filter(function() {
+			$(this).closest('.cp-form-group').toggle($(this).text().toLowerCase().indexOf(value) > -1);
+		});
+	},
+};
+
+doc.on('keyup', '#cpVariableSearch .cp-form-control', function(event) {
+	ClayPaverVariableSearch.search($(this));
+});
+
+doc.on('click', '.cp-variables-form-header', function(event) {
+	var isExpanded = true;
+
+	var formGroup = $(this).closest('.cp-variables-form-section').find('.cp-form-group');
+
+	formGroup.each(function(index, el) {
+		if (!$(el).is(':visible')) {
+			isExpanded = false;
+
+			return false;
+		}
 	});
+
+	if (isExpanded && $('#cpVariableSearch .cp-form-control').val() !== '') {
+		ClayPaverVariableSearch.search($('#cpVariableSearch .cp-form-control'));
+	}
+	else if (isExpanded) {
+		formGroup.toggle(false);
+	}
+	else {
+		formGroup.toggle(true);
+	}
 });
 
 // Navigation Buttons
