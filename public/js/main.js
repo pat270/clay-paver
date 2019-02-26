@@ -5,9 +5,12 @@ var tableName = 'defaultTheme';
 
 var dbThemesName = 'cpDBThemes';
 
+var dbClayBaseThemes = 'cpDBClayBaseThemes';
+
 if (clayCurrentVersion !== '2.3.3') {
 	dbName = 'cpDB-' + clayCurrentVersion;
 	dbThemesName = 'cpDBThemes-' + clayCurrentVersion;
+	dbClayBaseThemes = 'cpDBClayBaseThemes-' + clayCurrentVersion;
 }
 
 cpDB = localforage.createInstance({
@@ -25,6 +28,11 @@ cpDBThemes.getItem('currentTheme').then(function(value) {
 		cpDBThemes.setItem(tableName, tableName);
 		cpDBThemes.setItem('currentTheme', tableName);
 	}
+});
+
+cpDBClayBaseThemes = localforage.createInstance({
+	name: dbClayBaseThemes,
+	storeName: 'themes'
 });
 
 // HTML 5 Support
@@ -263,6 +271,8 @@ var ClayPaver = {
 		var sbVariableGroup = '';
 
 		cpDBThemes.getItem('currentTheme').then(function(value) {
+			var currentThemeName = value;
+
 			cpDB.config({
 				name: dbName,
 				storeName: value
@@ -282,41 +292,54 @@ var ClayPaver = {
 			}).then(function() {
 				var atlasAll = $('#atlasAll');
 
-				sass.writeFile('_custom-variables.scss', sbVariableGroup);
+				var sassImports = '@import "clay-bootstrap-functions";@import "custom-variables";@import "_atlas-variables";@import "clay-base";@import "_cp-site-stuff";';
 
-				if (atlasAll.length) {
-					setTimeout(function() {
-						ClayPaver.showStatusBar('Compiling ' + value + ' Sass...');
-					}, 750);
-				}
-
-				sass.compile('@import "clay-bootstrap-functions";@import "custom-variables";@import "atlas-all";@import "_cp-site-stuff";', function(result) {
-					ClayPaver.showLoadingMsg('');
-
-					if (atlasAll.length) {
-						$('#atlasAll').html(result.text);
+				cpDBClayBaseThemes.getItem(value).then(function(value) {
+					if (!value || value['clayCSSBaseTheme'] === 'atlas') {
+						$('#cpClayCSSBaseThemeCheckbox input[type="checkbox"]').prop('checked', false);
 					}
 					else {
-						$('head').prepend('<style id="atlasAll">' + result.text + '</style>');
+						sassImports = '@import "clay-bootstrap-functions";@import "custom-variables";@import "clay-base";@import "_cp-site-stuff";';
+
+						$('#cpClayCSSBaseThemeCheckbox input[type="checkbox"]').prop('checked', true);
 					}
 
-					if (result.status) {
+					sass.writeFile('_custom-variables.scss', sbVariableGroup);
+
+					if (atlasAll.length) {
 						setTimeout(function() {
-							ClayPaver.showStatusBar('There was an error, please check the browser console.');
+							ClayPaver.showStatusBar('Compiling ' + currentThemeName + ' Sass...');
 						}, 750);
-
-						console.log(result.formatted);
 					}
 
-					var cpCompileDone = new Event('cp-compile-done');
+					sass.compile(sassImports, function(result) {
+						ClayPaver.showLoadingMsg('');
 
-					document.dispatchEvent(cpCompileDone);
+						if (atlasAll.length) {
+							$('#atlasAll').html(result.text);
+						}
+						else {
+							$('head').prepend('<style id="atlasAll">' + result.text + '</style>');
+						}
 
-					ClayPaver.removeLoadingMsg();
+						if (result.status) {
+							setTimeout(function() {
+								ClayPaver.showStatusBar('There was an error, please check the browser console.');
+							}, 750);
 
-					ClayPaver.removeStatusBar();
+							console.log(result.formatted);
+						}
 
-					Turbolinks.clearCache();
+						var cpCompileDone = new Event('cp-compile-done');
+
+						document.dispatchEvent(cpCompileDone);
+
+						ClayPaver.removeLoadingMsg();
+
+						ClayPaver.removeStatusBar();
+
+						Turbolinks.clearCache();
+					});
 				});
 			});
 
@@ -466,7 +489,8 @@ if (!sass) {
 	var preloadDir = '';
 	var preloadFiles = [
 		'clay-bootstrap-functions.scss',
-		'atlas-all.scss',
+		'_atlas-variables.scss',
+		'clay-base.scss',
 		'_cp-site-stuff.scss',
 	];
 
@@ -485,7 +509,7 @@ if (!sass) {
 	});
 }
 
-// CP Variables Form
+// CP Navigation
 
 var doc = $(document);
 
@@ -642,6 +666,20 @@ doc.on('change', '.cp-form-group-sass-map .cp-form-control', function(event) {
 });
 
 // Variables Form
+
+doc.on('change', '#cpClayCSSBaseThemeCheckbox input[type="checkbox"]', function(event) {
+	var clayCSSBaseTheme = this.checked ? 'base' : 'atlas';
+
+	cpDBThemes.getItem('currentTheme').then(function(value) {
+		cpDBClayBaseThemes.setItem(
+			value,
+			{ 'clayCSSBaseTheme' : clayCSSBaseTheme }
+		).then(function(value) {
+			ClayPaver.compileSass();
+		});
+	});
+});
+
 
 doc.on('submit', '.cp-variables-form', function(event) {
 	event.preventDefault();

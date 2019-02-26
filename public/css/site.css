@@ -564,7 +564,7 @@ a.cp-btn:focus {
 
 .cp-variable-sidebar-header {
 	box-shadow: 0 1px 6px -3px rgba(0, 0, 0, 0.75);
-	height: 60px;
+	height: 86px;
 	padding: 15px;
 	position: relative;
 	z-index: 1;
@@ -578,7 +578,7 @@ a.cp-btn:focus {
 	padding: 0 15px;
 	position: absolute;
 	right: 0;
-	top: 60px;
+	top: 86px;
 }
 
 .cp-variable-sidebar-footer {
@@ -595,6 +595,10 @@ a.cp-btn:focus {
 .cp-variable-sidebar-footer .cp-btn {
 	padding-left: 16px;
 	padding-right: 16px;
+}
+
+#cpVariableSearch {
+	margin-bottom: 8px;
 }
 
 /* Example Containers */
