@@ -522,6 +522,8 @@ doc.on('click', '#cpDataClearAll', function(event) {
 		});
 
 		cpDB.dropInstance({ name: dbName });
+		cpDBThemes.dropInstance({ name: dbThemesName });
+		cpDBClayBaseThemes.dropInstance({ name: dbClayBaseThemes });
 	}
 });
 
@@ -543,6 +545,7 @@ doc.on('click', '#cpDataClearCurrent', function(event) {
 
 			if (value !== 'defaultTheme') {
 				cpDBThemes.removeItem(value);
+				cpDBClayBaseThemes.removeItem(value);
 			}
 		}
 	});
