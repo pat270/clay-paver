@@ -92,7 +92,7 @@
 							<%- include(partialsPath + 'siteVariableSidebarHeader.ejs') %>
 
 							<div class="cp-variable-sidebar-body">
-								<%- include(page + '-variables', { mixinsPath: mixinsPath, svgIconsPath: svgIconsPath }) %>
+								<%- include(page + '-variables', { mixinsPath: '../../pages/' + currentVersion + '/mixins/', partialsPath: partialsPath, svgIconsPath: svgIconsPath }) %>
 							</div>
 							<div class="cp-variable-sidebar-footer">
 								<button class="cp-btn cp-btn-primary" id="saveButton" type="submit">Save</button>

@@ -1,219 +1,305 @@
-<h4 class="cp-variables-form-header">List Group</h4>
-<%-
-	printInputs([
-		{ id: 'list-group-font-size', },
-		{ id: 'list-group-border-width', },
-		{ id: 'list-group-border-color', color: true, },
-		{ id: 'list-group-border-radius', },
-		{ id: 'list-group-color', color: true, },
-		{ id: 'list-group-bg', color: true, },
-		{ id: 'list-group-box-shadow', },
-		{ id: 'list-group-margin-top', },
-		{ id: 'list-group-margin-bottom', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'List Group',
+		printInputsArr: [
+			{ id: 'list-group-font-size', },
+			{ id: 'list-group-border-width', },
+			{ id: 'list-group-border-color', color: true, },
+			{ id: 'list-group-border-radius', },
+			{ id: 'list-group-color', color: true, },
+			{ id: 'list-group-bg', color: true, },
+			{ id: 'list-group-box-shadow', },
+			{ id: 'list-group-margin-top', },
+			{ id: 'list-group-margin-bottom', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Hover</h4>
-<%-
-	printInputs([
-		{ id: 'list-group-hover-bg', color: true, },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'List Group Hover',
+		printInputsArr: [
+			{ id: 'list-group-hover-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Active</h4>
-<%-
-	printInputs([
-		{ id: 'list-group-active-border-color', color: true, },
-		{ id: 'list-group-active-color', color: true, },
-		{ id: 'list-group-active-bg', color: true, },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'List Group Active',
+		printInputsArr: [
+			{ id: 'list-group-active-border-color', color: true, },
+			{ id: 'list-group-active-color', color: true, },
+			{ id: 'list-group-active-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Disabled</h4>
-<%-
-	printInputs([
-		{ id: 'list-group-disabled-color', color: true, },
-		{ id: 'list-group-disabled-bg', color: true, },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'List Group Disabled',
+		printInputsArr: [
+			{ id: 'list-group-disabled-color', color: true, },
+			{ id: 'list-group-disabled-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Item</h4>
-<%-
-	printInputs([
-		{ id: 'list-group-item-padding-y', },
-		{ id: 'list-group-item-padding-x', },
-		{ id: 'list-group-item-flex-align-items', },
-		{ id: 'list-group-item-flex-offset-top', },
-		{ id: 'list-group-item-flex-checkbox-offset-top', },
-		{ id: 'list-group-item-flex-list-group-title-offset-top', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'List Group Item',
+		printInputsArr: [
+			{ id: 'list-group-item-padding-y', },
+			{ id: 'list-group-item-padding-x', },
+			{ id: 'list-group-item-flex-align-items', },
+			{ id: 'list-group-item-flex-offset-top', },
+			{ id: 'list-group-item-flex-checkbox-offset-top', },
+			{ id: 'list-group-item-flex-list-group-title-offset-top', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Link</h4>
-<%-
-	printInputs([
-		{ id: 'list-group-link-color', color: true, },
-		{ id: 'list-group-link-hover-color', color: true, },
-		{ id: 'list-group-link-active-color', color: true, },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'List Group Link',
+		printInputsArr: [
+			{ id: 'list-group-link-color', color: true, },
+			{ id: 'list-group-link-hover-color', color: true, },
+			{ id: 'list-group-link-active-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Detail</h4>
-<%-
-	printInputs([
-		{ id: 'list-group-detail-margin-top', },
-		{ id: 'list-group-detail-margin-bottom', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'List Group Detail',
+		printInputsArr: [
+			{ id: 'list-group-detail-margin-top', },
+			{ id: 'list-group-detail-margin-bottom', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Notification Item</h4>
-<%-
-	printInputs([
-		{ id: 'list-group-notification-item-border-top-width', },
-		{ id: 'list-group-notification-item-border-right-width', },
-		{ id: 'list-group-notification-item-border-bottom-width', },
-		{ id: 'list-group-notification-item-border-left-width', },
-		{ id: 'list-group-notification-item-border-top-color', color: true, },
-		{ id: 'list-group-notification-item-border-right-color', color: true, },
-		{ id: 'list-group-notification-item-border-bottom-color', color: true, },
-		{ id: 'list-group-notification-item-border-left-color', color: true, },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'List Group Notification Item',
+		printInputsArr: [
+			{ id: 'list-group-notification-item-border-top-width', },
+			{ id: 'list-group-notification-item-border-right-width', },
+			{ id: 'list-group-notification-item-border-bottom-width', },
+			{ id: 'list-group-notification-item-border-left-width', },
+			{ id: 'list-group-notification-item-border-top-color', color: true, },
+			{ id: 'list-group-notification-item-border-right-color', color: true, },
+			{ id: 'list-group-notification-item-border-bottom-color', color: true, },
+			{ id: 'list-group-notification-item-border-left-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Notification Item Active</h4>
-<%-
-	printInputs([
-		{ id: 'list-group-notification-item-active-border-top-color', color: true, },
-		{ id: 'list-group-notification-item-active-border-right-color', color: true, },
-		{ id: 'list-group-notification-item-active-border-bottom-color', color: true, },
-		{ id: 'list-group-notification-item-active-border-left-color', color: true, },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'List Group Notification Item Active',
+		printInputsArr: [
+			{ id: 'list-group-notification-item-active-border-top-color', color: true, },
+			{ id: 'list-group-notification-item-active-border-right-color', color: true, },
+			{ id: 'list-group-notification-item-active-border-bottom-color', color: true, },
+			{ id: 'list-group-notification-item-active-border-left-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Notification Item</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="list-group-notification-item" name="clay[list-group-notification-item]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayListGroupItemNotificationVariantMixin', { namespace: 'list-group-notification-item' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'List Group Notification Item',
+		printRegularInputsArr: undefined,
+		variableName: 'list-group-notification-item',
+		printInputsArr: undefined,
+		mixin: 'cpClayListGroupItemNotificationVariantMixin',
+		mixinProps: { namespace: 'list-group-notification-item' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Notification Item Primary</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="list-group-notification-item-primary" name="clay[list-group-notification-item-primary]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayListGroupItemNotificationVariantMixin', { namespace: 'list-group-notification-item-primary' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'List Group Notification Item Primary',
+		printRegularInputsArr: undefined,
+		variableName: 'list-group-notification-item-primary',
+		printInputsArr: undefined,
+		mixin: 'cpClayListGroupItemNotificationVariantMixin',
+		mixinProps: { namespace: 'list-group-notification-item-primary' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Header</h4>
-<%-
-	printInputs([
-		{ id: 'list-group-header-padding-y', },
-		{ id: 'list-group-header-padding-x', },
-		{ id: 'list-group-header-bg', color: true, },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'List Group Header',
+		printInputsArr: [
+			{ id: 'list-group-header-padding-y', },
+			{ id: 'list-group-header-padding-x', },
+			{ id: 'list-group-header-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Header Title</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="list-group-header-title" name="clay[list-group-header-title]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-header-title' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'List Group Header Title',
+		printRegularInputsArr: undefined,
+		variableName: 'list-group-header-title',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'list-group-header-title' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Title</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="list-group-title" name="clay[list-group-title]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-title' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'List Group Title',
+		printRegularInputsArr: undefined,
+		variableName: 'list-group-title',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'list-group-title' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Title Active</h4>
-<%-
-	printInputs([
-		{ id: 'list-group-title-active-color', color: true, },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'List Group Title Active',
+		printInputsArr: [
+			{ id: 'list-group-title-active-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Title Link</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="list-group-title-link" name="clay[list-group-title-link]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'list-group-title-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'List Group Title Link',
+		printRegularInputsArr: undefined,
+		variableName: 'list-group-title-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'list-group-title-link' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Subtitle</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="list-group-subtitle" name="clay[list-group-subtitle]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-subtitle' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'List Group Subtitle',
+		printRegularInputsArr: undefined,
+		variableName: 'list-group-subtitle',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'list-group-subtitle' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Subtitle Link</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="list-group-subtitle-link" name="clay[list-group-subtitle-link]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'list-group-subtitle-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'List Group Subtitle Link',
+		printRegularInputsArr: undefined,
+		variableName: 'list-group-subtitle-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'list-group-subtitle-link' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Text</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="list-group-text" name="clay[list-group-text]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-text' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'List Group Text',
+		printRegularInputsArr: undefined,
+		variableName: 'list-group-text',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'list-group-text' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Text Active</h4>
-<%-
-	printInputs([
-		{ id: 'list-group-text-active-color', color: true, },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'List Group Text Active',
+		printInputsArr: [
+			{ id: 'list-group-text-active-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Text Link</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="list-group-text-link" name="clay[list-group-text-link]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'list-group-text-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'List Group Text Link',
+		printRegularInputsArr: undefined,
+		variableName: 'list-group-text-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'list-group-text-link' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Subtext</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="list-group-subtext" name="clay[list-group-subtext]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'list-group-subtext' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'List Group Subtext',
+		printRegularInputsArr: undefined,
+		variableName: 'list-group-subtext',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'list-group-subtext' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Subtext Active</h4>
-<%-
-	printInputs([
-		{ id: 'list-group-subtext-active-color', color: true, },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'List Group Subtext Active',
+		printInputsArr: [
+			{ id: 'list-group-subtext-active-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Subtext Link</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="list-group-subtext-link" name="clay[list-group-subtext-link]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'list-group-subtext-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'List Group Subtext Link',
+		printRegularInputsArr: undefined,
+		variableName: 'list-group-subtext-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'list-group-subtext-link' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">List Group Item Action</h4>
-<%-
-	printInputs([
-		{ id: 'list-group-action-color', color: true, },
-		{ id: 'list-group-action-hover-color', color: true, },
-		{ id: 'list-group-action-active-color', color: true, },
-		{ id: 'list-group-action-active-bg', color: true, },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'List Group Item Action',
+		printInputsArr: [
+			{ id: 'list-group-action-color', color: true, },
+			{ id: 'list-group-action-hover-color', color: true, },
+			{ id: 'list-group-action-active-color', color: true, },
+			{ id: 'list-group-action-active-bg', color: true, },
+		],
+	},
+) %>

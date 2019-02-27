@@ -1,260 +1,338 @@
-<h4 class="cp-variables-form-header">Btn</h4>
-<%-
-	printInputs([
-		{ id: 'btn-font-size', },
-		{ id: 'btn-font-size-mobile', },
-		{ id: 'btn-font-weight', },
-		{ id: 'btn-padding-y', },
-		{ id: 'btn-padding-y-mobile', },
-		{ id: 'btn-padding-x', },
-		{ id: 'btn-padding-x-mobile', },
-		{ id: 'btn-line-height', },
-		{ id: 'btn-border-width', },
-		{ id: 'btn-border-radius', },
-		{ id: 'btn-box-shadow', },
-		{ id: 'btn-cursor', },
-		{ id: 'btn-transition', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Btn',
+		printInputsArr: [
+			{ id: 'btn-font-size', },
+			{ id: 'btn-font-size-mobile', },
+			{ id: 'btn-font-weight', },
+			{ id: 'btn-padding-y', },
+			{ id: 'btn-padding-y-mobile', },
+			{ id: 'btn-padding-x', },
+			{ id: 'btn-padding-x-mobile', },
+			{ id: 'btn-line-height', },
+			{ id: 'btn-border-width', },
+			{ id: 'btn-border-radius', },
+			{ id: 'btn-box-shadow', },
+			{ id: 'btn-cursor', },
+			{ id: 'btn-transition', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Btn Focus</h4>
-<%-
-	printInputs([
-		{ id: 'btn-focus-width', },
-		{ id: 'btn-focus-box-shadow', },
-		{ id: 'btn-link-disabled-color', color: true, },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Btn Focus',
+		printInputsArr: [
+			{ id: 'btn-focus-width', },
+			{ id: 'btn-focus-box-shadow', },
+			{ id: 'btn-link-disabled-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Btn Active</h4>
-<%-
-	printInputs([
-		{ id: 'btn-active-box-shadow', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Btn Active',
+		printInputsArr: [
+			{ id: 'btn-active-box-shadow', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Btn Disabled</h4>
-<%-
-	printInputs([
-		{ id: 'btn-disabled-cursor', },
-		{ id: 'btn-disabled-opacity', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Btn Disabled',
+		printInputsArr: [
+			{ id: 'btn-disabled-cursor', },
+			{ id: 'btn-disabled-opacity', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Btn Monospaced</h4>
-<%-
-	printInputs([
-		{ id: 'btn-monospaced-size', },
-		{ id: 'btn-monospaced-size-mobile', },
-		{ id: 'btn-monospaced-padding-y', },
-		{ id: 'btn-monospaced-padding-x', },
-		{ id: 'btn-inline-item-font-size', },
-		{ id: 'btn-section-font-size', },
-		{ id: 'btn-section-font-weight', },
-		{ id: 'btn-section-line-height', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Btn Monospaced',
+		printInputsArr: [
+			{ id: 'btn-monospaced-size', },
+			{ id: 'btn-monospaced-size-mobile', },
+			{ id: 'btn-monospaced-padding-y', },
+			{ id: 'btn-monospaced-padding-x', },
+			{ id: 'btn-inline-item-font-size', },
+			{ id: 'btn-section-font-size', },
+			{ id: 'btn-section-font-weight', },
+			{ id: 'btn-section-line-height', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Btn Block</h4>
-<%-
-	printInputs([
-		{ id: 'btn-block-spacing-y', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Btn Block',
+		printInputsArr: [
+			{ id: 'btn-block-spacing-y', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Btn Group</h4>
-<%-
-	printInputs([
-		{ id: 'btn-group-item-margin-right', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Btn Group',
+		printInputsArr: [
+			{ id: 'btn-group-item-margin-right', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Btn Toolbar</h4>
-<%-
-	printInputs([
-		{ id: 'btn-toolbar-spacer-y', },
-		{ id: 'btn-toolbar-spacer-x', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Btn Toolbar',
+		printInputsArr: [
+			{ id: 'btn-toolbar-spacer-y', },
+			{ id: 'btn-toolbar-spacer-x', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Btn Sm</h4>
-<%-
-	printInputs([
-		{ id: 'btn-font-size-sm', },
-		{ id: 'btn-font-size-sm-mobile', },
-		{ id: 'btn-padding-y-sm', },
-		{ id: 'btn-padding-y-sm-mobile', },
-		{ id: 'btn-line-height-sm', },
-		{ id: 'btn-border-radius-sm', },
-		{ id: 'btn-inline-item-font-size-sm', },
-		{ id: 'btn-monospaced-size-sm', },
-		{ id: 'btn-monospaced-size-sm-mobile', },
-		{ id: 'btn-monospaced-padding-y-sm', },
-		{ id: 'btn-monospaced-padding-x-sm', },
-		{ id: 'btn-section-font-size-sm', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Btn Sm',
+		printInputsArr: [
+			{ id: 'btn-font-size-sm', },
+			{ id: 'btn-font-size-sm-mobile', },
+			{ id: 'btn-padding-y-sm', },
+			{ id: 'btn-padding-y-sm-mobile', },
+			{ id: 'btn-line-height-sm', },
+			{ id: 'btn-border-radius-sm', },
+			{ id: 'btn-inline-item-font-size-sm', },
+			{ id: 'btn-monospaced-size-sm', },
+			{ id: 'btn-monospaced-size-sm-mobile', },
+			{ id: 'btn-monospaced-padding-y-sm', },
+			{ id: 'btn-monospaced-padding-x-sm', },
+			{ id: 'btn-section-font-size-sm', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Btn Lg</h4>
-<%-
-	printInputs([
-		{ id: 'btn-font-size-lg', },
-		{ id: 'btn-font-size-lg-mobile', },
-		{ id: 'btn-padding-y-lg', },
-		{ id: 'btn-padding-y-lg-mobile', },
-		{ id: 'btn-padding-x-lg', },
-		{ id: 'btn-padding-x-lg-mobile', },
-		{ id: 'btn-line-height-lg', },
-		{ id: 'btn-border-radius-lg', },
-		{ id: 'btn-monospaced-size-lg', },
-		{ id: 'btn-monospaced-size-lg-mobile', },
-		{ id: 'btn-monospaced-padding-y-lg', },
-		{ id: 'btn-monospaced-padding-x-lg', },
-		{ id: 'btn-inline-item-font-size-lg', },
-		{ id: 'btn-section-font-size-lg', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Btn Lg',
+		printInputsArr: [
+			{ id: 'btn-font-size-lg', },
+			{ id: 'btn-font-size-lg-mobile', },
+			{ id: 'btn-padding-y-lg', },
+			{ id: 'btn-padding-y-lg-mobile', },
+			{ id: 'btn-padding-x-lg', },
+			{ id: 'btn-padding-x-lg-mobile', },
+			{ id: 'btn-line-height-lg', },
+			{ id: 'btn-border-radius-lg', },
+			{ id: 'btn-monospaced-size-lg', },
+			{ id: 'btn-monospaced-size-lg-mobile', },
+			{ id: 'btn-monospaced-padding-y-lg', },
+			{ id: 'btn-monospaced-padding-x-lg', },
+			{ id: 'btn-inline-item-font-size-lg', },
+			{ id: 'btn-section-font-size-lg', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Btn Primary</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="btn-primary" name="clay[btn-primary]" type="hidden">
-	</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Btn Primary',
+		printRegularInputsArr: undefined,
+		variableName: 'btn-primary',
+		printInputsArr: undefined,
+		mixin: 'cpClayButtonVariantMixin',
+		mixinProps: { namespace: 'btn-primary' },
+	},
+) %>
 
-	<%- include(mixinsPath + 'cpClayButtonVariantMixin', { namespace: 'btn-primary' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Btn Secondary',
+		printRegularInputsArr: undefined,
+		variableName: 'btn-secondary',
+		printInputsArr: undefined,
+		mixin: 'cpClayButtonVariantMixin',
+		mixinProps: { namespace: 'btn-secondary' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Btn Secondary</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="btn-secondary" name="clay[btn-secondary]" type="hidden">
-	</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Btn Success',
+		printRegularInputsArr: undefined,
+		variableName: 'btn-success',
+		printInputsArr: undefined,
+		mixin: 'cpClayButtonVariantMixin',
+		mixinProps: { namespace: 'btn-success' },
+	},
+) %>
 
-	<%- include(mixinsPath + 'cpClayButtonVariantMixin', { namespace: 'btn-secondary' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Btn Info',
+		printRegularInputsArr: undefined,
+		variableName: 'btn-info',
+		printInputsArr: undefined,
+		mixin: 'cpClayButtonVariantMixin',
+		mixinProps: { namespace: 'btn-info' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Btn Success</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="btn-success" name="clay[btn-success]" type="hidden">
-	</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Btn Warning',
+		printRegularInputsArr: undefined,
+		variableName: 'btn-warning',
+		printInputsArr: undefined,
+		mixin: 'cpClayButtonVariantMixin',
+		mixinProps: { namespace: 'btn-warning' },
+	},
+) %>
 
-	<%- include(mixinsPath + 'cpClayButtonVariantMixin', { namespace: 'btn-success' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Btn Danger',
+		printRegularInputsArr: undefined,
+		variableName: 'btn-danger',
+		printInputsArr: undefined,
+		mixin: 'cpClayButtonVariantMixin',
+		mixinProps: { namespace: 'btn-danger' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Btn Info</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="btn-info" name="clay[btn-info]" type="hidden">
-	</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Btn Light',
+		printRegularInputsArr: undefined,
+		variableName: 'btn-light',
+		printInputsArr: undefined,
+		mixin: 'cpClayButtonVariantMixin',
+		mixinProps: { namespace: 'btn-light' },
+	},
+) %>
 
-	<%- include(mixinsPath + 'cpClayButtonVariantMixin', { namespace: 'btn-info' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Btn Dark',
+		printRegularInputsArr: undefined,
+		variableName: 'btn-dark',
+		printInputsArr: undefined,
+		mixin: 'cpClayButtonVariantMixin',
+		mixinProps: { namespace: 'btn-dark' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Btn Warning</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="btn-warning" name="clay[btn-warning]" type="hidden">
-	</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Btn Outline Primary',
+		printRegularInputsArr: undefined,
+		variableName: 'btn-outline-primary',
+		printInputsArr: undefined,
+		mixin: 'cpClayButtonVariantMixin',
+		mixinProps: { namespace: 'btn-outline-primary' },
+	},
+) %>
 
-	<%- include(mixinsPath + 'cpClayButtonVariantMixin', { namespace: 'btn-warning' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Btn Outline Secondary',
+		printRegularInputsArr: undefined,
+		variableName: 'btn-outline-secondary',
+		printInputsArr: undefined,
+		mixin: 'cpClayButtonVariantMixin',
+		mixinProps: { namespace: 'btn-outline-secondary' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Btn Danger</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="btn-danger" name="clay[btn-danger]" type="hidden">
-	</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Btn Outline Info',
+		printRegularInputsArr: undefined,
+		variableName: 'btn-outline-info',
+		printInputsArr: undefined,
+		mixin: 'cpClayButtonVariantMixin',
+		mixinProps: { namespace: 'btn-outline-info' },
+	},
+) %>
 
-	<%- include(mixinsPath + 'cpClayButtonVariantMixin', { namespace: 'btn-danger' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Btn Outline Success',
+		printRegularInputsArr: undefined,
+		variableName: 'btn-outline-success',
+		printInputsArr: undefined,
+		mixin: 'cpClayButtonVariantMixin',
+		mixinProps: { namespace: 'btn-outline-success' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Btn Light</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="btn-light" name="clay[btn-light]" type="hidden">
-	</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Btn Outline Warning',
+		printRegularInputsArr: undefined,
+		variableName: 'btn-outline-warning',
+		printInputsArr: undefined,
+		mixin: 'cpClayButtonVariantMixin',
+		mixinProps: { namespace: 'btn-outline-warning' },
+	},
+) %>
 
-	<%- include(mixinsPath + 'cpClayButtonVariantMixin', { namespace: 'btn-light' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Btn Outline Danger',
+		printRegularInputsArr: undefined,
+		variableName: 'btn-outline-danger',
+		printInputsArr: undefined,
+		mixin: 'cpClayButtonVariantMixin',
+		mixinProps: { namespace: 'btn-outline-danger' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Btn Dark</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="btn-dark" name="clay[btn-dark]" type="hidden">
-	</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Btn Outline Light',
+		printRegularInputsArr: undefined,
+		variableName: 'btn-outline-light',
+		printInputsArr: undefined,
+		mixin: 'cpClayButtonVariantMixin',
+		mixinProps: { namespace: 'btn-outline-light' },
+	},
+) %>
 
-	<%- include(mixinsPath + 'cpClayButtonVariantMixin', { namespace: 'btn-dark' }) %>
-</div>
-
-<h4 class="cp-variables-form-header">Btn Outline Primary</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="btn-outline-primary" name="clay[btn-outline-primary]" type="hidden">
-	</div>
-
-	<%- include(mixinsPath + 'cpClayButtonVariantMixin', { namespace: 'btn-outline-primary' }) %>
-</div>
-
-<h4 class="cp-variables-form-header">Btn Outline Secondary</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="btn-outline-secondary" name="clay[btn-outline-secondary]" type="hidden">
-	</div>
-
-	<%- include(mixinsPath + 'cpClayButtonVariantMixin', { namespace: 'btn-outline-secondary' }) %>
-</div>
-
-<h4 class="cp-variables-form-header">Btn Outline Info</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="btn-outline-info" name="clay[btn-outline-info]" type="hidden">
-	</div>
-
-	<%- include(mixinsPath + 'cpClayButtonVariantMixin', { namespace: 'btn-outline-info' }) %>
-</div>
-
-<h4 class="cp-variables-form-header">Btn Outline Success</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="btn-outline-success" name="clay[btn-outline-success]" type="hidden">
-	</div>
-
-	<%- include(mixinsPath + 'cpClayButtonVariantMixin', { namespace: 'btn-outline-success' }) %>
-</div>
-
-<h4 class="cp-variables-form-header">Btn Outline Warning</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="btn-outline-warning" name="clay[btn-outline-warning]" type="hidden">
-	</div>
-
-	<%- include(mixinsPath + 'cpClayButtonVariantMixin', { namespace: 'btn-outline-warning' }) %>
-</div>
-
-<h4 class="cp-variables-form-header">Btn Outline Danger</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="btn-outline-danger" name="clay[btn-outline-danger]" type="hidden">
-	</div>
-
-	<%- include(mixinsPath + 'cpClayButtonVariantMixin', { namespace: 'btn-outline-danger' }) %>
-</div>
-
-<h4 class="cp-variables-form-header">Btn Outline Light</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="btn-outline-light" name="clay[btn-outline-light]" type="hidden">
-	</div>
-
-	<%- include(mixinsPath + 'cpClayButtonVariantMixin', { namespace: 'btn-outline-light' }) %>
-</div>
-
-<h4 class="cp-variables-form-header">Btn Outline Dark</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="btn-outline-dark" name="clay[btn-outline-dark]" type="hidden">
-	</div>
-
-	<%- include(mixinsPath + 'cpClayButtonVariantMixin', { namespace: 'btn-outline-dark' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Btn Outline Dark',
+		printRegularInputsArr: undefined,
+		variableName: 'btn-outline-dark',
+		printInputsArr: undefined,
+		mixin: 'cpClayButtonVariantMixin',
+		mixinProps: { namespace: 'btn-outline-dark' },
+	},
+) %>

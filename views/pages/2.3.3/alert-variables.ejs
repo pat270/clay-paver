@@ -1,152 +1,239 @@
-<h4 class="cp-variables-form-header">Alert</h4>
-<%-
-	printInputs([
-		{ id: 'alert-font-size', },
-		{ id: 'alert-padding-y', },
-		{ id: 'alert-padding-x', },
-		{ id: 'alert-margin-bottom', },
-		{ id: 'alert-border-width', },
-		{ id: 'alert-border-style', },
-		{ id: 'alert-border-radius', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Alert',
+		printInputsArr: [
+			{ id: 'alert-font-size', },
+			{ id: 'alert-padding-y', },
+			{ id: 'alert-padding-x', },
+			{ id: 'alert-margin-bottom', },
+			{ id: 'alert-border-width', },
+			{ id: 'alert-border-style', },
+			{ id: 'alert-border-radius', },
+		],
+	},
+) %>
+</h4>
 
-<h4 class="cp-variables-form-header">Alert Indicator</h4>
-<%-
-	printInputs([
-		{ id: 'alert-indicator-font-size', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Alert Indicator',
+		printInputsArr: [
+			{ id: 'alert-indicator-font-size', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Lead</h4>
-<%-
-	printInputs([
-		{ id: 'alert-lead-font-size', },
-		{ id: 'alert-lead-font-weight', },
-		{ id: 'alert-lead-spacer-x', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Alert Lead',
+		printInputsArr: [
+			{ id: 'alert-lead-font-size', },
+			{ id: 'alert-lead-font-weight', },
+			{ id: 'alert-lead-spacer-x', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Link</h4>
-<%-
-	printInputs([
-		{ id: 'alert-link-font-weight', },
-		{ id: 'alert-link-decoration', },
-		{ id: 'alert-link-hover-decoration', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Alert Link',
+		printInputsArr: [
+			{ id: 'alert-link-font-weight', },
+			{ id: 'alert-link-decoration', },
+			{ id: 'alert-link-hover-decoration', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Dismissible</h4>
-<%-
-	printInputs([
-		{ id: 'alert-dismissible-padding-top', },
-		{ id: 'alert-dismissible-padding-right', },
-		{ id: 'alert-dismissible-padding-bottom', },
-		{ id: 'alert-dismissible-padding-left', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Alert Dismissible',
+		printInputsArr: [
+			{ id: 'alert-dismissible-padding-top', },
+			{ id: 'alert-dismissible-padding-right', },
+			{ id: 'alert-dismissible-padding-bottom', },
+			{ id: 'alert-dismissible-padding-left', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Close</h4>
-<%-
-	printInputs([
-		{ id: 'alert-close-width', },
-		{ id: 'alert-close-height', },
-		{ id: 'alert-close-font-size', },
-		{ id: 'alert-close-padding-top', },
-		{ id: 'alert-close-padding-right', },
-		{ id: 'alert-close-padding-bottom', },
-		{ id: 'alert-close-padding-left', },
-		{ id: 'alert-close-line-height', },
-		{ id: 'alert-close-margin-left', },
-		{ id: 'alert-close-opacity', },
-		{ id: 'alert-close-position-top', },
-		{ id: 'alert-close-position-right', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Alert Close',
+		printInputsArr: [
+			{ id: 'alert-close-width', },
+			{ id: 'alert-close-height', },
+			{ id: 'alert-close-font-size', },
+			{ id: 'alert-close-padding-top', },
+			{ id: 'alert-close-padding-right', },
+			{ id: 'alert-close-padding-bottom', },
+			{ id: 'alert-close-padding-left', },
+			{ id: 'alert-close-line-height', },
+			{ id: 'alert-close-margin-left', },
+			{ id: 'alert-close-opacity', },
+			{ id: 'alert-close-position-top', },
+			{ id: 'alert-close-position-right', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Fluid</h4>
-<%-
-	printInputs([
-		{ id: 'alert-fluid-border-top-width', },
-		{ id: 'alert-fluid-border-right-width', },
-		{ id: 'alert-fluid-border-bottom-width', },
-		{ id: 'alert-fluid-border-left-width', },
-		{ id: 'alert-fluid-margin-bottom', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Alert Fluid',
+		printInputsArr: [
+			{ id: 'alert-fluid-border-top-width', },
+			{ id: 'alert-fluid-border-right-width', },
+			{ id: 'alert-fluid-border-bottom-width', },
+			{ id: 'alert-fluid-border-left-width', },
+			{ id: 'alert-fluid-margin-bottom', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Notification</h4>
-<%-
-	printInputs([
-		{ id: 'alert-notifications-max-width', },
-		{ id: 'alert-notifications-box-shadow', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Alert Notification',
+		printInputsArr: [
+			{ id: 'alert-notifications-max-width', },
+			{ id: 'alert-notifications-box-shadow', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Notifications Fixed</h4>
-<%-
-	printInputs([
-		{ id: 'alert-notifications-fixed-top', },
-		{ id: 'alert-notifications-fixed-top-mobile', },
-		{ id: 'alert-notifications-fixed-right', },
-		{ id: 'alert-notifications-fixed-right-mobile', },
-		{ id: 'alert-notifications-fixed-bottom', },
-		{ id: 'alert-notifications-fixed-bottom-mobile', },
-		{ id: 'alert-notifications-fixed-left', },
-		{ id: 'alert-notifications-fixed-left-mobile', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Alert Notifications Fixed',
+		printInputsArr: [
+			{ id: 'alert-notifications-fixed-top', },
+			{ id: 'alert-notifications-fixed-top-mobile', },
+			{ id: 'alert-notifications-fixed-right', },
+			{ id: 'alert-notifications-fixed-right-mobile', },
+			{ id: 'alert-notifications-fixed-bottom', },
+			{ id: 'alert-notifications-fixed-bottom-mobile', },
+			{ id: 'alert-notifications-fixed-left', },
+			{ id: 'alert-notifications-fixed-left-mobile', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Notifications Absolute</h4>
-<%-
-	printInputs([
-		{ id: 'alert-notifications-absolute-top', },
-		{ id: 'alert-notifications-absolute-top-mobile', },
-		{ id: 'alert-notifications-absolute-right', },
-		{ id: 'alert-notifications-absolute-right-mobile', },
-		{ id: 'alert-notifications-absolute-bottom', },
-		{ id: 'alert-notifications-absolute-bottom-mobile', },
-		{ id: 'alert-notifications-absolute-left', },
-		{ id: 'alert-notifications-absolute-left-mobile', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Alert Notifications Absolute',
+		printInputsArr: [
+			{ id: 'alert-notifications-absolute-top', },
+			{ id: 'alert-notifications-absolute-top-mobile', },
+			{ id: 'alert-notifications-absolute-right', },
+			{ id: 'alert-notifications-absolute-right-mobile', },
+			{ id: 'alert-notifications-absolute-bottom', },
+			{ id: 'alert-notifications-absolute-bottom-mobile', },
+			{ id: 'alert-notifications-absolute-left', },
+			{ id: 'alert-notifications-absolute-left-mobile', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Primary</h4>
-<%- include(mixinsPath + 'cpClayAlertVariantMixin', { namespace: 'alert-primary' }) %>
+<%- include(
+	partialsPath + 'templates/mixinsFormSection.ejs',
+	{
+		headerText: 'Alert Primary',
+		mixin: 'cpClayAlertVariantMixin',
+		mixinProps: { namespace: 'alert-primary' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Secondary</h4>
-<%- include(mixinsPath + 'cpClayAlertVariantMixin', { namespace: 'alert-secondary' }) %>
+<%- include(
+	partialsPath + 'templates/mixinsFormSection.ejs',
+	{
+		headerText: 'Alert Secondary',
+		mixin: 'cpClayAlertVariantMixin',
+		mixinProps: { namespace: 'alert-secondary' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Success</h4>
-<%- include(mixinsPath + 'cpClayAlertVariantMixin', { namespace: 'alert-success' }) %>
+<%- include(
+	partialsPath + 'templates/mixinsFormSection.ejs',
+	{
+		headerText: 'Alert Success',
+		mixin: 'cpClayAlertVariantMixin',
+		mixinProps: { namespace: 'alert-success' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Info</h4>
-<%- include(mixinsPath + 'cpClayAlertVariantMixin', { namespace: 'alert-info' }) %>
+<%- include(
+	partialsPath + 'templates/mixinsFormSection.ejs',
+	{
+		headerText: 'Alert Info',
+		mixin: 'cpClayAlertVariantMixin',
+		mixinProps: { namespace: 'alert-info' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Warning</h4>
-<%- include(mixinsPath + 'cpClayAlertVariantMixin', { namespace: 'alert-warning' }) %>
+<%- include(
+	partialsPath + 'templates/mixinsFormSection.ejs',
+	{
+		headerText: 'Alert Warning',
+		mixin: 'cpClayAlertVariantMixin',
+		mixinProps: { namespace: 'alert-warning' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Danger</h4>
-<%- include(mixinsPath + 'cpClayAlertVariantMixin', { namespace: 'alert-danger' }) %>
+<%- include(
+	partialsPath + 'templates/mixinsFormSection.ejs',
+	{
+		headerText: 'Alert Danger',
+		mixin: 'cpClayAlertVariantMixin',
+		mixinProps: { namespace: 'alert-danger' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Light</h4>
-<%- include(mixinsPath + 'cpClayAlertVariantMixin', { namespace: 'alert-light' }) %>
+<%- include(
+	partialsPath + 'templates/mixinsFormSection.ejs',
+	{
+		headerText: 'Alert Light',
+		mixin: 'cpClayAlertVariantMixin',
+		mixinProps: { namespace: 'alert-light' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Dark</h4>
-<%- include(mixinsPath + 'cpClayAlertVariantMixin', { namespace: 'alert-dark' }) %>
+<%- include(
+	partialsPath + 'templates/mixinsFormSection.ejs',
+	{
+		headerText: 'Alert Dark',
+		mixin: 'cpClayAlertVariantMixin',
+		mixinProps: { namespace: 'alert-dark' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Component Title</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="alert-title" name="clay[alert-title]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'alert-title' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Alert Component Title',
+		printRegularInputsArr: undefined,
+		variableName: 'alert-title',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'alert-title' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Alert Component Subtitle</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="alert-subtitle" name="clay[alert-subtitle]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'alert-subtitle' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Alert Component Subtitle',
+		printRegularInputsArr: undefined,
+		variableName: 'alert-subtitle',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'alert-subtitle' },
+	},
+) %>
