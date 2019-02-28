@@ -1,119 +1,169 @@
-<h4 class="cp-variables-form-header">Link</h4>
-<%- printInputs([
-	{ id: 'link-color', color: true, },
-	{ id: 'link-hover-color', color: true, },
-	{ id: 'link-decoration', },
-	{ id: 'link-hover-decoration', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Link',
+		printInputsArr: [
+			{ id: 'link-color', color: true, },
+			{ id: 'link-hover-color', color: true, },
+			{ id: 'link-decoration', },
+			{ id: 'link-hover-decoration', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Link Primary</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="link-primary" name="clay[link-primary]" type="hidden">
-	</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Link Primary',
+		printRegularInputsArr: undefined,
+		variableName: 'link-primary',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'link-primary' },
+	},
+) %>
 
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'link-primary' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Link Secondary',
+		printRegularInputsArr: undefined,
+		variableName: 'link-secondary',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'link-secondary' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Link Secondary</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="link-secondary" name="clay[link-secondary]" type="hidden">
-	</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Component Link',
+		printRegularInputsArr: undefined,
+		variableName: 'component-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'component-link' },
+	},
+) %>
 
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'link-secondary' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Single Link',
+		printInputsArr: [
+			{ id: 'single-link-font-weight', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Component Link</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="component-link" name="clay[component-link]" type="hidden">
-	</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Component Title',
+		printRegularInputsArr: undefined,
+		variableName: 'component-title',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'component-title' },
+	},
+) %>
 
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'component-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Component Title Link',
+		printRegularInputsArr: undefined,
+		variableName: 'component-title-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'component-title-link' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Single Link</h4>
-<%- printInputs([
-	{ id: 'single-link-font-weight', },
-]) %>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Component Subtitle',
+		printRegularInputsArr: undefined,
+		variableName: 'component-subtitle',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'component-subtitle' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Component Title</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="component-title" name="clay[component-title]" type="hidden">
-	</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Component Subtitle Link',
+		printRegularInputsArr: undefined,
+		variableName: 'component-subtitle-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'component-subtitle-link' },
+	},
+) %>
 
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'component-title' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Component Action',
+		printRegularInputsArr: undefined,
+		variableName: 'component-action',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'component-action' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Component Title Link</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="component-title-link" name="clay[component-title-link]" type="hidden">
-	</div>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Link Monospaced',
+		printInputsArr: [
+			{ id: 'link-monospaced-size', },
+		],
+	},
+) %>
 
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'component-title-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Link Outline',
+		printInputsArr: [
+			{ id: 'link-outline-font-size', },
+			{ id: 'link-outline-font-weight', },
+			{ id: 'link-outline-padding-y', },
+			{ id: 'link-outline-padding-x', },
+			{ id: 'link-outline-line-height', },
+			{ id: 'link-outline-border-width', },
+			{ id: 'link-outline-border-radius', },
+			{ id: 'link-outline-transition', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Component Subtitle</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="component-subtitle" name="clay[component-subtitle]" type="hidden">
-	</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Link Outline Primary',
+		printRegularInputsArr: undefined,
+		variableName: 'link-outline-primary',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'link-outline-primary' },
+	},
+) %>
 
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'component-subtitle' }) %>
-</div>
-
-<h4 class="cp-variables-form-header">Component Subtitle Link</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="component-subtitle-link" name="clay[component-subtitle-link]" type="hidden">
-	</div>
-
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'component-subtitle-link' }) %>
-</div>
-
-<h4 class="cp-variables-form-header">Component Action</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="component-action" name="clay[component-action]" type="hidden">
-	</div>
-
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'component-action' }) %>
-</div>
-
-<h4 class="cp-variables-form-header">Link Monospaced</h4>
-<%- printInputs([
-	{ id: 'link-monospaced-size', },
-]) %>
-
-<h4 class="cp-variables-form-header">Link Outline</h4>
-<%- printInputs([
-	{ id: 'link-outline-font-size', },
-	{ id: 'link-outline-font-weight', },
-	{ id: 'link-outline-padding-y', },
-	{ id: 'link-outline-padding-x', },
-	{ id: 'link-outline-line-height', },
-	{ id: 'link-outline-border-width', },
-	{ id: 'link-outline-border-radius', },
-	{ id: 'link-outline-transition', },
-]) %>
-
-<h4 class="cp-variables-form-header">Link Outline Primary</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="link-outline-primary" name="clay[link-outline-primary]" type="hidden">
-	</div>
-
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'link-outline-primary' }) %>
-</div>
-
-<h4 class="cp-variables-form-header">Link Outline Secondary</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="link-outline-secondary" name="clay[link-outline-secondary]" type="hidden">
-	</div>
-
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'link-outline-secondary' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Link Outline Secondary',
+		printRegularInputsArr: undefined,
+		variableName: 'link-outline-secondary',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'link-outline-secondary' },
+	},
+) %>

@@ -1,65 +1,78 @@
-<h4 class="cp-variables-form-header">Toggle Switch</h4>
-<%- printInputs([
-	{ id: 'toggle-switch-text-font-size', },
-	{ id: 'toggle-switch-transition', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Toggle Switch',
+		printInputsArr: [
+			{ id: 'toggle-switch-text-font-size', },
+			{ id: 'toggle-switch-transition', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Toggle Switch Bar</h4>
-<%- printInputs([
-	{ id: 'toggle-switch-bar-width', },
-	{ id: 'toggle-switch-bar-height', },
-	{ id: 'toggle-switch-bar-font-size', },
-	{ id: 'toggle-switch-bar-padding', },
-	{ id: 'toggle-switch-bar-border-width', },
-	{ id: 'toggle-switch-bar-border-color', color: true, },
-	{ id: 'toggle-switch-bar-border-radius', },
-	{ id: 'toggle-switch-bar-bg', color: true, },
-	{ id: 'toggle-switch-bar-width-mobile', },
-	{ id: 'toggle-switch-bar-height-mobile', },
-	{ id: 'toggle-switch-bar-font-size-mobile', },
-	{ id: 'toggle-switch-bar-padding-mobile', },
-]) %>
-<%- printInputs([
-	{ id: 'toggle-switch-bar-icon-color', color: true, },
-]) %>
-<%- printInputs([
-	{ id: 'toggle-switch-bar-focus-box-shadow', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Toggle Switch Bar',
+		printInputsArr: [
+			{ id: 'toggle-switch-bar-width', },
+			{ id: 'toggle-switch-bar-height', },
+			{ id: 'toggle-switch-bar-font-size', },
+			{ id: 'toggle-switch-bar-padding', },
+			{ id: 'toggle-switch-bar-border-width', },
+			{ id: 'toggle-switch-bar-border-color', color: true, },
+			{ id: 'toggle-switch-bar-border-radius', },
+			{ id: 'toggle-switch-bar-bg', color: true, },
+			{ id: 'toggle-switch-bar-width-mobile', },
+			{ id: 'toggle-switch-bar-height-mobile', },
+			{ id: 'toggle-switch-bar-font-size-mobile', },
+			{ id: 'toggle-switch-bar-padding-mobile', },
+			{ id: 'toggle-switch-bar-icon-color', color: true, },
+			{ id: 'toggle-switch-bar-focus-box-shadow', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Toggle Switch Button</h4>
-<%- printInputs([
-	{ id: 'toggle-switch-button-width', },
-	{ id: 'toggle-switch-button-font-size', },
-	{ id: 'toggle-switch-button-border-width', },
-	{ id: 'toggle-switch-button-border-color', color: true, },
-	{ id: 'toggle-switch-button-border-radius', },
-	{ id: 'toggle-switch-button-bg', color: true, },
-	{ id: 'toggle-switch-button-width-mobile', },
-	{ id: 'toggle-switch-button-font-size-mobile', },
-]) %>
-<%- printInputs([
-	{ id: 'toggle-switch-button-icon-color', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Toggle Switch Button',
+		printInputsArr: [
+			{ id: 'toggle-switch-button-width', },
+			{ id: 'toggle-switch-button-font-size', },
+			{ id: 'toggle-switch-button-border-width', },
+			{ id: 'toggle-switch-button-border-color', color: true, },
+			{ id: 'toggle-switch-button-border-radius', },
+			{ id: 'toggle-switch-button-bg', color: true, },
+			{ id: 'toggle-switch-button-width-mobile', },
+			{ id: 'toggle-switch-button-font-size-mobile', },
+			{ id: 'toggle-switch-button-icon-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Toggle Switch On</h4>
-<%- printInputs([
-	{ id: 'toggle-switch-bar-on-border-color', color: true, },
-	{ id: 'toggle-switch-bar-on-bg', color: true, },
-]) %>
-<%- printInputs([
-	{ id: 'toggle-switch-bar-on-icon-color', color: true, },
-]) %>
-<%- printInputs([
-	{ id: 'toggle-switch-button-on-border-color', color: true, },
-	{ id: 'toggle-switch-button-on-border-radius', },
-	{ id: 'toggle-switch-button-on-bg', color: true, },
-]) %>
-<%- printInputs([
-	{ id: 'toggle-switch-button-on-icon-color', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Toggle Switch On',
+		printInputsArr: [
+			{ id: 'toggle-switch-bar-on-border-color', color: true, },
+			{ id: 'toggle-switch-bar-on-bg', color: true, },
+			{ id: 'toggle-switch-bar-on-icon-color', color: true, },
+			{ id: 'toggle-switch-button-on-border-color', color: true, },
+			{ id: 'toggle-switch-button-on-border-radius', },
+			{ id: 'toggle-switch-button-on-bg', color: true, },
+			{ id: 'toggle-switch-button-on-icon-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Toggle Switch Disabled</h4>
-<%- printInputs([
-	{ id: 'toggle-switch-disabled-cursor', },
-	{ id: 'toggle-switch-disabled-opacity', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Toggle Switch Disabled',
+		printInputsArr: [
+			{ id: 'toggle-switch-disabled-cursor', },
+			{ id: 'toggle-switch-disabled-opacity', },
+		],
+	},
+) %>
