@@ -1,110 +1,161 @@
-<h4 class="cp-variables-form-header">Dropdown</h4>
-<%- printInputs([
-	{ id: 'dropdown-min-width', },
-	{ id: 'dropdown-max-width', },
-	{ id: 'dropdown-min-height', },
-	{ id: 'dropdown-max-height', },
-	{ id: 'dropdown-font-size', },
-	{ id: 'dropdown-padding-y', },
-	{ id: 'dropdown-spacer', },
-	{ id: 'dropdown-border-width', },
-	{ id: 'dropdown-border-style', },
-	{ id: 'dropdown-border-color', color: true, },
-	{ id: 'dropdown-border-radius', },
-	{ id: 'dropdown-bg', color: true, },
-	{ id: 'dropdown-box-shadow', },
-	{ id: 'dropdown-max-width-mobile', },
-	{ id: 'dropdown-max-height-mobile', },
-	{ id: 'dropdown-font-size-mobile', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Dropdown',
+		printInputsArr: [
+			{ id: 'dropdown-min-width', },
+			{ id: 'dropdown-max-width', },
+			{ id: 'dropdown-min-height', },
+			{ id: 'dropdown-max-height', },
+			{ id: 'dropdown-font-size', },
+			{ id: 'dropdown-padding-y', },
+			{ id: 'dropdown-spacer', },
+			{ id: 'dropdown-border-width', },
+			{ id: 'dropdown-border-style', },
+			{ id: 'dropdown-border-color', color: true, },
+			{ id: 'dropdown-border-radius', },
+			{ id: 'dropdown-bg', color: true, },
+			{ id: 'dropdown-box-shadow', },
+			{ id: 'dropdown-max-width-mobile', },
+			{ id: 'dropdown-max-height-mobile', },
+			{ id: 'dropdown-font-size-mobile', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Dropdown Item</h4>
-<%- printInputs([
-	{ id: 'dropdown-item-padding-y', },
-	{ id: 'dropdown-item-padding-x', },
-	{ id: 'dropdown-item-disabled-cursor', },
-]) %>
-<%- printInputs([
-	{ id: 'dropdown-item-indicator-size', },
-	{ id: 'dropdown-item-indicator-spacer-x', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Dropdown Item',
+		printInputsArr: [
+			{ id: 'dropdown-item-padding-y', },
+			{ id: 'dropdown-item-padding-x', },
+			{ id: 'dropdown-item-disabled-cursor', },
+			{ id: 'dropdown-item-indicator-size', },
+			{ id: 'dropdown-item-indicator-spacer-x', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Dropdown Link</h4>
-<%- printInputs([
-	{ id: 'dropdown-link-font-weight', },
-	{ id: 'dropdown-link-color', color: true, },
-	{ id: 'dropdown-link-hover-color', color: true, },
-	{ id: 'dropdown-link-hover-bg', color: true, },
-	{ id: 'dropdown-link-active-font-weight', },
-	{ id: 'dropdown-link-active-color', color: true, },
-	{ id: 'dropdown-link-active-bg', color: true, },
-	{ id: 'dropdown-link-disabled-color', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Dropdown Link',
+		printInputsArr: [
+			{ id: 'dropdown-link-font-weight', },
+			{ id: 'dropdown-link-color', color: true, },
+			{ id: 'dropdown-link-hover-color', color: true, },
+			{ id: 'dropdown-link-hover-bg', color: true, },
+			{ id: 'dropdown-link-active-font-weight', },
+			{ id: 'dropdown-link-active-color', color: true, },
+			{ id: 'dropdown-link-active-bg', color: true, },
+			{ id: 'dropdown-link-disabled-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Dropdown Header</h4>
-<%- printInputs([
-	{ id: 'dropdown-header-font-size', },
-	{ id: 'dropdown-header-padding-y', },
-	{ id: 'dropdown-header-padding-x', },
-	{ id: 'dropdown-header-margin-top', },
-	{ id: 'dropdown-header-margin-bottom', },
-	{ id: 'dropdown-header-color', color: true, },
-	{ id: 'dropdown-header-text-transform', },
-	{ id: 'dropdown-header-font-size-mobile', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Dropdown Header',
+		printInputsArr: [
+			{ id: 'dropdown-header-font-size', },
+			{ id: 'dropdown-header-padding-y', },
+			{ id: 'dropdown-header-padding-x', },
+			{ id: 'dropdown-header-margin-top', },
+			{ id: 'dropdown-header-margin-bottom', },
+			{ id: 'dropdown-header-color', color: true, },
+			{ id: 'dropdown-header-text-transform', },
+			{ id: 'dropdown-header-font-size-mobile', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Dropdown Subheader</h4>
-<%- printInputs([
-	{ id: 'dropdown-subheader-font-size', },
-	{ id: 'dropdown-subheader-font-weight', },
-	{ id: 'dropdown-subheader-padding-y', },
-	{ id: 'dropdown-subheader-padding-x', },
-	{ id: 'dropdown-subheader-margin-top', },
-	{ id: 'dropdown-subheader-margin-bottom', },
-	{ id: 'dropdown-subheader-color', color: true, },
-	{ id: 'dropdown-subheader-text-transform', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Dropdown Subheader',
+		printInputsArr: [
+			{ id: 'dropdown-subheader-font-size', },
+			{ id: 'dropdown-subheader-font-weight', },
+			{ id: 'dropdown-subheader-padding-y', },
+			{ id: 'dropdown-subheader-padding-x', },
+			{ id: 'dropdown-subheader-margin-top', },
+			{ id: 'dropdown-subheader-margin-bottom', },
+			{ id: 'dropdown-subheader-color', color: true, },
+			{ id: 'dropdown-subheader-text-transform', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Dropdown Action Toggle</h4>
-<%- printInputs([
-	{ id: 'dropdown-action-toggle-size', },
-	{ id: 'dropdown-action-toggle-font-size', },
-	{ id: 'dropdown-action-toggle-border-radius', },
-	{ id: 'dropdown-action-toggle-disabled-cursor', },
-	{ id: 'dropdown-action-toggle-disabled-opacity', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Dropdown Action Toggle',
+		printInputsArr: [
+			{ id: 'dropdown-action-toggle-size', },
+			{ id: 'dropdown-action-toggle-font-size', },
+			{ id: 'dropdown-action-toggle-border-radius', },
+			{ id: 'dropdown-action-toggle-disabled-cursor', },
+			{ id: 'dropdown-action-toggle-disabled-opacity', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Dropdown Caption</h4>
-<%- printInputs([
-	{ id: 'dropdown-caption-font-size', },
-	{ id: 'dropdown-caption-font-weight', },
-	{ id: 'dropdown-caption-color', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Dropdown Caption',
+		printInputsArr: [
+			{ id: 'dropdown-caption-font-size', },
+			{ id: 'dropdown-caption-font-weight', },
+			{ id: 'dropdown-caption-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Dropdown Divider</h4>
-<%- printInputs([
-	{ id: 'dropdown-divider-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Dropdown Divider',
+		printInputsArr: [
+			{ id: 'dropdown-divider-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Dropdown Inline Scroller</h4>
-<%- printInputs([
-	{ id: 'dropdown-inline-scroller-max-height', },
-	{ id: 'dropdown-inline-scroller-max-height-mobile', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Dropdown Inline Scroller',
+		printInputsArr: [
+			{ id: 'dropdown-inline-scroller-max-height', },
+			{ id: 'dropdown-inline-scroller-max-height-mobile', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Dropdown Wide / Full</h4>
-<%- printInputs([
-	{ id: 'dropdown-wide-width', },
-]) %>
-<%- printInputs([
-	{ id: 'dropdown-full-wide-header-spacer-y', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Dropdown Wide / Full',
+		printInputsArr: [
+			{ id: 'dropdown-wide-width', },
+			{ id: 'dropdown-full-wide-header-spacer-y', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Dropdown Alert</h4>
-<%- printInputs([
-	{ id: 'dropdown-alert-font-size', },
-	{ id: 'dropdown-alert-padding-y', },
-	{ id: 'dropdown-alert-padding-x', },
-	{ id: 'dropdown-alert-line-height', },
-	{ id: 'dropdown-alert-margin', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Dropdown Alert',
+		printInputsArr: [
+			{ id: 'dropdown-alert-font-size', },
+			{ id: 'dropdown-alert-padding-y', },
+			{ id: 'dropdown-alert-padding-x', },
+			{ id: 'dropdown-alert-line-height', },
+			{ id: 'dropdown-alert-margin', },
+		],
+	},
+) %>

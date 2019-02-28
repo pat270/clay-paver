@@ -1,48 +1,73 @@
-<h4 class="cp-variables-form-header">Input Group Addon</h4>
-<%- printInputs([
-	{ id: 'input-group-addon-min-width', },
-	{ id: 'input-group-addon-font-weight', },
-	{ id: 'input-group-addon-padding-y', },
-	{ id: 'input-group-addon-padding-x', },
-	{ id: 'input-group-addon-border-color', color: true, },
-	{ id: 'input-group-addon-color', color: true, },
-	{ id: 'input-group-addon-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Group Addon',
+		printInputsArr: [
+			{ id: 'input-group-addon-min-width', },
+			{ id: 'input-group-addon-font-weight', },
+			{ id: 'input-group-addon-padding-y', },
+			{ id: 'input-group-addon-padding-x', },
+			{ id: 'input-group-addon-border-color', color: true, },
+			{ id: 'input-group-addon-color', color: true, },
+			{ id: 'input-group-addon-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Secondary Addon</h4>
-<%- printInputs([
-	{ id: 'input-group-secondary-addon-border-width', },
-	{ id: 'input-group-secondary-addon-border-color', color: true, },
-	{ id: 'input-group-secondary-addon-color', color: true, },
-	{ id: 'input-group-secondary-addon-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Group Secondary Addon',
+		printInputsArr: [
+			{ id: 'input-group-secondary-addon-border-width', },
+			{ id: 'input-group-secondary-addon-border-color', color: true, },
+			{ id: 'input-group-secondary-addon-color', color: true, },
+			{ id: 'input-group-secondary-addon-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Inset</h4>
-<%- printInputs([
-	{ id: 'input-group-inset-item-color', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Group Inset',
+		printInputsArr: [
+			{ id: 'input-group-inset-item-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Sm</h4>
-<%- printInputs([
-	{ id: 'input-group-addon-min-width-sm', },
-	{ id: 'input-group-addon-padding-y-sm', },
-	{ id: 'input-group-addon-padding-x-sm', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Group Sm',
+		printInputsArr: [
+			{ id: 'input-group-addon-min-width-sm', },
+			{ id: 'input-group-addon-padding-y-sm', },
+			{ id: 'input-group-addon-padding-x-sm', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Lg</h4>
-<%- printInputs([
-	{ id: 'input-group-addon-min-width-lg', },
-	{ id: 'input-group-addon-padding-y-lg', },
-	{ id: 'input-group-addon-padding-x-lg', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Group Lg',
+		printInputsArr: [
+			{ id: 'input-group-addon-min-width-lg', },
+			{ id: 'input-group-addon-padding-y-lg', },
+			{ id: 'input-group-addon-padding-x-lg', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Group Stacked Sm Down</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="input-group-stacked-sm-down" name="clay[input-group-stacked-sm-down]" type="hidden">
-	</div>
-	<%-
-		printInputs([
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Input Group Stacked Sm Down',
+		printRegularInputsArr: undefined,
+		variableName: 'input-group-stacked-sm-down',
+		printInputsArr: [
 			{ id: 'input-group-stacked-sm-down-item-margin-top', },
 			{ id: 'input-group-stacked-sm-down-item-margin-right', },
 			{ id: 'input-group-stacked-sm-down-item-margin-bottom', },
@@ -51,17 +76,17 @@
 			{ id: 'input-group-stacked-sm-down-shrink-margin-right', },
 			{ id: 'input-group-stacked-sm-down-shrink-margin-bottom', },
 			{ id: 'input-group-stacked-sm-down-shrink-margin-left', },
-		]);
-	%>
-</div>
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Form Control Tag Group</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="form-control-label-size" name="clay[form-control-label-size]" type="hidden">
-	</div>
-	<%-
-		printInputs([
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Form Control Tag Group',
+		printRegularInputsArr: undefined,
+		variableName: 'form-control-label-size',
+		printInputsArr: [
 			{ id: 'form-control-label-size-height', },
 			{ id: 'form-control-label-size-font-size', },
 			{ id: 'form-control-label-size-padding-y', },
@@ -72,6 +97,6 @@
 			{ id: 'form-control-label-size-lexicon-icon-width', },
 			{ id: 'form-control-label-size-lexicon-icon-height', },
 			{ id: 'form-control-label-size-lexicon-icon-margin-top', },
-		]);
-	%>
-</div>
+		],
+	},
+) %>

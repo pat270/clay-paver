@@ -1,23 +1,35 @@
-<h4 class="cp-variables-form-header">Navigation Bar Size</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="navigation-bar-size" name="clay[navigation-bar-size]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayNavbarSizeMixin', { namespace: 'navigation-bar-size' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Navigation Bar Size',
+		printRegularInputsArr: undefined,
+		variableName: 'navigation-bar-size',
+		printInputsArr: undefined,
+		mixin: 'cpClayNavbarSizeMixin',
+		mixinProps: { namespace: 'navigation-bar-size' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Navigation Bar Light</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="navigation-bar-light" name="clay[navigation-bar-light]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayNavbarVariantMixin', { namespace: 'navigation-bar-light' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Navigation Bar Light',
+		printRegularInputsArr: undefined,
+		variableName: 'navigation-bar-light',
+		printInputsArr: undefined,
+		mixin: 'cpClayNavbarVariantMixin',
+		mixinProps: { namespace: 'navigation-bar-light' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Navigation Bar Secondary</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="navigation-bar-secondary" name="clay[navigation-bar-secondary]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayNavbarVariantMixin', { namespace: 'navigation-bar-secondary' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Navigation Bar Secondary',
+		printRegularInputsArr: undefined,
+		variableName: 'navigation-bar-secondary',
+		printInputsArr: undefined,
+		mixin: 'cpClayNavbarVariantMixin',
+		mixinProps: { namespace: 'navigation-bar-secondary' },
+	},
+) %>

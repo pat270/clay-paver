@@ -1,105 +1,149 @@
-<h4 class="cp-variables-form-header">Card</h4>
-<%- printInputs([
-	{ id: 'card-spacer-y', },
-	{ id: 'card-spacer-x', },
-	{ id: 'card-margin-bottom', },
-	{ id: 'card-border-width', },
-	{ id: 'card-border-style', },
-	{ id: 'card-border-color', color: true, },
-	{ id: 'card-border-radius', },
-	{ id: 'card-bg', color: true, },
-	{ id: 'card-box-shadow', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Card',
+		printInputsArr: [
+			{ id: 'card-spacer-y', },
+			{ id: 'card-spacer-x', },
+			{ id: 'card-margin-bottom', },
+			{ id: 'card-border-width', },
+			{ id: 'card-border-style', },
+			{ id: 'card-border-color', color: true, },
+			{ id: 'card-border-radius', },
+			{ id: 'card-bg', color: true, },
+			{ id: 'card-box-shadow', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Card Inner</h4>
-<%- printInputs([
-	{ id: 'card-inner-border-radius', },
-]) %>
-<%- printInputs([
-	{ id: 'card-rounded-inner-border-radius', },
-]) %>
-<%- printInputs([
-	{ id: 'card-rounded-0-inner-border-radius', },
-]) %>
-<%- printInputs([
-	{ id: 'card-rounded-circle-inner-border-radius', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Card Inner',
+		printInputsArr: [
+			{ id: 'card-inner-border-radius', },
+			{ id: 'card-rounded-inner-border-radius', },
+			{ id: 'card-rounded-0-inner-border-radius', },
+			{ id: 'card-rounded-circle-inner-border-radius', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Card Body</h4>
-<%- printInputs([
-	{ id: 'card-body-padding-top', },
-	{ id: 'card-body-padding-right', },
-	{ id: 'card-body-padding-bottom', },
-	{ id: 'card-body-padding-left', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Card Body',
+		printInputsArr: [
+			{ id: 'card-body-padding-top', },
+			{ id: 'card-body-padding-right', },
+			{ id: 'card-body-padding-bottom', },
+			{ id: 'card-body-padding-left', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Card Divider</h4>
-<%- printInputs([
-	{ id: 'card-divider-height', },
-	{ id: 'card-divider-spacer-y', },
-	{ id: 'card-divider-spacer-x', },
-	{ id: 'card-divider-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Card Divider',
+		printInputsArr: [
+			{ id: 'card-divider-height', },
+			{ id: 'card-divider-spacer-y', },
+			{ id: 'card-divider-spacer-x', },
+			{ id: 'card-divider-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Card Title</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="card-title" name="clay[card-title]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'card-title' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Card Title',
+		printRegularInputsArr: undefined,
+		variableName: 'card-title',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'card-title' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Card Title Link</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="card-title-link" name="clay[card-title-link]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'card-title-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Card Title Link',
+		printRegularInputsArr: undefined,
+		variableName: 'card-title-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'card-title-link' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Card Subtitle</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="card-subtitle" name="clay[card-subtitle]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'card-subtitle' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Card Subtitle',
+		printRegularInputsArr: undefined,
+		variableName: 'card-subtitle',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'card-subtitle' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Card Subtitle Link</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="card-subtitle-link" name="clay[card-subtitle-link]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'card-subtitle-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Card Subtitle Link',
+		printRegularInputsArr: undefined,
+		variableName: 'card-subtitle-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'card-subtitle-link' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Card Link</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="card-link" name="clay[card-link]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'card-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Card Link',
+		printRegularInputsArr: undefined,
+		variableName: 'card-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'card-link' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Form Check Card</h4>
-<%- printInputs([
-	{ id: 'checkbox-position', },
-	{ id: 'form-check-card-checked-box-shadow', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Form Check Card',
+		printInputsArr: [
+			{ id: 'checkbox-position', },
+			{ id: 'form-check-card-checked-box-shadow', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Form Check Card Horizontal</h4>
-<%- printInputs([
-	{ id: 'checkbox-left-card-padding', },
-	{ id: 'checkbox-right-card-padding', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Form Check Card Horizontal',
+		printInputsArr: [
+			{ id: 'checkbox-left-card-padding', },
+			{ id: 'checkbox-right-card-padding', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Card Type Asset (Base)</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="card-type-asset" name="clay[card-type-asset]" type="hidden">
-	</div>
-	<%-
-		printInputs([
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Card Type Asset (Base)',
+		printRegularInputsArr: undefined,
+		variableName: 'card-type-asset',
+		printInputsArr: [
 			{ id: 'card-type-asset-enabled', },
 			{ id: 'card-type-asset-aspect-ratio-border-width', },
 			{ id: 'card-type-asset-aspect-ratio-border-style', },
@@ -120,41 +164,53 @@
 			{ id: 'card-type-asset-dropdown-action-offset-right', },
 			{ id: 'card-type-asset-dropdown-action-offset-bottom', },
 			{ id: 'card-type-asset-dropdown-action-offset-left', },
-		]);
-	%>
-</div>
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Image Card (Card Type Asset Variant)</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="image-card" name="clay[image-card]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayCardTypeAssetVariantMixin', { namespace: 'image-card' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Image Card (Card Type Asset Variant)',
+		printRegularInputsArr: undefined,
+		variableName: 'image-card',
+		printInputsArr: undefined,
+		mixin: 'cpClayCardTypeAssetVariantMixin',
+		mixinProps: { namespace: 'image-card' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">File Card (Card Type Asset Variant)</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="file-card" name="clay[file-card]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayCardTypeAssetVariantMixin', { namespace: 'file-card' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'File Card (Card Type Asset Variant)',
+		printRegularInputsArr: undefined,
+		variableName: 'file-card',
+		printInputsArr: undefined,
+		mixin: 'cpClayCardTypeAssetVariantMixin',
+		mixinProps: { namespace: 'file-card' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">User Card (Card Type Asset Variant)</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="user-card" name="clay[user-card]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayCardTypeAssetVariantMixin', { namespace: 'user-card' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'User Card (Card Type Asset Variant)',
+		printRegularInputsArr: undefined,
+		variableName: 'user-card',
+		printInputsArr: undefined,
+		mixin: 'cpClayCardTypeAssetVariantMixin',
+		mixinProps: { namespace: 'user-card' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Card Type Directory</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="card-type-directory" name="clay[card-type-directory]" type="hidden">
-	</div>
-	<%-
-		printInputs([
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Card Type Directory',
+		printRegularInputsArr: undefined,
+		variableName: 'card-type-directory',
+		printInputsArr: [
 			{ id: 'card-type-directory-card-body-padding-top', },
 			{ id: 'card-type-directory-card-body-padding-right', },
 			{ id: 'card-type-directory-card-body-padding-bottom', },
@@ -166,44 +222,74 @@
 			{ id: 'card-type-directory-dropdown-action-offset-right', },
 			{ id: 'card-type-directory-dropdown-action-offset-bottom', },
 			{ id: 'card-type-directory-dropdown-action-offset-left', },
-		]);
-	%>
-</div>
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Card Section Header</h4>
-<%- printInputs([
-	{ id: 'card-section-header-font-size', },
-	{ id: 'card-section-header-font-weight', },
-	{ id: 'card-section-header-padding', },
-	{ id: 'card-section-header-line-height', },
-	{ id: 'card-section-header-margin-bottom', },
-	{ id: 'card-section-header-color', color: true, },
-	{ id: 'card-section-header-text-transform', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Card Section Header',
+		printInputsArr: [
+			{ id: 'card-section-header-font-size', },
+			{ id: 'card-section-header-font-weight', },
+			{ id: 'card-section-header-padding', },
+			{ id: 'card-section-header-line-height', },
+			{ id: 'card-section-header-margin-bottom', },
+			{ id: 'card-section-header-color', color: true, },
+			{ id: 'card-section-header-text-transform', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Card Header / Footer</h4>
-<%- printInputs([
-	{ id: 'card-cap-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Card Header / Footer',
+		printInputsArr: [
+			{ id: 'card-cap-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Card Img Overlay</h4>
-<%- printInputs([
-	{ id: 'card-img-overlay-padding', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Card Img Overlay',
+		printInputsArr: [
+			{ id: 'card-img-overlay-padding', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Card Group</h4>
-<%- printInputs([
-	{ id: 'card-group-margin', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Card Group',
+		printInputsArr: [
+			{ id: 'card-group-margin', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Card Deck</h4>
-<%- printInputs([
-	{ id: 'card-deck-margin', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Card Deck',
+		printInputsArr: [
+			{ id: 'card-deck-margin', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Card Columns</h4>
-<%- printInputs([
-	{ id: 'card-columns-count', },
-	{ id: 'card-columns-gap', },
-	{ id: 'card-columns-margin', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Card Columns',
+		printInputsArr: [
+			{ id: 'card-columns-count', },
+			{ id: 'card-columns-gap', },
+			{ id: 'card-columns-margin', },
+		],
+	},
+) %>
