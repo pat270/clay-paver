@@ -87,10 +87,10 @@
 		<div class="<%= contentCSSClass %>" id="content">
 			<div class="container-fluid">
 				<% if (typeof showVariableSidebar !== 'undefined') { %>
-					<form class="cp-variables-form" id="<%= page %>">
-						<div class="cp-variable-sidebar">
-							<%- include(partialsPath + 'siteVariableSidebarHeader.ejs') %>
+					<div class="cp-variable-sidebar">
+						<%- include(partialsPath + 'siteVariableSidebarHeader.ejs') %>
 
+						<form class="cp-variables-form" id="<%= page %>">
 							<div class="cp-variable-sidebar-body">
 								<%- include(page + '-variables', { mixinsPath: '../../pages/' + currentVersion + '/mixins/', partialsPath: partialsPath, svgIconsPath: svgIconsPath }) %>
 							</div>
@@ -98,8 +98,8 @@
 								<button class="cp-btn cp-btn-primary" id="saveButton" type="submit">Save</button>
 								<button class="cp-btn cp-btn-secondary" id="resetButton" type="button">Reset</button>
 							</div>
-						</div>
-					</form>
+						</form>
+					</div>
 				<% } %>
 
 				<% if (typeof prevPage !== 'undefined' || typeof nextPage !== 'undefined') { %>
