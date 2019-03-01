@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 html {
 	height: 100%;
 }
@@ -230,6 +236,7 @@ a:hover {
 	display: inline-block;
 	font-size: 12px;
 	font-weight: 400;
+	height: 29px;
 	line-height: 1;
 	margin-bottom: 0;
 	padding: 6px;
@@ -313,11 +320,32 @@ a.cp-btn:focus {
 	margin: 0 0 2px 0;
 }
 
+.cp-control-label-indicator {
+	display: inline-flex;
+	font-size: 16px;
+	margin-top: 4px;
+	position: absolute;
+}
+
+.cp-control-label-indicator:focus {
+	border-radius: 50px;
+	box-shadow: 0 0 0 3px rgba(11, 95, 255, 0.25);
+	outline: 0;
+}
+
 .cp-control-label-indicator:hover ~ .cp-tooltip,
 .cp-control-label-indicator:focus ~ .cp-tooltip,
 .cp-tooltip:hover {
 	opacity: 1;
 	z-index: 1070;
+}
+
+.cp-control-label-indicator .lexicon-icon {
+	margin-top: 0;
+}
+
+.cp-control-label-indicator ~ .cp-control-label {
+	padding-left: 20px;
 }
 
 .cp-tooltip {
@@ -337,6 +365,7 @@ a.cp-btn:focus {
 	text-decoration: none;
 	text-shadow: none;
 	text-transform: none;
+	top: 24px;
 	white-space: normal;
 	word-break: normal;
 	word-spacing: normal;
@@ -346,12 +375,17 @@ a.cp-btn:focus {
 
 .cp-tooltip-inner {
 	background-color: #333;
-	border-radius: 0;
+	border-radius: 3px;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
 	color: #fff;
+	margin-left: -5px;
 	max-width: 230px;
-	padding: 4px 12px;
+	padding: 10px 12px;
 	text-align: left;
+}
+
+.cp-tooltip-inner a {
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .cp-tooltip .cp-arrow {
@@ -370,12 +404,12 @@ a.cp-btn:focus {
 
 .cp-tooltip-bottom-left {
 	margin-top: -5px;
-	padding-top: 6px;
+	padding-top: 10px;
 }
 
 .cp-tooltip-bottom-left .cp-arrow {
-	left: 0;
-	top: 0;
+	left: 2px;
+	top: 4px;
 }
 
 .cp-tooltip-bottom-left .cp-arrow::before {
@@ -387,10 +421,11 @@ a.cp-btn:focus {
 .cp-form-control {
 	border: 1px solid #c7c7c7;
 	border-radius: 2px;
-	box-sizing: border-box;
+	height: 29px;
 	font-size: 16px;
 	padding-left: 8px;
 	padding-right: 8px;
+	vertical-align: middle;
 	width: 100%;
 }
 
@@ -403,7 +438,7 @@ a.cp-btn:focus {
 .cp-form-control-color {
 	-webkit-appearance: none;
 	border-width: 0;
-	bottom: 4px;
+	bottom: 5px;
 	cursor: pointer;
 	height: 18px;
 	padding: 0;
@@ -434,19 +469,30 @@ a.cp-btn:focus {
 
 .cp-form-group {
 	margin-bottom: 16px;
+	margin-top: 16px;
 	position: relative;
+}
+
+.cp-form-group-sass-map .cp-form-group:first-child {
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 .cp-form-group-color .cp-form-control[type="text"] {
 	padding-right: 27px;
 }
 
+.cp-form-group-convert .cp-form-control {
+	width: calc(100% - 56px);
+}
+
 .cp-variables-form-header {
 	background-color: #393a4a;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 	color: #FFF;
 	font-size: 14px;
-	margin: 0 -15px 16px -15px;
+	margin: 0 -15px;
 	padding: 10px 15px;
 }
 
@@ -474,12 +520,11 @@ a.cp-btn:focus {
 .cp-app-navigation {
 	background: #b3472d;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-	box-sizing: border-box;
 	color: #FFF;
 	font-family: sans-serif;
 	height: 50px;
 	left: 0;
-	padding: 12px 15px;
+	padding: 10px 15px;
 	position: fixed;
 	right: 0;
 	top: 0;
@@ -529,7 +574,7 @@ a.cp-btn:focus {
 
 .cp-variable-sidebar-header {
 	box-shadow: 0 1px 6px -3px rgba(0, 0, 0, 0.75);
-	height: 60px;
+	height: 86px;
 	padding: 15px;
 	position: relative;
 	z-index: 1;
@@ -540,16 +585,15 @@ a.cp-btn:focus {
 	left: 0;
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
-	padding: 0 15px 15px;
+	padding: 0 15px;
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 86px;
 }
 
 .cp-variable-sidebar-footer {
 	border-top: 1px solid #e0e0e0;
 	bottom: 0;
-	box-sizing: border-box;
 	height: 60px;
 	left: 0;
 	padding: 15px;
@@ -560,6 +604,10 @@ a.cp-btn:focus {
 .cp-variable-sidebar-footer .cp-btn {
 	padding-left: 16px;
 	padding-right: 16px;
+}
+
+#cpVariableSearch {
+	margin-bottom: 8px;
 }
 
 /* Example Containers */

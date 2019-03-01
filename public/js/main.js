@@ -5,9 +5,12 @@ var tableName = 'defaultTheme';
 
 var dbThemesName = 'cpDBThemes';
 
+var dbClayBaseThemes = 'cpDBClayBaseThemes';
+
 if (clayCurrentVersion !== '2.3.3') {
 	dbName = 'cpDB-' + clayCurrentVersion;
 	dbThemesName = 'cpDBThemes-' + clayCurrentVersion;
+	dbClayBaseThemes = 'cpDBClayBaseThemes-' + clayCurrentVersion;
 }
 
 cpDB = localforage.createInstance({
@@ -25,6 +28,11 @@ cpDBThemes.getItem('currentTheme').then(function(value) {
 		cpDBThemes.setItem(tableName, tableName);
 		cpDBThemes.setItem('currentTheme', tableName);
 	}
+});
+
+cpDBClayBaseThemes = localforage.createInstance({
+	name: dbClayBaseThemes,
+	storeName: 'themes'
 });
 
 // HTML 5 Support
@@ -247,12 +255,25 @@ var ClayPaverColorPicker = {
 	},
 };
 
+// Converter for px to rem
+function pxToRem(px) {
+	return (px / parseFloat(getComputedStyle(document.documentElement).fontSize)) + 'rem';
+}
+
+// Converter for rem to px
+function remToPx(rem) {
+	return (rem * parseFloat(getComputedStyle(document.documentElement).fontSize)) + 'px';
+}
 
 // Clay Paver
 
 var cpSpinnerTPL = '<div class="cp-loading"><div class="cp-loading-spinner"><div class="lds-heart-container"><div class="lds-heart"><div class="lds-heart-icon"></div></div></div><span class="cp-loading-msg">Loading...</span></div></div>';
 
 var cpStatusBarTPL = '<div class="cp-status-bar"><span class="cp-status-bar-msg"></span></div>';
+
+var PX_REM_REGEX = /^(\d+\.?(?:\d+)?)(px|rem)$/;
+
+var PX_REGEX = /^(\d+\.?(?:\d+)?)(px)$/;
 
 var SASS_VAR_REGEX = /\$(.*?)(?=:)/g;
 
@@ -263,6 +284,8 @@ var ClayPaver = {
 		var sbVariableGroup = '';
 
 		cpDBThemes.getItem('currentTheme').then(function(value) {
+			var currentThemeName = value;
+
 			cpDB.config({
 				name: dbName,
 				storeName: value
@@ -282,41 +305,54 @@ var ClayPaver = {
 			}).then(function() {
 				var atlasAll = $('#atlasAll');
 
-				sass.writeFile('_custom-variables.scss', sbVariableGroup);
+				var sassImports = '@import "clay-bootstrap-functions";@import "custom-variables";@import "_atlas-variables";@import "clay-base";@import "_cp-site-stuff";';
 
-				if (atlasAll.length) {
-					setTimeout(function() {
-						ClayPaver.showStatusBar('Compiling ' + value + ' Sass...');
-					}, 750);
-				}
-
-				sass.compile('@import "clay-bootstrap-functions";@import "custom-variables";@import "atlas-all";@import "_cp-site-stuff";', function(result) {
-					ClayPaver.showLoadingMsg('');
-
-					if (atlasAll.length) {
-						$('#atlasAll').html(result.text);
+				cpDBClayBaseThemes.getItem(value).then(function(value) {
+					if (!value || value['clayCSSBaseTheme'] === 'atlas') {
+						$('#cpClayCSSBaseThemeCheckbox input[type="checkbox"]').prop('checked', false);
 					}
 					else {
-						$('head').prepend('<style id="atlasAll">' + result.text + '</style>');
+						sassImports = '@import "clay-bootstrap-functions";@import "custom-variables";@import "clay-base";@import "_cp-site-stuff";';
+
+						$('#cpClayCSSBaseThemeCheckbox input[type="checkbox"]').prop('checked', true);
 					}
 
-					if (result.status) {
+					sass.writeFile('_custom-variables.scss', sbVariableGroup);
+
+					if (atlasAll.length) {
 						setTimeout(function() {
-							ClayPaver.showStatusBar('There was an error, please check the browser console.');
+							ClayPaver.showStatusBar('Compiling ' + currentThemeName + ' Sass...');
 						}, 750);
-
-						console.log(result.formatted);
 					}
 
-					var cpCompileDone = new Event('cp-compile-done');
+					sass.compile(sassImports, function(result) {
+						ClayPaver.showLoadingMsg('');
 
-					document.dispatchEvent(cpCompileDone);
+						if (atlasAll.length) {
+							$('#atlasAll').html(result.text);
+						}
+						else {
+							$('head').prepend('<style id="atlasAll">' + result.text + '</style>');
+						}
 
-					ClayPaver.removeLoadingMsg();
+						if (result.status) {
+							setTimeout(function() {
+								ClayPaver.showStatusBar('There was an error, please check the browser console.');
+							}, 750);
 
-					ClayPaver.removeStatusBar();
+							console.log(result.formatted);
+						}
 
-					Turbolinks.clearCache();
+						var cpCompileDone = new Event('cp-compile-done');
+
+						document.dispatchEvent(cpCompileDone);
+
+						ClayPaver.removeLoadingMsg();
+
+						ClayPaver.removeStatusBar();
+
+						Turbolinks.clearCache();
+					});
 				});
 			});
 
@@ -466,7 +502,8 @@ if (!sass) {
 	var preloadDir = '';
 	var preloadFiles = [
 		'clay-bootstrap-functions.scss',
-		'atlas-all.scss',
+		'_atlas-variables.scss',
+		'clay-base.scss',
 		'_cp-site-stuff.scss',
 	];
 
@@ -485,7 +522,7 @@ if (!sass) {
 	});
 }
 
-// CP Variables Form
+// CP Navigation
 
 var doc = $(document);
 
@@ -498,6 +535,8 @@ doc.on('click', '#cpDataClearAll', function(event) {
 		});
 
 		cpDB.dropInstance({ name: dbName });
+		cpDBThemes.dropInstance({ name: dbThemesName });
+		cpDBClayBaseThemes.dropInstance({ name: dbClayBaseThemes });
 	}
 });
 
@@ -519,6 +558,7 @@ doc.on('click', '#cpDataClearCurrent', function(event) {
 
 			if (value !== 'defaultTheme') {
 				cpDBThemes.removeItem(value);
+				cpDBClayBaseThemes.removeItem(value);
 			}
 		}
 	});
@@ -555,7 +595,7 @@ doc.on('click', '#downloadVariables', function(event) {
 			}
 		}
 	}).then(function() {
-		$('body').append('<a download="_custom-variables.scss" href="data:text/plain;charset=UTF-8,' + encodeURIComponent(sbVariableGroup) + '"id="downloadVariablesTemp"></a>');
+		$('body').append('<a download="_clay_variables.scss" href="data:text/plain;charset=UTF-8,' + encodeURIComponent(sbVariableGroup) + '"id="downloadVariablesTemp"></a>');
 
 		document.getElementById('downloadVariablesTemp').click();
 
@@ -643,6 +683,20 @@ doc.on('change', '.cp-form-group-sass-map .cp-form-control', function(event) {
 
 // Variables Form
 
+doc.on('change', '#cpClayCSSBaseThemeCheckbox input[type="checkbox"]', function(event) {
+	var clayCSSBaseTheme = this.checked ? 'base' : 'atlas';
+
+	cpDBThemes.getItem('currentTheme').then(function(value) {
+		cpDBClayBaseThemes.setItem(
+			value,
+			{ 'clayCSSBaseTheme' : clayCSSBaseTheme }
+		).then(function(value) {
+			ClayPaver.compileSass();
+		});
+	});
+});
+
+
 doc.on('submit', '.cp-variables-form', function(event) {
 	event.preventDefault();
 
@@ -658,10 +712,64 @@ doc.on('click', '#resetButton', function(event) {
 	event.preventDefault();
 
 	if (confirm('Clear ALL the variables on this page?')) {
-		$('.cp-variable-sidebar-body .cp-form-control').val('');
+		$('.cp-variable-sidebar-body .cp-form-control:not(".cp-form-control-color")').val('');
+		$('.cp-variable-sidebar-body .cp-form-control-color').val('#ffffff');
 		$(this).closest('.cp-variables-form').submit();
 	}
 });
+
+doc.on('click', '.cp-btn-convert', function(event) {
+	var input = $(this).closest('.cp-form-group-convert').find('.cp-form-control');
+	var value = input.val();
+
+	var match = value.match(PX_REM_REGEX);
+
+	var numericalValue = match[1];
+
+	var newValue = match[2] === 'px' ? pxToRem(numericalValue) : remToPx(numericalValue);
+
+	input.val(newValue);
+});
+
+var ClayPaverVariableSearch = {
+	search: function(input) {
+		var value = input.val().toLowerCase(); 
+
+		$('.cp-variables-form .cp-control-label').filter(function() {
+			$(this).closest('.cp-form-group').toggle($(this).text().toLowerCase().indexOf(value) > -1);
+		});
+	},
+};
+
+doc.on('keyup', '#cpVariableSearch .cp-form-control', function(event) {
+	ClayPaverVariableSearch.search($(this));
+});
+
+doc.on('click', '.cp-variables-form-header', function(event) {
+	var isExpanded = true;
+
+	var formGroup = $(this).closest('.cp-variables-form-section').find('.cp-form-group');
+
+	formGroup.each(function(index, el) {
+		if (!$(el).is(':visible')) {
+			isExpanded = false;
+
+			return false;
+		}
+	});
+
+	if (isExpanded && $('#cpVariableSearch .cp-form-control').val() !== '') {
+		ClayPaverVariableSearch.search($('#cpVariableSearch .cp-form-control'));
+	}
+	else if (isExpanded) {
+		formGroup.toggle(false);
+	}
+	else {
+		formGroup.toggle(true);
+	}
+});
+
+// Navigation Buttons
 
 doc.on('click', '[data-toggle="switch-theme"]', function(event) {
 	event.preventDefault();

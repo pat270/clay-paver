@@ -1,71 +1,112 @@
-<h4 class="cp-variables-form-header">Navbar</h4>
-<%- printInputs([
-	{ id: 'navbar-font-size', },
-	{ id: 'navbar-padding-y', },
-	{ id: 'navbar-padding-x', },
-	{ id: 'navbar-border-radius', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Navbar',
+		printInputsArr: [
+			{ id: 'navbar-font-size', },
+			{ id: 'navbar-padding-y', },
+			{ id: 'navbar-padding-x', },
+			{ id: 'navbar-border-radius', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Navbar Nav Link</h4>
-<%- printInputs([
-	{ id: 'navbar-nav-link-padding-x', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Navbar Nav Link',
+		printInputsArr: [
+			{ id: 'navbar-nav-link-padding-x', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Navbar Text Truncate</h4>
-<%- printInputs([
-	{ id: 'navbar-text-truncate-max-width', },
-	{ id: 'navbar-text-truncate-spacer-right', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Navbar Text Truncate',
+		printInputsArr: [
+			{ id: 'navbar-text-truncate-max-width', },
+			{ id: 'navbar-text-truncate-spacer-right', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Navbar Brand</h4>
-<%- printInputs([
-	{ id: 'navbar-brand-height', },
-	{ id: 'navbar-brand-font-size', },
-	{ id: 'navbar-brand-padding-y', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Navbar Brand',
+		printInputsArr: [
+			{ id: 'navbar-brand-height', },
+			{ id: 'navbar-brand-font-size', },
+			{ id: 'navbar-brand-padding-y', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Navbar Title</h4>
-<%- printInputs([
-	{ id: 'navbar-title-font-size', },
-	{ id: 'navbar-title-font-weight', },
-	{ id: 'navbar-title-margin-bottom', },
-	{ id: 'navbar-title-text-transform', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Navbar Title',
+		printInputsArr: [
+			{ id: 'navbar-title-font-size', },
+			{ id: 'navbar-title-font-weight', },
+			{ id: 'navbar-title-margin-bottom', },
+			{ id: 'navbar-title-text-transform', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Navbar Toggler</h4>
-<%- printInputs([
-	{ id: 'navbar-toggler-font-size', },
-	{ id: 'navbar-toggler-padding-y', },
-	{ id: 'navbar-toggler-padding-x', },
-	{ id: 'navbar-toggler-border-radius', },
-	{ id: 'navbar-toggler-cursor', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Navbar Toggler',
+		printInputsArr: [
+			{ id: 'navbar-toggler-font-size', },
+			{ id: 'navbar-toggler-padding-y', },
+			{ id: 'navbar-toggler-padding-x', },
+			{ id: 'navbar-toggler-border-radius', },
+			{ id: 'navbar-toggler-cursor', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Navbar Nav Underline</h4>
-<%- printInputs([
-	{ id: 'navbar-underline-active-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Navbar Nav Underline',
+		printInputsArr: [
+			{ id: 'navbar-underline-active-bg', color: true, },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Navbar Light (Text Variant)</h4>
-<%- printInputs([
-	{ id: 'navbar-light-color', color: true, },
-	{ id: 'navbar-light-hover-color', color: true, },
-	{ id: 'navbar-light-active-color', color: true, },
-	{ id: 'navbar-light-disabled-color', color: true, },
-]) %>
-<%- printInputs([
-	{ id: 'navbar-light-toggler-border-color', color: true, },
-	{ id: 'navbar-light-toggler-icon-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Navbar Light (Text Variant)',
+		printInputsArr: [
+			{ id: 'navbar-light-color', color: true, },
+			{ id: 'navbar-light-hover-color', color: true, },
+			{ id: 'navbar-light-active-color', color: true, },
+			{ id: 'navbar-light-disabled-color', color: true, },
+			{ id: 'navbar-light-toggler-border-color', color: true, },
+			{ id: 'navbar-light-toggler-icon-bg', color: true, },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Navbar Dark (Text Variant)</h4>
-<%- printInputs([
-	{ id: 'navbar-dark-color', color: true, },
-	{ id: 'navbar-dark-hover-color', color: true, },
-	{ id: 'navbar-dark-active-color', color: true, },
-	{ id: 'navbar-dark-disabled-color', color: true, },
-]) %>
-<%- printInputs([
-	{ id: 'navbar-dark-toggler-border-color', color: true, },
-	{ id: 'navbar-dark-toggler-icon-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Navbar Dark (Text Variant)',
+		printInputsArr: [
+			{ id: 'navbar-dark-color', color: true, },
+			{ id: 'navbar-dark-hover-color', color: true, },
+			{ id: 'navbar-dark-active-color', color: true, },
+			{ id: 'navbar-dark-disabled-color', color: true, },
+			{ id: 'navbar-dark-toggler-border-color', color: true, },
+			{ id: 'navbar-dark-toggler-icon-bg', color: true, },
+		],
+	}
+) %>

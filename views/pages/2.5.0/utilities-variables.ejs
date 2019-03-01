@@ -1,21 +1,41 @@
-<h4 class="cp-variables-form-header">Autofit Col</h4>
-<%- printInputs([
-	{ id: 'autofit-col-expand-min-width', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Autofit Col',
+		printInputsArr: [
+			{ id: 'autofit-col-expand-min-width', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Autofit Padded</h4>
-<%- printInputs([
-	{ id: 'autofit-padded-col-padding-y', },
-	{ id: 'autofit-padded-col-padding-x', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Autofit Padded',
+		printInputsArr: [
+			{ id: 'autofit-padded-col-padding-y', },
+			{ id: 'autofit-padded-col-padding-x', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Inline Item</h4>
-<%- printInputs([
-	{ id: 'inline-item-spacer-x', },
-	{ id: 'inline-item-lexicon-icon-margin-top', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Inline Item',
+		printInputsArr: [
+			{ id: 'inline-item-spacer-x', },
+			{ id: 'inline-item-lexicon-icon-margin-top', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Bg Checkered</h4>
-<%- printInputs([
-	{ id: 'bg-checkered-fg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Bg Checkered',
+		printInputsArr: [
+			{ id: 'bg-checkered-fg', color: true, },
+		],
+	}
+) %>

@@ -1,99 +1,142 @@
-<h4 class="cp-variables-form-header">Sidenav</h4>
-<%-
-	printInputs([
-		{ id: 'sidenav-width', },
-		{ id: 'sidenav-transition', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Sidenav',
+		printInputsArr: [
+			{ id: 'sidenav-width', },
+			{ id: 'sidenav-transition', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Sidebar</h4>
-<%-
-	printInputs([
-		{ id: 'sidebar-padding-top', },
-		{ id: 'sidebar-padding-right', },
-		{ id: 'sidebar-padding-bottom', },
-		{ id: 'sidebar-padding-left', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Sidebar',
+		printInputsArr: [
+			{ id: 'sidebar-padding-top', },
+			{ id: 'sidebar-padding-right', },
+			{ id: 'sidebar-padding-bottom', },
+			{ id: 'sidebar-padding-left', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Sidebar Header Component Title</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="sidebar-header-component-title" name="clay[sidebar-header-component-title]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'sidebar-header-component-title' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Sidebar Header Component Title',
+		printRegularInputsArr: undefined,
+		variableName: 'sidebar-header-component-title',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'sidebar-header-component-title' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Sidebar Header Component Subtitle</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="sidebar-header-component-subtitle" name="clay[sidebar-header-component-subtitle]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'sidebar-header-component-subtitle' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Sidebar Header Component Subtitle',
+		printRegularInputsArr: undefined,
+		variableName: 'sidebar-header-component-subtitle',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'sidebar-header-component-subtitle' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Sidebar Dt</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="sidebar-dt" name="clay[sidebar-dt]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'sidebar-dt' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Sidebar Dt',
+		printRegularInputsArr: undefined,
+		variableName: 'sidebar-dt',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'sidebar-dt' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Sidebar Dd</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="sidebar-dd" name="clay[sidebar-dd]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'sidebar-dd' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Sidebar Dd',
+		printRegularInputsArr: undefined,
+		variableName: 'sidebar-dd',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'sidebar-dd' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Sidebar Panel</h4>
-<%-
-	printInputs([
-		{ id: 'sidebar-panel-margin-bottom', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Sidebar Panel',
+		printInputsArr: [
+			{ id: 'sidebar-panel-margin-bottom', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Sidebar List Group</h4>
-<%-
-	printInputs([
-		{ id: 'sidebar-list-group-type', },
-		{ id: 'sidebar-list-group-font-size', },
-		{ id: 'sidebar-list-group-border-color', color: true, },
-		{ id: 'sidebar-list-group-bg', color: true, },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Sidebar List Group',
+		printInputsArr: [
+			{ id: 'sidebar-list-group-type', },
+			{ id: 'sidebar-list-group-font-size', },
+			{ id: 'sidebar-list-group-border-color', color: true, },
+			{ id: 'sidebar-list-group-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Sidebar List Group Item</h4>
-<%-
-	printInputs([
-		{ id: 'sidebar-list-group-item-padding', },
-		{ id: 'sidebar-list-group-autofit-col-padding-y', },
-		{ id: 'sidebar-list-group-autofit-col-padding-x', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Sidebar List Group Item',
+		printInputsArr: [
+			{ id: 'sidebar-list-group-item-padding', },
+			{ id: 'sidebar-list-group-autofit-col-padding-y', },
+			{ id: 'sidebar-list-group-autofit-col-padding-x', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Sidebar List Group Sticker Size</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="sidebar-list-group-sticker-size" name="clay[sidebar-list-group-sticker-size]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayStickerSizeMixin', { namespace: 'sidebar-list-group-sticker-size' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Sidebar List Group Sticker Size',
+		printRegularInputsArr: undefined,
+		variableName: 'sidebar-list-group-sticker-size',
+		printInputsArr: undefined,
+		mixin: 'cpClayStickerSizeMixin',
+		mixinProps: { namespace: 'sidebar-list-group-sticker-size' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Sidebar Light</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="sidebar-light" name="clay[sidebar-light]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClaySidebarVariantMixin', { namespace: 'sidebar-light' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Sidebar Light',
+		printRegularInputsArr: undefined,
+		variableName: 'sidebar-light',
+		printInputsArr: undefined,
+		mixin: 'cpClaySidebarVariantMixin',
+		mixinProps: { namespace: 'sidebar-light' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Sidebar Light Navigation Bar</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="sidebar-light-navigation-bar" name="clay[sidebar-light-navigation-bar]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayNavbarVariantMixin', { namespace: 'sidebar-light-navigation-bar' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Sidebar Light Navigation Bar',
+		printRegularInputsArr: undefined,
+		variableName: 'sidebar-light-navigation-bar',
+		printInputsArr: undefined,
+		mixin: 'cpClayNavbarVariantMixin',
+		mixinProps: { namespace: 'sidebar-light-navigation-bar' },
+	},
+) %>

@@ -526,6 +526,7 @@
 	};
 
 	for (let i = 0; i < arr.length; i++) {
+		let pxRem = false;
 		let tt;
 
 		if (arr[i].header) {
@@ -553,9 +554,19 @@
 				tt = tooltipText;
 			}
 		}
+
+		if (arr[i].id.match(/(?<!print-body-min)-width|(?<!line)-height|border-radius|-letter-spacing|-margin|-padding|(?<!bg)-position|(?<!application-bar|management-bar|navigation-bar|print-page|bg)-size|-spacer|-spacing|grid-breakpoints|(?<!box-shadow)-top(?!(.*?)-color)|(?<!box-shadow)-right(?!(.*?)-color)|(?<!box-shadow)-bottom(?!(.*?)-color)|(?<!box-shadow)-left(?!(.*?)-color)|-offset|-gap|-gutter|modal-sm|modal-md|modal-lg/)) {
+			pxRem = true;
+		}
 %>
 
-		<%- include('../cpTextInput', { id: arr[i].id, color: arr[i].color, tooltip: tt, svgIconsPath: svgIconsPath }) %>
+		<%- include('../cpTextInput', {
+			id: arr[i].id,
+			color: arr[i].color,
+			pxRem: pxRem,
+			tooltip: tt,
+			svgIconsPath: svgIconsPath
+		}) %>
 
 <%
 	}

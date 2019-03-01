@@ -1,124 +1,191 @@
-<h4 class="cp-variables-form-header">Grays</h4>
-<%- printInputs([
-	{ id: 'white', color: true, },
-	{ id: 'gray-100', color: true, },
-	{ id: 'gray-200', color: true, },
-	{ id: 'gray-300', color: true, },
-	{ id: 'gray-400', color: true, },
-	{ id: 'gray-500', color: true, },
-	{ id: 'gray-600', color: true, },
-	{ id: 'gray-700', color: true, },
-	{ id: 'gray-800', color: true, },
-	{ id: 'gray-900', color: true, },
-	{ id: 'black', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Grays',
+		printInputsArr: [
+			{ id: 'white', color: true, },
+			{ id: 'gray-100', color: true, },
+			{ id: 'gray-200', color: true, },
+			{ id: 'gray-300', color: true, },
+			{ id: 'gray-400', color: true, },
+			{ id: 'gray-500', color: true, },
+			{ id: 'gray-600', color: true, },
+			{ id: 'gray-700', color: true, },
+			{ id: 'gray-800', color: true, },
+			{ id: 'gray-900', color: true, },
+			{ id: 'black', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Colors</h4>
-<%- printInputs([
-	{ id: 'blue', color: true, },
-	{ id: 'indigo', color: true, },
-	{ id: 'purple', color: true, },
-	{ id: 'pink', color: true, },
-	{ id: 'red', color: true, },
-	{ id: 'orange', color: true, },
-	{ id: 'yellow', color: true, },
-	{ id: 'green', color: true, },
-	{ id: 'teal', color: true, },
-	{ id: 'cyan', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Colors',
+		printInputsArr: [
+			{ id: 'blue', color: true, },
+			{ id: 'indigo', color: true, },
+			{ id: 'purple', color: true, },
+			{ id: 'pink', color: true, },
+			{ id: 'red', color: true, },
+			{ id: 'orange', color: true, },
+			{ id: 'yellow', color: true, },
+			{ id: 'green', color: true, },
+			{ id: 'teal', color: true, },
+			{ id: 'cyan', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Theme Colors</h4>
-<%- printInputs([
-	{ id: 'primary', color: true, },
-	{ id: 'secondary', color: true, },
-	{ id: 'success', color: true, },
-	{ id: 'info', color: true, },
-	{ id: 'warning', color: true, },
-	{ id: 'danger', color: true, },
-	{ id: 'light', color: true, },
-	{ id: 'dark', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Theme Colors',
+		printInputsArr: [
+			{ id: 'primary', color: true, },
+			{ id: 'secondary', color: true, },
+			{ id: 'success', color: true, },
+			{ id: 'info', color: true, },
+			{ id: 'warning', color: true, },
+			{ id: 'danger', color: true, },
+			{ id: 'light', color: true, },
+			{ id: 'dark', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Color YIQ</h4>
-<%- printInputs([
-	{ id: 'yiq-contrasted-threshold', },
-	{ id: 'yiq-text-dark', color: true, },
-	{ id: 'yiq-text-light', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Color YIQ',
+		printInputsArr: [
+			{ id: 'yiq-contrasted-threshold', },
+			{ id: 'yiq-text-dark', color: true, },
+			{ id: 'yiq-text-light', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Google Font Import</h4>
-<%- printInputs([
-	{ id: 'font-import-url', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Google Font Import',
+		printInputsArr: [
+			{ id: 'font-import-url', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Font Family</h4>
-<%- printInputs([
-	{ id: 'font-family-sans-serif', },
-	{ id: 'font-family-serif', },
-	{ id: 'font-family-monospace', },
-	{ id: 'font-family-base', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Font Family',
+		printInputsArr: [
+			{ id: 'font-family-sans-serif', },
+			{ id: 'font-family-serif', },
+			{ id: 'font-family-monospace', },
+			{ id: 'font-family-base', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Font Size</h4>
-<%- printInputs([
-	{ id: 'font-size-base', },
-	{ id: 'font-size-sm', },
-	{ id: 'font-size-lg', },
-	{ id: 'font-size-base-mobile', },
-	{ id: 'font-size-lg-mobile', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Font Size',
+		printInputsArr: [
+			{ id: 'font-size-base', },
+			{ id: 'font-size-sm', },
+			{ id: 'font-size-lg', },
+			{ id: 'font-size-base-mobile', },
+			{ id: 'font-size-lg-mobile', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Font Weight</h4>
-<%- printInputs([
-	{ id: 'font-weight-light', },
-	{ id: 'font-weight-normal', },
-	{ id: 'font-weight-semi-bold', },
-	{ id: 'font-weight-bold', },
-	{ id: 'font-weight-bolder', },
-	{ id: 'font-weight-base', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Font Weight',
+		printInputsArr: [
+			{ id: 'font-weight-light', },
+			{ id: 'font-weight-normal', },
+			{ id: 'font-weight-semi-bold', },
+			{ id: 'font-weight-bold', },
+			{ id: 'font-weight-bolder', },
+			{ id: 'font-weight-base', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Line Height</h4>
-<%- printInputs([
-	{ id: 'line-height-sm', },
-	{ id: 'line-height-lg', },
-	{ id: 'line-height-base', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Line Height',
+		printInputsArr: [
+			{ id: 'line-height-sm', },
+			{ id: 'line-height-lg', },
+			{ id: 'line-height-base', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Border Radius</h4>
-<%- printInputs([
-	{ id: 'border-radius', },
-	{ id: 'border-radius-sm', },
-	{ id: 'border-radius-lg', },
-]) %>
-<%- printInputs([
-	{ id: 'rounded-border-radius', },
-	{ id: 'rounded-circle-border-radius', },
-	{ id: 'rounded-0-border-radius', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Border Radius',
+		printInputsArr: [
+			{ id: 'border-radius', },
+			{ id: 'border-radius-sm', },
+			{ id: 'border-radius-lg', },
+			{ id: 'rounded-border-radius', },
+			{ id: 'rounded-circle-border-radius', },
+			{ id: 'rounded-0-border-radius', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Cursors</h4>
-<%- printInputs([
-	{ id: 'link-cursor', },
-	{ id: 'disabled-cursor', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Cursors',
+		printInputsArr: [
+			{ id: 'link-cursor', },
+			{ id: 'disabled-cursor', },
+		],
+	},
+) %>
 
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Transition',
+		printInputsArr: [
+			{ id: 'transition-base', },
+			{ id: 'transition-fade', },
+			{ id: 'transition-collapse', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Transition</h4>
-<%- printInputs([
-	{ id: 'transition-base', },
-	{ id: 'transition-fade', },
-	{ id: 'transition-collapse', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Body',
+		printInputsArr: [
+			{ id: 'body-color', color: true, },
+			{ id: 'body-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Body</h4>
-<%- printInputs([
-	{ id: 'body-color', color: true, },
-	{ id: 'body-bg', color: true, },
-]) %>
-
-<h4 class="cp-variables-form-header">Component Active</h4>
-<%- printInputs([
-	{ id: 'component-active-color', color: true, },
-	{ id: 'component-active-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Component Active',
+		printInputsArr: [
+			{ id: 'component-active-color', color: true, },
+			{ id: 'component-active-bg', color: true, },
+		],
+	},
+) %>

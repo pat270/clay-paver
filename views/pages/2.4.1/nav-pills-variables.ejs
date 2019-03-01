@@ -1,10 +1,20 @@
-<h4 class="cp-variables-form-header">Nav Pills</h4>
-<%- printInputs([
-	{ id: 'nav-pills-border-radius', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Nav Pills',
+		printInputsArr: [
+			{ id: 'nav-pills-border-radius', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Nav Pills Active</h4>
-<%- printInputs([
-	{ id: 'nav-pills-link-active-color', color: true, },
-	{ id: 'nav-pills-link-active-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Nav Pills Active',
+		printInputsArr: [
+			{ id: 'nav-pills-link-active-color', color: true, },
+			{ id: 'nav-pills-link-active-bg', color: true, },
+		],
+	},
+) %>

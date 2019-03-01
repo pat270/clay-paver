@@ -2,7 +2,11 @@
 	var formGroupClass = 'cp-form-group';
 
 	if (typeof color !== 'undefined') {
-		formGroupClass = 'cp-form-group cp-form-group-color';
+		formGroupClass += ' cp-form-group-color';
+	}
+
+	if (pxRem) {
+		formGroupClass += ' cp-form-group-convert';
 	}
 
 	if (typeof placeholder === 'undefined') {
@@ -35,5 +39,9 @@
 
 	<% if (typeof color !== 'undefined') { %>
 		<input class="cp-form-control cp-form-control-color" type="color" value="#ffffff">
+	<% } %>
+
+	<% if (pxRem) { %>
+		<button class="cp-btn cp-btn-secondary cp-btn-convert" type="button">px/rem</button>
 	<% } %>
 </div>

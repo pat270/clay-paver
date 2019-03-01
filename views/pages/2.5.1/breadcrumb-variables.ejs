@@ -1,50 +1,78 @@
-<h4 class="cp-variables-form-header">Breadcrumb</h4>
-<%- printInputs([
-	{ id: 'breadcrumb-font-size', },
-	{ id: 'breadcrumb-font-weight', },
-	{ id: 'breadcrumb-padding-y', },
-	{ id: 'breadcrumb-padding-x', },
-	{ id: 'breadcrumb-margin-bottom', },
-	{ id: 'breadcrumb-border-radius', },
-	{ id: 'breadcrumb-bg', color: true, },
-	{ id: 'breadcrumb-text-transform', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Breadcrumb',
+		printInputsArr: [
+			{ id: 'breadcrumb-font-size', },
+			{ id: 'breadcrumb-font-weight', },
+			{ id: 'breadcrumb-padding-y', },
+			{ id: 'breadcrumb-padding-x', },
+			{ id: 'breadcrumb-margin-bottom', },
+			{ id: 'breadcrumb-border-radius', },
+			{ id: 'breadcrumb-bg', color: true, },
+			{ id: 'breadcrumb-text-transform', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Breadcrumb Item</h4>
-<%- printInputs([
-	{ id: 'breadcrumb-item-padding', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Breadcrumb Item',
+		printInputsArr: [
+			{ id: 'breadcrumb-item-padding', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Breadcrumb Link</h4>
-<%- printInputs([
-	{ id: 'breadcrumb-link-color', color: true, },
-	{ id: 'breadcrumb-link-text-decoration', },
-	{ id: 'breadcrumb-link-hover-color', color: true, },
-	{ id: 'breadcrumb-link-hover-text-decoration', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Breadcrumb Link',
+		printInputsArr: [
+			{ id: 'breadcrumb-link-color', color: true, },
+			{ id: 'breadcrumb-link-text-decoration', },
+			{ id: 'breadcrumb-link-hover-color', color: true, },
+			{ id: 'breadcrumb-link-hover-text-decoration', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Breadcrumb Active</h4>
-<%- printInputs([
-	{ id: 'breadcrumb-active-font-weight', },
-	{ id: 'breadcrumb-active-color', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Breadcrumb Active',
+		printInputsArr: [
+			{ id: 'breadcrumb-active-font-weight', },
+			{ id: 'breadcrumb-active-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Breadcrumb Text Truncate</h4>
-<%- printInputs([
-	{ id: 'breadcrumb-text-truncate-max-width', },
-	{ id: 'breadcrumb-text-truncate-icon-spacer-x', },
-	{ id: 'breadcrumb-text-truncate-max-width-mobile', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Breadcrumb Text Truncate',
+		printInputsArr: [
+			{ id: 'breadcrumb-text-truncate-max-width', },
+			{ id: 'breadcrumb-text-truncate-icon-spacer-x', },
+			{ id: 'breadcrumb-text-truncate-max-width-mobile', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Breadcrumb Divider</h4>
-<%- printInputs([
-	{ id: 'breadcrumb-divider-svg-icon-width', },
-	{ id: 'breadcrumb-divider-svg-icon-height', },
-	{ id: 'breadcrumb-divider-svg-icon', },
-]) %>
-<%- printInputs([
-	{ id: 'breadcrumb-divider-font-family', },
-	{ id: 'breadcrumb-divider-font-weight', },
-	{ id: 'breadcrumb-divider-color', color: true, },
-	{ id: 'breadcrumb-divider', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Breadcrumb Divider',
+		printInputsArr: [
+			{ id: 'breadcrumb-divider-svg-icon-width', },
+			{ id: 'breadcrumb-divider-svg-icon-height', },
+			{ id: 'breadcrumb-divider-svg-icon', },
+			{ id: 'breadcrumb-divider-font-family', },
+			{ id: 'breadcrumb-divider-font-weight', },
+			{ id: 'breadcrumb-divider-color', color: true, },
+			{ id: 'breadcrumb-divider', },
+		],
+	},
+) %>

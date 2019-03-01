@@ -1,52 +1,69 @@
-<h4 class="cp-variables-form-header">Grid</h4>
-<%- printInputs([
-	{ id: 'grid-gutter-width', },
-	{ id: 'grid-columns', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Grid',
+		printInputsArr: [
+			{ id: 'grid-gutter-width', },
+			{ id: 'grid-columns', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Grid Breakpoints</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="grid-breakpoints" name="clay[grid-breakpoints]" type="hidden">
-	</div>
-	<%-
-		printInputs([
-			{ id: 'grid-breakpoints-xs', tooltip: 'If modified: This value must be 0, values must be in ascending order, and a value must be entered for each grid-breakpoint.', },
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Grid Breakpoints',
+		printRegularInputsArr: undefined,
+		variableName: 'grid-breakpoints',
+		printInputsArr: [
+			{ id: 'grid-breakpoints-xs', },
 			{ id: 'grid-breakpoints-sm', },
 			{ id: 'grid-breakpoints-md', },
 			{ id: 'grid-breakpoints-lg', },
 			{ id: 'grid-breakpoints-xl', },
-		]);
-	%>
-</div>
+		],
+		mixin: undefined,
+		mixinProps: undefined,
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Container Max Widths</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="container-max-widths" name="clay[container-max-widths]" type="hidden">
-	</div>
-	<%-
-		printInputs([
-			{ id: 'container-max-widths-sm', tooltip: 'If modified: Values must be in ascending order and a value must be entered for each container-max-width.', },
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Container Max Widths',
+		printRegularInputsArr: undefined,
+		variableName: 'container-max-widths',
+		printInputsArr: [
+			{ id: 'container-max-widths-sm', },
 			{ id: 'container-max-widths-md', },
 			{ id: 'container-max-widths-lg', },
 			{ id: 'container-max-widths-xl', },
-		]);
-	%>
-</div>
+		],
+		mixin: undefined,
+		mixinProps: undefined,
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Container Form Lg</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="container-form-lg" name="clay[container-form-lg]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayContainerMixin', { namespace: 'container-form-lg' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Container Form Lg',
+		printRegularInputsArr: undefined,
+		variableName: 'container-form-lg',
+		printInputsArr: undefined,
+		mixin: 'cpClayContainerMixin',
+		mixinProps: { namespace: 'container-form-lg' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Container View</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="container-view" name="clay[container-view]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayContainerMixin', { namespace: 'container-view' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Container View',
+		printRegularInputsArr: undefined,
+		variableName: 'container-view',
+		printInputsArr: undefined,
+		mixin: 'cpClayContainerMixin',
+		mixinProps: { namespace: 'container-view' },
+	},
+) %>

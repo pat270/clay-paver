@@ -1,118 +1,206 @@
-<h4 class="cp-variables-form-header">Custom Control Description</h4>
-<%- printInputs([
-	{ id: 'custom-control-description-font-size', },
-	{ id: 'custom-control-description-padding-left', },
-	{ id: 'custom-control-description-line-height', },
-	{ id: 'custom-control-description-cursor', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Control Description',
+		printInputsArr: [
+			{ id: 'custom-control-description-font-size', },
+			{ id: 'custom-control-description-padding-left', },
+			{ id: 'custom-control-description-line-height', },
+			{ id: 'custom-control-description-cursor', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Custom Control Description Disabled</h4>
-<%- printInputs([
-	{ id: 'custom-control-label-disabled-color', color: true, },
-	{ id: 'custom-control-description-disabled-cursor', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Control Description Disabled',
+		printInputsArr: [
+			{ id: 'custom-control-label-disabled-color', color: true, },
+			{ id: 'custom-control-description-disabled-cursor', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Custom Control</h4>
-<%- printInputs([
-	{ id: 'custom-control-spacer-x', },
-	{ id: 'custom-control-gutter', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Control',
+		printInputsArr: [
+			{ id: 'custom-control-spacer-x', },
+			{ id: 'custom-control-gutter', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Custom Control Indicator</h4>
-<%- printInputs([
-	{ id: 'custom-control-indicator-size', },
-	{ id: 'custom-control-indicator-border-width', },
-	{ id: 'custom-control-indicator-border-style', },
-	{ id: 'custom-control-indicator-border-color', color: true, },
-	{ id: 'custom-control-indicator-bg', color: true, },
-	{ id: 'custom-control-indicator-bg-size', },
-	{ id: 'custom-control-indicator-box-shadow', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Control Indicator',
+		printInputsArr: [
+			{ id: 'custom-control-indicator-size', },
+			{ id: 'custom-control-indicator-border-width', },
+			{ id: 'custom-control-indicator-border-style', },
+			{ id: 'custom-control-indicator-border-color', color: true, },
+			{ id: 'custom-control-indicator-bg', color: true, },
+			{ id: 'custom-control-indicator-bg-size', },
+			{ id: 'custom-control-indicator-box-shadow', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Custom Control Indicator Focus</h4>
-<%- printInputs([
-	{ id: 'custom-control-indicator-focus-box-shadow', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Control Indicator Focus',
+		printInputsArr: [
+			{ id: 'custom-control-indicator-focus-box-shadow', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Custom Control Indicator Active</h4>
-<%- printInputs([
-	{ id: 'custom-control-indicator-active-border-color', color: true, },
-	{ id: 'custom-control-indicator-active-color', color: true, },
-	{ id: 'custom-control-indicator-active-bg', color: true, },
-	{ id: 'custom-control-indicator-active-box-shadow', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Control Indicator Active',
+		printInputsArr: [
+			{ id: 'custom-control-indicator-active-border-color', color: true, },
+			{ id: 'custom-control-indicator-active-color', color: true, },
+			{ id: 'custom-control-indicator-active-bg', color: true, },
+			{ id: 'custom-control-indicator-active-box-shadow', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Custom Control Indicator Indeterminate</h4>
-<%- printInputs([
-	{ id: 'custom-control-indicator-indeterminate-border-color', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Control Indicator Indeterminate',
+		printInputsArr: [
+			{ id: 'custom-control-indicator-indeterminate-border-color', color: true, },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Custom Control Indicator Disabled</h4>
-<%- printInputs([
-	{ id: 'custom-control-indicator-disabled-border-color', color: true, },
-	{ id: 'custom-control-indicator-disabled-bg', color: true, },
-	{ id: 'custom-control-indicator-disabled-cursor', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Control Indicator Disabled',
+		printInputsArr: [
+			{ id: 'custom-control-indicator-disabled-border-color', color: true, },
+			{ id: 'custom-control-indicator-disabled-bg', color: true, },
+			{ id: 'custom-control-indicator-disabled-cursor', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Custom Control Indicator Checked</h4>
-<%- printInputs([
-	{ id: 'custom-control-indicator-checked-border-color', color: true, },
-	{ id: 'custom-control-indicator-checked-color', color: true, },
-	{ id: 'custom-control-indicator-checked-bg', color: true, },
-	{ id: 'custom-control-indicator-checked-box-shadow', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Control Indicator Checked',
+		printInputsArr: [
+			{ id: 'custom-control-indicator-checked-border-color', color: true, },
+			{ id: 'custom-control-indicator-checked-color', color: true, },
+			{ id: 'custom-control-indicator-checked-bg', color: true, },
+			{ id: 'custom-control-indicator-checked-box-shadow', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Custom Control Indicator Checked Active</h4>
-<%- printInputs([
-	{ id: 'custom-control-indicator-checked-active-border-color', color: true, },
-	{ id: 'custom-control-indicator-checked-active-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Control Indicator Checked Active',
+		printInputsArr: [
+			{ id: 'custom-control-indicator-checked-active-border-color', color: true, },
+			{ id: 'custom-control-indicator-checked-active-bg', color: true, },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Custom Control Indicator Checked Disabled</h4>
-<%- printInputs([
-	{ id: 'custom-control-indicator-checked-disabled-border-color', color: true, },
-	{ id: 'custom-control-indicator-checked-disabled-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Control Indicator Checked Disabled',
+		printInputsArr: [
+			{ id: 'custom-control-indicator-checked-disabled-border-color', color: true, },
+			{ id: 'custom-control-indicator-checked-disabled-bg', color: true, },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Custom Checkbox Indicator</h4>
-<%- printInputs([
-	{ id: 'custom-checkbox-indicator-border-radius', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Checkbox Indicator',
+		printInputsArr: [
+			{ id: 'custom-checkbox-indicator-border-radius', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Custom Checkbox Indicator Indeterminate</h4>
-<%- printInputs([
-	{ id: 'custom-checkbox-indicator-icon-indeterminate', },
-	{ id: 'custom-checkbox-indicator-icon-indeterminate-bg-size', },
-]) %>
-<%- printInputs([
-	{ id: 'custom-checkbox-indicator-indeterminate-color', color: true, },
-	{ id: 'custom-checkbox-indicator-indeterminate-bg', color: true, },
-	{ id: 'custom-checkbox-indicator-indeterminate-box-shadow', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Checkbox Indicator Indeterminate',
+		printInputsArr: [
+			{ id: 'custom-checkbox-indicator-icon-indeterminate', },
+			{ id: 'custom-checkbox-indicator-icon-indeterminate-bg-size', },
+			{ id: 'custom-checkbox-indicator-indeterminate-color', color: true, },
+			{ id: 'custom-checkbox-indicator-indeterminate-bg', color: true, },
+			{ id: 'custom-checkbox-indicator-indeterminate-box-shadow', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Custom Checkbox Indicator Checked</h4>
-<%- printInputs([
-	{ id: 'custom-checkbox-indicator-icon-checked', },
-	{ id: 'custom-checkbox-indicator-icon-checked-bg-size', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Checkbox Indicator Checked',
+		printInputsArr: [
+			{ id: 'custom-checkbox-indicator-icon-checked', },
+			{ id: 'custom-checkbox-indicator-icon-checked-bg-size', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Custom Radio Indicator</h4>
-<%- printInputs([
-	{ id: 'custom-radio-indicator-border-radius', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Radio Indicator',
+		printInputsArr: [
+			{ id: 'custom-radio-indicator-border-radius', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Custom Radio Indicator Disabled</h4>
-<%- printInputs([
-	{ id: 'custom-radio-indicator-disabled-border-color', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Radio Indicator Disabled',
+		printInputsArr: [
+			{ id: 'custom-radio-indicator-disabled-border-color', color: true, },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Custom Radio Indicator Checked</h4>
-<%- printInputs([
-	{ id: 'custom-radio-indicator-icon-checked', },
-	{ id: 'custom-radio-indicator-icon-checked-bg-size', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Radio Indicator Checked',
+		printInputsArr: [
+			{ id: 'custom-radio-indicator-icon-checked', },
+			{ id: 'custom-radio-indicator-icon-checked-bg-size', },
+		],
+	}
+) %>
 
-<h4 class="cp-variables-form-header">Custom Radio Indicator Checked Disabled</h4>
-<%- printInputs([
-	{ id: 'custom-radio-indicator-checked-disabled-border-color', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Custom Radio Indicator Checked Disabled',
+		printInputsArr: [
+			{ id: 'custom-radio-indicator-checked-disabled-border-color', color: true, },
+		],
+	}
+) %>

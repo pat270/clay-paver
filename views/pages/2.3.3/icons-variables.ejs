@@ -1,26 +1,35 @@
-<h4 class="cp-variables-form-header">Collapse Icon</h4>
-<%-
-	printInputs([
-		{ id: 'collapse-icon-padding-right', },
-		{ id: 'collapse-icon-padding-left', },
-		{ id: 'collapse-icon-position-top', },
-		{ id: 'collapse-icon-position-right', },
-		{ id: 'collapse-icon-position-bottom', },
-		{ id: 'collapse-icon-position-left', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Collapse Icon',
+		printInputsArr: [
+			{ id: 'collapse-icon-padding-right', },
+			{ id: 'collapse-icon-padding-left', },
+			{ id: 'collapse-icon-position-top', },
+			{ id: 'collapse-icon-position-right', },
+			{ id: 'collapse-icon-position-bottom', },
+			{ id: 'collapse-icon-position-left', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Order Arrow</h4>
-<%-
-	printInputs([
-		{ id: 'order-arrow-up-active-color', color: true },
-		{ id: 'order-arrow-down-active-color', color: true },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Order Arrow',
+		printInputsArr: [
+			{ id: 'order-arrow-up-active-color', color: true },
+			{ id: 'order-arrow-down-active-color', color: true },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Lexicon Icon</h4>
-<%-
-	printInputs([
-		{ id: 'lexicon-icon-size', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Lexicon Icon',
+		printInputsArr: [
+			{ id: 'lexicon-icon-size', },
+		],
+	},
+) %>

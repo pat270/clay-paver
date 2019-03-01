@@ -1,195 +1,297 @@
-<h4 class="cp-variables-form-header">Input</h4>
-<%- printInputs([
-	{ id: 'input-height', },
-	{ id: 'input-font-size', },
-	{ id: 'input-padding-y', },
-	{ id: 'input-padding-x', },
-	{ id: 'input-line-height', },
-	{ id: 'input-border-width', },
-	{ id: 'input-border-top-width', },
-	{ id: 'input-border-right-width', },
-	{ id: 'input-border-bottom-width', },
-	{ id: 'input-border-left-width', },
-	{ id: 'input-border-color', color: true, },
-	{ id: 'input-border-radius', },
-	{ id: 'input-color', color: true, },
-	{ id: 'input-bg', color: true, },
-	{ id: 'input-box-shadow', },
-	{ id: 'input-transition', },
-	{ id: 'input-placeholder-color', color: true, },
-	{ id: 'input-height-mobile', },
-	{ id: 'input-font-size-mobile', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input',
+		printInputsArr: [
+			{ id: 'input-height', },
+			{ id: 'input-font-size', },
+			{ id: 'input-padding-y', },
+			{ id: 'input-padding-x', },
+			{ id: 'input-line-height', },
+			{ id: 'input-border-width', },
+			{ id: 'input-border-top-width', },
+			{ id: 'input-border-right-width', },
+			{ id: 'input-border-bottom-width', },
+			{ id: 'input-border-left-width', },
+			{ id: 'input-border-color', color: true, },
+			{ id: 'input-border-radius', },
+			{ id: 'input-color', color: true, },
+			{ id: 'input-bg', color: true, },
+			{ id: 'input-box-shadow', },
+			{ id: 'input-transition', },
+			{ id: 'input-placeholder-color', color: true, },
+			{ id: 'input-height-mobile', },
+			{ id: 'input-font-size-mobile', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Focus</h4>
-<%- printInputs([
-	{ id: 'input-focus-width', },
-	{ id: 'input-focus-border-color', color: true, },
-	{ id: 'input-focus-color', color: true, },
-	{ id: 'input-focus-bg', color: true, },
-	{ id: 'input-focus-box-shadow', },
-]) %>
-<%- printInputs([
-	{ id: 'input-placeholder-focus-color', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Focus',
+		printInputsArr: [
+			{ id: 'input-focus-width', },
+			{ id: 'input-focus-border-color', color: true, },
+			{ id: 'input-focus-color', color: true, },
+			{ id: 'input-focus-bg', color: true, },
+			{ id: 'input-focus-box-shadow', },
+			{ id: 'input-placeholder-focus-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Disabled</h4>
-<%- printInputs([
-	{ id: 'input-disabled-border-color', color: true, },
-	{ id: 'input-disabled-color', color: true, },
-	{ id: 'input-disabled-bg', color: true, },
-	{ id: 'input-disabled-cursor', },
-	{ id: 'input-disabled-opacity', },
-]) %>
-<%- printInputs([
-	{ id: 'input-placeholder-disabled-color', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Disabled',
+		printInputsArr: [
+			{ id: 'input-disabled-border-color', color: true, },
+			{ id: 'input-disabled-color', color: true, },
+			{ id: 'input-disabled-bg', color: true, },
+			{ id: 'input-disabled-cursor', },
+			{ id: 'input-disabled-opacity', },
+			{ id: 'input-placeholder-disabled-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Label</h4>
-<%- printInputs([
-	{ id: 'input-label-font-size', },
-	{ id: 'input-label-font-weight', },
-	{ id: 'input-label-margin-bottom', },
-	{ id: 'input-label-color', color: true, },
-	{ id: 'input-label-for-cursor', },
-	{ id: 'input-label-font-size-mobile', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Label',
+		printInputsArr: [
+			{ id: 'input-label-font-size', },
+			{ id: 'input-label-font-weight', },
+			{ id: 'input-label-margin-bottom', },
+			{ id: 'input-label-color', color: true, },
+			{ id: 'input-label-for-cursor', },
+			{ id: 'input-label-font-size-mobile', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Label Focus</h4>
-<%- printInputs([
-	{ id: 'input-label-focus-color', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Label Focus',
+		printInputsArr: [
+			{ id: 'input-label-focus-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Label Disabled</h4>
-<%- printInputs([
-	{ id: 'input-label-disabled-color', color: true, },
-	{ id: 'input-label-disabled-cursor', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Label Disabled',
+		printInputsArr: [
+			{ id: 'input-label-disabled-color', color: true, },
+			{ id: 'input-label-disabled-cursor', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Label Reference Mark</h4>
-<%- printInputs([
-	{ id: 'input-label-reference-mark-font-size', },
-	{ id: 'input-label-reference-mark-spacer', },
-	{ id: 'input-label-reference-mark-color', color: true, },
-	{ id: 'input-label-reference-mark-vertical-align', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Label Reference Mark',
+		printInputsArr: [
+			{ id: 'input-label-reference-mark-font-size', },
+			{ id: 'input-label-reference-mark-spacer', },
+			{ id: 'input-label-reference-mark-color', color: true, },
+			{ id: 'input-label-reference-mark-vertical-align', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Select</h4>
-<%- printInputs([
-	{ id: 'input-select-padding-top', },
-	{ id: 'input-select-padding-right', },
-	{ id: 'input-select-padding-bottom', },
-	{ id: 'input-select-padding-left', },
-	{ id: 'input-select-bg', color: true, },
-	{ id: 'input-select-bg-size', },
-	{ id: 'input-select-cursor', },
-	{ id: 'input-select-bg-position', },
-	{ id: 'input-select-icon-color', color: true, },
-	{ id: 'input-select-icon', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Select',
+		printInputsArr: [
+			{ id: 'input-select-padding-top', },
+			{ id: 'input-select-padding-right', },
+			{ id: 'input-select-padding-bottom', },
+			{ id: 'input-select-padding-left', },
+			{ id: 'input-select-bg', color: true, },
+			{ id: 'input-select-bg-size', },
+			{ id: 'input-select-cursor', },
+			{ id: 'input-select-bg-position', },
+			{ id: 'input-select-icon-color', color: true, },
+			{ id: 'input-select-icon', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Select Focus</h4>
-<%- printInputs([
-	{ id: 'input-select-icon-focus-color', color: true, },
-	{ id: 'input-select-focus-bg', color: true, },
-	{ id: 'input-select-icon-focus', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Select Focus',
+		printInputsArr: [
+			{ id: 'input-select-icon-focus-color', color: true, },
+			{ id: 'input-select-focus-bg', color: true, },
+			{ id: 'input-select-icon-focus', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Select Disabled</h4>
-<%- printInputs([
-	{ id: 'input-select-icon-disabled-color', color: true, },
-	{ id: 'input-select-icon-disabled', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Select Disabled',
+		printInputsArr: [
+			{ id: 'input-select-icon-disabled-color', color: true, },
+			{ id: 'input-select-icon-disabled', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Textarea</h4>
-<%- printInputs([
-	{ id: 'input-textarea-height', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Textarea',
+		printInputsArr: [
+			{ id: 'input-textarea-height', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Checkbox and Radio</h4>
-<%- printInputs([
-	{ id: 'form-check-input-margin-y', },
-	{ id: 'form-check-input-margin-x', },
-	{ id: 'form-check-input-cursor', },
-	{ id: 'form-check-input-gutter', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Checkbox and Radio',
+		printInputsArr: [
+			{ id: 'form-check-input-margin-y', },
+			{ id: 'form-check-input-margin-x', },
+			{ id: 'form-check-input-cursor', },
+			{ id: 'form-check-input-gutter', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Checkbox and Radio Label</h4>
-<%- printInputs([
-	{ id: 'form-check-label-text-padding-left', },
-	{ id: 'form-check-label-text-margin-left', },
-	{ id: 'form-check-label-cursor', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Checkbox and Radio Label',
+		printInputsArr: [
+			{ id: 'form-check-label-text-padding-left', },
+			{ id: 'form-check-label-text-margin-left', },
+			{ id: 'form-check-label-cursor', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Checkbox and Radio Disabled</h4>
-<%- printInputs([
-	{ id: 'form-check-input-disabled-cursor', },
-]) %>
-<%- printInputs([
-	{ id: 'form-check-label-text-disabled-cursor', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Checkbox and Radio Disabled',
+		printInputsArr: [
+			{ id: 'form-check-input-disabled-cursor', },
+			{ id: 'form-check-label-text-disabled-cursor', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Inline Checkbox and Radio</h4>
-<%- printInputs([
-	{ id: 'form-check-inline-margin-x', },
-	{ id: 'form-check-inline-input-margin-x', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Inline Checkbox and Radio',
+		printInputsArr: [
+			{ id: 'form-check-inline-margin-x', },
+			{ id: 'form-check-inline-input-margin-x', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input File</h4>
-<%- printInputs([
-	{ id: 'input-file-cursor', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input File',
+		printInputsArr: [
+			{ id: 'input-file-cursor', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Readonly</h4>
-<%- printInputs([
-	{ id: 'input-readonly-border-color', color: true, },
-	{ id: 'input-readonly-color', color: true, },
-	{ id: 'input-readonly-bg', color: true, },
-	{ id: 'input-readonly-cursor', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Readonly',
+		printInputsArr: [
+			{ id: 'input-readonly-border-color', color: true, },
+			{ id: 'input-readonly-color', color: true, },
+			{ id: 'input-readonly-bg', color: true, },
+			{ id: 'input-readonly-cursor', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Readonly Focus</h4>
-<%- printInputs([
-	{ id: 'input-readonly-focus-border-color', color: true, },
-	{ id: 'input-readonly-focus-color', color: true, },
-	{ id: 'input-readonly-focus-bg', color: true, },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Readonly Focus',
+		printInputsArr: [
+			{ id: 'input-readonly-focus-border-color', color: true, },
+			{ id: 'input-readonly-focus-color', color: true, },
+			{ id: 'input-readonly-focus-bg', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Sm</h4>
-<%- printInputs([
-	{ id: 'input-height-sm', },
-	{ id: 'input-font-size-sm', },
-	{ id: 'input-padding-y-sm', },
-	{ id: 'input-padding-x-sm', },
-	{ id: 'input-line-height-sm', },
-	{ id: 'input-border-radius-sm', },
-	{ id: 'input-height-sm-mobile', },
-	{ id: 'input-font-size-sm-mobile', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Sm',
+		printInputsArr: [
+			{ id: 'input-height-sm', },
+			{ id: 'input-font-size-sm', },
+			{ id: 'input-padding-y-sm', },
+			{ id: 'input-padding-x-sm', },
+			{ id: 'input-line-height-sm', },
+			{ id: 'input-border-radius-sm', },
+			{ id: 'input-height-sm-mobile', },
+			{ id: 'input-font-size-sm-mobile', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Lg</h4>
-<%- printInputs([
-	{ id: 'input-height-lg', },
-	{ id: 'input-font-size-lg', },
-	{ id: 'input-padding-y-lg', },
-	{ id: 'input-padding-x-lg', },
-	{ id: 'input-line-height-lg', },
-	{ id: 'input-border-radius-lg', },
-	{ id: 'input-height-lg-mobile', },
-	{ id: 'input-font-size-lg-mobile', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Lg',
+		printInputsArr: [
+			{ id: 'input-height-lg', },
+			{ id: 'input-font-size-lg', },
+			{ id: 'input-padding-y-lg', },
+			{ id: 'input-padding-x-lg', },
+			{ id: 'input-line-height-lg', },
+			{ id: 'input-border-radius-lg', },
+			{ id: 'input-height-lg-mobile', },
+			{ id: 'input-font-size-lg-mobile', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Form Group</h4>
-<%- printInputs([
-	{ id: 'form-group-margin-bottom', },
-	{ id: 'form-group-margin-bottom-mobile', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Form Group',
+		printInputsArr: [
+			{ id: 'form-group-margin-bottom', },
+			{ id: 'form-group-margin-bottom-mobile', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Form Group Autofit</h4>
-<%- printInputs([
-	{ id: 'form-group-autofit-margin-bottom', },
-]) %>
-<%- printInputs([
-	{ id: 'form-group-item-label-max-width', },
-	{ id: 'form-group-item-label-spacer', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Form Group Autofit',
+		printInputsArr: [
+			{ id: 'form-group-autofit-margin-bottom', },
+			{ id: 'form-group-item-label-max-width', },
+			{ id: 'form-group-item-label-spacer', },
+		],
+	},
+) %>

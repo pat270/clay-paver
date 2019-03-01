@@ -1,53 +1,82 @@
-<h4 class="cp-variables-form-header">Tbar Item</h4>
-<%- printInputs([
-	{ id: 'tbar-item-padding-y', },
-	{ id: 'tbar-item-padding-x', },
-]) %>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Tbar Item',
+		printInputsArr: [
+			{ id: 'tbar-item-padding-y', },
+			{ id: 'tbar-item-padding-x', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Component Tbar</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="component-tbar" name="clay[component-tbar]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTbarVariantMixin', { namespace: 'component-tbar' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Component Tbar',
+		printRegularInputsArr: undefined,
+		variableName: 'component-tbar',
+		printInputsArr: undefined,
+		mixin: 'cpClayTbarVariantMixin',
+		mixinProps: { namespace: 'component-tbar' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Subnav Tbar</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar" name="clay[subnav-tbar]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTbarVariantMixin', { namespace: 'subnav-tbar' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Subnav Tbar',
+		printRegularInputsArr: undefined,
+		variableName: 'subnav-tbar',
+		printInputsArr: undefined,
+		mixin: 'cpClayTbarVariantMixin',
+		mixinProps: { namespace: 'subnav-tbar' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Subnav Tbar Component Title</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-component-title" name="clay[subnav-tbar-component-title]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTextTypographyMixin', { namespace: 'subnav-tbar-component-title' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Subnav Tbar Component Title',
+		printRegularInputsArr: undefined,
+		variableName: 'subnav-tbar-component-title',
+		printInputsArr: undefined,
+		mixin: 'cpClayTextTypographyMixin',
+		mixinProps: { namespace: 'subnav-tbar-component-title' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Subnav Tbar Component Link</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-component-link" name="clay[subnav-tbar-component-link]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayLinkMixin', { namespace: 'subnav-tbar-component-link' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Subnav Tbar Component Link',
+		printRegularInputsArr: undefined,
+		variableName: 'subnav-tbar-component-link',
+		printInputsArr: undefined,
+		mixin: 'cpClayLinkMixin',
+		mixinProps: { namespace: 'subnav-tbar-component-link' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Subnav Tbar Light</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-light" name="clay[subnav-tbar-light]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTbarVariantMixin', { namespace: 'subnav-tbar-light' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Subnav Tbar Light',
+		printRegularInputsArr: undefined,
+		variableName: 'subnav-tbar-light',
+		printInputsArr: undefined,
+		mixin: 'cpClayTbarVariantMixin',
+		mixinProps: { namespace: 'subnav-tbar-light' },
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Subnav Tbar Primary</h4>
-<div class="cp-form-group-sass-map">
-	<div class="cp-form-group">
-		<input class="cp-form-control cp-form-control-sass-map" id="subnav-tbar-primary" name="clay[subnav-tbar-primary]" type="hidden">
-	</div>
-	<%- include(mixinsPath + 'cpClayTbarVariantMixin', { namespace: 'subnav-tbar-primary' }) %>
-</div>
+<%- include(
+	partialsPath + 'templates/sassMapFormSection.ejs',
+	{
+		headerText: 'Subnav Tbar Primary',
+		printRegularInputsArr: undefined,
+		variableName: 'subnav-tbar-primary',
+		printInputsArr: undefined,
+		mixin: 'cpClayTbarVariantMixin',
+		mixinProps: { namespace: 'subnav-tbar-primary' },
+	},
+) %>

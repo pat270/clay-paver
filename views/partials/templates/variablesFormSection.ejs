@@ -1,0 +1,9 @@
+<div class="cp-variables-form-section">
+	<% if (typeof headerText !== 'undefined') { %>
+		<h4 class="cp-variables-form-header"><%= headerText %></h4>
+	<% } %>
+
+	<% if (typeof printInputsArr !== 'undefined') { %>
+		<%- printInputs(printInputsArr) %>
+	<% } %>
+</div>

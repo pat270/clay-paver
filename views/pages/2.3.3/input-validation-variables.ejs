@@ -1,94 +1,118 @@
-<h4 class="cp-variables-form-header">Input Success</h4>
-<%-
-	printInputs([
-		{ id: 'input-success-border-color', color: true, },
-		{ id: 'input-success-color', color: true, },
-		{ id: 'input-success-bg', color: true, },
-		{ id: 'input-success-box-shadow', },
-		{ id: 'input-success-select-icon-color', color: true, },
-		{ id: 'input-success-select-icon', },
-		{ id: 'input-success-checkbox-label-color', color: true, },
-		{ id: 'input-success-label-color', color: true, },
-		{ id: 'form-feedback-valid-color', color: true, },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Success',
+		printInputsArr: [
+			{ id: 'input-success-border-color', color: true, },
+			{ id: 'input-success-color', color: true, },
+			{ id: 'input-success-bg', color: true, },
+			{ id: 'input-success-box-shadow', },
+			{ id: 'input-success-select-icon-color', color: true, },
+			{ id: 'input-success-select-icon', },
+			{ id: 'input-success-checkbox-label-color', color: true, },
+			{ id: 'input-success-label-color', color: true, },
+			{ id: 'form-feedback-valid-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Success Focus</h4>
-<%-
-	printInputs([
-		{ id: 'input-success-focus-border-color', color: true, },
-		{ id: 'input-success-focus-color', color: true, },
-		{ id: 'input-success-focus-bg', color: true, },
-		{ id: 'input-success-focus-box-shadow', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Success Focus',
+		printInputsArr: [
+			{ id: 'input-success-focus-border-color', color: true, },
+			{ id: 'input-success-focus-color', color: true, },
+			{ id: 'input-success-focus-bg', color: true, },
+			{ id: 'input-success-focus-box-shadow', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Warning</h4>
-<%-
-	printInputs([
-		{ id: 'input-warning-border-color', color: true, },
-		{ id: 'input-warning-color', color: true, },
-		{ id: 'input-warning-bg', color: true, },
-		{ id: 'input-warning-box-shadow', },
-		{ id: 'input-warning-select-icon-color', color: true, },
-		{ id: 'input-warning-select-icon', },
-		{ id: 'input-warning-checkbox-label-color', color: true, },
-		{ id: 'input-warning-label-color', color: true, },
-		{ id: 'form-feedback-warning-color', color: true, },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Warning',
+		printInputsArr: [
+			{ id: 'input-warning-border-color', color: true, },
+			{ id: 'input-warning-color', color: true, },
+			{ id: 'input-warning-bg', color: true, },
+			{ id: 'input-warning-box-shadow', },
+			{ id: 'input-warning-select-icon-color', color: true, },
+			{ id: 'input-warning-select-icon', },
+			{ id: 'input-warning-checkbox-label-color', color: true, },
+			{ id: 'input-warning-label-color', color: true, },
+			{ id: 'form-feedback-warning-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Warning Focus</h4>
-<%-
-	printInputs([
-		{ id: 'input-warning-focus-border-color', color: true, },
-		{ id: 'input-warning-focus-color', color: true, },
-		{ id: 'input-warning-focus-bg', color: true, },
-		{ id: 'input-warning-focus-box-shadow', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Warning Focus',
+		printInputsArr: [
+			{ id: 'input-warning-focus-border-color', color: true, },
+			{ id: 'input-warning-focus-color', color: true, },
+			{ id: 'input-warning-focus-bg', color: true, },
+			{ id: 'input-warning-focus-box-shadow', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Danger</h4>
-<%-
-	printInputs([
-		{ id: 'input-danger-border-color', color: true, },
-		{ id: 'input-danger-color', color: true, },
-		{ id: 'input-danger-bg', color: true, },
-		{ id: 'input-danger-box-shadow', },
-		{ id: 'input-danger-select-icon-color', color: true, },
-		{ id: 'input-danger-select-icon', },
-		{ id: 'input-danger-checkbox-label-color', color: true, },
-		{ id: 'input-danger-label-color', color: true, },
-		{ id: 'form-feedback-invalid-color', color: true, },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Danger',
+		printInputsArr: [
+			{ id: 'input-danger-border-color', color: true, },
+			{ id: 'input-danger-color', color: true, },
+			{ id: 'input-danger-bg', color: true, },
+			{ id: 'input-danger-box-shadow', },
+			{ id: 'input-danger-select-icon-color', color: true, },
+			{ id: 'input-danger-select-icon', },
+			{ id: 'input-danger-checkbox-label-color', color: true, },
+			{ id: 'input-danger-label-color', color: true, },
+			{ id: 'form-feedback-invalid-color', color: true, },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Input Danger Focus</h4>
-<%-
-	printInputs([
-		{ id: 'input-danger-focus-border-color', color: true, },
-		{ id: 'input-danger-focus-color', color: true, },
-		{ id: 'input-danger-focus-bg', color: true, },
-		{ id: 'input-danger-focus-box-shadow', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Input Danger Focus',
+		printInputsArr: [
+			{ id: 'input-danger-focus-border-color', color: true, },
+			{ id: 'input-danger-focus-color', color: true, },
+			{ id: 'input-danger-focus-bg', color: true, },
+			{ id: 'input-danger-focus-box-shadow', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Form Feedback</h4>
-<%-
-	printInputs([
-		{ id: 'form-feedback-font-size', },
-		{ id: 'form-feedback-font-weight', },
-		{ id: 'form-feedback-margin-top', },
-		{ id: 'form-feedback-indicator-margin-x', },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Form Feedback',
+		printInputsArr: [
+			{ id: 'form-feedback-font-size', },
+			{ id: 'form-feedback-font-weight', },
+			{ id: 'form-feedback-margin-top', },
+			{ id: 'form-feedback-indicator-margin-x', },
+		],
+	},
+) %>
 
-<h4 class="cp-variables-form-header">Form Text</h4>
-<%-
-	printInputs([
-		{ id: 'form-text-font-size', },
-		{ id: 'form-text-font-weight', },
-		{ id: 'form-text-margin-top', },
-		{ id: 'form-text-color', color: true, },
-	]);
-%>
+<%- include(
+	partialsPath + 'templates/variablesFormSection.ejs',
+	{
+		headerText: 'Form Text',
+		printInputsArr: [
+			{ id: 'form-text-font-size', },
+			{ id: 'form-text-font-weight', },
+			{ id: 'form-text-margin-top', },
+			{ id: 'form-text-color', color: true, },
+		],
+	},
+) %>
