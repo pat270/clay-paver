@@ -555,7 +555,23 @@
 			}
 		}
 
-		if (arr[i].id.match(/(?<!print-body-min)-width|(?<!line)-height|border-radius|-letter-spacing|-margin|-padding|(?<!bg)-position|(?<!application-bar|management-bar|navigation-bar|print-page|bg)-size|-spacer|-spacing|grid-breakpoints|(?<!box-shadow)-top(?!(.*?)-color)|(?<!box-shadow)-right(?!(.*?)-color)|(?<!box-shadow)-bottom(?!(.*?)-color)|(?<!box-shadow)-left(?!(.*?)-color)|-offset|-gap|-gutter|modal-sm|modal-md|modal-lg/)) {
+		const ALIGNMENT = '(absolute-bottom|absolute-left|absolute-right|absolute-top|divider-bottom|divider-left|divider-right|divider-top|fixed-bottom|fixed-left|fixed-right|fixed-top|highlight-bottom|highlight-left|highlight-right|highlight-top|icon-bottom|icon-left|icon-right|icon-top)';
+		const BORDER_RADIUS = '(border(.*?)-radius)';
+		const MODAL = '(modal-sm|modal-md|modal-lg)';
+		const OTHERS = '(font-size|gap|grid-breakpoints|gutter|letter-spacing|margin|offset|padding|spacer|spacing)';
+		const SIZE = '(display(.*?)-size|icon-size|indicator-size|monospaced-size|sticker-size|sticker-sm-size|sticker-lg-size|sticker-xl-size|toggle-size)';
+
+		const REV_HEIGHT = '(thgieh-(?!enil))';
+		const REV_POSITION = '(noitisop-(?!xobkcehc))';
+		const REV_WIDTH = '(htdiw-(?!nim-ydob-tnirp|gb))';
+
+		const reverseStr = s => s.split('').reverse().join('');
+
+		const NORMAL_REGEX = new RegExp(ALIGNMENT + '|' + BORDER_RADIUS + '|' + MODAL + '|' + OTHERS + '|' + SIZE);
+
+		const REVERSE_REGEX = new RegExp(REV_HEIGHT + '|' + REV_POSITION + '|' + REV_WIDTH);
+
+		if (arr[i].id.match(NORMAL_REGEX) || reverseStr(arr[i].id).match(REVERSE_REGEX)) {
 			pxRem = true;
 		}
 %>
