@@ -1,46 +1,84 @@
-<%-
-	printInputs([
-		{ id: namespace + '-enable', },
-		{ id: namespace + '-breakpoint-up', },
-		{ id: namespace + '-border-style', },
-		{ id: namespace + '-border-color', color: true, },
-		{ id: namespace + '-bg', color: true, },
-		{ subheader: namespace + ' Link' },
-		{ id: namespace + '-link-color', color: true, },
-		{ id: namespace + '-link-bg', color: true, },
-		{ id: namespace + '-link-border-radius', },
-		{ id: namespace + '-link-hover-color', color: true, },
-		{ id: namespace + '-link-hover-bg', color: true, },
-		{ id: namespace + '-link-active-color', color: true, },
-		{ id: namespace + '-link-active-bg', color: true, },
-		{ id: namespace + '-link-active-font-weight', },
-		{ id: namespace + '-link-disabled-color', color: true, },
-		{ id: namespace + '-link-disabled-bg', color: true, },
-		{ subheader: namespace + ' Mobile' },
-		{ id: namespace + '-border-style-mobile', },
-		{ id: namespace + '-border-color-mobile', color: true, },
-		{ id: namespace + '-bg-mobile', color: true, },
-		{ subheader: namespace + ' Link Mobile' },
-		{ id: namespace + '-link-color-mobile', color: true, },
-		{ id: namespace + '-link-border-radius-mobile', },
-		{ id: namespace + '-link-hover-color-mobile', color: true, },
-		{ id: namespace + '-link-hover-bg-mobile', color: true, },
-		{ id: namespace + '-link-active-color-mobile', color: true, },
-		{ id: namespace + '-link-active-bg-mobile', color: true, },
-		{ id: namespace + '-link-active-font-weight-mobile', },
-		{ id: namespace + '-link-disabled-color-mobile', color: true, },
-		{ id: namespace + '-link-disabled-bg-mobile', color: true, },
-		{ subheader: namespace + ' Collapse Mobile' },
-		{ id: namespace + '-collapse-border-style-mobile', },
-		{ id: namespace + '-collapse-border-color-mobile', color: true, },
-		{ id: namespace + '-collapse-border-radius-mobile', },
-		{ id: namespace + '-collapse-bg-mobile', color: true, },
-		{ id: namespace + '-collapse-box-shadow-mobile', },
-		{ subheader: namespace + ' Toggler Mobile' },
-		{ id: namespace + '-toggler-font-size-mobile', },
-		{ id: namespace + '-toggler-font-weight-mobile', },
-		{ id: namespace + '-toggler-border-style-mobile', },
-		{ id: namespace + '-toggler-border-color-mobile', color: true, },
-		{ id: namespace + '-toggler-color-mobile', color: true, },
-	]);
-%>
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace, },
+			{ id: namespace + '-enable', },
+			{ id: namespace + '-breakpoint-up', },
+			{ id: namespace + '-border-style', },
+			{ id: namespace + '-border-color', color: true, },
+			{ id: namespace + '-bg', color: true, },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Link' },
+			{ id: namespace + '-link-color', color: true, },
+			{ id: namespace + '-link-bg', color: true, },
+			{ id: namespace + '-link-border-radius', },
+			{ id: namespace + '-link-hover-color', color: true, },
+			{ id: namespace + '-link-hover-bg', color: true, },
+			{ id: namespace + '-link-active-color', color: true, },
+			{ id: namespace + '-link-active-bg', color: true, },
+			{ id: namespace + '-link-active-font-weight', },
+			{ id: namespace + '-link-disabled-color', color: true, },
+			{ id: namespace + '-link-disabled-bg', color: true, },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Mobile' },
+			{ id: namespace + '-border-style-mobile', },
+			{ id: namespace + '-border-color-mobile', color: true, },
+			{ id: namespace + '-bg-mobile', color: true, },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Link Mobile' },
+			{ id: namespace + '-link-color-mobile', color: true, },
+			{ id: namespace + '-link-border-radius-mobile', },
+			{ id: namespace + '-link-hover-color-mobile', color: true, },
+			{ id: namespace + '-link-hover-bg-mobile', color: true, },
+			{ id: namespace + '-link-active-color-mobile', color: true, },
+			{ id: namespace + '-link-active-bg-mobile', color: true, },
+			{ id: namespace + '-link-active-font-weight-mobile', },
+			{ id: namespace + '-link-disabled-color-mobile', color: true, },
+			{ id: namespace + '-link-disabled-bg-mobile', color: true, },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Collapse Mobile' },
+			{ id: namespace + '-collapse-border-style-mobile', },
+			{ id: namespace + '-collapse-border-color-mobile', color: true, },
+			{ id: namespace + '-collapse-border-radius-mobile', },
+			{ id: namespace + '-collapse-bg-mobile', color: true, },
+			{ id: namespace + '-collapse-box-shadow-mobile', },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Toggler Mobile' },
+			{ id: namespace + '-toggler-font-size-mobile', },
+			{ id: namespace + '-toggler-font-weight-mobile', },
+			{ id: namespace + '-toggler-border-style-mobile', },
+			{ id: namespace + '-toggler-border-color-mobile', color: true, },
+			{ id: namespace + '-toggler-color-mobile', color: true, },
+		]);
+	%>
+</div>

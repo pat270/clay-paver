@@ -1,76 +1,121 @@
-<%-
-	printInputs([
-		{ id: namespace + '-height', },
-		{ id: namespace + '-font-size', },
-		{ id: namespace + '-border-width', },
-		{ id: namespace + '-border-style', },
-		{ id: namespace + '-border-color', color: true, },
-		{ id: namespace + '-color', color: true, },
-		{ id: namespace + '-bg-color', color: true, },
-		{ id: namespace + '-padding-y', },
-		{ id: namespace + '-padding-x', },
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace, },
+			{ id: namespace + '-height', },
+			{ id: namespace + '-font-size', },
+			{ id: namespace + '-border-width', },
+			{ id: namespace + '-border-style', },
+			{ id: namespace + '-border-color', color: true, },
+			{ id: namespace + '-color', color: true, },
+			{ id: namespace + '-bg-color', color: true, },
+			{ id: namespace + '-padding-y', },
+			{ id: namespace + '-padding-x', },
+		]);
+	%>
+</div>
 
-		{ subheader: namespace + ' Item' },
-		{ id: namespace + '-item-padding-y', },
-		{ id: namespace + '-item-padding-x', },
-		{ id: namespace + '-item-justify-content', },
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Item' },
+			{ id: namespace + '-item-padding-y', },
+			{ id: namespace + '-item-padding-x', },
+			{ id: namespace + '-item-justify-content', },
+		]);
+	%>
+</div>
 
-		{ subheader: namespace + ' Strong' },
-		{ id: namespace + '-strong-font-weight', },
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Strong' },
+			{ id: namespace + '-strong-font-weight', },
+		]);
+	%>
+</div>
 
-		{ subheader: namespace + ' Btn' },
-		{ id: namespace + '-btn-height', },
-		{ id: namespace + '-btn-font-size', },
-		{ id: namespace + '-btn-font-weight', },
-		{ id: namespace + '-btn-padding-y', },
-		{ id: namespace + '-btn-padding-x', },
-		{ id: namespace + '-btn-line-height', },
-		{ id: namespace + '-btn-margin-y', },
-		{ id: namespace + '-btn-margin-x', },
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Btn' },
+			{ id: namespace + '-btn-height', },
+			{ id: namespace + '-btn-font-size', },
+			{ id: namespace + '-btn-font-weight', },
+			{ id: namespace + '-btn-padding-y', },
+			{ id: namespace + '-btn-padding-x', },
+			{ id: namespace + '-btn-line-height', },
+			{ id: namespace + '-btn-margin-y', },
+			{ id: namespace + '-btn-margin-x', },
+		]);
+	%>
+</div>
 
-		{ subheader: namespace + ' Btn Monospaced' },
-		{ id: namespace + '-btn-monospaced-size', },
-		{ id: namespace + '-btn-monospaced-font-size', },
-		{ id: namespace + '-btn-monospaced-border-width', },
-		{ id: namespace + '-btn-monospaced-border-radius', },
-		{ id: namespace + '-btn-monospaced-padding', },
-		{ id: namespace + '-btn-monospaced-margin-y', },
-		{ id: namespace + '-btn-monospaced-margin-x', },
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Btn Monospaced' },
+			{ id: namespace + '-btn-monospaced-size', },
+			{ id: namespace + '-btn-monospaced-font-size', },
+			{ id: namespace + '-btn-monospaced-border-width', },
+			{ id: namespace + '-btn-monospaced-border-radius', },
+			{ id: namespace + '-btn-monospaced-padding', },
+			{ id: namespace + '-btn-monospaced-margin-y', },
+			{ id: namespace + '-btn-monospaced-margin-x', },
+		]);
+	%>
+</div>
 
-		{ subheader: namespace + ' Link' },
-		{ id: namespace + '-link-padding-y', },
-		{ id: namespace + '-link-padding-x', },
-		{ id: namespace + '-link-margin-y', },
-		{ id: namespace + '-link-margin-x', },
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Link' },
+			{ id: namespace + '-link-padding-y', },
+			{ id: namespace + '-link-padding-x', },
+			{ id: namespace + '-link-margin-y', },
+			{ id: namespace + '-link-margin-x', },
+		]);
+	%>
+</div>
 
-		{ subheader: namespace + ' Link Monospaced' },
-		{ id: namespace + '-link-monospaced-size', },
-		{ id: namespace + '-link-monospaced-font-size', },
-		{ id: namespace + '-link-monospaced-border-width', },
-		{ id: namespace + '-link-monospaced-border-radius', },
-		{ id: namespace + '-link-monospaced-padding', },
-		{ id: namespace + '-link-monospaced-margin-y', },
-		{ id: namespace + '-link-monospaced-margin-x', },
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Link Monospaced' },
+			{ id: namespace + '-link-monospaced-size', },
+			{ id: namespace + '-link-monospaced-font-size', },
+			{ id: namespace + '-link-monospaced-border-width', },
+			{ id: namespace + '-link-monospaced-border-radius', },
+			{ id: namespace + '-link-monospaced-padding', },
+			{ id: namespace + '-link-monospaced-margin-y', },
+			{ id: namespace + '-link-monospaced-margin-x', },
+		]);
+	%>
+</div>
 
-		{ subheader: namespace + ' Section' },
-		{ id: namespace + '-section-text-align', },
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Section' },
+			{ id: namespace + '-section-text-align', },
 
-		// { subheader: namespace + ' Component Action' },
-		// { id: namespace + '-component-action', },
+			// { subheader: namespace + ' Component Action' },
+			// { id: namespace + '-component-action', },
 
-		// { subheader: namespace + ' Component Link' },
-		// { id: namespace + '-component-link', },
+			// { subheader: namespace + ' Component Link' },
+			// { id: namespace + '-component-link', },
 
-		// { subheader: namespace + ' Component Title' },
-		// { id: namespace + '-component-title', },
+			// { subheader: namespace + ' Component Title' },
+			// { id: namespace + '-component-title', },
 
-		// { subheader: namespace + ' Component Text' },
-		// { id: namespace + '-component-text', },
+			// { subheader: namespace + ' Component Text' },
+			// { id: namespace + '-component-text', },
 
-		// { subheader: namespace + ' Component Label' },
-		// { id: namespace + '-component-label', },
+			// { subheader: namespace + ' Component Label' },
+			// { id: namespace + '-component-label', },
 
-		// { subheader: namespace + ' Tbar Label Size' },
-		// { id: namespace + '-tbar-label-size', },
-	]);
-%>
+			// { subheader: namespace + ' Tbar Label Size' },
+			// { id: namespace + '-tbar-label-size', },
+		]);
+	%>
+</div>
