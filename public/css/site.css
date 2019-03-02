@@ -494,6 +494,7 @@ a.cp-btn:focus {
 	font-size: 14px;
 	margin: 0 -15px;
 	padding: 10px 15px;
+	text-transform: capitalize;
 }
 
 .cp-variables-form-header a {
@@ -507,10 +508,11 @@ a.cp-btn:focus {
 
 .cp-variables-form-subheader {
 	background-color: #393a4a;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 	color: #FFF;
 	font-size: 14px;
-	margin: 0 -15px 16px -15px;
+	margin: 0 -15px;
 	padding: 10px 15px;
 	text-transform: capitalize;
 }
