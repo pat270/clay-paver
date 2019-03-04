@@ -1,86 +1,187 @@
-<%-
-	printInputs([
-		{ id: namespace + '-enabled', },
-		{ id: namespace + '-scaling-navbar', },
-		{ id: namespace + '-container-padding-x', },
-		{ id: namespace + '-height', },
-		{ id: namespace + '-font-size', },
-		{ id: namespace + '-padding-y', },
-		{ id: namespace + '-padding-x', },
-		{ id: namespace + '-border-top-width', },
-		{ id: namespace + '-border-right-width', },
-		{ id: namespace + '-border-bottom-width', },
-		{ id: namespace + '-border-left-width', },
-		{ id: namespace + '-box-shadow', },
-		{ subheader: namespace + ' Link' },
-		{ id: namespace + '-link-height', },
-		{ id: namespace + '-link-padding-y', },
-		{ id: namespace + '-link-padding-x', },
-		{ id: namespace + '-link-margin-y', },
-		{ id: namespace + '-link-margin-x', },
-		{ subheader: namespace + ' Button' },
-		{ id: namespace + '-btn-font-size', },
-		{ id: namespace + '-btn-margin-y', },
-		{ id: namespace + '-btn-margin-x', },
-		{ id: namespace + '-btn-monospaced-size', },
-		{ id: namespace + '-btn-monospaced-font-size', },
-		{ id: namespace + '-form-control-height', },
-		{ subheader: namespace + ' Brand' },
-		{ id: namespace + '-brand-max-width', },
-		{ id: namespace + '-brand-font-size', },
-		{ id: namespace + '-brand-padding-y', },
-		{ id: namespace + '-brand-padding-x', },
-		{ id: namespace + '-brand-margin-right', },
-		{ subheader: namespace + ' Title' },
-		{ id: namespace + '-title-font-size', },
-		{ id: namespace + '-title-font-weight', },
-		{ id: namespace + '-title-margin-bottom', },
-		{ id: namespace + '-title-text-transform', },
-		{ subheader: namespace + ' Active' },
-		{ id: namespace + '-active-border-bottom-width', },
-		{ id: namespace + '-active-border-offset-x', },
-		{ subheader: namespace + ' Dropdown' },
-		{ id: namespace + '-nav-item-dropdown-margin-top', },
-		{ subheader: namespace + ' Mobile' },
-		{ id: namespace + '-container-padding-x-mobile', },
-		{ id: namespace + '-height-mobile', },
-		{ id: namespace + '-font-size-mobile', },
-		{ subheader: namespace + ' Link Mobile' },
-		{ id: namespace + '-link-height-mobile', },
-		{ id: namespace + '-link-padding-y-mobile', },
-		{ id: namespace + '-link-padding-x-mobile', },
-		{ id: namespace + '-link-margin-y-mobile', },
-		{ id: namespace + '-link-margin-x-mobile', },
-		{ subheader: namespace + ' Btn Mobile' },
-		{ id: namespace + '-btn-font-size-mobile', },
-		{ id: namespace + '-btn-margin-y-mobile', },
-		{ id: namespace + '-btn-margin-x-mobile', },
-		{ subheader: namespace + ' Btn Monospaced Mobile' },
-		{ id: namespace + '-btn-monospaced-size-mobile', },
-		{ id: namespace + '-btn-monospaced-font-size-mobile', },
-		{ id: namespace + '-form-control-height-mobile', },
-		{ subheader: namespace + ' Brand Mobile' },
-		{ id: namespace + '-brand-font-size-mobile', },
-		{ id: namespace + '-brand-margin-right-mobile', },
-		{ id: namespace + '-brand-padding-y-mobile', },
-		{ id: namespace + '-brand-padding-x-mobile', },
-		{ subheader: namespace + ' Collapse Mobile' },
-		{ id: namespace + '-collapse-dropdown-item-padding-y-mobile', },
-		{ id: namespace + '-collapse-dropdown-item-padding-x-mobile', },
-		{ subheader: namespace + ' Toggler Mobile' },
-		{ id: namespace + '-toggler-height', },
-		{ id: namespace + '-toggler-font-size', },
-		{ id: namespace + '-toggler-padding-y', },
-		{ id: namespace + '-toggler-padding-x', },
-		{ id: namespace + '-toggler-margin-y', },
-		{ id: namespace + '-toggler-margin-x', },
-		{ subheader: namespace + ' Toggler Link Mobile' },
-		{ id: namespace + '-toggler-link-height', },
-		{ id: namespace + '-toggler-link-font-size', },
-		{ id: namespace + '-toggler-link-line-height', },
-		{ id: namespace + '-toggler-link-padding-y', },
-		{ id: namespace + '-toggler-link-padding-x', },
-		{ id: namespace + '-toggler-link-margin-y', },
-		{ id: namespace + '-toggler-link-margin-x', },
-	]);
-%>
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace, },
+			{ id: namespace + '-enabled', },
+			{ id: namespace + '-scaling-navbar', },
+			{ id: namespace + '-container-padding-x', },
+			{ id: namespace + '-height', },
+			{ id: namespace + '-font-size', },
+			{ id: namespace + '-padding-y', },
+			{ id: namespace + '-padding-x', },
+			{ id: namespace + '-border-top-width', },
+			{ id: namespace + '-border-right-width', },
+			{ id: namespace + '-border-bottom-width', },
+			{ id: namespace + '-border-left-width', },
+			{ id: namespace + '-box-shadow', },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Link' },
+			{ id: namespace + '-link-height', },
+			{ id: namespace + '-link-padding-y', },
+			{ id: namespace + '-link-padding-x', },
+			{ id: namespace + '-link-margin-y', },
+			{ id: namespace + '-link-margin-x', },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Button' },
+			{ id: namespace + '-btn-font-size', },
+			{ id: namespace + '-btn-margin-y', },
+			{ id: namespace + '-btn-margin-x', },
+			{ id: namespace + '-btn-monospaced-size', },
+			{ id: namespace + '-btn-monospaced-font-size', },
+			{ id: namespace + '-form-control-height', },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Brand' },
+			{ id: namespace + '-brand-max-width', },
+			{ id: namespace + '-brand-font-size', },
+			{ id: namespace + '-brand-padding-y', },
+			{ id: namespace + '-brand-padding-x', },
+			{ id: namespace + '-brand-margin-right', },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Title' },
+			{ id: namespace + '-title-font-size', },
+			{ id: namespace + '-title-font-weight', },
+			{ id: namespace + '-title-margin-bottom', },
+			{ id: namespace + '-title-text-transform', },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Active' },
+			{ id: namespace + '-active-border-bottom-width', },
+			{ id: namespace + '-active-border-offset-x', },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Dropdown' },
+			{ id: namespace + '-nav-item-dropdown-margin-top', },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Mobile' },
+			{ id: namespace + '-container-padding-x-mobile', },
+			{ id: namespace + '-height-mobile', },
+			{ id: namespace + '-font-size-mobile', },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Link Mobile' },
+			{ id: namespace + '-link-height-mobile', },
+			{ id: namespace + '-link-padding-y-mobile', },
+			{ id: namespace + '-link-padding-x-mobile', },
+			{ id: namespace + '-link-margin-y-mobile', },
+			{ id: namespace + '-link-margin-x-mobile', },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Btn Mobile' },
+			{ id: namespace + '-btn-font-size-mobile', },
+			{ id: namespace + '-btn-margin-y-mobile', },
+			{ id: namespace + '-btn-margin-x-mobile', },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Btn Monospaced Mobile' },
+			{ id: namespace + '-btn-monospaced-size-mobile', },
+			{ id: namespace + '-btn-monospaced-font-size-mobile', },
+			{ id: namespace + '-form-control-height-mobile', },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Brand Mobile' },
+			{ id: namespace + '-brand-font-size-mobile', },
+			{ id: namespace + '-brand-margin-right-mobile', },
+			{ id: namespace + '-brand-padding-y-mobile', },
+			{ id: namespace + '-brand-padding-x-mobile', },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Collapse Mobile' },
+			{ id: namespace + '-collapse-dropdown-item-padding-y-mobile', },
+			{ id: namespace + '-collapse-dropdown-item-padding-x-mobile', },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Toggler Mobile' },
+			{ id: namespace + '-toggler-height', },
+			{ id: namespace + '-toggler-font-size', },
+			{ id: namespace + '-toggler-padding-y', },
+			{ id: namespace + '-toggler-padding-x', },
+			{ id: namespace + '-toggler-margin-y', },
+			{ id: namespace + '-toggler-margin-x', },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Toggler Link Mobile' },
+			{ id: namespace + '-toggler-link-height', },
+			{ id: namespace + '-toggler-link-font-size', },
+			{ id: namespace + '-toggler-link-line-height', },
+			{ id: namespace + '-toggler-link-padding-y', },
+			{ id: namespace + '-toggler-link-padding-x', },
+			{ id: namespace + '-toggler-link-margin-y', },
+			{ id: namespace + '-toggler-link-margin-x', },
+		]);
+	%>
+</div>
