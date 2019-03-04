@@ -1,39 +1,63 @@
-<%-
-	printInputs([
-		{ id: namespace + '-enabled', },
-		{ id: namespace + '-breakpoint-up', },
-		{ id: namespace + '-max-width', },
-		{ id: namespace + '-border-width', },
-		{ id: namespace + '-border-style', },
-		{ id: namespace + '-border-color', color: true, },
-		{ subheader: namespace + ' Mobile' },
-		{ id: namespace + '-max-width-mobile', },
-		{ id: namespace + '-min-height-mobile', },
-		{ id: namespace + '-padding-y-mobile', },
-		{ id: namespace + '-padding-x-mobile', },
-		{ id: namespace + '-margin-top-mobile', },
-		{ id: namespace + '-margin-right-mobile', },
-		{ id: namespace + '-margin-bottom-mobile', },
-		{ id: namespace + '-margin-left-mobile', },
-		{ id: namespace + '-border-width-mobile', },
-		{ id: namespace + '-border-style-mobile', },
-		{ id: namespace + '-border-color-mobile', color: true, },
-		{ subheader: namespace + ' Collapse Mobile' },
-		{ id: namespace + '-collapse-max-width-mobile', },
-		{ id: namespace + '-collapse-border-width-mobile', },
-		{ id: namespace + '-collapse-border-style-mobile', },
-		{ id: namespace + '-collapse-border-color-mobile', color: true, },
-		{ id: namespace + '-collapse-inner-spacer-y-mobile', },
-		{ id: namespace + '-collapse-margin-top-mobile', },
-		{ id: namespace + '-collapse-right-mobile', },
-		{ id: namespace + '-collapse-left-mobile', },
-		{ id: namespace + '-collapse-z-index-mobile', },
-		{ subheader: namespace + ' Toggle Mobile' },
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace, },
+			{ id: namespace + '-enabled', },
+			{ id: namespace + '-breakpoint-up', },
+			{ id: namespace + '-max-width', },
+			{ id: namespace + '-border-width', },
+			{ id: namespace + '-border-style', },
+			{ id: namespace + '-border-color', color: true, },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Mobile' },
+			{ id: namespace + '-max-width-mobile', },
+			{ id: namespace + '-min-height-mobile', },
+			{ id: namespace + '-padding-y-mobile', },
+			{ id: namespace + '-padding-x-mobile', },
+			{ id: namespace + '-margin-top-mobile', },
+			{ id: namespace + '-margin-right-mobile', },
+			{ id: namespace + '-margin-bottom-mobile', },
+			{ id: namespace + '-margin-left-mobile', },
+			{ id: namespace + '-border-width-mobile', },
+			{ id: namespace + '-border-style-mobile', },
+			{ id: namespace + '-border-color-mobile', color: true, },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+			{ header: namespace + ' Collapse Mobile' },
+			{ id: namespace + '-collapse-max-width-mobile', },
+			{ id: namespace + '-collapse-border-width-mobile', },
+			{ id: namespace + '-collapse-border-style-mobile', },
+			{ id: namespace + '-collapse-border-color-mobile', color: true, },
+			{ id: namespace + '-collapse-inner-spacer-y-mobile', },
+			{ id: namespace + '-collapse-margin-top-mobile', },
+			{ id: namespace + '-collapse-right-mobile', },
+			{ id: namespace + '-collapse-left-mobile', },
+			{ id: namespace + '-collapse-z-index-mobile', },
+		]);
+	%>
+</div>
+
+<div class="cp-variables-form-section">
+	<%-
+		printInputs([
+		{ header: namespace + ' Toggle Mobile' },
 		{ id: namespace + '-toggler-height-mobile', },
 		{ id: namespace + '-toggler-padding-y-mobile', },
 		{ id: namespace + '-toggler-padding-x-mobile', },
 		{ id: namespace + '-toggler-border-width-mobile', },
 		{ id: namespace + '-toggler-border-style-mobile', },
 		{ id: namespace + '-toggler-border-color-mobile', color: true, },
-	]);
-%>
+		]);
+	%>
+</div>
